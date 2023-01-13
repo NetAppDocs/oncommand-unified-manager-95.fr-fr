@@ -1,0 +1,46 @@
+---
+permalink: online-help/concept-guidelines-for-adding-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des alertes en fonction d"une ressource, par exemple un cluster, un nœud, un agrégat ou un volume, ainsi que les événements d"un type de sévérité spécifique. Pour bénéficier de cette meilleure pratique, vous pouvez ajouter une alerte à l"un de vos objets stratégiques après avoir ajouté le cluster auquel cet objet appartient.' 
+---
+= Instructions d'ajout d'alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des alertes en fonction d'une ressource, par exemple un cluster, un nœud, un agrégat ou un volume, ainsi que les événements d'un type de sévérité spécifique. Pour bénéficier de cette meilleure pratique, vous pouvez ajouter une alerte à l'un de vos objets stratégiques après avoir ajouté le cluster auquel cet objet appartient.
+
+Vous pouvez utiliser les instructions et considérations suivantes pour créer des alertes afin de gérer efficacement vos systèmes :
+
+* Description de l'alerte
++
+Vous devez fournir une description pour l'alerte afin qu'elle vous aide à suivre efficacement vos alertes.
+
+* Ressources
++
+Vous devez décider quelle ressource physique ou logique requiert une alerte. Vous pouvez inclure et exclure des ressources, selon les besoins. Par exemple, si vous souhaitez surveiller de près vos agrégats en configurant une alerte, vous devez sélectionner les agrégats requis dans la liste des ressources.
+
+* Gravité de l'événement
++
+Vous devez décider si un événement d'un type de gravité spécifié (critique, erreur, avertissement) doit déclencher l'alerte et, le cas échéant, quel type de gravité.
+
+* Nom de l'événement
++
+Si vous ajoutez une alerte en fonction du type d'événement généré, vous devez décider des événements qui nécessitent une alerte
+
+* Actions
++
+Vous devez fournir les noms d'utilisateur et les adresses e-mail des utilisateurs qui reçoivent la notification. Vous pouvez également spécifier un trap SNMP comme mode de notification. Vous pouvez associer vos scripts à une alerte afin qu'ils soient exécutés lorsqu'une alerte est générée.
+
+* Fréquence des notifications
++
+Vous pouvez configurer une alerte pour qu'elle envoie une notification répétée aux destinataires pendant une heure donnée. Vous devez déterminer l'heure à laquelle la notification d'événement est active pour l'alerte. Si vous souhaitez que la notification d'événement soit répétée jusqu'à l'accusé de réception de l'événement, vous devez déterminer la fréquence à laquelle vous souhaitez que la notification soit répétée.
+
+* Exécuter le script
++
+Vous pouvez associer votre script à une alerte. Votre script est exécuté lorsque l'alerte est générée.
+
+

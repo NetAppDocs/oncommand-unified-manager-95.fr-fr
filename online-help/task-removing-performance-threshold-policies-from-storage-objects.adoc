@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-removing-performance-threshold-policies-from-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une règle de seuil de performance définie par l"utilisateur d"un objet de stockage lorsque vous ne souhaitez plus que Unified Manager contrôle la valeur du compteur de performances.' 
+---
+= Suppression des règles de seuil de performances des objets de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une règle de seuil de performance définie par l'utilisateur d'un objet de stockage lorsque vous ne souhaitez plus que Unified Manager contrôle la valeur du compteur de performances.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez supprimer qu'une seule stratégie à la fois d'un objet sélectionné.
+
+Vous pouvez supprimer une règle de seuil de plusieurs objets de stockage en sélectionnant plusieurs objets dans la liste.
+
+
+
+== Étapes
+
+. Dans la page *Inventory* d'un objet de stockage, sélectionnez un ou plusieurs objets dont au moins une règle de seuil de performances est appliquée.
++
+|===
+| Pour effacer les seuils de... | Procédez comme ça... 
+
+
+ a| 
+Un seul objet
+ a| 
+Cochez la case située à gauche de cet objet.
+
+
+
+ a| 
+Objets multiples
+ a| 
+Cochez la case à gauche de chaque objet.
+
+
+
+ a| 
+Tous les objets de la page
+ a| 
+Cliquez sur image:../media/select-dropdown-65-png.gif[""] Et sélectionnez *Sélectionner tous les objets sur cette page*.
+
+
+
+ a| 
+Tous les objets du même type
+ a| 
+Cliquez sur image:../media/select-dropdown-65-png.gif[""] Et sélectionnez *Sélectionner tous les objets*.
+
+|===
+. Cliquez sur *Effacer la stratégie de seuil de performances*.
++
+La page Effacer la stratégie de seuil s'affiche et affiche la liste des stratégies de seuil actuellement affectées aux objets de stockage.
+
+. Sélectionnez la stratégie de seuil à supprimer des objets et cliquez sur *Effacer la stratégie*.
++
+Lorsque vous sélectionnez une stratégie de seuil, les détails de la stratégie s'affichent pour vous permettre de confirmer que vous avez sélectionné la stratégie appropriée.
+
+

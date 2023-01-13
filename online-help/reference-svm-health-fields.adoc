@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport SVM Inventory permet d"analyser les limites de configuration du volume SVM et l"état global de santé afin d"identifier les risques liés à la disponibilité future du stockage.' 
+---
+= Rapport d'inventaire des SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport SVM Inventory permet d'analyser les limites de configuration du volume SVM et l'état global de santé afin d'identifier les risques liés à la disponibilité future du stockage.
+
+
+
+== Vue tabulaire du rapport SVM Inventory
+
+* *Cluster*
++
+Affiche le nom du cluster contenant le SVM.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom du SVM.
+
+* *État*
++
+Affiche l'état administratif actuel du SVM. L'état peut être en cours d'exécution, arrêté, démarrage, arrêt, non mappé, Initialisation ou suppression.
+
+* *Volume count*
++
+Affiche le nombre de volumes contenus par la SVM.
+
+* *Volumes maximum autorisés*
++
+Affiche les volumes maximum autorisés qui peuvent être configurés sur le SVM.
+
+* *Volume racine*
++
+Affiche le nom du volume root du SVM.
+
+* *Protocoles autorisés*
++
+Affiche le type de protocoles pouvant être configurés sur le SVM.
+
+* *Domaine DNS*
++
+Affiche le nom de domaine DNS.
+
+* *Domaine NIS*
++
+Affiche le nom de domaine NIS (Network information Service). Cette colonne est vide lorsque le serveur NIS (Network information Service) est désactivé ou n'est pas configuré.
+
+* *LDAP activée*
++
+S'affiche si le protocole LDAP est activé ou non.
+
+* *Commutateur de service de nom*
++
+Affiche le type d'information collecté à partir des hôtes. Les valeurs possibles sont fichier, LDAP ou NIS.
+
+

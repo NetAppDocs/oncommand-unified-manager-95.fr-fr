@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-add-disks-and-reallocate-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des disques à un agrégat pour augmenter la capacité de stockage et les performances de cet agrégat. Après l"ajout de disques, vous constaterez une amélioration des performances de lecture uniquement après avoir rélocalisé les données sur les disques que vous avez ajoutés.' 
+---
+= Ajouter des disques et réaffecter des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des disques à un agrégat pour augmenter la capacité de stockage et les performances de cet agrégat. Après l'ajout de disques, vous constaterez une amélioration des performances de lecture uniquement après avoir rélocalisé les données sur les disques que vous avez ajoutés.
+
+Ces instructions peuvent être utilisées lorsqu'Unified Manager a reçu des événements d'agrégat déclenchés par des seuils de performance dynamiques ou définis par le système :
+
+* Lorsque vous avez reçu un événement de seuil dynamique, l'icône du composant de cluster représentant l'agrégat dans un conflit s'affiche en rouge sur la page des détails d'événements.
++
+Sous l'icône, entre parenthèses, est le nom de l'agrégat, qui identifie l'agrégat auquel vous pouvez ajouter des disques.
+
+* Lorsque vous avez reçu un événement de seuil défini par le système, sur la page Détails de l'événement, le texte de description de l'événement répertorie le nom de l'agrégat qui présente le problème.
++
+Vous pouvez ajouter des disques et réaffecter des données sur cet agrégat.
+
+
+
+Les disques que vous ajoutez à l'agrégat doivent déjà exister dans le cluster. Si le cluster ne dispose pas de disques supplémentaires, vous devrez peut-être contacter votre administrateur ou acheter plus de disques. Vous pouvez utiliser OnCommand System Manager ou les commandes ONTAP pour ajouter des disques à un agrégat.
+
+[NOTE]
+====
+Vous devez réaffecter les données lorsque vous utilisez des agrégats HDD et Flash Pool uniquement. Ne pas réaffecter de données sur des agrégats SSD ou FabricPool.
+
+====

@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-configuring-protection-destination-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des paramètres d"efficacité de destination, tels que la déduplication, la compression, la croissance automatique et la garantie d"espace sur une destination de protection à l"aide de la boîte de dialogue Paramètres de destination avancés. Ces paramètres permettent d"optimiser l"utilisation de l"espace sur un volume de destination ou secondaire.' 
+---
+= Configuration des paramètres d'efficacité de la destination
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des paramètres d'efficacité de destination, tels que la déduplication, la compression, la croissance automatique et la garantie d'espace sur une destination de protection à l'aide de la boîte de dialogue Paramètres de destination avancés. Ces paramètres permettent d'optimiser l'utilisation de l'espace sur un volume de destination ou secondaire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Par défaut, les paramètres d'efficacité correspondent à ceux du volume source, sauf pour les paramètres de compression d'une relation SnapVault, qui sont désactivés par défaut.
+
+
+
+== Étapes
+
+. Cliquez sur l'onglet *SnapMirror* ou *SnapVault* de la boîte de dialogue *configurer la protection*, selon le type de relation que vous configurez.
+. Cliquez sur *Avancé* dans la zone *informations de destination*.
++
+La boîte de dialogue Paramètres de destination avancés s'ouvre.
+
+. Activez ou désactivez les paramètres d'efficacité pour la déduplication, la compression, la croissance automatique et la garantie d'espace, selon les besoins.
+. Cliquez sur *appliquer* pour enregistrer vos sélections et revenir à la boîte de dialogue *configurer la protection*.
+

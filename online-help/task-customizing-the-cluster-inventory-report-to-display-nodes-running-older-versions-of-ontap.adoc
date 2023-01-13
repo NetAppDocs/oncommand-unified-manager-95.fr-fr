@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport d"inventaire des clusters pour afficher les nœuds filtrés par d"anciennes versions de ONTAP.' 
+---
+= Personnalisation du rapport Inventaire des clusters pour afficher les nœuds exécutant d'anciennes versions du logiciel ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport d'inventaire des clusters pour afficher les nœuds filtrés par d'anciennes versions de ONTAP.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster, ou nœud, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour filtrer les nœuds qui n'exécutent pas ONTAP 8.3, cliquez sur la colonne *ONTAP version* et ouvrez la boîte de dialogue *Filter* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *non égal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *8.3*.
+. Cliquez sur *OK*.
+

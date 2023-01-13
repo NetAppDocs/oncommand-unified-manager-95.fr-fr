@@ -1,0 +1,89 @@
+---
+permalink: online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si l"espace disque alloué à /opt/netapp/data Directory était insuffisant pour prendre en charge Unified Manager lors de la configuration initiale de l"hôte Linux, puis pour installer Unified Manager, vous pouvez ajouter de l"espace disque après l"installation en augmentant l"espace disque sur le répertoire /opt/netapp/data.' 
+---
+= Ajout d'espace au répertoire de données de l'hôte Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez alloué un espace disque insuffisant à l' `/opt/netapp/data` Répertoire pour prendre en charge Unified Manager lorsque vous configurez l'hôte Linux à l'origine, puis que Unified Manager a été installé, vous pouvez ajouter de l'espace disque après l'installation en augmentant l'espace disque sur le `/opt/netapp/data` répertoire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir un accès utilisateur root à la machine Red Hat Enterprise Linux ou CentOS Linux sur laquelle Unified Manager est installé.
+
+
+
+== Description de la tâche
+
+Nous vous recommandons de sauvegarder la base de données Unified Manager avant d'augmenter la taille du répertoire de données.
+
+
+
+== Étapes
+
+. Connectez-vous en tant qu'utilisateur root à la machine Linux sur laquelle vous souhaitez ajouter de l'espace disque.
+. Arrêtez le service Unified Manager et le logiciel MySQL associé dans l'ordre indiqué :
+. Créer un dossier de sauvegarde temporaire (par exemple, `/backup-data`) avec suffisamment d'espace disque pour contenir les données dans le courant `/opt/netapp/data` répertoire.
+. Copie de la configuration de contenu et de privilège de l'existant `/opt/netapp/data` répertoire vers le répertoire de données de sauvegarde : `cp -rp /opt/netapp/data/* /backup-data`
+. Si se Linux est activé :
++
+.. Obtenir le type se Linux pour les dossiers existants `/opt/netapp/data` dossier :
++
+`se_type= ls -Z /opt/netapp/data | awk '{print $4}'| awk -F: '{print $3}'| head -1`
+
++
+Le système renvoie une confirmation similaire à ce qui suit :
+
++
+[listing]
+----
+echo $se_type
+mysqld_db_t
+----
+.. Exécutez le `chcon` Commande pour définir le type se Linux du répertoire de sauvegarde : `chcon -R --type=mysqld_db_t /backup-data`
+
+
+. Retirez le contenu du `/opt/netapp/data` répertoire :
++
+.. `cd /opt/netapp/data`
+.. `rm -rf *`
+
+
+. Développez la taille du `/opt/netapp/data` Répertoire d'au moins 750 Go via les commandes LVM ou en ajoutant des disques supplémentaires.
++
+[NOTE]
+====
+Montage de l' `/opt/netapp/data` Les répertoires d'une exportation NFS ou d'un partage CIFS ne sont pas pris en charge.
+
+====
+. Confirmez que le `/opt/netapp/data` le propriétaire du répertoire (mysql) et le groupe (root) sont inchangés: `ls -ltr / | grep opt/netapp/data`
++
+Le système renvoie une confirmation similaire à ce qui suit :
+
++
+[listing]
+----
+drwxr-xr-x.  17 mysql root  4096 Aug 28 13:08 data
+----
+. Si se Linux est activé, confirmez que le contexte de l' `/opt/netapp/data` le répertoire est toujours défini sur mysqld_db_t: `touch /opt/netapp/data/abc``ls -Z /opt/netapp/data/abc`
++
+Le système renvoie une confirmation similaire à ce qui suit :
+
++
+[listing]
+----
+-rw-r--r--. root root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/abc
+----
+. Copiez le contenu à partir de `backup-data`, retour à la développé `/opt/netapp/data` répertoire : `cp -rp /backup-data/* /opt/netapp/data/`
+. Démarrez le service MySQL : `service mysqld start`
+. Une fois le service MySQL démarré, démarrer les services ocie et ocieau dans l'ordre indiqué: `service ocie start``service ocieau start`
+. Une fois tous les services démarrés, supprimez le dossier de sauvegarde `/backup-data`: `rm -rf /backup-data`
+

@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire Health/clusters vous permet d"ajouter des clusters et d"afficher des informations détaillées sur les clusters que vous surveillez.' 
+---
+= Page d'inventaire Health/clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire Health/clusters vous permet d'ajouter des clusters et d'afficher des informations détaillées sur les clusters que vous surveillez.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Boutons de commande
+
+* *Afficher l'état de surveillance*
++
+Permet d'afficher les États de surveillance des clusters sélectionnés en accédant à la page Configuration/sources de données du cluster.
+
+* * Annotate*
++
+Permet d'annoter le cluster sélectionné.
+
+* *Actualiser la liste*
++
+Actualise la liste clusters et les propriétés associées au cluster.
+
+* *Exportation*
++
+Permet d'exporter les détails de tous les clusters surveillés vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+
+
+
+
+== Tableau clusters
+
+Le tableau clusters affiche les propriétés de tous les clusters découverts. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées :
+
+* *Statut*
++
+Une icône qui identifie le statut actuel du cluster. Le statut peut être critique (image:../media/sev-critical-um60.png[""]), erreur (image:../media/sev-error-um60.png[""]), Avertissement (image:../media/sev-warning-um60.png[""]) Ou Normal (image:../media/sev-normal-um60.png[""]).
+
++
+Vous pouvez positionner le curseur de la souris sur l'icône pour afficher plus d'informations sur l'événement ou les événements générés pour le cluster.
+
++
+Si le statut du cluster repose sur un seul événement, vous pouvez afficher des informations telles que le nom de l'événement, l'heure et la date à laquelle l'événement a été généré, le nom de l'administrateur auquel l'événement est affecté et la cause de l'événement. Vous pouvez cliquer sur le bouton *Afficher les détails* pour afficher plus d'informations sur l'événement.
+
++
+Si l'état du cluster repose sur plusieurs événements de même gravité, les trois principaux événements s'affichent avec des informations telles que le nom de l'événement, l'heure et la date à laquelle les événements sont générés, ainsi que le nom de l'administrateur à qui l'événement est affecté. Vous pouvez afficher plus de détails sur chacun de ces événements en cliquant sur le nom de l'événement. Vous pouvez également cliquer sur le lien** Afficher tous les événements** pour afficher la liste des événements générés.
+
+* *Cluster*
++
+Nom du cluster.
+
+* *État de la communication*
++
+Indique si le cluster est accessible ou non.
+
++
+L'état est affiché comme bon si le cluster est accessible. Si le cluster est inaccessible ou si les informations d'identification ne sont pas valides, l'état est affiché comme inaccessible.
+
+* * Santé du système*
++
+Informations générales sur l'état du cluster, calculées en fonction de l'état des différents sous-systèmes du cluster.
+
++
+Les valeurs possibles sont OK, OK avec suppression, dégradé et composants inaccessibles. Ces valeurs sont déterminées par les contrôles d'état du logiciel ONTAP.
+
+* *Nom d'hôte ou adresse IP*
++
+Le FQDN, le nom court ou l'adresse IP de la LIF de cluster-management utilisé pour se connecter au cluster.
+
+* *FQDN*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *Version OS*
++
+Version ONTAP du cluster.
+
++
+Si les nœuds du cluster exécutent différentes versions de ONTAP, la version la plus ancienne de ONTAP s'affiche.
+
+* *Nombre de nœuds*
++
+Nombre de nœuds appartenant au cluster.
+
+* *Dernière mise à jour*
++
+Horodatage du dernier prélèvement des échantillons de surveillance du cluster.
+
+* *Numéro de série*
++
+Numéro de série du cluster.
+
+* *Contact*
++
+Informations de contact du cluster.
+
+* *Emplacement*
++
+L'emplacement du cluster.
+
+* *FIPS activé*
++
+Indique si le mode FIPS est activé sur le cluster.
+
+
+
+
+
+== Volet filtres
+
+Le volet filtres vous permet de définir des filtres pour personnaliser l'affichage des informations dans la liste clusters. Vous pouvez sélectionner des filtres dans les colonnes État, État de la communication, Santé du système et Annotation.
+
+[NOTE]
+====
+Les filtres spécifiés dans le volet filtres remplacent les filtres spécifiés pour les colonnes de la liste clusters.
+
+====

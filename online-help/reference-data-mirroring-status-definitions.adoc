@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-data-mirroring-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les configurations MetroCluster permettent la mise en miroir des données et offrent la possibilité supplémentaire de lancer un basculement en cas d"indisponibilité de l"ensemble d"un site. L"état de la mise en miroir des données entre les clusters d"une configuration MetroCluster peut être Normal ou mise en miroir indisponible. La compréhension de cet état permet de gérer efficacement les configurations MetroCluster.' 
+---
+= Définitions d'état de la mise en miroir des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les configurations MetroCluster permettent la mise en miroir des données et offrent la possibilité supplémentaire de lancer un basculement en cas d'indisponibilité de l'ensemble d'un site. L'état de la mise en miroir des données entre les clusters d'une configuration MetroCluster peut être Normal ou mise en miroir indisponible. La compréhension de cet état permet de gérer efficacement les configurations MetroCluster.
+
+|===
+| État de la mise en miroir des données | Description | Icône affichée 
+
+
+ a| 
+Normale
+ a| 
+La mise en miroir des données entre les clusters dans la configuration MetroCluster est normale.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+Mise en miroir indisponible
+ a| 
+La mise en miroir des données entre les clusters de la configuration MetroCluster est indisponible en raison du basculement. Par exemple, lorsque le cluster partenaire est hors service à cause d'un incident ou lorsqu'un basculement est planifié à des fins de test.
+ a| 
+Basculement par erreur :
+
+image::../media/metrocluster-connectivity-down.gif[connectivité MetroCluster indisponible]
+
+Basculement réussi :
+
+image::../media/metrocluster-connectivity-failover.gif[basculement de la connectivité MetroCluster]
+
+|===

@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: La page seuils de configuration/performance vous permet de créer, modifier, cloner, supprimer et afficher les règles de seuil de performances. 
+---
+= Description des pages de stratégie de seuil de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page seuils de configuration/performance vous permet de créer, modifier, cloner, supprimer et afficher les règles de seuil de performances.
+
+Les rubriques ci-dessous s'affichent lorsque vous cliquez sur *aide* sur la page appropriée.

@@ -1,0 +1,1003 @@
+---
+permalink: online-help/reference-health-svm-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page de détails Health/Storage Virtual machine pour afficher des informations détaillées sur le SVM sélectionné, notamment son état de santé, sa capacité, sa configuration, les politiques de données, les interfaces logiques \(LIFs\), LUN, qtrees et quotas d"utilisateurs et de groupes d"utilisateurs. Vous pouvez également afficher des informations sur les objets associés et les alertes associées pour la SVM.' 
+---
+= Page de détails Health/Storage Virtual machine
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page de détails Health/Storage Virtual machine pour afficher des informations détaillées sur le SVM sélectionné, notamment son état, sa capacité, sa configuration, les politiques de données, les interfaces logiques (LIF), LUN, qtrees et quotas d'utilisateurs et de groupes d'utilisateurs. Vous pouvez également afficher des informations sur les objets associés et les alertes associées pour la SVM.
+
+[NOTE]
+====
+Seuls les SVM de données sont autorisés.
+
+====
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour le SVM sélectionné :
+
+* *Basculer vers l'affichage des performances*
++
+Permet d'accéder à la page des détails sur les performances/SVM.
+
+* *Actions*
++
+** Ajouter une alerte
++
+Permet d'ajouter une alerte au SVM sélectionné.
+
+** Modifier les seuils
++
+Permet de modifier les seuils des SVM.
+
++
+[NOTE]
+====
+Ce bouton est activé uniquement lorsque l'onglet qtrees ou pour un SVM équipé d'Infinite Volume.
+
+====
+** Annoter
++
+Permet d'annoter la SVM sélectionnée.
+
+
+
+* *Afficher les machines virtuelles de stockage*
++
+Permet de naviguer vers la page d'inventaire Health/Storage Virtual machines.
+
+
+
+
+
+== Onglet Santé
+
+L'onglet Santé affiche des informations détaillées sur la disponibilité des données, la capacité des données et les problèmes de protection liés à divers objets tels que les volumes, les agrégats, les LIF NAS, les LIF SAN, les LUN, Protocoles, services, exportations NFS et partages CIFS.
+
+Vous pouvez cliquer sur le graphique d'un objet pour afficher la liste filtrée des objets. Par exemple, vous pouvez cliquer sur le graphique de capacité des volumes qui affiche des avertissements pour afficher la liste des volumes ayant des problèmes de capacité avec la gravité correspondante.
+
+* *Problèmes de disponibilité*
++
+Affiche, sous forme de graphique, le nombre total d'objets, y compris les objets ayant des problèmes de disponibilité et les objets qui n'ont aucun problème de disponibilité. Les couleurs du graphique représentent les différents niveaux de gravité des problèmes. Les informations ci-dessous le graphique fournissent des informations détaillées sur les problèmes de disponibilité qui peuvent avoir un impact ou ont déjà eu un impact sur la disponibilité des données dans la SVM. Par exemple, des informations s'affichent concernant les LIF NAS et les LIF SAN qui sont en panne et les volumes qui sont hors ligne.
+
++
+Vous pouvez également afficher des informations sur les protocoles et services associés actuellement en cours d'exécution, ainsi que le nombre et l'état des exportations NFS et des partages CIFS.
+
++
+Si le SVM sélectionné est un SVM avec Infinite Volume, vous pouvez afficher les informations de disponibilité détaillées sur Infinite Volume.
+
+* *Problèmes de capacité*
++
+Affiche, sous forme de graphique, le nombre total d'objets, y compris les objets qui présentent des problèmes de capacité et des objets qui n'ont aucun problème de capacité. Les couleurs du graphique représentent les différents niveaux de gravité des problèmes. Les informations ci-dessous fournissent des informations détaillées sur les problèmes de capacité qui peuvent avoir un impact ou qui ont déjà eu un impact sur la capacité des données de la SVM. Par exemple, des informations s'affichent concernant les agrégats susceptibles d'enfreindre les valeurs de seuil définies.
+
++
+Si le SVM sélectionné est un SVM avec Infinite Volume, vous pouvez afficher les informations détaillées sur la capacité d'Infinite Volume.
+
+* *Questions de protection*
++
+Fournit un aperçu rapide de l'état de santé lié à la protection des SVM en affichant, sous forme de graphique, le nombre total de relations, y compris les relations ayant des problèmes de protection et des relations qui ne présentent aucun problème de protection. Lorsque des volumes non protégés sont existants, un clic sur le lien permet d'accéder à la page d'inventaire Health/volumes sur laquelle vous pouvez afficher une liste filtrée des volumes non protégés d'une SVM. Les couleurs du graphique représentent les différents niveaux de gravité des problèmes. En cliquant sur un graphique, vous accédez à la page relations protection/volume, où vous pouvez afficher une liste filtrée des détails de la relation de protection. Les informations ci-dessous fournissent des informations détaillées sur les problèmes de protection qui peuvent avoir un impact ou ont déjà eu un impact sur la protection des données dans la SVM. Par exemple, des informations s'affichent concernant les volumes dont la réserve Snapshot est presque pleine ou qui présentent les problèmes de décalage de relation SnapMirror.
+
++
+Si le SVM sélectionné est un SVM de référentiel, la zone de protection n'affiche pas.
+
+
+
+
+
+== Onglet capacité
+
+L'onglet capacité affiche des informations détaillées sur la capacité de données du SVM sélectionné.
+
+Les informations suivantes sont affichées pour un SVM avec volume FlexVol ou FlexGroup :
+
+* *Capacité*
++
+La zone capacité affiche des détails sur la capacité utilisée et disponible allouée à partir de tous les volumes :
+
++
+** Capacité totale
++
+Affiche la capacité totale (en Mo, Go, etc.) de la SVM.
+
+** Utilisé
++
+Affiche l'espace utilisé par les données dans les volumes appartenant à la SVM.
+
+** Garantie disponible
++
+Affiche l'espace disponible garanti pour les données disponibles pour les volumes de la SVM.
+
+** Non garanti
++
+Affiche l'espace disponible restant pour les données allouées aux volumes à provisionnement fin dans la SVM.
+
+
+
+* *Volumes ayant des problèmes de capacité*
++
+La liste volumes avec problèmes de capacité affiche, sous forme de tableau, des informations détaillées sur les volumes ayant des problèmes de capacité :
+
++
+** État
++
+Indique que le volume a un problème lié à la capacité d'une gravité indiquée.
+
++
+Vous pouvez déplacer le pointeur de la souris sur l'état pour afficher plus d'informations sur l'événement ou les événements liés à la capacité générés pour le volume.
+
++
+Si l'état du volume est déterminé par un seul événement, vous pouvez afficher des informations telles que le nom de l'événement, l'heure et la date de déclenchement de l'événement, le nom de l'administrateur auquel l'événement est affecté et la cause de l'événement. Vous pouvez utiliser le bouton *Afficher les détails* pour afficher plus d'informations sur l'événement.
+
++
+Si l'état du volume est déterminé par plusieurs événements de même gravité, les trois principaux événements s'affichent avec des informations telles que le nom de l'événement, l'heure et la date du déclenchement des événements, ainsi que le nom de l'administrateur auquel l'événement est affecté. Vous pouvez afficher plus de détails sur chacun de ces événements en cliquant sur le nom de l'événement. Vous pouvez également cliquer sur le lien *Afficher tous les événements* pour afficher la liste des événements générés.
+
++
+[NOTE]
+====
+Un volume peut avoir plusieurs événements de même gravité ou différents niveaux de gravité. Toutefois, seule la gravité la plus élevée est affichée. Par exemple, si un volume a deux événements avec des niveaux d'erreur et d'avertissement, seul le niveau d'erreur est affiché.
+
+====
+** Volumétrie
++
+Affiche le nom du volume.
+
+** Capacité de données utilisée
++
+Affiche, sous forme de graphique, des informations sur l'utilisation de la capacité du volume (en pourcentage).
+
+** Jours avant la date complète
++
+Affiche le nombre estimé de jours restants avant que le volume n'atteigne sa capacité maximale.
+
+** Provisionnement fin
++
+Indique si la garantie d'espace est définie pour le volume sélectionné. Les valeurs valides sont Oui et non
+
+** 64 bits
++
+Pour les volumes FlexVol, affiche le nom de l'agrégat qui contient le volume. Pour les volumes FlexGroup, affiche le nombre d'agrégats utilisés dans la FlexGroup.
+
+
+
+
+
+Les informations suivantes sont affichées pour un SVM avec Infinite volume :
+
+* *Capacité*
++
+Affiche les détails suivants relatifs à la capacité :
+
++
+** Pourcentage de capacité de données utilisée et disponible
+** Pourcentage de capacité Snapshot utilisée et disponible
+** Dépassement de la capacité des snapshots
++
+Affiche l'espace de données utilisé par les copies Snapshot.
+
+** Utilisé
++
+Affiche l'espace utilisé par les données de la SVM avec Infinite Volume.
+
+** Avertissement
++
+Indique que l'espace de la SVM avec Infinite Volume est presque plein. Si ce seuil est atteint, l'événement espace presque plein est généré.
+
+** Erreur
++
+Indique que l'espace du SVM avec Infinite Volume est plein. Si ce seuil est atteint, l'événement espace plein est généré.
+
+
+
+* *Autres détails*
++
+** Capacité totale
++
+Affiche la capacité totale du SVM avec Infinite Volume.
+
+** Capacité des données
++
+Affiche la capacité de données utilisée, la capacité de données disponible et les détails de capacité de débordement Snapshot de la SVM avec Infinite Volume.
+
+** Réserve Snapshot
++
+Affiche les détails utilisés et libres de la réserve Snapshot.
+
+** Capacité du système
++
+Affiche la capacité système utilisée et la capacité système disponible dans la SVM avec Infinite Volume.
+
+** Seuils
++
+Affiche les seuils presque complets du SVM avec Infinite Volume.
+
+
+
+* *Détails de la capacité de la classe de stockage*
++
+Affiche des informations sur l'utilisation de la capacité dans vos classes de stockage. Ces informations s'affichent uniquement si vous avez configuré des classes de stockage pour votre SVM avec Infinite Volume.
+
+* *Seuils des classes de stockage des ordinateurs virtuels de stockage*
++
+Affiche les seuils suivants (en pourcentage) de vos classes de stockage :
+
++
+** Presque plein seuil
++
+Spécifie le pourcentage auquel une classe de stockage d'un SVM avec Infinite Volume est considérée comme presque pleine.
+
+** Seuil maximal
++
+Spécifie le pourcentage auquel la classe de stockage d'un SVM avec Infinite Volume est considérée comme pleine.
+
+** Limite d'utilisation des snapshots
++
+Spécifie la limite, en pourcentage, sur l'espace réservé pour les copies Snapshot dans la classe de stockage.
+
+
+
+
+
+
+
+== Onglet Configuration
+
+L'onglet Configuration affiche les détails de configuration sur le SVM sélectionné, tel que son cluster, son volume root, le type de volumes qu'il contient (Infinite Volume ou volumes FlexVol), et les règles créées sur le SVM :
+
+* *Aperçu*
++
+** Cluster
++
+Affiche le nom du cluster auquel appartient la SVM.
+
+** Type de volume autorisé
++
+Affiche le type de volumes qui peuvent être créés dans le SVM. Ce type peut être InfiniteVol, FlexVol ou FlexVol/FlexGroup.
+
+** Volume racine
++
+Affiche le nom du volume root du SVM.
+
+** Protocoles autorisés
++
+Affiche le type de protocoles pouvant être configurés sur le SVM. Indique également si un protocole est en service (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]), vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]), ou n'est pas configuré (image:../media/disabled-um60.gif["Icône de disponibilité de LIF – Inconnu"]).
+
+
+
+* *LIF de données*
++
+** NAS
++
+Affiche le nombre de LIFs NAS associées à la SVM. Indique également si les LIFs sont active (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]) ou vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]).
+
+** SAN
++
+Affiche le nombre de LIFs SAN associées à la SVM. Indique également si les LIFs sont active (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]) ou vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]).
+
+** NVMe-FC
++
+Affiche le nombre de LIFs FC-NVMe associées à la SVM. Indique également si les LIFs sont active (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]) ou vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]).
+
+** Chemin de jonction
++
+Affiche le chemin d'accès sur lequel Infinite Volume est monté. La Junction path est affichée pour un SVM avec Infinite Volume uniquement.
+
+** Classes de stockage
++
+Affiche les classes de stockage associées au SVM sélectionné avec Infinite Volume. Les classes de stockage sont affichées uniquement pour un SVM disposant d'Infinite Volume.
+
+
+
+* *LIF de gestion*
++
+** Disponibilité
++
+Affiche le nombre de LIFs de management associées à la SVM. Indique également si les LIFs de management sont active (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]) ou vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]).
+
+
+
+* *Politiques*
++
+** Snapshots
++
+Affiche le nom de la politique Snapshot créée sur la SVM.
+
+** Export-règles
++
+Affiche le nom de l'export policy si une seule policy est créée ou affiche le nombre de export policy si plusieurs policies sont créées.
+
+** Règle de données
++
+Indique si une règle de données est configurée pour le SVM sélectionné avec Infinite Volume.
+
+
+
+* *Services*
++
+** Type
++
+Affiche le type de service configuré sur la SVM. Ce type peut être DNS (Domain Name System) ou NIS (Network information Service).
+
+** État
++
+Affiche l'état du service, qui peut être Up (image:../media/availability-up-um60.gif["Icône de disponibilité de LIF – supérieure"]), vers le bas (image:../media/availability-down-um60.gif["Icône de disponibilité LIF – en panne"]), ou non configuré (image:../media/disabled-um60.gif["Icône de disponibilité de LIF – Inconnu"]).
+
+** Nom de domaine
++
+Affiche les noms de domaine complets (FQDN) du serveur DNS pour les services DNS ou le serveur NIS pour les services NIS. Lorsque le serveur NIS est activé, le FQDN actif du serveur NIS s'affiche. Lorsque le serveur NIS est désactivé, la liste de tous les FQDN s'affiche.
+
+** Adresse IP
++
+Affiche les adresses IP du serveur DNS ou NIS. Lorsque le serveur NIS est activé, l'adresse IP active du serveur NIS s'affiche. Lorsque le serveur NIS est désactivé, la liste de toutes les adresses IP s'affiche.
+
+
+
+
+
+
+
+== Onglet LIFs
+
+L'onglet LIFs affiche des détails sur les LIFs de données qui sont créées sur le SVM sélectionné :
+
+* *LIF*
++
+Affiche le nom du LIF créé sur le SVM sélectionné.
+
+* *État opérationnel*
++
+Affiche le statut opérationnel du LIF, qui peut être Marche (image:../media/lif-status-up.gif["Icône de statut de LIF – Marche"]), vers le bas (image:../media/lif-status-down.gif["Icône de statut de LIF – down"]) Ou Inconnu (image:../media/hastate-unknown.gif["Icône de l'état HA – inconnu"]). Le statut opérationnel d'une LIF est déterminé par le statut de ses ports physiques.
+
+* *Statut administratif*
++
+Affiche le statut administratif de la LIF, qui peut être Marche (image:../media/lif-status-up.gif["Icône de statut de LIF – Marche"]), vers le bas (image:../media/lif-status-down.gif["Icône de statut de LIF – down"]) Ou Inconnu (image:../media/hastate-unknown.gif["Icône de l'état HA – inconnu"]). Le statut administratif d'une LIF est contrôlé par l'administrateur du stockage afin de modifier la configuration ou la maintenance. Le statut administratif peut être différent du statut opérationnel. Cependant, si le statut administratif d'une LIF est arrêté, le statut opérationnel est arrêté par défaut.
+
+* *Adresse IP / WWPN*
++
+Affiche l'adresse IP des LIFs Ethernet et le WWPN (World Wide Port Name) des LIFs FC.
+
+* *Protocoles*
++
+Affiche la liste des protocoles de données spécifiés pour la LIF, tels que CIFS, NFS, iSCSI, FC/FCoE FC-NVMe et FlexCache. Pour Infinite Volume, les protocoles SAN ne sont pas applicables.
+
+* *Rôle*
++
+Affiche le rôle LIF. Les rôles peuvent être données ou gestion.
+
+* *Port domicile*
++
+Affiche le port physique auquel la LIF a été associée à l'origine.
+
+* *Port actuel*
++
+Affiche le port physique sur lequel la LIF est actuellement associée. Si la LIF est migrée, le port actuel peut être différent du port de home.
+
+* *Port Set*
++
+Affiche le port défini sur lequel la LIF est mappée.
+
+* *Politique de basculement*
++
+Affiche la policy de basculement qui est configurée pour la LIF. Pour les LIF NFS, CIFS et FlexCache, la règle de basculement par défaut est « Next » disponible. La règle de basculement ne s'applique pas aux LIF FC et iSCSI.
+
+* *Groupes de routage*
++
+Affiche le nom du groupe de routage. Vous pouvez afficher plus d'informations sur les routes et la passerelle de destination en cliquant sur le nom du groupe de routage.
+
++
+Les groupes de routage ne sont pas pris en charge par ONTAP 8.3 ou version ultérieure et une colonne vide s'affiche donc pour ces clusters.
+
+* *Groupe de basculement*
++
+Affiche le nom du groupe de basculement.
+
+
+
+
+
+== Onglet qtrees
+
+L'onglet qtrees affiche des informations détaillées sur les qtrees et leurs quotas. Vous pouvez cliquer sur le bouton *Modifier les seuils* si vous souhaitez modifier les paramètres de seuil de santé de la capacité qtree d'un ou plusieurs qtrees.
+
+Utilisez le bouton *Exporter* pour créer des valeurs séparées par des virgules (`.csv`) fichier contenant les détails de tous les qtrees surveillés. Lors de l'exportation vers un fichier CSV, vous pouvez choisir de créer un rapport qtree pour le SVM actuel, pour tous les SVM du cluster actuel ou pour tous les SVM pour tous les clusters de votre data Center. Certains champs de qtrees supplémentaires apparaissent dans le fichier CSV exporté.
+
+[NOTE]
+====
+L'onglet qtree n'est pas affiché pour un SVM avec Infinite Volume.
+
+====
+* *Statut*
++
+Affiche le statut actuel du qtree. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
++
+Vous pouvez déplacer le pointeur sur l'icône d'état pour afficher plus d'informations sur l'événement ou les événements générés pour le qtree.
+
++
+Si le statut du qtree est déterminé par un seul événement, vous pouvez afficher des informations telles que le nom de l'événement, l'heure et la date à laquelle l'événement a été déclenché, le nom de l'administrateur à qui l'événement est affecté, et la cause de l'événement. Vous pouvez utiliser *Afficher les détails* pour afficher plus d'informations sur l'événement.
+
++
+Si l'état du qtree est déterminé par plusieurs événements de même gravité, les trois principaux événements s'affichent avec des informations telles que le nom de l'événement, l'heure et la date du déclenchement des événements, et le nom de l'administrateur à qui l'événement est affecté. Vous pouvez afficher plus de détails sur chacun de ces événements en cliquant sur le nom de l'événement. Vous pouvez également utiliser *Afficher tous les événements* pour afficher la liste des événements générés.
+
++
+[NOTE]
+====
+Un qtree peut avoir plusieurs événements de la même gravité ou différents niveaux d'importance. Toutefois, seule la gravité la plus élevée est affichée. Par exemple, si un qtree possède deux événements ayant des niveaux de gravité d'erreur et d'avertissement, seul le niveau de gravité de l'erreur est affiché.
+
+====
+* *Qtree*
++
+Affiche le nom du qtree.
+
+* *Cluster*
++
+Affiche le nom du cluster contenant le qtree. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom de la machine virtuelle de stockage (SVM) contenant le qtree. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Volume*
++
+Affiche le nom du volume qui contient le qtree.
+
++
+Vous pouvez déplacer le pointeur de la souris sur le nom du volume pour afficher plus d'informations sur ce dernier.
+
+* *Ensemble de quotas*
++
+Indique si un quota est activé ou désactivé sur le qtree.
+
+* *Type de quota*
++
+Spécifie si le quota est pour un utilisateur, un groupe d'utilisateurs ou un qtree. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Utilisateur ou groupe*
++
+Affiche le nom de l'utilisateur ou du groupe d'utilisateurs. Il y aura plusieurs lignes pour chaque utilisateur et groupe d'utilisateurs. Lorsque le type de quota est qtree ou si le quota n'est pas défini, la colonne est vide. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Disque utilisé %*
++
+Affiche le pourcentage d'espace disque utilisé. Si une limite matérielle de disque est définie, cette valeur est basée sur la limite matérielle du disque. Si le quota est défini sans limite Hard disque, la valeur est basée sur l'espace de données du volume. Si le quota n'est pas défini ou si des quotas sont définis sur le volume auquel appartient le qtree, « non applicable » s'affiche sur la page de la grille et le champ est vide dans les données d'exportation CSV.
+
+* *Limite matérielle disque*
++
+Affiche la quantité maximale d'espace disque alloué au qtree. Unified Manager génère un événement critique lorsque cette limite est atteinte et qu'aucune autre écriture de disque n'est autorisée. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite matérielle de disque, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *Limite logicielle du disque*
++
+Affiche la quantité d'espace disque alloué au qtree avant de générer un événement d'avertissement. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite logicielle de disque, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree. Par défaut, cette colonne est masquée.
+
+* *Seuil de disque*
++
+Affiche la valeur de seuil définie sur l'espace disque. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite de disque, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree. Par défaut, cette colonne est masquée.
+
+* *Fichiers utilisés %*
++
+Affiche le pourcentage de fichiers utilisés dans le qtree. Si la limite matérielle du fichier est définie, cette valeur est basée sur la limite matérielle du fichier. Aucune valeur n'est affichée si le quota est défini sans limite matérielle de fichier. Si le quota n'est pas défini ou si des quotas sont définis sur le volume auquel appartient le qtree, « non applicable » s'affiche sur la page de la grille et le champ est vide dans les données d'exportation CSV.
+
+* *Limite matérielle de fichier*
++
+Affiche la limite matérielle du nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite matérielle de fichier, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *Limite logicielle de fichier*
++
+Affiche la limite soft pour le nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite logicielle de fichier, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree. Par défaut, cette colonne est masquée.
+
+
+
+
+
+== Onglet quotas d'utilisateur et de groupe
+
+Affiche des détails sur les quotas d'utilisateur et de groupe d'utilisateurs pour le SVM sélectionné. Vous pouvez afficher des informations telles que l'état du quota, le nom de l'utilisateur ou du groupe d'utilisateurs, les limites logicielles et matérielles définies sur les disques et les fichiers, la quantité d'espace disque et le nombre de fichiers utilisés, ainsi que la valeur de seuil du disque. Vous pouvez également modifier l'adresse e-mail associée à un utilisateur ou à un groupe d'utilisateurs.
+
+* *Bouton de commande Modifier adresse e-mail*
++
+Ouvre la boîte de dialogue Modifier l'adresse électronique, qui affiche l'adresse électronique actuelle de l'utilisateur ou du groupe d'utilisateurs sélectionné. Vous pouvez modifier l'adresse e-mail. Si le champ** Modifier l'adresse e-mail** est vide, la règle par défaut est utilisée pour générer une adresse e-mail pour l'utilisateur ou le groupe d'utilisateurs sélectionné.
+
++
+Si plusieurs utilisateurs ont le même quota, les noms des utilisateurs s'affichent sous la forme de valeurs séparées par des virgules. De même, la règle par défaut n'est pas utilisée pour générer l'adresse e-mail ; vous devez donc fournir l'adresse e-mail requise pour l'envoi des notifications.
+
+* *Bouton de commande configurer les règles de messagerie*
++
+Permet de créer ou de modifier des règles pour générer une adresse e-mail pour les quotas d'utilisateurs ou de groupes d'utilisateurs configurés sur la SVM. Une notification est envoyée à l'adresse e-mail spécifiée lorsqu'une violation de quota est constatée.
+
+* *Statut*
++
+Affiche l'état actuel du quota. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
++
+Vous pouvez déplacer le pointeur sur l'icône d'état pour afficher plus d'informations sur l'événement ou les événements générés pour le quota.
+
++
+Si l'état du quota est déterminé par un seul événement, vous pouvez afficher des informations telles que le nom de l'événement, l'heure et la date de déclenchement de l'événement, le nom de l'administrateur auquel l'événement est affecté et la cause de l'événement. Vous pouvez utiliser *Afficher les détails* pour afficher plus d'informations sur l'événement.
+
++
+Si l'état du quota est déterminé par plusieurs événements de même gravité, les trois principaux événements sont affichés avec des informations telles que le nom de l'événement, l'heure et la date du déclenchement des événements, ainsi que le nom de l'administrateur auquel l'événement est affecté. Vous pouvez afficher plus de détails sur chacun de ces événements en cliquant sur le nom de l'événement. Vous pouvez également utiliser *Afficher tous les événements* pour afficher la liste des événements générés.
+
++
+[NOTE]
+====
+Un quota peut avoir plusieurs événements de même gravité ou différents niveaux de gravité. Toutefois, seule la gravité la plus élevée est affichée. Par exemple, si un quota a deux événements avec des niveaux d'erreur et d'avertissement, seul le niveau d'erreur est affiché.
+
+====
+* *Utilisateur ou groupe*
++
+Affiche le nom de l'utilisateur ou du groupe d'utilisateurs. Si plusieurs utilisateurs ont le même quota, les noms des utilisateurs s'affichent sous la forme de valeurs séparées par des virgules.
+
++
+La valeur s'affiche sous la forme « Inconnu » lorsque ONTAP ne fournit pas de nom d'utilisateur valide en raison d'erreurs de type SECD.
+
+* *Type*
++
+Spécifie si le quota est pour un utilisateur ou un groupe d'utilisateurs.
+
+* *Volume ou qtree*
++
+Affiche le nom du volume ou qtree sur lequel le quota d'utilisateur ou de groupe d'utilisateurs est spécifié.
+
++
+Vous pouvez déplacer le pointeur sur le nom du volume ou qtree pour afficher plus d'informations sur le volume ou le qtree.
+
+* *Disque utilisé %*
++
+Affiche le pourcentage d'espace disque utilisé. La valeur est affichée comme « non applicable » si le quota est défini sans limite matérielle du disque.
+
+* *Limite matérielle disque*
++
+Affiche la quantité maximale d'espace disque alloué au quota. Unified Manager génère un événement critique lorsque cette limite est atteinte et qu'aucune autre écriture de disque n'est autorisée. La valeur s'affiche sous la forme « illimitée » si le quota est défini sans limite matérielle du disque.
+
+* *Limite logicielle du disque*
++
+Affiche la quantité d'espace disque alloué au quota avant qu'un événement d'avertissement ne soit généré. La valeur s'affiche sous la forme « illimitée » si le quota est défini sans limite logicielle du disque. Par défaut, cette colonne est masquée.
+
+* *Seuil de disque*
++
+Affiche la valeur de seuil définie sur l'espace disque. La valeur est affichée comme « illimitée » si le quota est défini sans limite de seuil de disque. Par défaut, cette colonne est masquée.
+
+* *Fichiers utilisés %*
++
+Affiche le pourcentage de fichiers utilisés dans le qtree. La valeur est affichée comme « non applicable » si le quota est défini sans limite matérielle de fichier.
+
+* *Limite matérielle de fichier*
++
+Affiche la limite matérielle du nombre de fichiers autorisés sur le quota. La valeur est affichée comme « illimitée » si le quota est défini sans limite matérielle de fichier.
+
+* *Limite logicielle de fichier*
++
+Affiche la limite logicielle du nombre de fichiers autorisés sur le quota. La valeur est affichée comme « illimitée » si le quota est défini sans limite logicielle de fichier. Par défaut, cette colonne est masquée.
+
+* *Adresse e-mail*
++
+Affiche l'adresse e-mail de l'utilisateur ou du groupe d'utilisateurs auquel les notifications sont envoyées en cas de violation des quotas.
+
+
+
+
+
+== Onglet NFS Exports
+
+L'onglet exports NFS affiche des informations sur les exportations NFS, telles que son état, le chemin associé au volume (Infinite volumes, volumes FlexGroup ou volumes FlexVol), les niveaux d'accès des clients aux exports NFS, et l'export policy définie pour les volumes exportés. Les exportations NFS ne seront pas affichées dans les conditions suivantes : si le volume n'est pas monté ou si les protocoles associés à l'export policy du volume ne contiennent pas d'exports NFS.
+
+Utilisez le bouton *Exporter* pour créer des valeurs séparées par des virgules (`.csv`) Fichier contenant les détails de toutes les exportations NFS surveillées. Lors de l'exportation vers un fichier CSV, vous pouvez choisir de créer un rapport d'exportations NFS pour le SVM actuel, pour tous les SVM du cluster actuel ou pour tous les SVM pour tous les clusters de votre data Center. Certains champs de stratégie d'exportation supplémentaires apparaissent dans le fichier CSV exporté.
+
+* *Statut*
++
+Affiche l'état actuel de l'exportation NFS. L'état peut être erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
+* *Chemin de jonction*
++
+Affiche le chemin vers lequel le volume est monté. Lorsqu'une règle d'exportations NFS explicite est appliquée à un qtree, la colonne affiche le chemin d'accès du volume par le biais duquel il est possible d'accéder au qtree.
+
+* *Chemin de jonction actif*
++
+Indique si le chemin d'accès au volume monté est actif ou inactif.
+
+* *Volume ou qtree*
++
+Affiche le nom du volume ou qtree vers lequel la export policy NFS est appliquée. Pour Infinite volumes, le nom de la SVM contenant le volume Infinite Volume est affiché. Si une export policy NFS est appliquée à un qtree du volume, la colonne affiche les noms du volume et du qtree.
+
++
+Vous pouvez cliquer sur le lien pour afficher les détails de l'objet dans la page de détails correspondante. Si l'objet est un qtree, les liens sont affichés pour le qtree et le volume.
+
+* *Cluster*
++
+Affiche le nom du cluster. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom du SVM avec les export policy NFS. Apparaît uniquement dans le fichier CSV exporté.
+
+* *État du volume*
++
+Affiche l'état du volume en cours d'exportation. L'état peut être hors ligne, en ligne, limité ou mixte.
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture au volume n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture au volume est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Mixte
++
+Les composants d'un volume FlexGroup ne sont pas tous du même état.
+
+
+
+* *Style de sécurité*
++
+Affiche l'autorisation d'accès pour les volumes exportés. Le style de sécurité peut être UNIX, unifié, NTFS ou Mixed.
+
++
+** UNIX (clients NFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations UNIX.
+
+** Unifiée
++
+Les fichiers et les répertoires du volume possèdent une méthode de sécurité unifiée.
+
+** NTFS (clients CIFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations Windows NTFS.
+
+** Mixte
++
+Les fichiers et les répertoires du volume peuvent disposer d'autorisations UNIX ou NTFS Windows.
+
+
+
+* *Autorisation UNIX*
++
+Affiche les bits d'autorisation UNIX dans un format octal de chaîne, qui est défini pour les volumes exportés. Elle est similaire aux bits d'autorisation de style UNIX.
+
+* *Politique d'exportation*
++
+Affiche les règles qui définissent l'autorisation d'accès pour les volumes qui sont exportés. Vous pouvez cliquer sur le lien pour afficher les détails des règles associées à la stratégie d'exportation, telles que les protocoles d'authentification et l'autorisation d'accès.
+
++
+Lorsque vous générez un rapport pour la page exportations NFS, toutes les règles appartenant à la règle d'exportation sont exportées vers le fichier CSV. Par exemple, si la export policy comporte deux règles, une seule ligne de la page de grille des exports NFS, mais les données exportées auront deux lignes correspondant aux deux règles.
+
+* *Index des règles*
++
+Affiche les règles associées à l'export policy, telles que les protocoles d'authentification et l'autorisation d'accès. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Protocoles d'accès*
++
+Affiche les protocoles activés pour les règles d'export policy. Apparaît uniquement dans le fichier CSV exporté.
+
+* * Correspondance client*
++
+Affiche les clients autorisés à accéder aux données sur les volumes. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Accès en lecture seule*
++
+Affiche le protocole d'authentification utilisé pour lire les données sur les volumes. Apparaît uniquement dans le fichier CSV exporté.
+
+* *Accès en écriture*
++
+Affiche le protocole d'authentification utilisé pour lire ou écrire des données sur les volumes. Apparaît uniquement dans le fichier CSV exporté.
+
+
+
+
+
+== Onglet partages CIFS
+
+Affiche des informations sur les partages CIFS sur le SVM sélectionné. Vous pouvez afficher des informations telles que l'état du partage CIFS, le nom du partage, le chemin associé au SVM, l'état de la Junction path du partage, l'état du volume contenant, les données de sécurité du partage et les règles d'exportation définies pour le partage. Vous pouvez également déterminer s'il existe un chemin NFS équivalent pour le partage CIFS.
+
+[NOTE]
+====
+Les partages des dossiers ne sont pas affichés dans l'onglet partages CIFS.
+
+====
+* *Bouton de commande Afficher le mappage utilisateur*
++
+Lance la boîte de dialogue mappage utilisateur.
+
++
+Vous pouvez afficher les détails des mappages d'utilisateurs pour la SVM.
+
+* *Afficher le bouton de commande ACL*
++
+Lance la boîte de dialogue contrôle d'accès pour le partage.
+
++
+Vous pouvez afficher les détails des utilisateurs et des autorisations pour le partage sélectionné.
+
+* *Statut*
++
+Affiche l'état actuel du partage. Le statut peut être Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]) Ou erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]).
+
+* *Nom de partage*
++
+Affiche le nom du partage CIFS.
+
+* *Chemin*
++
+Affiche le chemin de jonction sur lequel le partage est créé.
+
+* *Chemin de jonction actif*
++
+Indique si le chemin d'accès au partage est actif ou inactif.
+
+* *Objet contenant*
++
+Affiche le nom de l'objet contenant auquel le partage appartient. L'objet contenant peut être un volume ou un qtree.
+
++
+En cliquant sur le lien, vous pouvez afficher les détails de l'objet contenant dans la page Détails correspondante. Si l'objet contenant est un qtree, les liens s'affichent à la fois pour qtree et volume.
+
+* *État du volume*
++
+Affiche l'état du volume en cours d'exportation. L'état peut être hors ligne, en ligne, limité ou mixte.
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture au volume n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture au volume est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Mixte
++
+Les composants d'un volume FlexGroup ne sont pas tous du même état.
+
+
+
+* *Sécurité*
++
+Affiche l'autorisation d'accès pour les volumes exportés. Le style de sécurité peut être UNIX, unifié, NTFS ou Mixed.
+
++
+** UNIX (clients NFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations UNIX.
+
+** Unifiée
++
+Les fichiers et les répertoires du volume possèdent une méthode de sécurité unifiée.
+
+** NTFS (clients CIFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations Windows NTFS.
+
+** Mixte
++
+Les fichiers et les répertoires du volume peuvent disposer d'autorisations UNIX ou NTFS Windows.
+
+
+
+* *Politique d'exportation*
++
+Affiche le nom de l'export policy applicable au partage. Si une export policy n'est pas spécifiée pour le SVM, la valeur est affichée comme non activée.
+
++
+Vous pouvez cliquer sur ce lien pour afficher des détails sur les règles associées à la stratégie d'exportation, telles que les protocoles d'accès et les autorisations. Le lien est désactivé si l'export policy est désactivée pour le SVM sélectionné.
+
+* *Équivalent NFS*
++
+Indique s'il existe un équivalent NFS pour le partage.
+
+
+
+
+
+== Onglet SAN
+
+Affiche des informations détaillées sur les LUN, les groupes initiateurs et les initiateurs du SVM sélectionné. Par défaut, la vue LUN est affichée. Dans l'onglet groupes initiateurs, vous pouvez afficher des informations détaillées sur les groupes initiateurs dans l'onglet initiateurs.
+
+* *Onglet LUN*
++
+Affiche des détails sur les LUN qui appartiennent au SVM sélectionné. Vous pouvez afficher des informations telles que le nom de la LUN, son état (en ligne ou hors ligne), le nom du système de fichiers (volume ou qtree) qui contient la LUN, le type de système d'exploitation hôte, la capacité totale de données et le numéro de série de la LUN. Vous pouvez également consulter les informations relatives à l'activation du provisionnement fin sur la LUN et si celle-ci est mappée sur un groupe initiateur.
+
++
+Vous pouvez également afficher les groupes initiateurs et les initiateurs mappés sur la LUN sélectionnée.
+
+* *Onglet groupes initiateurs*
++
+Affiche des détails sur les groupes initiateurs. Vous pouvez afficher des détails tels que le nom du groupe initiateur, l'état d'accès, le type de système d'exploitation hôte utilisé par tous les initiateurs du groupe et le protocole pris en charge. Lorsque vous cliquez sur le lien de la colonne État d'accès, vous pouvez afficher l'état d'accès actuel du groupe initiateur.
+
++
+** *Normal*
+
+
++
+Le groupe initiateur est connecté à plusieurs chemins d'accès.
+
++
+** *Chemin unique*
+
+
++
+Le groupe initiateur est connecté à un seul chemin d'accès.
+
++
+** *Pas de chemins*
+
+
++
+Aucun chemin d'accès n'est connecté au groupe initiateur.
+
++
+Vous pouvez voir si les groupes initiateurs sont mappés sur toutes les LIF ou des LIF spécifiques via un ensemble de ports. Lorsque vous cliquez sur le lien nombre dans la colonne LIFs mappées, toutes les LIFs sont affichées ou des LIF spécifiques pour un ensemble de ports sont affichées. Les LIF mappées via le portail cible ne sont pas affichées. Le nombre total d'initiateurs et de LUN mappés sur un groupe initiateur s'affiche.
+
++
+Vous pouvez également afficher les LUN et les initiateurs mappés sur le groupe initiateur sélectionné.
+
+* *Onglet initiateurs*
++
+Affiche le nom et le type de l'initiateur et le nombre total de groupes d'initiateurs mappés sur cet initiateur pour le SVM sélectionné.
+
++
+Vous pouvez également afficher les LUN et les groupes initiateurs mappés sur le groupe initiateur sélectionné.
+
+
+
+
+
+== Politique de données
+
+L'onglet Data Policy vous permet de créer, modifier, activer ou supprimer une ou plusieurs règles d'une stratégie de données. Vous pouvez également importer la stratégie de données dans la base de données Unified Manager et exporter la stratégie de données vers votre ordinateur :
+
+[NOTE]
+====
+L'onglet Data Policy est affiché uniquement pour les SVM avec Infinite Volume.
+
+====
+* *Liste des règles*
++
+Affiche la liste des règles. En développant la règle, vous pouvez afficher les critères de correspondance correspondants de la règle et de la classe de stockage dans laquelle le contenu est placé en fonction de la règle.
+
++
+La règle par défaut est la dernière règle de la liste. Vous ne pouvez pas modifier l'ordre de la règle par défaut.
+
++
+** Critères de correspondance
++
+Affiche les conditions de la règle. Par exemple, une règle peut être ""File path commence par `/eng/nightly""".
+
++
+[NOTE]
+====
+Le chemin du fichier doit toujours commencer par un chemin de jonction.
+
+====
+** Placement de contenu
++
+Affiche la classe de stockage correspondante pour la règle.
+
+
+
+* *Filtre de règles*
++
+Vous permet de filtrer les règles associées à une classe de stockage spécifique répertoriée dans la liste.
+
+* *Boutons d'action*
++
+** Création
++
+Ouvre la boîte de dialogue Créer une règle qui vous permet de créer une nouvelle règle pour votre stratégie de données.
+
+** Modifier
++
+Ouvre la boîte de dialogue Modifier la règle, qui permet de modifier les propriétés des règles telles que les chemins de répertoires, les types de fichiers et les propriétaires.
+
+** Supprimer
++
+Supprime la règle sélectionnée.
+
+** Monter
++
+Déplace la règle sélectionnée vers le haut dans la liste. Cependant, vous ne pouvez pas déplacer la règle par défaut vers le haut dans la liste.
+
+** Descendre
++
+Déplace la règle sélectionnée vers le bas de la liste. Cependant, vous ne pouvez pas déplacer la règle par défaut vers le bas de la liste.
+
+** Activer
++
+Active les règles et modifications apportées à la règle de données au sein de la SVM avec Infinite Volume.
+
+** Réinitialiser
++
+Réinitialise toutes les modifications apportées à la configuration de la règle de données.
+
+** Importer
++
+Importe une configuration de stratégie de données à partir d'un fichier.
+
+** Exporter
++
+Exporte une configuration de stratégie de données vers un fichier.
+
+
+
+
+
+
+
+== Zone périphériques associés
+
+La zone relative aux dispositifs vous permet d'afficher et de naviguer vers les LUN, les partages CIFS, ainsi que les quotas d'utilisateurs et de groupes d'utilisateurs liés au qtree :
+
+* *LUN*
++
+Affiche le nombre total de LUN associées au qtree sélectionné.
+
+* *Exportations NFS*
++
+Affiche le nombre total de règles d'exportation NFS associées au qtree sélectionné.
+
+* *Partages CIFS*
++
+Affiche le nombre total de partages CIFS associés au qtree sélectionné.
+
+* *Quotas d'utilisateurs et de groupes*
++
+Affiche le nombre total de quotas d'utilisateur et de groupe d'utilisateurs associés au qtree sélectionné. L'état de santé des quotas de l'utilisateur et des groupes d'utilisateurs est également affiché, en fonction du niveau de gravité le plus élevé.
+
+
+
+
+
+== Volet Annotations associées
+
+Le volet Annotations associées permet d'afficher les détails d'annotation associés à la SVM sélectionnée. Elle détaille le nom de l'annotation et les valeurs d'annotation qui sont appliquées à la SVM. Vous pouvez également supprimer des annotations manuelles du volet Annotations associées.
+
+
+
+== Panneau périphériques associés
+
+Le volet Devices associés vous permet de afficher le cluster, les agrégats et les volumes relatifs à la SVM :
+
+* *Cluster*
++
+Affiche le statut de santé du cluster auquel appartient la SVM.
+
+* *Agrégats*
++
+Affiche le nombre d'agrégats appartenant au SVM sélectionné. L'état de santé des agrégats s'affiche également, sur la base du niveau de gravité le plus élevé. Par exemple, si un SVM contient dix agrégats, cinq d'entre eux affichant le statut Avertissement et les cinq autres affichent l'état critique, l'état affiché est critique.
+
+* *Agrégats affectés*
++
+Affiche le nombre d'agrégats affectés à un SVM. L'état de santé des agrégats s'affiche également, sur la base du niveau de gravité le plus élevé.
+
+* *Volumes*
++
+Affiche le nombre et la capacité des volumes appartenant au SVM sélectionné. L'état de santé des volumes est également affiché, sur la base du niveau de gravité le plus élevé. Lorsque le SVM contient des volumes FlexGroup, le nombre inclut également FlexGroups, il n'inclut pas les composants FlexGroup.
+
+
+
+
+
+== Volet groupes associés
+
+Le volet groupes associés permet d'afficher la liste des groupes associés à la SVM sélectionnée.
+
+
+
+== Volet alertes associées
+
+Le volet alertes associées vous permet d'afficher la liste des alertes créées pour le SVM sélectionné. Vous pouvez également ajouter une alerte en cliquant sur le lien *Ajouter une alerte* ou en modifiant une alerte existante en cliquant sur le nom de l'alerte.

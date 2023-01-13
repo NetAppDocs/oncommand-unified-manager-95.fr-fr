@@ -1,0 +1,49 @@
+---
+permalink: online-help/reference-utilization-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le graphique compteur d"utilisation de l"explorateur de performances affiche le pourcentage moyen de la ressource sélectionnée utilisée.' 
+---
+= Graphique du compteur de performances d'utilisation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique compteur d'utilisation de l'explorateur de performances affiche le pourcentage moyen de la ressource sélectionnée utilisée.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Le bas de la page du graphique affiche des informations sur l'utilisation minimale, maximale, moyenne et 95e percentile pour la plage de temps sélectionnée.
+
+
+
+== Utilisation - Tableau du compteur total
+
+Affiche le pourcentage moyen de la ressource sélectionnée qui est utilisée. Pour les nœuds, cela indique l'utilisation des ressources du nœud (CPU et RAM), pour les agrégats, cela indique l'utilisation des disques de l'agrégat, et pour les ports, cela indique l'utilisation de la bande passante du port.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un nœud, un agrégat ou un port.
+
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement d'utilisation définie dans Unified Manager.
+
++
+La ligne rouge fixe indique la valeur du seuil critique d'utilisation définie dans Unified Manager.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] associé à un compteur masque et affiche ces informations de compteur du graphique et peuvent aider à comparer l'utilisation des objets.
+
+

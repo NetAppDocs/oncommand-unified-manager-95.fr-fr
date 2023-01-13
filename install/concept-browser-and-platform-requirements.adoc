@@ -1,0 +1,34 @@
+---
+permalink: install/concept-browser-and-platform-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Pour accéder à l"interface utilisateur de Unified Manager, vous devez utiliser un navigateur pris en charge.' 
+---
+= Navigateurs pris en charge
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour accéder à l'interface utilisateur de Unified Manager, vous devez utiliser un navigateur pris en charge.
+
+Unified Manager a été testé avec les navigateurs suivants : ils peuvent fonctionner mais pas qualifiés. Consultez la matrice d'interopérabilité pour obtenir la liste complète des versions de navigateur prises en charge.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+* Mozilla Firefox ESR 60
+* Google Chrome version 68 et 69
+* Microsoft Internet Explorer 11
+
+
+Pour tous les navigateurs, la désactivation des bloqueurs de fenêtres contextuelles permet de s'assurer que les fonctions logicielles s'affichent correctement.
+
+Pour Internet Explorer, vous devez vous assurer que l'affichage de compatibilité est désactivé et que le mode document est défini sur la valeur par défaut. Pour plus d'informations sur ces paramètres, reportez-vous à la documentation Microsoft IE.
+
+[NOTE]
+====
+Firefox et Chrome sont les navigateurs préférés car il y a eu certains cas où les pages d'interface utilisateur complexes se chargent plus lentement lors de l'utilisation d'Internet Explorer.
+
+====
+Si vous prévoyez de configurer Unified Manager pour l'authentification SAML afin qu'un fournisseur d'identités authentifie les utilisateurs, consultez également la liste des navigateurs pris en charge par le fournisseur d'identités.

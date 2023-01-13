@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un Infinite Volume est un volume unique et évolutif qui peut stocker jusqu"à 2 milliards de fichiers et des dizaines de pétaoctets de données.' 
+---
+= Définition d'Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un Infinite Volume est un volume unique et évolutif qui peut stocker jusqu'à 2 milliards de fichiers et des dizaines de pétaoctets de données.
+
+Infinite Volume vous permet de gérer plusieurs pétaoctets de données dans une grande entité logique. De plus, les clients peuvent récupérer plusieurs pétaoctets de données à partir d'une seule jonction pour l'ensemble du volume.
+
+Un Infinite Volume utilise le stockage de plusieurs agrégats sur plusieurs nœuds. Vous pouvez commencer avec un petit Infinite Volume, puis le développer sans interruption en ajoutant davantage de disques à ses agrégats ou en ajoutant davantage d'agrégats.

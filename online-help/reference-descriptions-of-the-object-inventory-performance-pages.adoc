@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages de l"inventaire des performances vous permettent d"obtenir un récapitulatif des informations sur les performances de chaque objet de stockage disponible, par exemple les clusters, les agrégats, les volumes, etc. Vous pouvez créer un lien vers les pages de détails de l"objet Performance pour afficher les informations détaillées d"un objet particulier.' 
+---
+= Descriptions des pages d'inventaire des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages de l'inventaire des performances vous permettent d'obtenir un récapitulatif des informations sur les performances de chaque objet de stockage disponible, par exemple les clusters, les agrégats, les volumes, etc. Vous pouvez créer un lien vers les pages de détails de l'objet Performance pour afficher les informations détaillées d'un objet particulier.

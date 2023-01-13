@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Réordonner les actions de groupe pour modifier les rangs d"une ou plusieurs actions de groupe. La position d"une action de groupe dans la grille détermine le rang de l"action de groupe.' 
+---
+= Boîte de dialogue réorganiser les actions du groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Réordonner les actions de groupe pour modifier les rangs d'une ou plusieurs actions de groupe. La position d'une action de groupe dans la grille détermine le rang de l'action de groupe.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Rang*
++
+Spécifie l'ordre de l'action de groupe à appliquer sur les objets de stockage d'un groupe.
+
+* *Nom*
++
+Spécifie le nom de l'action de groupe.
+
+* *Type d'action*
++
+Spécifie le type d'action que vous pouvez effectuer sur les objets de stockage d'un groupe.
+
+* *Groupe associé*
++
+Spécifie le nom du groupe pour lequel les actions de groupe sont définies.
+
+

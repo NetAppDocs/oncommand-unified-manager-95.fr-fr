@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-analyzing-events-from-user-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements générés à partir de seuils définis par l"utilisateur indiquent qu"un compteur de performances pour un certain objet de stockage, par exemple un agrégat ou un volume, a dépassé le seuil que vous avez défini dans la règle. Cela indique que l"objet du cluster rencontre un problème de performances.' 
+---
+= Analyse des événements à partir de seuils de performances définis par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements générés à partir de seuils définis par l'utilisateur indiquent qu'un compteur de performances pour un certain objet de stockage, par exemple un agrégat ou un volume, a dépassé le seuil que vous avez défini dans la règle. Cela indique que l'objet du cluster rencontre un problème de performances.
+
+La page Détails des événements vous permet d'analyser l'événement de performance et de prendre des mesures correctives, le cas échéant, pour rétablir les performances normales.

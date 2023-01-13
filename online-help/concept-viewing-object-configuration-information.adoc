@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages d"informations sur les objets, situées sur la page d"accueil de chaque objet, affichent les valeurs des attributs de configuration sans performances de chaque objet de stockage. Certains attributs sont des paramètres de configuration physique, tandis que d"autres peuvent affecter les performances de l"objet.' 
+---
+= Affichage des informations de configuration d'objet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages d'informations sur l'objet, situées sur la page d'accueil de chaque objet, affichent les valeurs des attributs de configuration sans performances de chaque objet de stockage. Certains attributs sont des paramètres de configuration physique, tandis que d'autres peuvent affecter les performances de l'objet.
+
+Par exemple, il est utile de connaître la quantité d'espace disponible pour un agrégat ou pour un nœud. Le fait de connaître le paramètre de vitesse d'un port spécifique peut vous aider lors du diagnostic d'un problème de performances.

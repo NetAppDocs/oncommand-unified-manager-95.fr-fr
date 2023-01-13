@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-reorder-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Réordonner la règle d"annotation pour spécifier l"ordre dans lequel les règles d"annotation doivent être appliquées aux objets de stockage.' 
+---
+= Boîte de dialogue réorganiser la règle d'annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Réordonner la règle d'annotation pour spécifier l'ordre dans lequel les règles d'annotation doivent être appliquées aux objets de stockage.
+
+
+
+== Boutons de commande
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Enregistrer*
++
+Enregistre les modifications apportées aux règles d'annotation et ferme la boîte de dialogue réorganiser la règle d'annotation.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Réordonner la règle d'annotation sans enregistrer les modifications apportées.
+
+
+
+
+
+== Vue liste
+
+* *Rang*
++
+Affiche l'ordre dans lequel les règles d'annotation seront appliquées aux objets de stockage.
+
+* *Nom*
++
+Affiche le nom de la règle d'annotation.
+
+* *Type d'objet cible*
++
+Affiche le type d'objet de stockage auquel la règle d'annotation est appliquée.
+
+* * Annotation associée*
++
+Affiche le nom de l'annotation qui est appliquée à l'objet de stockage.
+
+* *Valeur d'annotation associée*
++
+Affiche la valeur d'annotation de l'objet de stockage.
+
+

@@ -1,0 +1,97 @@
+---
+permalink: install/task-installing-unified-manager-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez installer Unified Manager sur Windows pour surveiller et résoudre les problèmes de capacité, de disponibilité, de performances et de protection du stockage des données. 
+---
+= Installation de Unified Manager sur un système Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez installer Unified Manager sur Windows pour surveiller et résoudre les problèmes de capacité, de disponibilité, de performances et de protection du stockage des données.
+
+
+
+== Avant de commencer
+
+* Le système sur lequel vous prévoyez d'installer Unified Manager doit répondre aux exigences système et logicielles.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[Configuration matérielle requise]
+
++
+xref:reference-windows-software-and-installation-requirements.adoc[Conditions requises pour l'installation et le logiciel Windows]
+
++
+[NOTE]
+====
+À partir d'Unified Manager 9.5, OpenJDK est fourni dans le package d'installation d'Unified Manager et installé automatiquement. Oracle Java n'est pas pris en charge à partir de Unified Manager 9.5.
+
+====
+* Vous devez disposer des privilèges d'administrateur Windows.
+* Vous devez disposer d'un navigateur Web pris en charge.
+* Le mot de passe utilisateur de maintenance de Unified Manager doit comporter entre 8 et 20 caractères et contenir des lettres majuscules ou des minuscules, des chiffres et des caractères spéciaux.
+* Les caractères spéciaux suivants ne sont pas autorisés dans la chaîne de mot de passe pour l'utilisateur de maintenance ou pour l'utilisateur root MySQL : " ' ` % , = & < > ^ \ / ( ) [ ] ;
++
+Les caractères spéciaux suivants sont autorisés : ~ ! @ # $ * - ? . : + { }
+
+
+
+
+
+== Étapes
+
+. Connectez-vous à Windows à l'aide du compte d'administrateur local par défaut.
+. Connectez-vous au site de support NetApp et recherchez la page de téléchargement pour installer Unified Manager sur la plateforme Windows.
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["Téléchargements NetApp : logiciels"]
+
+. Téléchargez le fichier d'installation Windows Unified Manager depuis le site de support NetApp vers un répertoire cible dans le système Windows.
+. Accédez au répertoire dans lequel se trouve le fichier d'installation.
+. Cliquez avec le bouton droit de la souris et exécutez le programme d'installation de Unified Manager (`.exe`) fichier en tant qu'administrateur.
++
+Unified Manager détecte les packages tiers manquants ou pré-installés et les répertorie. Si les modules tiers requis ne sont pas installés sur le système, Unified Manager les installe dans le cadre de l'installation.
+
+. Cliquez sur *Suivant*.
+. Entrez le nom d'utilisateur et le mot de passe pour créer l'utilisateur de maintenance.
+. Dans l'assistant *Database Connection*, saisissez le mot de passe racine MySQL.
+. Cliquez sur *Modifier* pour spécifier un nouvel emplacement pour le répertoire d'installation Unified Manager et le répertoire de données MySQL.
++
+Si vous ne modifiez pas le répertoire d'installation, Unified Manager est installé dans le répertoire d'installation par défaut.
+
+. Cliquez sur *Suivant*.
+. Dans l'assistant *prêt à installer Shield*, cliquez sur *installer*.
+. Une fois l'installation terminée, cliquez sur *Finish*.
+
+
+
+
+== Résultats
+
+L'installation crée plusieurs répertoires :
+
+* Répertoire d'installation
++
+Il s'agit du répertoire racine de Unified Manager, que vous avez spécifié lors de l'installation. Exemple : `C:\Program Files\NetApp\`
+
+* Répertoire de données MySQL
++
+Il s'agit du répertoire dans lequel les bases de données MySQL sont stockées, que vous avez spécifié lors de l'installation. Exemple : `C:\ProgramData\MySQL\MySQLServerData\`
+
+* Répertoire Java
++
+Il s'agit du répertoire dans lequel OpenJDK sera installé. Exemple : `C:\Program Files\NetApp\JDK\`
+
+* Répertoire des données applicatives Unified Manager (AppDataDir)
++
+Il s'agit du répertoire dans lequel toutes les données générées par l'application sont stockées. Cela inclut les journaux, les offres groupées de support, la sauvegarde et toutes les autres données supplémentaires. Exemple : `C:\ProgramData\NetApp\OnCommandAppData\`
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous pouvez accéder à l'interface utilisateur Web pour effectuer la configuration initiale de Unified Manager, comme décrit dans la link:../config/concept-configuring-unified-manager.html["Configuration d'Unified Manager"].

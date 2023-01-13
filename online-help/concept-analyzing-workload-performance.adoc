@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous permet de surveiller et d"analyser les performances des E/S des workloads de volumes dans les clusters. Vous pouvez déterminer si un problème de performances se trouve sur le cluster et si le problème provient du stockage.' 
+---
+= L'analyse des performances des workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous permet de surveiller et d'analyser les performances des E/S des workloads de volumes dans les clusters. Vous pouvez déterminer si un problème de performances se trouve sur le cluster et si le problème provient du stockage.
+
+[NOTE]
+====
+Ce chapitre explique comment analyser les performances des charges de travail à l'aide de la page Détails des performances/volumes et de la page Détails de l'événement.
+
+====

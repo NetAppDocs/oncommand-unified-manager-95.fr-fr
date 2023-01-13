@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Storage Summary pour analyser l"utilisation du stockage des clusters, ce qui permet de localiser les LUN présentant la capacité la plus non allouée.' 
+---
+= Personnalisation du rapport Storage Summary pour analyser les clusters ayant la capacité LUN la plus non allouée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Storage Summary pour analyser l'utilisation du stockage des clusters, ce qui permet de localiser les LUN présentant la capacité la plus non allouée.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les paires HA ayant la capacité de LUN la plus non allouée, cliquez dans la colonne *capacité de LUN non allouée (To)*, puis cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

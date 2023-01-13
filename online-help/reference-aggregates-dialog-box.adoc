@@ -1,0 +1,160 @@
+---
+permalink: online-help/reference-aggregates-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la boîte de dialogue Aggregates pour sélectionner les agrégats que vous souhaitez ajouter à votre pool de ressources. 
+---
+= Boîte de dialogue Aggregates
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Aggregates pour sélectionner les agrégats que vous souhaitez ajouter à votre pool de ressources.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Ajouter*
++
+Ajoute les agrégats sélectionnés au pool de ressources. Le bouton Ajouter n'est pas activé tant qu'au moins un agrégat n'est pas sélectionné.
+
+* *Annuler*
++
+Supprime les modifications et ferme la boîte de dialogue agrégats.
+
+
+
+
+
+== Liste d'agrégats
+
+La liste Aggregates affiche (au format tabulaire) les noms et propriétés des agrégats surveillés.
+
+* *Statut*
++
+Affiche l'état actuel d'un volume. Le statut peut être critique (image:../media/sev-critical-um60.png[""]), erreur (image:../media/sev-error-um60.png[""]), Avertissement (image:../media/sev-warning-um60.png[""]) Ou Normal (image:../media/sev-normal-um60.png[""]).
+
++
+Vous pouvez déplacer le pointeur de la souris sur l'état pour afficher plus d'informations sur l'événement ou les événements générés pour le volume.
+
+* *Nom d'agrégat*
++
+Affiche le nom de l'agrégat.
+
+* *État*
++
+Affiche l'état actuel de l'agrégat, qui peut être l'un des suivants :
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture n'est pas autorisé.
+
+** Limitée
++
+Les opérations limitées (par exemple, la reconstruction avec parité) sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture aux volumes hébergés sur cet agrégat est autorisé.
+
+** Création
++
+L'agrégat est en cours de création.
+
+** Destruction
++
+L'agrégat est en cours de destruction.
+
+** Échec
++
+L'agrégat ne peut pas être mis en ligne.
+
+** Congelé
++
+L'agrégat ne transmet pas (temporairement) de demandes.
+
+** Incohérent
++
+L'agrégat a été marqué comme corrompu ; vous devez contacter le support technique.
+
+** Fer limité
++
+Les outils de diagnostic ne peuvent pas être exécutés sur l'agrégat.
+
+** Montage
++
+L'agrégat est en cours de montage.
+
+** Partiel
++
+Au moins un disque a été trouvé pour l'agrégat, mais deux ou plusieurs disques sont manquants.
+
+** Mise au repos
++
+L'agrégat est en cours de suspension.
+
+** Suspendu
++
+L'agrégat est suspendu.
+
+** Rétablie
++
+La restauration d'un agrégat est terminée.
+
+** Démonté
++
+L'agrégat est mis hors ligne.
+
+** Démontage
++
+L'agrégat est mis hors ligne.
+
+** Inconnu
++
+L'agrégat est détecté, mais les informations d'agrégat ne sont pas encore récupérées par le serveur Unified Manager.
+
+
+
+* *Cluster*
++
+Affiche le nom du cluster sur lequel réside l'agrégat.
+
+* *Nœud*
++
+Affiche le nom du contrôleur de stockage qui contient l'agrégat.
+
+* *Capacité totale*
++
+Affiche la taille totale des données (en Mo, Go, etc.) de l'agrégat. Par défaut, cette colonne est masquée.
+
+* *Capacité engagée*
++
+Affiche l'espace total (en Mo, Go, etc.) engagé pour tous les volumes de l'agrégat. Par défaut, cette colonne est masquée.
+
+* *Capacité utilisée*
++
+Affiche la quantité d'espace utilisé dans l'agrégat (en Mo, Go, etc.).
+
+* *Capacité disponible*
++
+Affiche la quantité d'espace disponible (en Mo, Go, etc.) pour les données de l'agrégat. Par défaut, cette colonne est masquée.
+
+* *Disponible %*
++
+Affiche le pourcentage d'espace disponible pour les données de l'agrégat. Par défaut, cette colonne est masquée.
+
+* *Utilisé %*
++
+Affiche le pourcentage d'espace utilisé par les données de l'agrégat.
+
+* *Type RAID*
++
+Affiche le type RAID du volume sélectionné. Le type RAID peut être RAID0, RAID4, RAID-DP, RAID-TEC ou Mixed RAID.
+
+

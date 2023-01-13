@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-port-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page de l"explorateur de ports/performances fournit une présentation détaillée des performances de tous les ports d"un cluster.' 
+---
+= Page de l'explorateur de ports/performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page de l'explorateur de ports/performances fournit une présentation détaillée des performances de tous les ports d'un cluster.
+
+[NOTE]
+====
+Les valeurs des compteurs de performances sont affichées pour les ports physiques uniquement. Les valeurs de compteur ne s'affichent pas pour les VLAN ou les groupes d'interfaces.
+
+====
+La page Explorateur de ports/performances vous permet de suivre et de comparer les performances des ports pendant une période donnée, ce qui vous aide à résoudre les problèmes et à affiner les performances de vos ports.
+
+La fonctionnalité Afficher et Comparer permet de comparer les performances de ce port avec :
+
+* autres ports sur le même nœud
+* le nœud sur lequel réside le port
+* LIFs qui sont sur le port
+
+
+[NOTE]
+====
+Seules les LIFs de cluster et de données sont affichées lors du filtrage à l'aide de l'option « LIFs sur ce port ». Aucune LIF intercluster n'est affichée.
+
+====
+Avec la page de l'explorateur de ports/performances, vous pouvez :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivez et comparez les performances des ports
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+

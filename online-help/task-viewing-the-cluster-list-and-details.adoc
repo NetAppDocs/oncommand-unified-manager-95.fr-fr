@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-the-cluster-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page d"inventaire Santé/clusters pour afficher votre inventaire des clusters. La page Health/clusters Storage Summary vous permet d"afficher des informations résumées sur la capacité de stockage et l"utilisation de tous les clusters.' 
+---
+= Affichage de la liste et des détails des clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page d'inventaire Santé/clusters pour afficher votre inventaire des clusters. La page Health/clusters Storage Summary vous permet d'afficher des informations résumées sur la capacité de stockage et l'utilisation de tous les clusters.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez également afficher les détails des clusters individuels, tels que leur état, leur capacité, leur configuration, les LIF, les nœuds, Et disques dans ce cluster en utilisant la page des détails Health/Cluster.
+
+Les détails de la page d'inventaire Health/clusters, de la page Health/clusters Storage Summary et de la page Health/Cluster details vous aident à planifier votre stockage. Par exemple, avant de provisionner un nouvel agrégat, vous pouvez sélectionner un cluster spécifique dans la page d'inventaire Health/clusters et obtenir les détails de capacité pour déterminer si le cluster dispose de l'espace requis.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *clusters*.
+. Dans le menu *View*, sélectionnez *Résumé du stockage* pour afficher des détails sur la capacité de stockage et l'utilisation dans tous les clusters
+. Affichez les détails complets du cluster dans la page *Health/Cluster* details en cliquant sur le nom du cluster.
+

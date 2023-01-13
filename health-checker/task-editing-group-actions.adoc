@@ -1,0 +1,30 @@
+---
+permalink: health-checker/task-editing-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres d"action de groupe que vous avez configurés dans Unified Manager, tels que le nom d"action de groupe, la description, le nom de groupe associé et les paramètres du type d"action.' 
+---
+= Modification des actions de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'action de groupe que vous avez configurés dans Unified Manager, tels que le nom d'action de groupe, la description, le nom de groupe associé et les paramètres du type d'action.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *actions de groupe*, sélectionnez l'action de groupe à modifier, puis cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Modifier l'action de groupe*, modifiez le nom de l'action de groupe, la description, le nom du groupe associé et les paramètres du type d'action, selon les besoins.
+. Cliquez sur *Enregistrer*.
+

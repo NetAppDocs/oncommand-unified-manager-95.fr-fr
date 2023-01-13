@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-assigning-events-to-specific-users.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez attribuer des événements non attribués à vous-même ou à d"autres utilisateurs, y compris des utilisateurs distants. Vous pouvez réattribuer des événements à un autre utilisateur, si nécessaire. Par exemple, en cas de problèmes fréquents sur un objet de stockage, vous pouvez attribuer les événements associés à ces problèmes à l"utilisateur qui gère cet objet.' 
+---
+= Attribution d'événements à des utilisateurs spécifiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez attribuer des événements non attribués à vous-même ou à d'autres utilisateurs, y compris des utilisateurs distants. Vous pouvez réattribuer des événements à un autre utilisateur, si nécessaire. Par exemple, en cas de problèmes fréquents sur un objet de stockage, vous pouvez attribuer les événements associés à ces problèmes à l'utilisateur qui gère cet objet.
+
+
+
+== Avant de commencer
+
+* Le nom et l'ID e-mail de l'utilisateur doivent être configurés correctement.
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Dans la page d'inventaire *Events*, sélectionnez un ou plusieurs événements à affecter.
+. Attribuez l'événement en choisissant l'une des options suivantes :
++
+|===
+| Si vous souhaitez affecter l'événement à... | Alors, procédez comme ça... 
+
+
+ a| 
+Vous-même
+ a| 
+Cliquez sur *attribuer à* > *Me*.
+
+
+
+ a| 
+Un autre utilisateur
+ a| 
+.. Cliquez sur *affecter à* > *un autre utilisateur*.
+.. Dans la boîte de dialogue attribuer un propriétaire, entrez le nom d'utilisateur ou sélectionnez un utilisateur dans la liste déroulante.
+.. Cliquez sur *attribuer*.
++
+Une notification par e-mail est envoyée à l'utilisateur.
+
++
+[NOTE]
+====
+Si vous n'entrez pas de nom d'utilisateur ou sélectionnez un utilisateur dans la liste déroulante et cliquez sur *affecter*, l'événement reste non affecté.
+
+====
+
+
+|===
+

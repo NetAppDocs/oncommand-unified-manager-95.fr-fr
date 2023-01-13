@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-cache-miss-ratio-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le diagramme de compteur Performance Explorer cache Miss ratio affiche le pourcentage de demandes de lecture provenant d"applications client renvoyées à partir du disque au lieu d"être renvoyées à partir du cache.' 
+---
+= Tableau du compteur de performances du rapport de Mlle cache
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le diagramme de compteur Performance Explorer cache Miss ratio affiche le pourcentage de demandes de lecture provenant d'applications client renvoyées à partir du disque au lieu d'être renvoyées à partir du cache.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Le bas de la page du graphique affiche des informations sur le rapport de manque de cache minimum, maximum, moyen et 95e percentile pour la plage de temps sélectionnée.
+
+
+
+== Taux de Miss cache - compteur total
+
+Affiche le pourcentage de demandes de lecture des applications client renvoyées à partir du disque au lieu d'être renvoyées à partir du cache.
+
+Cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un volume.
+
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] qui est associé à un compteur masque et affiche ces informations de compteur du graphique et peut aider à la comparaison d'objets.
+
+

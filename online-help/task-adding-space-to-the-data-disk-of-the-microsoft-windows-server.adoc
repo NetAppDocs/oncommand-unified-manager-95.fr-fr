@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si vous devez augmenter la quantité d"espace disque pour la base de données Unified Manager, vous pouvez ajouter de la capacité au lecteur logique sur lequel Unified Manager est installé.' 
+---
+= Ajout d'espace au lecteur logique du serveur Microsoft Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous devez augmenter la quantité d'espace disque pour la base de données Unified Manager, vous pouvez ajouter de la capacité au lecteur logique sur lequel Unified Manager est installé.
+
+
+
+== Avant de commencer
+
+Vous devez disposer des privilèges d'administrateur Windows.
+
+
+
+== Description de la tâche
+
+Nous vous recommandons de sauvegarder la base de données Unified Manager avant d'ajouter de l'espace disque.
+
+
+
+== Étapes
+
+. Connectez-vous en tant qu'administrateur au serveur Windows sur lequel vous souhaitez ajouter de l'espace disque.
+. Suivez l'étape qui correspond à la méthode que vous souhaitez utiliser pour ajouter de l'espace :
++
+|===
+| Option | Description 
+
+
+ a| 
+Sur un serveur physique, ajoutez de la capacité au lecteur logique sur lequel le serveur Unified Manager est installé.
+ a| 
+Suivez les étapes de la rubrique Microsoft :
+
+https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["Extension d'un volume de base"]
+
+
+
+ a| 
+Sur un serveur physique, ajoutez un disque dur.
+ a| 
+Suivez les étapes de la rubrique Microsoft :
+
+https://msdn.microsoft.com/en-us/library/dd163551.aspx["Ajout de disques durs"]
+
+
+
+ a| 
+Sur une machine virtuelle, augmentez la taille d'une partition de disque.
+ a| 
+Suivez les étapes du sujet VMware :
+
+https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["Augmentation de la taille d'une partition de disque"]
+
+|===
+

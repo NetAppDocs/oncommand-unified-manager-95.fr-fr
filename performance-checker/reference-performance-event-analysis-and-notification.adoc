@@ -1,0 +1,90 @@
+---
+permalink: performance-checker/reference-performance-event-analysis-and-notification.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de performance vous signalent les problèmes de performances d"E/S au niveau d"une charge de travail de volume causée par des conflits dans un composant de cluster. Unified Manager analyse l"événement pour identifier toutes les charges de travail impliquées, le composant dans les conflits et si l"événement reste un problème à résoudre.' 
+---
+= Analyse et notification des événements de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de performance vous signalent les problèmes de performances d'E/S au niveau d'une charge de travail de volume causée par des conflits dans un composant de cluster. Unified Manager analyse l'événement pour identifier toutes les charges de travail impliquées, le composant dans les conflits et si l'événement reste un problème à résoudre.
+
+Unified Manager surveille la latence (temps de réponse) et les IOPS (opérations) des volumes d'un cluster. Lorsque d'autres charges de travail surfont un composant de cluster, par exemple, les conflits sont possibles et le composant ne peut pas fonctionner à un niveau optimal pour répondre aux demandes de charge de travail. Les performances des autres charges de travail qui utilisent le même composant peuvent être affectées, ce qui entraîne une augmentation des latences. Si la latence franchit le seuil de performance, Unified Manager déclenche un événement de performance et envoie une alerte e-mail vous avertie.
+
+
+
+== Analyse des événements
+
+Unified Manager effectue les analyses suivantes, en s'appuyant sur les statistiques de performance des 15 derniers jours, pour identifier les workloads victime, les workloads dominants et le composant de cluster impliqué dans un événement :
+
+* Identifie les charges de travail victimes dont la latence a dépassé le seuil de performance, qui est la limite supérieure de la plage attendue :
++
+** Pour les volumes des agrégats HDD ou Flash Pool (hybride), les événements sont déclenchés uniquement lorsque la latence dépasse 5 millisecondes (ms) et que les IOPS représentent plus de 10 opérations par seconde (OPS/s).
+** Pour les volumes situés sur des agrégats 100 % SSD ou des agrégats FabricPool (composites), les événements sont déclenchés uniquement lorsque la latence est supérieure à 1 ms et que les IOPS sont plus de 100 OPS/s.
+
+
+* Identifie le composant de cluster dans les conflits.
++
+[NOTE]
+====
+Si la latence des charges de travail victimes au niveau de l'interconnexion de cluster est supérieure à 1 ms, Unified Manager le traite comme important et déclenche un événement pour l'interconnexion de cluster.
+
+====
+* Identifie les charges de travail dominantes qui font l'objet d'une surutilisation du composant de cluster et qui l'entraînent des conflits.
+* Classe les charges de travail impliquées, en fonction de leur déviation de l'utilisation ou de l'activité d'un composant du cluster, afin de déterminer les principaux changements d'utilisation du composant du cluster et les victimes les plus affectées.
+
+
+Un événement peut se produire brièvement et se corriger après le composant qu'il utilise n'est plus en conflit. Un événement continu est un événement qui se produit de nouveau pour le même composant de cluster au cours d'un intervalle de cinq minutes et qui reste à l'état actif. Pour les événements continus, Unified Manager déclenche une alerte après avoir détecté le même événement à deux intervalles d'analyse consécutifs. Les événements qui ne sont pas résolus, qui ont un état nouveau, peuvent afficher différents messages de description en tant que charges de travail impliquées dans le changement d'événement.
+
+Lorsqu'un événement est résolu, il reste disponible dans Unified Manager dans le cadre de l'enregistrement des anciens problèmes de performances d'un volume. Chaque événement possède un ID unique qui identifie le type d'événement et les volumes, le cluster et les composants de cluster impliqués.
+
+[NOTE]
+====
+Un seul volume peut être impliqué dans plusieurs événements simultanément.
+
+====
+
+
+== État de l'événement
+
+Les événements peuvent être dans l'un des États suivants :
+
+* *Actif*
++
+Indique que l'événement de performance est actuellement actif (nouveau ou reconnu). Le problème à l'origine de l'incident n'a pas été corrigé lui-même ou n'a pas été résolu. Le compteur de performances de l'objet de stockage reste au-dessus du seuil de performance.
+
+* *Obsolète*
++
+Indique que l'incident n'est plus actif. Le problème à l'origine de l'incident s'est corrigé ou a été résolu. Le compteur de performance de l'objet de stockage n'est plus au-dessus du seuil de performance.
+
+
+
+
+
+== Notification d'événement
+
+Les alertes d'événement s'affichent sur la page tableaux de bord/Présentation, tableaux de bord/performances, page Détails performances/Volume et sont envoyées à des adresses e-mail spécifiées. Vous pouvez afficher des informations d'analyse détaillées sur un événement et obtenir des suggestions de résolution de cet événement sur la page Détails de l'événement.
+
+image::../media/opm-single-incident-rt-jpg.gif[Un seul événement sur le graphique latence dans Performance Manager]
+
+Dans cet exemple, un événement est indiqué par un point rouge (image:../media/opm-incident-icon-png.gif["Icône d'incident de Performance Manager"]) Sur le graphique latence de la page Détails performances/Volume. Lorsque vous déplacez le curseur de la souris sur le point rouge, une fenêtre contextuelle contenant plus de détails sur l'événement et les options d'analyse s'affiche.
+
+
+
+== Interaction d'événement
+
+Sur la page Performance/Volume Details, vous pouvez interagir avec les événements de l'une des manières suivantes :
+
+* Le déplacement du pointeur sur un point rouge affiche un message indiquant l'ID de l'événement, la latence, le nombre d'opérations par seconde, ainsi que la date et l'heure de détection de l'événement.
++
+S'il y a plusieurs événements pour la même période, le message affiche le nombre d'événements, ainsi que la latence moyenne et les opérations par seconde pour le volume.
+
+* Lorsque vous cliquez sur un seul événement, une boîte de dialogue affiche des informations plus détaillées sur l'événement, notamment les composants de cluster impliqués, similaires à la section Résumé de la page Détails de l'événement.
++
+Le composant en conflit est entouré et mis en évidence en rouge. Vous pouvez cliquer sur l'ID d'événement ou sur *Afficher l'analyse complète* pour afficher l'analyse complète sur la page Détails de l'événement. S'il existe plusieurs événements pour la même période, la boîte de dialogue affiche des détails sur les trois événements les plus récents. Vous pouvez cliquer sur un ID d'événement pour afficher l'analyse d'événement sur la page Détails de l'événement. S'il y a plus de trois événements pour la même période, le fait de cliquer sur le point rouge n'affiche pas la boîte de dialogue.
+
+

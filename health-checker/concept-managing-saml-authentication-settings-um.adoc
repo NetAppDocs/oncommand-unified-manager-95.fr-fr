@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-managing-saml-authentication-settings-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une fois les paramètres d"authentification à distance configurés, vous pouvez activer l"authentification Security assertion Markup Language \(SAML\) pour que les utilisateurs distants soient authentifiés par un fournisseur d"identité sécurisé \(IDP\) avant d"accéder à l"interface utilisateur Web Unified Manager.' 
+---
+= Gestion des paramètres d'authentification SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez configuré les paramètres d'authentification à distance, vous pouvez activer l'authentification SAML afin que les utilisateurs distants soient authentifiés par un fournisseur d'identités sécurisé avant d'accéder à l'interface utilisateur Web Unified Manager.
+
+Notez que seuls les utilisateurs distants ont accès à l'interface utilisateur graphique Unified Manager une fois l'authentification SAML activée. Les utilisateurs locaux et les utilisateurs de maintenance ne pourront pas accéder à l'interface utilisateur. Cette configuration n'a aucun impact sur les utilisateurs qui accèdent à la console de maintenance.

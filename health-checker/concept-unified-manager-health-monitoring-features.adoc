@@ -1,0 +1,54 @@
+---
+permalink: health-checker/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager repose sur une infrastructure de serveurs qui offre évolutivité, compatibilité et fonctionnalités avancées de surveillance et de notification. Unified Manager prend en charge la surveillance des systèmes exécutant le logiciel ONTAP. 
+---
+= Fonctionnalités de contrôle de l'état de santé de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager repose sur une infrastructure de serveurs qui offre évolutivité, compatibilité et fonctionnalités avancées de surveillance et de notification. Unified Manager prend en charge la surveillance des systèmes exécutant le logiciel ONTAP.
+
+Unified Manager comprend les fonctionnalités suivantes :
+
+* Découverte, surveillance et notifications pour les systèmes installés avec le logiciel ONTAP :
++
+** Objets physiques : nœuds, disques, tiroirs disques, paires SFO, ports, Et Flash cache
+** Objets logiques : clusters, serveurs virtuels de stockage (SVM), agrégats, volumes, LUN, namespaces, Qtrees, LIF, copies Snapshot, chemins de jonction, exportations NFS, Partages CIFS, quotas d'utilisateur et de groupe, groupes initiateurs
+** Protocoles : CIFS, NFS, FC, iSCSI, NVMe, Et FCoE
+** Efficacité du stockage : agrégats SSD, agrégats Flash Pool, agrégats FabricPool, déduplication et compression
+** Protection : relations SnapMirror (synchrones et asynchrones) et relations SnapVault
+
+
+* Affichage de la détection et du contrôle du cluster
+* Configuration MetroCluster : affichage et contrôle de la configuration, des commutateurs et ponts MetroCluster, des problèmes et de l'état de connectivité des composants du cluster
+* Alertes améliorées, événements et infrastructure de seuils
+* Prise en charge des utilisateurs locaux, de LDAP, LDAPS, de l'authentification SAML
+* RBAC (pour un ensemble de rôles prédéfinis)
+* AutoSupport et bundle de support
+* Tableau de bord amélioré pour afficher la capacité, la disponibilité, la protection et l'état des performances de l'environnement
+* Interopérabilité du déplacement de volumes, historique des déplacements de volumes et historique des modifications apportées au chemin de jonction
+* Étendue de la zone d'impact qui affiche sous forme graphique les ressources affectées par des événements tels que des disques défaillants, la mise en miroir des agrégats MetroCluster dégradés et les disques de rechange MetroCluster laissés derrière des événements
+* Zone d'effet possible affichant l'impact des événements MetroCluster
+* Actions correctives suggérées : affiche les actions nécessaires pour gérer des événements tels que des disques défaillants, la mise en miroir de l'agrégat MetroCluster dégradé et les disques de rechange MetroCluster laissés en retard
+* Ressources susceptibles d'être affectées zone affichant les ressources susceptibles d'être affectées pour des événements tels que l'événement Volume hors ligne, Volume restreint et l'événement Volume à provisionnement fin en cas de risque
+* Prise en charge des SVM avec :
++
+** Volumes FlexVol
+** Volumes FlexGroup
+** Infinite volumes
+
+
+* Prise en charge de la surveillance des volumes racines des nœuds
+* Contrôle amélioré des copies Snapshot, y compris le calcul de l'espace récupérable et la suppression des copies Snapshot
+* Annotations pour les objets de stockage
+* Création et gestion de rapports sur les informations d'objet de stockage, telles que la capacité physique et logique, l'utilisation, les économies d'espace et les événements associés
+* Intégration avec OnCommand Workflow Automation pour exécuter les flux de travail
++
+Le site Storage Automation Store comprend des packs de flux de travail de stockage automatisés certifiés NetApp conçus pour être utilisés avec OnCommand Workflow Automation (WFA). Vous pouvez télécharger les packs, puis les importer dans WFA pour les exécuter. Les workflows automatisés sont disponibles à l'adresse suivante link:https://automationstore.netapp.com["Le Storage Automation Store"]
+
+

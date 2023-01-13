@@ -1,0 +1,36 @@
+---
+permalink: online-help/concept-what-conditions-and-condition-sets-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Les conditions sont un ensemble de critères de correspondance basés sur les propriétés de règle, telles que le nom du fichier, le chemin du répertoire et le propriétaire, qui définissent une règle. Une collection de ces conditions est appelée un ensemble de conditions. Vous pouvez utiliser des conditions et des ensembles de conditions uniquement pour les règles personnalisées afin de déterminer où placer le contenu écrit dans votre Infinite Volume. 
+---
+= Quelles sont les conditions et les ensembles de conditions
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Conditions_ sont un ensemble de critères de correspondance basés sur des propriétés de règle, telles que le nom du fichier, le chemin du répertoire et le propriétaire, qui définissent une règle. Une collection de ces conditions est appelée ensemble de _conditions_. Vous pouvez utiliser des conditions et des ensembles de conditions uniquement pour les règles personnalisées afin de déterminer où placer le contenu écrit dans votre Infinite Volume.
+
+
+
+== Conditions
+
+Pour une règle personnalisée, vous pouvez spécifier des conditions en fonction des propriétés de la règle, telles que le nom du fichier, le chemin du répertoire ou le propriétaire, ou une combinaison de toutes les propriétés de la règle. La logique est similaire à une opération et à une opération booléenne. Par exemple, en utilisant des conditions, vous pouvez créer une règle personnalisée pour placer des fichiers avec `.mp3` Extensions et fichiers appartenant à John dans le chemin du répertoire commençant par `/NS/`.
+
+
+
+== Ensembles de conditions
+
+La logique utilisée pour les ensembles de conditions est similaire à une opération ou une opération booléenne. Par exemple, en utilisant des conditions et des ensembles de conditions, vous pouvez créer une règle personnalisée complexe qui correspond à l'une des conditions suivantes :
+
+* condition-1
++
+Tous les dossiers appartenant à Marie et sont placés dans `/NS/Eng/`
+
+* condition-2
++
+Tous les fichiers dont le nom se termine ``.pdf``Et la propriété de Mary
+
+

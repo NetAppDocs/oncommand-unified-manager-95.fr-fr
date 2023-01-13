@@ -1,0 +1,83 @@
+---
+permalink: online-help/task-viewing-fabricpool-capacity-information.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez afficher les informations relatives à la capacité FabricPool des clusters, des agrégats et des volumes dans les pages Health Inventory et Details de ces objets. Vous pouvez également afficher les informations relatives aux FabricPool dans le rapport capacité/utilisation des agrégats. 
+---
+= Affichage des informations de capacité FabricPool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les informations relatives à la capacité FabricPool des clusters, des agrégats et des volumes dans les pages Health Inventory et Details de ces objets. Vous pouvez également afficher les informations relatives aux FabricPool dans le rapport capacité/utilisation des agrégats.
+
+
+
+== Description de la tâche
+
+Ces pages affichent des informations, telles que la capacité disponible sur le Tier de performance local et sur le Tier cloud, la capacité utilisée dans les deux tiers, des agrégats connectés à un niveau cloud, Et quels volumes implémentent les fonctionnalités FabricPool en déplaçant certaines informations vers le Tier cloud.
+
+
+
+== Étapes
+
+. Effectuez l'une des opérations suivantes :
++
+|===
+| Pour afficher les informations de capacité pour... | Procédez comme ça... 
+
+
+ a| 
+Clusters
+ a| 
+.. Sur la page d'inventaire Health/clusters, cliquez sur un cluster.
+.. Sur la page Détails de l'intégrité/cluster, cliquez sur l'onglet *Configuration*.
++
+L'écran affiche les noms de tous les niveaux de Cloud auxquels le cluster est connecté.
+
+
+
+
+
+ a| 
+64 bits
+ a| 
+.. Sur la page d'inventaire Santé/agrégats, cliquez sur un agrégat dans lequel le champ Type indique "SD (FabricPool)".
+.. Sur la page des détails Santé/agrégat, cliquez sur l'onglet *capacité*.
++
+L'écran affiche la capacité totale, ainsi que l'espace utilisé et libre dans le Tier cloud.
+
+.. Cliquez sur l'onglet *Disk information*.
++
+L'affichage indique le nom du niveau de nuage et l'espace disponible.
+
+.. Cliquez sur l'onglet *Configuration*.
++
+L'affichage indique le nom du Tier de cloud ainsi que d'autres informations détaillées sur le magasin d'objets.
+
+
+
+
+
+ a| 
+Volumes
+ a| 
+.. Sur la page d'inventaire Santé/volumes, cliquez sur un volume où un nom de règle apparaît dans le champ « politique de hiérarchisation ».
+.. Sur la page Détails de l'état/volume, cliquez sur l'onglet *Configuration*.
++
+L'affichage indique le nom de la règle de hiérarchisation FabricPool attribuée au volume.
+
+
+
+|===
+
+
+
+
+== Une fois que vous avez terminé
+
+Pour plus d'informations sur les agrégats FabricPool, consultez le _guide d'alimentation des disques et des agrégats ONTAP 9_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["Guide d'alimentation des agrégats et disques ONTAP 9"]

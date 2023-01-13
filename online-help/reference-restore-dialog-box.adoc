@@ -1,0 +1,107 @@
+---
+permalink: online-help/reference-restore-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Restaurer permet de restaurer les données sur un volume à partir d"une copie Snapshot spécifique.' 
+---
+= Restaurer la boîte de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Restaurer permet de restaurer les données sur un volume à partir d'une copie Snapshot spécifique.
+
+
+
+== Source de restauration
+
+La zone Restaurer à partir de vous permet de spécifier l'emplacement de restauration des données.
+
+* *Volume*
++
+Spécifie le volume à partir duquel vous souhaitez restaurer les données. Par défaut, le volume sur lequel vous avez lancé l'action de restauration est sélectionné. Vous pouvez sélectionner un volume différent dans la liste déroulante contenant tous les volumes avec des relations de protection sur le volume sur lequel vous avez lancé l'action de restauration.
+
+* *Copie snapshot*
++
+Spécifie la copie Snapshot que vous souhaitez utiliser pour restaurer les données. Par défaut, la copie Snapshot la plus récente est sélectionnée. Vous pouvez également sélectionner une autre copie Snapshot dans la liste déroulante. La liste des copies Snapshot change en fonction du volume sélectionné.
+
+* *Liste maximum de 995 fichiers et répertoires*
++
+Par défaut, un maximum de 995 objets sont affichés dans la liste. Vous pouvez désélectionner cette case pour afficher tous les objets du volume sélectionné. Cette opération peut prendre un certain temps si le nombre d'éléments est très important.
+
+
+
+
+
+== Sélectionnez les éléments à restaurer
+
+La zone Sélectionner les éléments à restaurer vous permet de sélectionner le volume entier ou les fichiers et dossiers spécifiques que vous souhaitez restaurer. Vous pouvez sélectionner un maximum de 10 fichiers, dossiers ou une combinaison des deux. Lorsque le nombre maximum d'éléments est sélectionné, les cases à cocher de sélection d'élément sont désactivées.
+
+* *Champ chemin*
++
+Affiche le chemin d'accès aux données à restaurer. Vous pouvez naviguer vers le dossier et les fichiers que vous souhaitez restaurer ou saisir le chemin d'accès. Ce champ est vide jusqu'à ce que vous sélectionniez ou tapez un chemin. Cliquez sur image:../media/icon-upfolder.gif[""] une fois que vous avez choisi un chemin, vous vous déplacez vers le haut d'un niveau dans la structure de répertoires.
+
+* *Liste de dossiers et de fichiers*
++
+Affiche le contenu du chemin que vous avez entré. Par défaut, le dossier racine s'affiche initialement. Cliquez sur un nom de dossier pour afficher le contenu du dossier.
+
+
+
+Vous pouvez sélectionner les éléments à restaurer comme suit :
+
+* Lorsque vous entrez le chemin d'accès avec un nom de fichier particulier spécifié dans le champ chemin d'accès, le fichier spécifié s'affiche dans les dossiers et les fichiers.
+* Lorsque vous entrez un chemin sans spécifier de fichier particulier, le contenu du dossier s'affiche dans la liste dossiers et fichiers et vous pouvez sélectionner jusqu'à 10 fichiers, dossiers ou une combinaison des deux pour restaurer.
++
+Si un dossier contient plus de 995 éléments, un message s'affiche pour indiquer qu'il y a trop d'éléments à afficher et si vous poursuivez l'opération, tous les éléments du dossier spécifié sont restaurés. Vous pouvez désélectionner la case « liste maximale de 995 fichiers et répertoires » si vous souhaitez afficher tous les objets du volume sélectionné.
+
+
+
+[NOTE]
+====
+Vous ne pouvez pas restaurer les flux de fichiers NTFS.
+
+====
+
+
+== Cible de restauration
+
+La zone Restaurer à vous permet de spécifier l'emplacement où vous souhaitez restaurer les données.
+
+* *Emplacement d'origine dans `Volume_Name`*
++
+Restaure les données sélectionnées dans le répertoire de la source à partir duquel les données ont été sauvegardées à l'origine.
+
+* *Autre emplacement*
++
+Restaure les données sélectionnées à un nouvel emplacement :
+
++
+** Chemin de restauration
++
+Spécifie un chemin alternatif pour restaurer les données sélectionnées. Le chemin doit déjà exister. Vous pouvez utiliser le bouton *Browse* pour naviguer jusqu'à l'emplacement où vous souhaitez restaurer les données, ou vous pouvez entrer le chemin manuellement à l'aide du format cluster://svm/volume/path.
+
+** Conserver la hiérarchie du répertoire
++
+Lorsque cette case est cochée, conserve la structure du fichier ou du répertoire d'origine. Par exemple, si la source est /A/B/C/MyFile.txt et que la destination est /X/y/Z, Unified Manager restaure les données à l'aide de la structure de répertoires suivante sur la destination : /X/y/Z/A/B/C/monfile.txt.
+
+
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Annuler*
++
+Supprime vos sélections et ferme la boîte de dialogue Restaurer.
+
+* *Restaurer*
++
+Applique vos sélections et lance le processus de restauration.
+
+

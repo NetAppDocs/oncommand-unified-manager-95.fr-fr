@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-deleting-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez supprimer des associations SVM pour les applications partenaires afin de supprimer la relation de provisionnement secondaire entre les SVM source et destination. Par exemple, lorsque la SVM de destination est pleine et que vous souhaitez créer une nouvelle association de protection des SVM. 
+---
+= Suppression des associations de SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer des associations SVM pour les applications partenaires afin de supprimer la relation de provisionnement secondaire entre les SVM source et destination. Par exemple, lorsque la SVM de destination est pleine et que vous souhaitez créer une nouvelle association de protection des SVM.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Le bouton *Delete* est désactivé jusqu'à ce qu'au moins une association SVM soit sélectionnée. La modification d'associations à l'aide des fonctions DELETE et create affecte uniquement les opérations de provisioning futures ; elle ne déplace pas les volumes de destination existants.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *associations SVM*.
+. Sélectionnez au moins une association de SVM.
++
+Le bouton *Supprimer* est activé.
+
+. Cliquez sur *Supprimer.*
++
+Une boîte de dialogue d'avertissement s'affiche.
+
+. Cliquez sur *Oui* pour continuer.
++
+L'association SVM sélectionnée est supprimée de la liste.
+
+

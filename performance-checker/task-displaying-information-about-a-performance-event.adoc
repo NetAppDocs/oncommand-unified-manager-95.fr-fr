@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/task-displaying-information-about-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page d"inventaire des événements pour afficher la liste de tous les événements de performances nouveaux et obsolètes sur les clusters contrôlés par Unified Manager. Ces informations vous permettent de déterminer les événements les plus critiques, puis d"accéder à des informations détaillées afin de déterminer la cause de l"événement.' 
+---
+= Affichage des informations relatives aux événements de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page d'inventaire des événements pour afficher la liste de tous les événements de performances nouveaux et obsolètes sur les clusters contrôlés par Unified Manager. Ces informations vous permettent de déterminer les événements les plus critiques, puis d'accéder à des informations détaillées afin de déterminer la cause de l'événement.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* En effet, il doit y avoir de nouveaux événements ou des événements de performances obsolètes.
+
+
+
+
+== Description de la tâche
+
+La liste des événements est triée par heure détectée, avec les événements les plus récents répertoriés en premier. Vous pouvez cliquer sur un en-tête de colonne pour trier les événements en fonction de cette colonne. Par exemple, vous pouvez trier les événements par colonne État pour afficher les événements par gravité. Si vous recherchez un événement spécifique ou un type d'événement spécifique, vous pouvez utiliser le filtre et les mécanismes de recherche pour affiner la liste des événements qui apparaissent dans la liste.
+
+Les événements de toutes les sources s'affichent sur cette page :
+
+* Règle de seuil de performance définie par l'utilisateur
+* Règle seuil de performance défini par le système
+* Seuil de performances dynamiques
+
+
+La colonne Type d'événement répertorie la source de l'événement. Vous pouvez sélectionner un événement pour afficher les détails de l'événement sur la page Détails de l'événement.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Recherchez un événement à analyser et cliquez sur son nom.
++
+La page de détails de l'événement s'affiche.
+
++
+[NOTE]
+====
+Vous pouvez également afficher la page de détails d'un événement en cliquant sur le lien du nom de l'événement dans la page de l'explorateur de performances et dans un e-mail d'alerte.
+
+====
+

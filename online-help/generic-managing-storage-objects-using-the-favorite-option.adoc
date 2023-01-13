@@ -1,0 +1,41 @@
+---
+permalink: online-help/generic-managing-storage-objects-using-the-favorite-option.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"option Favoris permet d"afficher et de gérer les objets de stockage sélectionnés dans Unified Manager en les marquant comme favoris. Vous pouvez consulter rapidement l"état de vos objets de stockage favoris et corriger les problèmes avant qu"ils ne deviennent critiques.' 
+---
+= Gestion des objets de stockage à l'aide de l'option Favoris
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'option Favoris permet d'afficher et de gérer les objets de stockage sélectionnés dans Unified Manager en les marquant comme favoris. Vous pouvez consulter rapidement l'état de vos objets de stockage favoris et corriger les problèmes avant qu'ils ne deviennent critiques.
+
+
+
+== Les tâches que vous pouvez effectuer à partir du tableau de bord des favoris
+
+* Afficher la liste des objets de stockage marqués comme favoris.
+* Ajouter des objets de stockage à la liste Favoris.
+* Supprimer des objets de stockage de la liste Favoris.
+
+
+
+
+== Affichage de la liste des favoris
+
+Vous pouvez afficher les informations relatives à la capacité, aux performances et à la protection des objets de stockage sélectionnés à partir de la liste des favoris. Les détails d'un maximum de 20 objets de stockage sont affichés dans la liste Favoris.
+
+
+
+== Ajout d'objets de stockage à la liste Favoris
+
+Vous pouvez ajouter des objets de stockage à la liste des favoris, puis surveiller ces objets pour vérifier leur état, leur capacité et leurs performances. Vous pouvez uniquement marquer les clusters, les volumes et les agrégats comme favoris.
+
+
+
+== Suppression d'objets de stockage de la liste Favoris
+
+Vous pouvez supprimer des objets de stockage de la liste des favoris lorsque vous n'avez plus besoin que ceux-ci soient marqués comme favoris.

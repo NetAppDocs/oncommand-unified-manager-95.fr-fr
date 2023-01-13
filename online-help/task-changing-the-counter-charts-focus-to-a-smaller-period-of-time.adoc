@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-changing-the-counter-charts-focus-to-a-smaller-period-of-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la souris pour réduire la plage de temps pour vous concentrer sur une période spécifique dans le volet Tableau des compteurs ou dans la fenêtre vue Zoom des diagrammes des compteurs. Cela vous permet d"obtenir une vue plus granulaire et microscopique de n"importe quelle partie de la chronologie des données de performances, des événements et des seuils.' 
+---
+= Modification de la mise au point des compteurs sur une période de temps plus courte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la souris pour réduire la plage de temps pour vous concentrer sur une période spécifique dans le volet Tableau des compteurs ou dans la fenêtre vue Zoom des diagrammes des compteurs. Cela vous permet d'obtenir une vue plus granulaire et microscopique de n'importe quelle partie de la chronologie des données de performances, des événements et des seuils.
+
+
+
+== Avant de commencer
+
+Le curseur doit avoir été remplacé par une loupe pour indiquer que cette fonctionnalité est active.
+
+[NOTE]
+====
+Lors de l'utilisation de cette fonction, qui modifie la ligne de temps pour afficher des valeurs correspondant à l'affichage plus granulaire, la plage de temps et de dates du sélecteur *plage de temps* ne change pas des valeurs d'origine du graphique.
+
+====
+
+
+== Étapes
+
+. Pour effectuer un zoom sur une période spécifique, cliquez à l'aide de la loupe et faites glisser la souris pour mettre en surbrillance la zone à afficher en détail.
++
+Les valeurs de compteur pour la période de temps que vous sélectionnez remplissent le compteur.
+
+. Pour revenir à la période d'origine définie dans le sélecteur *Time Range*, cliquez sur le bouton *Reset Chart Zoom*.
++
+Le compteur s'affiche dans son état d'origine.
+
+

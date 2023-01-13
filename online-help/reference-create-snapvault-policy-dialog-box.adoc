@@ -1,0 +1,78 @@
+---
+permalink: online-help/reference-create-snapvault-policy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Créer une stratégie de SnapVault vous permet de créer une règle afin de définir la priorité des transferts SnapVault. Vous utilisez les règles pour optimiser l"efficacité des transferts du volume primaire vers le volume secondaire.' 
+---
+= Boîte de dialogue Créer une stratégie SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Créer une stratégie de SnapVault vous permet de créer une règle afin de définir la priorité des transferts SnapVault. Vous utilisez les règles pour optimiser l'efficacité des transferts du volume primaire vers le volume secondaire.
+
+* *Cluster de destination*
++
+Nom du cluster que vous avez sélectionné dans l'onglet SnapVault de la boîte de dialogue configurer la protection.
+
+* *SVM de destination*
++
+Nom du SVM que vous avez sélectionné dans l'onglet SnapVault de la boîte de dialogue configurer la protection.
+
+* *Nom de la politique*
++
+Nom que vous indiquez pour la nouvelle stratégie. Les noms des polices peuvent être composés des caractères A à Z, a à z, 0 à 9, point (.), tiret (-), et trait de soulignement (_).
+
+* *Priorité de transfert*
++
+Priorité à laquelle le transfert est exécuté. Vous pouvez sélectionner Normal ou Bas. Transférez des relations avec des stratégies qui spécifient une priorité de transfert normale exécutée avant celles qui disposent de stratégies définissant une priorité de transfert faible. Le paramètre par défaut est Normal.
+
+* *Commentaire*
++
+Champ facultatif dans lequel vous pouvez ajouter un commentaire sur la stratégie SnapVault d'un maximum de 255 caractères.
+
+* *Ignorer le temps d'accès*
++
+Indique si les transferts incrémentiels sont ignorés pour les fichiers dont le temps d'accès a seulement été modifié.
+
+* *Libellé de réplication*
++
+Répertorie dans un tableau les règles associées aux copies Snapshot sélectionnées par ONTAP qui ont une étiquette de réplication spécifique dans une règle. Les informations et actions suivantes sont également disponibles :
+
++
+** Boutons de commande
++
+Les boutons de commande permettent d'effectuer les opérations suivantes :
+
++
+*** Autres
++
+Permet de créer une étiquette de copie Snapshot et un nombre de conservation.
+
+*** Modifier le nombre de rétention
++
+Permet de modifier le nombre de rétention d'une étiquette de copie Snapshot existante. Le nombre de rétention doit être compris entre 1 et 251. La somme de tous les comptes de rétention pour toutes les règles ne peut pas dépasser 251.
+
+*** Supprimer
++
+Permet de supprimer une étiquette de copie Snapshot existante.
+
+
+
+** Étiquette de copie Snapshot
++
+Affiche l'étiquette de copie Snapshot. Si vous sélectionnez un ou plusieurs volumes avec la même règle de copie Snapshot locale, une entrée pour chaque étiquette de la règle s'affiche. Si vous sélectionnez plusieurs volumes disposant d'au moins deux règles de copie Snapshot locales, le tableau affiche toutes les étiquettes de toutes les règles
+
+** Planification
++
+Affiche la planification associée à chaque étiquette de copie Snapshot. Si plusieurs horaires sont associés à une étiquette, les planifications de cette étiquette s'affichent dans une liste séparée par des virgules. Si vous sélectionnez plusieurs volumes avec le même libellé mais avec des planifications différentes, la planification affiche « divers » pour indiquer que plusieurs planifications sont associées aux volumes sélectionnés.
+
+** Nombre de rétention de destination
++
+Affiche le nombre de copies Snapshot avec l'étiquette spécifiée qui sont conservées sur le serveur secondaire SnapVault. Le nombre de rétention pour les étiquettes comportant plusieurs horaires affiche la somme des comptages de rétention de chaque paire d'étiquettes et d'horaires. Si vous sélectionnez plusieurs volumes avec au moins deux règles de copie Snapshot locales, le nombre de rétention est vide.
+
+
+
+

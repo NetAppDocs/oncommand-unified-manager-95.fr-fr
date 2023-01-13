@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez interrompre une relation de protection à partir de la page de détails de l"état/du volume et arrêter les transferts de données entre un volume source et un volume cible dans une relation SnapMirror. Vous pouvez briser une relation lorsque vous souhaitez migrer des données, pour la reprise d"activité ou pour le test d"application. Le volume de destination est modifié en volume de lecture-écriture. Vous ne pouvez pas interrompre une relation SnapVault.' 
+---
+= Briser une relation SnapMirror depuis la page des détails de l'état/du volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez interrompre une relation de protection à partir de la page de détails de l'état/du volume et arrêter les transferts de données entre un volume source et un volume cible dans une relation SnapMirror. Vous pouvez briser une relation lorsque vous souhaitez migrer des données, pour la reprise d'activité ou pour le test d'application. Le volume de destination est modifié en volume de lecture-écriture. Vous ne pouvez pas interrompre une relation SnapVault.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Étapes
+
+. Dans l'onglet *protection* de la page de détails *Santé/Volume*, sélectionnez dans la topologie la relation SnapMirror que vous souhaitez rompre.
+. Cliquez avec le bouton droit de la souris sur la destination et sélectionnez *Pause* dans le menu.
++
+La boîte de dialogue rompre la relation s'affiche.
+
+. Cliquez sur *Continuer* pour rompre la relation.
+. Dans la topologie, vérifiez que la relation est rompue.
+

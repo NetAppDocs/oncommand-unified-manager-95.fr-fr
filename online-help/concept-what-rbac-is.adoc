@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le contrôle d"accès basé sur des rôles \) permet de contrôler qui a accès à diverses fonctionnalités et ressources du serveur OnCommand Unified Manager.' 
+---
+= En quoi consiste le RBAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôle d'accès basé sur des rôles (RBAC) vous permet de contrôler l'accès aux différentes fonctionnalités et ressources du serveur OnCommand Unified Manager.

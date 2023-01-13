@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-reordering-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier l"ordre des actions de groupe à appliquer aux objets de stockage d"un groupe. Les actions de groupe sont appliquées aux objets de stockage de façon séquentielle en fonction de leur rang. Le rang le plus bas est affecté à l"action de groupe que vous avez configurée en dernier. Vous pouvez modifier le classement de l"action de groupe en fonction de vos besoins.' 
+---
+= Réorganisation des actions de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier l'ordre des actions de groupe à appliquer aux objets de stockage d'un groupe. Les actions de groupe sont appliquées aux objets de stockage de façon séquentielle en fonction de leur rang. Le rang le plus bas est affecté à l'action de groupe que vous avez configurée en dernier. Vous pouvez modifier le classement de l'action de groupe en fonction de vos besoins.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez sélectionner une ou plusieurs lignes, puis effectuer plusieurs opérations glisser-déposer pour modifier le rang des actions de groupe. Cependant, vous devez enregistrer les modifications pour que la nouvelle hiérarchisation soit reflétée dans la grille des actions de groupe.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *actions de groupe*, cliquez sur *Réordonner*.
+. Dans la boîte de dialogue *Réordonner les actions de groupe*, faites glisser les lignes pour réorganiser la séquence des actions de groupe, si nécessaire.
+. Cliquez sur *Enregistrer*.
+

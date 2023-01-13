@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-event-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Configuration/gestion des événements affiche la liste des événements désactivés et fournit des informations telles que le type d"objet associé et la gravité de l"événement. Vous pouvez également effectuer des tâches telles que la désactivation ou l"activation globale des événements.' 
+---
+= Page Configuration/gestion des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Configuration/gestion des événements affiche la liste des événements désactivés et fournit des informations telles que le type d'objet associé et la gravité de l'événement. Vous pouvez également effectuer des tâches telles que la désactivation ou l'activation globale des événements.
+
+Vous ne pouvez accéder à cette page que si vous avez le rôle Administrateur OnCommand ou Administrateur stockage.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour les événements sélectionnés :
+
+* *Désactiver*
++
+Lance la boîte de dialogue Désactiver les événements, que vous pouvez utiliser pour désactiver les événements.
+
+* *Activer*
++
+Active les événements sélectionnés que vous avez choisi de désactiver précédemment.
+
+* *Abonnez-vous à EMS Events*
++
+Lance la boîte de dialogue s'abonner aux événements EMS, qui vous permet de vous abonner à la réception d'événements EMS spécifiques des clusters que vous surveillez. Le EMS collecte des informations sur les événements se produisant sur le cluster. Lorsqu'une notification est reçue pour un événement EMS auquel vous êtes abonné, un événement Unified Manager est généré avec le niveau de gravité approprié.
+
+* *Paramètres de conservation des événements*
++
+Lance la boîte de dialogue Paramètres de conservation des événements, qui vous permet de spécifier la période de conservation après laquelle les informations, les événements résolus et obsolètes sont supprimés du serveur de gestion. La valeur de rétention par défaut est de 180 jours.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche (sous forme de tableau) des informations sur les événements désactivés. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Événement*
++
+Affiche le nom de l'événement désactivé.
+
+* *Gravité*
++
+Affiche la gravité de l'événement. La gravité peut être critique, erreur, Avertissement ou information.
+
+* *Type de source*
++
+Affiche le type de source pour lequel l'événement est généré.
+
+

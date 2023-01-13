@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-understanding-the-root-object.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"objet racine est la référence par rapport à laquelle d"autres comparaisons d"objets sont effectuées. Vous pouvez ainsi afficher et comparer les données d"autres objets avec l"objet racine, pour une analyse des données de performances permettant de résoudre et d"améliorer les performances de vos objets.' 
+---
+= Présentation de l'objet racine
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'objet racine est la référence par rapport à laquelle d'autres comparaisons d'objets sont effectuées. Vous pouvez ainsi afficher et comparer les données d'autres objets avec l'objet racine, pour une analyse des données de performances permettant de résoudre et d'améliorer les performances de vos objets.
+
+Le nom de l'objet racine s'affiche en haut du volet de comparaison. Des objets supplémentaires s'affichent sous l'objet racine. Bien qu'il n'y ait pas de limite au nombre d'objets supplémentaires que vous pouvez ajouter au volet de comparaison, un seul objet racine est autorisé. Les données de l'objet racine s'affichent automatiquement dans les graphiques du volet compteurs.
+
+Vous ne pouvez pas modifier l'objet racine ; il est toujours défini sur la page d'objet que vous consultez. Par exemple, si vous ouvrez la page Volume Performance Explorer de Volume1, Volume1 est l'objet racine et ne peut pas être modifié. Si vous voulez comparer à un autre objet racine, vous devez cliquer sur le lien d'un objet et ouvrir sa page d'accueil.
+
+[NOTE]
+====
+Les événements et les seuils s'affichent uniquement pour les objets racine.
+
+====

@@ -1,0 +1,84 @@
+---
+permalink: online-help/task-viewing-workload-qos-minimum-and-maximum-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher les paramètres de règles de qualité de service \(QoS\) définies par ONTAP sur un volume ou une LUN dans les graphiques de l"explorateur de performances. La définition maximale du débit limite l"impact des workloads concurrents sur les ressources système. La valeur minimale du débit permet de s"assurer qu"une charge de travail critique satisfait aux objectifs de débit minimaux, indépendamment de la demande des charges de travail concurrentes.' 
+---
+= Affichage des paramètres minimal et maximal de la QoS des charges de travail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les paramètres de règles de qualité de service (QoS) définies par ONTAP sur un volume ou une LUN dans les graphiques de l'explorateur de performances. La définition maximale du débit limite l'impact des workloads concurrents sur les ressources système. La valeur minimale du débit permet de s'assurer qu'une charge de travail critique satisfait aux objectifs de débit minimaux, indépendamment de la demande des charges de travail concurrentes.
+
+
+
+== Description de la tâche
+
+Les paramètres d'IOPS et de Mbit/s du débit QoS « minimum » et « maimum » ne sont affichés dans les diagrammes de compteur que s'ils ont été configurés dans ONTAP. Les paramètres de débit minimal sont uniquement disponibles sur les systèmes qui exécutent le logiciel ONTAP 9.2 ou version ultérieure, uniquement sur les systèmes AFF. Ils peuvent être définis uniquement pour la valeur d'IOPS pour le moment.
+
+Les règles de QoS adaptative sont disponibles à partir de ONTAP 9.3 et sont exprimées en IOPS/To au lieu des IOPS. Ces règles ajustent automatiquement la valeur de la règle de qualité de services en fonction de la taille du volume, par charge de travail, ainsi le rapport IOPS/téraoctets selon la taille du volume modifié. Vous pouvez appliquer un « policy group » de QoS adaptative aux volumes uniquement. La terminologie de la qualité de service « attendue » et « pic » est utilisée pour les politiques de QoS adaptatives plutôt que de minimum et maximum.
+
+Unified Manager génère des événements d'avertissement pour les violations de règles de QoS lorsque le débit de la charge de travail a dépassé le paramètre maximal de règle de QoS défini pour chaque période de collecte de performances pour l'heure précédente. Le débit de la charge de travail peut dépasser le seuil de qualité de service pendant une courte période seulement au cours de chaque période de collecte, mais Unified Manager affiche le débit « moyen » pendant la période de collecte sur le graphique. Vous pouvez donc voir des événements QoS alors que le débit d'une charge de travail n'a pas dépassé le seuil des règles affiché dans le tableau.
+
+
+
+== Étapes
+
+. Dans la page *Performance Explorer* pour le volume ou le LUN sélectionné, effectuez les opérations suivantes pour afficher les paramètres de plafond et de sol de la QoS :
++
+|===
+| Les fonctions que vous recherchez... | Procédez comme ça... 
+
+
+ a| 
+Afficher le plafond des IOPS (QoS max)
+ a| 
+Dans le graphique Total ou décomposition en IOPS, cliquez sur *vue Zoom*.
+
+
+
+ a| 
+Afficher le plafond du Mbit/s (QoS max)
+ a| 
+Dans le graphique nombre total de Mbit/s ou détail, cliquez sur *vue Zoom*.
+
+
+
+ a| 
+Voir au sol des IOPS (QoS min)
+ a| 
+Dans le graphique Total ou décomposition en IOPS, cliquez sur *vue Zoom*.
+
+
+
+ a| 
+Afficher le plafond IOPS/To (pic de QoS)
+ a| 
+Pour les volumes, dans le graphique IOPS/To, cliquez sur *vue Zoom*.
+
+
+
+ a| 
+Afficher les paramètres IOPS/To (QoS attendue)
+ a| 
+Pour les volumes, dans le graphique IOPS/To, cliquez sur *vue Zoom*.
+
+|===
++
+La ligne horizontale en pointillés correspond à la valeur de débit minimale ou maximale définie dans ONTAP. Vous pouvez également voir les modifications apportées aux valeurs de QoS.
+
+. Pour afficher les valeurs d'IOPS et de Mo/sec spécifiques par rapport au paramètre QoS, déplacez le curseur dans la zone graphique pour afficher la fenêtre contextuelle.
+
+
+
+
+== Une fois que vous avez terminé
+
+Si vous remarquez que certains volumes ou LUN ont des IOPS ou des Mbit/s très élevés et que les ressources système mettent à l'épreuve, vous pouvez utiliser System Manager ou l'interface de ligne de commande de ONTAP pour ajuster les paramètres de QoS afin que ces charges de travail n'affectent pas les performances des autres charges de travail.
+
+Pour plus d'informations sur le réglage des paramètres QoS, reportez-vous au _ONTAP 9 Performance Monitoring Power Guide_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guide d'alimentation du contrôle des performances ONTAP 9"]

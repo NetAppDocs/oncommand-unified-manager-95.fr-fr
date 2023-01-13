@@ -1,0 +1,38 @@
+---
+permalink: health-checker/reference-definitions-of-user-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un type d"utilisateur spécifie le type de compte que l"utilisateur détient et inclut les utilisateurs distants, les groupes distants, les utilisateurs locaux, les utilisateurs de base de données et les utilisateurs de maintenance. Chacun de ces types a son propre rôle, qui est attribué par un utilisateur ayant le rôle d"administrateur OnCommand.' 
+---
+= Définitions des types d'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un type d'utilisateur spécifie le type de compte que l'utilisateur détient et inclut les utilisateurs distants, les groupes distants, les utilisateurs locaux, les utilisateurs de base de données et les utilisateurs de maintenance. Chacun de ces types a son propre rôle, qui est attribué par un utilisateur ayant le rôle d'administrateur OnCommand.
+
+Les types d'utilisateurs Unified Manager sont les suivants :
+
+* *Utilisateur de maintenance*
++
+Créée lors de la configuration initiale de Unified Manager. L'utilisateur de maintenance crée ensuite des utilisateurs supplémentaires et attribue des rôles. L'utilisateur de maintenance est également le seul utilisateur ayant accès à la console de maintenance. Lorsque Unified Manager est installé sur un système Red Hat Enterprise Linux ou CentOS, l'utilisateur chargé de la maintenance se voit attribuer le nom d'utilisateur « umadmin ».
+
+* *Utilisateur local*
++
+Accède à l'interface utilisateur d'Unified Manager et effectue des fonctions en fonction du rôle attribué par l'utilisateur responsable de la maintenance ou par un utilisateur doté du rôle d'administrateur OnCommand.
+
+* *Groupe distant*
++
+Groupe d'utilisateurs qui accèdent à l'interface utilisateur Unified Manager à l'aide des informations d'identification stockées sur le serveur d'authentification. Le nom de ce compte doit correspondre au nom d'un groupe stocké sur le serveur d'authentification. Tous les utilisateurs du groupe distant peuvent accéder à l'interface utilisateur d'Unified Manager à l'aide de leurs identifiants individuels. Les groupes distants peuvent effectuer des fonctions en fonction de leurs rôles attribués.
+
+* *Utilisateur distant*
++
+Permet d'accéder à l'interface utilisateur Unified Manager à l'aide des informations d'identification stockées sur le serveur d'authentification. Un utilisateur distant effectue des fonctions en fonction du rôle attribué par l'utilisateur de maintenance ou par un utilisateur doté du rôle d'administrateur OnCommand.
+
+* *Utilisateur de base de données*
++
+Possède un accès en lecture seule aux données de la base de données Unified Manager, n'a pas accès à l'interface web Unified Manager ni à la console de maintenance, et ne peut pas exécuter d'appels d'API.
+
+

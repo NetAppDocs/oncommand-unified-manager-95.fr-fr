@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-nvme-namespace-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page de l"explorateur d"espaces de noms fournit une vue d"ensemble détaillée des performances de tous les espaces de noms au sein d"un cluster.' 
+---
+= Page de l'explorateur d'espace de noms
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page de l'explorateur d'espaces de noms fournit une vue d'ensemble détaillée des performances de tous les espaces de noms au sein d'un cluster.
+
+La page de l'explorateur de l'espace de noms vous permet de suivre et de comparer les performances de l'espace de noms pendant une période donnée, ce qui vous aide à dépanner et à affiner les performances de vos espaces de noms.
+
+La fonctionnalité View and compare vous permet de comparer les performances de cet espace de noms avec :
+
+* Volume sur lequel réside le namespace
+* Autres espaces de noms sur le même volume
+* Autres espaces de noms se trouvant sur le même SVM
+
+
+La page de l'explorateur d'espace de noms vous permet d'effectuer les opérations suivantes :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivez et comparez les données de performances de l'espace de noms
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+* Lancer System Manager pour modifier la configuration dans l'espace de noms
++
+Le bouton *configurer l'espace de noms* est disponible si vous êtes connecté à Unified Manager avec le rôle Administrateur OnCommand ou Administrateur de stockage et si vous utilisez ONTAP 9.5 ou une version ultérieure.
+
+

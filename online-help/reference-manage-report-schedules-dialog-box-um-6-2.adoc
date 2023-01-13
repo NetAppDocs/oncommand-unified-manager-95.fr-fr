@@ -1,0 +1,94 @@
+---
+permalink: online-help/reference-manage-report-schedules-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez afficher, modifier ou supprimer des plannings de rapports existants et ajouter de nouveaux horaires pour vos rapports à partir de la boîte de dialogue gérer les plannings de rapports. 
+---
+= Gérer les programmes de rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher, modifier ou supprimer des plannings de rapports existants et ajouter de nouveaux horaires pour vos rapports à partir de la boîte de dialogue gérer les plannings de rapports.
+
+
+
+== Propriétés
+
+Vous pouvez sélectionner un planning existant ou créer un nouveau planning pour vos rapports. Vous pouvez afficher, modifier ou supprimer vos planifications de rapports.
+
+* *Volet gauche*
++
+** *Nom de l'annexe*
++
+Affiche les plannings existants. En cliquant sur n'importe quel programme, vous pouvez afficher les détails du planning dans le volet droit. Pour la première connexion, il n'existe aucun programme existant.
+
+** *Ajouter un horaire*
++
+Affiche le nouveau formulaire d'horaire dans le volet droit. Vous pouvez désormais ajouter un nouvel horaire.
+
+
+
+* *Volet droit*
++
+** *Nom de l'annexe*
++
+Affiche le nom du programme.
+
+** *Adresse e-mail du destinataire*
++
+Affiche l'adresse électronique de l'utilisateur auquel le rapport doit être envoyé. Vous pouvez entrer plusieurs adresses e-mail séparées par des virgules.
+
+** *Format de rapport*
++
+Affiche le format dans lequel le rapport doit être présenté. L'option PDF est sélectionnée comme format de rapport par défaut. Si le format XHTML est sélectionné, ouvrez le rapport envoyé par e-mail à l'aide d'un navigateur Web pris en charge.
+
+** *Fréquence*
++
+Affiche la fréquence à laquelle le rapport est programmé.
+
+** *Catégorie de rapport*
++
+Affiche les groupes de catégories de rapport. En sélectionnant une catégorie de rapport dans la liste, affiche les rapports appartenant à cette catégorie de rapport dans la colonne Rapports disponibles.
+
+** *Rapports disponibles*
++
+Affiche uniquement les rapports appartenant à la catégorie de rapport sélectionnée.
+
+** *Rapports sélectionnés*
++
+Affiche les rapports sélectionnés auxquels vous choisissez d'appliquer le planning. Vous pouvez sélectionner les rapports requis dans la colonne Rapports disponibles. Au moins un rapport doit être sélectionné
+
+
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Ajouter un horaire*
++
+Permet d'ajouter un nouvel horaire.
+
+* *Supprimer le calendrier*
++
+Vous permet de supprimer la programmation actuellement affichée. Ce bouton n'est pas disponible lorsque vous créez un nouvel horaire.
+
+* *Enregistrer*
++
+Enregistre la planification affichée, modifiée ou ajoutée.
+
+* *Enregistrer et fermer*
++
+Enregistre la planification affichée, modifiée ou ajoutée et ferme la boîte de dialogue gérer les plannings de rapport.
+
+* *Annuler*
++
+Ferme la boîte de dialogue gérer les plannings de rapports tout en affichant un message pour enregistrer le planning.
+
+

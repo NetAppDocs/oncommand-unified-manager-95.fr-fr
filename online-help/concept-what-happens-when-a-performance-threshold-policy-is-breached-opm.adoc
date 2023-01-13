@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-happens-when-a-performance-threshold-policy-is-breached-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lorsqu"une valeur de compteur dépasse sa valeur de seuil de performances définie pour la durée spécifiée, le seuil est dépassé et un événement est signalé.' 
+---
+= Que se passe-t-il lorsqu'une règle de seuil de performances est enfreinte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsqu'une valeur de compteur dépasse sa valeur de seuil de performances définie pour la durée spécifiée, le seuil est dépassé et un événement est signalé.
+
+L'événement provoque le lancement des actions suivantes :
+
+* L'événement s'affiche dans le tableau de bord des performances, la page Performance Cluster Summary, la page Events et la page Performance Inventory spécifique à l'objet.
+* (Facultatif) une alerte par e-mail concernant l'événement peut être envoyée à un ou plusieurs destinataires d'e-mail et une interruption SNMP peut être envoyée à un destinataire d'interruption.
+* (Facultatif) Un script peut être exécuté pour modifier ou mettre à jour automatiquement les objets de stockage.
+
+
+La première action est toujours exécutée. Vous configurez si les actions facultatives sont exécutées dans la page Configuration/alerte. Vous pouvez définir des actions uniques selon qu'une règle d'avertissement ou de seuil critique est enfreinte.
+
+Après une violation de la règle de seuil de performances sur un objet de stockage, aucun autre événement n'est généré pour cette règle jusqu'à ce que la valeur de compteur atteigne la valeur seuil inférieure à laquelle la durée est réinitialisée pour cette limite. Même si le seuil reste dépassé, l'heure de fin de l'événement est mise à jour en permanence pour indiquer que cet événement est en cours.
+
+Un événement de seuil capture ou gèle les informations relatives à la gravité et à la définition de stratégie de sorte que les informations de seuil uniques s'affichent avec l'événement, même si la stratégie de seuil est modifiée ultérieurement.

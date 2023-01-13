@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Utilisateur introuvable
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Numéro*
++
+Lorsque vous effectuez une opération liée à l'authentification, telle que l'ajout, la modification, la suppression ou le test d'utilisateurs ou de groupes distants, le message d'erreur suivant s'affiche : `User not found`.
+
+* *Cause*
++
+Ce problème peut survenir si l'utilisateur existe dans le serveur AD ou le serveur LDAP et si vous avez défini le nom distinctif de base sur une valeur incorrecte.
+
+* * Action corrective*
++
+.. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Configuration* > *authentification*.
+.. Entrez les informations appropriées pour le nom distinctif de base.
+.. Cliquez sur *Enregistrer et fermer*.
+
+
+

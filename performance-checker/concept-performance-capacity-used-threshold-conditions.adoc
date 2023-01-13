@@ -1,0 +1,41 @@
+---
+permalink: performance-checker/concept-performance-capacity-used-threshold-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des règles de seuils de performances définies par l"utilisateur, de sorte que les événements se déclenchent lorsque la capacité de performance utilisée pour un nœud ou un agrégat dépasse le seuil de capacité de performance défini défini.' 
+---
+= Conditions du seuil de performance utilisé par la capacité de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des règles de seuils de performances définies par l'utilisateur, de sorte que les événements se déclenchent lorsque la capacité de performance utilisée pour un nœud ou un agrégat dépasse le seuil de capacité de performance défini défini.
+
+En outre, les nœuds peuvent être configurés avec une règle de seuil « prise en charge de la capacité de performances utilisée ». Cette règle de seuil total les statistiques de performance utilisées pour les deux nœuds d'une paire HA afin de déterminer si la capacité de l'un des nœuds serait insuffisante si l'autre nœud tombe en panne. Étant donné que la charge de travail lors du basculement est la combinaison des charges de travail des deux nœuds partenaires, la même capacité de performance utilisée dans la règle de basculement peut être appliquée aux deux nœuds.
+
+[NOTE]
+====
+Cette équivalence des performances utilisée est généralement vrai entre les nœuds. Cependant, en cas de trafic croisé sur l'un des nœuds via son partenaire de basculement, la capacité de performance totale utilisée lors de l'exécution de toutes les charges de travail sur un nœud partenaire par rapport aux autres nœuds partenaires peut légèrement différente en fonction du nœud défaillant.
+
+====
+Les conditions de performance utilisées peuvent également être utilisées comme paramètres de seuil de performance secondaire pour créer une règle de seuil de combinaison lors de la définition de seuils pour les LUN et les volumes. La condition de performance utilisée est appliquée à l'agrégat ou au nœud sur lequel réside le volume ou la LUN. Par exemple, vous pouvez créer une stratégie de seuil de combinaison à l'aide des critères suivants :
+
+|===
+| Objet de stockage | Compteur de performances | Seuil d'avertissement | Seuil critique | Durée 
+
+
+ a| 
+Volumétrie
+ a| 
+Latence
+ a| 
+15 ms/op
+ a| 
+25 ms/op
+ a| 
+20 minutes
+
+|===
+Les stratégies de seuil de combinaison n'entraînent la génération d'un événement que lorsque les deux conditions sont enfreintes pendant toute la durée.

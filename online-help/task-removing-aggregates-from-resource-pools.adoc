@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-removing-aggregates-from-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer des agrégats d"un pool de ressources existant : par exemple, si vous souhaitez utiliser un agrégat à d"autres fins.' 
+---
+= Suppression d'agrégats des pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer des agrégats d'un pool de ressources existant : par exemple, si vous souhaitez utiliser un agrégat à d'autres fins.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Les membres du pool de ressources ne sont affichés que lorsqu'un pool de ressources est sélectionné.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *pools de ressources*.
+. Sélectionnez le pool de ressources dans lequel vous souhaitez supprimer des agrégats membres.
++
+La liste des agrégats membres est affichée dans le volet membres.
+
+. Sélectionnez un ou plusieurs agrégats.
++
+Le bouton *Supprimer* est activé.
+
+. Cliquez sur *Supprimer.*
++
+Une boîte de dialogue d'avertissement s'affiche.
+
+. Cliquez sur *Oui* pour continuer.
++
+Les agrégats sélectionnés sont supprimés du volet membres.
+
+

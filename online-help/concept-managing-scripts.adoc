@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser des scripts pour modifier ou mettre à jour automatiquement plusieurs objets de stockage dans Unified Manager. Le script est associé à une alerte. Lorsqu"un événement déclenche une alerte, le script est exécuté. Vous pouvez télécharger des scripts personnalisés et tester leur exécution lorsqu"une alerte est générée.' 
+---
+= Gestion des scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser des scripts pour modifier ou mettre à jour automatiquement plusieurs objets de stockage dans Unified Manager. Le script est associé à une alerte. Lorsqu'un événement déclenche une alerte, le script est exécuté. Vous pouvez télécharger des scripts personnalisés et tester leur exécution lorsqu'une alerte est générée.

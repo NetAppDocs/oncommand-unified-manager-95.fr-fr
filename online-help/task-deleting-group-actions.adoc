@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-deleting-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une action de groupe de Unified Manager lorsque l"action de groupe n"est plus nécessaire.' 
+---
+= Suppression des actions de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une action de groupe de Unified Manager lorsque l'action de groupe n'est plus nécessaire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lorsque vous supprimez l'action de groupe pour le seuil d'intégrité du volume, des seuils globaux sont appliqués aux objets de stockage de ce groupe. Les seuils de santé des niveaux objet définis sur l'objet de stockage ne sont pas affectés.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *actions de groupe*, sélectionnez l'action de groupe à supprimer, puis cliquez sur *Supprimer*.
+. Dans la boîte de dialogue *Avertissement*, confirmez la suppression en cliquant sur *Oui*.
+

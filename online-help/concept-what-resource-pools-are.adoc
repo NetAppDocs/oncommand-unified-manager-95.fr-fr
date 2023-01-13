@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-what-resource-pools-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pools de ressources sont des groupes d"agrégats créés par un administrateur de stockage via Unified Manager pour fournir le provisionnement aux applications partenaires pour la gestion des sauvegardes.' 
+---
+= En quoi sont les pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pools de ressources sont des groupes d'agrégats créés par un administrateur de stockage via Unified Manager pour fournir le provisionnement aux applications partenaires pour la gestion des sauvegardes.
+
+Vous pouvez regrouper vos ressources au sein d'un pool en fonction de critères tels que les performances, les coûts, l'emplacement physique ou la disponibilité. En regroupant les ressources associées dans un pool, vous pouvez traiter le pool comme une unité unique pour la surveillance et le provisionnement. Cela simplifie la gestion de ces ressources et permet une utilisation plus flexible et plus efficace du stockage.
+
+Lors du provisionnement de stockage secondaire, Unified Manager détermine l'agrégat le plus approprié du pool de ressources à des fins de protection, à l'aide des critères suivants :
+
+* L'agrégat est un agrégat de données (pas un agrégat root) qui est EN LIGNE.
+* L'agrégat se trouve sur un nœud de cluster cible dont la version ONTAP est identique ou supérieure à la version principale du cluster source.
+* L'agrégat dispose du plus grand espace disponible de tous les agrégats du pool de ressources.
+* Après le provisionnement du volume de destination, l'espace de l'agrégat se trouve dans le seuil presque atteint et quasi dépassé défini pour l'agrégat (seuil global ou local, selon le cas).
+* Le nombre de volumes FlexVol sur le nœud de destination ne doit pas dépasser la limite de plateforme.
+

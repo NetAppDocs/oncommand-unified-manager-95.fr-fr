@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-viewing-events-that-occurred-during-a-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si nécessaire, vous pouvez afficher les événements générés pour tous les objets de stockage au cours d"une fenêtre de maintenance Unified Manager. La plupart des événements apparaissent à l"état Obsolète une fois la fenêtre de maintenance terminée et toutes les ressources système sont sauvegardées et en cours d"exécution.' 
+---
+= Affichage des événements qui se sont produits lors d'une fenêtre de maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si nécessaire, vous pouvez afficher les événements générés pour tous les objets de stockage au cours d'une fenêtre de maintenance Unified Manager. La plupart des événements apparaissent à l'état Obsolète une fois la fenêtre de maintenance terminée et toutes les ressources système sont sauvegardées et en cours d'exécution.
+
+
+
+== Avant de commencer
+
+Au moins une fenêtre de maintenance doit avoir été effectuée avant que des événements soient disponibles.
+
+
+
+== Description de la tâche
+
+Les événements qui se sont produits pendant une fenêtre de maintenance n'apparaissent pas par défaut sur la page d'inventaire des événements.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
++
+Par défaut, tous les événements actifs (nouveaux et acquittés) sont affichés sur la page d'inventaire des événements.
+
+. Dans le volet *View*, sélectionnez l'option *tous les événements générés pendant la maintenance*.
++
+La liste des événements trigés au cours des 7 derniers jours à partir de toutes les sessions de la fenêtre de maintenance et de tous les clusters s'affiche.
+
+. Si plusieurs fenêtres de maintenance ont été disponibles pour un seul cluster, vous pouvez cliquer sur l'icône du calendrier *déclenché Time* et sélectionner la durée des événements de la fenêtre de maintenance que vous souhaitez afficher.
+

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-on-mission-critical-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser le rapport Evénements pour afficher les événements filtrés par priorité de données critiques. 
+---
+= Personnalisation du rapport événements pour afficher des événements sur des objets critiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Evénements pour afficher les événements filtrés par priorité de données critiques.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour filtrer les événements avec priorité de données critiques, cliquez dans la colonne *priorité de données* et ouvrez la boîte de dialogue *filtre* en cliquant sur le bouton image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *critique*.
+. Cliquez sur *OK*.
+

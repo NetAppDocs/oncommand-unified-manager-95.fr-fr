@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez créer des planifications SnapMirror et SnapVault de base ou avancées pour activer les transferts automatiques sur un volume source ou primaire. Les transferts ont ainsi lieu plus ou moins fréquemment, selon la fréquence à laquelle les données sont modifiées sur vos volumes. 
+---
+= Création de planifications SnapMirror et SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des planifications SnapMirror et SnapVault de base ou avancées pour activer les transferts automatiques sur un volume source ou primaire. Les transferts ont ainsi lieu plus ou moins fréquemment, selon la fréquence à laquelle les données sont modifiées sur vos volumes.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle Administrateur OnCommand ou Administrateur stockage.
+* Vous devez avoir déjà terminé la zone informations sur la destination dans la boîte de dialogue configurer la protection.
+* Vous devez avoir configuré Workflow Automation pour effectuer cette tâche.
+
+
+
+
+== Étapes
+
+. Dans l'onglet *SnapMirror* ou *SnapVault* de la boîte de dialogue *configurer la protection*, cliquez sur le lien *Créer un programme* dans la zone *Paramètres de relation*.
++
+La boîte de dialogue Créer un programme s'affiche.
+
+. Dans le champ *Nom de l'horaire*, saisissez le nom que vous souhaitez donner à l'horaire.
+. Sélectionnez l'une des options suivantes :
++
+** *De base*
++
+Sélectionnez cette option si vous souhaitez créer une planification de base de style d'intervalle.
+
+** *Avancé*
++
+Sélectionnez cette option pour créer une planification de style cron.
+
+
+
+. Cliquez sur *Créer*.
++
+La nouvelle planification est affichée dans la liste déroulante planification SnapMirror ou planification SnapVault.
+
+

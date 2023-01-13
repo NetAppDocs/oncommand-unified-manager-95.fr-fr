@@ -1,0 +1,122 @@
+---
+permalink: online-help/reference-alert-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Configuration/alerte affiche une liste d"alertes et fournit des informations sur le nom, l"état, la méthode de notification et la fréquence des notifications de l"alerte. Vous pouvez également ajouter, modifier, supprimer, activer ou désactiver des alertes à partir de cette page.' 
+---
+= Page Configuration/alerte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Configuration/alerte affiche une liste d'alertes et fournit des informations sur le nom, l'état, la méthode de notification et la fréquence des notifications de l'alerte. Vous pouvez également ajouter, modifier, supprimer, activer ou désactiver des alertes à partir de cette page.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Affiche la boîte de dialogue Ajouter une alerte qui vous permet d'ajouter de nouvelles alertes.
+
+* *Modifier*
++
+Affiche la boîte de dialogue Modifier l'alerte, qui permet de modifier les alertes sélectionnées.
+
+* *Supprimer*
++
+Supprime les alertes sélectionnées.
+
+* *Activer*
++
+Permet aux alertes sélectionnées d'envoyer des notifications.
+
+* *Désactiver*
++
+Désactive les alertes sélectionnées lorsque vous souhaitez arrêter temporairement l'envoi de notifications.
+
+* *Test*
++
+Teste les alertes sélectionnées pour vérifier leur configuration après ajout ou modification.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, au format tabulaire, des informations sur les alertes créées. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées. Vous pouvez également sélectionner une alerte pour afficher plus d'informations à ce sujet dans la zone de détails.
+
+* *Statut*
++
+Indique si une alerte est activée (image:../media/alert-status-enabled.gif[""]) ou désactivé (image:../media/alert-status-disabled.gif[""]).
+
+* *Alerte*
++
+Affiche le nom de l'alerte.
+
+* *Description*
++
+Affiche une description de l'alerte.
+
+* *Méthode de notification*
++
+Affiche la méthode de notification sélectionnée pour l'alerte. Vous pouvez avertir les utilisateurs par e-mail ou des interruptions SNMP.
+
+* *Fréquence de notification*
++
+Spécifie la fréquence (en minutes) à laquelle le serveur de gestion continue d'envoyer des notifications jusqu'à ce que l'événement soit validé, résolu ou déplacé à l'état Obsolète.
+
+
+
+
+
+== Zone de détails
+
+La zone de détails fournit des informations supplémentaires sur l'alerte sélectionnée.
+
+* *Nom de l'alerte*
++
+Affiche le nom de l'alerte.
+
+* *Description de l'alerte*
++
+Affiche une description de l'alerte.
+
+* *Événements*
++
+Affiche les événements pour lesquels vous souhaitez déclencher l'alerte.
+
+* *Ressources*
++
+Affiche les ressources pour lesquelles vous souhaitez déclencher l'alerte.
+
+* *Inclut*
++
+Affiche le groupe de ressources pour lequel vous souhaitez déclencher l'alerte.
+
+* *Exclusion*
++
+Affiche le groupe de ressources pour lequel vous ne souhaitez pas déclencher l'alerte.
+
+* *Méthode de notification*
++
+Affiche la méthode de notification de l'alerte.
+
+* *Fréquence de notification*
++
+Affiche la fréquence à laquelle le serveur de gestion continue d'envoyer des notifications d'alerte jusqu'à ce que l'événement soit validé, résolu ou déplacé à l'état Obsolète.
+
+* *Nom du script*
++
+Affiche le nom du script associé à l'alerte sélectionnée. Ce script est exécuté lorsqu'une alerte est générée.
+
+* *Destinataires d'e-mails*
++
+Affiche les adresses e-mail des utilisateurs qui reçoivent la notification d'alerte.
+
+

@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-regenerate-https-certificate-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La boîte de dialogue régénérer le certificat HTTPS vous permet de personnaliser les informations de sécurité, puis de générer un nouveau certificat HTTPS avec ces informations. 
+---
+= Boîte de dialogue régénérer le certificat HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue régénérer le certificat HTTPS vous permet de personnaliser les informations de sécurité, puis de générer un nouveau certificat HTTPS avec ces informations.
+
+Les informations actuelles sur le certificat apparaissent sur cette page.
+
+Les sélections « régénérer à l'aide des attributs de certificat actuels » et « mettre à jour les attributs de certificat actuels » vous permettent de régénérer le certificat avec les informations actuelles ou de générer un certificat avec de nouvelles informations.
+
+* *Nom commun*
++
+Obligatoire. Le nom de domaine complet (FQDN) que vous souhaitez sécuriser.
+
++
+Dans les configurations haute disponibilité Unified Manager, utilisez l'adresse IP virtuelle.
+
+* *Courriel*
++
+Facultatif. Une adresse e-mail pour contacter votre organisation, généralement l'adresse e-mail de l'administrateur de certificat ou DU service INFORMATIQUE.
+
+* *Société*
++
+Facultatif. Généralement le nom incorporé de votre société.
+
+* *Ministère*
++
+Facultatif. Le nom du service de votre entreprise.
+
+* *Ville*
++
+Facultatif. La ville de votre entreprise.
+
+* *État*
++
+Facultatif. L'emplacement de l'État ou de la province, non abrégé, de votre entreprise.
+
+* *Pays*
++
+Facultatif. Pays de votre entreprise. Il s'agit généralement d'un code ISO à deux lettres du pays.
+
+* *Noms alternatifs*
++
+Obligatoire. Noms de domaine supplémentaires non primaires pouvant être utilisés pour accéder à ce serveur en plus de l'hôte local existant ou d'autres adresses réseau. Séparez les différents noms par une virgule.
+
++
+Cochez la case « exclure les informations d'identification locales (par exemple localhost) » si vous souhaitez supprimer les informations d'identification locales du champ autres noms du certificat. Lorsque cette case est cochée, seul ce que vous saisissez dans le champ est utilisé dans le champ autres noms. Si le champ du certificat obtenu n'est pas renseigné, il n'y aura pas de champ autre nom.
+
+

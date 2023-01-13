@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lorsque vous effectuez des modifications de configuration dans un cluster, vous pouvez utiliser l"interface graphique de System Manager au lieu de l"interface de ligne de commandes ONTAP. System Manager est inclus avec ONTAP en tant que service Web. Cette fonctionnalité est activée par défaut et accessible via un navigateur.' 
+---
+= Accès à OnCommand System Manager à partir de l'interface Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous effectuez des modifications de configuration dans un cluster, vous pouvez utiliser l'interface graphique de System Manager au lieu de l'interface de ligne de commandes ONTAP. System Manager est inclus avec ONTAP en tant que service Web. Cette fonctionnalité est activée par défaut et accessible via un navigateur.
+
+
+
+== Avant de commencer
+
+Un compte utilisateur de cluster doit être configuré avec `admin` rôle et le `http`, `ontapi`, et `console` types d'applications.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *tableaux de bord* > *Cluster View*.
+. Dans la page *tableaux de bord/Cluster View*, sélectionnez le cluster que vous souhaitez gérer.
++
+Cette fenêtre affiche une vue d'ensemble du contrôle de l'état, de la capacité et des performances du cluster.
+
+. Cliquez sur l'icône *System Manager*.
++
+Si le cluster utilise un certificat numérique auto-signé, il est possible que le navigateur affiche un avertissement indiquant que le certificat n'est pas approuvé. Vous pouvez accepter le risque de continuer l'accès ou installer un certificat numérique signé par l'autorité de certification sur le cluster pour l'authentification du serveur.
+
+. Connectez-vous à System Manager à l'aide des identifiants de l'administrateur du cluster.
++
+Si vous vous connectez à l'interface utilisateur de System Manager est protégé à l'aide de l'authentification SAML, vous entrez vos identifiants sur la page de connexion du fournisseur d'identités au lieu de la page de connexion de System Manager.
+
+

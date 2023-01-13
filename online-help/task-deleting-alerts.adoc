@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-deleting-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une alerte lorsqu"elle n"est plus requise. Par exemple, vous pouvez supprimer une alerte créée pour une ressource spécifique lorsque cette ressource n"est plus surveillée par Unified Manager.' 
+---
+= Suppression des alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une alerte lorsqu'elle n'est plus requise. Par exemple, vous pouvez supprimer une alerte créée pour une ressource spécifique lorsque cette ressource n'est plus surveillée par Unified Manager.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *Alerting*.
+. Sur la page *Configuration/Alerting*, sélectionnez les alertes à supprimer, puis cliquez sur *Supprimer*.
+. Cliquez sur *Oui* pour confirmer la demande de suppression.
+

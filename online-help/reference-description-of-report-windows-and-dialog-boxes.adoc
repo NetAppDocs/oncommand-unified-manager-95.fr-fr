@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser les options pour planifier, partager, gérer, enregistrer et importer les rapports. 
+---
+= Description des fenêtres de rapport et des boîtes de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser les options pour planifier, partager, gérer, enregistrer et importer les rapports.

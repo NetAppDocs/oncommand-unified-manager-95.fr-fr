@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-using-unified-manager-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser des API REST pour gérer les clusters en visualisant les informations relatives à l"état, la capacité et les performances collectées par Unified Manager.' 
+---
+= Grâce aux API REST de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser des API REST pour gérer les clusters en visualisant les informations relatives à l'état, la capacité et les performances collectées par Unified Manager.

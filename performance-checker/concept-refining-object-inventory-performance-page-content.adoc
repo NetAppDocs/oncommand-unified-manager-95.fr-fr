@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-refining-object-inventory-performance-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages d"inventaire des objets de performances contiennent des outils qui vous aident à affiner le contenu des données d"inventaire des objets, ce qui vous permet de localiser rapidement et facilement des données spécifiques.' 
+---
+= Raffinage du contenu de la page d'inventaire des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages d'inventaire des objets de performances contiennent des outils qui vous aident à affiner le contenu des données d'inventaire des objets, ce qui vous permet de localiser rapidement et facilement des données spécifiques.
+
+Les informations contenues dans les pages d'inventaire des objets Performance peuvent être étendues, souvent couvrant plusieurs pages. Ce type de données complètes est excellent pour la surveillance, le suivi et l'amélioration des performances. Cependant, la localisation de données spécifiques nécessite des outils pour vous permettre de localiser rapidement les données pour lesquelles vous recherchez. Par conséquent, les pages d'inventaire des objets Performance contiennent des fonctionnalités de recherche, de tri et de filtrage. En outre, la recherche et le filtrage peuvent travailler ensemble pour affiner davantage vos résultats.

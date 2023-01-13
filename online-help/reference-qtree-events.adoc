@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-qtree-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements qtree fournissent des informations sur la capacité qtree, sur les limites de fichiers et de disques, afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements qtree fournissent des informations sur la capacité qtree, sur les limites de fichiers et de disques, afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Espace qtree presque plein (ocumEvtQtréeNeareSpacelyFull)
+ a| 
+Risques
+ a| 
+Qtree
+ a| 
+Avertissement
+
+
+
+ a| 
+Espace qtree plein (ocumEvtQtreeSpaceFull)
+ a| 
+Risques
+ a| 
+Qtree
+ a| 
+Erreur
+
+
+
+ a| 
+Espace qtree normal(ocumEvtQtreeSpaceseuil de seuil Ok)
+ a| 
+Événement
+ a| 
+Qtree
+ a| 
+Informations
+
+
+
+ a| 
+Limite stricte atteinte des fichiers qtree (ocumEvtQtréeFilesHardLiitReached)
+ a| 
+Gestion des
+ a| 
+Qtree
+ a| 
+Primordial
+
+
+
+ a| 
+Qtree Files Soft Limit Breached(ocumEvtQtréeFilesSoftLimitBreached)
+ a| 
+Risques
+ a| 
+Qtree
+ a| 
+Avertissement
+
+
+
+ a| 
+Limite matérielle de l'espace qtree atteinte (ocumEvtQtreeSpaceHardLiitReached)
+ a| 
+Gestion des
+ a| 
+Qtree
+ a| 
+Primordial
+
+
+
+ a| 
+Qtree Space Soft Limit Breached (ocumEvtQtreeSpaceSoftLimitBreached)
+ a| 
+Risques
+ a| 
+Qtree
+ a| 
+Avertissement
+
+|===

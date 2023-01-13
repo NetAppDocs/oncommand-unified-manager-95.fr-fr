@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-groups-detail-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dans la page Détails des groupes, vous pouvez afficher les détails d"un groupe sélectionné. Vous pouvez également afficher des informations supplémentaires telles que les règles de groupe et les actions de groupe associées au groupe sélectionné.' 
+---
+= Page de détails des groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans la page Détails des groupes, vous pouvez afficher les détails d'un groupe sélectionné. Vous pouvez également afficher des informations supplémentaires telles que les règles de groupe et les actions de groupe associées au groupe sélectionné.
+
+
+
+== Boutons de commande
+
+* *Afficher les groupes*
++
+Permet de naviguer vers la page groupes.
+
+* *Actions*
++
+Vous permet de modifier ou de supprimer le groupe en fonction de votre rôle. Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Gérer les règles de groupe*
++
+Permet de naviguer jusqu'à la page règles de groupe, qui affiche les règles de ce groupe.
+
+* *Gérer les actions de groupe*
++
+Vous permet de naviguer jusqu'à la page actions de groupe, qui affiche les actions de ce groupe.
+
+
+
+
+
+== Zone de résumé
+
+Vous pouvez afficher les détails de groupe suivants :
+
+* *Description*
++
+Affiche la description fournie pour le groupe.
+
+* *Créé par*
++
+Affiche le nom de l'utilisateur qui a créé le groupe.
+
+* *Date de création*
++
+Affiche la date de création du groupe.
+
+* *Règles associées*
++
+Affiche toutes les règles de groupe créées pour un groupe, sous forme de tableau. Vous pouvez afficher les détails de chaque règle de groupe, par exemple le nom de la règle, le type d'objet associé et le nombre d'objets de stockage du type d'objet associé.
+
+* *Actions associées*
++
+Affiche toutes les actions de groupe, configurées pour un groupe, sous forme de tableau. Vous pouvez afficher les détails de chaque action de groupe, tels que le rang, le nom, le type d'action et la description.
+
+

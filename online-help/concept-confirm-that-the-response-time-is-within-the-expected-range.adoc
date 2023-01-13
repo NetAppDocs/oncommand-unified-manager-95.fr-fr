@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lorsqu"un composant de cluster conflit, des workloads de volume qui l"utilisent peuvent avoir réduit le temps de réponse \(latence\). Vous pouvez examiner la latence de chaque charge de travail victime dans le composant en conflit pour confirmer que sa latence réelle se situe dans la plage prévue. Vous pouvez également cliquer sur le nom d"un volume pour afficher les données historiques du volume.' 
+---
+= Confirmation que la latence se trouve dans la plage prévue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsqu'un composant de cluster conflit, des workloads de volume qui l'utilisent peuvent avoir réduit le temps de réponse (latence). Vous pouvez examiner la latence de chaque charge de travail victime dans le composant en conflit pour confirmer que sa latence réelle se situe dans la plage prévue. Vous pouvez également cliquer sur le nom d'un volume pour afficher les données historiques du volume.
+
+Si l'événement de performances est dans un état obsolète, la latence de chaque victime impliquée dans l'événement peut être revenue dans la plage prévue.

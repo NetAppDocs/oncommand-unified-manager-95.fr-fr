@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'En fonction des informations affichées sur la page Performance/Node Failover Planning, vous pouvez effectuer des actions pour vérifier qu"un basculement ne provoque pas de chute des performances d"une paire haute disponibilité en dessous d"un niveau acceptable.' 
+---
+= Utilisation de la page planification de basculement de nœud pour déterminer les actions correctives
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En fonction des informations affichées sur la page Performance/Node Failover Planning, vous pouvez effectuer des actions pour vérifier qu'un basculement ne provoque pas de chute des performances d'une paire haute disponibilité en dessous d'un niveau acceptable.
+
+Par exemple, pour réduire l'impact estimé sur les performances d'un basculement, vous pouvez déplacer certains volumes ou LUN d'un nœud de la paire haute disponibilité vers d'autres nœuds du cluster. Vous êtes ainsi assuré que le nœud principal peut continuer à fournir des performances acceptables après un basculement.

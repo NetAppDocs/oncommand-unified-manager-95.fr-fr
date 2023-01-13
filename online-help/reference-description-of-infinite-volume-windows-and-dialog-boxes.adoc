@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez surveiller les SVM avec Infinite Volume depuis la page de détails correspondante sur Health/Storage Virtual machine. Vous pouvez gérer des règles et des stratégies de données à partir de la boîte de dialogue Créer une règle. Vous pouvez également modifier les seuils de classes de stockage à partir de la boîte de dialogue Modifier les seuils de classes de stockage. 
+---
+= Description des fenêtres et boîtes de dialogue d'Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller les SVM avec Infinite Volume depuis la page de détails correspondante sur Health/Storage Virtual machine. Vous pouvez gérer des règles et des stratégies de données à partir de la boîte de dialogue Créer une règle. Vous pouvez également modifier les seuils de classes de stockage à partir de la boîte de dialogue Modifier les seuils de classes de stockage.

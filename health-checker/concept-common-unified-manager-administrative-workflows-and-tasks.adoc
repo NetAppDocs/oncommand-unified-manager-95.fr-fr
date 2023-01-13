@@ -1,0 +1,63 @@
+---
+permalink: health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Parmi les flux de travail et les tâches administratives courantes associées à Unified Manager, on compte notamment la sélection des clusters de stockage à contrôler. Diagnostiquer les conditions qui affectent négativement la disponibilité, la capacité et la protection des données, créer des relations de protection, restaurer des données perdues. Configuration et gestion d"Infinite volumes, et regroupement et envoi des données de diagnostic au support technique \(si nécessaire\).' 
+---
+= Tâches et workflows d'état de Unified Manager communs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Parmi les flux de travail et les tâches administratives courantes associées à Unified Manager, on compte notamment la sélection des clusters de stockage à contrôler. Diagnostiquer les conditions qui affectent négativement la disponibilité, la capacité et la protection des données, créer des relations de protection, restaurer des données perdues. Configuration et gestion d'Infinite volumes, et regroupement et envoi des données de diagnostic à un support technique (si nécessaire).
+
+Unified Manager permet aux administrateurs du stockage d'afficher un tableau de bord, d'évaluer la capacité globale, la disponibilité et l'état de protection des clusters de stockage gérés, puis d'identifier, de localiser, de diagnostiquer et d'attribuer rapidement la résolution de tout problème spécifique.
+
+Les problèmes les plus importants liés à un cluster, à un SVM (Storage Virtual machine), à un volume, à un volume FlexGroup ou à une relation de protection qui affectent la capacité de stockage, la disponibilité des données ou la fiabilité de la protection de vos objets de stockage gérés sont affichés dans les graphiques et les événements de l'état du système sur la page de tableaux de bord/Présentation. Lorsque des problèmes critiques sont identifiés, cette page fournit des liens permettant de prendre en charge les processus de dépannage appropriés.
+
+Unified Manager peut également être inclus dans des flux de production comprenant des outils de gestion associés, tels que OnCommand Workflow Automation (WFA), pour prendre en charge la configuration directe des ressources de stockage.
+
+Ce document décrit les workflows courants relatifs aux tâches administratives suivantes :
+
+* Diagnostic et gestion des problèmes de disponibilité
++
+Si une défaillance matérielle ou des problèmes de configuration des ressources de stockage entraînent l'affichage des événements de disponibilité des données dans la page tableaux de bord/Présentation, les administrateurs de stockage peuvent suivre les liens intégrés pour afficher les informations de connectivité concernant la ressource de stockage affectée, consulter les conseils de dépannage et attribuer la résolution des problèmes à d'autres administrateurs.
+
+* Configuration et surveillance des incidents de performance
++
+L'administrateur OnCommand peut surveiller et gérer les performances des ressources du système de stockage actuellement surveillées. Pour plus d'informations, reportez-vous au _Unified Manager Workflow Guide for Managing Cluster Performance_.
+
+* Diagnostic et gestion des problèmes de capacité des volumes
++
+Si des problèmes de capacité de stockage de volume sont affichés dans la page tableaux de bord/Présentation, les administrateurs de stockage peuvent suivre les liens intégrés pour afficher les tendances actuelles et historiques relatives à la capacité de stockage du volume affecté, consulter les conseils de dépannage et attribuer la résolution des problèmes à d'autres administrateurs.
+
+* Configuration, contrôle et diagnostic des problèmes de relation au niveau de la protection
++
+Après avoir créé et configuré des relations de protection, les administrateurs du stockage peuvent consulter les problèmes potentiels liés aux relations de protection dans la page tableaux de bord/Présentation et suivre les liens intégrés pour afficher l'état actuel des relations de protection, les informations de réussite actuelles et historiques des tâches de protection sur les relations affectées, et des conseils de dépannage, et d'attribuer la résolution des problèmes à d'autres administrateurs. Les administrateurs du stockage peuvent également configurer et gérer les relations SnapMirror et SnapVault.
+
+* Création de fichiers de sauvegarde et restauration de données à partir de fichiers de sauvegarde.
+* Association d'objets de stockage avec des annotations
++
+En associant les objets de stockage aux annotations, les administrateurs du stockage peuvent filtrer et afficher les événements associés aux objets de stockage. Ainsi, les administrateurs du stockage peuvent hiérarchiser et résoudre les problèmes associés aux événements.
+
+* Envoi d'un pack support au support technique
++
+Les administrateurs de stockage peuvent récupérer et envoyer un pack au support technique à l'aide de la console de maintenance. Les packs de support doivent être envoyés au support technique si le problème nécessite un diagnostic et une résolution de problèmes plus détaillés que ceux communiqués par un message AutoSupport.
+
+* Création de nouveaux rapports à importer
++
+Les administrateurs du stockage peuvent en créer de nouveaux `.rptdesign` Fichiers à l'aide du plug-in Eclipse for Business Intelligence and Reporting Tools (BIRT). Ces rapports peuvent être importés dans l'interface utilisateur d'Unified Manager et affichés dans la page Rapports.
+
++
+Les rapports affichés sur la page Rapports fournissent l'état actuel des objets de stockage. Vous pouvez prendre des décisions importantes, telles que des décisions d'approvisionnement de stockage, en fonction de l'utilisation actuelle. Ces rapports fournissent une vue détaillée des objets de stockage tels que les volumes, les tiroirs disques et les agrégats.
+
++
+La page Reports de l'interface utilisateur Unified Manager vous permet d'afficher des informations détaillées sur les rapports que vous générez. Vous pouvez rechercher un rapport spécifique, enregistrer un rapport et supprimer un rapport de la page Rapports. Vous pouvez également planifier, partager et importer un rapport à partir de cette page.
+
+* Création, configuration, surveillance et protection d'Infinite volumes
++
+Après avoir utilisé l'outil Workflow Automation pour créer, configurer et définir des classes de stockage pour un Infinite Volume, les administrateurs du stockage peuvent utiliser Unified Manager pour surveiller, définir des seuils de notification et définir la règle de données pour ce volume et ses classes de stockage. Les administrateurs du stockage peuvent également utiliser WFA et Unified Manager pour configurer la protection des données pour Infinite Volume.
+
+

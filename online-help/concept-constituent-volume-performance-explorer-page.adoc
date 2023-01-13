@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-constituent-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page Explorateur de volumes de composants/performances fournit des informations détaillées sur les performances du composant FlexGroup sélectionné. 
+---
+= Page Explorateur de volumes constituants/performants
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Explorateur de volumes de composants/performances fournit des informations détaillées sur les performances du composant FlexGroup sélectionné.
+
+La page Explorateur de volumes composants/performances vous permet de suivre et de comparer les performances des composants au cours d'une période donnée, ce qui permet de résoudre les problèmes et d'ajuster les performances d'un volume FlexGroup et de ses volumes constitutifs.
+
+La fonctionnalité View and compare vous permet de comparer les performances de ce volume constituant :
+
+* l'agrégat sur lequel se trouve ce volume composant
+* SVM sur lequel réside ce volume composant
+* Volume FlexGroup auquel appartient le volume composant
+* autres volumes du même agrégat
+
+
+La page Explorateur de volumes de composants/performances vous permet d'effectuer les opérations suivantes :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivre et comparer les données de performances constitutives
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+
+
+[NOTE]
+====
+Pour les volumes DP (Data protection), seules les valeurs de compteur du trafic généré par les utilisateurs sont affichées. Lorsque le cluster est installé avec une version du logiciel ONTAP antérieure à 8.3, aucune valeur de compteur n'est affichée.
+
+====

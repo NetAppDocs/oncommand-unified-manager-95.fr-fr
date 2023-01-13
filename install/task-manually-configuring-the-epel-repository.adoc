@@ -1,0 +1,28 @@
+---
+permalink: install/task-manually-configuring-the-epel-repository.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si le système sur lequel vous installez Unified Manager n"a pas accès au référentiel progiciels supplémentaires pour Enterprise Linux \(EPEL\), vous devez télécharger et configurer manuellement le référentiel pour une installation réussie.' 
+---
+= Configuration manuelle du référentiel EPEL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si le système sur lequel vous installez Unified Manager n'a pas accès au référentiel progiciels supplémentaires pour Enterprise Linux (EPEL), vous devez télécharger et configurer manuellement le référentiel pour une installation réussie.
+
+
+
+== Description de la tâche
+
+Le référentiel EPEL permet d'accéder aux utilitaires tiers requis qui doivent être installés sur votre système. Que vous installiez Unified Manager sur un système Red Hat ou CentOS, vous utilisez le référentiel EPEL.
+
+
+
+== Étapes
+
+. Téléchargez le référentiel EPEL pour votre installation : `+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+`
+. Configurez le référentiel EPEL : `yum install epel-release-latest-7.noarch.rpm`
+

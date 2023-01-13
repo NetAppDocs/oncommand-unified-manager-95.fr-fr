@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-edit-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Modifier le cluster vous permet de modifier les paramètres de connexion d"un cluster existant, notamment l"adresse IP, le port et le protocole.' 
+---
+= Boîte de dialogue Modifier le cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Modifier le cluster vous permet de modifier les paramètres de connexion d'un cluster existant, notamment l'adresse IP, le port et le protocole.
+
+Vous pouvez modifier les champs suivants :
+
+* *Nom d'hôte ou adresse IP*
++
+Permet de spécifier le FQDN, le nom court ou l'adresse IP (IPv4 ou IPv6) de la LIF de cluster-management qui est utilisée pour se connecter au cluster.
+
+* *Nom d'utilisateur*
++
+Permet de spécifier un nom d'utilisateur pouvant être utilisé pour vous connecter au cluster.
+
+* *Mot de passe*
++
+Vous permet de spécifier un mot de passe pour le nom d'utilisateur spécifié.
+
+* *Protocole*
++
+Permet de spécifier le type de protocole pouvant être configuré sur le cluster. Vous pouvez activer HTTP ou HTTPS (pour une connexion sécurisée). La connexion est établie avec le cluster via les deux protocoles et HTTPS est choisi via HTTP. Par défaut, HTTPS est activé avec le port par défaut 443.
+
+* *Port*
++
+Permet de spécifier le numéro de port utilisé pour se connecter au cluster. Si le port n'est pas spécifié, le port par défaut du protocole sélectionné est utilisé (80 pour HTTP ou 443 pour HTTPS).
+
+

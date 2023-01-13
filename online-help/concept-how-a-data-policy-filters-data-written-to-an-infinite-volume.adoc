@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-how-a-data-policy-filters-data-written-to-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une règle de données filtre automatiquement les données écrites sur Infinite Volume dans différentes classes de stockage. Tous les fichiers sont écrits sur le système de fichiers unique dans l"espace de noms d"Infinite Volume, et les règles de la stratégie de données déterminent quelle classe de stockage stocke les données des fichiers.' 
+---
+= Filtrage des données écrites sur un Infinite Volume par une règle de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une règle de données filtre automatiquement les données écrites sur Infinite Volume dans différentes classes de stockage. Tous les fichiers sont écrits sur un seul système de fichiers dans le namespace d'Infinite Volume, et les règles de la règle de données déterminent quelle classe de stockage stocke les données des fichiers.
+
+Une règle de données par défaut est automatiquement créée pour un SVM (Storage Virtual machine) avec Infinite Volume lors de la création d'Infinite Volume. La stratégie de données est active et contient une règle par défaut. La règle par défaut stocke les données entrantes des fichiers comme suit pour Infinite volumes, avec ou sans classes de stockage :
+
+|===
+| Pour un Infinite Volume... | La stratégie de données par défaut le fait... 
+
+
+ a| 
+Sans classes de stockage
+ a| 
+Place toutes les données entrantes pour les fichiers dans Infinite Volume
+
+
+
+ a| 
+Avec une seule classe de stockage
+ a| 
+Place toutes les données entrantes des fichiers dans la classe de stockage
+
+
+
+ a| 
+Avec une ou plusieurs classes de stockage
+ a| 
+Place toutes les données entrantes des fichiers dans la première classe de stockage créée
+
+|===
+[NOTE]
+====
+Dans le cas d'un Infinite Volume comptant deux classes de stockage ou plus, modifiez le Dès que possible de la règle de données afin de créer des règles qui filtrent les données de différents types de fichiers dans les différentes classes de stockage. Vous devez modifier la règle de données à l'aide d'Unified Manager.
+
+====
+La politique de données n'affecte pas l'emplacement des fichiers dans le système de fichiers dans le namespace d'Infinite Volume, et les classes de stockage sont transparentes pour les applications client. Le système de fichiers dans l'espace de noms contient les noms de fichiers. La stratégie de données affecte uniquement la classe de stockage utilisée pour stocker les données des fichiers. Des règles de données sont utiles lorsque vous attribuez deux classes de stockage ou plus à un Infinite Volume.
+
+Vous pouvez modifier la stratégie de données pour créer des règles supplémentaires, mais vous ne pouvez pas supprimer la stratégie de données ou sa règle par défaut.
+
+Le diagramme suivant illustre la manière dont une règle de données filtre les données d'un Infinite Volume. Le nom du fichier est stocké dans le composant d'espace de noms, et les règles dans la règle de données spécifient que les données de ce fichier particulier sont stockées dans la classe de stockage Silver.
+
+image::../media/how-a-data-policy-filters-data-written-to-an-infinite-volume.gif[Ce graphique est décrit par le texte environnant]

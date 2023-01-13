@@ -1,0 +1,25 @@
+---
+permalink: performance-checker/concept-managing-performance-using-perf-capacity-and-available-iops-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La capacité de performance indique le débit dont vous pouvez bénéficier sans compromettre les performances de cette ressource. Lorsqu"il est utilisé des compteurs de performances existants, la capacité de performances est le point où l"utilisation maximale est atteint depuis un nœud ou un agrégat avant que la latence ne devienne un problème.' 
+---
+= Gestion des performances grâce à la capacité en termes de performances et aux informations d'IOPS disponibles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Performance Capacity_ indique le débit que vous pouvez obtenir d'une ressource sans dépasser les performances utiles de cette ressource. Lorsqu'il est utilisé des compteurs de performances existants, la capacité de performances est le point où l'utilisation maximale est atteint depuis un nœud ou un agrégat avant que la latence ne devienne un problème.
+
+Unified Manager collecte les statistiques de capacité des performances à partir des nœuds et des agrégats de chaque cluster. _Performance Capacity used_ représente le pourcentage de capacité de performance actuellement utilisée et _performance free_ représente le pourcentage de capacité de performance qui est toujours disponible.
+
+Tandis que la fonction libération de la capacité qui constitue un pourcentage de ressource encore disponible, _Available IOPS_ représente le nombre d'IOPS pouvant être ajoutés à la ressource avant d'atteindre la capacité de performance maximale. Cette mesure vous permet d'ajouter des charges de travail d'un nombre prédéterminé d'IOPS à une ressource.
+
+Le contrôle des informations sur la capacité en matière de performances présente les avantages suivants :
+
+* Aide au provisionnement et à l'équilibrage des flux de travail.
+* Vous aide à éviter de surcharger un nœud ou de repousser ses ressources au-delà du point optimal, réduisant ainsi la nécessité de résoudre le problème.
+* Elle vous permet de déterminer avec plus de précision les endroits où un équipement de stockage supplémentaire peut être nécessaire.
+

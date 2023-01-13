@@ -1,0 +1,95 @@
+---
+permalink: performance-checker/concept-how-user-defined-performance-threshold-policies-work-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous définissez des règles de seuil de performances sur les objets de stockage \(par exemple, sur les agrégats et les volumes\) afin qu"un événement puisse être envoyé à l"administrateur du stockage pour informer l"administrateur que le cluster rencontre un problème de performances.' 
+---
+= Fonctionnement des règles de seuil de performances définies par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous définissez des règles de seuil de performances sur les objets de stockage (sur les agrégats et les volumes, par exemple). Un événement peut ainsi être envoyé à l'administrateur du stockage pour informer l'administrateur que le cluster rencontre un problème de performances.
+
+Vous créez une règle de seuil de performances pour un objet de stockage en :
+
+* Sélection d'un objet de stockage
+* Sélection d'un compteur de performances associé à cet objet
+* Spécification de valeurs définissant les limites supérieures du compteur de performances considérées comme des situations d'avertissement et critiques
+* Spécification d'une période qui définit la durée du compteur devant dépasser la limite supérieure
+
+
+Par exemple, vous pouvez définir une règle de seuil de performance sur un volume afin de recevoir une notification d'événements critiques chaque fois que les IOPS de ce volume dépassent 750 opérations par seconde pendant 10 minutes consécutives. Cette même politique de seuil peut également spécifier qu'un événement d'avertissement doit être envoyé lorsque les IOPS dépassent 500 opérations par seconde pendant 10 minutes.
+
+[NOTE]
+====
+La version actuelle fournit des seuils qui envoient des événements lorsqu'une valeur de compteur dépasse le paramètre de seuil. Vous ne pouvez pas définir de seuils qui envoient des événements lorsqu'une valeur de compteur tombe en dessous d'un paramètre de seuil.
+
+====
+Un exemple de graphique de compteur est illustré ici, indiquant qu'un seuil d'avertissement (icône jaune) a été dépassé à 1:00 et qu'un seuil critique (icône rouge) a été dépassé à 12:10, 12:30 et 1:10 :
+
+image::../media/opm2-threshold-breach.gif[dépassement du seuil opm2]
+
+Une violation de seuil doit se produire en continu pendant la durée spécifiée. Si le seuil passe en dessous des valeurs limites pour une raison quelconque, une violation ultérieure est considérée comme le début d'une nouvelle durée.
+
+Certains objets de cluster et compteurs de performances vous permettent de créer une règle de seuils de combinaison qui requiert deux compteurs de performances pour dépasser leurs limites maximales avant qu'un événement ne soit généré. Par exemple, vous pouvez créer une stratégie de seuil à l'aide des critères suivants :
+
+|===
+| Objet cluster | Compteur de performances | Seuil d'avertissement | Seuil critique | Durée 
+
+
+ a| 
+Volumétrie
+ a| 
+Latence
+ a| 
+10 millisecondes
+ a| 
+20 millisecondes
+ a| 
+15 minutes
+
+|===
+Les règles de seuil qui utilisent deux objets de cluster provoquent la génération d'un événement uniquement lorsque les deux conditions sont remplies. Par exemple, en utilisant la règle de seuil définie dans le tableau :
+
+|===
+| Si la latence du volume est moyenne... | Et l'utilisation des disques de l'agrégat est... | Alors... 
+
+
+ a| 
+15 millisecondes
+ a| 
+50 %
+ a| 
+Aucun événement n'est signalé.
+
+
+
+ a| 
+15 millisecondes
+ a| 
+75 %
+ a| 
+Un incident d'avertissement est signalé.
+
+
+
+ a| 
+25 millisecondes
+ a| 
+75 %
+ a| 
+Un incident d'avertissement est signalé.
+
+
+
+ a| 
+25 millisecondes
+ a| 
+90 %
+ a| 
+Un événement critique est signalé.
+
+|===

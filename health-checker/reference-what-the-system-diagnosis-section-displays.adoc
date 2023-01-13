@@ -1,0 +1,29 @@
+---
+permalink: health-checker/reference-what-the-system-diagnosis-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La section diagnostic du système de la page Détails de l"événement fournit des informations qui peuvent vous aider à diagnostiquer les problèmes qui pourraient être responsables de l"événement.' 
+---
+= Ce que la section diagnostic du système affiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La section diagnostic du système de la page Détails de l'événement fournit des informations qui peuvent vous aider à diagnostiquer les problèmes qui pourraient être responsables de l'événement.
+
+Cette zone s'affiche uniquement pour certains événements.
+
+Certains événements de performances fournissent des graphiques pertinents à l'événement généré. Cela inclut généralement le tableau IOPS ou Mbit/s et un graphique sur la latence pour les dix jours précédents. Lorsqu'elle est organisée, vous pouvez voir les composants de stockage qui affectent le plus la latence ou qui sont affectés par la latence lorsque l'événement est actif.
+
+Pour les événements de performance dynamique, les graphiques suivants sont affichés :
+
+* Latence de la charge de travail : affiche l'historique de latence des charges de travail les plus victimes, dominantes ou requins au niveau du composant lors des conflits.
+* Charge de travail : affiche des détails sur l'utilisation des charges de travail du composant de cluster dans les conflits.
+* Activité de ressource - affiche les statistiques de performances historiques du composant de cluster en conflit.
+
+
+D'autres graphiques s'affichent lorsque certains composants du cluster présentent des conflits.
+
+D'autres événements fournissent une brève description du type d'analyse exécuté sur l'objet de stockage par le système. Dans certains cas, il y aura une ou plusieurs lignes, un pour chaque composant analysé, pour des règles de performance définies par le système qui analysent plusieurs compteurs de performances. Dans ce scénario, une icône verte ou rouge s'affiche à côté du diagnostic pour indiquer si un problème a été détecté ou non dans le cadre de ce diagnostic particulier.

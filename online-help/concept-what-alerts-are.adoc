@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-alerts-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements se produisent en permanence, mais Unified Manager génère une alerte uniquement lorsqu"un événement répond aux critères de filtre spécifiés. Vous pouvez choisir les événements pour lesquels les alertes doivent être générées. Par exemple, lorsqu"un seuil d"espace est dépassé ou qu"un objet passe hors ligne. Vous pouvez également associer une alerte à un script exécuté lorsqu"une alerte est déclenchée.' 
+---
+= Quelles sont les alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements se produisent en permanence, mais Unified Manager génère une alerte uniquement lorsqu'un événement répond aux critères de filtre spécifiés. Vous pouvez choisir les événements pour lesquels des alertes doivent être générées. Par exemple, lorsqu'un seuil d'espace est dépassé ou qu'un objet passe hors ligne. Vous pouvez également associer une alerte à un script exécuté lorsqu'une alerte est déclenchée.
+
+Les critères de filtre incluent la classe d'objet, le nom ou la gravité de l'événement.

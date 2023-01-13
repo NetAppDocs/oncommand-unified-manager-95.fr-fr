@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez activer l"authentification à distance sur le serveur de gestion et configurer le serveur de gestion pour qu"il communique avec vos serveurs d"authentification de sorte que les utilisateurs des serveurs d"authentification puissent accéder, vous pouvez activer l"authentification à distance sur le serveur de gestion et configurer le serveur de gestion pour qu"il communique avec vos serveurs d"authentification Les utilisateurs au sein des serveurs d"authentification peuvent accéder à Unified Manager.' 
+---
+= Authentification avec Active Directory ou OpenLDAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer l'authentification à distance sur le serveur de gestion et configurer le serveur de gestion pour qu'il communique avec vos serveurs d'authentification de sorte que les utilisateurs des serveurs d'authentification puissent accéder, vous pouvez activer l'authentification à distance sur le serveur de gestion et configurer le serveur de gestion pour qu'il communique avec vos serveurs d'authentification Les utilisateurs au sein des serveurs d'authentification peuvent accéder à Unified Manager.
+
+Vous pouvez utiliser l'un des services d'authentification prédéfinis suivants ou spécifier votre propre service d'authentification :
+
+* Microsoft Active Directory
++
+[NOTE]
+====
+Vous ne pouvez pas utiliser Microsoft Lightweight Directory Services.
+
+====
+* OpenLDAP
+
+
+Vous pouvez sélectionner le service d'authentification requis et ajouter les serveurs d'authentification appropriés pour permettre aux utilisateurs distants du serveur d'authentification d'accéder à Unified Manager. Les informations d'identification des utilisateurs ou groupes distants sont gérées par le serveur d'authentification. Le serveur de gestion utilise le protocole LDAP (Lightweight Directory Access Protocol) pour authentifier les utilisateurs distants au sein du serveur d'authentification configuré.
+
+Pour les utilisateurs locaux créés dans Unified Manager, le serveur de gestion conserve sa propre base de données de noms d'utilisateur et de mots de passe. Le serveur de gestion effectue l'authentification et n'utilise pas Active Directory ou OpenLDAP pour l'authentification.

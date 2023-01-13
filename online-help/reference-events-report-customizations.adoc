@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez créer des rapports pour surveiller les événements en attente sur un cluster. 
+---
+= Personnalisation du rapport d'événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des rapports pour surveiller les événements en attente sur un cluster.

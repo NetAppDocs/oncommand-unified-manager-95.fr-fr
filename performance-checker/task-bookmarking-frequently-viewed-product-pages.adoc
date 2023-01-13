@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des pages de produits fréquemment utilisées à vos signets à partir de l"interface utilisateur de Unified Manager. Cela vous permet de revenir rapidement à ces pages. Lorsque vous affichez la page plus tard, elle affiche les données les plus récentes.' 
+---
+= Création de signets pour les pages de produits fréquemment consultées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des pages de produits fréquemment utilisées à vos signets à partir de l'interface utilisateur de Unified Manager. Cela vous permet de revenir rapidement à ces pages. Lorsque vous affichez la page plus tard, elle affiche les données les plus récentes.
+
+
+
+== Description de la tâche
+
+Vous pouvez également copier le lien (URL) vers la page actuelle du produit afin de le coller dans un e-mail ou une autre application pour le partager avec d'autres personnes.
+
+
+
+== Étapes
+
+. Créez un signet à l'aide de toutes les étapes nécessaires pour ajouter une page à vos signets dans votre navigateur.
++
+Le lien de la page est enregistré avec des détails sur la page, mais vous pouvez personnaliser le texte du signet pour identifier la page : par exemple « Unified Manager | Node: Node: Node-01 » ou « Unified Manager | User-Defined Threshold Event: IOPS volume... 1 ».
+
+

@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher les informations relatives à toutes les LIFs d"un SVM. Vous pouvez afficher toutes les LIF avant de déterminer celles qui seront occupées et doivent être déplacées.' 
+---
+= Affichage de toutes les LIFs d'un SVM à l'aide de l'interface de ligne de commandes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les informations relatives à toutes les LIFs d'un SVM. Vous pouvez afficher toutes les LIF avant de déterminer celles qui seront occupées et doivent être déplacées.
+
+
+
+== Description de la tâche
+
+Le statut opérationnel d'une LIF est déterminé par sa configuration sur un port particulier et par son activation du service de données. Lorsqu'un SVM est arrêté, les LIFs de données et les LIFs de SVM Management associées ne peuvent plus transmettre des données. Le statut opérationnel de ces LIFs est modifié en `down`.
+
+
+
+== Étapes
+
+. Pour afficher les informations relatives à toutes les LIFs d'un SVM, entrez la commande suivante : `network interface show -vserver vserver_name`
++
+La commande affiche les informations suivantes :
+
++
+** Nœud ou SVM associé à la LIF
+** Nom de LIF
+** Statut administratif et opérationnel
+** Adresse IP
+** Masque de réseau
+** Nœud et port sur lequel la LIF est configurée
+
+
++
+Un home Server peut être un nœud ou un SVM.
+
++
+Si les données d'un champ ne sont pas disponibles (par exemple, le duplex opérationnel et la vitesse pour un port inactif), le champ est répertorié comme undef.
+
++
+[NOTE]
+====
+Vous pouvez obtenir toutes les informations disponibles en spécifiant le `-instance` paramètre.
+
+====
++
+L'exemple suivant affiche des informations générales sur toutes les LIF d'un SVM :
+
++
+[listing]
+----
+vs1::> network interface show -vserver vs1
+            Logical    Status     Network            Current       Current Is
+Vserver     Interface  Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- ----
+vs1
+            lif1         up/up    192.0.2.253/24     node-01       e0b     false
+            d2           up/up    192.0.2.252/21     node-01       e0d     true
+            data3        up/up    192.0.2.251/20     node-02       e0c     true
+----
+

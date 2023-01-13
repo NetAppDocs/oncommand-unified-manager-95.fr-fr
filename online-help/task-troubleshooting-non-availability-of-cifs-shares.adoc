@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: Il se peut que vous ne puissiez pas accéder aux partages CIFS si les objets de stockage servant ces partages sont indisponibles. Vous devez vérifier les événements de disponibilité tels que le volume hors ligne, la Junction Path hors ligne ou le SVM CIFS Server défaillant qui sont générés lorsque ces objets sont indisponibles. 
+---
+= Dépannage de l'accès aux partages CIFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il se peut que vous ne puissiez pas accéder aux partages CIFS si les objets de stockage servant ces partages sont indisponibles. Vous devez vérifier les événements de disponibilité tels que le volume hors ligne, la Junction Path hors ligne ou le SVM CIFS Server défaillant qui sont générés lorsque ces objets sont indisponibles.
+
+
+
+== Avant de commencer
+
+Pour effectuer cette tâche, vous devez avoir le rôle d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Si vous avez configuré une alerte appropriée, un e-mail d'alerte vous informe de l'événement de disponibilité.
+
+
+
+== Étapes
+
+. Dans la page *tableaux de bord/vue d'ensemble*, cliquez sur l'événement hors ligne approprié.
++
+Par exemple, si vous recevez un événement Volume hors ligne, cliquez sur le *`Volume_name` Événement Volume Offline* dans le panneau disponibilité dans la zone incidents et risques non résolus.
+
+. Dans la page *Event* details, cliquez sur *`Volume_name`* Dans le champ *Source*.
+. Dans la page de détails *Health/Volume*, cliquez sur le numéro correspondant aux partages CIFS dans le volet *Related Devices*.
+. Dans la page de détails *Health/Storage Virtual machine*, cliquez sur l'onglet *CIFS Shares*.
++
+Vous pouvez afficher le nombre de partages CIFS affectés.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous devez résoudre les défaillances à l'aide de OnCommand System Manager ou de l'interface de ligne de commandes de ONTAP.

@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer Unified Manager avec Veritas Cluster Server \(VCS\) à l"aide de scripts de configuration.' 
+---
+= Configuration de Unified Manager avec VCS à l'aide de scripts de configuration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer Unified Manager avec Veritas Cluster Server (VCS) à l'aide de scripts de configuration.
+
+
+
+== Avant de commencer
+
+* Unified Manager doit être installé sur les deux nœuds de la configuration de VCS.
+* Le module XML: Libxml doit être fourni avec Perl pour que les scripts VCS fonctionnent.
+* Vous devez avoir créé une LUN partagée d'une taille suffisante pour prendre en charge les données Unified Manager source.
+* Vous devez avoir spécifié le chemin de montage absolu pour que le script fonctionne.
++
+Le script ne fonctionnera pas si vous créez un dossier dans le chemin de montage.
+
+* Vous devez avoir téléchargé le `ha_setup.pl` script à l'adresse `/opt/netapp/ocum/scripts`.
+
+
+
+
+== Description de la tâche
+
+Dans la configuration de VCS, le nœud pour lequel l'interface IP virtuelle et le point de montage sont actifs est le premier nœud. L'autre nœud est le second nœud.
+
+
+
+== Étapes
+
+. Connectez-vous au premier nœud du cluster.
++
+Vous devez avoir arrêté tous les services Unified Manager sur le second nœud dans le setup haute disponibilité.
+
+. Ajoutez le répertoire d'installation de VCS `/opt/VRTSvcs/bin` Vers la variable d'environnement PATH.
+. Si vous configurez une configuration Unified Manager existante, créez une sauvegarde Unified Manager et générez le pack de support.
+. Exécutez le `ha_setup.pl` script : `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. Utilisez la console Web Veritas Operation Manager ou VCS Cluster Manager pour vérifier qu'un groupe de basculement est créé et que les services du serveur Unified Manager, le point de montage, l'adresse IP virtuelle, la carte d'interface réseau (NIC) et le groupe de volumes sont ajoutés au groupe de clusters.
+. Déplacez manuellement le groupe de services Unified Manager vers le nœud secondaire et vérifiez que le basculement du cluster fonctionne.
+. Vérifiez que VCS a basculé sur le second nœud du cluster.
++
+Vous devez vérifier que le montage de données, l'adresse IP virtuelle, le groupe de volumes et la carte réseau sont en ligne sur le second nœud du cluster.
+
+. Arrêtez Unified Manager à l'aide de Veritas Operation Manager.
+. Exécutez le `perl ha_setup.pl --join -t vcs -f``mount_path` Commande située sur le second nœud du cluster afin que les données du serveur Unified Manager pointe vers la LUN.
+. Vérifiez que les services du serveur Unified Manager démarrent correctement sur le second nœud du cluster.
+. Régénérez le certificat Unified Manager après avoir exécuté les scripts de configuration pour obtenir l'adresse IP globale.
++
+.. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *certificat HTTPS* dans le menu *Setup*.
+.. Cliquez sur *régénérer le certificat HTTPS*.
+
+
++
+Le certificat régénéré fournit uniquement l'adresse IP du cluster, et non le nom de domaine complet (FQDN). Vous devez utiliser l'adresse IP globale pour configurer Unified Manager pour la haute disponibilité.
+
+. Pour accéder à l'interface utilisateur de Unified Manager, utilisez : `\https://<FQDN of Global IP>`
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous devez créer un emplacement de sauvegarde partagé une fois la haute disponibilité configurée. L'emplacement partagé est requis pour contenir les sauvegardes que vous créez avant et après le basculement. Les deux nœuds du setup haute disponibilité doivent être capables d'accéder à l'emplacement partagé.

@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page Créer une stratégie de seuil ou la page politique de seuil de clonage pour créer une nouvelle stratégie de seuil de performances. 
+---
+= Page Créer ou Cloner la règle de seuil de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page Créer une stratégie de seuil ou la page politique de seuil de clonage pour créer une nouvelle stratégie de seuil de performances.
+
+Vous pouvez compléter les champs de cette page et cliquer sur *Enregistrer* pour ajouter une stratégie de seuil de performances.
+
+* *Pour le type d'objet*
++
+Sélectionnez le type d'objet de stockage pour lequel vous souhaitez créer une règle de seuil.
+
+* *Nom de la politique*
++
+Entrez le nom de la règle de seuil. Ce nom apparaît sur d'autres pages Unified Manager et doit fournir une brève description de la règle.
+
+* *Description*
++
+(Facultatif) Entrez une description détaillée de la stratégie de seuil.
+
+* *Valeurs de seuil*
++
+Définissez la condition de compteur de seuil primaire et, le cas échéant, la condition de compteur de seuil secondaire. L'inclusion d'un compteur secondaire nécessite que les deux compteurs dépassent les valeurs limites avant que le seuil ne soit considéré comme non atteint.
+
++
+** *Sélectionnez un compteur*
++
+Sélectionnez le compteur sur lequel vous souhaitez définir un seuil de performances.
+
+** *Avertissement*
++
+Entrez la valeur limite du compteur considéré comme un avertissement.
+
+** *Critique*
++
+Entrez la valeur limite du compteur considéré comme critique.
+
+
+
++
+Les valeurs de seuil valides sont de 0.001 à 10,000,000 pour les nombres, de 0.001-100 pour les pourcentages et de 0.001-200 pour les pourcentages de capacité utilisée pour les performances.
+
+* *Durée*
++
+Sélectionnez le nombre de minutes pendant lequel la valeur du compteur doit être supérieure à la valeur limite d'avertissement ou critique. Dans la mesure où Unified Manager collecte de nouvelles valeurs de compteur de performances toutes les cinq minutes, le menu fournit des valeurs multiples de cinq sur la base de l'intervalle d'actualisation.
+
+

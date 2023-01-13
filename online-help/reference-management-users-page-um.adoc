@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-management-users-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page gestion/utilisateurs affiche la liste de vos utilisateurs et groupes et fournit des informations telles que le nom, le type d"utilisateur et l"adresse électronique. Vous pouvez également utiliser cette page pour effectuer des tâches telles que l"ajout, la modification, la suppression et le test d"utilisateurs.' 
+---
+= Page gestion/utilisateurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page gestion/utilisateurs affiche la liste de vos utilisateurs et groupes et fournit des informations telles que le nom, le type d'utilisateur et l'adresse électronique. Vous pouvez également utiliser cette page pour effectuer des tâches telles que l'ajout, la modification, la suppression et le test d'utilisateurs.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour les utilisateurs sélectionnés :
+
+* *Ajouter*
++
+Affiche la boîte de dialogue Ajouter un utilisateur qui vous permet d'ajouter un utilisateur local, un utilisateur distant, un groupe distant ou un utilisateur de base de données.
+
++
+Vous pouvez ajouter des utilisateurs ou des groupes distants uniquement si votre serveur d'authentification est activé et configuré.
+
+* *Modifier*
++
+Affiche la boîte de dialogue Modifier l'utilisateur, qui permet de modifier les paramètres de l'utilisateur sélectionné.
+
+* *Supprimer*
++
+Supprime les utilisateurs sélectionnés de la base de données du serveur de gestion.
+
+* *Test*
++
+Permet de vérifier si un utilisateur ou un groupe distant est présent sur le serveur d'authentification.
+
++
+Vous ne pouvez effectuer cette tâche que si votre serveur d'authentification est activé et configuré.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, sous forme de tableau, des informations sur les utilisateurs qui sont créés. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Nom*
++
+Affiche le nom de l'utilisateur ou du groupe.
+
+* *Type*
++
+Affiche le type d'utilisateur : utilisateur local, utilisateur distant, groupe distant, utilisateur de base de données ou utilisateur de maintenance.
+
+* *Courriel*
++
+Affiche l'adresse électronique de l'utilisateur.
+
+* *Rôle*
++
+Affiche le type de rôle attribué à l'utilisateur : opérateur, administrateur de stockage, administrateur OnCommand, schéma d'intégration ou schéma de rapport.
+
+

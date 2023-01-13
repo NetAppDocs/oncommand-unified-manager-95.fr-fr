@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous aide à surveiller un grand nombre de systèmes exécutant le logiciel ONTAP via une interface utilisateur centralisée. L"infrastructure de serveur Unified Manager offre évolutivité, compatibilité et fonctionnalités avancées de contrôle et de notification.' 
+---
+= Présentation de la surveillance de l'état de santé de OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous aide à surveiller un grand nombre de systèmes exécutant le logiciel ONTAP via une interface utilisateur centralisée. L'infrastructure de serveur Unified Manager offre évolutivité, compatibilité et fonctionnalités avancées de contrôle et de notification.
+
+Unified Manager inclut des fonctionnalités clés de surveillance, d'alerte, de gestion de la disponibilité et de la capacité des clusters, de gestion des fonctionnalités de protection, de contrôle des performances, de configuration et de gestion des Infinite volumes, d'annotation des objets de stockage et de regroupement des données de diagnostic et de transmission à un support technique.
+
+Vous pouvez utiliser Unified Manager pour surveiller vos clusters. Lorsqu'un problème se produit au sein du cluster, Unified Manager vous informe des détails de ces problèmes par le biais d'événements. Certains événements vous fournissent également une action corrective que vous pouvez effectuer pour corriger ces problèmes. Vous pouvez configurer les alertes pour les événements afin que lorsque des problèmes se produisent, vous être averti par e-mail et des interruptions SNMP.
+
+Unified Manager vous permet de gérer les objets de stockage de votre environnement en les associant à des annotations. Vous pouvez créer des annotations personnalisées et associer de façon dynamique des clusters, des machines virtuelles de stockage et des volumes aux annotations via des règles.
+
+Vous pouvez également planifier les besoins de stockage de vos objets de cluster à l'aide des informations fournies dans les graphiques de santé et de capacité pour l'objet de cluster respectif.

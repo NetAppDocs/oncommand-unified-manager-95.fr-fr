@@ -1,0 +1,49 @@
+---
+permalink: health-checker/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si vous avez un temps d"indisponibilité planifié pour un cluster, par exemple pour mettre à niveau le cluster ou pour déplacer l"un des nœuds, vous pouvez supprimer les événements et les alertes qui seraient normalement générés pendant ce délai en planifiant une fenêtre de maintenance Unified Manager.' 
+---
+= Planification d'une fenêtre de maintenance pour désactiver les notifications d'événements du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez un temps d'indisponibilité planifié pour un cluster, par exemple pour mettre à niveau le cluster ou pour déplacer l'un des nœuds, vous pouvez supprimer les événements et les alertes qui seraient normalement générés pendant ce délai en planifiant une fenêtre de maintenance Unified Manager.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lors d'une fenêtre de maintenance, les événements liés à tous les objets du cluster sont toujours générés, mais ils n'apparaissent pas sur la page d'événement. En outre, aucune alerte ou tout autre type de notification n'est envoyée pour ces événements.
+
+L'heure saisie pour la fenêtre de maintenance est basée sur l'heure sur le serveur Unified Manager.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *sources de données de cluster*.
+. Dans la colonne *Maintenance mode* du cluster, sélectionnez le bouton coulissant et déplacez-le vers la droite.
++
+La fenêtre de calendrier s'affiche.
+
+. Sélectionnez la date et l'heure de début et de fin de la fenêtre de maintenance et cliquez sur *appliquer*.
++
+Le message "planifié" s'affiche à côté du bouton du curseur.
+
+
+
+
+
+== Résultats
+
+Lorsque l'heure de début est atteinte, le cluster passe en mode maintenance et un événement « fenêtre de maintenance d'objet démarrée » est généré.

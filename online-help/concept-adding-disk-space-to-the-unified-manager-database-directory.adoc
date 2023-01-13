@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le répertoire de base de données Unified Manager contient toutes les données d"intégrité et de performances collectées à partir des systèmes ONTAP. Dans certaines circonstances, vous devrez peut-être augmenter la taille du répertoire de base de données.' 
+---
+= Ajout d'espace disque au répertoire de base de données Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le répertoire de base de données Unified Manager contient toutes les données d'intégrité et de performances collectées à partir des systèmes ONTAP. Dans certaines circonstances, vous devrez peut-être augmenter la taille du répertoire de base de données.
+
+Par exemple, le répertoire de la base de données peut devenir complet si Unified Manager collecte les données à partir d'un grand nombre de clusters où chaque cluster possède plusieurs nœuds. Vous recevrez un événement d'avertissement lorsque le répertoire de base de données est plein à 90 % et un événement critique lorsque le répertoire est plein à 95 %.
+
+[NOTE]
+====
+Aucune donnée supplémentaire n'est collectée depuis les clusters après le répertoire dans son intégralité, à 95 %.
+
+====
+Les étapes requises pour ajouter de la capacité au répertoire de données sont différentes selon que Unified Manager s'exécute ou non sur un serveur VMware ESXi, sur un serveur Red Hat ou CentOS Linux, ou sur un serveur Microsoft Windows.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"état de l"objet est déterminé par l"événement le plus grave qui détient actuellement un état Nouveau ou reconnu. Par exemple, si l’état d’un objet est erreur, l’un des événements de l’objet a un type de gravité erreur. Une fois l"action corrective effectuée, l"état d"événement passe à résolu.' 
+---
+= Mode de calcul de l'état de l'objet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'état de l'objet est déterminé par l'événement le plus grave qui détient actuellement un état Nouveau ou reconnu. Par exemple, si l'état d'un objet est erreur, l'un des événements de l'objet a un type de gravité erreur. Une fois l'action corrective effectuée, l'état d'événement passe à résolu.

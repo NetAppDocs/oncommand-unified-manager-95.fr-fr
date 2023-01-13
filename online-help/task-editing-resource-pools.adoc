@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-editing-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez modifier un pool de ressources existant lorsque vous souhaitez modifier le nom du pool de ressources et sa description. 
+---
+= Modification de pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier un pool de ressources existant lorsque vous souhaitez modifier le nom du pool de ressources et sa description.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Le bouton *Modifier* n'est activé que lorsqu'un pool de ressources est sélectionné. Si plusieurs pools de ressources sont sélectionnés, le bouton *Edit* est désactivé.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *pools de ressources*.
+. Sélectionnez un pool de ressources dans la liste.
+. Cliquez sur *Modifier*.
++
+La fenêtre Modifier le pool de ressources s'affiche.
+
+. Modifiez le nom et la description du pool de ressources selon vos besoins.
+. Cliquez sur *Enregistrer*.
++
+Le nouveau nom et la nouvelle description sont affichés dans la liste des pools de ressources.
+
+

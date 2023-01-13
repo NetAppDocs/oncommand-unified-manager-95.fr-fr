@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez surveiller le volume racine du nœud à l"aide de Unified Manager. Il est recommandé que la capacité du volume racine du nœud soit suffisante pour éviter que le nœud ne cesse de tomber en panne.' 
+---
+= Présentation des volumes root du nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller le volume racine du nœud à l'aide de Unified Manager. Il est recommandé que la capacité du volume racine du nœud soit suffisante pour éviter que le nœud ne cesse de tomber en panne.
+
+Lorsque la capacité utilisée du volume racine du nœud dépasse 80 % de la capacité totale du volume racine du nœud, l'événement espace volume racine du nœud presque plein est généré. Vous pouvez configurer une alerte pour l'événement afin d'obtenir une notification. Vous pouvez prendre les mesures appropriées pour éviter que le nœud ne se arrête à l'aide de OnCommand System Manager ou de l'interface de ligne de commande de ONTAP.

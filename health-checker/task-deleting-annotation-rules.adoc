@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer des règles d"annotation de OnCommand Unified Manager lorsque celles-ci ne sont plus nécessaires.' 
+---
+= Suppression de règles d'annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer des règles d'annotation de OnCommand Unified Manager lorsque celles-ci ne sont plus nécessaires.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lorsque vous supprimez une règle d'annotation, l'annotation est dissociée et supprimée des objets de stockage.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Annotations* dans le menu gestion de gauche.
+. Dans l'onglet *règles d'annotation*, sélectionnez la règle d'annotation à supprimer, puis cliquez sur *Supprimer*.
+. Dans la boîte de dialogue *Avertissement*, cliquez sur *Oui* pour confirmer la suppression.
+

@@ -1,0 +1,63 @@
+---
+permalink: online-help/reference-qtree-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page seuils de configuration/santé des qtrees vous permet de configurer les valeurs de seuil de santé global des qtrees surveillés. Les événements sont générés pour un qtree uniquement lorsqu"un quota qtree ou un quota par défaut a été défini sur le qtree. Les événements ne sont pas générés si l"espace défini dans un quota utilisateur ou un quota de groupe a dépassé le seuil.' 
+---
+= Page seuils de configuration/de santé des qtrees
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page seuils de configuration/santé des qtrees vous permet de configurer les valeurs de seuil de santé global des qtrees surveillés. Les événements sont générés pour un qtree uniquement lorsqu'un quota qtree ou un quota par défaut a été défini sur le qtree. Les événements ne sont pas générés si l'espace défini dans un quota utilisateur ou un quota de groupe a dépassé le seuil.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+Les événements sont générés lorsqu'un seuil est atteint. Vous pouvez prendre des actions correctives pour de tels événements.
+
+
+
+== Surface de capacité
+
+La zone capacité vous permet de définir les conditions de seuil de capacité qtree suivantes.
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un qtree est considéré comme presque plein :
+
++
+** Valeur par défaut : 80 %
++
+La valeur de ce seuil doit être inférieure à la valeur du seuil qtree pleine.
+
+** Événement généré : qtree presque saturée
+** Gravité de l'événement : avertissement
+
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un qtree est considéré comme plein :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : qtree pleine
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Boutons de commande
+
+* *Rétablir les paramètres par défaut*
++
+Permet de restaurer les paramètres de configuration aux valeurs par défaut.
+
+* *Enregistrer*
++
+Enregistre les paramètres de configuration pour l'option sélectionnée.
+
+

@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-configuring-global-aggregate-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer les valeurs des seuils de santé globaux de tous les agrégats pour suivre tout seuil d"atteinte. Les événements appropriés sont générés pour les violations de seuil et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de bonnes pratiques pour les seuils applicables à tous les agrégats surveillés.' 
+---
+= Configuration des valeurs des seuils de santé globaux des agrégats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les valeurs des seuils de santé globaux de tous les agrégats pour suivre tout seuil d'atteinte. Les événements appropriés sont générés pour les violations de seuil et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de bonnes pratiques pour les seuils applicables à tous les agrégats surveillés.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lorsque vous configurez globalement les options, les valeurs par défaut des objets sont modifiées. Cependant, si les valeurs par défaut ont été modifiées au niveau de l'objet, les valeurs globales ne sont pas modifiées.
+
+Les options de seuil ont des valeurs par défaut pour une meilleure surveillance. Cependant, vous pouvez modifier les valeurs en fonction des exigences de votre environnement.
+
+Lorsque la croissance automatique est activée sur les volumes qui résident sur l'agrégat, les seuils de capacité de l'agrégat sont considérés comme enfreintes en fonction de la taille maximale du volume définie par la croissance automatique, non pas en fonction de la taille du volume initial.
+
+[NOTE]
+====
+Les valeurs de seuil de santé ne sont pas applicables à l'agrégat racine du nœud.
+
+====
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *seuils de santé*.
+. Dans la page *seuils de configuration/santé*, cliquez sur *agrégats*.
+. Configurez les valeurs de seuil appropriées pour la capacité, la croissance et les copies Snapshot.
+. Cliquez sur *Enregistrer*.
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page gestion/groupes pour afficher et gérer tous vos groupes. Vous pouvez également configurer les règles et actions de groupe pour vos objets de stockage à partir de l"onglet règles de groupe et de l"onglet actions de groupe.' 
+---
+= Description des fenêtres de groupes et des boîtes de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page gestion/groupes pour afficher et gérer tous vos groupes. Vous pouvez également configurer les règles et actions de groupe pour vos objets de stockage à partir de l'onglet règles de groupe et de l'onglet actions de groupe.

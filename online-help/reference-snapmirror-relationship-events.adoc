@@ -1,0 +1,145 @@
+---
+permalink: online-help/reference-snapmirror-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de relation SnapMirror fournissent des informations sur l"état de vos relations SnapMirror, ce qui vous permet de surveiller l"apparition de problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements liés à la relation SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de relation SnapMirror fournissent des informations sur l'état de vos relations SnapMirror, ce qui vous permet de surveiller l'apparition de problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : protection
+
+Un astérisque (*) identifie les événements EMS qui ont été convertis en événements Unified Manager.
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Réplication miroir défectueuse(ocumEvtSnapmirrorRelationshipUnHealthy)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Coupure de la réplication en miroir (ocumEvtSnapmirrorRelationshipStateBrokenoff)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Échec de l'initialisation de la réplication du miroir (ocumEvtSnapmirrorRelationInitializeFailé)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Échec de la mise à jour de la réplication miroir (ocumEvtSnapmirrorRelationshipUpdateFailed)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Erreur de décalage de réplication du miroir (ocumEvtSnapMirrorRelationshipLagError)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Avertissement de délai de réplication en miroir (ocumEvtSnapMirrorRelationshipLagWarning)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Échec de la resynchronisation de la réplication en miroir (ocumEvtSnapmirrorRelationshipResyncFailed)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Réplication miroir DeletedocumEvtSnapmirrorRelationshipDeleted
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Réplication synchrone hors synchronisation *
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Réplication synchrone restaurée *
+ a| 
+Événement
+ a| 
+Relation SnapMirror
+ a| 
+Informations
+
+
+
+ a| 
+Échec de la resynchronisation automatique de la réplication synchrone *
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+|===

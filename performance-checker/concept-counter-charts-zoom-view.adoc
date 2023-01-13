@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les diagrammes de compteur offrent une vue Zoom qui vous permet d"effectuer un zoom avant sur les détails de performance au cours de la période spécifiée. Vous pouvez ainsi consulter les informations de performances et les événements avec une granularité bien plus élevée, ce qui est avantageux lors du dépannage des problèmes de performances.' 
+---
+= Vue Zoom des diagrammes de compteur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les diagrammes de compteur offrent une vue Zoom qui vous permet d'effectuer un zoom avant sur les détails de performance au cours de la période spécifiée. Vous pouvez ainsi consulter les informations de performances et les événements avec une granularité bien plus élevée, ce qui est avantageux lors du dépannage des problèmes de performances.
+
+Lorsqu'elles sont affichées dans la vue Zoom, certaines des tableaux de répartition fournissent des informations supplémentaires par rapport à ce qui s'affiche lorsque le graphique n'est pas en vue Zoom. Par exemple, les pages d'affichage Zoom du graphique d'analyse en IOPS, en IOPS/To et en Mo/sec affichent les valeurs de la stratégie QoS pour les volumes et les LUN s'ils ont été définis dans ONTAP.
+
+[NOTE]
+====
+Pour les politiques de seuils de performances définis par le système, seules les stratégies « surutilisées des ressources de nœud » et « dépassement de la limite de débit QoS » sont disponibles dans la liste *Policies*. Les autres règles de seuil définies par le système ne sont pas disponibles pour le moment.
+
+====

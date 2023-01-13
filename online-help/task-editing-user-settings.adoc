@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-editing-user-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres utilisateur, tels que l"adresse e-mail et le rôle, qui sont spécifiés par chaque utilisateur. Par exemple, vous pouvez modifier le rôle d"un utilisateur qui est un opérateur de stockage et attribuer des privilèges d"administrateur de stockage à cet utilisateur.' 
+---
+= Modification des paramètres utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres utilisateur, tels que l'adresse e-mail et le rôle, qui sont spécifiés par chaque utilisateur. Par exemple, vous pouvez modifier le rôle d'un utilisateur qui est un opérateur de stockage et attribuer des privilèges d'administrateur de stockage à cet utilisateur.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Description de la tâche
+
+Lorsque vous modifiez le rôle attribué à un utilisateur, les modifications sont appliquées lorsque l'une des actions suivantes se produit :
+
+* L'utilisateur se déconnecte et se reconnecte à Unified Manager.
+* Le délai d'expiration de session de 24 heures est atteint.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *utilisateurs* dans le menu de gestion de gauche.
+. Dans la page *Management/Users*, sélectionnez l'utilisateur pour lequel vous souhaitez modifier les paramètres, puis cliquez sur *Edit*.
+. Dans la boîte de dialogue *Modifier l'utilisateur*, modifiez les paramètres appropriés spécifiés pour l'utilisateur.
+. Cliquez sur *Enregistrer*.
+

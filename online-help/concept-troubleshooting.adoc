@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-troubleshooting.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les informations de dépannage vous permettent d"identifier et de résoudre les problèmes que vous rencontrez lors de l"utilisation de Unified Manager.' 
+---
+= Dépannage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les informations de dépannage vous permettent d'identifier et de résoudre les problèmes que vous rencontrez lors de l'utilisation de Unified Manager.

@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-previewing-changes-to-your-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Avant d"envoyer les modifications que vous avez apportées aux règles dans une règle de données à la SVM avec Infinite Volume pour l"activation, il est recommandé d"afficher un aperçu des modifications que vous avez apportées à cette règle.' 
+---
+= Aperçu des modifications apportées à votre stratégie de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'envoyer les modifications que vous avez apportées aux règles dans une règle de données à la SVM avec Infinite Volume pour l'activation, il est recommandé d'afficher un aperçu des modifications que vous avez apportées à cette règle.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Modifiez la stratégie de données si nécessaire.
++
+Les modifications de stratégie de données peuvent inclure la création de nouvelles règles, la modification de règles existantes, la suppression de règles existantes ou la réorganisation des règles.
+
+. Cliquez sur *Activer*.
+. Dans la fenêtre *Récapitulatif des modifications apportées à la configuration de la stratégie de données*, affichez un aperçu des modifications apportées à votre stratégie de données, puis cliquez sur *Activate* pour activer les modifications de la règle de données de la SVM avec Infinite Volume.
+

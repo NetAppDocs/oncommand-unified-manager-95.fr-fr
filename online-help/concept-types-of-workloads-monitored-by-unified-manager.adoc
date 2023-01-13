@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-types-of-workloads-monitored-by-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager permet de surveiller les performances de deux types de charges de travail : définies par l"utilisateur et défini par le système.' 
+---
+= Types de charges de travail surveillés par Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager permet de surveiller les performances de deux types de charges de travail : définies par l'utilisateur et défini par le système.
+
+* *_charges de travail définies par l'utilisateur_*
++
+Débit d'E/S des applications vers le cluster. Ce sont des processus impliqués dans les requêtes de lecture et d'écriture. Un volume FlexVol ou FlexGroup est une charge de travail définie par l'utilisateur.
+
++
+[NOTE]
+====
+Unified Manager surveille uniquement l'activité des workloads sur le cluster. Il ne surveille pas les applications, les clients ou les chemins d'accès entre les applications et le cluster.
+
+====
++
+Si un ou plusieurs des éléments suivants sont vrais pour une charge de travail, il ne peut pas être surveillé par Unified Manager :
+
++
+** Il s'agit d'une copie de protection des données (DP) en mode lecture seule. (Notez que lors de l'utilisation de ONTAP 8.3 ou version ultérieure, les volumes DP sont surveillés pour le trafic généré par les utilisateurs.)
+** C'est un Infinite Volume.
+** Il s'agit d'un clone de données hors ligne.
+** Il s'agit d'un volume en miroir dans une configuration MetroCluster.
+
+
+* *_charges de travail définies par le système_*
++
+Les processus internes impliquées dans l'efficacité du stockage, la réplication des données et l'état du système, notamment :
+
++
+** Efficacité du stockage, comme la déduplication
+** État de santé du disque, qui inclut la reconstruction RAID, le nettoyage du disque, etc
+** Réplication des données, notamment les copies SnapMirror
+** Activités de gestion
+** État de santé du système de fichiers, qui inclut les diverses activités WAFL
+** Les scanners de système de fichiers, tels que la numérisation WAFL
+** Allègement de la charge des copies, comme les opérations d'efficacité du stockage déchargées depuis les hôtes VMware
+** État du système, comme les déplacements de volume, la compression des données, etc
+** Volumes non surveillés
+
+
+
+
+Les données de performance des charges de travail définies par le système s'affichent dans l'interface graphique uniquement lorsque le composant de cluster utilisé par ces charges de travail conflits. Par exemple, vous ne pouvez pas rechercher le nom d'une charge de travail définie par le système pour afficher les données de performance dans l'interface graphique. Si plusieurs charges de travail du même type sont affichées, une lettre est ajoutée au nom du workload. La lettre est destinée au personnel de soutien.

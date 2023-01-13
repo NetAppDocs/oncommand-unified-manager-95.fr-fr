@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il serait possible de migrer une LIF de données si elle présente une charge ou un débit élevés. Pour décider s"il faut migrer une LIF, vous pouvez afficher la charge sur les LIFs, le nombre de connexions sur le port, le débit, et les cycles de CPU sur le nœud.' 
+---
+= Identification des LIF ayant le plus de connexions via l'interface de ligne de commandes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il serait possible de migrer une LIF de données si elle présente une charge ou un débit élevés. Pour décider s'il faut migrer une LIF, vous pouvez afficher la charge sur les LIFs, le nombre de connexions sur le port, le débit, et les cycles de CPU sur le nœud.
+
+
+
+== Étapes
+
+. Accéder à l'interface de ligne de commandes en tant qu'administrateur du cluster.
+. Définissez le niveau de privilège sur avancé en entrant la commande suivante : `set -privilege advanced`
++
+Pour plus de détails sur l'utilisation de la CLI en mode avancé, reportez-vous à la section _System Administration Reference_.
+
+. Pour trouver le poids de chaque LIF, saisissez la commande suivante : `network interface lif-weights show`
++
+Une LIF très occupée est celle qui a le plus faible poids.
+
+. Pour trouver les connexions actives sur un nœud, entrez la commande suivante : `network connections active show-clients`
++
+Notez le nombre de clients le plus élevé par nœud.
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. Pour trouver les connexions actives par LIF sur un nœud et un SVM, entrez la commande suivante : `network connections active show-lifs`
++
+Noter le nombre de clients le plus élevé par LIF.
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. Vérifiez les LIF qui partagent le même port de rattachement et le même nœud de rattachement pour identifier les LIF ayant le plus de connexions.
+. Pour choisir le meilleur port de données, entrez ce qui suit : `statistics show -object port`
++
+La commande statistics fournit des informations sur le débit et la bande passante des ports Ethernet. Chaque ligne fournit un compteur séparé d'informations uniques. Valeur est la valeur du type d'objet depuis la dernière suppression du compteur (depuis le dernier démarrage de ONTAP).
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

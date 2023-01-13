@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser les planifications du rapport Volume Transfer Status \(Historical\) pour afficher les détails du volume en fonction des horaires différents. Vous pouvez afficher, modifier ou supprimer des plannings de rapport existants et ajouter de nouveaux horaires pour vos rapports.' 
+---
+= Personnalisation des planifications de rapports Volume Transfer Status (Historical)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser les plannings du rapport Etat de transfert de volume (Historique) pour afficher les détails du volume en fonction des horaires différents. Vous pouvez afficher, modifier ou supprimer des plannings de rapport existants et ajouter de nouveaux horaires pour vos rapports.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Sur la page de rapport *Volume Transfer Status (Historique)*, cliquez sur *Manage Report Schedules*.
+. Dans la boîte de dialogue *gérer les programmes de rapports*, entrez des détails spécifiques tels que le nom de l'horaire du destinataire, l'adresse e-mail, le format du rapport, la fréquence et les rapports.
+. Sélectionnez *Inventaire* comme catégorie de rapport.
+. Cliquez sur *Enregistrer et fermer*.
++
+Le rapport Volume Transfer Status (Historique) est automatiquement envoyé par e-mail à un ou plusieurs destinataires conformément au planning.
+
+

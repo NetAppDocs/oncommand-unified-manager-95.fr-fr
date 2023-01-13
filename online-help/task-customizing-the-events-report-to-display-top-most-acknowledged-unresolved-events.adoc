@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-acknowledged-unresolved-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport événements pour afficher les événements les plus acquittés, filtrés par l"état de l"événement. Vous pouvez les trier par ordre décroissant pour afficher le nombre de jours en suspens.' 
+---
+= Personnalisation du rapport événements pour afficher les principaux événements non résolus les plus reconnus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport événements pour afficher les événements les plus acquittés, filtrés par l'état de l'événement. Vous pouvez les trier par ordre décroissant pour afficher le nombre de jours en suspens.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour filtrer les événements acquittés, cliquez dans la colonne *État* et ouvrez la boîte de dialogue *filtre* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *validé*.
+. Cliquez sur *OK*.
+. Pour filtrer davantage le rapport, cliquez dans la colonne *validé par* et ouvrez la boîte de dialogue *Filtrer* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *Nom*.
+. Cliquez sur *OK*.
+. Pour trier les événements qui sont en suspens pour le plus grand nombre de jours, cliquez dans la colonne *jours en suspens* et cliquez sur image:../media/click-to-see-menu.gif[""].
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

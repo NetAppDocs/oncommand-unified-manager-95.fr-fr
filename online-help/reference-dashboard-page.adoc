@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page de visualisation/tableaux de bord s"affiche sous forme de graphique, sous forme de graphique, l"état de santé des objets de stockage tels que les clusters, les agrégats et les machines virtuelles de stockage \(SVM\). En fonction des événements liés à la disponibilité, à la capacité, aux performances et à la protection générés, ces objets de stockage sont classés dans la catégorie sain, à risque ou ont un incident, ou en tant qu"alerte, ou erreur pour des événements liés à la protection.' 
+---
+= Tableaux de bord/Présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page de visualisation/tableaux de bord affiche, sous forme de graphique, l'état de santé des objets de stockage tels que les clusters, les agrégats et les machines virtuelles de stockage (SVM). En fonction des événements liés à la disponibilité, à la capacité, aux performances et à la protection générés, ces objets de stockage sont classés dans la catégorie sain, à risque ou ont un incident, ou en tant qu'alerte, ou erreur pour des événements liés à la protection.
+
+
+
+== Barre d'accès au cluster inaccessible
+
+Lorsqu'un cluster n'est pas accessible, Unified Manager affiche les détails dans une barre en haut de chaque page. Si tous les clusters sont accessibles, ce volet est masqué.
+
+Vous pouvez actualiser les informations affichées dans le volet en appuyant sur F5. Cette action permet de s'assurer que le volet affiche les dernières informations sur les clusters actuellement inaccessibles. Par exemple, si un cluster dont un événement Cluster n'est pas accessible est supprimé ou si l'état d'un événement est Obsolète, les informations concernant l'événement sont supprimées lorsque vous actualisez le volet.
+
+Vous pouvez afficher des informations détaillées sur un cluster inaccessible en cliquant sur le bouton *Détails*. Cette action ouvre la page d'inventaire des événements. Une fois la barre fermée, elle s'affiche de nouveau uniquement lorsque vous vous connectez à Unified Manager.
+
+
+
+== Vue d'ensemble
+
+* *Volet disponibilité*
++
+Affiche des informations sur la disponibilité des clusters, des agrégats et des SVM contrôlés par Unified Manager. Les objets de stockage sont classés dans la catégorie sain, à risque ou ont des incidents. Par exemple, l'état d'un cluster qui ne dispose pas de disques de spare est affiché comme étant à risque.
+
++
+Ce volet affiche également le nombre d'objets de stockage dans chacune des catégories. Cliquez sur l'un des totaux d'objets pour accéder à la page de cet objet. Par exemple, si vous cliquez sur le total du cluster, vous accédez à la page d'inventaire Santé/clusters. Cliquez sur les chiffres en haut d'une colonne pour accéder à la page d'inventaire des événements.
+
+* *Volet capacité*
++
+Affiche des informations sur la capacité des agrégats et des SVM contrôlés par Unified Manager. Les objets de stockage sont classés dans la catégorie sain, à risque ou ont des incidents. Par exemple, l'état d'un agrégat dont la capacité utilisée a atteint la valeur seuil maximum est affiché comme at Risk.
+
++
+Ce volet affiche également le nombre d'objets de stockage dans chacune des catégories.
+
+* *Volet Performance*
++
+Affiche des informations sur les performances des clusters, des SVM et des volumes contrôlés par Unified Manager. En fonction des incidents liés aux performances générés, les objets de stockage sont classés dans la catégorie Santé, risque ou incidents. Par exemple, l'état d'un volume dont le temps de réponse d'E/S a atteint la valeur seuil maximale est affiché comme ayant des incidents.
+
++
+Ce volet affiche également le nombre total de clusters, de SVM et de volumes surveillés par Unified Manager. Cliquez sur l'un des totaux d'objets pour accéder à la page de cet objet. Par exemple, si vous cliquez sur le total du cluster, vous accédez à la page d'inventaire performances/Cluster.
+
+* *Volet protection*
++
+Affiche des informations sur les relations de protection contrôlées par Unified Manager. Les relations de protection sont classées en santé, avertissement ou erreur. Par exemple, une relation dont la durée de décalage dépasse le seuil d'avertissement de décalage s'affiche en tant qu'avertissement.
+
++
+Ce volet affiche également le nombre total d'objets de stockage dans chacune des catégories de protection. Cliquez sur les liens des catégories LAG Status, Asynchronous Vault, Asynchronous Mirror ou synchrone pour afficher une liste filtrée de ces objets dans la page protection/Volume relations.
+
+

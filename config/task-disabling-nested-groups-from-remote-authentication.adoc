@@ -1,0 +1,37 @@
+---
+permalink: config/task-disabling-nested-groups-from-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si l"authentification à distance est activée, vous pouvez désactiver l"authentification des groupes imbriqués de sorte que seuls les utilisateurs individuels, et non les membres du groupe, puissent s"authentifier à distance à Unified Manager. Vous pouvez désactiver les groupes imbriqués si vous souhaitez améliorer le temps de réponse de l"authentification Active Directory.' 
+---
+= Désactivation des groupes imbriqués à partir de l'authentification à distance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si l'authentification à distance est activée, vous pouvez désactiver l'authentification des groupes imbriqués de sorte que seuls les utilisateurs individuels, et non les membres du groupe, puissent s'authentifier à distance à Unified Manager. Vous pouvez désactiver les groupes imbriqués si vous souhaitez améliorer le temps de réponse de l'authentification Active Directory.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand.
+* La désactivation des groupes imbriqués n'est applicable que lors de l'utilisation d'Active Directory.
+
+
+
+
+== Description de la tâche
+
+La désactivation de la prise en charge des groupes imbriqués dans Unified Manager peut réduire le temps d'authentification. Si la prise en charge des groupes imbriqués est désactivée et si un groupe distant est ajouté à Unified Manager, les utilisateurs individuels doivent être membres du groupe distant pour s'authentifier auprès d'Unified Manager.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, cochez la case *Désactiver la recherche de groupe imbriqué*.
+. Cliquez sur *Enregistrer*.
+

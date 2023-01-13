@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un miroir d"espace de noms est une copie miroir de protection des données intracluster du composant d"espace de noms dans un Infinite Volume. Le composant de miroir d"espace de noms exécute deux rôles : il offre la protection des données du composant d"espace de noms et prend en charge SnapDiff pour une sauvegarde sur bande incrémentielle des volumes Infinite Volume.' 
+---
+= La définition d'un composant de miroir d'espace de noms
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un miroir d'espace de noms est une copie miroir de protection des données intracluster du composant d'espace de noms dans un Infinite Volume. Le composant de miroir d'espace de noms exécute deux rôles : il offre la protection des données du composant d'espace de noms et prend en charge SnapDiff pour une sauvegarde sur bande incrémentielle des volumes Infinite Volume.

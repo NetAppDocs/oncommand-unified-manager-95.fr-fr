@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-nearly-full-threshold-breached.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport agrégat Capacity and Utilization pour afficher les meilleurs agrégats, triés en réduisant l"ordre de pourcentage de débordement de copies Snapshot. Vous pouvez ainsi afficher l"espace de stockage toujours disponible dans les agrégats.' 
+---
+= Personnalisation du rapport capacité/utilisation de l'agrégat pour afficher les agrégats dont le seuil presque maximum est atteint
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport agrégat Capacity and Utilization pour afficher les meilleurs agrégats, triés en réduisant l'ordre de pourcentage de débordement de copies Snapshot. Vous pouvez ainsi afficher l'espace de stockage toujours disponible dans les agrégats.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster ou paire HA, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour afficher la différence entre le pourcentage de données utilisées et le seuil presque atteint, ajoutez une nouvelle colonne :
++
+.. Sélectionnez une colonne et cliquez sur image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *colonne* > *Nouvelle colonne calculée*.
+.. Dans la boîte de dialogue *Nouvelle colonne calculée*, entrez un libellé de colonne.
+.. Dans la liste Sélectionner une catégorie, sélectionnez *Math*.
+.. Dans la liste *Sélectionner fonction*, sélectionnez *DIFFÉRENCE*.
+.. Dans la liste colonne 1, sélectionnez *espace presque plein seuil (%)*.
+.. Dans la liste colonne 2, sélectionnez *Used Data%*.
+.. Cliquez sur *OK*.
+
+
+. Pour filtrer les valeurs supérieures à 0 dans la nouvelle colonne, cliquez sur *Nouvelle colonne calculée* et ouvrez la boîte de dialogue *filtre* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *supérieur à*.
+. Dans le champ *valeur*, saisissez `0` Puis cliquez sur *OK*.
+. Pour trier les valeurs, cliquez dans la colonne *Nouveau calcul* et cliquez sur image:../media/click-to-see-menu.gif[""] icône.
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-check-for-client-or-network-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lorsque les clients connectés aux volumes d"un cluster augmentent leurs demandes d"E/S, le cluster doit travailler plus fort pour répondre à la demande. La demande accrue sur le cluster peut créer des conflits entre les composants, augmenter la latence des charges de travail qui l"utilisent et déclencher un événement dans Unified Manager.' 
+---
+= Vérifiez si le client ou le réseau ne présentent pas de problème
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque les clients connectés aux volumes d'un cluster augmentent leurs demandes d'E/S, le cluster doit travailler plus fort pour répondre à la demande. La demande accrue sur le cluster peut créer des conflits entre les composants, augmenter la latence des charges de travail qui l'utilisent et déclencher un événement dans Unified Manager.
+
+Sur la page Détails de l'événement, la section diagnostic du système affiche les charges de travail du volume supérieur utilisant le composant en conflit. Si vous savez quel client accède à un volume particulier, vous pouvez vous rendre sur le client pour déterminer si le matériel client ou une application ne fonctionne pas comme prévu ou fait plus de travail que d'habitude. Vous devrez peut-être contacter votre administrateur client ou votre fournisseur d'applications pour obtenir de l'aide.
+
+Vous pouvez vérifier votre infrastructure réseau pour déterminer s'il existe des problèmes matériels, des goulets d'étranglement ou des charges de travail concurrentes qui peuvent avoir entraîné des demandes d'E/S entre le cluster et des clients connectés à fonctionner plus lentement que prévu. Vous devrez peut-être contacter votre administrateur réseau pour obtenir de l'aide.

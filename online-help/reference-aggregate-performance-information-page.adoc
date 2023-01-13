@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilisez la page Performance/Aggregate information pour afficher la liste des attributs physiques et logiques de l"agrégat. Ces informations peuvent aider à répondre aux questions relatives aux performances.' 
+---
+= Page d'informations sur les performances/l'agrégat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/Aggregate information pour afficher la liste des attributs physiques et logiques de l'agrégat. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs d'agrégation
+
+* *Type d'agrégat*
++
+Le type d'agrégat :
+
++
+** DISQUES DURS
+** Hybride
++
+Combinaison de disques durs et de disques SSD, mais Flash Pool n'a pas été activé.
+
+** Hybride (Flash Pool)
++
+Combinaison de disques durs et de disques SSD et Flash Pool est activé.
+
+** SSD
+** SSD (FabricPool)
++
+Combinaison de SSD et d'un Tier cloud
+
+** VMDisk (SDS)
++
+Disques virtuels au sein d'une machine virtuelle
+
+** Disque VMware (FabricPool)
++
+Combinaison de disques virtuels et d'un niveau cloud
+
+** LUN (FlexArray)
+
+
+* *Cluster*
++
+Nom du cluster auquel appartient l'agrégat. Vous pouvez cliquer sur le nom pour afficher les détails du cluster dans la page Performance/Cluster Explorer.
+
+* *Nœud*
++
+Nom du nœud auquel appartiennent les disques de l'agrégat. Vous pouvez cliquer sur le nom pour afficher les détails du nœud dans la page de l'explorateur performances/nœuds.
+
+* *Flash Pool*
++
+Qu'il s'agisse d'un agrégat Flash Pool : Oui ou non
+
++
+Un agrégat Flash Pool est un agrégat hybride qui se compose de disques SSD et de disques durs.
+
+* *FabricPool*
++
+Qu'il s'agisse d'un agrégat FabricPool : Oui ou non
+
++
+Un agrégat FabricPool est un agrégat qui regroupe à la fois des SSD et un Tier cloud.
+
+* *Rapport de données inactives*
++
+Indique si la fonctionnalité de reporting des données inactives est activée ou désactivée sur cet agrégat. Lorsqu'ils sont activés, les volumes de cet agrégat affichent la quantité de données inactives sur la page d'inventaire performances/volumes.
+
++
+La valeur de ce champ est « N/A » lorsque la version de ONTAP ne prend pas en charge la génération de rapports de données inactives.
+
+

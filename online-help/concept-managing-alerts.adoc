@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des alertes pour qu"elles envoient automatiquement des notifications lorsque des événements ou événements spécifiques de certains types de sévérité se produisent. Vous pouvez également associer une alerte à un script exécuté lorsqu"une alerte est déclenchée.' 
+---
+= Gestion des alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des alertes pour qu'elles envoient automatiquement des notifications lorsque des événements ou événements spécifiques de certains types de sévérité se produisent. Vous pouvez également associer une alerte à un script exécuté lorsqu'une alerte est déclenchée.

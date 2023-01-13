@@ -1,0 +1,94 @@
+---
+permalink: performance-checker/task-assigning-performance-threshold-policies-to-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous affectez une règle de seuil de performances définie par l"utilisateur à un objet de stockage. Unified Manager signale ainsi un événement si la valeur du compteur de performances dépasse le paramètre de règle.' 
+---
+= Assignation de règles de seuil de performances aux objets de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous affectez une règle de seuil de performances définie par l'utilisateur à un objet de stockage. Unified Manager signale ainsi un événement si la valeur du compteur de performances dépasse le paramètre de règle.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+La ou les règles de seuil de performances que vous souhaitez appliquer à l'objet doivent exister.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez appliquer qu'une seule règle de performances à la fois à un objet ou à un groupe d'objets.
+
+Vous pouvez attribuer un maximum de trois règles de seuil à chaque objet de stockage. Lors de l'affectation de règles à plusieurs objets, si le nombre maximal de règles est déjà attribué à l'un des objets, Unified Manager effectue les actions suivantes :
+
+* Applique la stratégie à tous les objets sélectionnés qui n'ont pas atteint leur maximum
+* Ignore les objets qui ont atteint le nombre maximal de règles
+* Affiche un message indiquant que la stratégie n'a pas été attribuée à tous les objets
+
+
+En outre, si certains objets ne prennent pas en charge le compteur suivi dans la règle de seuil, la règle n'est pas appliquée à cet objet. Par exemple, si vous créez une règle de seuil « capacité de performance utilisée », vous tentez de l'attribuer à un nœud sur lequel ONTAP 9.0 ou version ultérieure n'est pas installé, la règle n'est pas appliquée à ce nœud.
+
+
+
+== Étapes
+
+. Dans la page d'inventaire des performances d'un objet de stockage, sélectionnez l'objet ou les objets vers lesquels vous souhaitez attribuer une règle de seuil :
++
+|===
+| Pour affecter des seuils à... | Cliquez sur... 
+
+
+ a| 
+Un seul objet
+ a| 
+La case à cocher située à gauche de cet objet.
+
+
+
+ a| 
+Objets multiples
+ a| 
+La case à cocher à gauche de chaque objet.
+
+
+
+ a| 
+Tous les objets de la page
+ a| 
+Le image:../media/select-dropdown-65-png.gif[""] Et choisissez *Sélectionner tous les objets sur cette page*.
+
+
+
+ a| 
+Tous les objets du même type
+ a| 
+Le image:../media/select-dropdown-65-png.gif[""] Et choisissez *Sélectionner tous les objets*.
+
+|===
++
+Vous pouvez utiliser la fonctionnalité de tri et de filtrage pour affiner la liste des objets sur la page d'inventaire afin de faciliter l'application de stratégies de seuil à de nombreux objets.
+
+. Faites votre sélection, puis cliquez sur *attribuer une stratégie de seuil de performances*.
++
+La page attribuer une stratégie de seuil s'affiche et affiche la liste des stratégies de seuil qui existent pour ce type spécifique d'objet de stockage.
+
+. Cliquez sur chaque stratégie pour afficher les détails des paramètres de seuil de performances afin de vérifier que vous avez sélectionné la stratégie de seuil correcte.
+. Après avoir sélectionné la stratégie de seuil appropriée, cliquez sur *affecter stratégie*.
++
+Un message de réussite en haut de la page confirme que la règle de seuil a été attribuée à l'objet ou aux objets et fournit un lien vers la page d'alerte pour vous permettre de configurer les paramètres d'alerte de cet objet et de cette règle.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Si vous souhaitez que des alertes soient envoyées par e-mail, ou en tant que trap SNMP, pour vous informer qu'un événement de performances particulier a été généré, vous devez configurer les paramètres d'alerte dans la page Configuration/alerte.

@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de paramètres du basculement de stockage \(SFO\) vous fournissent des informations sur la désactivation ou la configuration de votre basculement de stockage, afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements relatifs aux paramètres de basculement du stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de basculement du stockage (SFO) vous fournissent des informations sur la désactivation ou l'absence de configuration de votre basculement du stockage, afin de pouvoir surveiller l'éventuelle des problèmes. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Storage Failover Interconnect une ou plusieurs liaisons Down (ocumEvtSfoInterconnectOneOrMoreLinksDown)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Avertissement
+
+
+
+ a| 
+Basculement du stockage désactivé (fonction ocumEvtSfoSettingsDisabled)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+
+
+ a| 
+Basculement du stockage non configuré(ocumEvtSfoSettingsNotConfigred)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+
+
+ a| 
+Storage Failover State - Takeover(ocumEvtSfoStateTakover)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Avertissement
+
+
+
+ a| 
+Storage Failover State - Partial back(ocumEvtSfoStatePartialGiveback)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+
+
+ a| 
+Statut du nœud de basculement du stockage en baisse (ocumEvtSfoNodeStatusDown)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+
+
+ a| 
+Basculement de stockage impossible (ocumEvtSfoTakeoverNotPossible)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+|===

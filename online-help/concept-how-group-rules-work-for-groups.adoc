@@ -1,0 +1,135 @@
+---
+permalink: online-help/concept-how-group-rules-work-for-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une règle de groupe est un critère que vous définissez pour activer l"inclure des objets de stockage \(volumes, clusters ou SVM\) dans un groupe spécifique. Vous pouvez utiliser des groupes de condition ou des conditions pour définir une règle de groupe pour un groupe.' 
+---
+= Fonctionnement des règles de groupe pour les groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une règle de groupe est un critère que vous définissez pour activer l'inclure dans un groupe spécifique des objets de stockage (volumes, clusters ou SVM). Vous pouvez utiliser des groupes de condition ou des conditions pour définir une règle de groupe pour un groupe.
+
+* Vous devez associer une règle de groupe à un groupe.
+* Vous devez associer un type d'objet à une règle de groupe ; un seul type d'objet est associé à une règle de groupe.
+* Les objets de stockage sont ajoutés ou supprimés du groupe après chaque cycle de surveillance ou lorsqu'une règle est créée, modifiée ou supprimée.
+* Une règle de groupe peut avoir un ou plusieurs groupes de condition et chaque groupe de condition peut avoir une ou plusieurs conditions.
+* Les objets de stockage peuvent appartenir à plusieurs groupes en fonction des règles de groupe que vous créez.
+
+
+
+
+== Conditions
+
+Vous pouvez créer plusieurs groupes de condition et chaque groupe de condition peut avoir une ou plusieurs conditions. Vous pouvez appliquer tous les groupes de conditions définis dans une règle de groupe aux groupes afin de spécifier les objets de stockage inclus dans le groupe.
+
+Les conditions d'un groupe de conditions sont exécutées à l'aide de LA commande LOGIQUE ET. Toutes les conditions d'un groupe de conditions doivent être remplies. Lorsque vous créez ou modifiez une règle de groupe, une condition est créée qui s'applique, sélectionne et regroupe uniquement les objets de stockage qui répondent à toutes les conditions du groupe de conditions. Vous pouvez utiliser plusieurs conditions dans un groupe de conditions lorsque vous souhaitez restreindre l'étendue des objets de stockage à inclure dans un groupe.
+
+Vous pouvez créer des conditions avec des objets de stockage en utilisant les opérandes et l'opérateur suivants et en spécifiant la valeur requise.
+
+|===
+| Type d'objet de stockage | Opérandes applicables 
+
+
+ a| 
+Volumétrie
+ a| 
+* Nom de l'objet
+* Nom du cluster propriétaire
+* Nom de SVM propriétaire
+* Annotations
+
+
+
+
+ a| 
+SVM
+ a| 
+* Nom de l'objet
+* Nom du cluster propriétaire
+* Annotations
+
+
+
+
+ a| 
+Cluster
+ a| 
+* Nom de l'objet
+* Annotations
+
+
+|===
+Lorsque vous sélectionnez annotation comme opérande pour un objet de stockage, l'opérateur « is » est disponible. Pour tous les autres opérandes, vous pouvez sélectionner « is » ou « contient » comme opérateur.
+
+* Opérande
++
+La liste des opérandes dans Unified Manager change en fonction du type d'objet sélectionné. La liste inclut le nom de l'objet, le nom du cluster propriétaire, le nom du SVM et les annotations que vous définissez dans Unified Manager.
+
+* Opérateur
++
+La liste des opérateurs change en fonction de l'opérande sélectionné pour une condition. Les opérateurs pris en charge dans Unified Manager sont « is » et « contient ».
+
++
+Lorsque vous sélectionnez l'opérateur « is », la condition est évaluée en fonction de la correspondance exacte entre la valeur d'opérande et la valeur fournie pour l'opérande sélectionné.
+
++
+Lorsque vous sélectionnez l'opérateur « contient », la condition est évaluée pour satisfaire à l'un des critères suivants :
+
++
+** La valeur d'opérande correspond exactement à la valeur fournie pour l'opérande sélectionné
+** La valeur opérande contient la valeur fournie pour l'opérande sélectionné
+
+
+* Valeur
++
+Le champ valeur change en fonction de l'opérande sélectionné.
+
+
+
+
+
+== Exemple de règle de groupe avec conditions
+
+Considérons un groupe de conditions pour un volume avec les deux conditions suivantes :
+
+* Le nom contient « vol ».
+* Nom du SVM est « `date_svm' »
+
+
+Ce groupe de condition sélectionne tous les volumes qui incluent « vol » dans leurs noms et qui sont hébergés sur des SVM sous le nom « data_svm ».
+
+
+
+== Groupes de condition
+
+Les groupes de condition sont exécutés à l'aide D'UN OU logique, puis appliqués aux objets de stockage. Les objets de stockage doivent satisfaire l'un des groupes de condition à inclure dans un groupe. Les objets de stockage de tous les groupes de condition sont combinés. Vous pouvez utiliser des groupes de conditions pour augmenter la portée des objets de stockage à inclure dans un groupe.
+
+
+
+== Exemple de règle de groupe avec groupes de condition
+
+Considérons deux groupes de condition pour un volume, chaque groupe contenant les deux conditions suivantes :
+
+* Groupe de condition 1
++
+** Le nom contient « vol ».
+** SVM name est « data_svm » le groupe de conditions 1 sélectionne tous les volumes qui incluent « vol » dans leurs noms et qui sont hébergés sur des SVM sous le nom « data_svm ».
+
+
+* Groupe condition 2
++
+** Le nom contient « vol ».
+** La valeur d'annotation de la priorité de données est le groupe de condition « critique » 2 sélectionne tous les volumes qui incluent « vol » dans leurs noms et qui sont annotés avec la valeur d'annotation de priorité de données comme « critique ».
+
+
+
+
+Lorsqu'une règle de groupe contenant ces deux groupes de condition est appliquée aux objets de stockage, les objets de stockage suivants sont ajoutés à un groupe sélectionné :
+
+* Tous les volumes qui incluent « vol » dans leurs noms et qui sont hébergés sur la SVM sous le nom « data_svm ».
+* Tous les volumes qui incluent « vol » dans leurs noms et qui sont annotés avec la valeur d'annotation prioritaire des données « critique ».
+

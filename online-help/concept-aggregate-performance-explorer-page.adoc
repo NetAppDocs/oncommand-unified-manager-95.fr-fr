@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-aggregate-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page de l"explorateur d"agrégats/performances propose une vue d"ensemble détaillée des performances de tous les agrégats du cluster.' 
+---
+= Page de l'explorateur des performances/agrégats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page de l'explorateur d'agrégats/performances propose une vue d'ensemble détaillée des performances de tous les agrégats du cluster.
+
+La page de l'explorateur d'agrégats/de performances vous permet de suivre et de comparer les performances d'un agrégat sur une période donnée, ce qui facilite le dépannage et l'ajustement des performances d'un agrégat.
+
+[NOTE]
+====
+Les agrégats racine ne s'affichent pas sur cette page.
+
+====
+La fonctionnalité View and compare vous permet de comparer les performances de cet agrégat avec :
+
+* autres agrégats sur le même nœud
+* autres agrégats sur le même cluster
+* nœud sur lequel réside l'agrégat
+* tous les nœuds du cluster qui utilisent cet agrégat
+* les volumes qui résident sur cet agrégat
+
+
+Avec la page de l'explorateur d'agrégats/de performances, vous pouvez :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivez et comparez les données de performances des agrégats
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+

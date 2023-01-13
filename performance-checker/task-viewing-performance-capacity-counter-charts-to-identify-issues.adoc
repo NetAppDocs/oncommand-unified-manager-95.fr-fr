@@ -1,0 +1,44 @@
+---
+permalink: performance-checker/task-viewing-performance-capacity-counter-charts-to-identify-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez consulter les diagrammes de capacité des performances utilisés pour les nœuds et les agrégats sur la page de l"explorateur de performances. Vous pouvez ainsi consulter des données détaillées sur la capacité de performances pour les nœuds et les agrégats sélectionnés pendant un délai spécifique.' 
+---
+= Affichage des graphiques des compteurs de capacité de performances pour identifier les problèmes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez consulter les diagrammes de capacité des performances utilisés pour les nœuds et les agrégats sur la page de l'explorateur de performances. Vous pouvez ainsi consulter des données détaillées sur la capacité de performances pour les nœuds et les agrégats sélectionnés pendant un délai spécifique.
+
+
+
+== Description de la tâche
+
+Le tableau des compteurs standard affiche les valeurs de capacité de performances utilisées pour les nœuds ou agrégats sélectionnés. Le tableau des compteurs d'analyse affiche les valeurs de capacité de performance totale pour l'objet racine, séparées en utilisation en fonction des protocoles utilisateur par rapport aux processus du système en arrière-plan. En outre, la capacité des performances libres est également indiquée.
+
+[NOTE]
+====
+Comme certaines activités d'arrière-plan associées à la gestion du système et des données sont identifiées comme des charges de travail utilisateur et classées comme protocoles utilisateur, le pourcentage de protocoles utilisateur peut paraître artificiellement élevé lors de l'exécution de ces processus. Ces processus s'exécutent généralement autour de minuit lorsque le niveau d'utilisation du cluster est bas. Si vous voyez un pic d'activité du protocole utilisateur vers minuit, vérifiez si les tâches de sauvegarde du cluster ou d'autres activités en arrière-plan sont configurées pour s'exécuter à ce moment-là.
+
+====
+
+
+== Étapes
+
+. Sélectionnez l'onglet *Explorer* à partir d'une page de noeud ou d'agrégat *Landing*.
+. Dans le volet *compteur graphiques*, cliquez sur *choisir les graphiques*, puis sélectionnez *Perf. Tableau capacité utilisée*.
+. Faites défiler vers le bas jusqu'à ce que vous puissiez afficher la carte.
++
+Les couleurs du graphique standard indiquent lorsque l'objet se trouve dans la plage optimale (jaune), lorsque l'objet est sous-utilisé (vert) et lorsque l'objet est surutilisé (rouge). Le tableau décomposition affiche des détails détaillés sur la capacité de performances pour l'objet racine uniquement.
+
++
+image::../media/headroom-counter-charts.gif[graphiques de compteur marge]
+
+. Si vous souhaitez afficher l'un ou l'autre des graphiques en format plein format, cliquez sur *vue Zoom*.
++
+Vous pouvez ainsi ouvrir plusieurs diagrammes dans une fenêtre distincte afin de comparer les valeurs de capacité utilisée avec les valeurs d'IOPS ou de Mo/sec sur la même période.
+
+

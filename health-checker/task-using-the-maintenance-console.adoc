@@ -1,0 +1,14 @@
+---
+permalink: health-checker/task-using-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La console de maintenance vous permet de configurer les paramètres réseau, de configurer et de gérer le système sur lequel Unified Manager est installé, et d"effectuer d"autres tâches de maintenance qui vous aideront à prévenir et à résoudre d"éventuels problèmes.' 
+---
+= Utilisation de la console de maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La console de maintenance vous permet de configurer les paramètres réseau, de configurer et de gérer le système sur lequel Unified Manager est installé, et d'effectuer d'autres tâches de maintenance qui vous aideront à prévenir et à résoudre d'éventuels problèmes.

@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-how-storage-qos-can-control-workload-throughput.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer ou modifier un groupe de règles de qualité de service \(QoS\) pour contrôler la limite d"E/S par seconde \(IOPS\) ou de débit \(Mbit/s\) pour les workloads qu"il contient. Si les charges de travail font partie d"un groupe de règles sans limite définie, telles que le groupe de règles par défaut ou la limite définie ne répond pas à vos besoins, vous pouvez augmenter la limite ou déplacer les charges de travail vers un nouveau groupe de règles ou un groupe existant présentant la limite souhaitée.' 
+---
+= Comment la QoS du stockage peut contrôler le débit des workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer ou modifier un groupe de règles de qualité de service (QoS) pour contrôler la limite d'E/S par seconde (IOPS) ou de débit (Mbit/s) pour les workloads qu'il contient. Si les charges de travail font partie d'un groupe de règles sans limite définie, telles que le groupe de règles par défaut ou la limite définie ne répond pas à vos besoins, vous pouvez augmenter la limite ou déplacer les charges de travail vers un nouveau groupe de règles ou un groupe existant présentant la limite souhaitée.
+
+Les groupes de règles de QoS « standard » peuvent être affectés à des charges de travail individuelles, par exemple un seul volume ou une LUN. Dans ce cas, le workload peut utiliser la limite de débit complète. Les groupes de règles de qualité de service peuvent également être attribués à plusieurs charges de travail. Dans ce cas, la limite de débit est partagée entre les workloads. Par exemple, une limite de 9,000 000 IOPS attribuée à trois charges de travail permettrait de limiter les IOPS combinées au-delà de 9,000 000 IOPS.
+
+Il est également possible d'attribuer des groupes de règles de QoS « évolutifs » à des charges de travail individuelles ou à plusieurs charges de travail. Cependant, même lorsqu'il est attribué à plusieurs charges de travail, le débit de chaque charge de travail est limité au lieu de partager la valeur du débit avec d'autres charges. De plus, les règles de QoS adaptative ajustent automatiquement le débit en fonction de la taille du volume et par charge de travail, ainsi le rapport IOPS/téraoctets selon la taille du volume modifié. Par exemple, si le pic est défini sur 5,000 IOPS/To dans la règle de QoS adaptative, un volume de 10 To aura un débit maximal de 50,000 000 IOPS. Si le volume a été redimensionné ultérieurement pour atteindre 20 To, la QoS adaptative ajuste le plafond à 100,000 000 IOPS.
+
+À partir de la version ONTAP 9.5, vous pouvez inclure la taille de bloc lors de la définition d'une règle de QoS adaptative. La règle est ainsi convertie à un seuil IOPS/To en Mbit/s dans les cas où les charges de travail utilisent des tailles de blocs très importantes, dont le débit est élevé.
+
+Dans le cas des règles de QoS des groupes partagés, lorsque les IOPS ou les Mbit/s de toutes les charges de travail d'un groupe de règles dépassent la limite définie, le groupe de règles accélère les charges de travail pour limiter leur activité, ce qui peut diminuer la performance de toutes les charges de travail du groupe de règles. Si un événement de performance dynamique est généré par la limitation du groupe de règles, la description de l'événement affiche le nom du groupe de règles concerné.
+
+Sur la page d'inventaire Performance/volumes, vous pouvez trier les volumes affectés par IOPS et Mo/sec pour voir quelles charges de travail ont le plus d'utilisation qui pourrait avoir contribué à l'événement. Sur la page de l'explorateur de volumes/performances, vous pouvez sélectionner d'autres volumes ou LUN pour les comparer à l'utilisation des IOPS ou du débit Mbit/s du workload affecté.
+
+En attribuant les charges de travail sur lesquelles les ressources de nœud sont surutilisées à un paramètre de groupe de règles plus restrictif, le groupe de règles accélère les charges de travail en vue de limiter leur activité, ce qui permet de réduire l'utilisation des ressources de ce nœud. Toutefois, si vous souhaitez que la charge de travail puisse utiliser davantage de ressources de nœud, vous pouvez augmenter la valeur du groupe de règles.
+
+Vous pouvez utiliser System Manager ou les commandes ONTAP pour gérer les « policy Groups », notamment les tâches suivantes :
+
+* Création d'une « policy group »
+* Ajout ou suppression de charges de travail dans un « policy group »
+* Déplacement d'une charge de travail entre des groupes de règles
+* Modification de la limite de débit d'un groupe de règles
+* Déplacement d'une charge de travail vers un autre agrégat et/ou nœud
+

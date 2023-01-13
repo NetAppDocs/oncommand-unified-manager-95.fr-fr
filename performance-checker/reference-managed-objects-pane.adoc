@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/reference-managed-objects-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le volet objets gérés de l"onglet Résumé des performances fournit une vue d"ensemble de haut niveau des types et nombres d"objets de stockage pour le cluster. Ce volet vous permet de suivre l"état des objets de chaque cluster.' 
+---
+= Volet objets gérés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le volet objets gérés de l'onglet Résumé des performances fournit une vue d'ensemble de haut niveau des types et nombres d'objets de stockage pour le cluster. Ce volet vous permet de suivre l'état des objets de chaque cluster.
+
+Le nombre d'objets gérés est des données ponctuelles au cours de la dernière période de collecte. De nouveaux objets sont découverts toutes les 15 minutes.
+
+Si vous cliquez sur le numéro lié d'un type d'objet, la page d'inventaire des performances de l'objet correspondant à ce type d'objet s'affiche. La page d'inventaire des objets est filtrée pour afficher uniquement les objets de ce cluster.
+
+Les objets gérés sont :
+
+* *Nœuds*
++
+Système physique dans un cluster.
+
+* *Agrégats*
++
+Un jeu de plusieurs groupes RAID (redundant array of Independent disks) qui peuvent être gérés comme une seule unité pour la protection et le provisionnement.
+
+* *Ports*
++
+Point de connexion physique sur les nœuds utilisés pour se connecter à d'autres périphériques d'un réseau.
+
+* *SVM*
++
+Machine virtuelle fournissant un accès réseau via des adresses réseau uniques. Un SVM peut fournir des données dans un namespace distinct et peut être administré séparément du reste du cluster.
+
+* *Volumes*
++
+Entité logique qui maintient les données utilisateur accessibles via un ou plusieurs protocoles d'accès pris en charge. Ce nombre inclut à la fois les volumes FlexVol et FlexGroup, mais pas les composants FlexGroup ou Infinite volumes.
+
+* *LUN*
++
+Identifiant d'une unité logique Fibre Channel (FC) ou d'une unité logique iSCSI. Une unité logique correspond généralement à un volume de stockage et est représentée au sein d'un système d'exploitation informatique comme un périphérique.
+
+* *Lifs*
++
+Interface réseau logique représentant un point d'accès réseau à un nœud. Le nombre inclut tous les types LIF.
+
+

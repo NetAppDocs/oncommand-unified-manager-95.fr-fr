@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-resolving-lag-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ce flux de travail fournit un exemple de résolution d"un problème de décalage. Dans ce scénario, vous êtes administrateur ou opérateur qui accède à la page tableaux de bord/Présentation de Unified Manager pour voir s"il y a des problèmes avec vos relations de protection et, le cas échéant, pour trouver des solutions.' 
+---
+= Résolution des problèmes de décalage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce flux de travail fournit un exemple de résolution d'un problème de décalage. Dans ce scénario, vous êtes un administrateur ou un opérateur qui accède à la page Unified ManagerDashboards/Overview pour voir s'il y a des problèmes avec vos relations de protection et, le cas échéant, pour trouver des solutions.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Sur la page tableaux de bord/Présentation, consultez la zone incidents et risques non résolus et observez une erreur de décalage SnapMirror dans le volet protection sous risques de protection.
+
+
+
+== Étapes
+
+. Dans le volet *protection* de la page *tableaux de bord/Présentation*, localisez l'erreur de décalage de la relation SnapMirror et cliquez dessus.
++
+La page Détails de l'événement pour l'événement d'erreur de décalage s'affiche.
+
+. À partir de la page de détails *Event*, vous pouvez effectuer une ou plusieurs des tâches suivantes :
++
+** Passez en revue le message d'erreur dans le champ cause de la zone Résumé pour déterminer s'il y a une action corrective suggérée.
+** Cliquez sur le nom de l'objet, dans ce cas un volume, dans le champ Source de la zone Résumé pour obtenir des détails sur le volume.
+** Recherchez les notes qui ont peut-être été ajoutées à ce sujet.
+** Ajoutez une note à l'événement.
+** Attribuez l'événement à un utilisateur spécifique.
+** Accuser réception ou résoudre l'événement.
+
+
+. Dans ce scénario, vous cliquez sur le nom de l'objet (dans ce cas, un volume) dans le champ Source de la zone *Résumé* pour obtenir des détails sur le volume.
++
+L'onglet protection de la page Détails Santé/Volume s'affiche.
+
+. Dans l'onglet *protection*, vous examinez le diagramme de topologie.
++
+Vous remarquerez que le volume avec l'erreur de décalage est le dernier volume d'une cascade SnapMirror à trois volumes. Le volume sélectionné est en gris foncé et une ligne double orange du volume source indique une erreur de relation SnapMirror.
+
++
+image::../media/topology-cascade-lag-error.gif[Topologie en cascade de décalage SnapMirror]
+
+. Cliquer sur chacun des volumes de la cascade SnapMirror.
++
+Lorsque vous sélectionnez chaque volume, les informations de protection dans le récapitulatif, topologie, Historique, événements, périphériques associés, Les zones alertes associées changent pour afficher les détails relatifs au volume sélectionné.
+
+. Vous regardez la zone *Résumé* et placez votre curseur sur l'icône d'information dans le champ *mettre à jour le programme* pour chaque volume.
++
+Dans ce scénario, vous remarquerez que la règle SnapMirror est DPDefault et que la planification SnapMirror est mise à jour toutes les heures à cinq minutes après l'heure. Vous avez conscience que tous les volumes de la relation tentent de réaliser un transfert SnapMirror en même temps.
+
+. Pour résoudre le problème de décalage, vous modifiez les planifications de deux des volumes en cascade afin que chaque destination commence un transfert SnapMirror une fois que sa source a terminé un transfert.
+

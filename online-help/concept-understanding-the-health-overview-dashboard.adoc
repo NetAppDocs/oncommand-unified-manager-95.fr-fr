@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-understanding-the-health-overview-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le tableau de bord Unified Manager Health Overview fournit des informations cumulées d"un coup d"œil sur l"état de santé de votre stockage et de votre environnement virtualisé. La page tableaux de bord/Présentation fournit des informations sur l"état de santé de vos objets de stockage séparés en quatre catégories de santé : disponibilité, capacité, performances et protection des objets de stockage.' 
+---
+= Présentation du tableau de bord Health Overview
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord Unified Manager Health Overview fournit des informations cumulées d'un coup d'œil sur l'état de santé de votre stockage et de votre environnement virtualisé. La page tableaux de bord/Présentation fournit des informations sur l'état de santé de vos objets de stockage séparés en quatre catégories de santé : disponibilité, capacité, performances et protection des objets de stockage.
+
+L'image suivante illustre les volets qui s'affichent sur la page tableaux de bord/vue d'ensemble :
+
+image::../media/dashboard-um72.gif[tableau de bord um72]
+
+
+
+== Vue d'ensemble de la santé
+
+Affiche, sous la forme d'un graphique, des informations relatives à l'état de santé des objets de stockage, tels que les clusters, les agrégats et les SVM (Storage Virtual machine), ainsi qu'à l'état de santé de vos relations de protection. La page tableaux de bord/vue d'ensemble affiche les événements générés pour les catégories suivantes :
+
+Un clic sur le numéro au-dessus de l'un des graphiques à barres jaune ou rouge affiche la page d'inventaire des événements, y compris uniquement ces événements. Un clic sur le numéro ci-dessous n'importe lequel des graphiques affiche la page d'inventaire des objets, y compris uniquement ces objets.
+
+* *Disponibilité*
++
+Affiche des informations sur la disponibilité des clusters, des SVM et des agrégats contrôlés par Unified Manager. En fonction des événements liés à la disponibilité générés, les objets de stockage sont classés dans la catégorie sain, à risque ou ayant un incident.
+
+* *Capacité*
++
+Affiche des informations sur la capacité des SVM et des agrégats contrôlés par Unified Manager. En fonction des événements liés à la capacité générés, les objets de stockage sont classés dans la catégorie Santé, risque ou incidents.
+
+* *Performance*
++
+Affiche des informations sur les performances des clusters, des SVM et des volumes contrôlés par Unified Manager. En fonction des incidents liés aux performances générés, les objets de stockage sont classés dans la catégorie Santé, risque ou incidents.
+
+* *Protection*
++
+Affiche des informations sur les relations de protection contrôlées par Unified Manager. En fonction des événements liés à la protection générés, les relations de protection sont classées comme sain, Avertissement ou erreur.
+
+

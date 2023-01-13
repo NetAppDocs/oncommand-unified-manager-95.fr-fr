@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport événements pour afficher les événements classés par le plus grand nombre d"incidents et affectés à l"administrateur. Vous pouvez filtrer le rapport par niveau d"impact et par nom d"administrateur.' 
+---
+= Personnalisation du rapport événements pour afficher les événements ayant un impact sur la disponibilité
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport événements pour afficher les événements classés par le plus grand nombre d'incidents et affectés à l'administrateur. Vous pouvez filtrer le rapport par niveau d'impact et par nom d'administrateur.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour filtrer les événements de disponibilité, cliquez dans la colonne *zone d'impact* et ouvrez la boîte de dialogue *filtre* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *incident*.
+. Cliquez sur *OK*.
+

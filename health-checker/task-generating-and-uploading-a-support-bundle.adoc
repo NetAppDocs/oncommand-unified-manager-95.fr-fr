@@ -1,0 +1,96 @@
+---
+permalink: health-checker/task-generating-and-uploading-a-support-bundle.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez générer un pack contenant des informations de diagnostic complètes, qui vous permettront de le récupérer et de l"envoyer au support technique pour obtenir de l"aide au dépannage. Comme certains types de données peuvent utiliser un grand nombre de ressources de cluster ou prendre beaucoup de temps à terminer, vous pouvez spécifier les types de données à inclure ou exclure dans le bundle de support.' 
+---
+= Génération d'un bundle de support
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez générer un pack contenant des informations de diagnostic complètes, qui vous permettront de le récupérer et de l'envoyer au support technique pour obtenir de l'aide au dépannage. Comme certains types de données peuvent utiliser un grand nombre de ressources de cluster ou prendre beaucoup de temps à terminer, vous pouvez spécifier les types de données à inclure ou exclure dans le bundle de support.
+
+
+
+== Avant de commencer
+
+Comme utilisateur de maintenance, vous devez avoir accès à la console de maintenance.
+
+
+
+== Description de la tâche
+
+Unified Manager ne stocke que les deux derniers packs de support générés. Les anciens packs de support sont supprimés du système.
+
+[NOTE]
+====
+Sur les systèmes Windows, la commande `supportbundle.bat` n'est plus pris en charge pour générer un bundle de support.
+
+====
+
+
+== Étapes
+
+. Dans la console de maintenance *Menu principal*, sélectionnez *support/Diagnostics*.
+. Sélectionnez *générer un bundle de support*.
+. Sélectionnez ou désélectionnez les types de données suivants à inclure ou exclure dans le bundle de support :
++
+** *vidage de base de données*
++
+Un vidage de la base de données MySQL Server.
+
+** *vidage du tas*
++
+Snapshot de l'état des principaux processus du serveur Unified Manager. Cette option est désactivée par défaut et doit être sélectionnée uniquement sur demande du service client.
+
+** * enregistrements d'acquisition*
++
+Un enregistrement de toutes les communications entre Unified Manager et les clusters surveillés.
+
+
+
++
+[NOTE]
+====
+Si vous désélectionnez tous les types de données, le bundle support est toujours généré avec d'autres données Unified Manager.
+
+====
+. Type `g`, Puis appuyez sur entrée pour générer le bundle de support.
++
+Comme la génération d'un bundle de support est une opération consommant beaucoup de mémoire, vous êtes invité à vérifier que vous voulez bien générer le bundle de support à ce moment-là.
+
+. Type `y`, Puis appuyez sur entrée pour générer le bundle de support.
++
+Si vous ne souhaitez pas générer le bundle de support pour le moment, tapez `n`, Puis appuyez sur entrée.
+
+. Si vous avez inclus des fichiers de vidage de base de données dans le pack de support, vous êtes invité à spécifier la période pour laquelle vous souhaitez inclure les statistiques de performances. Y compris les statistiques de performances, vous pouvez prendre beaucoup de temps et d'espace ; vous pouvez donc également vider la base de données sans y inclure les statistiques de performances :
++
+.. Entrez la date de début au format AAAAMMJJ.
++
+Par exemple, entrez `20170101` Pour le 1er janvier 2017. Entrez `n` si vous ne souhaitez pas inclure d'statistiques de performances,
+
+.. Entrez le nombre de jours de statistiques à inclure, à partir de 12 heures du matin à la date de début spécifiée.
++
+Vous pouvez entrer un nombre compris entre 1 et 10.
+
+
+
++
+Si vous ajoutez des statistiques de performances, le système affiche la période pendant laquelle les statistiques de performances seront collectées.
+
+. Sélectionnez *générer un bundle de support*.
++
+Le bundle de support généré réside dans le `/support` répertoire.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Après avoir généré le bundle de support, vous pouvez le récupérer à l'aide d'un client SFTP ou à l'aide des commandes CLI UNIX ou Linux. Sur les installations Windows, vous pouvez utiliser Remote Desktop (RDP) pour récupérer le pack de prise en charge.
+
+Le bundle de support généré réside dans le `/support` Répertoire sur les systèmes VMware, dans `/opt/netapp/data/support/` Sur les systèmes Linux, et dans `ProgramData\NetApp\OnCommandAppData\ocum\support` Sur les systèmes Windows.

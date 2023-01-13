@@ -1,0 +1,66 @@
+---
+permalink: online-help/concept-types-of-snapmirror-protection.html 
+sidebar: sidebar 
+keywords:  
+summary: Selon le déploiement de la topologie de stockage de données, Unified Manager vous permet de configurer plusieurs types de relations de protection SnapMirror. Toutes les variantes de la protection SnapMirror offrent une protection contre les basculements après incident, mais elles proposent plusieurs fonctionnalités en performances, une flexibilité de version et une protection contre les copies de sauvegarde différentes. 
+---
+= Types de protection SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Selon le déploiement de la topologie de stockage de données, Unified Manager vous permet de configurer plusieurs types de relations de protection SnapMirror. Toutes les variantes de la protection SnapMirror offrent une protection contre les basculements après incident, mais elles proposent plusieurs fonctionnalités en performances, une flexibilité de version et une protection contre les copies de sauvegarde différentes.
+
+
+
+== Relations de protection asynchrones SnapMirror classiques
+
+La protection asynchrone traditionnelle de SnapMirror protège les miroirs de réplication de blocs entre les volumes source et de destination.
+
+Dans les relations SnapMirror traditionnelles, les opérations de mise en miroir s'exécutent plus rapidement que dans d'autres relations SnapMirror, car l'opération de mise en miroir est basée sur la réplication de blocs. La protection traditionnelle par SnapMirror implique cependant que le volume de destination s'exécute sous la même version mineure du logiciel ONTAP ou une version ultérieure, que le volume source soit au sein de la même version principale (par exemple, version 8.x vers 8.x ou 9.x vers 9.x).
+
+
+
+== Protection asynchrone de SnapMirror avec réplication flexible de la version
+
+La protection asynchrone de SnapMirror avec la réplication flexible de la version assure la protection des miroirs de réplication logique entre les volumes source et de destination, même si ces volumes sont exécutés sous différentes versions de ONTAP 8.3 ou version ultérieure (par exemple, de la version 8.3 à 8.3, de 8.3 à 9.1 ou de la version 9.0 à 8.3).
+
+Dans les relations SnapMirror avec la réplication flexible de la version, les opérations de mise en miroir ne s'exécutent pas aussi rapidement que dans les relations SnapMirror traditionnelles.
+
+Compte tenu du ralentissement d'exécution, SnapMirror avec protection de réplication flexible de la version ne convient pas à implémenter dans l'un ou l'autre des cas suivants :
+
+* L'objet source contient plus de 10 millions de fichiers à protéger.
+* L'objectif de point de restauration des données protégées est de deux heures maximum. (La destination doit donc toujours contenir des données mises en miroir et récupérables datant d'au plus deux heures que les données de la source.)
+
+
+Dans l'un ou l'autre des cas répertoriés, l'exécution plus rapide de la protection SnapMirror par défaut basée sur la réplication des blocs est requise.
+
+
+
+== Protection asynchrone de SnapMirror avec l'option de réplication et de sauvegarde flexibles de la version
+
+La protection asynchrone de SnapMirror avec l'option de réplication et de sauvegarde flexible de la version protège les données en miroir entre les volumes source et de destination, et permet de stocker plusieurs copies des données en miroir sur la destination.
+
+L'administrateur du stockage peut spécifier quelles copies Snapshot sont mises en miroir de la source vers la destination et spécifier également la durée de conservation de ces copies au niveau de la destination, même si elles sont supprimées à la source.
+
+Dans les relations SnapMirror avec l'option de réplication et de sauvegarde flexibles de la version, les opérations de mise en miroir ne s'exécutent pas aussi rapidement que dans les relations SnapMirror traditionnelles.
+
+
+
+== Protection SnapMirror synchrone avec synchronisation stricte
+
+La protection SnapMirror synchrone avec synchronisation « par suppression » garantit que les volumes primaires et secondaires sont toujours une copie authentique les uns des autres. En cas de défaillance de réplication lors d'une tentative d'écriture de données sur le volume secondaire, les E/S du client vers le volume primaire sont interrompues.
+
+
+
+== Protection SnapMirror synchrone avec synchronisation régulière
+
+La protection synchrone de SnapMirror avec la synchronisation « granulaire » n'exige pas que les volumes primaire et secondaire soient toujours une copie authentique des uns des autres, ce qui assure la disponibilité du volume primaire. Si une défaillance de réplication se produit lors d'une tentative d'écriture de données sur le volume secondaire, les volumes primaire et secondaire sont désynchronisés et les E/S client continuent sur le volume primaire.
+
+[NOTE]
+====
+Le bouton Restaurer et les boutons d'opération de relation ne sont pas disponibles lors de la surveillance des relations de protection synchrone à partir de la page d'inventaire Santé/volumes ou de la page Détails Santé/Volume.
+
+====

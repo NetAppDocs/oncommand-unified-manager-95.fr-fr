@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-edit-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Modifier l"utilisateur vous permet de modifier uniquement certains paramètres, en fonction de l"utilisateur sélectionné.' 
+---
+= Boîte de dialogue Modifier l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Modifier l'utilisateur vous permet de modifier uniquement certains paramètres, en fonction de l'utilisateur sélectionné.
+
+
+
+== Détails
+
+La zone Détails vous permet de modifier les informations suivantes concernant un utilisateur sélectionné :
+
+* *Type*
++
+Ce champ ne peut pas être modifié.
+
+* *Nom*
++
+Ce champ ne peut pas être modifié.
+
+* *Mot de passe*
++
+Vous permet de modifier le mot de passe lorsque l'utilisateur sélectionné est un utilisateur de base de données.
+
+* *Confirmer le mot de passe*
++
+Vous permet de modifier le mot de passe confirmé lorsque l'utilisateur sélectionné est un utilisateur de base de données.
+
+* *Courriel*
++
+Permet de modifier l'adresse électronique de l'utilisateur sélectionné. Ce champ peut être modifié lorsque l'utilisateur sélectionné est un utilisateur local, un utilisateur LDAP ou un utilisateur de maintenance.
+
+* *Rôle*
++
+Permet de modifier le rôle attribué à l'utilisateur. Ce champ peut être modifié lorsque l'utilisateur sélectionné est un utilisateur local, un utilisateur distant ou un groupe distant.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Enregistrer*
++
+Enregistre les modifications et ferme la boîte de dialogue Modifier l'utilisateur.
+
+* *Annuler*
++
+Annule les modifications et ferme la boîte de dialogue Modifier l'utilisateur.
+
+

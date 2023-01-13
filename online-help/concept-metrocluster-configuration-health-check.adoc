@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-metrocluster-configuration-health-check.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour vérifier l"état des clusters d"une configuration MetroCluster. L"état et les événements vous aident à déterminer s"il existe des problèmes matériels ou logiciels qui peuvent affecter les performances de vos charges de travail.' 
+---
+= Vérification de l'état de la configuration MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour vérifier l'état des clusters d'une configuration MetroCluster. L'état et les événements vous aident à déterminer s'il existe des problèmes matériels ou logiciels qui peuvent affecter les performances de vos charges de travail.
+
+Si vous configurez Unified Manager pour envoyer des alertes par e-mail, vous pouvez vérifier dans votre courrier électronique s'il existe des problèmes d'intégrité sur le cluster local ou distant qui pourraient avoir contribué à un événement de performances. Dans l'interface graphique Unified Manager, vous pouvez sélectionner *Evénements* pour afficher une liste des événements en cours, puis utiliser les filtres pour afficher uniquement les événements de configuration MetroCluster.

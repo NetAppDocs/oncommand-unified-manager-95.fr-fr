@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-setting-up-protection-relationships-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Il existe plusieurs étapes à effectuer pour utiliser Unified Manager et OnCommand Workflow Automation afin de configurer les relations SnapMirror et SnapVault afin de protéger vos données. 
+---
+= Configuration des relations de protection dans Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il existe plusieurs étapes à effectuer pour utiliser Unified Manager et OnCommand Workflow Automation afin de configurer les relations SnapMirror et SnapVault afin de protéger vos données.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir établi des relations entre deux clusters ou deux SVM (Storage Virtual machine).
+* OnCommand Workflow Automation doit être intégré avec Unified Manager :
++
+** xref:task-configuring-a-connection-between-workflow-automation-and-unified-manager.adoc[Configurer OnCommand Workflow Automation]
+** xref:task-verifying-unified-manager-data-source-caching-in-workflow-automation.adoc[Vérification de la mise en cache des sources de données Unified Manager dans Workflow Automation]
+
+
+
+
+
+
+== Étapes
+
+. Selon le type de relation de protection que vous souhaitez créer, effectuez l'une des opérations suivantes :
++
+** xref:task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.adoc[Créer une relation de protection SnapMirror].
+** xref:task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.adoc[Créer une relation de protection SnapVault].
+
+
+. Si vous souhaitez créer une stratégie pour la relation, en fonction du type de relation que vous créez, effectuez l'une des opérations suivantes :
++
+** xref:task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.adoc[Création d'une règle SnapVault].
+** xref:task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.adoc[Créer une règle SnapMirror].
+
+
+. xref:task-creating-snapmirror-and-snapvault-schedules.adoc[Créer une planification SnapMirror ou SnapVault].
+

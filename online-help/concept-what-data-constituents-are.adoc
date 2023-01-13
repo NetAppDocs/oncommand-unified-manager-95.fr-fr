@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Dans un volume Infinite Volume, les données sont stockées dans plusieurs composants de données distincts. Les composants de données stockent uniquement les données d’un fichier, pas le nom du fichier. 
+---
+= Quels sont les composants des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans un volume Infinite Volume, les données sont stockées dans plusieurs composants de données distincts. Les composants de données stockent uniquement les données d'un fichier, pas le nom du fichier.
+
+Les clients ne connaissent pas les composants des données. Lorsqu'un client demande un fichier depuis un Infinite Volume, le nœud récupère les données du fichier à partir d'un composant de données et renvoie le fichier au client.
+
+Chaque Infinite Volume comporte généralement des dizaines de composants de données. Par exemple, un Infinite Volume de 6 po contenant 1 milliard de fichiers peut contenir 60 composants de données sur des agrégats à partir de 6 nœuds.

@@ -1,0 +1,92 @@
+---
+permalink: performance-checker/task-creating-user-defined-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous créez des règles de seuil de performances pour les objets de stockage, de sorte que des notifications soient envoyées lorsqu"un compteur de performances dépasse une valeur spécifique. La notification d"événement identifie que le cluster rencontre un problème de performances.' 
+---
+= Création de règles de seuils de performance définies par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous créez des règles de seuil de performances pour les objets de stockage, de sorte que des notifications soient envoyées lorsqu'un compteur de performances dépasse une valeur spécifique. La notification d'événement identifie que le cluster rencontre un problème de performances.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Description de la tâche
+
+Vous créez des stratégies de seuil de performances en entrant les valeurs de seuil sur la page Créer une stratégie de seuil. Vous pouvez créer de nouvelles stratégies en définissant toutes les valeurs de la stratégie dans cette page, ou vous pouvez faire une copie d'une stratégie existante et modifier les valeurs de la copie (appelée _clonage_).
+
+Les valeurs de seuil valides sont de 0.001 à 10,000,000 pour les nombres, de 0.001-100 pour les pourcentages et de 0.001-200 pour les pourcentages de capacité utilisée pour les performances.
+
+[NOTE]
+====
+La version actuelle fournit des seuils qui envoient des événements lorsqu'une valeur de compteur dépasse le paramètre de seuil. Vous ne pouvez pas définir de seuils qui envoient des événements lorsqu'une valeur de compteur tombe en dessous d'un paramètre de seuil.
+
+====
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, sélectionnez *Configuration* > *seuils de performances*.
++
+La page seuils de configuration/performances s'affiche.
+
+. Cliquez sur le bouton approprié selon que vous souhaitez créer une nouvelle stratégie ou si vous souhaitez cloner une règle similaire et modifier la version clonée.
++
+|===
+| Pour... | Cliquez sur... 
+
+
+ a| 
+Création d'une nouvelle règle
+ a| 
+*Créer*
+
+
+
+ a| 
+Cloner une règle existante
+ a| 
+Sélectionnez une stratégie existante et cliquez sur *Clone*
+
+|===
++
+La page Créer une stratégie de seuil ou Cloner la stratégie de seuil s'affiche.
+
+. Définissez la règle de seuil en spécifiant les valeurs de seuil des compteurs de performances que vous souhaitez définir pour des objets de stockage spécifiques :
++
+.. Sélectionnez le type d'objet de stockage et spécifiez un nom et une description pour la règle.
+.. Sélectionnez le compteur de performances à suivre et spécifiez les valeurs limites qui définissent les événements Avertissement et critique.
++
+Vous devez définir au moins un avertissement ou une limite critique. Il n'est pas nécessaire de définir les deux types de limites.
+
+.. Sélectionnez un compteur de performances secondaire, si nécessaire, et spécifiez les valeurs limites pour les événements Avertissement et critique.
++
+L'inclusion d'un compteur secondaire nécessite que les deux compteurs dépassent les valeurs limites avant que le seuil ne soit dépassé et qu'un événement soit signalé. Seuls certains objets et compteurs peuvent être configurés à l'aide d'une règle de combinaison.
+
+.. Sélectionnez la durée pendant laquelle les valeurs limites doivent être enfreintes pour un événement à envoyer.
+
+
++
+Lors du clonage d'une règle existante, vous devez entrer un nouveau nom pour cette règle.
+
+. Cliquez sur *Enregistrer* pour enregistrer la stratégie.
++
+Vous êtes renvoyé à la page seuils de configuration/de performance. Un message de réussite en haut de la page confirme la création de la règle de seuil et fournit un lien vers la page Inventaire pour ce type d'objet afin d'appliquer la nouvelle règle aux objets de stockage immédiatement.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Si vous souhaitez appliquer la nouvelle stratégie de seuil aux objets de stockage à ce moment-là, vous pouvez cliquer sur le lien *accéder à Object_type Now* pour accéder à la page Inventaire.

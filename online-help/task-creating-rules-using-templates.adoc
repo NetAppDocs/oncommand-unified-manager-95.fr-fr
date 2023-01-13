@@ -1,0 +1,53 @@
+---
+permalink: online-help/task-creating-rules-using-templates.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter de nouvelles règles à l"aide de modèles de règles définis par Unified Manager afin de déterminer le placement des données écrites sur la SVM avec Infinite Volume. Vous pouvez créer des règles basées sur des types de fichiers, des chemins de répertoires ou des propriétaires.' 
+---
+= Création de règles à l'aide de modèles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter de nouvelles règles à l'aide de modèles de règles définis par Unified Manager afin de déterminer le placement des données écrites sur la SVM avec Infinite Volume. Vous pouvez créer des règles basées sur des types de fichiers, des chemins de répertoires ou des propriétaires.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Le cluster contenant le SVM avec Infinite Volume avec des classes de stockage doit être ajouté à la base de données Unified Manager.
+
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur l'onglet *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Cliquez sur *Créer*.
+. Dans la boîte de dialogue *Créer règle*, choisissez un modèle de règle approprié dans la liste déroulante.
++
+Le modèle est basé sur trois catégories : le type de fichier, le propriétaire ou le chemin d'accès au répertoire.
+
+. En fonction du modèle sélectionné, ajoutez les conditions nécessaires dans la zone *critères de correspondance*.
+. Sélectionnez une classe de stockage appropriée dans la liste *placez le contenu correspondant dans la liste déroulante classe de stockage*.
+. Cliquez sur *Créer*.
++
+La nouvelle règle que vous avez créée s'affiche dans l'onglet Data Policy.
+
+. Prévisualiser toutes les autres modifications apportées à la stratégie de données.
+. Cliquer sur *Activate* pour activer les modifications des propriétés de la règle dans la SVM.
+

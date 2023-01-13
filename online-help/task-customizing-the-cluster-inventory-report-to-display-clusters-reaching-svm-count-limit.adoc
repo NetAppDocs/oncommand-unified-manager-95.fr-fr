@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser le rapport Cluster Inventory pour afficher les clusters, triés par ordre décroissant de nombre de SVM. 
+---
+= Personnalisation du rapport Cluster Inventory pour afficher les clusters arrivant à la limite du nombre SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Cluster Inventory pour afficher les clusters, triés par ordre décroissant de nombre de SVM.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster ou nœud, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les clusters par nombre de SVM, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne *SVM Count*.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer l'option Groupe interne*.
+
+
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

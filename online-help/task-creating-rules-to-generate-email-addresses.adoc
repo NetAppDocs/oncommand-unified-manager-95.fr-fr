@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-rules-to-generate-email-addresses.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des règles pour spécifier l"adresse e-mail en fonction du quota d"utilisateurs associé aux clusters, aux machines virtuelles de stockage \(SVM\), aux volumes, aux qtrees, aux utilisateurs ou aux groupes d"utilisateurs. Une notification est envoyée à l"adresse e-mail spécifiée lorsqu"une violation de quota est constatée.' 
+---
+= Création de règles pour générer des adresses e-mail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des règles pour spécifier l'adresse e-mail en fonction du quota d'utilisateur associé aux clusters, aux SVM (Storage Virtual machine), aux volumes, aux qtrees, aux utilisateurs ou aux groupes d'utilisateurs. Une notification est envoyée à l'adresse e-mail spécifiée lorsqu'une violation de quota est constatée.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir passé en revue les directives de la page règles de génération de l'adresse e-mail de quota d'utilisateur et de groupe.
+
+
+
+
+== Description de la tâche
+
+Vous devez définir les règles pour les adresses e-mail de quota et les saisir dans l'ordre dans lequel vous souhaitez les exécuter. Par exemple, si vous souhaitez utiliser l'adresse e-mail qtree1@xyz.com pour recevoir des notifications sur les violations de quota pour qtre1 et utiliser l'adresse e-mail admin@xyz.com pour tous les autres qtrees, les règles doivent être répertoriées dans l'ordre suivant :
+
+* Si ( $QTREE == 'qtre1' ) puis qtree1@xyz.com
+* Si ( $QTREE == * ), admin@xyz.com
+
+
+Si aucun des critères pour les règles que vous avez spécifiées n'est satisfait, la règle par défaut est utilisée :
+
+SI ($USER_OR_GROUP == * ), ALORS $USER_OR_GROUP@$DOMAIN
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *quota Email* dans le menu de configuration de gauche.
+. Dans la page d'options *Setup*, cliquez sur *règles d'adresse*, puis entrez la règle en fonction de vos critères.
+. Cliquez sur *Validate* pour valider la syntaxe de la règle.
++
+Un message d'erreur s'affiche si la syntaxe de la règle est incorrecte. Vous devez corriger la syntaxe et cliquer à nouveau sur *Validate*.
+
+. Cliquez sur *Enregistrer et fermer*.
+. Vérifiez que l'adresse e-mail que vous avez créée s'affiche dans l'onglet *quotas d'utilisateurs et de groupes* de la page de détails *Health/Storage Virtual machine*.
+

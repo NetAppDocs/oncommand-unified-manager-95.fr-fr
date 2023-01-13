@@ -1,0 +1,23 @@
+---
+permalink: online-help/task-selecting-a-predefined-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La sélection d"une plage de temps prédéfinie est un moyen rapide et efficace de personnaliser et de concentrer la sortie de données lors de l"affichage des données de performance d"objet du cluster. Lorsque vous sélectionnez une plage horaire prédéfinie, des données pouvant atteindre 13 mois sont disponibles.' 
+---
+= Sélection d'une plage de temps prédéfinie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sélection d'une plage de temps prédéfinie est un moyen rapide et efficace de personnaliser et de concentrer la sortie de données lors de l'affichage des données de performance d'objet du cluster. Lorsque vous sélectionnez une plage horaire prédéfinie, des données pouvant atteindre 13 mois sont disponibles.
+
+
+
+== Étapes
+
+. En haut à droite de la page *Performance Explorer*, cliquez sur *Time Range*.
+. Dans la partie droite du panneau *sélection plage de temps*, sélectionnez une plage de temps prédéfinie.
+. Cliquez sur *appliquer plage*.
+

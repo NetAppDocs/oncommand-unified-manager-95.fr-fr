@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-storage-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Storage Pool vous permet d"afficher les détails du cache dédié des disques SSD, également appelé pools de stockage. Vous pouvez surveiller les pools de stockage et afficher des informations détaillées, telles que l"état du pool de stockage, le cache total et disponible, ainsi que les allocations utilisées et disponibles dans le pool de stockage.' 
+---
+= Boîte de dialogue Pool de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Storage Pool vous permet d'afficher les détails du cache dédié des disques SSD, également appelé _Storage pools_. Vous pouvez surveiller les pools de stockage et afficher des informations détaillées, telles que l'état du pool de stockage, le cache total et disponible, ainsi que les allocations utilisées et disponibles dans le pool de stockage.
+
+Vous pouvez afficher les détails suivants du pool de stockage :
+
+* *Statut*
++
+Affiche l'état du pool de stockage, qui peut être sain ou malsain.
+
+* *Allocations totales*
++
+Affiche le nombre total d'unités d'allocation et la taille dans le pool de stockage.
+
+* *Taille de l'unité d'allocation*
++
+Affiche la quantité minimale d'espace du pool de stockage pouvant être alloué à un agrégat.
+
+* *Disques*
++
+Affiche le nombre de disques utilisés pour créer le pool de stockage. Si le nombre de disques dans la colonne du pool de stockage et le nombre de disques affichés dans l'onglet informations sur le disque correspondant à ce pool de stockage ne correspondent pas, cela indique qu'un ou plusieurs disques sont rompus et que le pool de stockage est défectueux.
+
+* *Allocations de cache*
++
+** Allocations utilisées
++
+Affiche le nombre et la taille des unités d'allocation utilisées par les agrégats. Vous pouvez cliquer sur le nom de l'agrégat pour afficher les détails de cet agrégat.
+
+** Allocations disponibles
++
+Affiche le nombre et la taille des unités d'allocation disponibles pour les nœuds. Vous pouvez cliquer sur le nom du nœud pour afficher les détails de l'agrégat.
+
+
+
+

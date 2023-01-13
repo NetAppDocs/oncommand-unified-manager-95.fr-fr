@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-user-defined-threshold-policies-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page seuils de configuration/performance pour afficher toutes les règles de seuil de performance actuellement définies. Cette page offre également des fonctionnalités permettant de créer, cloner, modifier et supprimer des stratégies de seuil. 
+---
+= Page seuils de configuration/de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page seuils de configuration/performance pour afficher toutes les règles de seuil de performance actuellement définies. Cette page offre également des fonctionnalités permettant de créer, cloner, modifier et supprimer des stratégies de seuil.
+
+La liste des règles de seuils de performances est triée par ordre alphabétique par nom de règle. Vous pouvez cliquer sur un en-tête de colonne pour trier les polices d'après cette colonne. Si vous recherchez une stratégie spécifique, vous pouvez utiliser le filtre et les mécanismes de recherche pour affiner la liste des stratégies de seuil qui s'affichent dans la liste d'inventaire.
+
+
+
+== Filtre et barre de recherche
+
+Le bouton *Filtering* vous permet de raffiner la liste des stratégies de seuil en affichant uniquement les stratégies qui correspondent à certains critères.
+
+Le bouton *Search* vous permet de rechercher certaines polices en saisissant des noms de polices complets ou partiels pour affiner la liste des stratégies de seuils qui apparaissent dans la liste des stocks.
+
+
+
+== Boutons de commande
+
+* *Créer*
++
+Crée une nouvelle règle de seuil de performances.
+
+* *Clone*
++
+Crée une nouvelle règle de seuil de performances en fonction d'une copie de la règle que vous avez sélectionnée.
+
+* *Modifier*
++
+Modifie la stratégie de seuil de performances que vous avez sélectionnée. Tous les objets de stockage qui utilisent la règle sont mis à jour pour utiliser la règle révisée.
+
+* *Supprimer*
++
+Supprime la stratégie de seuil de performances que vous avez sélectionnée. La règle a été supprimée de tous les objets de stockage qui utilisent la règle. Vous pouvez cliquer sur l'élément dans la colonne objets associés pour afficher les objets qui utilisent actuellement cette stratégie.
+
+
+
+
+
+== Liste Threshold Policies
+
+* *Nom de la politique*
++
+Affiche le nom de la stratégie de seuil. Vous pouvez positionner votre curseur sur le nom de la stratégie pour afficher les détails de cette stratégie.
+
+* *Description*
++
+Affiche une brève description de la stratégie de seuil.
+
+* *Première condition*
++
+Affiche la condition principale de la stratégie de seuil, y compris le compteur de performances défini, les valeurs de déclenchement d'avertissement et les valeurs de déclenchement critiques. Vous pouvez positionner le curseur sur le nom de la condition pour afficher les détails de la condition.
+
+* * Deuxième condition*
++
+Affiche la condition de stratégie de seuil secondaire, si elle est définie. Vous pouvez positionner le curseur sur le nom de la condition pour afficher les détails de la condition. Si une deuxième condition n'est pas définie, cette colonne est vide.
+
++
+[NOTE]
+====
+Lorsqu'une deuxième condition est définie, un événement est généré uniquement lorsque les deux conditions sont enfreintes.
+
+====
+* *Objets associés*
++
+Affiche le type d'objet de stockage auquel la règle de seuil peut être appliquée, ainsi que le nombre d'objets qui utilisent la règle. Ce champ est vide jusqu'à ce que vous affectez la règle à au moins un objet.
+
++
+Vous pouvez cliquer sur l'en-tête de colonne pour trier les règles par type d'objet : volume, LUN, agrégat, etc. Vous pouvez cliquer sur le nom de la stratégie pour afficher la page d'inventaire remplie avec les objets qui utilisent actuellement la stratégie de seuil.
+
+

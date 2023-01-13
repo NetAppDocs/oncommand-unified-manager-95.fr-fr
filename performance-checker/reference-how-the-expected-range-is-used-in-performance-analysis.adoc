@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/reference-how-the-expected-range-is-used-in-performance-analysis.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager utilise la plage attendue pour représenter l"activité d"E/S type \(temps de réponse\) et \(opérations\) pour vos charges de travail surveillées. Elle vous avertit lorsque la latence réelle d"une charge de travail se situe au-dessus des limites supérieures de la plage attendue, ce qui déclenche un événement de performance. Vous pouvez ainsi analyser le problème de performance et prendre des mesures correctives pour le résoudre.' 
+---
+= Comment la plage attendue est utilisée dans l'analyse des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager utilise la plage attendue pour représenter la latence d'E/S (temps de réponse) et l'activité d'opérations d'entrée/sortie par seconde (opérations) types pour vos charges de travail surveillées. Elle vous avertit lorsque la latence réelle d'une charge de travail se situe au-dessus des limites supérieures de la plage attendue, ce qui déclenche un événement de performance. Vous pouvez ainsi analyser le problème de performance et prendre des mesures correctives pour le résoudre.
+
+La plage attendue définit la ligne de base des performances pour la charge de travail. Il apprend des mesures de performance passées dont il a besoin pour prévoir les niveaux de performance et d'activité attendus pour la charge de travail. La limite supérieure de la plage attendue établit le seuil de performance. Unified Manager utilise le modèle de base pour déterminer quand la ou les opérations réelles se situent au-dessus ou en dessous d'un seuil ou en dehors des limites de leur plage prévue. La comparaison entre les valeurs réelles et attendues crée un profil de performances pour la charge de travail.
+
+Lorsque la latence réelle d'une charge de travail dépasse le seuil de performance défini en raison d'un conflit au niveau d'un composant du cluster, la latence est élevée et la charge de travail fonctionne plus lentement que prévu. Les performances des autres charges de travail qui partagent les mêmes composants du cluster peuvent également être plus lentes que prévu.
+
+Unified Manager analyse l'événement seuil à atteindre et détermine si l'activité est un événement de performances. Si l'activité élevée des charges de travail reste cohérente pendant une longue période, telles que plusieurs heures, Unified Manager considère que l'activité est normale et ajuste de manière dynamique la plage attendue pour définir le nouveau seuil de performance.
+
+Certaines charges de travail peuvent avoir une activité faible et cohérente, dans laquelle les opérations ou la latence n'est pas fortement modifiée. Pour réduire le nombre d'alertes d'événements, lors de l'analyse des événements de performances, Unified Manager déclenche un événement uniquement pour les volumes à faible activité dont les opérations et la latence sont supérieures à celles que nous attendions.
+
+image::../media/opm-expected-range-jpg.gif[Plage prévue pour la latence dans Performance Manager]
+
+Dans cet exemple, la latence d'un volume est une plage attendue, en gris, de 0 milliseconde par opération (ms/op) à sa plus basse et de 5 ms/op à sa plus élevée. Si la latence réelle, en bleu, augmente soudainement à 10 ms/opération, en raison d'un pic intermittent du trafic réseau ou de conflits sur un composant du cluster, il est alors supérieur à la plage prévue et a dépassé le seuil de performance.
+
+Lorsque le trafic réseau a diminué ou que le composant du cluster n'est plus conflit, la latence renvoie à la plage attendue. Si la latence reste supérieure ou égale à 10 ms/opération sur une longue période, vous pouvez être contraint d'effectuer une action corrective pour résoudre le problème.

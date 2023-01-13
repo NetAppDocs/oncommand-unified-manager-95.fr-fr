@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-inaccessible-junction-path.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser le rapport NFS Exports pour afficher la liste des volumes dont le chemin de jonction est inaccessible. 
+---
+= Personnalisation du rapport NFS Exports pour afficher la liste des volumes dont le chemin de jonction est inaccessible
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport NFS Exports pour afficher la liste des volumes dont le chemin de jonction est inaccessible.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster ou volume, effectuez les opérations suivantes :
++
+.. Cliquez sur les colonnes qui doivent être dégroupées.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour filtrer les volumes ayant un chemin de jonction inaccessible, cliquez dans la colonne *chemin de jonction actif* et ouvrez la boîte de dialogue *filtre* en cliquant sur le image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *non*.
+. Cliquez sur *OK*.
+

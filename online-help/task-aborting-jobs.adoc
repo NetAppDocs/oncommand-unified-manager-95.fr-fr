@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-aborting-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page protection/travaux pour abandonner un travail s"il prend trop de temps à terminer, s"il rencontre trop d"erreurs ou s"il n"est plus nécessaire. Vous ne pouvez abandonner un travail que si son état et son type l"autorisent. Vous pouvez abandonner tout travail en cours d"exécution.' 
+---
+= Abandon des travaux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page protection/travaux pour abandonner un travail s'il prend trop de temps à terminer, s'il rencontre trop d'erreurs ou s'il n'est plus nécessaire. Vous ne pouvez abandonner un travail que si son état et son type l'autorisent. Vous pouvez abandonner tout travail en cours d'exécution.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *travaux*.
+. Dans la liste des travaux, sélectionnez un travail, puis cliquez sur *abandonner*.
+. À l'invite de confirmation, cliquez sur *Oui* pour abandonner le travail sélectionné.
+

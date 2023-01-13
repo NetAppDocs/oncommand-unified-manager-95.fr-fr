@@ -1,0 +1,140 @@
+---
+permalink: performance-checker/reference-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: La page Récapitulatif affiche les graphiques compteurs qui contiennent des informations détaillées sur les événements et les performances par objet pour la période de 72 heures précédente. Ces données ne sont pas automatiquement actualisées, mais sont en cours à compter du dernier chargement de page. Les tableaux de la page Sommaire répondent à la question dois-je regarder plus loin? 
+---
+= Page récapitulative
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Récapitulatif affiche les graphiques compteurs qui contiennent des informations détaillées sur les événements et les performances par objet pour la période de 72 heures précédente. Ces données ne sont pas automatiquement actualisées, mais sont en cours à compter du dernier chargement de page. Les graphiques de la page Résumé répondent à la question _dois-je regarder plus loin?_
+
+
+
+== Graphiques et statistiques des compteurs
+
+Les tableaux récapitulatifs offrent un aperçu rapide et général de la dernière période de 72 heures et vous aident à identifier les problèmes possibles nécessitant une enquête plus approfondie.
+
+Les statistiques des compteurs de la page récapitulative sont affichées sous forme de graphiques.
+
+Vous pouvez positionner le curseur sur la ligne de tendance dans un graphique pour afficher les valeurs de compteur d'un point dans le temps particulier. Les tableaux récapitulatifs affichent également le nombre total d'événements critiques et d'avertissements actifs pour la période de 72 heures précédente pour les compteurs suivants :
+
+* * Latence*
++
+Temps de réponse moyen pour toutes les demandes d'E/S, exprimé en millisecondes par opération.
+
++
+Affiché pour tous les types d'objets.
+
+* *IOPS*
++
+Vitesse de fonctionnement moyenne ; exprimée en opérations d'entrée/sortie par seconde.
+
++
+Affiché pour tous les types d'objets.
+
+* *Mbit/s*
++
+Débit moyen, exprimé en mégaoctets par seconde.
+
++
+Affiché pour tous les types d'objets.
+
+* *Capacité de performance utilisée*
++
+Pourcentage de capacité de performance consommé par un nœud ou un agrégat.
+
++
+Affiché pour les nœuds et les agrégats uniquement. Ce tableau s'affiche uniquement lors de l'utilisation du logiciel ONTAP 9.0 ou version ultérieure.
+
+* *Utilisation*
++
+Pourcentage d'utilisation des objets pour les nœuds et les agrégats, ou utilisation de la bande passante pour les ports.
+
++
+Affiché pour les nœuds, les agrégats et les ports uniquement.
+
+
+
+Le positionnement du curseur sur le nombre d'événements pour les événements actifs indique le type et le nombre d'événements. Les événements critiques sont affichés en rouge (image:../media/treemapred-png.gif["Icône de TreeMap – couleur rouge"]), et les événements d'avertissement sont affichés en jaune (image:../media/treemapstatus-warning-png.gif["Icône de TreeMap – État d'avertissement"]).
+
+Le nombre en haut à droite du graphique dans la barre grise correspond à la valeur moyenne des 72 dernières heures. Les chiffres indiqués en bas et en haut du graphique de tendance sont les valeurs minimale et maximale pour la dernière période de 72 heures. La barre grise sous le tableau contient le nombre d'événements actifs (nouveaux et acquittés) et d'événements obsolètes de la dernière période de 72 heures.
+
+image::../media/iops-graph.gif[graphique iops]
+
+* *Diagramme de compteur de latence*
++
+Le graphique compteur de latence offre une vue d'ensemble générale de la latence de l'objet pour la période de 72 heures précédente. La valeur de latence correspond au temps de réponse moyen pour toutes les demandes d'E/S ; exprimé en millisecondes par opération, temps de service, temps d'attente, ou les deux cas rencontrés par un paquet de données ou un bloc dans le composant de stockage du cluster à prendre en compte.
+
++
+*Haut (valeur de compteur) :* le nombre dans l'en-tête affiche la moyenne pour la période de 72 heures précédente.
+
++
+*Moyen (graphique de performances) :* le nombre au bas du graphique affiche la latence la plus faible, et le chiffre en haut du graphique affiche la latence la plus élevée pour la période de 72 heures précédente. Positionnez le curseur de votre souris sur la ligne de tendance du graphique pour afficher la valeur de latence d'une heure précise.
+
++
+*Bas (événements) :* au survol, la fenêtre contextuelle affiche les détails des événements. Cliquez sur le lien *événements actifs* sous le graphique pour accéder à la page Inventaire des événements afin d'afficher les détails complets de l'événement.
+
+* *Diagramme de compteur d'IOPS*
++
+Le tableau des compteurs d'IOPS fournit une présentation générale de l'état des IOPS de l'objet pour la période précédente de 72 heures. IOPS indique la vitesse du système de stockage en nombre d'opérations d'entrée/sortie par seconde.
+
++
+*Haut (valeur de compteur) :* le nombre dans l'en-tête affiche la moyenne pour la période de 72 heures précédente.
+
++
+*Moyen (graphique de performances) :* le nombre au bas du graphique affiche les IOPS les plus faibles, et le nombre en haut du graphique affiche les IOPS les plus élevées pour la période de 72 heures précédente. Positionnez le curseur de votre souris sur la ligne de tendance du graphique pour afficher la valeur IOPS d'une heure précise.
+
++
+*Bas (événements) :* au survol, la fenêtre contextuelle affiche les détails des événements. Cliquez sur le lien *événements actifs* sous le graphique pour accéder à la page Inventaire des événements afin d'afficher les détails complets de l'événement.
+
+* *Diagramme de compteur Mbit/s*
++
+Le graphique de compteur Mbit/s affiche les performances en Mbit/s de l'objet et indique la quantité de données transférées vers et depuis l'objet en mégaoctets par seconde. Le graphique du compteur de Mbit/s fournit une vue d'ensemble de haut niveau de l'état des Mbit/s de l'objet pour la période précédente de 72 heures.
+
++
+*Haut (valeur de compteur) :* le nombre dans l'en-tête affiche le nombre moyen de Mbit/s pour la période de 72 heures précédente.
+
++
+*Moyen (graphique de performances) :* la valeur au bas du graphique affiche le plus petit nombre de Mbit/s, et la valeur en haut du graphique affiche le plus grand nombre de Mbit/s pour la période précédente de 72 heures. Placez le curseur sur la ligne de tendance du graphique pour afficher la valeur du Mbit/s pour une heure spécifique.
+
++
+*Bas (événements) :* au survol, la fenêtre contextuelle affiche les détails des événements. Cliquez sur le lien *événements actifs* sous le graphique pour accéder à la page Inventaire des événements afin d'afficher les détails complets de l'événement.
+
+* *Tableau de compteur capacité de performance utilisée*
++
+Le tableau des compteurs capacité de performances utilisée affiche le pourcentage de capacité de performance consommé par l'objet.
+
++
+*Haut (valeur de compteur):* le nombre dans l'en-tête affiche la capacité moyenne utilisée pour la période de 72 heures précédente.
+
++
+*Moyen (graphique de performances) :* la valeur au bas du graphique affiche le pourcentage de capacité de performance le plus faible utilisé, et la valeur en haut du graphique affiche le pourcentage de capacité de performance le plus élevé pour la période de 72 heures précédente. Positionnez le curseur sur la ligne de tendance du graphique pour afficher la valeur de la capacité de performance utilisée pour une période donnée.
+
++
+*Bas (événements) :* au survol, la fenêtre contextuelle affiche les détails des événements. Cliquez sur le lien *événements actifs* sous le graphique pour accéder à la page Inventaire des événements afin d'afficher les détails complets de l'événement.
+
+* *Diagramme du compteur d'utilisation*
++
+Le graphique du compteur d'utilisation affiche le pourcentage d'utilisation de l'objet. Le graphique du compteur d'utilisation offre une vue d'ensemble détaillée du pourcentage d'utilisation de l'objet ou de la bande passante pour la période de 72 heures précédente.
+
++
+*Haut (valeur de compteur) :* le nombre dans l'en-tête affiche le pourcentage moyen d'utilisation pour la période de 72 heures précédente.
+
++
+*Moyen (graphique de performances) :* la valeur au bas du graphique affiche le pourcentage d'utilisation le plus faible, et la valeur en haut du graphique affiche le pourcentage d'utilisation le plus élevé pour la période de 72 heures précédente. Positionnez le curseur sur la ligne de tendance du graphique pour afficher la valeur d'utilisation d'une heure spécifique.
+
++
+*Bas (événements) :* au survol, la fenêtre contextuelle affiche les détails des événements. Cliquez sur le lien *événements actifs* sous le graphique pour accéder à la page Inventaire des événements afin d'afficher les détails complets de l'événement.
+
+
+
+
+
+== Événements
+
+Le tableau Historique des événements, le cas échéant, répertorie les événements les plus récents survenus sur cet objet. Cliquez sur le nom de l'événement pour afficher les détails de l'événement sur la page Détails de l'événement.

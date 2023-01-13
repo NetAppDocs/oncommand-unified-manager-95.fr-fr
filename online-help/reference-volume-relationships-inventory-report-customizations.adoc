@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Relationships Inventory pour afficher les détails du volume qui sont filtrés en fonction de la source de l"échec. Vous pouvez utiliser des filtres pour afficher les détails de l"inventaire des relations de volume en fonction des horaires et pour regrouper les détails de l"inventaire des volumes en fonction des problèmes.' 
+---
+= Volume relations Inventory - personnalisation du rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Relationships Inventory pour afficher les détails du volume qui sont filtrés en fonction de la source de l'échec. Vous pouvez utiliser des filtres pour afficher les détails de l'inventaire des relations de volume en fonction des horaires et pour regrouper les détails de l'inventaire des volumes en fonction des problèmes.

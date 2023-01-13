@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-saml-authentication-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page authentification SAML pour configurer Unified Manager pour authentifier les utilisateurs distants à l"aide de SAML, via un fournisseur d"identités sécurisé \(IDP\), avant de pouvoir vous connecter à l"interface utilisateur Web Unified Manager.' 
+---
+= Page authentification SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page SAML Authentication pour configurer Unified Manager afin d'authentifier les utilisateurs distants à l'aide de SAML via un fournisseur d'identités sécurisé avant de pouvoir vous connecter à l'interface utilisateur Web Unified Manager.
+
+* Pour créer ou modifier la configuration SAML, vous devez avoir le rôle d'administrateur OnCommand.
+* Vous devez avoir configuré l'authentification à distance.
+* Vous devez avoir configuré au moins un utilisateur distant ou un groupe distant.
+
+
+Une fois l'authentification à distance et les utilisateurs distants configurés, vous pouvez cocher la case Activer l'authentification SAML pour activer l'authentification à l'aide d'un fournisseur d'identité sécurisé.
+
+* *URI IDP*
++
+URI permettant d'accéder au IDP à partir du serveur Unified Manager. Les exemples d'URI sont répertoriés ci-dessous.
+
++
+Exemple d'URI ADFS :
+
++
+`+https://win2016-dc.ntap2016.local/federationmetadata/2007-06/federationmetadata.xml+`
+
++
+Exemple d'URI :
+
++
+`+https://centos7.ntap2016.local/idp/shibboleth+`
+
+* *Métadonnées IDP*
++
+Les métadonnées IDP au format XML.
+
++
+Si l'URL IDP est accessible à partir du serveur Unified Manager, vous pouvez cliquer sur le bouton *extraire les métadonnées IDP* pour remplir ce champ.
+
+* *Système hôte (FQDN)*
++
+Le FQDN du système hôte Unified Manager tel que défini lors de l'installation. Vous pouvez modifier cette valeur si nécessaire.
+
+* *URI hôte*
++
+URI permettant d'accéder au système hôte Unified Manager à partir du IDP.
+
+* *Métadonnées hôte*
++
+Métadonnées du système hôte au format XML.
+
+

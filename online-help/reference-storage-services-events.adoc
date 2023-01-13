@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-storage-services-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements des services de stockage vous fournissent des informations sur la création et l"abonnement des services de stockage, ce qui vous permet de surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements des services de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements des services de stockage vous fournissent des informations sur la création et l'abonnement des services de stockage, ce qui vous permet de surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Service de stockage créé (non applicable)
+ a| 
+Événement
+ a| 
+Service de stockage
+ a| 
+Informations
+
+
+
+ a| 
+Service de stockage souscrit (non applicable)
+ a| 
+Événement
+ a| 
+Service de stockage
+ a| 
+Informations
+
+
+
+ a| 
+Service de stockage non souscrit (non applicable)
+ a| 
+Événement
+ a| 
+Service de stockage
+ a| 
+Informations
+
+|===
+
+
+== Zone d'impact : protection
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Suppression inattendue de la relation SnapMirror manageryardesokumEvtStorageServiceUprise en charge RelationshipSuppression
+ a| 
+Risques
+ a| 
+Service de stockage
+ a| 
+Avertissement
+
+
+
+ a| 
+Suppression inattendue du volume membre du service de stockage(otumEvtStorageServiceUnexpectedVolumeDeletion)
+ a| 
+Gestion des
+ a| 
+Service de stockage
+ a| 
+Primordial
+
+|===

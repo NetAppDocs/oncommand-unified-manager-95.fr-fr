@@ -1,0 +1,58 @@
+---
+permalink: health-checker/task-testing-script-execution.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez vérifier que le script s"exécute correctement lorsqu"une alerte est générée pour un objet de stockage.' 
+---
+= Exécution du script de test
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier que le script s'exécute correctement lorsqu'une alerte est générée pour un objet de stockage.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir téléchargé un script au format de fichier pris en charge vers Unified Manager.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *scripts* dans le menu gestion de gauche.
+. Dans la page *Management/scripts*, ajoutez votre script de test.
+. Dans la page *Configuration/Alerting*, effectuez l'une des opérations suivantes :
++
+|===
+| Pour... | Procédez comme ça... 
+
+
+ a| 
+Ajouter une alerte
+ a| 
+.. Dans la page Configuration/alerte, cliquez sur *Ajouter*.
+.. Dans la section actions, associez l'alerte à votre script de test.
+
+
+
+
+ a| 
+Modifier une alerte
+ a| 
+.. Dans la page Configuration/alerte, sélectionnez une alerte, puis cliquez sur *Modifier*.
+.. Dans la section actions, associez l'alerte à votre script de test.
+
+
+|===
+. Cliquez sur *Enregistrer*.
+. Dans la page *Configuration/Alerting*, sélectionnez l'alerte que vous avez ajoutée ou modifiée, puis cliquez sur *Test*.
++
+Le script est exécuté avec l'argument "`-test", et une alerte de notification est envoyée aux adresses électroniques spécifiées lors de la création de l'alerte.
+
+

@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser les actions suggérées pour essayer et résoudre par vous-même les événements de performances. Les trois premières suggestions sont toujours affichées et les actions de la quatrième suggestion sont spécifiques au type d"événement affiché.' 
+---
+= Résoudre les événements de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser les actions suggérées pour essayer et résoudre par vous-même les événements de performances. Les trois premières suggestions sont toujours affichées et les actions de la quatrième suggestion sont spécifiques au type d'événement affiché.
+
+Les liens *Help Me Do this* fournissent des informations supplémentaires pour chaque action suggérée, y compris des instructions pour effectuer une action spécifique. Certaines actions peuvent impliquer l'utilisation d'Unified Manager, de OnCommand System Manager, d'OnCommand Workflow Automation, des commandes de l'interface de ligne de commande d'ONTAP ou une combinaison de ces outils.

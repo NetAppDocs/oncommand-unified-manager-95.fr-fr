@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page Configuration/seuils de santé appropriée pour configurer les valeurs de seuil de santé global pour les agrégats et les volumes, et configurer les valeurs d"avertissement de décalage global et de seuil d"erreur pour les relations de protection non gérées.' 
+---
+= Description des pages des seuils de santé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page Configuration/seuils de santé appropriée pour configurer les valeurs de seuil de santé global pour les agrégats et les volumes, et configurer les valeurs d'avertissement de décalage global et de seuil d'erreur pour les relations de protection non gérées.

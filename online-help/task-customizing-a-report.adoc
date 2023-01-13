@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-customizing-a-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser les rapports dans la page Détails du rapport, puis enregistrer le rapport personnalisé sous un autre nom. 
+---
+= Personnalisation d'un rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser les rapports dans la page Détails du rapport, puis enregistrer le rapport personnalisé sous un autre nom.
+
+
+
+== Description de la tâche
+
+Après avoir enregistré un rapport personnalisé, vous ne pouvez pas modifier les filtres que vous avez appliqués pour créer le rapport car celui-ci est considéré comme « nouveau ». Assurez-vous donc d'être satisfait de toutes les modifications avant de sauvegarder le rapport. Vous pouvez toutefois appliquer de nouveaux filtres au rapport.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *Exécuter le rapport* pour le rapport que vous souhaitez personnaliser.
++
+La page Détails du rapport s'affiche.
+
+. Personnalisez le rapport selon vos besoins, puis cliquez sur *actions* > *Enregistrer le rapport personnalisé sous*.
+. Dans la boîte de dialogue *Enregistrer le rapport personnalisé sous*, entrez un nom pour le rapport personnalisé et une brève description de la personnalisation pour que les autres puissent comprendre ce que le rapport affiche.
++
+Par défaut, le nom du rapport en cours s'affiche.
+
+. Cliquez sur *Enregistrer*.
++
+Si vous recevez le message d'erreur « Echec de l'enregistrement du rapport personnalisé. Le fichier requis n'a pas été créé», attendez quelques instants, puis cliquez à nouveau sur *Enregistrer*. Ce problème s'est produit lorsqu'une connexion lente entre le navigateur Web et le serveur Unified Manager est survenue.
+
+
+
+
+
+== Résultats
+
+Le rapport personnalisé est enregistré et affiché dans sa catégorie de rapport respective dans la page Détails du rapport.

@@ -1,0 +1,58 @@
+---
+permalink: health-checker/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez configurer les paramètres de sauvegarde de la base de données Unified Manager pour définir le chemin de sauvegarde de la base de données, le nombre de rétention et les planifications de sauvegarde. Vous pouvez activer des sauvegardes planifiées quotidiennement ou hebdomadaires. Par défaut, les sauvegardes planifiées sont désactivées. 
+---
+= Configuration des paramètres de sauvegarde de la base de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les paramètres de sauvegarde de la base de données Unified Manager pour définir le chemin de sauvegarde de la base de données, le nombre de rétention et les planifications de sauvegarde. Vous pouvez activer des sauvegardes planifiées quotidiennement ou hebdomadaires. Par défaut, les sauvegardes planifiées sont désactivées.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez disposer d'au moins 150 Go d'espace disponible dans l'emplacement que vous définissez comme chemin de sauvegarde.
++
+Il est recommandé d'utiliser un emplacement distant externe au système hôte Unified Manager.
+
+* Lorsque Unified Manager est installé sur un système Linux, vérifiez que l'utilisateur « jboss » dispose des autorisations d'écriture sur le répertoire de sauvegarde.
+* Vous ne devez pas planifier d'opérations de sauvegarde immédiatement après l'ajout d'un nouveau cluster alors que Unified Manager collecte 15 jours de données historiques de performance.
+
+
+
+
+== Description de la tâche
+
+La première sauvegarde est effectuée moins de temps que les sauvegardes suivantes, car la première sauvegarde est une sauvegarde complète. Une sauvegarde complète peut dépasser 1 Go et peut prendre entre trois et quatre heures. Les sauvegardes suivantes sont incrémentielles et requièrent moins de temps.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Database Backup*.
+. Dans la page *Management/Database Backup*, cliquez sur *actions* > *Database Backup Settings*.
+. Configurez les valeurs appropriées pour un chemin de sauvegarde et le nombre de rétention.
++
+La valeur par défaut pour le nombre de rétention est 10 ; vous pouvez utiliser 0 pour créer des sauvegardes illimitées.
+
+. Dans la section *fréquence de programmation*, cochez la case *Activer*, puis spécifiez un horaire quotidien ou hebdomadaire.
++
+** *Tous les jours*
++
+Si vous sélectionnez cette option, vous devez entrer une heure au format 24 heures pour la création de la sauvegarde. Par exemple, si vous spécifiez 18:30, une sauvegarde est créée quotidiennement à 6:30 PM.
+
+** *Hebdomadaire*
++
+Si vous sélectionnez cette option, vous devez spécifier l'heure et le jour de la création de la sauvegarde. Par exemple, si vous indiquez le jour comme lundi et l'heure comme 16:30, une sauvegarde hebdomadaire est créée chaque lundi à 4:30 PM.
+
+
+
+. Cliquez sur *Enregistrer et fermer*.
+

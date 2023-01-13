@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Modifier une annotation permet de modifier la description d"une annotation existante.' 
+---
+= Boîte de dialogue Modifier une annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Modifier une annotation permet de modifier la description d'une annotation existante.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom d'annotation*
++
+Affiche le nom de l'annotation. Ce champ ne peut pas être modifié.
+
+* *Description*
++
+Fournit une description significative de l'annotation. Vous pouvez modifier ce champ lorsque vous souhaitez modifier la description actuelle de l'annotation.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer et fermer*
++
+Enregistre les modifications de description des annotations et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Modifier une annotation sans enregistrer vos modifications.
+
+

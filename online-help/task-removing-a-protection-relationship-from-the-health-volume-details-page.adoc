@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une relation de protection pour supprimer définitivement une relation existante entre la source et la destination sélectionnées, par exemple lorsque vous souhaitez créer une relation à l"aide d"une destination différente. Cette opération supprime toutes les métadonnées et ne peut pas être annulée.' 
+---
+= Suppression d'une relation de protection de la page Détails de l'état/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une relation de protection pour supprimer définitivement une relation existante entre la source et la destination sélectionnées, par exemple lorsque vous souhaitez créer une relation à l'aide d'une destination différente. Cette opération supprime toutes les métadonnées et ne peut pas être annulée.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Étapes
+
+. Dans l'onglet *protection* de la page de détails *Santé/Volume*, sélectionnez dans la topologie la relation SnapMirror que vous souhaitez supprimer.
+. Cliquez avec le bouton droit de la souris sur le nom de la destination et sélectionnez *Supprimer* dans le menu.
++
+La boîte de dialogue Supprimer la relation s'affiche.
+
+. Cliquez sur *Continuer* pour supprimer la relation.
++
+La relation est supprimée de la page Détails de l'intégrité/volume.
+
+

@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-searching-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Pour accéder rapidement à un objet spécifique, vous pouvez utiliser le champ Rechercher tous les objets de stockage en haut à droite de l"interface. Cette méthode de recherche globale sur tous les objets vous permet de localiser rapidement des objets spécifiques par type. Les résultats de la recherche sont classés par type d"objet de stockage et vous pouvez les filtrer davantage par objet à l"aide du menu déroulant Type.' 
+---
+= Recherche d'objets de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour accéder rapidement à un objet spécifique, vous pouvez utiliser le champ *Rechercher tous les objets de stockage* en haut à droite de l'interface. Cette méthode de recherche globale sur tous les objets vous permet de localiser rapidement des objets spécifiques par type. Les résultats de la recherche sont triés par type d'objet de stockage et vous pouvez les filtrer davantage par objet à l'aide du menu déroulant *Type*.
+
+
+
+== Avant de commencer
+
+* Pour effectuer cette tâche, vous devez avoir l'un des rôles suivants : opérateur, administrateur OnCommand ou administrateur stockage.
+* Une recherche valide doit contenir au moins trois caractères.
+
+
+
+
+== Description de la tâche
+
+Lorsque vous utilisez la valeur de menu déroulant Type « tous », la recherche globale affiche le nombre total de résultats trouvés dans toutes les catégories d'objets, avec un maximum de 25 résultats de recherche pour chaque catégorie d'objets. Vous pouvez sélectionner un type d'objet spécifique dans le menu déroulant Type pour affiner la recherche dans un type d'objet spécifique. Dans ce cas, la liste retournée n'est pas limitée aux 25 objets supérieurs.
+
+Les types d'objet que vous pouvez rechercher sont les suivants :
+
+* Clusters
+* Nœuds
+* SVM
+* 64 bits
+* Volumes
+* Qtrees
+* Partages CIFS
+* Quotas d'utilisateur ou de groupe
+* LUN
+* Espaces de noms NVMe
+* Groupes d'initiateurs
+* Initiateurs
+
+
+Vous pouvez cliquer sur n'importe quel objet dans les résultats de la recherche pour accéder à la page Détails de l'état de santé de cet objet. S'il n'existe pas de page d'intégrité directe pour un objet, la page Santé de l'objet parent s'affiche. Par exemple, lors d'une recherche de LUN spécifique, la page des détails du SVM sur laquelle réside la LUN s'affiche.
+
+[NOTE]
+====
+Les ports ne sont pas consultables dans la barre de recherche globale.
+
+====
+
+
+== Étapes
+
+. Sélectionnez un type d'objet dans le menu *Type* pour affiner les résultats de la recherche pour un seul type d'objet.
+. Saisissez au moins trois caractères du nom de l'objet dans le champ *Rechercher tous les objets de stockage*.
++
+Dans cet exemple, le type d'objet volumes est sélectionné dans la zone déroulante *Type*. La saisie de « vol1 » dans le champ *Rechercher tous les objets de stockage* affiche la liste de tous les volumes dont les noms contiennent ces caractères.
+
++
+image::../media/opm-search-field-jpg.gif[Champ de recherche dans Unified Manager]
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser l"option pour exécuter, supprimer, exporter et importer des rapports. Vous pouvez également créer des rapports personnalisés et enregistrer le rapport personnalisé. Vous pouvez effectuer d"autres opérations telles que le filtrage, le tri, le regroupement et le formatage.' 
+---
+= En savoir plus sur les rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'option pour exécuter, supprimer, exporter et importer des rapports. Vous pouvez également créer des rapports personnalisés et enregistrer le rapport personnalisé. Vous pouvez effectuer d'autres opérations telles que le filtrage, le tri, le regroupement et le formatage.

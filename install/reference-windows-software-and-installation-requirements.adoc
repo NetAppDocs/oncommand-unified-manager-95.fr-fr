@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Pour une installation réussie de Unified Manager sur Windows, il est nécessaire de s"assurer que le système sur lequel Unified Manager est installé répond aux exigences logicielles requises.' 
+---
+= Conditions requises pour l'installation et le logiciel Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Pour une installation réussie de Unified Manager sur Windows, il est nécessaire de s'assurer que le système sur lequel Unified Manager est installé répond aux exigences logicielles requises.
+
+
+
+== Logiciel de système d'exploitation
+
+Unified Manager s'exécute uniquement sur un système d'exploitation Windows 64 bits en anglais. Vous pouvez installer Unified Manager sur les plates-formes Windows suivantes :
+
+* Microsoft Windows Server 2012 Standard et Datacenter Edition
+* Microsoft Windows Server 2012 R2 Standard et Datacenter Edition
+* Microsoft Windows Server 2016 Standard et Datacenter Edition
+
+
+[NOTE]
+====
+Sous Windows Server 2012 R2, la mise à jour de Windows KB2919355 doit être installée sur le système cible, sinon l'installation échouera.
+
+====
+Notez que Windows Server 2008 n'est pas pris en charge comme c'était le cas dans les versions précédentes. Consultez la matrice d'interopérabilité pour obtenir la liste complète et la plus récente des versions de Windows prises en charge.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Le serveur doit être dédié à l'exécution de Unified Manager ; aucune autre application ne doit être installée sur le serveur.
+
+Les packages tiers suivants sont requis :
+
+* Microsoft Visual C&#43;&#43; 2015 Redistributable package version 14.0.24212
+* Microsoft Visual C&#43;&#43; Redistributable Packages pour Visual Studio 2013 version 12.0.40660
+* MySQL Community Edition version 5.7.23, ou versions ultérieures de la famille 5.7
+* OpenJDK version 11
+* p7zip version 18.01 ou ultérieure
+
+
+Si ces modules tiers ne sont pas installés, Unified Manager les installe dans le cadre de l'installation.
+
+[NOTE]
+====
+À partir d'Unified Manager 9.5, OpenJDK est fourni dans le package d'installation d'Unified Manager et installé automatiquement. Oracle Java n'est pas pris en charge à partir de Unified Manager 9.5.
+
+====
+Si MySQL est préinstallé, vous devez vous assurer que :
+
+* Il utilise le port par défaut.
+* Les exemples de bases de données ne sont pas installés.
+* Le nom du service est "`MYSQL`".
+
+
+[NOTE]
+====
+Si vous prévoyez de mettre à niveau un logiciel tiers après l'exécution de Unified Manager, vous devez d'abord arrêter Unified Manager. Une fois l'installation des logiciels tiers terminée, vous pouvez redémarrer Unified Manager.
+
+====
+
+
+== Conditions requises pour l'installation
+
+* Microsoft .NET 4.5.2 ou une version ultérieure doit être installé.
+* Vous devez réserver 2 Go d'espace disque pour le `temp` répertoire pour extraire les fichiers d'installation.
+* Vous devez réserver 2 Go d'espace disque sur le lecteur Windows pour la mise en cache des fichiers MSI Unified Manager.
+* Le serveur Microsoft Windows sur lequel vous souhaitez installer Unified Manager doit être configuré avec un nom de domaine complet (FQDN) de ce type `ping` Les réponses au nom d'hôte et au FQDN ont réussi.
+* Vous devez désactiver le service mondial de publication Web Microsoft IIS et vous assurer que les ports 80 et 443 sont gratuits.
+* Vous devez vous assurer que le paramètre hôte de session de bureau à distance pour « compatibilité RDS de Windows installer » est désactivé pendant l'installation.
+* Le port UDP 514 doit être libre et ne doit pas être utilisé par un autre service.
+
+
+[NOTE]
+====
+Le programme d'installation d'Unified Manager configure les exclusions suivantes dans Windows Defender :
+
+* Répertoire des données Unified Manager (Windows Server 2016 uniquement)
+* Répertoire d'installation de Unified Manager
+* Répertoire de données MySQL
+
+
+Si un scanner antivirus différent est installé sur votre serveur, vous devez configurer ces exclusions manuellement.
+
+====

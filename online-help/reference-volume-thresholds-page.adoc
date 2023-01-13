@@ -1,0 +1,204 @@
+---
+permalink: online-help/reference-volume-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page seuils de configuration/santé des volumes vous permet de configurer les valeurs de seuil de santé global des volumes surveillés. Vous pouvez définir des seuils pour des volumes individuels ou pour tous les volumes globalement. Lorsque vous configurez globalement les options, les valeurs par défaut de tous les objets sont modifiées. Cependant, si les valeurs par défaut ont été modifiées au niveau de l"objet, les valeurs globales ne sont pas modifiées.' 
+---
+= Page seuils de configuration/de santé des volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page seuils de configuration/santé des volumes vous permet de configurer les valeurs de seuil de santé global des volumes surveillés. Vous pouvez définir des seuils pour des volumes individuels ou pour tous les volumes globalement. Lorsque vous configurez globalement les options, les valeurs par défaut de tous les objets sont modifiées. Cependant, si les valeurs par défaut ont été modifiées au niveau de l'objet, les valeurs globales ne sont pas modifiées.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+Les événements sont générés lorsqu'un seuil est atteint. Vous pouvez prendre des actions correctives pour de tels événements.
+
+Vous pouvez définir des seuils pour les éléments suivants : capacité, copies Snapshot de volume, quotas, croissance du volume et inodes.
+
+
+
+== Surface de capacité
+
+La zone capacité vous permet de définir les conditions de seuil de capacité de volume suivantes. Notez que lorsque la croissance automatique est activée sur un volume que les seuils de capacité sont considérés comme enfreintes en fonction de la taille maximale du volume définie par Autogrow, et non pas en fonction de la taille du volume initial.
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque plein :
+
++
+** Valeur par défaut : 80 %
++
+La valeur de ce seuil doit être inférieure à la valeur du seuil Volume plein pour que le serveur de gestion puisse générer un événement.
+
+** Événement généré : volume presque plein
+** Gravité de l'événement : avertissement
+
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme plein :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : volume plein
+** Gravité de l'événement : erreur
+
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que le volume n'atteigne sa capacité maximale :
+
++
+** Valeur par défaut : 7
+** Événement généré : nombre de jours jusqu'à saturation
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Zone des copies Snapshot
+
+La zone copies Snapshot vous permet de définir les conditions de seuil suivantes pour les copies Snapshot dans le volume :
+
+* *Réserve snapshot complète*
++
+Spécifie le pourcentage auquel l'espace réservé pour les copies Snapshot est considéré comme plein :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : volume Snapshot Reserve plein
+** Gravité de l'événement : erreur
+
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que l'espace réservé pour les copies Snapshot n'atteigne la capacité maximale :
+
++
+** Valeur par défaut : 7
+** Événement généré : jours de réserve Snapshot du volume jusqu'à saturation
+** Gravité de l'événement : erreur
+
+
+* *Nombre*
++
+Spécifie le nombre de copies Snapshot sur un volume qui sont considérées comme trop nombreuses :
+
++
+** Valeur par défaut : 250
+** Événement généré : trop de copies Snapshot
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Zone de quota qtree
+
+La zone quota qtree permet de définir les conditions seuils de quota de volume suivantes :
+
+* *Presque surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque surengagé par les quotas qtree :
+
++
+** Valeur par défaut : 95 %
+** Événement généré : quota de qtree volume presque dépassé
+** Gravité de l'événement : avertissement
+
+
+* *Surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme suralloué par des quotas qtree :
+
++
+** Valeur par défaut : 100 %
+** Événement généré : quota qtree de volume dépassé
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Zone de croissance
+
+La zone de croissance vous permet de définir les conditions de seuil suivantes pour la croissance du volume :
+
+* *Taux de croissance*
++
+Spécifie le pourcentage auquel le taux de croissance d'un volume est considéré comme normal avant que le système ne génère un événement Volume Growth Rate Abnormal :
+
++
+** Valeur par défaut : 1 %
+** Événement généré : taux de croissance du volume anormal
+** Gravité de l'événement : avertissement
+
+
+* *Sensibilité du taux de croissance*
++
+Spécifie le facteur qui est appliqué à l'écart-type du taux de croissance d'un volume. Si le taux de croissance dépasse l'écart-type pris en compte, un événement anormal du taux de croissance du volume est généré.
+
++
+Une valeur plus faible pour la sensibilité au taux de croissance indique que le volume est très sensible aux variations du taux de croissance. La plage de sensibilité de la vitesse de croissance est de 1 à 5.
+
++
+** Valeur par défaut : 2
+
+
++
+[NOTE]
+====
+Si vous modifiez la sensibilité du taux de croissance pour les volumes au niveau seuil global, la modification est également appliquée à la sensibilité du taux de croissance pour les agrégats au niveau du seuil global.
+
+====
+
+
+
+
+== Zone des inodes
+
+La zone des inodes vous permet de définir les conditions de seuil suivantes pour les inodes :
+
+* *Presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé la plupart de ses inodes :
+
++
+** Valeur par défaut : 80 %
+** Événement généré : inodes presque plein
+** Gravité de l'événement : avertissement
+
+
+* *Complet*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé l'ensemble de ses inodes :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : inodes plein
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Boutons de commande
+
+* *Rétablir les paramètres par défaut*
++
+Permet de restaurer les paramètres de configuration aux valeurs par défaut.
+
+* *Enregistrer*
++
+Enregistre les paramètres de configuration pour l'option sélectionnée.
+
+

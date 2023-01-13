@@ -1,0 +1,44 @@
+---
+permalink: install/task-installing-the-unified-manager-in-vcs-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Pour configurer la haute disponibilité, vous devez installer Unified Manager sur les deux nœuds de cluster de VCS. 
+---
+= Installation de Unified Manager sur VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer la haute disponibilité, vous devez installer Unified Manager sur les deux nœuds de cluster de VCS.
+
+
+
+== Avant de commencer
+
+* VCS doit être installé et configuré sur les deux nœuds du cluster.
++
+Reportez-vous aux instructions fournies dans le _Veritas Cluster Server 6.2.1 installation Guide_ pour plus d'informations sur l'installation de VCS.
+
+* Vous devez disposer de privilèges root clairs pour vous connecter à la console de serveur Unified Manager.
+
+
+
+
+== Description de la tâche
+
+Vous devez configurer les instances de Unified Manager de manière à utiliser la même base de données et à surveiller le même ensemble de nœuds.
+
+
+
+== Étapes
+
+. Connectez-vous au premier nœud du cluster.
+. Installez Unified Manager sur le premier nœud.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installation de Unified Manager sur Red Hat Enterprise Linux ou CentOS]
+
+. Répétez les étapes 1 et 2 sur le second nœud du cluster.
+. Sur la deuxième instance de Unified Manager, connectez-vous en tant qu'utilisateur root au serveur Red Hat Enterprise Linux ou CentOS et entrez le même mot de passe uminadmin que vous avez défini sur la première instance de Unified Manager.`passwd umadmin`
+

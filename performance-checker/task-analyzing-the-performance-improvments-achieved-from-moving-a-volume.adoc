@@ -1,0 +1,63 @@
+---
+permalink: performance-checker/task-analyzing-the-performance-improvments-achieved-from-moving-a-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour analyser l"impact d"une opération de déplacement de volume sur la latence \(temps de réponse\) des autres volumes du cluster. Le déplacement d"un volume hautes performances vers un agrégat moins occupé ou un agrégat sur lequel le stockage Flash est activé permet au volume d"être plus efficace.' 
+---
+= L'analyse des gains de performances obtenus suite au déplacement d'un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour analyser l'impact d'une opération de déplacement de volume sur la latence (temps de réponse) des autres volumes du cluster. Le déplacement d'un volume hautes performances vers un agrégat moins occupé ou un agrégat sur lequel le stockage Flash est activé permet au volume d'être plus efficace.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez avoir identifié le nom du volume ou de la LUN associée à analyser.
+* Unified Manager doit avoir collecté et analysé sept jours de données.
+
+
+
+
+== Description de la tâche
+
+Unified Manager identifie lorsqu'un volume se déplace entre des agrégats. Il peut détecter quand le déplacement de volume est en cours, terminé ou échoué. La page Performance/Volume Details affiche une icône d'événement de modification pour chaque état du déplacement du volume, ce qui vous aide à suivre le moment où une opération de déplacement s'est produite et vous aide à déterminer s'il a pu contribuer à un événement de performances.
+
+Si vous consultez la page Détails de l'événement, vous pouvez cliquer sur le nom d'un volume pour accéder directement à la page Détails des performances/volumes.
+
+
+
+== Étapes
+
+. Dans la barre *Search*, saisissez le nom du volume.
+. Cliquez sur le nom du volume.
++
+Le volume s'affiche sur la page Performance/Volume Details.
+
+. Dans le graphique *données historiques*, ajustez les curseurs pour afficher l'activité de la semaine de travail précédente.
+. Analysez le graphique *latence* et le graphique *IOPS* pour voir comment le volume a été réalisé au cours des derniers jours.
++
+Supposons que vous remarquez un modèle cohérent de temps de réponse moyens très élevés de plus de 42 millisecondes par opération (ms/op), avec des événements de performances, chaque jour de la semaine et que vous décidez de déplacer le volume vers un agrégat moins occupé pour améliorer les performances. OnCommand System Manager vous permet de déplacer le volume vers un agrégat sur lequel Flash Pool est activé pour de meilleures performances. Une heure environ après le déplacement de volume, vous pouvez revenir à Unified Manager pour confirmer que la opération de déplacement a été effectuée correctement et que la latence a été améliorée.
+
+. Si la page *Détails performances/Volume* n'est pas affichée, recherchez le volume que vous souhaitez afficher.
+. Dans le graphique *données historiques*, cliquez sur *1D* pour afficher l'activité du dernier jour, quelques heures depuis que le déplacement de volume a été terminé.
++
+En bas de la page, dans la ligne heure des événements, une icône d'événement de changement (image:../media/opm-change-icon.gif["Icône changer événement"]) s'affiche pour indiquer l'heure à laquelle l'opération de déplacement de volume a été terminée. Une ligne noire et verticale s'affiche également depuis l'icône d'événement de modification vers le graphique latence.
+
+. Pointez votre curseur sur l'icône Modifier l'événement pour afficher les détails de l'événement dans *liste d'événements*.
++
+Du fait que le volume a été déplacé vers un agrégat sur lequel Flash Pool est activé, vous pouvez voir le changement relatif aux E/S de lecture et d'écriture dans le cache.
+
+. Dans le menu *données d'interruption par*, sous *Mbps*, sélectionnez *cache Hit ratio*.
++
+Le tableau taux d'accès au cache affiche des statistiques sur les lectures et écritures dans le cache.
+
++
+Le volume a été déplacé vers un agrégat moins occupé et l'événement de modification est mis en surbrillance dans la liste d'événements à droite. La latence moyenne a considérablement diminué, passant de plus de 42 ms/opération à environ 24 ms/op. La latence actuelle est d'environ 1.5 ms/op. Dans le graphique du taux d'accès au cache, le taux d'accès en lecture et en écriture qui ont réussi dans le cache se situe désormais à 100 %, car le volume se trouve désormais sur un agrégat où Flash Pool est activé.
+
+

@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/concept-what-the-used-headroom-value-means.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La valeur de performance utilisée permet d"identifier les nœuds et les agrégats actuellement sur-utilisés ou sous-utilisés. Vous pouvez ainsi redistribuer les charges de travail afin d"améliorer l"efficacité de vos ressources de stockage.' 
+---
+= Signification de la capacité en termes de performances utilisée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La valeur de performance utilisée permet d'identifier les nœuds et les agrégats actuellement sur-utilisés ou sous-utilisés. Vous pouvez ainsi redistribuer les charges de travail afin d'améliorer l'efficacité de vos ressources de stockage.
+
+La figure suivante montre la courbe de latence par rapport à l'utilisation d'une ressource et identifie, avec des points de couleur, trois zones où le point opérationnel actuel peut être localisé.
+
+image::../media/headroom-chart-over-under.gif[graphique marge sur dessous]
+
+* Un pourcentage de capacité de performances utilisé égal à 100 est au point optimal.
++
+À ce stade, les ressources sont utilisées efficacement.
+
+* Un pourcentage de capacité de performances utilisé supérieur à 100 indique que le nœud ou l'agrégat est sur-exploité et que les charges de travail bénéficient de performances sous-optimales.
++
+Aucune nouvelle charge de travail ne doit être ajoutée à la ressource et la redistribution des charges de travail existantes peut s'avérer nécessaire.
+
+* Un pourcentage de capacité de performances utilisé inférieur à 100 indique que le nœud ou l'agrégat est sous-utilisé, et que les ressources ne sont pas utilisées efficacement.
++
+Il est possible d'ajouter davantage de charges de travail à une ressource.
+
+
+
+[NOTE]
+====
+Contrairement à l'utilisation, le pourcentage de capacité haute performance utilisé peut être supérieur à 100 %. Il n'y a pas de pourcentage maximal, mais les ressources sont généralement comprises entre 110 et 140 % lorsqu'elles sont sur-exploitées. Des pourcentages plus élevés indiquerait une ressource avec des problèmes graves.
+
+====

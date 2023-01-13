@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-sending-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ce flux de travail explique comment générer, récupérer et envoyer un pack à un support technique via la console de maintenance Unified Manager. Vous devez envoyer un pack de support si le problème que vous rencontrez nécessite des diagnostics et des dépannages plus détaillés qu"un message AutoSupport.' 
+---
+= Envoi d'un bundle de support Unified Manager au support technique
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce flux de travail explique comment générer, récupérer et envoyer un pack à un support technique via la console de maintenance Unified Manager. Vous devez envoyer un pack de support si le problème que vous rencontrez nécessite des diagnostics et des dépannages plus détaillés qu'un message AutoSupport.
+
+
+
+== Description de la tâche
+
+Pour plus d'informations sur la console de maintenance et les packs de support, reportez-vous à la section xref:task-using-the-maintenance-console.adoc[Utilisation de la console de maintenance].
+
+Unified Manager stocke deux packs de support générés en même temps.

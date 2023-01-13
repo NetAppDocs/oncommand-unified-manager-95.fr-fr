@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la boîte de dialogue Créer un pool de ressources pour regrouper les agrégats à des fins de provisionnement. 
+---
+= Création de pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Créer un pool de ressources pour regrouper les agrégats à des fins de provisionnement.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Les pools de ressources peuvent contenir des agrégats provenant de différents clusters, mais le même agrégat ne peut pas appartenir à des pools de ressources différents.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *pools de ressources*.
+. Dans la page *protection/pools de ressources*, cliquez sur *Créer*.
+. Suivez les instructions de la boîte de dialogue *Créer un pool de ressources* pour donner un nom et une description et pour ajouter des agrégats comme membres au pool de ressources que vous souhaitez créer.
+

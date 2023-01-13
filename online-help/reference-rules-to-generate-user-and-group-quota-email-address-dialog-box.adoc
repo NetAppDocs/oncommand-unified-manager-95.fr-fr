@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-rules-to-generate-user-and-group-quota-email-address-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page règles de génération des adresses e-mail de quota d"utilisateur et de groupe vous permet de créer des règles pour spécifier des adresses e-mail en fonction des quotas d"utilisateur associés aux clusters, SVM, volumes, qtrees, utilisateurs, ou groupes d"utilisateurs. Une notification est envoyée à l"adresse e-mail spécifiée lorsqu"un quota est dépassé.' 
+---
+= Règles de génération de la page adresse e-mail de quota d'utilisateur et de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page règles de génération des adresses e-mail de quota d'utilisateur et de groupe vous permet de créer des règles pour spécifier des adresses e-mail en fonction des quotas d'utilisateur associés aux clusters, SVM, volumes, qtrees, utilisateurs, ou groupes d'utilisateurs. Une notification est envoyée à l'adresse e-mail spécifiée lorsqu'un quota est dépassé.
+
+
+
+== Domaine règles
+
+Vous devez définir les règles pour une adresse e-mail de quota. Vous pouvez également ajouter des commentaires pour expliquer les règles.
+
+
+
+== Comment définir des règles
+
+Vous devez entrer les règles dans l'ordre dans lequel vous souhaitez les exécuter. Si le critère de la première règle est rempli, l'adresse e-mail est générée en fonction de cette règle. Si le critère n'est pas satisfait, alors le critère de la règle suivante est pris en compte, et ainsi de suite. Chaque ligne liste une règle distincte. La règle par défaut est la dernière règle de la liste. Vous pouvez modifier l'ordre de priorité des règles. Cependant, vous ne pouvez pas modifier l'ordre de la règle par défaut.
+
+Par exemple, si vous souhaitez utiliser l'adresse e-mail qtree1@xyz.com pour recevoir des notifications sur les violations de quota pour qtre1 et utiliser l'adresse e-mail admin@xyz.com pour tous les autres qtrees, les règles doivent être répertoriées dans l'ordre suivant :
+
+* Si ( $QTREE == 'qtre1' ) puis qtree1@xyz.com
+* Si ( $QTREE == * ), admin@xyz.com
+
+
+Si aucun des critères pour les règles que vous avez spécifiées n'est satisfait, la règle par défaut est utilisée :
+
+SI ($USER_OR_GROUP == * ), ALORS $USER_OR_GROUP@$DOMAIN
+
+Si plusieurs utilisateurs ont le même quota, les noms des utilisateurs sont affichés sous la forme de valeurs séparées par des virgules et les règles ne sont pas applicables pour le quota.
+
+
+
+== Comment ajouter des commentaires
+
+Vous pouvez ajouter des commentaires pour expliquer les règles. Vous devez utiliser # au début de chaque commentaire et chaque ligne liste un commentaire distinct.
+
+
+
+== Syntaxe des règles
+
+La syntaxe de la règle doit être l'une des suivantes :
+
+* Si ( _variable valide** operator_ *) puis _email ID_@_domain name_
++
+`if` est un mot-clé et est en minuscules. L'opérateur est ==. L'ID e-mail peut contenir n'importe quel caractère, les variables valides $USER_OR_GROUP, $USER ou $GROUP, ou une combinaison de tout caractère et des variables valides $USER_OR_GROUP, $USER ou $GROUP. Le nom de domaine peut contenir n'importe quel caractère, la variable valide $DOMAINE ou une combinaison de tout caractère et de la variable valide $DOMAINE. Les variables valides peuvent être en majuscules ou minuscules mais ne doivent pas être une combinaison des deux. Par exemple, $domain et $DOMAIN sont valides, mais $Domain n'est pas une variable valide.
+
+* Si ( _variable valide** operator_ '_string_ ') puis _email ID_@_domain name_
++
+`if` est un mot-clé et est en minuscules. L'opérateur peut être `contains` ou ==. L'ID e-mail peut contenir n'importe quel caractère, les variables valides $USER_OR_GROUP, $USER ou $GROUP, ou une combinaison de tout caractère et des variables valides $USER_OR_GROUP, $USER ou $GROUP. Le nom de domaine peut contenir n'importe quel caractère, la variable valide $DOMAINE ou une combinaison de tout caractère et de la variable valide $DOMAINE. Les variables valides peuvent être en majuscules ou minuscules mais ne doivent pas être une combinaison des deux. Par exemple, $domain et $DOMAIN sont valides, mais $Domain n'est pas une variable valide.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'enregistrer, de valider ou d'annuler les règles créées :
+
+* *Valider*
++
+Valide la syntaxe de la règle créée. En cas d'erreurs lors de la validation, la règle qui génère l'erreur s'affiche avec un message d'erreur.
+
+* *Rétablir les paramètres par défaut*
++
+Permet de restaurer les règles d'adresse aux valeurs par défaut définies en usine.
+
+* *Enregistrer*
++
+Valide la syntaxe de la règle et enregistre la règle en l'absence d'erreurs. En cas d'erreurs lors de la validation, la règle qui génère l'erreur s'affiche avec un message d'erreur.
+
+

@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les tableaux de bord fournissent des informations cumulées d"un coup d"œil sur l"état de santé de votre système. Les tableaux de bord vous permettent d"évaluer la disponibilité globale, la capacité, les performances et l"état de protection des clusters gérés. Vous pouvez également noter, localiser, diagnostiquer ou attribuer une résolution à tout problème spécifique.' 
+---
+= Contrôle de l'état et des performances du cluster à partir des tableaux de bord
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les tableaux de bord fournissent des informations cumulées d'un coup d'œil sur l'état de santé de votre système. Les tableaux de bord vous permettent d'évaluer la disponibilité globale, la capacité, les performances et l'état de protection des clusters gérés. Vous pouvez également noter, localiser, diagnostiquer ou attribuer une résolution à tout problème spécifique.
+
+Trois tableaux de bord proposent des vues uniques de l'état et des performances des clusters.
+
+* La page tableaux de bord/Présentation fournit des informations sur la santé et les performances de vos objets de stockage.
+* La page tableaux de bord/performances présente l'état de haute performance de tous les clusters contrôlés.
+* La page tableaux de bord/Cluster View fournit des informations sur les clusters individuels.
+

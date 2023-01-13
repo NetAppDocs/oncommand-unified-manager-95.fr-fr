@@ -1,0 +1,78 @@
+---
+permalink: performance-checker/task-filtering-inventory-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez filtrer les données d"inventaire des performances dans Unified Manager pour localiser rapidement des données en fonction de critères spécifiques. Vous pouvez utiliser le filtrage pour affiner le contenu des pages Unified Manager afin d"afficher uniquement les résultats qui vous intéressent. Cela constitue une méthode très efficace pour afficher uniquement les données de performance qui vous intéressent.' 
+---
+= Filtrage du contenu de la page d'inventaire des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez filtrer les données d'inventaire des performances dans Unified Manager pour localiser rapidement des données en fonction de critères spécifiques. Vous pouvez utiliser le filtrage pour affiner le contenu des pages Unified Manager afin d'afficher uniquement les résultats qui vous intéressent. Cela constitue une méthode très efficace pour afficher uniquement les données de performance qui vous intéressent.
+
+
+
+== Description de la tâche
+
+Utilisez *Filtering* pour personnaliser la vue de grille en fonction de vos préférences. Les options de filtre disponibles sont basées sur le type d'objet affiché dans la grille. Si des filtres sont actuellement appliqués, un astérisque (*) s'affiche à gauche du contrôle de filtrage.
+
+Quatre types de paramètres de filtre sont pris en charge.
+
+|===
+| Paramètre | Validation 
+
+
+ a| 
+Chaîne (texte)
+ a| 
+Les opérateurs sont *contient* et *commence par*.
+
+
+
+ a| 
+Nombre
+ a| 
+Les opérateurs sont *supérieurs à* et *inférieurs à*.
+
+
+
+ a| 
+Ressource
+ a| 
+Les opérateurs sont *name contient* et *name commence par*.
+
+
+
+ a| 
+État
+ a| 
+Les opérateurs sont *is* et *n'est pas*.
+
+|===
+Les trois champs sont requis pour chaque filtre ; les filtres disponibles reflètent les colonnes filtrables de la page actuelle. Le nombre maximal de filtres que vous pouvez appliquer est de quatre. Les résultats filtrés sont basés sur des paramètres de filtre combinés. Les résultats filtrés s'appliquent à toutes les pages de votre recherche filtrée, pas seulement à la page actuellement affichée.
+
+Vous pouvez ajouter des filtres à l'aide du panneau filtrage.
+
+. En haut de la page, cliquez sur *Filtering*. Le panneau filtrage s'affiche.
+. Dans le panneau filtrage, cliquez sur la liste déroulante de gauche et sélectionnez un nom d'objet : par exemple, _Cluster_ ou un compteur de performances.
+. Cliquez sur la liste déroulante centrale et sélectionnez l'opérateur booléen *nom contient* ou *nom commence par* si la première sélection était un nom d'objet. Si la première sélection était un compteur de performances, sélectionnez *supérieur à* ou *inférieur à*. Si la première sélection était *Etat*, sélectionnez *est* ou *n'est pas*.
+. Si vos critères de recherche nécessitent une valeur numérique, les boutons fléchés haut et bas s'affichent dans le champ à droite. Vous pouvez cliquer sur les flèches haut et bas pour afficher la valeur numérique souhaitée.
+. Si nécessaire, saisissez vos critères de recherche non numériques dans le champ de texte à droite.
+. Pour ajouter des filtres, cliquez sur *Ajouter filtre*. Un champ de filtre supplémentaire s'affiche. Effectuez ce filtre en suivant la procédure décrite dans les étapes précédentes. Notez que lors de l'ajout de votre quatrième filtre, le bouton *Ajouter filtre* ne s'affiche plus.
+. Cliquez sur *appliquer le filtre*. Les options de filtre sont appliquées à la grille et un astérisque (*) s'affiche dans le bouton filtrage.
+. Utilisez le panneau filtrage pour supprimer des filtres individuels en cliquant sur l'icône de corbeille située à droite du filtre à supprimer.
+. Pour supprimer tous les filtres, cliquez sur *Réinitialiser* en bas du panneau de filtrage.
+
+
+
+
+== Exemple de filtrage
+
+L'illustration montre le panneau filtrage avec trois filtres. Le bouton *Ajouter filtre* s'affiche lorsque vous avez moins de quatre filtres que le maximum.
+
+image::../media/opm-filtering-panel-draft-3.gif[panneau de filtrage opm brouillon 3]
+
+Après avoir cliqué sur *appliquer filtre*, le panneau filtrage se ferme et applique vos filtres.

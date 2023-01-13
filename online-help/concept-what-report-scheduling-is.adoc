@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez planifier la génération d"un rapport à une date et une heure précises à l"aide de l"option planifier. Le rapport est automatiquement envoyé par e-mail à un ou plusieurs destinataires conformément à l"horaire.' 
+---
+= Définition de la planification des rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez planifier la génération d'un rapport à une date et une heure précises à l'aide de l'option *Schedule*. Le rapport est automatiquement envoyé par e-mail à un ou plusieurs destinataires conformément à l'horaire.
+
+En planifiant un rapport, vous pouvez limiter les tâches de génération et d'envoi manuel des rapports. Vous pouvez vous assurer que l'état actuel du stockage est surveillé à intervalles spécifiés par les administrateurs qui ne sont pas autrement avertis par Unified Manager.

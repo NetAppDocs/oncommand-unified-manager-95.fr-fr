@@ -1,0 +1,196 @@
+---
+permalink: online-help/reference-group-action-volume-thresholds-section.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La section Group action-volume seuils vous permet de configurer des seuils de santé au niveau des groupes pour les volumes. Ces seuils sont appliqués à tous les volumes d"un groupe. Lorsque les seuils d"intégrité du volume sont configurés au niveau du groupe, les valeurs du seuil de santé global ne sont pas affectées.' 
+---
+= Section seuils action-volume du groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La section Group action-volume seuils vous permet de configurer des seuils de santé au niveau des groupes pour les volumes. Ces seuils sont appliqués à tous les volumes d'un groupe. Lorsque les seuils d'intégrité du volume sont configurés au niveau du groupe, les valeurs du seuil de santé global ne sont pas affectées.
+
+Vous pouvez configurer les seuils d'intégrité des volumes pour les éléments suivants afin de configurer une action de groupe :
+
+* Puissance
+* Croissance
+* Quota qtree
+* Copies Snapshot
+* Inodes
+
+
+Les valeurs globales par défaut sont utilisées si les seuils d'intégrité du volume ne sont pas configurés pour l'une de ces catégories. Vous pouvez définir des seuils de santé pour les éléments suivants :
+
+* Puissance
+* Croissance
+* Quota qtree
+* Copies Snapshot
+* Inodes
+
+
+
+
+== Section capacité
+
+Vous pouvez définir les conditions des seuils de santé de la capacité de volume suivants :
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque plein :
+
++
+** Valeur par défaut : 80 %
++
+La valeur de ce seuil doit être inférieure à la valeur du seuil Volume plein pour que le serveur de gestion puisse générer un événement.
+
+** Événement généré : volume presque plein
+** Gravité de l'événement : avertissement
+
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme plein :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : volume plein
+** Gravité de l'événement : erreur
+
+
+* *Surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme surengagé :
+
++
+** Valeur par défaut : 100 %
+** Événement généré : volume annulé
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Section croissance
+
+Vous pouvez définir les conditions de seuil d'intégrité suivantes pour la croissance du volume :
+
+* *Taux de croissance*
++
+Spécifie le pourcentage auquel le taux de croissance d'un volume est considéré comme normal avant que le système ne génère un événement Volume Growth Rate Abnormal :
+
++
+** Valeur par défaut : 1 %
+** Événement généré : taux de croissance du volume anormal
+** Gravité de l'événement : avertissement
+
+
+* *Sensibilité du taux de croissance*
++
+Spécifie le facteur qui est appliqué à l'écart-type du taux de croissance d'un volume. Si le taux de croissance dépasse l'écart-type pris en compte, un événement anormal du taux de croissance du volume est généré.
+
++
+Une valeur plus faible pour la sensibilité au taux de croissance indique que l'agrégat est très sensible aux variations du taux de croissance. La plage de sensibilité de la vitesse de croissance est de 1 à 5.
+
++
+** Valeur par défaut : 2
+
+
+
+
+
+
+== Section quota qtree
+
+Vous pouvez définir les conditions de seuil d'intégrité suivantes pour les quotas de volume :
+
+* *Presque surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque surengagé par les quotas qtree :
+
++
+** Valeur par défaut : 95 %
+** Événement généré : quota de qtree volume presque dépassé
+** Gravité de l'événement : avertissement
+
+
+* *Surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme suralloué par des quotas qtree :
+
++
+** Valeur par défaut : 100 %
+** Événement généré : quota qtree de volume dépassé
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Section copies Snapshot
+
+Vous pouvez définir les conditions de seuil de santé suivantes pour les copies Snapshot dans le volume :
+
+* *Réserve snapshot complète*
++
+Spécifie le pourcentage auquel l'espace réservé pour les copies Snapshot est considéré comme plein :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : volume Snapshot Reserve plein
+** Gravité de l'événement : erreur
+
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que l'espace réservé pour les copies Snapshot n'atteigne la capacité maximale :
+
++
+** Valeur par défaut : 7
+** Événement généré : jours de réserve Snapshot du volume jusqu'à saturation
+** Gravité de l'événement : erreur
+
+
+* *Nombre*
++
+Spécifie le nombre de copies Snapshot sur un volume qui sont considérées comme trop nombreuses :
+
++
+** Valeur par défaut : 250
+** Événement généré : trop de copies Snapshot
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Section des inodes
+
+Vous pouvez définir les conditions de seuil de santé suivantes pour les inodes :
+
+* *Presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé la plupart de ses inodes :
+
++
+** Valeur par défaut : 80 %
+** Événement généré : inodes presque plein
+** Gravité de l'événement : avertissement
+
+
+* *Complet*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé l'ensemble de ses inodes :
+
++
+** Valeur par défaut : 90 %
+** Événement généré : inodes plein
+** Gravité de l'événement : erreur
+
+
+

@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Unified Manager vous permet de créer et de gérer des rapports. Vous pouvez ainsi afficher des informations personnalisées sur la capacité, l"utilisation et les performances des objets de stockage et des événements associés aux objets de stockage.' 
+---
+= Gestion des rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager vous permet de créer et de gérer des rapports. Vous pouvez ainsi afficher des informations personnalisées sur la capacité, l'utilisation et les performances des objets de stockage et des événements associés aux objets de stockage.
+
+[NOTE]
+====
+La mise en œuvre de la planification et de la génération de rapports à partir de l'option Rapports du volet de navigation de gauche sera déconseillée dans une version ultérieure. Vous pouvez extraire les données d'état et de performances à partir de Unified Manager à l'aide des méthodes supplémentaires suivantes :
+
+* Extraction de données directement à partir des pages de la grille dans l'interface graphique
+* Utilisation de l'option Ouvrir la base de données pour accéder à tous les objets disponibles
+* Exécution d'API REST Unified Manager pour renvoyer les informations que vous souhaitez consulter
+
+
+====

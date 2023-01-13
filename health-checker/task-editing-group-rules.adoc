@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-editing-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier des règles de groupe pour modifier les groupes de condition et les conditions d"un groupe de conditions afin d"ajouter ou de supprimer des objets de stockage dans ou d"un groupe spécifique.' 
+---
+= Modification des règles de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier des règles de groupe pour modifier les groupes de condition et les conditions d'un groupe de conditions afin d'ajouter ou de supprimer des objets de stockage dans ou d'un groupe spécifique.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *règles de groupe*, sélectionnez la règle de groupe à modifier, puis cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Modifier la règle de groupe*, modifiez le nom de la règle de groupe, le nom du groupe associé, les groupes de condition et les conditions selon les besoins.
++
+[NOTE]
+====
+Vous ne pouvez pas modifier le type d'objet cible d'une règle de groupe.
+
+====
+. Cliquez sur *Enregistrer*.
+

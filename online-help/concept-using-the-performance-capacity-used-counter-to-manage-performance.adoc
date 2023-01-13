@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-using-the-performance-capacity-used-counter-to-manage-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Généralement, les entreprises souhaitent profiter d"une capacité de performance utilisée inférieure à 100 et pouvoir utiliser les ressources de manière efficace tout en réservant une capacité de performance supplémentaire pour supporter les pics de demande. Vous pouvez utiliser des règles de seuil pour personnaliser l"envoi d"alertes pour des valeurs de capacité haute performance utilisée.' 
+---
+= Utilisation du compteur de performances utilisé pour gérer les performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Généralement, les entreprises souhaitent profiter d'une capacité de performance utilisée inférieure à 100 et pouvoir utiliser les ressources de manière efficace tout en réservant une capacité de performance supplémentaire pour supporter les pics de demande. Vous pouvez utiliser des règles de seuil pour personnaliser l'envoi d'alertes pour des valeurs de capacité haute performance utilisée.
+
+Vous pouvez établir des objectifs spécifiques en fonction de vos exigences de performances. Par exemple, les entreprises de services financiers pourraient réserver davantage de capacité de rendement pour garantir l'exécution opportune des opérations. Ces entreprises peuvent vouloir définir des seuils de capacité pour les performances utilisés dans une plage de 70-80 %. Dans ce secteur, les entreprises de fabrication dont les marges sont plus faibles pourraient choisir de réserver une capacité moins performante si elles risquent de mieux gérer les coûts IT. Ces entreprises peuvent définir des seuils de capacité pour les performances utilisés dans les plages de 85-95 %.
+
+Lorsque la valeur de performance capacité utilisée dépasse le pourcentage défini dans une règle de seuil définie par l'utilisateur, Unified Manager envoie un e-mail d'alerte et l'ajoute à la page Event Inventory. Les problèmes potentiels sont ainsi gérés avant qu'ils n'affectent les performances. Ces événements peuvent également servir d'indicateurs pour déplacer et modifier les charges de travail au sein de vos nœuds et agrégats.

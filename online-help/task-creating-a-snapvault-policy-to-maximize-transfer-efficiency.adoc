@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer une nouvelle règle SnapVault afin de définir la priorité d"un transfert SnapVault. Vous utilisez des règles pour optimiser l"efficacité des transferts du stockage primaire au stockage secondaire dans une relation de protection.' 
+---
+= Création d'une règle SnapVault pour optimiser l'efficacité du transfert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer une nouvelle règle SnapVault afin de définir la priorité d'un transfert SnapVault. Vous utilisez des règles pour optimiser l'efficacité des transferts du stockage primaire au stockage secondaire dans une relation de protection.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+* Vous devez avoir déjà terminé la zone informations sur la destination dans la boîte de dialogue configurer la protection.
+
+
+
+
+== Étapes
+
+. Dans l'onglet *SnapVault* de la boîte de dialogue *configurer la protection*, cliquez sur le lien *Créer une stratégie* dans la zone *Paramètres de relation*.
++
+L'onglet SnapVault s'affiche.
+
+. Dans le champ *Policy Name*, saisissez le nom que vous souhaitez attribuer à la stratégie.
+. Dans le champ *priorité de transfert*, sélectionnez la priorité de transfert que vous souhaitez attribuer à la stratégie.
+. Dans le champ *Commentaire*, entrez un commentaire pour la stratégie.
+. Dans la zone *Replication Label*, ajoutez ou modifiez une étiquette de réplication, selon les besoins.
+. Cliquez sur *Créer*.
++
+La nouvelle stratégie s'affiche dans la liste déroulante Créer une stratégie.
+
+

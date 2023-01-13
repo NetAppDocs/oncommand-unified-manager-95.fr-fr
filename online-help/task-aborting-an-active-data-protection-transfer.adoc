@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-aborting-an-active-data-protection-transfer.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez annuler le transfert actif de protection des données lorsque vous souhaitez arrêter une réplication SnapMirror en cours. Vous pouvez également effacer le point de contrôle de redémarrage pour les transferts ultérieurs au transfert de base. Vous pouvez annuler un transfert en cas de conflit avec une autre opération, par exemple un déplacement de volume. 
+---
+= Abandon d'un transfert actif de protection des données à partir de la page relations protection/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez annuler le transfert actif de protection des données lorsque vous souhaitez arrêter une réplication SnapMirror en cours. Vous pouvez également effacer le point de contrôle de redémarrage pour les transferts ultérieurs au transfert de base. Vous pouvez annuler un transfert en cas de conflit avec une autre opération, par exemple un déplacement de volume.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle Administrateur OnCommand ou Administrateur stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Description de la tâche
+
+L'action d'abandon ne s'affiche pas dans les cas suivants :
+
+* Si les paramètres RBAC n'autorisent pas cette action : par exemple, si vous disposez uniquement des privilèges d'opérateur
+* Lorsque l'ID du volume est inconnu : par exemple, lorsque vous avez une relation intercluster et que le cluster destination n'a pas encore été découvert
+
+
+Vous ne pouvez pas effacer le point de contrôle de redémarrage pour un transfert de ligne de base.
+
+
+
+== Étapes
+
+. Pour abandonner les transferts pour une ou plusieurs relations de protection, à partir de la page *protection/relations de volume*, sélectionnez un ou plusieurs volumes et, dans la barre d'outils, cliquez sur *abandonner*.
++
+La boîte de dialogue abandonner le transfert s'affiche.
+
+. Si vous souhaitez effacer le point de contrôle de redémarrage pour un transfert qui n'est pas un transfert de base, sélectionnez *Effacer les points de contrôle*.
+. Cliquez sur *Continuer*.
++
+La boîte de dialogue abandonner le transfert est fermée et l'état du travail d'abandon s'affiche en haut de la page relations protection/volume, ainsi qu'un lien vers les détails du travail.
+
+. Cliquez sur le lien *Afficher les détails* pour accéder à la page *protection/travail* pour plus de détails et pour afficher la progression du travail.
+

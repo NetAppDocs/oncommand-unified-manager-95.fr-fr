@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-graphical-interface-and-navigational-paths.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager offre une grande flexibilité et vous permet d"effectuer plusieurs tâches de différentes manières. Il existe de nombreux chemins de navigation que vous découvrirez lorsque vous travaillez dans Unified Manager. Bien que toutes les combinaisons possibles de navigations ne puissent pas être affichées, vous devriez vous familiariser avec quelques-uns des scénarios les plus communs.' 
+---
+= Interface graphique et chemins de navigation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager offre une grande flexibilité et vous permet d'effectuer plusieurs tâches de différentes manières. Il existe de nombreux chemins de navigation que vous découvrirez lorsque vous travaillez dans Unified Manager. Bien que toutes les combinaisons possibles de navigations ne puissent pas être affichées, vous devriez vous familiariser avec quelques-uns des scénarios les plus communs.

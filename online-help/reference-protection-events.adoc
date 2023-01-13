@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de protection vous indiquent si un travail a échoué ou a été abandonné pour que vous puissiez surveiller les problèmes. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de protection
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de protection vous indiquent si un travail a échoué ou a été abandonné pour que vous puissiez surveiller les problèmes. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : protection
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Echec du travail de protection(ocumEvtProtectionJobTasked)
+ a| 
+Gestion des
+ a| 
+Volume ou service de stockage
+ a| 
+Primordial
+
+
+
+ a| 
+Travail de protection abandonné(ocumEvtProtectionJobAborted)
+ a| 
+Risques
+ a| 
+Volume ou service de stockage
+ a| 
+Avertissement
+
+|===

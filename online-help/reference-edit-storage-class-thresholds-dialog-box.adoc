@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-edit-storage-class-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Modifier les seuils des classes de stockage pour modifier les valeurs de seuil par défaut des différentes classes de stockage de chaque SVM avec Infinite Volume en fonction des besoins de votre entreprise. Les valeurs de seuil par défaut indiquent le niveau d"activité à atteindre sur une classe de stockage avant qu"un événement ne soit déclenché.' 
+---
+= Boîte de dialogue Modifier les seuils de classe de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Modifier les seuils des classes de stockage pour modifier les valeurs de seuil par défaut des différentes classes de stockage de chaque SVM avec Infinite Volume en fonction des besoins de votre entreprise. Les valeurs de seuil par défaut indiquent le niveau d'activité à atteindre sur une classe de stockage avant qu'un événement ne soit déclenché.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Puissance
+
+La zone capacité vous permet de définir les conditions de seuil de capacité pour la classe de stockage sélectionnée.
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel une classe de stockage de la SVM avec Infinite Volume est considérée comme presque pleine. Elle affiche également l'espace correspondant (en Go, Mo ou To) dans la classe de stockage. Par exemple, si vous disposez d'une classe de stockage de 10 Go et que le seuil espace presque plein est de 80 %, les informations suivantes s'affichent : (8 Go de 10 Go).
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel la classe de stockage de la SVM avec Infinite Volume est considérée comme pleine. Elle affiche également l'espace correspondant (en Go, Mo ou To) dans la classe de stockage. Par exemple, si vous disposez d'une classe de stockage de 10 Go et que le seuil espace plein est de 90 %, les informations suivantes s'affichent : (9 Go de 10 Go).
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Limite d'utilisation de l'instantané*
++
+Spécifie la limite, en pourcentage, sur l'espace réservé pour les copies Snapshot dans la classe de stockage.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer des tâches pour un volume sélectionné.
+
+* *Rétablir les valeurs par défaut globales*
++
+Permet de restaurer les paramètres de seuil aux valeurs actuelles définies au niveau global.
+
+* *Enregistrer*
++
+Enregistre tous les paramètres de seuil.
+
+* *Enregistrer et fermer*
++
+Enregistre tous les paramètres de seuil, puis ferme la boîte de dialogue Modifier les seuils de classe de stockage.
+
+* *Annuler*
++
+Annule les modifications (le cas échéant) des paramètres de seuil et ferme la boîte de dialogue Modifier les seuils de classe de stockage.
+
+

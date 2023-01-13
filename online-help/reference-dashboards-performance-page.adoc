@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-dashboards-performance-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser le tableau de bord de la performance de Unified Manager pour afficher l"état général des performances de tous les clusters contrôlés. La page tableaux de bord/performances affiche également un message d"accueil lorsque Unified Manager ne peut pas communiquer avec un cluster qu"il surveille.' 
+---
+= Page tableaux de bord/performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser le tableau de bord de la performance de Unified Manager pour afficher l'état général des performances de tous les clusters contrôlés. La page tableaux de bord/performances affiche également un message d'accueil lorsque Unified Manager ne peut pas communiquer avec un cluster qu'il surveille.
+
+
+
+== Présentation
+
+Les clusters sont organisés en fonction de leur gravité selon les critères suivants :
+
+. Si un cluster est injoignable.
+. Si un cluster possède un ou plusieurs événements de performance critiques actifs (icône d'objet rouge).
+. Si un cluster possède un ou plusieurs événements d'avertissement actifs (icône d'objet jaune).
+. Si les clusters n'ont aucun événement de performance actif (icône d'objet verte) : les clusters sont classés par IOPS le plus élevé.
+
+
+Les événements critiques sont générés lorsqu'une limite critique de la règle de seuil de performance définie par l'utilisateur est dépassée. Des événements d'avertissement sont envoyés lorsqu'une limite d'avertissement dans une règle de seuil de performance définie par l'utilisateur est dépassée, ou lorsqu'une règle de seuil ou un seuil dynamique défini par le système est dépassé.
+
+[NOTE]
+====
+L'ordre de tri est déterminé par le nombre total d'événements actifs (nouveaux ou acquittés), et non par le nombre d'objets ayant des événements. Par exemple, si le Cluster A comporte sept événements critiques de latence de volume, Et le Cluster B a deux événements critiques de latence de volume et deux événements critiques d'IOPS de nœud (pour un total de quatre événements critiques), le Cluster A (avec une icône d'objet rouge) apparaîtra plus haut dans la liste, même si le Cluster B possède deux icônes d'objet rouges.
+
+====
+Les types d'événements fréquemment surveillés suivants sont affichés pour chaque cluster :
+
+* Événements de latence pour les serveurs virtuels de stockage (SVM), les volumes et les LUN
+* Événements IOPS pour les nœuds et les SVM
+* Événements Mbit/s pour les nœuds et SVM
+* Événements de performance et de capacité utilisée pour les nœuds et les agrégats
+* Événements d'utilisation pour les nœuds et les agrégats
+
+
+Unified Manager peut recevoir des événements de performance pour d'autres objets et compteurs de stockage, par exemple des événements Mbit/s pour les agrégats et des événements IOPS pour les volumes. Si un cluster possède ces types d'événements, l'icône située en regard du nom du cluster indique un événement d'avertissement (jaune) ou critique (rouge). Cette icône peut indiquer qu'il existe des événements lorsqu'aucune des cinq icônes du panneau de commandes n'est jaune ou rouge car ces types d'événements ne s'adaptent pas aux catégories existantes du panneau de commandes.
+
+Vous pouvez cliquer sur l'icône de l'objet pour afficher la page Inventaire des performances correspondant à cet objet. Vous pouvez ainsi afficher tous les objets de ce type dans ce cluster. Par exemple, si vous cliquez sur une icône de volume, la page Inventaire des performances/volumes s'affiche et la liste de tous les volumes du cluster sélectionné est triée des meilleures performances.
+
+
+
+== Compteurs de performances
+
+Il existe cinq compteurs de performances, chacun affiché dans un panneau distinct, pour chaque cluster. Ces informations sont mises à jour automatiquement après chaque période de collecte de cinq minutes :
+
+|===
+| Compteur | Description 
+
+
+ a| 
+Latence
+ a| 
+Montre la rapidité de réponse du cluster aux demandes des applications client, en millisecondes par opération (ms/op).la zone des icônes indique si des SVM, des volumes ou des LUN ont des événements actifs basés sur la valeur de latence qui dépasse un seuil.
+
+
+
+ a| 
+D'IOPS
+ a| 
+Indique la vitesse de fonctionnement du système de stockage, en nombre d'opérations d'entrée/sortie par seconde (IOPS).
+
+* La zone d'icône indique si des nœuds ou des SVM ont des événements actifs basés sur le nombre d'IOPS lors du dépassement d'un seuil.
+* La zone du bas affiche le nombre total d'IOPS du cluster pour la période de collecte des cinq dernières minutes.
+
+
+
+
+ a| 
+Mo/sec
+ a| 
+Indique la quantité de données transférées vers et depuis le cluster, en mégaoctets par seconde (Mbit/s).
+
+* La zone des icônes indique si des nœuds ou des SVM ont des événements actifs basés sur la valeur du Mbit/s qui dépasse un seuil.
+* La zone du bas affiche le débit total du cluster pour la période de collecte des cinq dernières minutes.
+
+
+
+
+ a| 
+Performance capacité utilisée
+ a| 
+Indique si les nœuds ou les agrégats utilisent trop leur capacité de performance disponible.
+
+* La zone des icônes indique si des nœuds ou des agrégats ont des événements actifs en fonction de la capacité de performances utilisée qui franchissement d'un seuil.
+* La zone inférieure affiche la valeur de capacité de performance la plus élevée utilisée du nœud le plus chargé et de l'agrégat le plus chargé.
+
+
+[NOTE]
+====
+Les données de performance et de capacité sont disponibles uniquement lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+
+
+ a| 
+Du stockage
+ a| 
+Indique si les ressources de nœuds ou d'agrégats sont sur-utilisées.
+
+* La zone des icônes indique si des nœuds ou des agrégats ont des événements actifs en fonction de la valeur d'utilisation qui atteint un seuil.
+* La zone inférieure affiche la valeur d'utilisation la plus élevée du nœud le plus chargé et de l'agrégat le plus chargé.
+
+
+|===
+Un point de suspension (...) dans la zone d'en-tête indique que les données de performances sont en cours de collecte.
+
+Vous pouvez cliquer sur *Afficher les détails du cluster* pour un cluster avec des événements de performances pour afficher la page d'accueil du cluster de performances, où vous pouvez afficher des informations détaillées sur le cluster et d'autres objets de stockage.
+
+
+
+== Messages d'état du cluster
+
+Si un cluster géré par Unified Manager devient indisponible, une bannière de message d'état s'affiche au-dessus des compteurs de performances. Un bouton *Détails* s'affiche à droite de la bannière de message d'état si le cluster est inaccessible. En cliquant sur le bouton *Détails* du message d'état, vous pouvez accéder à la page sources de données du cluster, qui affiche des informations complètes sur le problème. Sur la page sources de données du cluster, vous trouverez les données requises pour résoudre le problème qui a rendu le cluster indisponible.

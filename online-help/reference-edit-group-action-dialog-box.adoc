@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier l"action de groupe que vous avez créée pour les groupes à l"aide de la boîte de dialogue Modifier l"action de groupe.' 
+---
+= Boîte de dialogue Modifier l'action de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier l'action de groupe que vous avez créée pour les groupes à l'aide de la boîte de dialogue Modifier l'action de groupe.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom de l'action*
++
+Affiche le nom de l'action de groupe.
+
+* *Description*
++
+Affiche la description de l'action de groupe.
+
+* *Groupe*
++
+Affiche le nom du groupe sélectionné.
+
+* *Type d'action*
++
+Affiche le type d'action de groupe. Vous ne pouvez pas modifier le type d'action. Cependant, vous pouvez modifier les paramètres utilisés pour configurer l'action de groupe.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer*
++
+Enregistre les modifications apportées à l'action de groupe.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Modifier l'action de groupe sans enregistrer vos modifications.
+
+

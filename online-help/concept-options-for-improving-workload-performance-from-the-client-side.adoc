@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-options-for-improving-workload-performance-from-the-client-side.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez vérifier les charges de travail de vos clients, par exemple les applications ou les bases de données, qui envoient des E/S aux volumes concernés par un événement de performances afin de déterminer si une modification côté client peut corriger l"événement.' 
+---
+= Possibilité d'améliorer les performances des charges de travail côté client
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier les charges de travail de vos clients, par exemple les applications ou les bases de données, qui envoient des E/S aux volumes concernés par un événement de performances afin de déterminer si une modification côté client peut corriger l'événement.
+
+Lorsque les clients connectés aux volumes d'un cluster augmentent leurs demandes d'E/S, le cluster doit travailler plus fort pour répondre à la demande. Si vous savez quels clients disposent d'un nombre élevé de demandes d'E/S sur un volume particulier du cluster, vous pouvez améliorer les performances du cluster en ajustant le nombre de clients accédant au volume ou en réduisant la quantité d'E/S vers ce volume. Vous pouvez aussi appliquer ou augmenter une limite au groupe de règles de QoS dont le volume est membre.
+
+Vous pouvez analyser les clients et leurs applications pour déterminer si les clients envoient plus d'E/S qu'à d'autres fins, ce qui peut provoquer des conflits sur un composant du cluster. Sur la page Détails de l'événement, la section diagnostic du système affiche les charges de travail du volume supérieur utilisant le composant en conflit. Si vous savez quel client accède à un volume particulier, vous pouvez vous rendre sur le client pour déterminer si le matériel client ou une application ne fonctionne pas comme prévu ou fait plus de travail que d'habitude.
+
+Dans une configuration MetroCluster, les demandes d'écriture vers un volume situé sur un cluster local sont mises en miroir sur un volume du cluster distant. En effet, le volume source du cluster local étant synchronisé avec le volume de destination du cluster distant, peut également augmenter la demande des deux clusters dans la configuration MetroCluster. En réduisant les demandes d'écriture sur ces volumes en miroir, les clusters effectuent moins d'opérations de synchronisation, ce qui réduit l'impact sur les performances des autres workloads.

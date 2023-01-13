@@ -1,0 +1,87 @@
+---
+permalink: online-help/reference-email-notification-format-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page format de notification par e-mail affiche les règles de l"e-mail envoyé à un utilisateur ou à un groupe d"utilisateurs lorsqu"il y a un problème lié au quota \(limite souple dépassée ou limite stricte atteinte\).' 
+---
+= Format de notification par e-mail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page format de notification par e-mail affiche les règles de l'e-mail envoyé à un utilisateur ou à un groupe d'utilisateurs lorsqu'il existe un problème lié à un quota (limite souple dépassée ou limite stricte atteinte).
+
+La notification par e-mail est envoyée uniquement lorsque les événements de quota d'utilisateur ou de groupe d'utilisateurs suivants sont générés : Quota utilisateur ou Groupe limite matérielle d'espace disque enfreinte, limite logicielle de nombre de fichiers de quota utilisateur ou de groupe dépassée, limite matérielle de quota utilisateur ou de groupe atteinte ou limite matérielle de nombre de fichiers de quota utilisateur ou de groupe atteinte.
+
+* *À partir de*
++
+Affiche l'adresse e-mail à partir de laquelle l'e-mail est envoyé, que vous pouvez modifier. Par défaut, il s'agit de l'adresse électronique spécifiée dans la page Configuration/Notifications.
+
+* *Sujet*
++
+Affiche l'objet de l'e-mail de notification.
+
+* *Détails de courriel*
++
+Affiche le texte de l'e-mail de notification. Vous pouvez modifier le texte en fonction de vos exigences. Par exemple, vous pouvez fournir des informations relatives aux attributs de quota et réduire le nombre de mots-clés. Toutefois, vous ne devez pas modifier les mots clés.
+
++
+Les mots clés valides sont les suivants :
+
++
+** $NOM_ÉVÉNEMENT
++
+Indique le nom de l'événement à l'origine de la notification par e-mail.
+
+** $QUOTA_TARGET
++
+Spécifie le qtree ou le volume sur lequel le quota est applicable.
+
+** $QUOTA_UTILISÉ_POURCENTAGE
++
+Indique le pourcentage de limite matérielle du disque, la limite logicielle du disque, la limite matérielle du fichier ou la limite logicielle du fichier utilisée par l'utilisateur ou le groupe d'utilisateurs.
+
+** $QUOTA_LIMIT
++
+Spécifie la limite matérielle du disque ou la limite matérielle du fichier atteinte par l'utilisateur ou le groupe d'utilisateurs et l'un des événements suivants est généré :
+
++
+*** Quota utilisateur ou groupe limite matérielle d'espace disque atteinte
+*** Quota utilisateur ou de groupe - limite logicielle d'espace disque atteinte
+*** Limite matérielle de nombre de fichiers de quota utilisateur ou de groupe atteinte
+*** Limite logicielle de nombre de fichiers de quota utilisateur ou de groupe atteinte
+
+
+** $QUOTA_UTILISÉ
++
+Indique l'espace disque utilisé ou le nombre de fichiers créés par l'utilisateur ou le groupe d'utilisateurs.
+
+** $QUOTA_USER
++
+Spécifie le nom de l'utilisateur ou du groupe d'utilisateurs.
+
+
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande vous permettent d'afficher un aperçu, d'enregistrer ou d'annuler les modifications apportées au format de notification par e-mail :
+
+* *Aperçu*
++
+Affiche un aperçu de l'e-mail de notification.
+
+* *Rétablir les paramètres par défaut*
++
+Permet de restaurer le format de notification aux valeurs par défaut.
+
+* *Enregistrer*
++
+Enregistre les modifications apportées au format de notification.
+
+

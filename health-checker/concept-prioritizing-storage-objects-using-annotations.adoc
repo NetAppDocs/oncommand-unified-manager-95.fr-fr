@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-prioritizing-storage-objects-using-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer et appliquer des règles d"annotation aux objets de stockage afin d"identifier et de filtrer ces objets en fonction du type d"annotation appliqué et de sa priorité.' 
+---
+= Hiérarchiser les événements d'objet de stockage à l'aide d'annotations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer et appliquer des règles d'annotation aux objets de stockage afin d'identifier et de filtrer ces objets en fonction du type d'annotation appliqué et de sa priorité.

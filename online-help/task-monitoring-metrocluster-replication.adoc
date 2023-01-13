@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: 'Vous pouvez contrôler et diagnostiquer l"état de santé général des connexions logiques tout en symétrisant les données. Vous pouvez identifier les problèmes ou tout risque qui interrompt la mise en miroir des composants de cluster, tels que les agrégats, les nœuds et les machines virtuelles de stockage.' 
+---
+= Contrôle de la réplication MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez contrôler et diagnostiquer l'état de santé général des connexions logiques tout en symétrisant les données. Vous pouvez identifier les problèmes ou tout risque qui interrompt la mise en miroir des composants de cluster, tels que les agrégats, les nœuds et les machines virtuelles de stockage.
+
+
+
+== Avant de commencer
+
+Le cluster local et distant en configuration MetroCluster doivent être ajoutés à Unified Manager
+
+
+
+== Description de la tâche
+
+Vous pouvez utiliser les informations affichées sur la page Détails de l'intégrité/du cluster pour corriger tout problème de réplication.
+
+Si vous déplacez le pointeur sur l'icône, vous pouvez afficher des informations détaillées sur l'événement généré.
+
+Unified Manager utilise des alertes d'état du système pour surveiller l'état des composants et la connectivité dans la configuration MetroCluster.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *clusters*.
++
+La liste des clusters surveillés s'affiche.
+
+. Dans la page d'inventaire *Santé/clusters*, cliquez sur le nom du cluster pour lequel vous souhaitez afficher les détails de la réplication MetroCluster, puis cliquez sur l'onglet *réplication MetroCluster*.
++
+La topologie de la configuration MetroCluster à répliquer est affichée sur le site local, dans la zone d'objets du cluster correspondante, avec les informations relatives au site distant où les données sont mises en miroir.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Si vous détectez les problèmes de mise en miroir dans votre configuration MetroCluster, vous devez vous connecter à System Manager ou accéder à l'interface de ligne de commandes de ONTAP pour résoudre les problèmes.

@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager utilise une base de données MySQL pour stocker les données depuis les clusters où celles-ci surveillent. Les données sont conservées dans différents schémas de la base de données MySQL. 
+---
+= Les bases de données Unified Manager sont accessibles pour le reporting personnalisé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager utilise une base de données MySQL pour stocker les données depuis les clusters où celles-ci surveillent. Les données sont conservées dans différents schémas de la base de données MySQL.
+
+À partir de Unified Manager 7.3, des schémas supplémentaires sont exposés pour permettre l'accès à des données de table supplémentaires.
+
+Toutes les données de table des bases de données suivantes sont disponibles :
+
+|===
+| Base de données | Description 
+
+
+ a| 
+vue_modèle_netapp
+ a| 
+Données relatives aux objets des contrôleurs ONTAP.
+
+
+
+ a| 
+performances_netapp
+ a| 
+Compteurs de performances spécifiques au cluster.
+
+
+
+ a| 
+ocum
+ a| 
+Informations et données d'application Unified Manager pour la prise en charge du filtrage, du tri et du calcul de certains champs dérivés
+
+
+
+ a| 
+rapport_ocum
+ a| 
+Données pour la configuration de l'inventaire et des informations relatives à la capacité.
+
+
+
+ a| 
+ocum_report_birt
+ a| 
+Comme ci-dessus, mais cette base de données est utilisée par des rapports BIRT intégrés.
+
+
+
+ a| 
+opm
+ a| 
+Paramètres de configuration des performances et informations sur les seuils
+
+
+
+ a| 
+scatemonitor
+ a| 
+Informations sur les problèmes de performances et d'état de l'application Unified Manager.
+
+|===
+Un utilisateur de création de rapports -- un utilisateur de base de données avec le rôle de schéma de rapport -- peut accéder aux données de ces tables. Cet utilisateur dispose d'un accès en lecture seule au reporting et à d'autres vues de base de données directement depuis la base de données Unified Manager. Notez que cet utilisateur n'est pas autorisé à accéder aux tables contenant des données utilisateur ou des informations d'identification du cluster.
+
+Voir la http://www.netapp.com/us/media/tr-4565.pdf["Rapport technique sur Unified Manager Reporting"] (TR-4565) pour plus d'informations.

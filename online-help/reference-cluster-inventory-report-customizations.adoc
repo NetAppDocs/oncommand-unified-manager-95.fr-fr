@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser les rapports d"inventaire pour surveiller les ressources insuffisantes sur les composants des clusters. Vous pouvez par exemple personnaliser des rapports afin de contrôler les informations, comme les clusters qui approchent de la limite de nombre de SVM, les nœuds qui exécutent des versions plus anciennes d"ONTAP et les nœuds qui atteignent la limite maximale de disques.' 
+---
+= Personnalisation du rapport d'inventaire du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser les rapports d'inventaire pour surveiller les ressources insuffisantes sur les composants des clusters. Vous pouvez par exemple personnaliser des rapports afin de contrôler les informations, comme les clusters qui approchent de la limite de nombre de SVM, les nœuds qui exécutent des versions plus anciennes d'ONTAP et les nœuds qui atteignent la limite maximale de disques.

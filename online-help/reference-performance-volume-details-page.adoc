@@ -1,0 +1,45 @@
+---
+permalink: online-help/reference-performance-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Cette page fournit des statistiques de performances détaillées pour toutes les activités et opérations d"E/S du volume FlexVol, du volume FlexGroup ou de la charge de travail composant FlexGroup sélectionné. Vous pouvez sélectionner une période spécifique pour afficher les statistiques et les événements du volume. Les événements identifient les événements de performance et les changements susceptibles d"avoir un impact sur les performances d"E/S.' 
+---
+= Page Détails des performances/volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette page fournit des statistiques de performances détaillées pour toutes les activités et opérations d'E/S du volume FlexVol, du volume FlexGroup ou de la charge de travail composant FlexGroup sélectionné. Vous pouvez sélectionner une période spécifique pour afficher les statistiques et les événements du volume. Les événements identifient les événements de performance et les changements susceptibles d'avoir un impact sur les performances d'E/S.
+
+
+
+== Graphique de données historiques
+
+Trace les données historiques d'analyse des performances pour le volume sélectionné. Vous pouvez cliquer et faire glisser les curseurs pour spécifier un cadre temporel. Les curseurs augmentent et diminuent la fenêtre du cadre de temps. Les données en dehors de la fenêtre de l'intervalle de temps sont grisées. Vous pouvez utiliser le curseur situé en bas du graphique pour déplacer la fenêtre du cadre temporel sur les données historiques. La page entière, y compris les graphiques et événements affichés, reflète les données disponibles dans la fenêtre de la période. Unified Manager conserve sur cette page un maximum de 30 jours de données d'historique.
+
+[NOTE]
+====
+Dans le graphique des données historiques, si vous sélectionnez une période de plus d'un jour, en fonction de votre résolution d'écran, les graphiques affichent les valeurs maximales pour le temps de réponse et les IOPS sur un nombre de jours.
+
+====
+
+
+== Options
+
+* *Sélecteur de temps*
++
+Spécifie la plage de temps sur laquelle afficher les statistiques de performances du volume pour toute la page. Vous pouvez cliquer sur 1 jour (*1d*) pendant 30 jours (*30d*) ou sur *personnalisé* pour sélectionner une plage personnalisée. Pour une plage personnalisée, vous pouvez sélectionner une date de début et de fin, puis cliquer sur *Update* pour mettre à jour la page entière.
+
++
+[NOTE]
+====
+Si vous accédez à la page Détails des performances/volumes en cliquant sur le lien du nom d'un volume sur la page Détails de l'événement, une plage horaire, par exemple 1 jour ou 5 jours avant le jour en cours, est automatiquement sélectionnée par défaut. Lorsque vous déplacez le curseur dans le graphique de données historiques, la plage de temps passe à une plage personnalisée, mais le sélecteur de temps *personnalisé* n'est pas sélectionné. Le sélecteur de temps par défaut reste sélectionné.
+
+====
+* ***Casser les données par***
++
+Fournit une liste de graphiques que vous pouvez ajouter à la page Détails performances/Volume pour afficher des statistiques de performances plus détaillées pour le volume sélectionné.
+
+

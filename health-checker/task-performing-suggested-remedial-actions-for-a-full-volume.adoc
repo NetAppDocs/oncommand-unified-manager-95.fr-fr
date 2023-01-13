@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Après avoir reçu un événement d"erreur "Volume Space Full", vous devez vérifier les actions correctives suggérées sur la page Détails de l"événement et décider d"effectuer l"une des actions suggérées.' 
+---
+= Exécution de suggestions d'actions correctives pour un volume complet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir reçu un événement d'erreur « Volume Space Full », vous passez en revue les mesures correctives proposées sur la page Détails de l'événement et décidez d'effectuer l'une des actions suggérées.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+Un utilisateur possédant n'importe quel rôle peut effectuer toutes les tâches de ce flux de travail qui utilisent Unified Manager.
+
+
+
+== Description de la tâche
+
+Dans cet exemple, vous avez vu un événement Volume Space Full error sur la page Unified ManagerDashboards/Overview et vous avez cliqué sur le nom de l'événement.
+
+Les actions correctives possibles pour un volume complet sont les suivantes :
+
+* Activation de la croissance automatique, de la déduplication ou de la compression sur le volume
+* Redimensionnement ou déplacement du volume
+* Suppression ou déplacement de données du volume
+
+
+Bien que toutes ces actions doivent être effectuées depuis OnCommand System Manager ou l'interface de ligne de commandes de ONTAP, Unified Manager permet de trouver les informations qui vous permettront éventuellement de déterminer les actions à effectuer.
+
+
+
+== Étapes
+
+. Dans la page *Event* details, cliquez sur le nom du volume dans le champ Source pour afficher les détails du volume affecté.
+. Sur la page de détails *Health/Volume*, cliquez sur *Configuration* et vérifiez que la déduplication et la compression sont déjà activées sur le volume.
++
+Vous décidez de redimensionner le volume.
+
+. Dans le volet *Related Devices*, vous cliquez sur le nom de l'agrégat d'hébergement pour voir si l'agrégat peut accueillir un volume plus important.
+. Sur la page de détails *Santé/agrégat*, l'agrégat hébergeant un volume complet présente une capacité non utilisée suffisante. Par conséquent, vous pouvez utiliser OnCommand System Manager pour redimensionner le volume, ce qui lui donne davantage de capacité.
+

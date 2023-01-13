@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-fans-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements ventilateurs fournissent des informations sur l"état des ventilateurs sur les nœuds de votre data Center, afin que vous puissiez surveiller les éventuels problèmes. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements fans
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements ventilateurs fournissent des informations sur l'état des ventilateurs sur les nœuds de votre data Center, afin que vous puissiez surveiller les éventuels problèmes. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Un ou plusieurs ventilateurs défaillants(ocumEvtFansOneOrMoreFailed)
+ a| 
+Gestion des
+ a| 
+Nœud
+ a| 
+Primordial
+
+|===

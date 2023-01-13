@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Volume permet d"afficher la liste des copies Snapshot. Vous pouvez supprimer une copie Snapshot pour économiser de l"espace disque ou la libérer, ou même si cette copie n"est plus nécessaire. Vous pouvez également calculer la quantité d"espace disque pouvant être récupérée si une ou plusieurs copies Snapshot sont supprimées.' 
+---
+= Copies Snapshot dans la boîte de dialogue Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Volume permet d'afficher la liste des copies Snapshot. Vous pouvez supprimer une copie Snapshot pour économiser de l'espace disque ou la libérer, ou même si cette copie n'est plus nécessaire. Vous pouvez également calculer la quantité d'espace disque pouvant être récupérée si une ou plusieurs copies Snapshot sont supprimées.
+
+
+
+== Vue liste
+
+La vue liste affiche des informations sur les copies Snapshot du volume sous forme de tableau. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Copie snapshot*
++
+Affiche le nom de la copie Snapshot.
+
+* *Espace utilisé %*
++
+Affiche, en pourcentage, l'espace total utilisé par la copie Snapshot dans le volume.
+
+* *Taille totale*
++
+Affiche la taille totale de la copie Snapshot.
+
+* *Heure créée*
++
+Affiche l'horodatage lors de la création de la copie Snapshot.
+
+* *Dépendance*
++
+Affiche les applications qui dépendent de la copie Snapshot. Les valeurs possibles sont SnapMirror, SnapVault, SnapLock, Dump, LUN, Vclone et occupé.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Calculer*
++
+Permet de calculer l'espace pouvant être récupéré en supprimant une ou plusieurs copies Snapshot.
+
+* *Supprimer sélection*
++
+Supprime une ou plusieurs copies Snapshot.
+
+* *Fermer*
++
+Ferme la boîte de dialogue copies Snapshot d'un volume.
+
+* *Recalculer*
++
+Permet de calculer l'espace pouvant être récupéré en supprimant les copies Snapshot sélectionnées.
+
++
+Le bouton *Recalculer* est activé lorsque vous effectuez des modifications dans la sélection des copies Snapshot.
+
+

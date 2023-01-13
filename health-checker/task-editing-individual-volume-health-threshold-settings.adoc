@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-editing-individual-volume-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres du seuil d"intégrité pour la capacité du volume, la croissance, les quotas et la réserve d"espace d"un ou plusieurs volumes. Lorsqu"un seuil est franchi, des alertes sont générées et vous recevez des notifications. Ces notifications vous aident à prendre des mesures préventives en fonction de l"événement généré.' 
+---
+= Modification des paramètres de seuil d'intégrité du volume individuel
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres du seuil d'intégrité pour la capacité du volume, la croissance, les quotas et la réserve d'espace d'un ou plusieurs volumes. Lorsqu'un seuil est franchi, des alertes sont générées et vous recevez des notifications. Ces notifications vous aident à prendre des mesures préventives en fonction de l'événement généré.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+En fonction des modifications apportées aux valeurs de seuil, les événements sont générés ou obsolètes dans le cycle de surveillance suivant.
+
+Notez que lorsque la croissance automatique est activée sur un volume que les seuils de capacité sont considérés comme enfreintes en fonction de la taille maximale du volume définie par Autogrow, et non pas en fonction de la taille du volume initial.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *volumes*.
+. Dans la page d'inventaire *Santé/volumes*, sélectionnez un ou plusieurs volumes, puis cliquez sur *Modifier les seuils*.
+. Dans la boîte de dialogue *Modifier les seuils de volume*, modifiez les paramètres de seuil de l'une des options suivantes : capacité, copies Snapshot, quota qtree, croissance ou inodes en cochant la case appropriée, puis en modifiant les paramètres.
+. Cliquez sur *Enregistrer*.
+

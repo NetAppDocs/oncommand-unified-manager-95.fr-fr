@@ -1,0 +1,34 @@
+---
+permalink: performance-checker/task-specifying-the-time-range-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La commande Plage de temps de la fenêtre vue Zoom des diagrammes de compteur vous permet de spécifier une plage de date et d"heure pour le graphique sélectionné. Cela vous permet de localiser rapidement des données spécifiques en fonction d"une plage horaire prédéfinie ou de votre propre plage horaire personnalisée.' 
+---
+= Spécification de la plage de temps dans la vue Zoom
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La commande *Plage de temps* de la fenêtre Affichage du zoom des diagrammes de compteur vous permet de spécifier une plage de date et d'heure pour le graphique sélectionné. Cela vous permet de localiser rapidement des données spécifiques en fonction d'une plage horaire prédéfinie ou de votre propre plage horaire personnalisée.
+
+
+
+== Description de la tâche
+
+Vous pouvez sélectionner une plage horaire comprise entre une heure et 390 jours. 13 mois équivaut à 390 jours car chaque mois est compté comme 30 jours. La spécification d'une plage de dates et d'heures fournit plus de détails et vous permet d'effectuer un zoom avant sur des événements de performance ou une série d'événements spécifiques. La spécification d'une plage horaire facilite également le dépannage des problèmes de performances potentiels, car la spécification d'une plage de dates et d'heures permet d'afficher plus précisément les données entourant l'événement de performance. Utilisez la commande *Plage horaire* pour sélectionner des plages de date et d'heure prédéfinies, ou pour spécifier votre propre période et une plage de dates personnalisées pouvant aller jusqu'à 390 jours. Les boutons des plages de temps prédéfinies varient de la *dernière heure* à la *derniers 13 mois*.
+
+Si vous sélectionnez l'option *derniers 13 mois* ou si vous spécifiez une plage de dates personnalisée supérieure à 30 jours, une boîte de dialogue vous avertissant que les données de performances affichées pour une période supérieure à 30 jours sont saisies en utilisant des moyennes horaires et pas une interrogation de données de 5 minutes. Par conséquent, une perte de la granularité visuelle de la chronologie peut se produire. Si vous cliquez sur l'option *ne plus afficher* dans la boîte de dialogue, le message ne s'affiche pas lorsque vous sélectionnez l'option *derniers 13 mois* ou que vous spécifiez une plage de dates personnalisée supérieure à 30 jours. Les données récapitulatives s'appliquent également à une période plus courte, si la plage horaire comprend une heure/date qui dépasse 30 jours à partir de la date d'aujourd'hui.
+
+Lors de la sélection d'une plage horaire (personnalisée ou prédéfinie), les plages de temps de 30 jours ou moins sont basées sur des échantillons de données d'intervalle de 5 minutes. Les plages de temps supérieures à 30 jours sont basées sur des échantillons de données d'intervalle d'une heure.
+
+image::../media/time-range-selector.gif[sélecteur de plage horaire]
+
+. Cliquez sur la liste déroulante *Plage de temps* et le panneau Plage de temps s'affiche.
+. Pour sélectionner une plage de temps prédéfinie, cliquez sur l'un des boutons *dernier...* à droite du panneau *Plage de temps*. Lorsque vous sélectionnez une plage horaire prédéfinie, des données pouvant atteindre 13 mois sont disponibles. Le bouton de plage horaire prédéfini que vous avez sélectionné est mis en surbrillance et les jours et heures correspondants s'affichent dans les calendriers et les sélecteurs de temps.
+. Pour sélectionner une plage de dates personnalisée, cliquez sur la date de début dans le calendrier *from* à gauche. Cliquez sur *<* ou *>* pour naviguer vers l'avant ou vers l'arrière dans le calendrier. Pour spécifier la date de fin, cliquez sur une date dans le calendrier *à* à droite. Notez que la date de fin par défaut est aujourd'hui, sauf si vous spécifiez une autre date de fin. Le bouton *Plage personnalisée* situé à droite du panneau Plage de temps est mis en surbrillance, indiquant que vous avez sélectionné une plage de dates personnalisée.
+. Pour sélectionner une plage horaire personnalisée, cliquez sur la commande *time* sous le calendrier *from* et sélectionnez l'heure de début. Pour spécifier l'heure de fin, cliquez sur la commande *time* sous le calendrier *to* à droite et sélectionnez l'heure de fin. Le bouton *Plage personnalisée* situé à droite du panneau Plage de temps est mis en surbrillance, indiquant que vous avez sélectionné une plage de temps personnalisée.
+. Vous pouvez également spécifier les heures de début et de fin lors de la sélection d'une plage de dates prédéfinie. Sélectionnez la plage de dates prédéfinie comme décrit précédemment, puis sélectionnez les heures de début et de fin comme décrit précédemment. Les dates sélectionnées sont mises en évidence dans les calendriers, les heures de début et de fin spécifiées s'affichent dans les commandes *Time* et le bouton *Custom Range* est mis en surbrillance.
+. Après avoir sélectionné la plage de dates et d'heures, cliquez sur *appliquer la plage*. Les statistiques de performance de cette plage de temps s'affichent dans les graphiques et dans la chronologie des événements .
+

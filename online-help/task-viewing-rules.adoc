@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher la liste des règles que vous avez créées à partir de l"onglet Data Policy avant de modifier la politique de données de votre SVM avec Infinite Volume.' 
+---
+= Affichage des règles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher la liste des règles que vous avez créées à partir de l'onglet Data Policy avant de modifier la politique de données de votre SVM avec Infinite Volume.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Le cluster contenant le SVM avec Infinite Volume avec des classes de stockage doit être ajouté à la base de données Unified Manager.
+
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur *Data Policy*.
+
+
+
+
+== Résultats
+
+La liste des règles de la « policy de données » pour la SVM sélectionnée est affichée. Vous pouvez utiliser Filter by Storage Class pour afficher les règles relatives à une classe de stockage spécifique.

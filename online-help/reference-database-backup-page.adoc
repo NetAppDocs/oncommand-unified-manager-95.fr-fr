@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page gestion/sauvegarde de base de données affiche la liste des sauvegardes créées par Unified Manager et fournit des informations sur le nom, la taille, la durée de création et la planification de la sauvegarde. 
+---
+= Page gestion/sauvegarde de base de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page gestion/sauvegarde de base de données affiche la liste des sauvegardes créées par Unified Manager et fournit des informations sur le nom, la taille, la durée de création et la planification de la sauvegarde.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Boutons de commande
+
+* *Actions*
++
+Affiche la boîte de dialogue Paramètres de sauvegarde de la base de données, qui vous permet de spécifier un chemin de sauvegarde, un nombre de rétention et un planning de sauvegarde.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, au format tabulaire, des informations sur les sauvegardes créées par Unified Manager. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Nom*
++
+Affiche le nom de la sauvegarde sélectionnée.
+
+* *Taille*
++
+Affiche la taille de la sauvegarde sélectionnée.
+
+* *Heure de création*
++
+Affiche la date et l'heure de création de la sauvegarde sélectionnée.
+
+* *Annexe*
++
+Affiche l'état de l'opération de sauvegarde. Indique également s'il s'agit d'une sauvegarde planifiée ou non.
+
+

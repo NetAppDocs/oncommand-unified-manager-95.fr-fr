@@ -1,0 +1,52 @@
+---
+permalink: online-help/concept-event-state-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"état d"un événement vous aide à déterminer si une action corrective appropriée est nécessaire. Un événement peut être Nouveau, accusé de réception, résolu ou Obsolète. Notez que les événements nouveaux et acquittés sont considérés comme des événements actifs.' 
+---
+= Définitions d'état d'événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'état d'un événement vous aide à déterminer si une action corrective appropriée est nécessaire. Un événement peut être Nouveau, accusé de réception, résolu ou Obsolète. Notez que les événements nouveaux et acquittés sont considérés comme des événements actifs.
+
+Les États d'événement sont les suivants :
+
+* *Nouveau*
++
+État d'un nouvel événement.
+
+* *Reconnu*
++
+État d'un événement lorsque vous l'avez reconnu.
+
+* *Résolu*
++
+État d'un événement lorsqu'il est marqué comme résolu.
+
+* *Obsolète*
++
+État d'un événement lorsqu'il est automatiquement corrigé ou lorsque la cause de l'événement n'est plus valide.
+
++
+[NOTE]
+====
+Vous ne pouvez pas accepter ou résoudre un événement obsolète.
+
+====
+
+
+
+
+== Exemple de différents États d'un événement
+
+Les exemples suivants illustrent les modifications manuelles et automatiques de l'état des événements.
+
+Lorsque l'événement Cluster inaccessible est déclenché, l'état de l'événement est Nouveau. Lorsque vous reconnaissez l'événement, l'état de l'événement passe à reconnu. Lorsque vous avez effectué une action corrective adéquate, vous devez marquer l'événement comme résolu. L'état de l'événement devient alors résolu.
+
+Si l'événement Cluster inaccessible est généré en raison d'une panne de courant, lorsque l'alimentation est restaurée, le cluster démarre sans intervention de l'administrateur. Par conséquent, l'événement Cluster inaccessible n'est plus valide et l'état de l'événement passe à Obsolète dans le cycle de surveillance suivant.
+
+Unified Manager envoie une alerte lorsqu'un événement est à l'état Obsolète ou résolu. La ligne d'objet de l'e-mail et le contenu de l'e-mail d'une alerte fournissent des informations sur l'état de l'événement. Un trap SNMP contient également des informations relatives à l'état d'événement.

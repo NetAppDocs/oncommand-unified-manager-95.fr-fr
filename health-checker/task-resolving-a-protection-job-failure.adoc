@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ce flux de travail fournit un exemple d"identification et de résolution d"une défaillance de tâche de protection à partir du tableau de bord Unified Manager.' 
+---
+= Résolution de l'échec d'une tâche de protection
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce flux de travail fournit un exemple d'identification et de résolution d'une défaillance de tâche de protection à partir du tableau de bord Unified Manager.
+
+
+
+== Avant de commencer
+
+Comme certaines tâches de ce flux de travail nécessitent de vous connecter à l'aide du rôle d'administrateur OnCommand, vous devez connaître les rôles requis pour utiliser diverses fonctionnalités, comme décrit dans la section xref:reference-unified-manager-roles-and-capabilities.adoc[Fonctionnalités et rôles utilisateur de Unified Manager].
+
+
+
+== Description de la tâche
+
+Dans ce scénario, vous accédez à la page tableaux de bord/vue d'ensemble pour voir s'il y a des problèmes avec vos tâches de protection. Dans la zone incident de protection, vous remarquez qu'un incident de fin de tâche est survenu, indiquant une erreur d'échec de tâche de protection sur un volume. Vous étudiez cette erreur afin de déterminer la cause possible et la résolution potentielle.
+
+
+
+== Étapes
+
+. Dans le panneau *protection incidents* de la zone Tableau de bord *incidents et risques non résolus*, vous cliquez sur l'événement *protection travail failed*.
++
+[TIP]
+====
+Le texte lié de l'événement est écrit dans le formulaire `object_name:/object_name - Error Name`, comme `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed`.
+
+====
++
+La page Détails de l'événement pour la tâche de protection ayant échoué s'affiche.
+
+. Consultez le message d'erreur dans le champ cause de la zone *Résumé* pour déterminer le problème et évaluer les mesures correctives possibles.
++
+Voir xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[Identification du problème et exécution d'actions correctives pour une tâche de protection ayant échoué].
+
+

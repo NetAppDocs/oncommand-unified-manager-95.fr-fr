@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-metrocluster-bridge-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements du pont MetroCluster fournissent des informations sur l"état des ponts afin que vous puissiez surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements du pont MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements du pont MetroCluster fournissent des informations sur l'état des ponts afin que vous puissiez surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Pont inaccessible(ocumEvtBridgeUnreaccessible)
+ a| 
+Gestion des
+ a| 
+Pont MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Température du pont anormale(ocumEvtBridgeTemperatureAbnormal)
+ a| 
+Gestion des
+ a| 
+Pont MetroCluster
+ a| 
+Primordial
+
+|===

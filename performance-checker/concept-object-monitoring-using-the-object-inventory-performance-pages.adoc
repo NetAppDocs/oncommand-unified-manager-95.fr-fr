@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages d"inventaire des objets Performance vous permettent de surveiller les performances des objets en fonction des valeurs des compteurs de performances spécifiques ou des événements de performances. Cet aspect est bénéfique, car l"identification d"objets avec des événements de performances vous permet d"identifier la cause des problèmes de performances du cluster.' 
+---
+= Surveillance des objets à l'aide des pages d'inventaire des objets Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages d'inventaire des objets Performance vous permettent de surveiller les performances des objets en fonction des valeurs des compteurs de performances spécifiques ou des événements de performances. Cet aspect est bénéfique, car l'identification d'objets avec des événements de performances vous permet d'identifier la cause des problèmes de performances du cluster.
+
+Les pages d'inventaire des objets Performance affichent les compteurs associés, les objets associés et les règles de seuil de performances pour tous les objets de tous les clusters. Ces pages vous permettent également d'appliquer des règles de seuil de performances aux objets. Vous pouvez trier la page en fonction de n'importe quelle colonne et effectuer une recherche sur tous les noms d'objet ou données.
+
+Vous pouvez exporter des données de ces pages vers des valeurs séparées par des virgules (`.csv`) En utilisant le bouton *Exporter*, puis utilisez les données exportées pour créer des rapports.

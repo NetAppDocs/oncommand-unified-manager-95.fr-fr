@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez partager un rapport avec un ou plusieurs utilisateurs par courrier électronique à l"aide de l"option partager.' 
+---
+= Qu'est-ce que le partage de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez partager un rapport avec un ou plusieurs utilisateurs par courrier électronique à l'aide de l'option *share*.
+
+Vous devez enregistrer le rapport avant de le partager pour vous assurer que les modifications récentes apportées au rapport s'affichent.
+
+Vous pouvez partager le rapport dans le format de votre choix. L'option *share* vous permet de partager instantanément les rapports par e-mail, même avec des personnes qui n'ont pas accès à Unified Manager mais qui ont une adresse e-mail valide.

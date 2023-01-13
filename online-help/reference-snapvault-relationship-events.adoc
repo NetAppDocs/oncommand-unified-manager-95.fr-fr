@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de relation SnapVault fournissent des informations sur l"état de vos relations SnapVault, ce qui vous permet de surveiller l"apparition de problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements liés aux relations SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de relation SnapVault fournissent des informations sur l'état de vos relations SnapVault, ce qui vous permet de surveiller l'apparition de problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : protection
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Vault asynchrone malsain(ocumEvtSnapVaultRelationshipUnHealthy)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Coupure asynchrone du coffre-fort (ocumEvtSnapVaultRelationshipStateBrokenoff)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Échec de l'initialisation asynchrone du coffre-fort (ocumEvtSnapVaultRelationshipInitializeFailed)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Echec de la mise à jour asynchrone du coffre-fort (ocumEvtSnapVaultRelationshipUpdateFailed)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Erreur de décalage asynchrone du coffre-fort (ocumEvtSnapVaultRelationshipLagError)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+
+
+ a| 
+Avertissement de décalage asynchrone du coffre-fort (ocumEvtSnapVaultRelationshipLagWarning)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Avertissement
+
+
+
+ a| 
+Échec de la resynchronisation asynchrone du coffre-fort (ocumEvtSnapvaultRelationshipResyncFailed)
+ a| 
+Risques
+ a| 
+Relation SnapMirror
+ a| 
+Erreur
+
+|===

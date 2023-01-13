@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-events-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport événements vous permet d"afficher des informations sur les tendances des événements sur une période donnée. Ces informations vous permettent de comparer l"activité récente à toute activité opérationnelle passée, comme les changements de configuration, les mises à niveau, etc. Ces informations vous aident également à déterminer les événements en suspens.' 
+---
+= Rapport d'événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport événements vous permet d'afficher des informations sur les tendances des événements sur une période donnée. Ces informations vous permettent de comparer l'activité récente à toute activité opérationnelle passée, comme les changements de configuration, les mises à niveau, etc. Ces informations vous aident également à déterminer les événements en suspens.
+
+
+
+== Vue graphique du rapport d'événements
+
+Le rapport événements s'affiche sous deux formats :
+
+* Vue graphique du rapport d'événements
+* Vue tabulaire du rapport d'événements
+
+
+Le diagramme des événements s'affiche sous deux formats :
+
+* Tendance de gravité des événements (tous les événements ouverts)
+* Tendance d'état d'événement
+
+
+Le graphique affiche les tendances de gravité des événements pour tous les événements ouverts sur une période donnée. Le nombre d'événements s'affiche sur l'axe vertical (y) et la date est affichée sur l'axe horizontal (x). Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur un point particulier. Les détails affichent la gravité de l'événement, le nombre d'événements du type de gravité spécifique et la date de l'événement.
+
+Les types de gravité d'événement affichés sont critique, erreur et Avertissement. Les niveaux de gravité de l'événement sont différenciés par différentes couleurs. Il peut y avoir le même nombre d'événements à la même date dans différents États.
+
+* *Nombre*
++
+Affiche un nombre d'événements.
+
+* *Date*
++
+Affiche la date. L'axe X affiche les données de l'heure à laquelle l'événement s'est produit jusqu'à la date actuelle. Vous pouvez cliquer et zoomer sur le graphique pour obtenir plus de détails.
+
+
+
+Le graphique affiche les tendances de l'état des événements par jour sur une période donnée. Le nombre d'événements s'affiche sur l'axe vertical (y) et la date est affichée sur l'axe horizontal (x). Les détails affichent l'état de l'événement, le nombre d'événements de l'état spécifique et la date de l'événement.
+
+L'état de l'événement est Nouveau, accusé de réception et résolu. L'état de l'événement est différencié par différentes couleurs.
+
+Le graphique montre les nouveaux événements générés quotidiennement sur une base cumulative dans un graphique à barres représenté en vert. Le nombre d'événements acquittés et résolus est indiqué comme et quand ils sont acquittés et résolus quotidiennement.
+
+Une fonctionnalité de zoom est disponible dans les graphiques. Vous pouvez utiliser cette fonction pour zoomer un point particulier dans le graphique pour plus de clarté.
+
+* *Source*
++
+Affiche la source d'un événement.
+
+* *Statut*
++
+Affiche la gravité de l'événement. Vous pouvez filtrer cette colonne pour afficher les événements d'un type de gravité spécifique. Les types de gravité d'événement sont critique, erreur ou Avertissement.
+
+* *État*
++
+Affiche l'état de l'événement : nouveau, validé, résolu ou Obsolète. Vous pouvez filtrer cette colonne pour afficher les événements d'un état spécifique.
+
+* *Événement*
++
+Affiche les noms des événements.
+
+* *Temps déclenché*
++
+Affiche l'heure à laquelle l'événement a été généré. L'heure et la date sont affichées.
+
+* *Jours en suspens*
++
+Affiche le nombre de jours entre un événement se produisant et sa résolution ou sa désignation comme Obsolète.
+
+* *Type de source*
++
+Affiche le type d'objet (par exemple, Storage Virtual machine (SVM), volume ou qtree) auquel l'événement est associé.
+
+* *Priorité de données*
++
+Affiche le type d'annotation, en fonction de la priorité des données de l'objet de stockage.
+
+* *Niveau d'impact*
++
+Indique si l'événement est classé comme incident, risque ou information.
+
+* *Zone d'impact*
++
+Indique si l'événement est un événement de capacité, de disponibilité, de performances, de protection ou de configuration.
+
+* *Affecté à*
++
+Affiche le nom de l'utilisateur auquel l'événement est affecté.
+
+* *Temps attribué*
++
+Affiche l'heure à laquelle l'événement a été attribué à un utilisateur.
+
+* *Notes*
++
+Affiche le nombre de notes ajoutées pour un événement.
+
+* *Reconnu par*
++
+Affiche le nom de l'utilisateur qui a reconnu l'événement. Le champ est vide si l'événement n'est pas validé.
+
+* *Heure reconnue*
++
+Affiche le temps écoulé depuis l'accusé de réception de l'événement. Si le temps écoulé dépasse une semaine, l'horodatage affiche le moment où l'événement a été reconnu.
+
+* *Résolu par*
++
+Affiche le nom de l'utilisateur qui a résolu l'événement. Le champ est vide si l'événement n'est pas résolu.
+
+* *Temps résolu*
++
+Affiche le temps écoulé depuis la résolution de l'événement. Si le temps écoulé dépasse une semaine, l'horodatage affiche le moment où l'événement a été résolu.
+
+* *Obsolète*
++
+Affiche l'heure à laquelle l'état de l'événement est devenu Obsolète.
+
+

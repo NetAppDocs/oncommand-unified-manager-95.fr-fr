@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher la liste des sauvegardes depuis la page de sauvegarde de Unified Manager. Vous pouvez afficher le nom, la taille et l"heure de création de la sauvegarde pour les sauvegardes répertoriées sur cette page. Vous pouvez modifier les paramètres de sauvegarde de la base de données à partir de la page Paramètres de sauvegarde de la base de données.' 
+---
+= Description des fenêtres de sauvegarde et des boîtes de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher la liste des sauvegardes depuis la page de sauvegarde de Unified Manager. Vous pouvez afficher le nom, la taille et l'heure de création de la sauvegarde pour les sauvegardes répertoriées sur cette page. Vous pouvez modifier les paramètres de sauvegarde de la base de données à partir de la page Paramètres de sauvegarde de la base de données.

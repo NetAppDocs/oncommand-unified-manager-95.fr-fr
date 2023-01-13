@@ -1,0 +1,86 @@
+---
+permalink: online-help/task-moving-workloads-to-a-different-aggregate.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous permet d"identifier un agrégat moins occupé que l"agrégat dans lequel résident vos charges de travail, puis de déplacer les volumes ou les LUN sélectionnés vers cet agrégat. Le déplacement de charges de travail hautes performances vers un agrégat moins occupé, ou un agrégat sur lequel le stockage Flash est activé, permet à la charge de travail de réaliser davantage d"efficacité.' 
+---
+= Déplacement des charges de travail vers un autre agrégat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous permet d'identifier un agrégat moins occupé que l'agrégat dans lequel résident vos charges de travail, puis de déplacer les volumes ou les LUN sélectionnés vers cet agrégat. Le déplacement de charges de travail hautes performances vers un agrégat moins occupé, ou un agrégat sur lequel le stockage Flash est activé, permet à la charge de travail de réaliser davantage d'efficacité.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez avoir enregistré le nom de l'agrégat actuellement ayant un problème de performances.
+* Vous devez avoir enregistré la date et l'heure à laquelle l'agrégat a reçu l'événement.
+* Vous devez avoir enregistré l'ID de l'événement, par exemple," p-sdt-cluse1-ag-2542'".
+* Unified Manager doit avoir collecté et analysé un mois ou plus de données de performances.
+
+
+
+
+== Description de la tâche
+
+Cette procédure vous permet d'identifier les ressources suivantes afin de déplacer des charges de travail hautes performances vers un agrégat inférieur :
+
+* Agrégats du même cluster moins utilisés
+* Les volumes les plus performants de l'agrégat actuel
+
+
+
+
+== Étapes
+
+. Identifier l'agrégat du cluster le moins utilisé :
++
+.. Dans la page de détails *Event*, cliquez sur le nom du cluster sur lequel réside l'agrégat.
++
+Les détails du cluster s'affichent sur la page d'accueil Performance/Cluster.
+
+.. Sur la page *Résumé*, cliquez sur *Aggregates* dans le volet *objets gérés*.
++
+La liste des agrégats sur ce cluster s'affiche.
+
+.. Cliquez sur la colonne *utilisation* pour trier les agrégats par le moins utilisés.
++
+Vous pouvez également identifier les agrégats ayant la capacité *libre* la plus élevée. Ainsi, vous disposez d'une liste d'agrégats potentiels vers lesquels vous pouvez déplacer des charges de travail.
+
+.. Écrire le nom de l'agrégat dans lequel vous souhaitez déplacer les charges de travail.
+
+
+. Identifiez les volumes les plus performants de l'agrégat ayant reçu l'événement :
++
+.. Cliquez sur l'agrégat qui présente le problème de performances.
++
+Les détails de l'agrégat sont affichés sur la page de l'explorateur des performances/agrégats.
+
+.. Dans le sélecteur *Time Range*, sélectionnez *30 derniers jours*, puis cliquez sur *Apply Range*.
++
+Vous pouvez ainsi afficher une période d'historique de performance plus longue que celle des 72 heures par défaut. Vous souhaitez déplacer un volume qui utilise de nombreuses ressources de façon cohérente, pas seulement au cours des 72 dernières heures.
+
+.. Dans le contrôle *View and compare*, sélectionnez *volumes sur cet agrégat*.
++
+Une liste des volumes FlexVol et des volumes composant FlexGroup sur cet agrégat est affichée.
+
+.. Pour afficher les volumes les plus performants, triez par Mbit/s, puis par IOPS les plus élevées.
+.. Notez les noms des volumes que vous souhaitez déplacer vers un autre agrégat.
+
+
+. Déplacez les volumes hautes performances vers l'agrégat que vous avez identifié comme présentant un faible taux d'utilisation.
++
+Vous pouvez effectuer l'opération de déplacement en utilisant OnCommand System Manager, OnCommand Workflow Automation et les commandes ONTAP ou une combinaison de ces outils.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Après quelques jours, vérifiez si vous recevez le même type d'événements de ce nœud ou de cet agrégat.

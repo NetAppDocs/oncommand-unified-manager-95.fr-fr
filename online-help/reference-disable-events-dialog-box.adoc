@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-disable-events-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Désactiver les événements affiche la liste des types d"événements pour lesquels vous pouvez désactiver les événements. Vous pouvez désactiver les événements pour un type d"événement en fonction d"une gravité spécifique ou pour un ensemble d"événements.' 
+---
+= Désactiver la boîte de dialogue événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Désactiver les événements affiche la liste des types d'événements pour lesquels vous pouvez désactiver les événements. Vous pouvez désactiver les événements pour un type d'événement en fonction d'une gravité spécifique ou pour un ensemble d'événements.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Zone Propriétés de l'événement
+
+La zone Propriétés de l'événement spécifie les propriétés d'événement suivantes :
+
+* *Gravité de l'événement*
++
+Vous permet de sélectionner des événements en fonction du type de gravité, qui peut être critique, erreur, Avertissement ou information.
+
+* *Le nom de l'événement contient*
++
+Permet de filtrer les événements dont le nom contient les caractères spécifiés.
+
+* *Événements correspondants*
++
+Affiche la liste des événements correspondant au type de gravité de l'événement et à la chaîne de texte que vous spécifiez.
+
+* *Désactiver les événements*
++
+Affiche la liste des événements que vous avez sélectionnés pour la désactivation.
+
++
+La gravité de l'événement s'affiche également avec le nom de l'événement.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour les événements sélectionnés :
+
+* *Enregistrer et fermer*
++
+Désactive le type d'événement et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Supprime les modifications et ferme la boîte de dialogue.
+
+

@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier le port utilisé par le serveur Unified Manager pour communiquer avec votre serveur d"authentification.' 
+---
+= Modification des serveurs d'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le port utilisé par le serveur Unified Manager pour communiquer avec votre serveur d'authentification.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, cochez la case *Désactiver la recherche de groupe imbriqué*.
+. Dans la zone *serveurs d'authentification*, sélectionnez le serveur d'authentification que vous souhaitez modifier, puis cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Edit Authentication Server*, modifiez les détails du port.
+. Cliquez sur *Enregistrer*.
+

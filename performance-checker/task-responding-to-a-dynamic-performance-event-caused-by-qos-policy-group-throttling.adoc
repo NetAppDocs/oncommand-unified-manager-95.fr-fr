@@ -1,0 +1,80 @@
+---
+permalink: performance-checker/task-responding-to-a-dynamic-performance-event-caused-by-qos-policy-group-throttling.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour rechercher un événement de performance provoqué par un groupe de règles de qualité de service \(QoS\) qui restreint le débit du workload \(Mbit/s\). Cette accélération a permis d"augmenter les temps de réponse \(latence\) des workloads de volumes dans le groupe de règles. Vous pouvez utiliser les informations d"événement pour déterminer si de nouvelles limites des groupes de règles sont nécessaires pour arrêter la restriction.' 
+---
+= Réponse à un événement de performance dynamique causé par l'accélération du groupe de règles de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour rechercher un événement de performance provoqué par un groupe de règles de qualité de service (QoS) qui restreint le débit du workload (Mbit/s). Cette accélération a permis d'augmenter les temps de réponse (latence) des workloads de volumes dans le groupe de règles. Vous pouvez utiliser les informations d'événement pour déterminer si de nouvelles limites des groupes de règles sont nécessaires pour arrêter la restriction.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il doit y avoir des événements de performances nouveaux, acquittés ou obsolètes.
+
+
+
+
+== Étapes
+
+. Affichez la page *Détails de l'événement* pour afficher des informations sur l'événement.
+. Lisez la *Description*, qui affiche le nom des charges de travail affectées par la restriction.
++
+[NOTE]
+====
+La description peut afficher la même charge de travail pour la victime et le tyran, car la restriction en fait la charge de travail victime de lui-même.
+
+====
+. Enregistrez le nom du volume à l'aide d'une application telle qu'un éditeur de texte.
++
+Vous pouvez effectuer une recherche sur le nom du volume pour le retrouver ultérieurement.
+
+. Dans les graphiques latence de la charge de travail et activité de la charge de travail, sélectionnez *charges de travail importantes*.
+. Passez le curseur de la souris sur les graphiques pour afficher les principales charges de travail définies par l'utilisateur qui affectent le groupe de règles.
++
+La charge de travail en haut de la liste a la plus grande déviation et a provoqué la restriction. L'activité correspond au pourcentage de la limite de groupe de règles utilisée par chaque charge de travail.
+
+. Accédez à la page *Détails des performances/volumes* pour la charge de travail supérieure.
+. Sélectionnez *données d'interruption par*.
+. Cochez la case située en regard de ***latence*** pour sélectionner tous les diagrammes de répartition de la latence.
+. Sous *IOPS*, sélectionnez ***reads/writes/Other***.
+. Cliquez sur *soumettre*.
++
+Les graphiques détaillés sont affichés sous le tableau latence et le graphique Op E/S par sec.
+
+. Comparez le graphique *Policy Group impact* avec le graphique *latence* pour connaître le pourcentage de restriction qui a affecté la latence au moment de l'événement.
++
+Le groupe de règles présente un débit maximal de 1,000 opérations par seconde (op/s), que les charges de travail IT ne peuvent pas dépasser collectivement. Au moment de l'événement, le débit combiné des charges de travail du groupe de règles était de plus de 1,200 opérations/s, ce qui a poussé le groupe de règles à ralentir son activité à 1,000 opérations/s. Le graphique d'impact du groupe de règles montre que la restriction a entraîné 10 % de la latence totale, confirmant que la restriction a causé l'événement.
+
+. Consultez le graphique *composants de cluster*, qui indique la latence totale par composant de cluster.
++
+La latence est la plus élevée au niveau du groupe de règles, ce qui confirme que l'accélération a entraîné l'événement.
+
+. Comparez le graphique *reads/Writes latence* avec le graphique *reads/writes/Other*.
++
+Les deux graphiques présentent un nombre élevé de demandes de lecture avec une latence élevée, mais le nombre de requêtes et la latence pour les demandes d'écriture sont faibles. Ces valeurs vous permettent de déterminer la présence d'un haut débit ou d'un grand nombre d'opérations ayant augmenté la latence. Vous pouvez utiliser ces valeurs pour décider de mettre une limite de groupe de règles sur le débit ou les opérations.
+
+. Utilisez OnCommand System Manager pour augmenter la limite actuelle du groupe de règles à 1,300 op/s.
+. Après une journée, revenez à Unified Manager et recherchez le nom de la charge de travail que vous avez enregistrée à l'étape 3.
++
+La page Performance/Volume Details s'affiche.
+
+. Sélectionnez *données d'interruption par* > ***IOPS***.
+. Cliquez sur *soumettre*.
++
+Le graphique lit/écrit/autre s'affiche.
+
+. En bas de la page, pointez votre curseur sur l'icône de changement d'événement (image:../media/opm-change-icon.gif["Icône changer événement"]) pour le changement de limite de groupe de polices.
+. Comparez le graphique *reads/writes/Other* avec le graphique *latence*.
++
+Les requêtes de lecture et d'écriture sont identiques, mais l'accélération a cessé et la latence a diminué.
+
+

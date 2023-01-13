@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-viewing-the-node-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page d"inventaire Santé/nœuds pour afficher la liste des nœuds de vos clusters. Vous pouvez utiliser la page de détails Santé/Cluster pour afficher des informations détaillées sur les nœuds faisant partie du cluster surveillé.' 
+---
+= Affichage de la liste des nœuds et des détails
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page d'inventaire Santé/nœuds pour afficher la liste des nœuds de vos clusters. Vous pouvez utiliser la page de détails Santé/Cluster pour afficher des informations détaillées sur les nœuds faisant partie du cluster surveillé.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez afficher des informations détaillées, telles que l'état des nœuds, le cluster qui contient le nœud, les informations détaillées sur la capacité des agrégats (utilisée et totale) et les détails sur la capacité brute (utilisable, disponible, réserve et total). Vous pouvez également obtenir des informations sur les paires haute disponibilité, les tiroirs disques et les ports.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *noeuds*.
+. Sur la page d'inventaire *Health/Nodes*, cliquez sur le nœud dont vous souhaitez afficher les détails.
++
+Les informations détaillées du nœud sélectionné s'affichent sur la page Détails du cluster/Santé. Le volet gauche affiche la liste des paires HA. Par défaut, les détails de la haute disponibilité sont ouverts, qui affiche les détails d'état de la haute disponibilité et les événements associés à la paire haute disponibilité sélectionnée.
+
+. Pour afficher d'autres détails sur le nœud, effectuez l'action appropriée :
++
+|===
+| Pour afficher... | Cliquez sur... 
+
+
+ a| 
+Détails sur les tiroirs disques
+ a| 
+*Tiroirs disques*.
+
+
+
+ a| 
+Informations relatives aux ports
+ a| 
+*Ports*.
+
+|===
+

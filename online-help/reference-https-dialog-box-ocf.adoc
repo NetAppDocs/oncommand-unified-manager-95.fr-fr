@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-https-dialog-box-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page certificat HTTPS vous permet d"afficher le certificat de sécurité actuel, de télécharger une demande de signature de certificat, de générer un nouveau certificat HTTPS ou d"installer un nouveau certificat HTTPS.' 
+---
+= Page certificat HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page certificat HTTPS vous permet d'afficher le certificat de sécurité actuel, de télécharger une demande de signature de certificat, de générer un nouveau certificat HTTPS ou d'installer un nouveau certificat HTTPS.
+
+Si vous n'avez pas généré de nouveau certificat HTTPS, le certificat qui apparaît sur cette page est le certificat qui a été généré lors de l'installation.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les opérations suivantes :
+
+* *Télécharger demande de signature de certificat HTTPS*
++
+Télécharge une demande de certification pour le certificat HTTPS actuellement installé. Votre navigateur vous invite à enregistrer le `<hostname>.csr` Dossier de sorte que vous puissiez fournir le fichier à une autorité de certification à signer.
+
+* *Installer le certificat HTTPS*
++
+Vous permet de télécharger et d'installer un certificat de sécurité une fois qu'une autorité de certification a signé et renvoyé ce certificat. Le nouveau certificat est en vigueur après le redémarrage du serveur de gestion.
+
+* *Régénérer le certificat HTTPS*
++
+Vous permet de générer un certificat HTTPS, qui remplace le certificat de sécurité actuel. Le nouveau certificat est en vigueur après le redémarrage d'Unified Manager.
+
+

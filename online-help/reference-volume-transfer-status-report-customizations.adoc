@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Transfer Status \(Historical\) pour afficher et analyser les informations relatives aux transferts de volume à des intervalles de temps spécifiques. Vous pouvez utiliser des filtres pour afficher les détails du transfert de volume entre deux dates.' 
+---
+= Personnalisation du rapport Volume Transfer Status (Historique)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Etat de transfert de volume (Historique) pour afficher et analyser les informations relatives aux transferts de volume à des intervalles de temps spécifiques. Vous pouvez utiliser des filtres pour afficher les détails du transfert de volume entre deux dates.

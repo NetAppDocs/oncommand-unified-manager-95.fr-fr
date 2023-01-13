@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-collecting-data-and-monitoring-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager collecte et analyse les activités des charges de travail toutes les 5 minutes afin d"identifier les événements de performances et détecte les changements de configuration toutes les 15 minutes. Il conserve un maximum de 30 jours de données d"historique des performances et des événements de 5 minutes. Ces données permettent de prévoir la plage attendue pour toutes les charges de travail surveillées.' 
+---
+= Collecte des données et contrôle des performances des workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager collecte et analyse les activités des charges de travail toutes les 5 minutes afin d'identifier les événements de performances et détecte les changements de configuration toutes les 15 minutes. Il conserve un maximum de 30 jours de données d'historique des performances et des événements de 5 minutes. Ces données permettent de prévoir la plage attendue pour toutes les charges de travail surveillées.
+
+[NOTE]
+====
+Ce chapitre décrit le fonctionnement des seuils dynamiques et leur utilisation pour surveiller les performances des charges de travail. Ce chapitre ne s'applique pas aux statistiques ou aux événements provoqués par les violations de seuil de performance définies par l'utilisateur ou par le système.
+
+====
+Unified Manager doit collecter au moins 3 jours d'activité sur la charge de travail avant de pouvoir lancer l'analyse. Il doit avant que la plage prévue pour le temps de réponse et les opérations d'E/S ne soit affichée sur la page Détails des performances/volumes et sur la page Détails de l'événement. Pendant la collecte de cette activité, la plage attendue n'affiche pas toutes les modifications effectuées à partir de l'activité de la charge de travail. Après avoir collecté 3 jours d'activité, Unified Manager ajuste la plage attendue, toutes les 24 heures à 12 h 00, pour prendre en compte les modifications de l'activité des charges de travail et établir un seuil de performances plus précis.
+
+Au cours des 4 premiers jours suivant la surveillance d'un volume par Unified Manager, si plus de 24 heures ont été écoulées depuis la dernière collecte de données, les graphiques de la page Performance/Volume Details n'affichent pas la plage prévue pour ce volume. Les événements détectés avant la dernière collection sont toujours disponibles.
+
+[NOTE]
+====
+L'heure d'été change l'heure système, ce qui modifie la plage attendue de statistiques de performances pour les charges de travail surveillées. Unified Manager commence immédiatement à corriger la plage attendue, qui prend environ 15 jours. Pendant cette période, vous pouvez continuer à utiliser Unified Manager, mais, puisque Unified Manager utilise la plage attendue pour détecter des événements, il se peut que certains événements ne soient pas précis. Les événements détectés avant le changement de temps ne sont pas affectés. La modification manuelle de l'heure sur un cluster ou sur un serveur Unified Manager à une heure antérieure affecte également les résultats de l'analyse d'événements.
+
+====

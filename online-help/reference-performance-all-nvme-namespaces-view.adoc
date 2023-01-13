@@ -1,0 +1,89 @@
+---
+permalink: online-help/reference-performance-all-nvme-namespaces-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire espaces de noms affiche un aperçu des événements de performances, des données et des informations de configuration de chaque espace de noms surveillé par une instance de Unified Manager. Cela vous permet de surveiller rapidement les performances et l"intégrité de vos espaces de noms, et de résoudre les problèmes et les événements de seuils.' 
+---
+= Page d'inventaire des espaces de noms
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire espaces de noms affiche un aperçu des événements de performances, des données et des informations de configuration de chaque espace de noms surveillé par une instance de Unified Manager. Cela vous permet de surveiller rapidement les performances et l'intégrité de vos espaces de noms, et de résoudre les problèmes et les événements de seuils.
+
+Selon la manière dont vous accédez à cette page, le haut de la page peut afficher un titre différent pour indiquer si la liste a été filtrée. Par exemple, lors de l'affichage de tous les espaces de noms, le titre est « espaces de noms ». Lors de l'affichage d'un sous-ensemble d'espaces de noms renvoyés à partir de la page Threshold Policies, le titre est « espace de noms sur lequel la règle espace de noms_IOPS est appliquée ».
+
+Les boutons situés en haut de la page vous permettent d'effectuer des recherches pour localiser des données spécifiques, créer et appliquer des filtres pour limiter la liste des données affichées, exporter les données de la page vers un `.csv` et ajouter ou supprimer des colonnes de la page.
+
+Par défaut, les objets sur les pages d'inventaire des objets sont triés en fonction du caractère critique de l'événement de performance de l'objet. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Les valeurs des compteurs de performances sont basées sur une moyenne des 72 heures de données précédentes ou plus, comme indiqué sur la page. Vous pouvez cliquer sur le bouton Actualiser pour mettre à jour les données d'inventaire des objets.
+
+Vous pouvez affecter des stratégies de seuil de performances à ou effacer des stratégies de seuil à partir de n'importe quel objet des pages d'inventaire d'objets à l'aide des boutons *affecter la stratégie de seuil de performances* et *Effacer la stratégie de seuil de performances*.
+
+
+
+== Colonnes de la page d'inventaire des espaces de noms
+
+La page d'inventaire Namespaces contient les colonnes suivantes pour chaque espace de noms :
+
+* *Sous-système*
++
+Sous-système de l'espace de noms.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Espace de noms*
++
+Vous pouvez cliquer sur le nom de l'espace de noms pour accéder à la page des détails sur les performances de cet espace de noms.
+
+* *État*
++
+État actuel du namespace.
+
++
+** Offline - l'accès en lecture ou en écriture à l'espace de noms n'est pas autorisé.
+** En ligne - l'accès en lecture et en écriture à l'espace de noms est autorisé.
+** NVFail : le namespace a été automatiquement mis hors ligne en raison d'une défaillance de mémoire NVRAM.
+** Erreur d'espace : l'espace de noms est insuffisant.
+
+
+* *SVM*
++
+Le SVM (Storage Virtual machine) auquel appartient le namespace. Vous pouvez cliquer sur le nom du SVM pour accéder à la page de détails du SVM.
+
+* *Cluster*
++
+Cluster auquel appartient l'espace de noms. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *Volume*
++
+Le volume auquel appartient l'espace de noms. Vous pouvez cliquer sur le nom du volume pour accéder à la page de détails de ce volume.
+
+* *Capacité totale*
++
+La capacité de stockage totale de l'espace de noms, en gigaoctets.
+
+* *Capacité libre*
++
+La capacité de stockage inutilisée de l'espace de noms, en gigaoctets.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde pour l'espace de noms.
+
+* * Latence*
++
+Le temps de réponse moyen pour toutes les demandes d'E/S du namespace, exprimé en millisecondes par opération.
+
+* *Mbit/s*
++
+Le débit du namespace est mesuré en mégaoctets par seconde.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

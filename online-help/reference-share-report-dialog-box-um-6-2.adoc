@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-share-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez partager un rapport avec un ou plusieurs utilisateurs par e-mail. Après avoir personnalisé un rapport, vous devez enregistrer les modifications avant de le partager pour vous assurer que les modifications sont affichées. 
+---
+= Partager le rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez partager un rapport avec un ou plusieurs utilisateurs par e-mail. Après avoir personnalisé un rapport, vous devez enregistrer les modifications avant de le partager pour vous assurer que les modifications sont affichées.
+
+
+
+== Propriétés
+
+Vous pouvez partager un rapport en spécifiant des propriétés telles que l'adresse électronique de l'utilisateur, l'objet de l'e-mail et le format du rapport.
+
+* *Adresse e-mail du destinataire*
++
+Spécifie l'adresse électronique de l'utilisateur avec lequel vous souhaitez partager le rapport. Vous pouvez spécifier une ou plusieurs entrées séparées par des virgules. Ce champ est obligatoire.
+
+* *Sujet*
++
+Spécifie l'objet de l'e-mail. Par défaut, le nom du rapport s'affiche.
+
+* *Format de rapport*
++
+Spécifie le format dans lequel vous souhaitez partager le rapport. L'option _PDF_ est sélectionnée par défaut. Si le format XHTML est sélectionné, ouvrez le rapport envoyé par e-mail à l'aide d'un navigateur Web pris en charge.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Partager*
++
+Partage le rapport avec la configuration enregistrée et ferme la boîte de dialogue Rapport de partage.
+
+* *Annuler*
++
+Ferme la boîte de dialogue partager le rapport tout en affichant un message pour enregistrer la configuration du rapport.
+
+

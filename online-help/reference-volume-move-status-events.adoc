@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-volume-move-status-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements d"état de déplacement de volume vous indiquent l"état de déplacement de volume afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements d'état de déplacement de volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements d'état de déplacement de volume vous indiquent l'état de déplacement de volume afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+État du déplacement du volume : en cours (non applicable)
+ a| 
+Événement
+ a| 
+Volumétrie
+ a| 
+Informations
+
+
+
+ a| 
+Etat du déplacement du volume - échec (ocumEvtVolumeMoveFailed)
+ a| 
+Risques
+ a| 
+Volumétrie
+ a| 
+Erreur
+
+
+
+ a| 
+Statut de déplacement de volume : terminé (non applicable)
+ a| 
+Événement
+ a| 
+Volumétrie
+ a| 
+Informations
+
+
+
+ a| 
+Déplacement de volume - report du basculement (oocumEvtVolumeMoveCutOverreporté)
+ a| 
+Risques
+ a| 
+Volumétrie
+ a| 
+Avertissement
+
+|===

@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser l"interface utilisateur Web d"Unified Manager pour confirmer ou supprimer la possibilité qu"un volume soit hors ligne, car le nœud hôte est en panne et que le basculement du stockage vers son partenaire de paire haute disponibilité n"a pas réussi.' 
+---
+= Détermination d'un volume hors ligne parce que son nœud hôte est arrêté
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'interface utilisateur Web d'Unified Manager pour confirmer ou supprimer la possibilité qu'un volume soit hors ligne, car le nœud hôte est en panne et que le basculement du stockage vers son partenaire de paire haute disponibilité n'a pas réussi.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Pour déterminer si la condition de hors ligne du volume est due à une défaillance du nœud d'hébergement et à un basculement de stockage qui a échoué par la suite, effectuez les opérations suivantes :
+
+
+
+== Étapes
+
+. Localisez et cliquez sur le lien hypertexte affiché sous SVM dans le volet *Related Devices* de la page de détails *Health/Volume* du volume hors ligne.
++
+La page de détails Health/Storage Virtual machine affiche des informations sur le SVM (Health/Storage Virtual machine) hébergé par le volume hors ligne.
+
+. Dans le volet *Related Devices* de la page *Health/Storage Virtual machine* details, localisez et cliquez sur le lien hypertexte affiché sous volumes.
++
+La page d'inventaire Health/volumes affiche un tableau d'informations sur tous les volumes hébergés par la SVM.
+
+. Dans l'en-tête de colonne État de la page d'inventaire *Santé/volumes*, cliquez sur le symbole du filtre image:../media/filtericon-um60.png["Icône du filtre de colonne"], Puis sélectionnez l'option *hors ligne*.
++
+Seuls les volumes du SVM dont l'état est hors ligne sont répertoriés.
+
+. Sur la page d'inventaire *Santé/volumes*, cliquez sur le symbole de la grille image:../media/gridviewicon.gif["Icône pour la vue grille"], Puis sélectionnez l'option *nœuds de cluster*.
++
+Vous devrez peut-être faire défiler la zone de sélection de grille pour localiser l'option *Cluster Nodes*.
+
++
+La colonne nœuds de cluster est ajoutée à l'inventaire des volumes et affiche le nom du nœud qui héberge chaque volume hors ligne.
+
+. Sur la page d'inventaire *Health/volumes*, recherchez la liste du volume hors ligne et, dans sa colonne nœud de cluster, cliquez sur le nom de son nœud d'hébergement.
++
+L'onglet nœuds de la page Détails de l'intégrité/du cluster affiche l'état de la paire HA de nœuds auxquels le nœud d'hébergement appartient. L'état du nœud d'hébergement et le succès de toute opération de basculement de cluster sont indiqués à l'écran.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Une fois que vous avez confirmé que le volume est hors ligne car le nœud hôte est en panne et que le basculement du stockage vers le partenaire de la paire haute disponibilité a échoué, contactez l'administrateur ou l'opérateur approprié pour redémarrer manuellement le nœud d'arrêt et résoudre le problème de basculement du stockage.

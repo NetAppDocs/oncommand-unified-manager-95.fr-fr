@@ -1,0 +1,59 @@
+---
+permalink: health-checker/task-adding-additional-network-interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez ajouter de nouvelles interfaces réseau si vous devez séparer le trafic réseau. 
+---
+= Ajout d'interfaces réseau
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter de nouvelles interfaces réseau si vous devez séparer le trafic réseau.
+
+
+
+== Avant de commencer
+
+Vous devez avoir ajouté l'interface réseau à l'appliance virtuelle à l'aide de vSphere.
+
+L'appliance virtuelle doit être sous tension.
+
+
+
+== Description de la tâche
+
+[NOTE]
+====
+Vous ne pouvez pas effectuer cette opération si Unified Manager est installé sur Red Hat Enterprise Linux ou sur Microsoft Windows.
+
+====
+
+
+== Étapes
+
+. Dans la console vSphere *Menu principal*, sélectionnez *Configuration du système* > *redémarrer le système d'exploitation*.
++
+Après le redémarrage, la console de maintenance peut détecter l'interface réseau qui vient d'être ajoutée.
+
+. Accéder à la console de maintenance.
+. Sélectionnez *Configuration réseau* > *Activer l'interface réseau*.
+. Sélectionnez la nouvelle interface réseau et appuyez sur *entrée*.
++
+Sélectionnez *eth1* et appuyez sur *entrée*.
+
+. Tapez *y* pour activer l'interface réseau.
+. Entrez les paramètres réseau.
++
+Si vous utilisez une interface statique ou si DHCP n'est pas détecté, vous êtes invité à entrer les paramètres réseau.
+
++
+Après avoir saisi les paramètres réseau, vous revenez automatiquement au menu *Configuration réseau*.
+
+. Sélectionnez *valider les modifications*.
++
+Vous devez valider les modifications pour ajouter l'interface réseau.
+
+

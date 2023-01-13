@@ -1,0 +1,124 @@
+---
+permalink: performance-checker/reference-performance-statistics-displayed-in-the-data-breakdown-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les graphiques permettent d"afficher les tendances de performances d"un volume. Vous pouvez également consulter les statistiques relatives aux lectures et écritures, à l"activité du protocole réseau, à l"impact de la limitation de la latence des groupes de règles de QoS, au taux de lecture et d"écriture sur le stockage en cache, au temps total du processeur utilisé par une charge de travail et à des composants de cluster spécifiques.' 
+---
+= Les statistiques de performance affichées dans les graphiques de répartition des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les graphiques permettent d'afficher les tendances de performances d'un volume. Vous pouvez également consulter les statistiques relatives aux lectures et écritures, à l'activité du protocole réseau, à l'impact de la limitation de la latence des groupes de règles de QoS, au taux de lecture et d'écriture sur le stockage en cache, au temps total du processeur utilisé par une charge de travail et à des composants de cluster spécifiques.
+
+Ces vues affichent un maximum de 30 jours de statistiques du jour en cours. Dans le graphique des données historiques, si vous sélectionnez une période de plus d'un jour, en fonction de votre résolution d'écran, les graphiques affichent les valeurs maximales de latence et d'IOPS sur un nombre de jours.
+
+[NOTE]
+====
+Vous pouvez utiliser la case à cocher *Sélectionner tout* pour sélectionner ou désélectionner toutes les options de graphique répertoriées.
+
+====
+* * Latence*
++
+Les tableaux suivants détaillent les informations suivantes sur la latence ou le temps de réponse pour la charge de travail sélectionnée :
+
++
+** *Composants du cluster*
++
+Affiche un graphique du temps passé à chaque composant du cluster utilisé par le volume sélectionné.
+
++
+Le tableau vous aide à déterminer l'impact de la latence par chaque composant en ce qui concerne la latence totale. Vous pouvez utiliser la case à cocher située en regard de chaque composant pour afficher et masquer son graphique.
+
++
+Pour les « policy group » QoS, les données ne sont affichées que pour les « policy groups » définis par l'utilisateur. Des zéros s'affichent pour les groupes de règles définis par le système, tels que les groupes de règles par défaut.
+
+** *Latence de lecture/écriture*
++
+Affiche un graphique des latences des demandes de lecture et d'écriture réussies de la charge de travail de volume sélectionnée sur la période sélectionnée.
+
++
+Les demandes d'écriture sont une ligne orange et les demandes de lecture sont une ligne bleue. Les requêtes sont spécifiques au temps de latence pour la charge de travail du volume sélectionnée, mais pas tous les workloads du cluster.
+
++
+[NOTE]
+====
+Il est possible que les statistiques de lecture et d'écriture ne s'additionnent pas toujours aux statistiques de latence totale affichées dans le tableau latence. Ce comportement est basé sur la manière dont Unified Manager collecte et analyse les statistiques de lecture et d'écriture d'une charge de travail.
+
+====
+** *Impact du groupe de politiques*
++
+Affiche un graphique du pourcentage de latence pour la charge de travail du volume sélectionné impacté par la limite de débit de son groupe de règles QoS.
+
++
+Si la charge de travail est limitée, le pourcentage indique le montant de la restriction a contribué à la latence à un point dans le temps spécifique. Les valeurs de pourcentage indiquent la quantité d'étranglement :
+
++
+*** 0% = pas d'étranglement
+*** > 0 % = accélération
+*** > 20 % = accélération critique si le cluster peut gérer davantage de travail, vous pouvez réduire la restriction en augmentant la limite du groupe de règles. Elle permet également de déplacer la charge de travail vers un agrégat moins occupé.
+
+
+
+
++
+[NOTE]
+====
+Le graphique s'affiche pour les charges de travail au sein d'un groupe de règles de QoS défini par l'utilisateur avec une limite de débit définie uniquement. Il ne s'affiche pas si les charges de travail se trouvent dans un groupe de règles défini par le système, par exemple un groupe de règles par défaut ou une « policy group » qui ne dispose pas de limite QoS. Pour une « policy group » QoS, vous pouvez faire pointer le curseur vers le nom du « policy group » afin d'afficher sa limite de débit et la dernière fois qu'il a été modifié. Si le groupe de règles a été modifié avant que le cluster associé n'ait été ajouté à Unified Manager, la dernière heure de modification correspond à la date et à l'heure à laquelle Unified Manager a découvert le cluster pour la première fois.
+
+====
+* *IOPS*
++
+Les graphiques suivants présentent en détail les données d'IOPS pour la charge de travail sélectionnée :
+
++
+** *Lectures/écritures/autres*
++
+Affiche un graphique indiquant le nombre d'IOPS en lecture et écriture et d'autres IOPS, par seconde, sur la période sélectionnée.
+
++
+Les autres IOPS sont des activités de protocole initiées par le client qui ne sont pas des lectures ou des écritures. Dans un environnement NFS, par exemple, il peut s'agir d'opérations de métadonnées telles que getattr, setattr ou fsstat. Dans un environnement CIFS, il peut s'agir de recherches d'attributs, de listes de répertoires ou de lectures antivirus. Les IOPS d'écriture sont une ligne orange et les demandes de lecture sont affichées en bleu. Les demandes sont spécifiques à toutes les opérations pour la charge de travail de volume sélectionnée, mais pas toutes les opérations sur le cluster.
+
+
+
+* *Mbit/s*
++
+Les graphiques suivants décrivent en détail les données de débit pour la charge de travail sélectionnée :
+
++
+** *Taux de réussite du cache*
++
+Affiche un graphique du pourcentage de demandes de lecture des applications client satisfaites par le cache sur la période sélectionnée.
+
++
+Le cache peut se trouver sur des cartes Flash cache ou des disques SSD dans des agrégats Flash Pool. Un accès au cache, en bleu, est une lecture à partir du cache. Une mémoire cache manqué, en orange, est une lecture d'un disque de l'agrégat. Les requêtes sont spécifiques au workload du volume sélectionné, mais pas tous les workloads du cluster.
+
++
+Pour plus d'informations sur l'utilisation du cache des volumes, consultez les pages d'intégrité de Unified Manager et dans OnCommand System Manager.
+
+
+
+* *Composants*
++
+Les tableaux suivants détaillent les données par composant de cluster utilisé par la charge de travail sélectionnée :
+
++
+** *Temps processeur du cluster*
++
+Affiche un graphique du temps d'utilisation de l'UC, en ms, pour tous les nœuds du cluster utilisés par la charge de travail sélectionnée.
+
++
+Le graphique affiche le temps d'utilisation combiné de l'UC pour le traitement du réseau et le traitement des données. Elle comprend également le temps processeur nécessaire aux charges de travail définies par le système associées à la charge de travail sélectionnée et qui utilisent les mêmes nœuds pour le traitement des données. Vous pouvez utiliser le graphique pour déterminer si la charge de travail est un consommateur élevé de ressources CPU sur le cluster. Vous pouvez également utiliser le graphique, en combinaison avec le tableau de latence des lectures/écritures dans le tableau latence ou le graphique lectures/écritures/autres sous le graphique IOPS, pour déterminer l'impact des modifications apportées à l'activité de la charge de travail sur le temps sur l'utilisation du CPU du cluster.
+
+** *Utilisation du disque*
++
+Affiche un graphique indiquant le pourcentage d'utilisation sur les disques de données de l'agrégat de stockage sur la période sélectionnée.
+
++
+L'utilisation inclut les requêtes de lecture et d'écriture du disque provenant uniquement de la charge de travail du volume sélectionné. Les lectures à partir du cache ne sont pas incluses. L'utilisation est spécifique à la charge de travail du volume sélectionnée, et non toutes les charges de travail présentes sur les disques. Lorsqu'un volume surveillé est impliqué dans un déplacement de volume, les valeurs d'utilisation indiquées dans ce graphique s'appliquent à l'agrégat cible vers lequel le volume a été déplacé.
+
+
+
+

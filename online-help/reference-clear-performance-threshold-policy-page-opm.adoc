@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page Effacer la stratégie de seuil pour supprimer ou effacer une règle de seuil de performances d"un ou plusieurs objets de stockage.' 
+---
+= Désactivez la page Stratégie de seuil de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page Effacer la stratégie de seuil pour supprimer ou _Clear_, une stratégie de seuil de performances d'un ou plusieurs objets de stockage.
+
+La liste des règles s'affiche uniquement avec les règles utilisées dans l'objet ou les objets sélectionnés.
+
+Sélectionnez la stratégie à supprimer de l'objet ou des objets de stockage, puis cliquez sur *Effacer la stratégie*.

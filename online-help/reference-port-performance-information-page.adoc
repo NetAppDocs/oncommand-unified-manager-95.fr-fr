@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-port-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez la page Performance/Port information pour afficher la liste des attributs physiques et logiques du port. Ces informations peuvent aider à répondre aux questions relatives aux performances. 
+---
+= Performances/informations de port
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/Port information pour afficher la liste des attributs physiques et logiques du port. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs de port
+
+* *WWN*
++
+Le WWN (World Wide Name) du port.
+
+* *Nœud*
++
+Nom du nœud sur lequel réside le port physique. Vous pouvez cliquer sur le nom pour afficher les détails du nœud dans la page de l'explorateur performances/nœuds.
+
+* *Cluster*
++
+Nom du cluster auquel appartient le port. Vous pouvez cliquer sur le nom pour afficher les détails du cluster sur la page Performance/Cluster Explorer.
+
+* *Vitesse de fonctionnement*
++
+Vitesse réelle à laquelle le port est configuré pour fonctionner.
+
++
+Les ports FCP sont à détection automatique et s'affichent sous la forme « Auto ».
+
+* *Rôle*
++
+La fonction du port réseau : Data ou Cluster.
+
++
+Les ports FCP ne peuvent pas avoir de rôle et ce champ n'est pas affiché.
+
+* *Type*
++
+Le type de port : réseau ou FCP (Fibre Channel Protocol).
+
+* *État*
++
+L'état de la liaison du port.
+
++
+** Pour les ports réseau, un port actif est répertorié comme « en haut » et un port inactif est répertorié comme « en arrière ».
+** Pour les ports FCP, un port actif est répertorié comme « en ligne » et un port inactif est indiqué comme « lien non connecté ».
+
+
+

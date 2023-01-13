@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/reference-understanding-and-using-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Performance/Node Failover Planning (planification du basculement de nœud/nœud) évalue l"impact sur les performances d"un nœud en cas de défaillance du nœud partenaire haute disponibilité \(HA\) du nœud. Unified Manager établit les estimations sur les performances historiques des nœuds de la paire HA.' 
+---
+= Présentation et utilisation de la page planification du basculement de nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page planification du basculement de nœud/performances estime l'impact sur les performances d'un nœud en cas de défaillance du nœud partenaire haute disponibilité. Unified Manager établit les estimations sur les performances historiques des nœuds de la paire HA.
+
+L'estimation de l'impact d'un basculement sur les performances vous permet de planifier dans les scénarios suivants :
+
+* Si un basculement entraîne une dégradation constante des performances estimées du nœud de basculement, il est possible d'envisager de prendre des mesures correctives pour réduire l'impact sur les performances dû à un basculement.
+* Avant de lancer un basculement manuel afin d'effectuer des tâches de maintenance matérielle, vous pouvez évaluer l'impact du basculement sur les performances du nœud de basculement afin de déterminer le meilleur moment pour effectuer cette tâche.
+

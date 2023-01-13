@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Relationships Inventory pour afficher les volumes regroupés par source d"échec.' 
+---
+= Personnalisation du rapport Volume Relationships Inventory pour afficher les volumes regroupés par source d'échec
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Relationships Inventory pour afficher les volumes regroupés par source d'échec.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Sélectionnez la colonne *Relationship Health*.
+. Pour afficher les détails du volume des volumes défectueux, cliquez sur le signe -- en regard de la colonne *Bad*.
+. Pour afficher les détails du volume pour les bons volumes, cliquez sur le signe -- en regard de la colonne *bon*.
+

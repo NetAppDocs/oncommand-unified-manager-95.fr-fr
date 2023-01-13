@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-viewing-volume-latency-by-cluster-component.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher des informations détaillées sur la latence d"un volume à l"aide de la page de l"explorateur des performances/volumes. Le graphique compteur latence - Total affiche la latence totale sur le volume et le compteur latence - détail est utile pour déterminer l"impact de la latence de lecture et d"écriture sur le volume.' 
+---
+= Affichage de la latence de volume par composant du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des informations détaillées sur la latence d'un volume à l'aide de la page de l'explorateur des performances/volumes. Le graphique compteur latence - Total affiche la latence totale sur le volume et le compteur latence - détail est utile pour déterminer l'impact de la latence de lecture et d'écriture sur le volume.
+
+
+
+== Description de la tâche
+
+Par ailleurs, le tableau latence - composants du cluster affiche une comparaison détaillée de la latence de chaque composant du cluster afin de déterminer comment chaque composant contribue à la latence totale du volume. Les composants de cluster suivants sont affichés :
+
+* Le réseau
+* Règle de QoS
+* Traitement réseau
+* Interconnexion de cluster
+* Le traitement de données
+* Opérations d'agrégats
+* Ressources MetroCluster
+* Latence cloud
+* SnapMirror synchrone
+
+
+
+
+== Étapes
+
+. Dans la page *Performance/Volume Explorer* pour le volume sélectionné, dans le graphique latence, sélectionnez *Cluster Components* dans le menu déroulant.
++
+Le tableau latence - composants du cluster est affiché.
+
+. Pour afficher une version plus grande de la carte, sélectionnez *vue Zoom*.
++
+Le tableau comparatif des composants du groupe d'instruments s'affiche. Vous pouvez restreindre la comparaison en désélectionnant ou en sélectionnant le image:../media/eye-icon.gif[""] qui est associé à chaque composant du cluster.
+
+. Pour afficher les valeurs spécifiques, déplacez le curseur dans la zone graphique pour afficher la fenêtre contextuelle.
+

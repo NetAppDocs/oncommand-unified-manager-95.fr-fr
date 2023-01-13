@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser les rapports Récapitulatif du stockage pour afficher et analyser les informations sur la capacité de stockage en paires haute disponibilité. Vous pouvez utiliser des filtres pour afficher l"utilisation du stockage par modèle de cluster, la capacité des LUN les plus non affectées et les paires haute disponibilité disponibles pour provisionner de nouveaux volumes et LUN.' 
+---
+= Personnalisation du rapport du récapitulatif du stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser les rapports Récapitulatif du stockage pour afficher et analyser les informations sur la capacité de stockage en paires haute disponibilité. Vous pouvez utiliser des filtres pour afficher l'utilisation du stockage par modèle de cluster, la capacité des LUN les plus non affectées et les paires haute disponibilité disponibles pour provisionner de nouveaux volumes et LUN.

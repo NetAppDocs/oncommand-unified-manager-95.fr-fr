@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-unified-manager-performance-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager collecte et analyse les statistiques de performances à partir des systèmes exécutant le logiciel ONTAP. Il utilise des seuils de performances dynamiques et des seuils de performances définis par l"utilisateur pour surveiller un grand nombre de compteurs de performances sur de nombreux composants du cluster.' 
+---
+= Fonctionnalités de contrôle des performances de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager collecte et analyse les statistiques de performances à partir des systèmes exécutant le logiciel ONTAP. Il utilise des seuils de performances dynamiques et des seuils de performances définis par l'utilisateur pour surveiller un grand nombre de compteurs de performances sur de nombreux composants du cluster.
+
+Un temps de réponse élevé (latence) indique que l'objet de stockage, par exemple un volume, fonctionne plus lentement qu'avec la normale. Ce problème indique également que les performances des applications client qui utilisent le volume ont diminué. Unified Manager identifie le composant de stockage qui se trouve à l'endroit où se trouve le problème de performance et fournit une liste des actions que vous pouvez entreprendre pour résoudre le problème de performance.
+
+Unified Manager comprend les fonctionnalités suivantes :
+
+* Surveille et analyse les statistiques de performances des workloads à partir d'un système exécutant le logiciel ONTAP.
+* Suivi des compteurs de performances pour les clusters, les nœuds, les agrégats, les ports, les SVM, Volumes, LUN, espaces de noms NVMe et LIF.
+* Affiche des graphiques détaillés qui correspondent à l'activité des charges de travail dans le temps, notamment les IOPS (opérations), les Mbit/s (débit), la latence (temps de réponse), l'utilisation la capacité de performance et le ratio cache.
+* Vous permet de créer des règles de seuils de performances définies par l'utilisateur qui déclenchent des événements et envoient des alertes par e-mail lorsque les seuils sont atteints.
+* Utilise des seuils définis par le système et des seuils de performances dynamiques qui sont des informations sur l'activité des workloads pour identifier et vous alerter des problèmes de performances.
+* Identifie clairement le composant de cluster en conflit.
+* Identifie les charges de travail qui surutilisent les composants du cluster et les charges de travail dont les performances sont affectées par l'activité accrue.
+

@@ -1,0 +1,64 @@
+---
+permalink: health-checker/reference-cluster-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La carte préférée du cluster vous permet d"afficher les informations relatives à la capacité, à la configuration et aux performances des clusters que vous avez marqués comme favoris.' 
+---
+= Carte favorite de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La carte préférée du cluster vous permet d'afficher les informations relatives à la capacité, à la configuration et aux performances des clusters que vous avez marqués comme favoris.
+
+
+
+== Attributs du cluster
+
+La carte favorite Cluster affiche les attributs suivants de chaque cluster :
+
+* *État d'intégrité du cluster*
++
+Une icône indique l'état de santé du cluster. Les valeurs possibles sont Normal, Avertissement, erreur et critique.
+
+* *Nom du cluster*
++
+Nom du cluster.
+
+* *Capacité*
++
+Espace libre total sur le cluster.
+
+* *Configuration*
++
+Détails de configuration du cluster.
+
++
+** *Adresse IP*
++
+Adresse IP, ou nom d'hôte, de l'interface logique de gestion du cluster (LIF) qui a été utilisée pour ajouter le cluster.
+
+** *Nombre de nœuds*
++
+Nombre de nœuds dans le cluster.
+
+
+
+* *Performance*
++
+Détails de performances du cluster.
+
++
+** *IOPS*
++
+Nombre moyen d'opérations d'E/S par seconde au cours des dernières 72 heures.
+
+** *Débit*
++
+Débit moyen au cours des 72 dernières heures, en Mbit/s .
+
+
+
+

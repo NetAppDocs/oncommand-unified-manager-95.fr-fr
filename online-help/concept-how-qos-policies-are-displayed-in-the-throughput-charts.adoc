@@ -1,0 +1,64 @@
+---
+permalink: online-help/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher les paramètres de règles de qualité de service \(QoS\) définis par ONTAP appliqués à un volume ou à une LUN dans les graphiques Performance Explorer Op E/S par sec, IOPS/To et Mbit/s. Les informations affichées dans les graphiques diffèrent selon le type de règle de QoS appliquée à la charge de travail.' 
+---
+= Affichage des différents types de règles de qualité de service dans Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les paramètres de règles de qualité de service (QoS) définis par ONTAP et appliqués à un volume ou à une LUN dans les graphiques Performance Explorer Op E/S par sec, IOPS/To et Mbit/s. Les informations affichées dans les graphiques diffèrent selon le type de règle de QoS appliquée à la charge de travail.
+
+Le paramètre « plafond » de débit définit le débit maximal que la charge de travail peut consommer, limitant ainsi l'impact sur les charges de travail concurrentes pour les ressources système. Le paramètre « seuil » de débit définit le débit minimal à disposition de la charge de travail, de sorte qu'une charge de travail critique respecte les objectifs de débit minimaux, indépendamment de la demande, par rapport à d'autres charges de travail.
+
+Les politiques de QoS partagées et non partagées pour les IOPS et les Mbit/s utilisent les termes "minimum" et "maimum" pour définir le sol et le plafond. Les politiques de QoS adaptative pour l'IOPS/To, qui ont été introduites à ONTAP 9.3, utilisent les termes « attendus » et « pic » pour définir le sol et le plafond.
+
+Bien que ONTAP vous permet de créer ces deux types de règles de QoS, selon la méthode d'application des workloads, il existe trois manières que la règle de QoS s'affiche dans les graphiques de performances.
+
+|===
+| Type de règle | Fonctionnalité | Indicateur dans l'interface Unified Manager 
+
+
+ a| 
+Politique partagée de la qualité de service attribuée à une charge de travail unique ou règle de qualité de service non partagée attribuée à une seule charge de travail ou à plusieurs charges de travail
+ a| 
+Chaque workload peut consommer le paramètre de débit spécifié
+ a| 
+Affiche «`(QoS)` »
+
+
+
+ a| 
+Règle partagée de qualité de service attribuée à plusieurs charges de travail
+ a| 
+Toutes les charges de travail partagent le paramètre de débit spécifié
+ a| 
+Affiche «»(QoS partagée)»
+
+
+
+ a| 
+Règle de QoS adaptative attribuée à une ou plusieurs charges de travail
+ a| 
+Chaque workload peut consommer le paramètre de débit spécifié
+ a| 
+Affiche «`(QoS Adaptive)` »
+
+|===
+La figure suivante montre un exemple de l'affichage des trois options dans les tableaux des compteurs.
+
+image::../media/three-qos-policy-charts.gif[trois graphiques des politiques de qos]
+
+Lorsqu'une politique de QoS normale a été définie dans IOPS apparaît dans le graphique IOPS/To pour une charge de travail, ONTAP convertit la valeur d'IOPS en valeur d'IOPS/To, et Unified Manager affiche cette règle dans le graphique IOPS/To avec le texte « QoS, définie en IOPS ».
+
+Lorsqu'une règle de QoS adaptative qui a été définie en IOPS/To apparaît dans le graphique IOPS pour une charge de travail, ONTAP convertit la valeur IOPS/To en valeur IOPS, et Unified Manager affiche cette règle dans le graphique IOPS avec le texte « QoS Adaptive, Définis en IOPS/To utilisés » ou « QoS adaptative, définie en IOPS/To alloués » en fonction de la configuration du paramètre d'allocation d'IOPS maximal. Lorsque le paramètre d'allocation est défini sur « espace alloué », les IOPS maximales sont calculées en fonction de la taille du volume. Lorsque le paramètre d'allocation est défini sur « espace utilisé », les IOPS maximales sont calculées en fonction de la quantité de données stockées sur le volume, en tenant compte des gains d'efficacité du stockage.
+
+[NOTE]
+====
+Le tableau IOPS/To affiche les données de performances uniquement lorsque la capacité logique utilisée par le volume est supérieure ou égale à 1 To. Les écarts sont affichés dans le tableau lorsque la capacité utilisée chute en dessous de 1 To pendant la période sélectionnée.
+
+====

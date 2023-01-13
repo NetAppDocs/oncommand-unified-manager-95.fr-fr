@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Rapports vous permet d"afficher des informations détaillées sur les rapports que vous générez. Vous pouvez rechercher un rapport spécifique, enregistrer un rapport et supprimer un rapport. Vous pouvez également planifier, partager et importer un rapport.' 
+---
+= Page de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Rapports vous permet d'afficher des informations détaillées sur les rapports que vous générez. Vous pouvez rechercher un rapport spécifique, enregistrer un rapport et supprimer un rapport. Vous pouvez également planifier, partager et importer un rapport.
+
+La page Rapports affiche des groupes de rapports classés sur lesquels vous pouvez obtenir des détails spécifiques. Par défaut, les groupes de rapports se développent pour afficher les types de rapports, une vue d'ensemble des rapports et des liens qui vous permettent de personnaliser les rapports. Un seul rapport peut être consulté à la fois. Vous pouvez cliquer sur le bouton *Exécuter rapport* pour afficher un rapport pour un groupe spécifique de rapports.
+
+[NOTE]
+====
+La mise en œuvre de la planification et de la génération de rapports à partir de la page Rapports sera obsolète dans une version ultérieure. Vous pouvez extraire les données d'état et de performances à partir de Unified Manager à l'aide des méthodes supplémentaires suivantes :
+
+* Extraction de données directement à partir des pages de la grille dans l'interface graphique
+* Utilisation de l'option Ouvrir la base de données pour accéder à tous les objets disponibles
+* Exécution d'API REST Unified Manager pour renvoyer les informations que vous souhaitez consulter
+
+
+====
+Vous trouverez ci-dessous une liste de groupes de rapports et de types de rapports affichés dans la page Rapports :
+
+* Rapports sur l'utilisation de la capacité
++
+** Récapitulatif du stockage
+** Capacité et utilisation globales
+** Capacité du volume et utilisation
+** Capacité et utilisation des qtrees
+
+
+* Rapports opérationnels - événements
+* Rapports d'inventaire
++
+** Inventaire des clusters
+** Exports NFS
+** Inventaire SVM
+
+
+* Rapports importés
+* Rapports sur la protection des données
++
+** Configuration de la protection des données sur les volumes
+** Volume relations Inventory
+** Statut du transfert de volume (historique)
+** Taux de transfert de volume (historique)
+
+
+

@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les graphiques des compteurs d"IOPS de Performance Explorer affichent le nombre d"opérations d"entrée/sortie traitées par seconde par l"objet de stockage sélectionné.' 
+---
+= Graphiques des compteurs de performances d'IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les graphiques des compteurs d'IOPS de Performance Explorer affichent le nombre d'opérations d'entrée/sortie traitées par seconde par l'objet de stockage sélectionné.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Lorsqu'elles sont affichées dans la vue Zoom, les graphiques IOPS du volume et de la LUN affichent également les paramètres de seuil de débit maximum et minimum de qualité de service (QoS), si cette option est configurée dans ONTAP. Les graphiques IOPS/To affichent les paramètres de pic de QoS et de seuil de débit attendu, le cas échéant.
+
+Lors de l'affichage d'un volume ou d'une LUN qui partage les IOPS d'une politique de QoS partagée, une ligne pour « IOPS totales de la charge de travail » est affichée pour afficher les IOPS utilisées par toutes les autres charges de travail qui partagent cette politique.
+
+La partie inférieure de la page du graphique affiche les informations relatives aux IOPS minimale, maximale, moyenne et 95e percentile pour la plage de temps sélectionnée.
+
+Il existe quatre types de graphiques relatifs aux IOPS :
+
+
+
+== IOPS - Tableau compteur total
+
+Affiche le nombre d'opérations d'entrée/sortie traitées par seconde.
+
+
+
+== IOPS : tableau des compteurs
+
+Affiche les mêmes données IOPS séparées en lecture, en écriture et en autres IOPS.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume ou une LUN.
+
+
+
+== IOPS - diagramme compteur protocoles
+
+Affiche les mêmes données IOPS, mais pour les SVM, les données de performance sont séparées en composants individuels pour le trafic de protocole CIFS, NFS, FCP, NVMe et iSCSI.
+
+
+
+== IOPS/To : tableau compteur total
+
+Affiche le nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace logique total utilisé par le volume, en téraoctets. Également appelé densité des E/S, ce compteur mesure le niveau de performances qu'une quantité donnée de capacité de stockage peut fournir.
+
+Cette option de graphique est disponible uniquement lorsque l'objet sélectionné est un volume. Il affiche les données de performances uniquement lorsque la capacité logique utilisée par le volume est supérieure ou égale à 1 To. Les espaces s'affichent dans le tableau lorsque la capacité utilisée tombe en dessous de 1 To pendant la période sélectionnée.
+
+[NOTE]
+====
+Dans certains cas, le graphique IOPS/To peut afficher des pics importants de données alors que le graphique IOPS n'affiche pas le même comportement. Il s'agit d'une limitation connue où certaines données de performances sont capturées moins souvent que d'autres données de performances. Ce graphique revient généralement au fonctionnement normal en 5 ou 10 minutes lorsque les cycles de collecte sont synchronisés.
+
+====
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'erreur, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement d'utilisation définie dans Unified Manager.
+
++
+La ligne rouge fixe indique la valeur du seuil critique d'utilisation définie dans Unified Manager.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] Cette option est associée à un compteur. Elle masque et affiche les informations relatives aux compteurs fournies dans le graphique, et peut vous aider lors de la comparaison des IOPS d'objet.
+
+

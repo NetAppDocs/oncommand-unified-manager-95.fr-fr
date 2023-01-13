@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de connectivité fournissent des informations sur la connectivité entre les composants d"un cluster et entre les clusters d"une configuration MetroCluster, ce qui vous permet de contrôler l"éventualité d"un problème. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de la connectivité MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de connectivité fournissent des informations sur la connectivité entre les composants d'un cluster et entre les clusters d'une configuration MetroCluster, ce qui vous permet de contrôler l'éventualité d'un problème. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Toutes les liaisons inter-commutateurs Down (ocumEvtMetroClusterAllISLBetweenSwitchesDown)
+ a| 
+Gestion des
+ a| 
+Connexion inter-commutateurs MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Tous les liens entre les partenaires MetroCluster Down(ocumEvtMetroClusterAllLinksBetweenisDown)
+ a| 
+Gestion des
+ a| 
+Relation MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Lien descendant entre la passerelle FC-SAS et la pile de stockage (ocumEvtBridgeSasPortDown)
+ a| 
+Gestion des
+ a| 
+Connexion de la pile de pont MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Configuration MetroCluster commutée par la fonction ((ocumEvtMetroClusterDRStatusImpaced)
+ a| 
+Risques
+ a| 
+Relation MetroCluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Configuration MetroCluster partiellement commutée(ocumEvtMetroClusterDRStatusPartiallyImpaced)
+ a| 
+Risques
+ a| 
+Relation MetroCluster
+ a| 
+Erreur
+
+
+
+ a| 
+Fonctionnalité de reprise après incident MetroCluster impactée (ocumEvtMetroClusterDRStatusImpacted)
+ a| 
+Risques
+ a| 
+Relation MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Les partenaires MetroCluster ne sont pas accessibles via le réseau de peering(ocumEvtMetroClusterPartenairesNotReachableOverPeeringNetwork)
+ a| 
+Gestion des
+ a| 
+Relation MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Switch nœud à FC tous les liens d'interconnexion FC-VI Down(ocumEvtMccNodeSwitchFcviLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion du switch de nœud MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Lien nœud vers commutateur FC une ou plusieurs liaisons FC-Initiator Down (ocumEvtMccNodeSwitchFcLinksOneOrMoreDown)
+ a| 
+Risques
+ a| 
+Connexion du switch de nœud MetroCluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Switch Node to FC tous les liens FC-Initiator Down(ocumEvtMccNodeSwitchFcLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion du switch de nœud MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Basculer vers FC Bridge FC Link Down (ocumEvtMccSwitchBridgeFcLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion du pont du commutateur MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Inter Node All FC VI Interconnect Links Down (ocumEvtMccInterNodeLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion inter-nœuds
+ a| 
+Primordial
+
+
+
+ a| 
+Inter Node, une ou plusieurs liaisons d'interconnexion VI FC (ocumEvtMccInterNodeLinksOneOrMoreDown)
+ a| 
+Risques
+ a| 
+Connexion inter-nœuds
+ a| 
+Avertissement
+
+
+
+ a| 
+Lien nœud vers pont descendant (ocumEvtMccNodeBridgeLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion de pont de nœud
+ a| 
+Primordial
+
+
+
+ a| 
+Nœud vers stockage tous les liens SAS vers le bas ( ocumEvtMccNodeStackLinksDown)
+ a| 
+Gestion des
+ a| 
+Connexion à la pile de nœuds
+ a| 
+Primordial
+
+
+
+ a| 
+Nœud à pile de stockage une ou plusieurs liaisons SAS vers le bas ( ocumEvtMccNodeStackLinksOneOrMoreDown)
+ a| 
+Risques
+ a| 
+Connexion à la pile de nœuds
+ a| 
+Avertissement
+
+|===

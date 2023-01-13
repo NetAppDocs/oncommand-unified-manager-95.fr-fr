@@ -1,0 +1,55 @@
+---
+permalink: install/concept-unified-manager-service-resources-for-vcs-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous devez ajouter les ressources de service de cluster Unified Manager à Veritas Cluster Server \(VCS\). Ces ressources de service de cluster sont utilisées à diverses fins, telles que le contrôle des systèmes de stockage, la planification des tâches, le traitement des événements et la surveillance de tous les autres services Unified Manager.' 
+---
+= Ressources du service Unified Manager pour la configuration de VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez ajouter les ressources du service de cluster Unified Manager au serveur Veritas Cluster Server (VCS). Ces ressources de service de cluster sont utilisées à diverses fins, telles que le contrôle des systèmes de stockage, la planification des tâches, le traitement des événements et la surveillance de tous les autres services Unified Manager.
+
+Le tableau suivant répertorie la catégorie de tous les services Unified Manager :
+
+|===
+| Catégorie | Administratifs 
+
+
+ a| 
+Ressource de stockage
+ a| 
+* `vol`
+* `mount`
+
+
+
+
+ a| 
+Ressources de base de données
+ a| 
+* `mysqld`
+
+
+
+
+ a| 
+Ressources réseau
+ a| 
+* `nic`
+* `vip`
+
+
+
+
+ a| 
+Ressource Unified Manager
+ a| 
+* `ocie`
+* `ocieau`
+
+
+|===

@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer un serveur d"authentification si vous souhaitez empêcher le serveur Unified Manager de communiquer avec le serveur d"authentification. Par exemple, si vous souhaitez modifier un serveur d"authentification avec lequel le serveur de gestion communique, vous pouvez supprimer le serveur d"authentification et ajouter un nouveau serveur d"authentification.' 
+---
+= Suppression des serveurs d'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer un serveur d'authentification si vous souhaitez empêcher le serveur Unified Manager de communiquer avec le serveur d'authentification. Par exemple, si vous souhaitez modifier un serveur d'authentification avec lequel le serveur de gestion communique, vous pouvez supprimer le serveur d'authentification et ajouter un nouveau serveur d'authentification.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Description de la tâche
+
+Lorsque vous supprimez un serveur d'authentification, les utilisateurs ou groupes distants du serveur d'authentification ne pourront plus accéder à Unified Manager.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, sélectionnez un ou plusieurs serveurs d'authentification que vous souhaitez supprimer, puis cliquez sur *Supprimer*.
+. Cliquez sur *Oui* pour confirmer la demande de suppression.
++
+Si l'option *Use Secure Connection* est activée, les certificats associés au serveur d'authentification sont supprimés avec le serveur d'authentification.
+
+

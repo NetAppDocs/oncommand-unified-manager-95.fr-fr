@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez examiner les charges de travail du groupe de règles de qualité de service \(QoS\) ayant le plus grand changement d"activité pour déterminer si plusieurs charges de travail ont provoqué l"événement. Vous savez également si d"autres charges de travail dépassent la limite de débit définie ou si elles restent dans la plage d"activité attendue.' 
+---
+= Vérifier si les autres volumes du groupe de règles de QoS ont une activité particulièrement élevée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Examinez les charges de travail du groupe de règles de qualité de service (QoS) avec le changement d'activité le plus important pour déterminer si plusieurs charges de travail ont été à l'origine de l'événement. Vous savez également si d'autres charges de travail dépassent la limite de débit définie ou si elles restent dans la plage d'activité attendue.
+
+Sur la page Détails de l'événement, dans la section diagnostic du système, vous pouvez trier les charges de travail par déviation maximale de l'activité pour afficher les charges de travail avec le changement d'activité le plus important en haut du tableau. Ces charges de travail peuvent être les « mensonges » dont l'activité a dépassé la limite définie et qui ont pu provoquer l'événement.
+
+Pour consulter l'activité en E/S par seconde, accédez à la page Performance/Volume Details pour chaque charge de travail de volume du graphique. Si la charge de travail a des périodes d'activité très élevées, elle a peut-être contribué à l'événement. Vous pouvez modifier les paramètres du groupe de règles pour la charge de travail ou déplacer la charge de travail vers un autre groupe de règles.
+
+Pour gérer les groupes de règles, vous pouvez utiliser OnCommand System Manager ou les commandes de l'interface de ligne de commandes ONTAP :
+
+* Création d'une « policy group ».
+* Ajout ou suppression de charges de travail dans un « policy group »
+* Déplacez une charge de travail entre les groupes de règles.
+* Modifier la limite de débit d'un groupe de règles.
+

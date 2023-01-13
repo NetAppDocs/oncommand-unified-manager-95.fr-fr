@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page installation/Workflow Automation vous permet de configurer les paramètres afin d"intégrer OnCommand Workflow Automation à Unified Manager. Vous pouvez également ajouter, modifier ou supprimer les paramètres.' 
+---
+= Page installation/Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page installation/Workflow Automation vous permet de configurer les paramètres afin d'intégrer OnCommand Workflow Automation à Unified Manager. Vous pouvez également ajouter, modifier ou supprimer les paramètres.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Utilisateur de la base de données Unified Manager
+
+Cette zone vous permet de saisir les informations d'identification d'un utilisateur de base de données requis pour l'association d'Unified Manager avec Workflow Automation :
+
+* *Nom*
++
+Permet de spécifier le nom d'utilisateur d'un utilisateur de base de données pouvant être utilisé pour accéder aux données de la base de données Unified Manager. Par défaut, aucun utilisateur de base de données n'est sélectionné. Vous pouvez sélectionner un utilisateur de base de données dans la liste déroulante.
+
+* *Mot de passe*
++
+Vous permet de spécifier un mot de passe pour le nom d'utilisateur spécifié.
+
+
+
+
+
+== Informations d'identification OnCommand Workflow Automation
+
+Cette zone vous permet de saisir les identifiants d'un compte Workflow Automation requis pour effectuer une association avec Unified Manager :
+
+* *Nom d'hôte ou adresse IP*
++
+Spécifie le nom ou l'adresse IP du serveur hôte Workflow Automation, qui est utilisé pour le couplage avec Unified Manager.
+
+* *Port*
++
+Affiche le numéro de port requis du serveur hôte Workflow Automation, soit 443.
+
+* *Nom d'utilisateur*
++
+Vous permet de spécifier un nom d'utilisateur pouvant être utilisé pour vous connecter à Workflow Automation.
+
+* *Mot de passe*
++
+Vous permet de spécifier un mot de passe pour le nom d'utilisateur spécifié.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent de supprimer, d'enregistrer ou d'annuler les options de configuration :
+
+* *Supprimer configuration*
++
+Supprime la configuration de Workflow Automation de Unified Manager.
+
+* *Enregistrer*
++
+Enregistre les paramètres de configuration pour l'option sélectionnée.
+
+

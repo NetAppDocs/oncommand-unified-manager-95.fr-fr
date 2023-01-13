@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-event-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher les détails d"un événement déclenché par Unified Manager pour effectuer une action corrective. Par exemple, si un événement de santé est hors ligne, vous pouvez cliquer sur cet événement pour afficher les détails et effectuer les actions correctives nécessaires.' 
+---
+= Affichage des détails de l'événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les détails d'un événement déclenché par Unified Manager pour effectuer une action corrective. Par exemple, si un événement de santé est hors ligne, vous pouvez cliquer sur cet événement pour afficher les détails et effectuer les actions correctives nécessaires.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Les détails de l'événement incluent des informations telles que la source de l'événement, la cause de l'événement et toute note liée à l'événement.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Dans la page d'inventaire *Events*, cliquez sur le nom de l'événement pour lequel vous souhaitez afficher les détails.
++
+Les détails de l'événement s'affichent sur la page Détails de l'événement.
+
+

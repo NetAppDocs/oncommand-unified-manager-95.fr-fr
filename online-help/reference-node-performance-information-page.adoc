@@ -1,0 +1,117 @@
+---
+permalink: online-help/reference-node-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez la page Performance/Node information pour afficher la liste des attributs physiques et logiques du nœud. Ces informations peuvent aider à répondre aux questions relatives aux performances. 
+---
+= Page informations sur les performances/nœuds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/Node information pour afficher la liste des attributs physiques et logiques du nœud. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs de nœud
+
+* *Adresse IP*
++
+Adresse IPv4 ou IPv6 de la LIF de node-management.
+
+* *FQDN*
++
+Le nom de domaine complet (FQDN) du LIF de node management.
+
+* *Version OS*
++
+Version du logiciel ONTAP installée sur le nœud.
+
+* *Modèle / famille*
++
+Numéro de modèle de la plateforme du nœud.
+
+* *Capacité (libre/total)*
++
+Espace de stockage total disponible pour le nœud, en gigaoctets et quantité de stockage actuellement disponible.
+
+* *Cluster*
++
+Nom du cluster auquel appartient ce nœud. Vous pouvez cliquer sur le nom pour afficher les détails du cluster sur la page Performance/Cluster Explorer.
+
+* *Partenaire HA*
++
+Le nom du nœud partenaire HA, le cas échéant. Vous pouvez cliquer sur le nom pour afficher les informations sur le nœud partenaire dans la page de l'explorateur des performances/nœuds.
+
+* *Agrégats*
++
+Le nombre d'agrégats sur ce nœud. Vous pouvez cliquer sur le nombre pour afficher les agrégats sur la page Inventaire des performances/agrégats.
+
++
+[NOTE]
+====
+Le numéro indiqué ici peut ne pas correspondre au numéro de la page Inventaire des performances/agrégats car la page d'inventaire n'inclut pas les agrégats racine.
+
+====
+* *Ports*
++
+Le nombre de ports sur ce nœud. Vous pouvez cliquer sur le nombre pour afficher les ports sur la page Inventaire des performances/ports.
+
++
+[NOTE]
+====
+Le numéro indiqué ici peut ne pas correspondre au numéro de la page d'inventaire performances/ports car la page d'inventaire n'inclut pas de ports de gestion de nœuds.
+
+====
+* *Contact / emplacement*
++
+Le cas échéant, le nom de l'administrateur à contacter concernant ce nœud et l'emplacement du nœud.
+
+* * Nombre de cœurs / vitesse*
++
+Si disponible, le nombre de cœurs de processeur sur le contrôleur et la vitesse des cœurs de processeur.
+
+* *RAM*
++
+Si disponible, la mémoire totale disponible sur le contrôleur.
+
+
+
+
+
+== Périphériques Flash
+
+[NOTE]
+====
+Les données de Flash cache s'affichent uniquement pour les nœuds et uniquement lorsqu'un module Flash cache est installé sur le nœud.
+
+====
+* *Numéro d'emplacement*
++
+Numéro de slot dans lequel le module Flash cache est installé.
+
+* *Statut*
++
+État de fonctionnement du module. Valeurs valides :
+
++
+** En ligne
+** Offline_FAILED
+** Seuil_hors_ligne
+
+
+* *Modèle / famille*
++
+Numéro de modèle du module.
+
+* *Micrologiciel Rév*
++
+Version du micrologiciel installée sur le module.
+
+* *Capacité*
++
+Taille du module Flash cache installé.
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La création de groupes dans Unified Manager permet de gérer les objets de stockage. Pour gérer les objets de stockage de votre environnement, il est important de comprendre les concepts relatifs aux groupes et la manière dont les règles de groupe permettent d"ajouter des objets de stockage à un groupe.' 
+---
+= Présentation des groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La création de groupes dans Unified Manager permet de gérer les objets de stockage. Pour gérer les objets de stockage de votre environnement, il est important de comprendre les concepts relatifs aux groupes et la manière dont les règles de groupe permettent d'ajouter des objets de stockage à un groupe.

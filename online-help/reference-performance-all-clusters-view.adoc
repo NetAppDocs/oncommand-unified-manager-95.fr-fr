@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-performance-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire des performances/clusters présente les événements de performances, les données et les informations de configuration de chaque cluster surveillé par une instance de Unified Manager. Cette page vous permet de contrôler les performances des clusters et de résoudre les problèmes de performance et les événements seuils.' 
+---
+= Page d'inventaire performances/clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire des performances/clusters présente les événements de performances, les données et les informations de configuration de chaque cluster surveillé par une instance de Unified Manager. Cette page vous permet de contrôler les performances des clusters et de résoudre les problèmes de performance et les événements seuils.
+
+Selon la manière dont vous accédez à cette page, un titre différent peut s'afficher sur la page pour indiquer si la liste a été filtrée. Par exemple, lors de l'affichage de toutes les grappes, le titre est « clusters ». Lors de l'affichage d'un sous-ensemble de grappes renvoyées à partir de la page seuils politiques, le titre est « clusters sur lesquels la règle XYZ est appliquée ».
+
+Les boutons situés en haut de la page vous permettent d'effectuer des recherches pour localiser des données spécifiques, créer et appliquer des filtres pour limiter la liste des données affichées, exporter les données de la page vers un `.csv` et ajouter ou supprimer des colonnes de la page.
+
+Par défaut, les objets sur les pages d'inventaire des objets sont triés en fonction du caractère critique de l'événement de performance de l'objet. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Les valeurs des compteurs de performances sont basées sur une moyenne des 72 heures de données précédentes ou plus, comme indiqué sur la page. Vous pouvez cliquer sur le bouton Actualiser pour mettre à jour les données d'inventaire des objets.
+
+Vous pouvez affecter des stratégies de seuil de performances à ou effacer des stratégies de seuil à partir de n'importe quel objet des pages d'inventaire d'objets à l'aide des boutons *affecter la stratégie de seuil de performances* et *Effacer la stratégie de seuil de performances*.
+
+
+
+== Colonnes de la page d'inventaire des clusters
+
+La page d'inventaire performances/clusters contient les colonnes suivantes pour chaque cluster.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Cluster*
++
+Nom du cluster. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des informations détaillées sur les performances du cluster.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde sur le cluster.
+
+* *Mbit/s*
++
+Le débit sur le cluster se mesure en mégaoctets par seconde.
+
+* *Capacité libre*
++
+La capacité de stockage inutilisée de ce cluster, en gigaoctets.
+
+* *Capacité totale*
++
+Capacité de stockage totale pour ce cluster, en gigaoctets.
+
+* *Nombre de nœuds*
++
+Nombre de nœuds dans le cluster. Vous pouvez cliquer sur le nombre de nœuds pour accéder à la page d'inventaire performances/nœuds.
+
+* *Nom d'hôte ou adresse IP*
++
+Le nom d'hôte ou l'adresse IP (IPv4 ou IPv6) de la LIF de gestion du cluster.
+
+* *N° de série*
++
+Le numéro d'identification unique du cluster.
+
+* *Version OS*
++
+Version du logiciel ONTAP installée sur le cluster.
+
++
+[NOTE]
+====
+Si différentes versions du logiciel ONTAP sont installées sur les nœuds du cluster, le numéro de version le plus faible est indiqué. Vous pouvez afficher la version de ONTAP installée sur chaque nœud depuis la page d'inventaire performances/nœuds.
+
+====
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

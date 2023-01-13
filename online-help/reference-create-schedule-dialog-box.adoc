@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-create-schedule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La boîte de dialogue Créer un planning de protection permet de créer une planification de base ou avancée pour les transferts de relations SnapMirror et SnapVault. Vous pouvez créer un nouveau programme pour augmenter la fréquence des transferts de données en raison de mises à jour fréquentes de données, ou vous pouvez créer un programme moins fréquent lorsque les données changent rarement. 
+---
+= Créer un programme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Créer un planning de protection permet de créer une planification de base ou avancée pour les transferts de relations SnapMirror et SnapVault. Vous pouvez créer un nouveau programme pour augmenter la fréquence des transferts de données en raison de mises à jour fréquentes de données, ou vous pouvez créer un programme moins fréquent lorsque les données changent rarement.
+
+Impossible de configurer le planning pour les relations SnapMirror synchrone.
+
+* *Cluster de destination*
++
+Nom du cluster sélectionné dans l'onglet SnapVault ou SnapMirror de la boîte de dialogue configurer la protection.
+
+* *Nom de l'annexe*
++
+Nom que vous indiquez pour le planning. Les noms d'horaires peuvent comprendre les caractères A à Z, a à z, 0 à 9, ainsi que l'un des caractères spéciaux suivants : ! @ # $ % {caret} et * ( ) _ -. Les noms d'horaires ne peuvent pas comprendre les caractères suivants : < >.
+
+* *De base ou Avancé*
++
+Le mode de planification que vous souhaitez utiliser.
+
++
+Le mode de base comprend les éléments suivants :
+
++
+** Recommencez
++
+Fréquence d'un transfert planifié. Vous pouvez choisir entre l'heure, le jour et la semaine.
+
+** Jour
++
+Lorsqu'une répétition hebdomadaire est sélectionnée, le jour de la semaine où un transfert a lieu.
+
+** Temps
++
+Lorsque l'option quotidien ou hebdomadaire est sélectionnée, l'heure du jour où un transfert a lieu.
+
+
+
++
+Le mode avancé comprend les éléments suivants :
+
++
+** Mois
++
+Liste numérique séparée par des virgules représentant les mois de l'année. Les valeurs valides sont de 0 à 11, zéro représentant janvier, etc. Cet élément est facultatif. Si vous quittez le champ vide, les transferts se produisent tous les mois.
+
+** Jours
++
+Liste numérique séparée par des virgules représentant le jour du mois. Les valeurs valides sont de 1 à 31. Cet élément est facultatif. Si vous quittez le champ vide, un transfert se produit tous les jours du mois.
+
+** Jours de semaine
++
+Liste numérique séparée par des virgules représentant les jours de la semaine. Les valeurs valides sont de 0 à 6, 0 représentant le dimanche, etc. Cet élément est facultatif. Si vous quittez le champ vide, un transfert se produit tous les jours de la semaine. Si un jour de la semaine est spécifié mais qu'un jour du mois n'est pas spécifié, un transfert n'a lieu que le jour spécifié de la semaine et non tous les jours.
+
+** Heures
++
+Liste numérique séparée par des virgules représentant le nombre d'heures d'un jour. Les valeurs valides sont de 0 à 23, 0 représentant minuit. Cet élément est facultatif.
+
+** Quelques minutes
++
+Liste numérique séparée par des virgules représentant les minutes en une heure. Les valeurs valides sont comprises entre 0 et 59. Cet élément est requis.
+
+
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez surveiller la capacité et la disponibilité de vos serveurs virtuels de stockage \(SVM\) à l"aide d"Infinite Volume. Vous pouvez gérer le contenu de votre serveur virtuel de stockage \(SVM\) avec Infinite Volume en créant des règles et des règles de données.' 
+---
+= Gestion et surveillance d'Infinite volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller la capacité et la disponibilité de vos SVM grâce à Infinite Volume. Vous pouvez gérer le contenu de votre serveur virtuel de stockage (SVM) avec Infinite Volume en créant des règles et des règles relatives aux données.

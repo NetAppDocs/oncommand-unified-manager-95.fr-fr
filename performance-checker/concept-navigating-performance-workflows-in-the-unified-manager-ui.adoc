@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"interface Unified Manager fournit de nombreuses pages pour la collecte et l"affichage des informations relatives aux performances. Le panneau de navigation de gauche vous permet de naviguer jusqu"aux pages de l"interface graphique et vous utilisez des onglets et des liens sur les pages pour afficher et configurer des informations.' 
+---
+= Navigation dans les workflows de performances dans l'interface graphique d'Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'interface Unified Manager fournit de nombreuses pages pour la collecte et l'affichage des informations relatives aux performances. Le panneau de navigation de gauche vous permet de naviguer jusqu'aux pages de l'interface graphique et vous utilisez des onglets et des liens sur les pages pour afficher et configurer des informations.
+
+Vous utilisez toutes les pages suivantes pour contrôler et dépanner les informations relatives aux performances du cluster :
+
+* pages du tableau de bord
+* pages d'inventaire des objets de stockage
+* pages d'accueil des objets de stockage (y compris l'explorateur de performances)
+* pages de configuration et de configuration
+* pages événements
+
+
+[NOTE]
+====
+Il est possible qu'une page dans Unified Manager affiche un grand nombre d'informations. Pour afficher toutes les informations disponibles, faites toujours défiler jusqu'en bas de la page.
+
+====

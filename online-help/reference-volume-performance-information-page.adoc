@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez cette page pour afficher la liste des attributs physiques et logiques du volume. Ces informations peuvent aider à répondre aux questions relatives aux performances. Le titre de cette page dépend que vous visualisez un volume FlexVol ou FlexGroup. 
+---
+= Page d'informations Performance/Volume ou Performance/FlexGroup
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez cette page pour afficher la liste des attributs physiques et logiques du volume. Ces informations peuvent aider à répondre aux questions relatives aux performances. Le titre de cette page dépend que vous visualisez un volume FlexVol ou FlexGroup.
+
+
+
+== Attributs de volume
+
+* *Type*
++
+Type du volume : lecture-écriture (RW) ou protection des données (DP).
+
+* *Style*
++
+Style de volume : FlexVol ou FlexGroup.
+
++
+[NOTE]
+====
+Les pages de performances de Unified Manager ne prennent pas en charge Infinite Volume.
+
+====
+* *Cluster*
++
+Nom du cluster auquel appartient le volume FlexVol ou FlexGroup. Vous pouvez cliquer sur le nom pour afficher les détails du cluster dans la page Performance/Cluster Explorer.
+
+* *Agrégats*
++
+Le nom de l'agrégat sur lequel réside ce volume FlexVol ou le nombre d'agrégats sur lequel réside ce volume FlexGroup
+
++
+Pour les volumes FlexVol, vous pouvez cliquer sur le nom pour afficher les informations détaillées sur l'agrégat dans la page de l'explorateur de performances/agrégats. Pour les volumes FlexGroup, vous pouvez cliquer sur le nombre pour afficher les agrégats utilisés dans ce volume FlexGroup sur la page d'inventaire des performances/de l'agrégat.
+
+* *Machine virtuelle de stockage*
++
+Nom du SVM auquel appartient le volume FlexVol ou FlexGroup. Vous pouvez cliquer sur le nom pour afficher les détails des SVM dans la page de l'explorateur de performances/SVM.
+
+* *Politique de hiérarchisation*
++
+La règle de Tiering définie sur le volume. La politique n'affecte que lorsque le volume est déployé sur un agrégat FabricPool. Les politiques disponibles sont les suivantes :
+
++
+** Aucune. Les données de ce volume restent ainsi toujours sur le Tier de performance.
+** Snapshot uniquement. Seules les données Snapshot sont déplacées automatiquement vers le niveau cloud. Toutes les autres données restent sur le Tier de performance.
+** Sauvegarde. Sur les volumes de protection des données, toutes les données utilisateur transférées commencent dans le Tier cloud, mais les lectures ultérieures des clients peuvent déplacer les données fortement sollicitées vers le Tier de performance.
+** Automatique. Les données de ce volume sont automatiquement déplacées entre le Tier de performance et le Tier cloud lorsque ONTAP détermine que les données sont « actives » ou « inactives ».
+
+
+* *Type RAID*
++
+Type de redondance utilisé sur le Tier de performance de l'agrégat dans lequel réside ce volume. Types possibles :
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
++
+[NOTE]
+====
+La valeur « non applicable » est affichée pour les volumes FlexGroup, car les volumes constitutifs peuvent se trouver sur des agrégats de différents types RAID.
+
+====
+* *Capacité (libre/total)*
++
+Espace de stockage total disponible sur le volume, en gigaoctets et quantité de stockage actuellement disponible.
+
+

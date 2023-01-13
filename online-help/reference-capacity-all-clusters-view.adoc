@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-capacity-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Health/clusters Storage Summary vous permet d"afficher des informations résumées sur la capacité de stockage et l"utilisation de tous les clusters. Ces informations vous aident à comprendre les risques potentiels en matière de capacité et à prendre les mesures appropriées pour rééquilibrer les charges de travail.' 
+---
+= Santé/clusters - Récapitulatif du stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Health/clusters Storage Summary vous permet d'afficher des informations résumées sur la capacité de stockage et l'utilisation de tous les clusters. Ces informations vous aident à comprendre les risques potentiels en matière de capacité et à prendre les mesures appropriées pour rééquilibrer les charges de travail.
+
+Utilisez le bouton *Exporter* pour exporter les détails de tous les clusters surveillés vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+* *Cluster*
++
+Nom du cluster.
+
+* *Paire HA*
++
+Valeur de la paire HA obtenue en formant deux nœuds.
+
+* *Modèle/famille*
++
+Nom du modèle ou de la famille du cluster.
+
+* *Version OS*
++
+Version de ONTAP installée sur le système.
+
+* *Capacité brute totale*
++
+Affiche la capacité physique totale de tous les disques de la matrice.
+
+* *Capacité brute non configurée*
++
+Capacité non configurée des disques dont le type de conteneur est autre que l'agrégat, cassé, disponible ou partagé. Cette capacité est toujours supérieure à la capacité physique du disque en ONTAP. Prenons l'exemple d'un disque de 2 To. La capacité physique du disque est de 1.6 To dans le ONTAP, tandis que la capacité brute non configurée dans Unified Manager est de 1.8 To.
+
+* *Capacité totale totale cumulée*
++
+Taille totale des agrégats disponibles pour l'utilisateur. Cela inclut la réserve Snapshot.
+
+* *Capacité utilisée agrégée*
++
+La capacité déjà utilisée sur des agrégats. Cela inclut la capacité consommée par les volumes, les LUN et d'autres surcharges technologiques d'efficacité du stockage.
+
+* *Capacité inutilisée de l'agrégat*
++
+Capacité disponible pour le stockage de données supplémentaires sur l'agrégat. Cela inclut la réserve Snapshot.
+
+* *Capacité LUN allouée*
++
+Capacité des LUN mappées.
+
+* *Capacité de LUN non allouée*
++
+Capacité de toutes les LUN non mappées à l'hôte.
+
+* *Volume capacité totale*
++
+Capacité totale des volumes (utilisée plus inutilisée).
+
+* *Volume utilisé capacité*
++
+Capacité utilisée des volumes.
+
+* *Volume capacité inutilisée*
++
+Capacité inutilisée des volumes.
+
+* *Capacité de protection du volume*
++
+Capacité des volumes sur lesquels SnapMirror et SnapVault sont activés.
+
+* *Total des licences de cluster de Cloud Tier*
++
+Capacité totale disponible sous licence dans le Tier cloud. Ce champ s'affiche pour les fournisseurs de stockage qui requièrent une licence FabricPool, par exemple Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage ou Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier utilisé*
++
+Espace utilisé par les données dans le Tier cloud pour les fournisseurs de stockage qui nécessitent une licence FabricPool.
+
+* *Capacité StorageGRID du cluster utilisée*
++
+Espace utilisé par les données dans le Tier cloud pour les fournisseurs de stockage qui ne nécessitent pas de licence FabricPool, par exemple StorageGRID.
+
+

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-importing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Si vous avez créé un rapport en dehors de Unified Manager, vous pouvez importer et enregistrer le fichier de rapport à utiliser avec Unified Manager. 
+---
+= Importation de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez créé un rapport en dehors de Unified Manager, vous pouvez importer et enregistrer le fichier de rapport à utiliser avec Unified Manager.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+Vous devez vous assurer que le rapport que vous prévoyez d'importer est pris en charge par Unified Manager.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *Importer rapport*.
+. Dans la boîte de dialogue *Importer rapport*, cliquez sur *Parcourir* et sélectionnez le fichier à importer, puis entrez un nom et une brève description du rapport.
+. Cliquez sur *Importer*.
++
+Si vous ne pouvez pas importer le rapport, vous pouvez vérifier le fichier journal pour trouver l'erreur à l'origine du problème.
+
+

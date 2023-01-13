@@ -1,0 +1,62 @@
+---
+permalink: online-help/task-managing-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez gérer vos planifications de rapports à partir de la boîte de dialogue gérer les plannings de rapports. Vous pouvez ajouter un nouveau planning et afficher, modifier ou supprimer des plannings existants. 
+---
+= Gestion des planifications de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez gérer vos planifications de rapports à partir de la boîte de dialogue gérer les plannings de rapports. Vous pouvez ajouter un nouveau planning et afficher, modifier ou supprimer des plannings existants.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *gérer les plannings de rapports*.
+. Dans la boîte de dialogue *gérer les programmes de rapports*,
++
+|===
+| Les fonctions que vous recherchez... | Alors... 
+
+
+ a| 
+Afficher ou modifier un planning existant
+ a| 
+.. Sélectionnez le programme dans la liste affichée dans le volet gauche.
++
+Les détails de l'horaire s'affichent.
+
+.. Apportez les modifications nécessaires.
+.. Cliquez sur *Enregistrer* ou *Enregistrer et fermer*.
+
+
+
+
+ a| 
+Supprimer une planification existante
+ a| 
+.. Sélectionnez le programme dans la liste affichée dans le volet gauche.
++
+Les détails de l'horaire s'affichent.
+
+.. Cliquez sur *Supprimer le programme*.
+
+
+
+
+ a| 
+Ajouter une nouvelle planification
+ a| 
+.. Cliquez sur *Ajouter un programme*.
+.. Un nouveau formulaire de planification apparaît dans le volet de droite.
+.. Entrez le nom du programme, l'adresse e-mail du destinataire, le format et la fréquence du rapport, puis sélectionnez les rapports que vous souhaitez planifier.
+.. Cliquez sur *Enregistrer*. Le nouvel horaire sera ajouté à la liste des horaires.
+
+
+|===
+

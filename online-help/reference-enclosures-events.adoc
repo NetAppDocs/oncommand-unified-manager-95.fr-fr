@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-enclosures-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les armoires fournissent des informations sur l"état des armoires de tiroirs disques dans votre data Center, afin que vous puissiez contrôler l"éventualité d"un problème. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements des armoires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les armoires fournissent des informations sur l'état des armoires de tiroirs disques dans votre data Center, afin que vous puissiez contrôler l'éventualité d'un problème. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Échec des ventilateurs du tiroir disque (octaumEvtShelfFanFailed)
+ a| 
+Gestion des
+ a| 
+Tiroir de stockage
+ a| 
+Primordial
+
+
+
+ a| 
+Échec des blocs d'alimentation du tiroir disque (tiroir à tiroir disque, alimentation en panne)
+ a| 
+Gestion des
+ a| 
+Tiroir de stockage
+ a| 
+Primordial
+
+
+
+ a| 
+Tiroir disque Multipath non configuré(ocumDiskShelfConnectivtyNotInMultiPath)
+
+Cet événement ne s'applique pas aux :
+
+* Clusters qui font partie d'une configuration MetroCluster
+* Les plateformes suivantes : FAS2554, FAS2552, FAS2520 et FAS2240
+
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Avertissement
+
+
+
+ a| 
+Défaillance du chemin du tiroir disque (octumDiskShelfConnectivtyPathFailure)
+ a| 
+Risques
+ a| 
+FAS NetApp
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Tiroir disque détecté (non applicable)
+ a| 
+Événement
+ a| 
+Nœud
+ a| 
+Informations
+
+
+
+ a| 
+Tiroirs disques supprimés (non applicables)
+ a| 
+Événement
+ a| 
+Nœud
+ a| 
+Informations
+
+|===

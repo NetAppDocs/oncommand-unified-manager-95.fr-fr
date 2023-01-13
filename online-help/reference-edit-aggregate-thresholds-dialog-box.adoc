@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-edit-aggregate-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des alertes pour envoyer des notifications lorsqu"un événement lié à la capacité d"un agrégat est généré et que vous pouvez prendre des mesures correctives pour cet événement. Par exemple, pour le seuil total de l"agrégat, vous pouvez configurer une alerte pour qu"elle envoie une notification lorsque la condition persiste sur une période spécifiée.' 
+---
+= Boîte de dialogue Modifier les seuils d'agrégats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des alertes pour envoyer des notifications lorsqu'un événement lié à la capacité d'un agrégat est généré, et vous pouvez prendre les actions correctives nécessaires à l'événement. Par exemple, pour le seuil total de l'agrégat, vous pouvez configurer une alerte pour qu'elle envoie une notification lorsque la condition persiste sur une période spécifiée.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+La boîte de dialogue Modifier les seuils d'agrégat vous permet de configurer des seuils de niveau d'agrégat appliqués aux agrégats sélectionnés. Si vous configurez des seuils de niveau d'agrégat, ils sont prioritaires sur les valeurs de seuil de niveau global. Vous pouvez configurer des paramètres de seuil pour la capacité, la croissance et les copies Snapshot au niveau des agrégats. Si ces paramètres ne sont pas configurés, les valeurs de seuil globales sont appliquées.
+
+[NOTE]
+====
+Les valeurs de seuil ne s'appliquent pas à l'agrégat racine du nœud.
+
+====
+
+
+== Surface de capacité
+
+La zone capacité vous permet de définir les conditions suivantes de seuil de capacité globale :
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un agrégat est considéré comme presque plein. Il affiche également la taille de l'agrégat correspondant à la valeur de seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un agrégat est considéré comme plein. Il affiche également la taille de l'agrégat correspondant à la valeur de seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Presque surengagement*
++
+Spécifie le pourcentage auquel un agrégat est considéré comme presque surengagé.
+
+* *Surengagement*
++
+Spécifie le pourcentage auquel un agrégat est considéré comme surengagé.
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que l'agrégat n'atteigne sa capacité maximale.
+
+
+
+
+
+== Zone de croissance
+
+La zone de croissance vous permet de définir une condition de seuil de croissance globale suivante :
+
+* *Taux de croissance*
++
+Spécifie le pourcentage auquel le taux de croissance d'un agrégat est considéré comme normal avant que le système ne génère un événement Abnormal de taux de croissance global.
+
+* *Sensibilité du taux de croissance*
++
+Spécifie le facteur qui est appliqué à l'écart-type du taux de croissance d'un agrégat. Si le taux de croissance dépasse l'écart-type pris en compte, un événement anormal de taux de croissance global est généré.
+
++
+Une valeur plus faible pour la sensibilité au taux de croissance indique que l'agrégat est très sensible aux variations du taux de croissance.
+
++
+[NOTE]
+====
+Si vous modifiez la sensibilité au taux de croissance des agrégats au niveau du seuil global, la modification est également appliquée à la sensibilité au taux de croissance des volumes au niveau du seuil global.
+
+====
+
+
+
+
+== Zone des copies Snapshot
+
+La zone copies Snapshot vous permet de définir les conditions de seuil de réserve Snapshot suivantes :
+
+* *Réserve snapshot complète*
++
+Spécifie le pourcentage d'utilisation par un agrégat de tout l'espace réservé pour les copies Snapshot.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour un agrégat sélectionné :
+
+* *Rétablir les valeurs par défaut*
++
+Permet de restaurer les valeurs de seuil au niveau de l'agrégat aux valeurs globales.
+
+* *Enregistrer*
++
+Enregistre tous les paramètres de seuil.
+
+* *Enregistrer et fermer*
++
+Enregistre tous les paramètres de seuil, puis ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ignore les modifications (le cas échéant) des paramètres de seuil et ferme la boîte de dialogue.
+
+

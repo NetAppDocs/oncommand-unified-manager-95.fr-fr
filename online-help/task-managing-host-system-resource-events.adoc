@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-managing-host-system-resource-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager inclut un service qui surveille les problèmes de ressources sur le système hôte sur lequel Unified Manager est installé. Des problèmes tels que le manque d"espace disque disponible ou le manque de mémoire sur le système hôte peuvent déclencher des événements de station de gestion affichés sous forme de messages de bannière dans la partie supérieure de l"interface utilisateur.' 
+---
+= Gestion des événements de ressources du système hôte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager inclut un service qui surveille les problèmes de ressources sur le système hôte sur lequel Unified Manager est installé. Des problèmes tels que le manque d'espace disque disponible ou le manque de mémoire sur le système hôte peuvent déclencher des événements de station de gestion affichés sous forme de messages de bannière dans la partie supérieure de l'interface utilisateur.
+
+
+
+== Description de la tâche
+
+Les événements de Management Station indiquent un problème avec le système hôte sur lequel Unified Manager est installé. Les problèmes liés à la station de gestion incluent l'espace disque insuffisant sur le système hôte, Unified Manager manquant d'un cycle régulier de collecte de données et l'absence d'achèvement, ou fin tardive, de l'analyse statistique car le prochain sondage de collecte a été lancé.
+
+Contrairement à tous les autres messages d'événement Unified Manager, ces messages d'avertissement et événements critiques particuliers de la station de gestion s'affichent dans des bannières.
+
+
+
+== Étapes
+
+. Pour afficher les informations d'événement de station de gestion, effectuez les opérations suivantes :
++
+|===
+| Les fonctions que vous recherchez... | Procédez comme ça... 
+
+
+ a| 
+Afficher les détails de l'événement
+ a| 
+Cliquez sur la bannière de l'événement pour afficher la page Détails de l'événement qui contient des suggestions de solutions pour le problème.
+
+
+
+ a| 
+Afficher tous les événements de station de gestion
+ a| 
+.. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+.. Dans le volet filtres de la page d'inventaire Evénements, cliquez sur la case Management Station dans la liste Type de source.
+
+
+|===
+

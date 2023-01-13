@@ -1,0 +1,285 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire Health/Aggregates présente des informations sur les agrégats surveillés et vous permet d"afficher et de modifier les paramètres des seuils.' 
+---
+= Page d'inventaire Health/Aggregates
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire Health/Aggregates présente des informations sur les agrégats surveillés et vous permet d'afficher et de modifier les paramètres des seuils.
+
+
+
+== Boutons de commande
+
+* *Modifier les seuils*
++
+Affiche la boîte de dialogue Modifier les seuils d'agrégats, qui vous permet de modifier les paramètres de seuil d'un ou plusieurs agrégats.
+
+* *Exportation*
++
+Permet d'exporter les détails de tous les agrégats surveillés vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+
+
+
+
+== Liste d'agrégats
+
+Affiche, au format tabulaire, les propriétés de tous les agrégats découverts. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées :
+
+* *Statut*
++
+Statut actuel de l'agrégat. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
++
+Vous pouvez déplacer le pointeur de la souris sur l'état pour afficher plus d'informations sur l'événement ou les événements générés pour l'agrégat.
+
++
+Si le statut de l'agrégat est déterminé par un seul événement, vous pouvez afficher des informations telles que le nom de l'événement, l'heure et la date à laquelle l'événement a été déclenché, le nom de l'administrateur auquel l'événement est affecté et la cause de l'événement. Vous pouvez cliquer sur le bouton *Afficher les détails* pour afficher plus d'informations sur l'événement.
+
++
+Si l'état de l'agrégat est déterminé par plusieurs événements de même gravité, les trois principaux événements s'affichent avec des informations telles que le nom de l'événement, l'heure et la date du déclenchement des événements, ainsi que le nom de l'administrateur à qui l'événement est affecté. Vous pouvez afficher plus de détails sur chacun de ces événements en cliquant sur le nom de l'événement. Vous pouvez également cliquer sur le lien *Afficher tous les événements* pour afficher la liste des événements générés.
+
+* *Agrégat*
++
+Nom de l'agrégat.
+
++
+Vous pouvez déplacer le pointeur sur un agrégat pour afficher des informations telles que le dernier événement généré, le nœud qui contient l'agrégat, le type RAID, la réserve Snapshot, les copies Snapshot et l'espace alloué dans l'agrégat. Vous pouvez également afficher le nombre d'opérations de déplacement de volumes en cours.
+
+* *État*
++
+L'état actuel de l'agrégat :
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture aux volumes hébergés sur cet agrégat est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Création
++
+L'agrégat est en cours de création.
+
+** Destruction
++
+L'agrégat est en cours de destruction.
+
+** Échec
++
+L'agrégat ne peut pas être mis en ligne.
+
+** Congelé
++
+L'agrégat ne transmet pas (temporairement) de demandes.
+
+** Incohérent
++
+L'agrégat a été marqué comme corrompu. Contactez le support technique.
+
+** Fer limité
++
+Les outils de diagnostic ne peuvent pas être exécutés sur l'agrégat.
+
+** Montage
++
+L'agrégat est en cours de montage.
+
+** Partiel
++
+Au moins un disque a été trouvé pour l'agrégat, mais deux ou plusieurs disques sont manquants.
+
+** Suspendu
++
+L'agrégat est suspendu.
+
+** Mise au repos
++
+L'agrégat est en cours de suspension.
+
+** Rétablie
++
+L'opération de restauration de l'agrégat est terminée.
+
+** Démonté
++
+L'agrégat est mis hors ligne.
+
+** Démontage
++
+L'agrégat est mis hors ligne.
+
+** Inconnu
++
+Spécifie que l'agrégat est découvert, mais que les informations d'agrégat ne sont pas encore récupérées par le serveur Unified Manager.
+
+
+
+* *Nœud*
++
+Nom du contrôleur de stockage qui contient l'agrégat.
+
+* *Statut miroir*
++
+L'état du miroir de l'agrégat :
+
++
+** Mis en miroir
++
+Les données plex agrégées sont mises en miroir.
+
+** Miroir dégradé
++
+Les données plex agrégées ne peuvent pas être mises en miroir.
+
+** Resynchronisation du rétroviseur
++
+Les données plex agrégées sont en cours de mise en miroir.
+
+** Échec
++
+La mise en miroir des données plex de l'agrégat a échoué.
+
+** Configuration non valide
++
+État initial avant la création d'un agrégat.
+
+** Non initialisé
++
+L'agrégat est en cours de création.
+
+** Non mis en miroir
++
+L'agrégat n'est pas mis en miroir.
+
+** Vérification du nombre de CP en cours
++
+L'agrégat a été intégré et Unified Manager valide que le nombre de CP pour les plexes est similaire.
+
+** Limbe
++
+Il y a un problème avec les libellés d'agrégats. Le système ONTAP identifie l'agrégat, mais ne peut pas l'assimiler précisément.
+
+** Nécessite une vérification du nombre de CP
++
+L'agrégat est assimilé, mais le nombre de CP sur les deux plexes n'est pas encore validé pour être similaire.
+
+
+
++
+Lorsqu'un agrégat est en état mirror_resynchronisant, le pourcentage de resynchronisation est également affiché.
+
+* * En transition*
++
+Indique si l'agrégat a terminé la transition ou non.
+
+* *Type*
++
+Le type d'agrégat :
+
++
+** DISQUES DURS
+** Hybride
++
+Combinaison de disques durs et de disques SSD, mais Flash Pool n'a pas été activé.
+
+** Hybride (Flash Pool)
++
+Combinaison de disques durs et de disques SSD et Flash Pool est activé.
+
+** SSD
+** SSD (FabricPool)
++
+Combinaison de SSD et d'un Tier cloud
+
+** VMDisk (SDS)
++
+Disques virtuels au sein d'une machine virtuelle
+
+** Disque VMware (FabricPool)
++
+Combinaison de disques virtuels et d'un niveau cloud
+
+** LUN (FlexArray) pour les disques standard et SSD, cette colonne est vide lorsque le système de stockage surveillé exécute une version de ONTAP antérieure à 8.3.
+
+
+* *Type SnapLock*
++
+Type SnapLock de l'agrégat. Les valeurs possibles sont Compliance, Enterprise, non SnapLock.
+
+* *Capacité de données utilisée*
++
+Quantité d'espace utilisé pour les données dans l'agrégat.
+
+* *Données utilisées %*
++
+Pourcentage d'espace utilisé pour les données dans l'agrégat.
+
+* *Capacité de données disponible*
++
+Quantité d'espace disponible pour les données dans l'agrégat.
+
+* *Données disponibles %*
++
+Le pourcentage d'espace disponible pour les données dans l'agrégat.
+
+* *Capacité de données totale*
++
+La taille totale des données de l'agrégat.
+
+* *Capacité engagée*
++
+L'espace total validé pour l'ensemble des volumes de l'agrégat.
+
++
+Lorsque la croissance automatique est activée sur les volumes qui résident sur l'agrégat, la capacité validée est basée sur la taille maximale du volume définie par Autogrow, et non sur la taille du volume initial. Pour les agrégats FabricPool, cette valeur s'applique uniquement au niveau local ou de performance, et à la capacité. La quantité d'espace disponible dans le Tier cloud n'est pas reflétée dans cette valeur.
+
+* * Gain de place*
++
+Le rapport d'efficacité du stockage basé sur l'espace logique total utilisé pour stocker les données et l'espace physique total nécessaire pour le stockage des données sans les technologies d'efficacité du stockage ONTAP.
+
++
+Ce champ est renseigné uniquement lorsque le système de stockage surveillé exécute ONTAP version 9.0 ou supérieure, et uniquement pour les agrégats non racines.
+
+* *Type RAID*
++
+Le type de configuration RAID :
+
++
+** RAID 0 : tous les groupes RAID sont de type RAID 0.
+** RAID 4 : tous les groupes RAID sont de type RAID 4.
+** RAID-DP : tous les groupes RAID sont de type RAID-DP.
+** RAID-TEC : tous les RAID groupes sont de type RAID-TEC.
+** RAID mixte : l'agrégat contient des groupes RAID de différents types (RAID 0, RAID 4, RAID-DP et RAID-TEC).
+
+
+* *Espace de Tier de cloud utilisé*
++
+L'espace utilisé dans le Tier cloud, si l'agrégat est un agrégat FabricPool.
+
+
+
+
+
+== Volet filtres
+
+Vous permet de définir des filtres pour personnaliser l'affichage des informations dans la liste d'agrégats. Vous pouvez sélectionner des filtres liés à la colonne État.
+
+[NOTE]
+====
+Les filtres spécifiés dans le volet filtres remplacent les filtres spécifiés pour les colonnes de la liste agrégats.
+
+====

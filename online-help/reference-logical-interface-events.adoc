@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements LIF fournissent des informations sur l"état de vos LIF, qui vous permettent de contrôler en cas de problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements d'interface logique (LIF)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements LIF fournissent des informations sur l'état de vos LIF, qui vous permettent de contrôler en cas de problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+LIF Status down (ocumEvtLifStatusDown)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Erreur
+
+
+
+ a| 
+Basculement LIF impossible(ocumEvtLiftFailoverNotable)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Avertissement
+
+
+
+ a| 
+LIF not at Home Port (ocumEvtLiftLiftAtHomePort)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Route LIF non configurée (non applicable)
+ a| 
+Événement
+ a| 
+Interface
+ a| 
+Informations
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique de Mbit/s du réseau LIF (ocumNetworkLifMbpsincident)
+ a| 
+Gestion des
+ a| 
+Interface
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de Mbit/s du réseau LIF dépassé (ocumNetworkLifMbpsWarning)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mbit/s du LIF FCP (ocumFcpLifMbpsincident)
+ a| 
+Gestion des
+ a| 
+Interface
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de débit Mbit/s FCP (ocumFcpLifMbpsWarning)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Avertissement
+
+
+
+ a| 
+NVMf FCP LIF Mbit/s Critical Threshold brèche (ocumNvmfFcLifMbpsincident)
+ a| 
+Gestion des
+ a| 
+Interface
+ a| 
+Primordial
+
+
+
+ a| 
+NVMf FCP LIF Mbps Avertissement de seuil de saturation(ocumNvmfFcLifMbpsWarning)
+ a| 
+Risques
+ a| 
+Interface
+ a| 
+Avertissement
+
+|===

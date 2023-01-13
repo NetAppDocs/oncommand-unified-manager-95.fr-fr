@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser des rapports d"exportation NFS pour analyser des informations sur les règles d"exportation NFS et les volumes de vos systèmes de stockage. Vous pouvez par exemple personnaliser les rapports pour afficher les volumes dont les chemins de jonction et les volumes sont inaccessibles avec l"export policy par défaut.' 
+---
+= Personnalisation du rapport NFS Export
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser des rapports d'exportation NFS pour analyser des informations sur les règles d'exportation NFS et les volumes de vos systèmes de stockage. Vous pouvez par exemple personnaliser les rapports pour afficher les volumes dont les chemins de jonction et les volumes sont inaccessibles avec l'export policy par défaut.

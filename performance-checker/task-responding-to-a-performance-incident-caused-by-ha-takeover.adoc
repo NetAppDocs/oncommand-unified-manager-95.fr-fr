@@ -1,0 +1,74 @@
+---
+permalink: performance-checker/task-responding-to-a-performance-incident-caused-by-ha-takeover.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour analyser un événement de performance causé par le traitement de données élevé sur un nœud de cluster qui se trouve dans une paire haute disponibilité \(HA\). Vous pouvez également utiliser Unified Manager pour vérifier l"état de santé des nœuds afin de déterminer si des événements d"état récemment détectés sur les nœuds ont contribué à la réalisation de ces événements.' 
+---
+= Réponse à un événement de performances dynamiques provoqué par un basculement haute disponibilité
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour analyser un événement lié aux performances, causé par le traitement de données élevé sur un nœud de cluster dans une paire haute disponibilité. Vous pouvez également utiliser Unified Manager pour vérifier l'état de santé des nœuds afin de déterminer si des événements d'état récemment détectés sur les nœuds ont contribué à la réalisation de ces événements.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il doit y avoir des événements de performances nouveaux, acquittés ou obsolètes.
+
+
+
+
+== Étapes
+
+. Affichez la page *Détails de l'événement* pour afficher des informations sur l'événement.
+. Lisez la *Description*, qui décrit les charges de travail impliquées dans l'événement et le composant de cluster en conflit.
++
+Un volume victime a été affecté par le composant du cluster dans le cadre de conflits. Le nœud de traitement des données, qui a repris tous les workloads depuis son nœud partenaire, est le composant de cluster en conflit. Sous composant en conflit, l'icône traitement des données est surlignée en rouge et le nom du nœud qui traitait le traitement des données au moment de l'événement est affiché entre parenthèses.
+
+. Dans *Description*, cliquez sur le nom du volume de la victime.
++
+La page Performance/Volume Details s'affiche. En bas de la page, dans la ligne heure des événements, une icône d'événement de changement (image:../media/opm-change-icon.gif["Icône changer événement"]) Indique l'heure à laquelle Unified Manager a détecté le début de la prise de contrôle haute disponibilité.
+
+. Pointez votre curseur sur l'icône d'événement de modification pour le basculement haute disponibilité.
++
+Des informations détaillées sur le basculement haute disponibilité sont affichées dans le tableau liste des événements. Dans le graphique latence, un événement indique que le volume sélectionné a dépassé le seuil de performances défini en raison d'une latence élevée tout au long du même temps que le basculement haute disponibilité.
+
+. Sélectionnez *données d'interruption par*.
+. Sous *latence*, sélectionnez ***composants du cluster***.
+. Cliquez sur *soumettre*.
++
+Le tableau composants du cluster s'affiche. Le tableau indique la latence totale par composant de cluster.
+
+. En bas de la page, placez le curseur de la souris sur l'icône d'événement de modification correspondant au début du basculement haute disponibilité.
+. Dans le graphique *Cluster Components*, comparez la latence pour le traitement des données à la latence totale dans le graphique *latence*.
++
+Au moment du basculement haute disponibilité, le traitement des données a connu un pic d'activité suite à l'augmentation de la demande de charge de travail sur le nœud de traitement des données. La meilleure utilisation du CPU a déclenché la latence et a déclenché l'événement.
+
+. Une fois le nœud défaillant résolu, utilisez OnCommand System Manager pour effectuer un retour HA, qui déplace les workloads du nœud partenaire vers le nœud fixe.
+. Une fois le rétablissement de haute disponibilité terminé, dans Unified Manager, recherchez l'ID d'événement que vous avez enregistré à l'étape 2.
++
+L'événement déclenché par le basculement haute disponibilité s'affiche sur la page des détails de l'événement. L'événement a désormais un état obsolète, ce qui indique que l'événement est résolu.
+
+. Dans *Description*, cliquez sur le nom du volume de la victime.
++
+La page Performance/Volume Details s'affiche. En bas de la page, sur la ligne Events Time, une icône d'événement de modification indique le moment où Unified Manager a détecté l'achèvement du rétablissement haute disponibilité.
+
+. Sélectionnez *données d'interruption par*.
+. Sous *latence*, sélectionnez ***composants du cluster***.
++
+Le tableau composants du cluster s'affiche.
+
+. Au bas de la page, pointez votre curseur sur l'icône de l'événement de modification pour le rétablissement de la haute disponibilité.
++
+L'événement de modification est mis en évidence dans le tableau liste d'événements et indique que le rétablissement HA a été effectué avec succès.
+
+. Dans le graphique *Cluster Components*, comparez la latence pour le traitement des données à la latence totale dans le graphique *latence*.
++
+La latence au niveau du composant de traitement des données a diminué, ce qui a réduit la latence totale. Le nœud utilisé par le volume sélectionné pour le traitement des données a résolu l'événement.
+
+

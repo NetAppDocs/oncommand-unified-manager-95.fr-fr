@@ -1,0 +1,36 @@
+---
+permalink: config/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez redémarrer le serveur virtuel à partir de la console de maintenance d"Unified Manager. Vous devez redémarrer après avoir généré un nouveau certificat de sécurité ou en cas de problème avec la machine virtuelle.' 
+---
+= Redémarrage de la machine virtuelle Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez redémarrer le serveur virtuel à partir de la console de maintenance d'Unified Manager. Vous devez redémarrer après avoir généré un nouveau certificat de sécurité ou en cas de problème avec la machine virtuelle.
+
+
+
+== Avant de commencer
+
+L'appliance virtuelle est sous tension.
+
+En tant qu'utilisateur de maintenance, vous êtes connecté à la console de maintenance.
+
+
+
+== Description de la tâche
+
+Vous pouvez également redémarrer la machine virtuelle depuis vSphere à l'aide de l'option **redémarrer invité**. Pour plus d'informations, consultez la documentation VMware.
+
+
+
+== Étapes
+
+. Accéder à la console de maintenance.
+. Sélectionnez *Configuration du système* > *redémarrer la machine virtuelle*.
+

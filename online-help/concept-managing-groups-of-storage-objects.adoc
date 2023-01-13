@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez gérer des objets de stockage dans votre environnement en créant des groupes d"objets de stockage. Ces objets de stockage doivent satisfaire aux règles de groupe associées au groupe.' 
+---
+= Gestion de groupes d'objets de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez gérer des objets de stockage dans votre environnement en créant des groupes d'objets de stockage. Ces objets de stockage doivent satisfaire aux règles de groupe associées au groupe.

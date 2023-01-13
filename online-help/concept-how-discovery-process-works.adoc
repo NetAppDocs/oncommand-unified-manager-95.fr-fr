@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-how-discovery-process-works.html 
+sidebar: sidebar 
+keywords:  
+summary: Une fois le cluster ajouté à Unified Manager, le serveur détecte les objets du cluster et les ajoute à sa base de données. La compréhension du fonctionnement du processus de découverte vous aide à gérer les clusters de votre organisation et leurs objets. 
+---
+= Fonctionnement du processus de découverte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois le cluster ajouté à Unified Manager, le serveur détecte les objets du cluster et les ajoute à sa base de données. Le fonctionnement du processus de découverte vous permet de gérer les clusters de votre entreprise et leurs objets.
+
+L'intervalle de contrôle par défaut est de 15 minutes : si vous avez ajouté un cluster à un serveur Unified Manager, il faut 15 minutes pour afficher les détails du cluster dans l'interface utilisateur Unified Manager.
+
+L'image suivante illustre le processus de détection dans OnCommand Unified Manager :
+
+image::../media/discovery-process-oc-6-0.gif[Fonctionnement du processus de découverte]

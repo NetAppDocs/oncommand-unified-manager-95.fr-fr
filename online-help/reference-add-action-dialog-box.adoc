@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-add-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Ajouter une action de groupe vous permet de configurer des actions de groupe pouvant être appliquées aux objets de stockage d"un groupe sélectionné.' 
+---
+= Boîte de dialogue Ajouter une action de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Ajouter une action de groupe vous permet de configurer des actions de groupe pouvant être appliquées aux objets de stockage d'un groupe sélectionné.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom*
++
+Spécifie le nom de l'action.
+
+* *Description*
++
+Spécifie la description de l'action.
+
+* *Groupe*
++
+Spécifie le groupe pour lequel l'action est configurée.
+
+* *Type d'action*
++
+Spécifie le type d'action configuré. En fonction du type d'action sélectionné, la boîte de dialogue Ajouter une action de groupe se développe, ce qui vous permet de configurer une action de groupe en fournissant les valeurs requises.
+
++
+Unified Manager ne prend actuellement en charge que le type d'action de seuil de volume.
+
+
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Ajoute la nouvelle action et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Ajouter une action de groupe sans enregistrer vos modifications.
+
+

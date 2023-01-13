@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de quota d"utilisateur et de groupe vous fournissent des informations sur la capacité du quota d"utilisateur et de groupe d"utilisateurs ainsi que sur les limites de fichiers et de disques afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de quota d'utilisateur et de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de quota d'utilisateur et de groupe vous fournissent des informations sur la capacité du quota d'utilisateur et de groupe d'utilisateurs ainsi que sur les limites de fichiers et de disques afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Quota utilisateur ou de groupe espace disque limite souple dépassée(ocumEvtUserOrGroupQuotaDiskSpaceSoftLimitBreached)
+ a| 
+Risques
+ a| 
+Quota d'utilisateur ou de groupe
+ a| 
+Avertissement
+
+
+
+ a| 
+Quota utilisateur ou groupe limite matérielle de l'espace disque atteinte(ocumEvtUserOrGroupQuotaDiskSpaceHardLimitReached)
+ a| 
+Gestion des
+ a| 
+Quota d'utilisateur ou de groupe
+ a| 
+Primordial
+
+
+
+ a| 
+Quota utilisateur ou Groupe nombre de fichiers limite souple dépassée(ocumEvtUserOrGroupQuotaFileCountSoftLimitBreached)
+ a| 
+Risques
+ a| 
+Quota d'utilisateur ou de groupe
+ a| 
+Avertissement
+
+
+
+ a| 
+Quota utilisateur ou Groupe nombre de fichiers limite stricte atteinte(ocumEvtUserOrGroupQuotaFileCountHardLimitReached)
+ a| 
+Gestion des
+ a| 
+Quota d'utilisateur ou de groupe
+ a| 
+Primordial
+
+|===

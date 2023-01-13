@@ -1,0 +1,104 @@
+---
+permalink: install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez effectuer la mise à niveau de Unified Manager version 7.3 ou 9.4 vers Unified Manager 9.5. 
+---
+= Mise à niveau de l'appliance virtuelle Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effectuer la mise à niveau de Unified Manager version 7.3 ou 9.4 vers Unified Manager 9.5.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir téléchargé le `.iso` Fichier depuis le site de support NetApp.
+* Le système sur lequel vous mettez à niveau Unified Manager doit répondre à la configuration système et logicielle requise.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Besoins de l'infrastructure virtuelle]
+
++
+xref:reference-vmware-software-and-installation-requirements.adoc[Conditions requises pour le logiciel VMware et son installation]
+
+* Pour les utilisateurs de vSphere 6.5, vous devez avoir installé VMware Remote Console (VMRC).
+* Vous devez disposer des informations suivantes :
++
+** Identifiants de connexion pour le site du support NetApp
+** Informations d'identification pour l'accès à VMware vCenter Server et au client Web vSphere (pour vSphere version 6.5) ou au client vSphere (pour vSphere version 5.5 ou 6.0)
+** Informations d'identification pour l'utilisateur responsable de la maintenance Unified Manager
+
+
+
+
+
+
+== Description de la tâche
+
+Unified Manager n'est pas disponible lors du processus de mise à niveau. Pour effectuer toute opération en cours d'exécution, vous devez effectuer la mise à niveau de Unified Manager.
+
+Si vous avez associé Workflow Automation et Unified Manager, vous devez mettre à jour manuellement le nom d'hôte dans Workflow Automation.
+
+
+
+== Étapes
+
+. Dans vSphere client, cliquez sur *Accueil* > *Inventaire* > *VM et modèles*.
+. Sélectionnez la machine virtuelle (VM) sur laquelle l'appliance virtuelle Unified Manager est installée.
+. Si la machine virtuelle Unified Manager est en cours d'exécution, accédez à *Résumé* > *commandes* > *Arrêter invité*.
+. Créez une copie de sauvegarde, telle qu'un snapshot ou un clone, de la machine virtuelle Unified Manager pour créer une sauvegarde cohérente avec les applications.
+. À partir du client vSphere, mettez la machine virtuelle sous tension.
+. Sélectionnez l'image de mise à niveau Unified Manager :
++
+|===
+| Si vous utilisez... | Alors, procédez comme ça... 
+
+
+ a| 
+VSphere 5.5 ou 6.0
+ a| 
+.. Cliquez sur l'icône *lecteur de CD/DVD* et sélectionnez *connexion à l'image ISO sur le disque local*.
+.. Sélectionner `OnCommandUnifiedManager-9.5-virtual-update.iso` Et cliquez sur *Ouvrir*.
+
+
+
+
+ a| 
+VSphere 6.5
+ a| 
+.. Lancez la console à distance VMware.
+.. Cliquez sur l'icône *CDROM* et sélectionnez *connexion au fichier image disque (.iso)*.
+.. Sélectionner `OnCommandUnifiedManager-9.5-virtual-update.iso` Et cliquez sur *Ouvrir*.
+
+
+|===
+. Cliquez sur l'onglet *Console*.
+. Connectez-vous à la console de maintenance de Unified Manager.
+. Dans le *Menu principal*, sélectionnez *mise à niveau*.
++
+Un message s'affiche : Unified Manager sera indisponible durant la mise à niveau, et va reprendre une fois l'opération terminée.
+
+. Type `y` pour continuer.
++
+Un avertissement s'affiche, vous rappelant de sauvegarder la machine virtuelle sur laquelle réside l'appliance virtuelle.
+
+. Type `y` pour continuer.
++
+Le processus de mise à niveau et le redémarrage des services Unified Manager peuvent prendre plusieurs minutes.
+
+. Appuyez sur n'importe quelle touche pour continuer.
++
+Vous êtes automatiquement déconnecté de la console de maintenance.
+
+. Connectez-vous à la console de maintenance, puis vérifiez la version d'Unified Manager.
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous pouvez vous connecter à l'interface utilisateur Web pour utiliser la version mise à niveau d'Unified Manager. Notez que vous devez attendre la fin du processus de détection avant d'effectuer une tâche dans l'interface utilisateur.

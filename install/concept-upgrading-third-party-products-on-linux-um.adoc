@@ -1,0 +1,16 @@
+---
+permalink: install/concept-upgrading-third-party-products-on-linux-um.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Vous pouvez mettre à niveau des produits tiers, tels que JRE et MySQL, sur Unified Manager lorsqu"ils sont installés sur des systèmes Linux.' 
+---
+= Mise à niveau de produits tiers sous Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez mettre à niveau des produits tiers, tels que JRE et MySQL, sur Unified Manager lorsqu'ils sont installés sur des systèmes Linux.
+
+Les entreprises qui développent ces produits tiers signalent régulièrement des failles de sécurité. Vous pouvez effectuer la mise à niveau vers des versions plus récentes de ce logiciel à votre propre calendrier.

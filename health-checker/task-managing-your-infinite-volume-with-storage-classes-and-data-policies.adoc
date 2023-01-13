@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez gérer efficacement votre Infinite Volume en créant le volume Infinite Volume avec le nombre requis de classes de stockage, en configurant des seuils pour chaque classe de stockage, en créant des règles et une règle de données afin de déterminer le placement des données écrites sur Infinite Volume, en configurant la protection des données et, éventuellement, en configurant des alertes de notification. 
+---
+= Gestion de votre Infinite Volume avec des classes de stockage et des règles de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez gérer efficacement votre Infinite Volume en créant le volume Infinite Volume avec le nombre requis de classes de stockage, en configurant des seuils pour chaque classe de stockage, en créant des règles et une règle de données afin de déterminer le placement des données écrites sur Infinite Volume, en configurant la protection des données et, éventuellement, en configurant des alertes de notification.
+
+
+
+== Avant de commencer
+
+* OnCommand Workflow Automation (WFA) doit être installé.
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir créé le nombre d'agrégats requis en personnalisant le flux de travail prédéfini approprié dans WFA.
+* Vous devez avoir créé le nombre requis de classes de stockage en personnalisant le flux de travail prédéfini approprié dans WFA.
+* Vous devez avoir configuré le serveur Unified Manager en tant que source de données dans WFA, puis vous devez avoir vérifié que les données sont correctement mises en cache.
+
+
+
+
+== Description de la tâche
+
+Lors de cette tâche, vous devez basculer entre deux applications : OnCommand Workflow Automation (WFA) et OnCommand Unified Manager.
+
+La tâche fournit des étapes générales. Pour plus de détails sur l'exécution des tâches WFA, consultez la documentation _OnCommand Workflow Automation_.
+
+image::../media/cr-workflow-oc-6-0.gif[Workflow de gestion de vServer avec Infinite Volume avec des classes de stockage]
+
+
+
+== Étapes
+
+. image:../media/wfa-icon.gif["Icône de procédure WFA"] Personnalisez le flux de travail prédéfini pour définir les classes de stockage requises.
+. image:../media/wfa-icon.gif["Icône de procédure WFA"] Créez un SVM avec Infinite Volume avec le nombre requis de classes de stockage en utilisant le flux de production approprié.
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] Ajoutez le cluster contenant la SVM avec Infinite Volume à la base de données Unified Manager.
++
+Vous pouvez ajouter le cluster en fournissant l'adresse IP ou le FQDN du cluster.
+
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] xref:task-editing-storage-class-threshold-settings.adoc[En fonction des exigences de votre entreprise, modifiez les seuils pour chaque classe de stockage].
++
+Vous devez utiliser les paramètres de seuil de classe de stockage par défaut pour surveiller efficacement l'espace de classe de stockage.
+
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] xref:task-adding-alerts.adoc[Configurez les alertes de notification et les interruptions pour résoudre tout problème de disponibilité et de capacité lié à Infinite Volume].
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] xref:task-creating-rules.adoc[Définissez des règles dans la règle de données, puis activez toutes les modifications apportées à la règle]
++
+Les règles d'une règle de données déterminent le placement du contenu écrit sur Infinite Volume.
+
++
+[NOTE]
+====
+Les règles s'appliquent uniquement aux nouvelles données écrites sur Infinite Volume, sans affecter les données existantes dans Infinite Volume.
+
+====
+. image:../media/wfa-icon.gif["Icône de procédure WFA"] Créez un SVM de reprise après incident avec Infinite Volume, puis configurez une protection des données (DP) en effectuant les étapes suivantes :
++
+.. Créez un Infinite Volume de protection des données (DP) à l'aide du flux de production approprié.
+.. Configurez une relation de miroir DP entre la source et la destination à l'aide du workflow approprié.
+
+
+

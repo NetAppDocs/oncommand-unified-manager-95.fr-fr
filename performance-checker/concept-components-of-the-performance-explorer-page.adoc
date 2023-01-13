@@ -1,0 +1,72 @@
+---
+permalink: performance-checker/concept-components-of-the-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Performance Explorer vous permet de comparer les performances d"objets similaires d"un cluster, par exemple tous les volumes d"un cluster. Cette fonction est utile pour résoudre les problèmes de performances et ajuster les performances des objets. Vous pouvez également comparer des objets avec l"objet racine, qui est la référence par rapport à laquelle d"autres comparaisons d"objets sont effectuées.' 
+---
+= Composants de la page Explorateur de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Performance Explorer vous permet de comparer les performances d'objets similaires dans un cluster, par exemple tous les volumes d'un cluster. Cette fonction est utile pour résoudre les problèmes de performances et ajuster les performances des objets. Vous pouvez également comparer des objets avec l'objet racine, qui est la référence par rapport à laquelle d'autres comparaisons d'objets sont effectuées.
+
+Vous pouvez cliquer sur le bouton *Favoris* (image:../media/favorites-inactive.png[""]) pour ajouter cet objet à votre liste d'objets de stockage favoris. Un bouton bleu (image:../media/favorites-active.png[""]) indique que cet objet est déjà un favori.
+
+Vous pouvez cliquer sur le bouton *basculer vers l'affichage de l'état de santé* pour afficher la page Détails de l'état de santé de cet objet. Dans certains cas, vous apprendrez des informations importantes sur les paramètres de configuration du stockage de cet objet qui peuvent vous aider à résoudre un problème.
+
+La page de l'explorateur de performances affiche la liste des objets du cluster et leurs données de performance. Cette page affiche tous les objets de cluster du même type (par exemple, les volumes et leurs statistiques de performance spécifiques aux objets) dans un format tabulaire. Cette vue fournit une vue d'ensemble efficace des performances des objets du cluster.
+
+[NOTE]
+====
+Si « N/A » apparaît dans une cellule de la table, cela signifie qu'une valeur pour ce compteur n'est pas disponible parce qu'il n'y a pas d'E/S sur cet objet à l'heure actuelle.
+
+====
+La page Explorateur de performances contient les composants suivants :
+
+* *Plage de temps*
++
+Permet de sélectionner une plage horaire pour les données d'objet.
+
++
+Vous pouvez choisir une plage prédéfinie ou spécifier votre propre plage horaire personnalisée.
+
+* *Afficher et Comparer*
++
+Permet de sélectionner le type d'objet corrélé qui est affiché dans la grille.
+
++
+Les options disponibles dépendent du type d'objet racine et des données disponibles. Vous pouvez cliquer sur la liste déroulante Afficher et Comparer pour sélectionner un type d'objet. Le type d'objet que vous sélectionnez s'affiche dans la liste.
+
+* *Filtrage*
++
+Permet de réduire la quantité de données reçues en fonction de vos préférences.
+
++
+Vous pouvez créer des filtres qui s'appliquent aux données d'objet (par exemple, IOPS supérieures à 4). Vous pouvez ajouter jusqu'à quatre filtres simultanés.
+
+* * Comparaison*
++
+Affiche la liste des objets que vous avez sélectionnés pour la comparaison avec l'objet racine.
+
++
+Les données des objets du volet comparaison sont affichées dans les compteurs.
+
+* *Afficher les statistiques dans*
++
+Pour les volumes et les LUN, vous permet de sélectionner si les statistiques s'affichent après chaque cycle de collecte (5 minutes par défaut) ou si les statistiques sont affichées sous forme de moyenne horaire. Cette fonctionnalité vous permet d'afficher l'graphique de latence en cours de prise en charge du programme NetApp « garantie de performance ».
+
+* *Diagrammes de compteur*
++
+Affiche les données représentées sous forme graphique pour chaque catégorie de performance d'objet.
+
++
+En général, seuls trois ou quatre graphiques sont affichés par défaut. Le composant choisir des graphiques vous permet d'afficher des graphiques supplémentaires ou de masquer des graphiques spécifiques. Vous pouvez également choisir d'afficher ou de masquer la chronologie des événements.
+
+* *Calendrier des événements*
++
+Affiche les événements de performance et d'intégrité qui se produisent sur la chronologie que vous avez sélectionnée dans le composant intervalle de temps.
+
+

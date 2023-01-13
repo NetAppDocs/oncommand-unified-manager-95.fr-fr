@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-editing-a-customized-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez apporter des modifications supplémentaires à un rapport déjà personnalisé et enregistrer le rapport. Vous ne pouvez pas modifier le nom du rapport après l"avoir enregistré.' 
+---
+= Modification d'un rapport personnalisé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez apporter des modifications supplémentaires à un rapport déjà personnalisé et enregistrer le rapport. Vous ne pouvez pas modifier le nom du rapport après l'avoir enregistré.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *Exécuter le rapport* pour le rapport que vous souhaitez modifier.
++
+La page Détails du rapport s'affiche.
+
+. Modifiez le rapport si nécessaire, puis cliquez sur *actions* > *Enregistrer le rapport personnalisé*.
+. Dans la boîte de dialogue *Save Custom Report*, entrez une brève description des modifications apportées au rapport personnalisé et cliquez sur *Save*.
+

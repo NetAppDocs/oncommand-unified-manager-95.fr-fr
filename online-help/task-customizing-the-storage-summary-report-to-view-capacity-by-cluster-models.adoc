@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport récapitulatif du stockage afin d"analyser la capacité de stockage et l"utilisation des clusters, et afficher les agrégats inclus dans la capacité brute totale.' 
+---
+= Personnalisation du rapport Storage Summary pour afficher la capacité par modèle de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport récapitulatif du stockage afin d'analyser la capacité de stockage et l'utilisation des clusters, et afficher les agrégats inclus dans la capacité brute totale.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour grouper le rapport par nom de modèle, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne *modèle* et cliquez sur image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Ajouter groupe*.
+
+
+. Pour ajouter des agrégats à la capacité brute totale, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne *capacité brute totale* et cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *agrégation*.
+.. Dans la boîte de dialogue *agrégation*, décochez la case *niveau de table* et cochez la case *niveau de groupe*.
+.. Entrez un nom d'étiquette dans le champ *entrer étiquette*, si nécessaire.
+
+
+. Cliquez sur *OK*.
+. Pour ajouter des agrégats aux autres colonnes du rapport, répétez les étapes 3 et 4.
+

@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Unified Manager fournit des fonctionnalités de contrôle des performances et d"analyse de la source des événements pour les systèmes exécutant le logiciel NetApp ONTAP.' 
+---
+= Présentation de la surveillance des performances de OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager fournit des fonctionnalités de contrôle des performances et d'analyse de la source des événements pour les systèmes exécutant le logiciel NetApp ONTAP.
+
+Unified Manager vous aide à identifier les charges de travail qui surutilisent les composants du cluster et à réduire les performances des autres charges de travail sur le cluster. En définissant des règles de seuil de performances, vous pouvez également spécifier des valeurs maximales pour certains compteurs de performances afin que les événements soient générés lorsque le seuil est dépassé. Unified Manager vous alerte concernant ces événements de performance, afin de mettre en place des actions correctives et de rétablir les performances normales. Vous pouvez afficher et analyser les événements dans l'interface utilisateur Unified Manager.
+
+Unified Manager surveille les performances de deux types de charges de travail :
+
+* Les charges de travail définies par l'utilisateur
++
+Ces charges de travail sont constituées de volumes FlexVol et de volumes FlexGroup que vous avez créés dans votre cluster.
+
+* Les charges de travail définies par le système
++
+Ces workloads sont constitués d'une activité système interne.
+
+

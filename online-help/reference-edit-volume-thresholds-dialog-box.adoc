@@ -1,0 +1,158 @@
+---
+permalink: online-help/reference-edit-volume-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des alertes pour envoyer des notifications lorsqu"un événement lié à la capacité d"un volume est généré, et vous pouvez prendre des mesures correctives pour l"événement. Par exemple, pour le seuil de volume plein, vous pouvez configurer une alerte pour envoyer une notification lorsque la condition persiste sur une période donnée.' 
+---
+= Boîte de dialogue Modifier les seuils de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des alertes pour envoyer des notifications lorsqu'un événement lié à la capacité d'un volume est généré, et vous pouvez prendre des actions correctives pour l'événement. Par exemple, pour le seuil de volume plein, vous pouvez configurer une alerte pour envoyer une notification lorsque la condition persiste sur une période donnée.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+La boîte de dialogue Modifier les seuils de volume vous permet de configurer les seuils de niveau volume appliqués aux volumes sélectionnés. Lorsque les seuils sont configurés au niveau du volume, ils sont prioritaires sur les seuils de niveau groupe ou sur les valeurs de seuil de niveau global.
+
+Vous pouvez configurer des paramètres de seuil pour la capacité, les copies Snapshot, le quota qtree, la croissance et les inodes au niveau du volume. Lorsqu'une action de groupe de type seuil de volume est configurée, les valeurs de seuil d'action de groupe sont utilisées pour les paramètres qui ne sont pas configurés au niveau du volume. Lorsqu'aucune action de groupe de type de seuil de volume n'est configurée, les zones de la boîte de dialogue Modifier les seuils de volume qui ne sont pas configurées, utilisez les valeurs de seuil globales.
+
+
+
+== Surface de capacité
+
+La zone capacité vous permet de définir les conditions de seuil de capacité de volume suivantes :
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque plein. Elle affiche également la taille du volume correspondant à la valeur seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme plein. Elle affiche également la taille du volume correspondant à la valeur seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que le volume n'atteigne sa capacité maximale.
+
+
+
+
+
+== Copies Snapshot
+
+La zone copies Snapshot vous permet de définir les conditions de seuil suivantes pour les copies Snapshot dans le volume.
+
+* *Réserve snapshot complète*
++
+Spécifie le pourcentage d'espace réservé pour les copies Snapshot qui est considéré comme plein.
+
+* * Jours jusqu'à la pleine*
++
+Spécifie le nombre de jours restants avant que l'espace réservé pour les copies Snapshot n'atteigne la capacité maximale.
+
+* *Nombre*
++
+Spécifie le nombre de copies Snapshot sur un volume qui sont considérées comme trop nombreuses.
+
+
+
+
+
+== Zone de quota qtree
+
+La zone quota qtree permet de définir les conditions suivantes de seuil de quota qtree pour les volumes sélectionnés :
+
+* *Presque surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme presque surengagé par les quotas qtree.
+
+* *Surengagement*
++
+Spécifie le pourcentage auquel un volume est considéré comme suralloué par des quotas qtree.
+
+
+
+
+
+== Zone de croissance
+
+La zone de croissance vous permet de définir la condition de seuil suivante pour la croissance du volume :
+
+* *Taux de croissance*
++
+Spécifie le pourcentage auquel le taux de croissance d'un volume est considéré comme normal avant que le système ne génère un événement Volume Growth Rate Abnormal.
+
+* *Sensibilité du taux de croissance*
++
+Spécifie le facteur qui est appliqué à l'écart-type du taux de croissance d'un volume. Si le taux de croissance dépasse l'écart-type pris en compte, un événement anormal du taux de croissance du volume est généré.
+
++
+Une valeur plus faible pour la sensibilité au taux de croissance indique que le volume est très sensible aux variations du taux de croissance.
+
++
+[NOTE]
+====
+Si vous modifiez la sensibilité du taux de croissance pour les volumes au niveau seuil global, la modification est également appliquée à la sensibilité du taux de croissance pour les agrégats au niveau du seuil global.
+
+====
+
+
+
+
+== Zone des inodes
+
+La zone des inodes vous permet de définir les conditions de seuil suivantes pour les inodes :
+
+* *Presque plein*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé la plupart de ses inodes.
+
++
+Vous pouvez également utiliser les curseurs pour définir la valeur seuil.
+
+* *Complet*
++
+Spécifie le pourcentage auquel un volume est considéré comme ayant consommé l'ensemble de ses inodes.
+
++
+Vous pouvez également utiliser les curseurs pour définir la valeur seuil.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes pour un volume sélectionné :
+
+* *Rétablir les valeurs par défaut*
++
+Permet de restaurer les valeurs de seuil à l'une des valeurs suivantes :
+
++
+** Valeurs de groupe, si le volume appartient à un groupe et que ce groupe a un type d'action seuil de volume.
+** Valeurs globales, si le volume n'appartient à aucun groupe ou s'il appartient à un groupe qui n'a pas de type d'action de seuil de volume.
+
+
+* *Enregistrer*
++
+Enregistre tous les paramètres de seuil.
+
+* *Enregistrer et fermer*
++
+Enregistre tous les paramètres de seuil, puis ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ignore les modifications (le cas échéant) des paramètres de seuil et ferme la boîte de dialogue.
+
+

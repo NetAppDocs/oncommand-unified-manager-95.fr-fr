@@ -1,0 +1,35 @@
+---
+permalink: performance-checker/concept-what-available-iops-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le compteur IOPS disponibles identifie le nombre restant d"IOPS pouvant être ajouté à un nœud ou à un agrégat avant que la ressource n"atteigne sa limite. Le nombre total d"IOPS qu"un nœud peut fournir est basé sur les caractéristiques physiques du nœud : par exemple, le nombre de processeurs, la vitesse du processeur et la quantité de RAM. Le nombre total d"opérations d"E/S par seconde qu"un agrégat peut fournir dépend des propriétés physiques des disques (par exemple, un disque SATA, SAS ou SSD).' 
+---
+= Les IOPS disponibles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le compteur IOPS disponibles identifie le nombre restant d'IOPS pouvant être ajouté à un nœud ou à un agrégat avant que la ressource n'atteigne sa limite. Le nombre total d'IOPS qu'un nœud peut fournir est basé sur les caractéristiques physiques du nœud--par exemple, le nombre de processeurs, la vitesse du processeur et la quantité de RAM. Le nombre total d'opérations d'E/S par seconde qu'un agrégat peut fournir dépend des propriétés physiques des disques, par exemple un disque SATA, SAS ou SSD.
+
+Le compteur de performances disponible affiche le pourcentage de ressource qui reste disponible, mais le compteur IOPS disponible indique le nombre exact d'IOPS (charges de travail) à ajouter à une ressource avant d'atteindre la capacité de performance maximale.
+
+Par exemple, si vous utilisez une paire de systèmes de stockage FAS2520 et FAS8060, une valeur sans capacité en termes de performances de 30 % indique que vous bénéficiez de capacité de performances gratuites. Toutefois, cette valeur n'apporte aucune visibilité sur le nombre de charges de travail que vous pouvez déployer sur ces nœuds. Le compteur IOPS disponible peut indiquer que vous disposez de 500 000 IOPS disponibles sur le système FAS8060, mais que seuls 100 000 IOPS sont disponibles sur le système FAS2520.
+
+[NOTE]
+====
+Les données IOPS disponibles sont uniquement disponibles lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+La figure suivante présente un exemple de latence par rapport aux courbes IOPS pour un nœud.
+
+image::../media/available-iops.gif[iops disponibles]
+
+Le nombre maximal d'IOPS qu'une ressource peut fournir est le nombre d'IOPS lorsque la capacité de performance utilisée compteur est de 100 % (le point optimal). Le point opérationnel identifie que le nœud fonctionne actuellement à 100 000 IOPS avec une latence de 1.0 ms/op. En fonction des statistiques collectées à partir du nœud, Unified Manager détermine que les IOPS maximales du nœud sont de 160 000, ce qui signifie que 60 000 IOPS sont disponibles ou libres. Vous pouvez donc ajouter des workloads à ce nœud afin que vos systèmes soient utilisés plus efficacement.
+
+[NOTE]
+====
+Lorsque l'activité de la ressource est minimale, la valeur des IOPS disponibles est calculée en supposant qu'une charge de travail générique s'appuie sur environ 4,500 000 IOPS par cœur de processeur. En effet, Unified Manager n'a pas de données pour estimer avec précision les caractéristiques de la charge de travail traitée.
+
+====

@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une règle de groupe de OnCommand Unified Manager lorsque la règle de groupe n"est plus requise.' 
+---
+= Suppression de règles de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une règle de groupe de OnCommand Unified Manager lorsque la règle de groupe n'est plus requise.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lorsqu'une règle de groupe est supprimée, les objets de stockage associés sont supprimés du groupe.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *règles de groupe*, sélectionnez la règle de groupe à supprimer, puis cliquez sur *Supprimer*.
+. Dans la boîte de dialogue *Avertissement*, confirmez la suppression en cliquant sur *Oui*.
+

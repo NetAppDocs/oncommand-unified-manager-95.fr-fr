@@ -1,0 +1,71 @@
+---
+permalink: online-help/task-acknowledging-and-resolving-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous devez accuser réception d"un événement avant de commencer à travailler sur le problème qui a généré l"événement afin de ne pas continuer à recevoir de notifications d"alerte répétées. Après avoir effectué une action corrective pour un événement particulier, vous devez marquer l"événement comme résolu.' 
+---
+= Confirmation et résolution des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez accuser réception d'un événement avant de commencer à travailler sur le problème qui a généré l'événement afin de ne pas continuer à recevoir de notifications d'alerte répétées. Après avoir effectué une action corrective pour un événement particulier, vous devez marquer l'événement comme résolu.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez accepter et résoudre plusieurs événements simultanément.
+
+[NOTE]
+====
+Vous ne pouvez pas accuser réception d'événements d'information.
+
+====
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Dans la liste des événements, effectuez les opérations suivantes pour accuser réception des événements :
++
+|===
+| Les fonctions que vous recherchez... | Procédez comme ça... 
+
+
+ a| 
+Accuser réception et marquer un seul événement comme résolu
+ a| 
+.. Cliquez sur le nom de l'événement.
+.. Dans la page Détails de l'événement, déterminez la cause de l'événement.
+.. Cliquez sur *Acknowledge*.
+.. Prendre les mesures correctives appropriées.
+.. Cliquez sur *Marquer comme résolu*.
+
+
+
+
+ a| 
+Accuser réception et marquer plusieurs événements comme résolus
+ a| 
+.. Déterminez la cause des événements à partir de la page Détails de l'événement correspondant.
+.. Sélectionnez les événements.
+.. Cliquez sur *Acknowledge*.
+.. Prenez les mesures correctives appropriées.
+.. Cliquez sur *Marquer comme résolu*.
+
+
+|===
++
+Une fois que l'événement est marqué comme résolu, l'événement est déplacé vers la liste des événements résolus.
+
+. Dans la zone *Notes et mises à jour*, ajoutez une note sur la façon dont vous avez traité l'événement, puis cliquez sur *Post*.
+

@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-deleting-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une copie Snapshot pour économiser de l"espace disque, libérer de l"espace disque, ou supprimer la copie Snapshot si elle n"est plus nécessaire.' 
+---
+= Suppression des copies Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une copie Snapshot pour économiser de l'espace disque, libérer de l'espace disque, ou supprimer la copie Snapshot si elle n'est plus nécessaire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+Le volume doit être en ligne.
+
+Pour supprimer une copie Snapshot occupée ou verrouillée, vous devez avoir libéré cette copie de l'application qu'elle utilisait.
+
+
+
+== Description de la tâche
+
+* Vous ne pouvez pas supprimer la copie Snapshot de base d'un volume parent si un volume FlexClone utilise cette copie Snapshot.
++
+La copie Snapshot de base est la copie Snapshot utilisée pour créer le volume FlexClone et affiche l'état `Busy` Et dépendance de l'application en tant que `Busy,Vclone` dans le volume parent.
+
+* Vous ne pouvez pas supprimer une copie Snapshot verrouillée utilisée dans une relation SnapMirror.
++
+La copie Snapshot est verrouillée et requise pour la prochaine mise à jour.
+
+
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *volumes*.
+. Dans la page d'inventaire *Health/volumes*, sélectionnez le volume qui contient les copies Snapshot que vous souhaitez afficher.
++
+La liste des copies Snapshot s'affiche.
+
+. Dans la page de détails *Santé/Volume*, cliquez sur l'onglet *capacité*.
+. Dans le volet *Détails* de l'onglet *capacité*, dans la section autres détails, cliquez sur le lien en regard de *copies snapshot*.
++
+Le nombre de copies Snapshot est un lien qui affiche la liste des copies Snapshot.
+
+. Dans la vue *copies snapshot*, sélectionnez les copies Snapshot à supprimer, puis cliquez sur *Supprimer les copies sélectionnées*.
+

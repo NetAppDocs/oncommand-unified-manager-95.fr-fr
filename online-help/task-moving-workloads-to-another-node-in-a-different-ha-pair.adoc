@@ -1,0 +1,107 @@
+---
+permalink: online-help/task-moving-workloads-to-another-node-in-a-different-ha-pair.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Grâce à Unified Manager, vous pouvez identifier un agrégat sur un nœud d"une autre paire haute disponibilité moins occupée que la paire haute disponibilité sur laquelle vos charges de travail sont actuellement exécutées. Vous pouvez ensuite déplacer les volumes sélectionnés vers des agrégats sur la nouvelle paire haute disponibilité. Le déplacement de charges de travail hautes performances vers un agrégat sur un nœud moins occupé permet aux charges de travail des deux nœuds de gagner en efficacité.' 
+---
+= Déplacement des workloads vers un autre nœud dans une paire haute disponibilité différente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grâce à Unified Manager, vous pouvez identifier un agrégat sur un nœud d'une autre paire haute disponibilité moins occupée que la paire haute disponibilité sur laquelle vos charges de travail sont actuellement exécutées. Vous pouvez ensuite déplacer les volumes sélectionnés vers des agrégats sur la nouvelle paire haute disponibilité. Le déplacement de charges de travail hautes performances vers un agrégat sur un nœud moins occupé permet aux charges de travail des deux nœuds de gagner en efficacité.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Le cluster doit comprendre au moins deux paires haute disponibilité ; ce processus de correction n'est pas possible si votre cluster ne compte qu'une seule paire haute disponibilité.
+* Vous devez avoir enregistré les noms des deux nœuds de la paire haute disponibilité qui présentent actuellement le problème de performances.
+* Vous devez avoir enregistré la date et l'heure à laquelle les nœuds ont reçu l'événement de performance.
+* Vous devez avoir enregistré l'ID d'événement, par exemple « p-sdt-cluss1-nod-6982 ».
+* Unified Manager doit avoir collecté et analysé un mois ou plus de données de performances.
+
+
+
+
+== Description de la tâche
+
+Cette procédure vous permet d'identifier les ressources suivantes afin de déplacer des charges de travail haute performance vers un nœud le plus faible utilisé sur une autre paire haute disponibilité :
+
+* Les nœuds d'une paire haute disponibilité différente sur le même cluster qui sont moins utilisés
+* Les agrégats sur les nouveaux nœuds les moins utilisés
+* Les volumes les plus performants sur les nœuds actuels
+
+
+
+
+== Étapes
+
+. Identifiez les nœuds qui font partie d'une autre paire haute disponibilité sur le même cluster :
++
+.. Dans le volet de navigation de gauche, cliquez sur *Performance* > *clusters*.
++
+La page Performance/clusters s'affiche.
+
+.. Cliquez sur le numéro dans le champ *nombre de nœuds* pour le cluster actuel.
++
+La page Performance/nœuds s'affiche.
+
+.. Écrire les noms des nœuds qui se trouvent dans différentes paires haute disponibilité de la paire haute disponibilité actuellement ayant le problème de performances.
+
+
+. Identifier un nœud dans la nouvelle paire HA la moins utilisée :
++
+.. Cliquez sur la colonne *utilisation* pour trier les nœuds par le moins utilisé.
++
+Vous pouvez également identifier les nœuds qui ont la plus grande *capacité libre*. Vous trouverez ainsi une liste de nœuds potentiels vers lesquels vous pouvez déplacer des charges de travail.
+
+.. Notez le nom du nœud vers lequel vous souhaitez déplacer les charges de travail.
+
+
+. Identifier un agrégat sur le nouveau nœud le moins utilisé :
++
+.. Dans le volet de navigation de gauche, cliquez sur *Performance* > *Aggregates*.
++
+La page Performance/Aggregates s'affiche.
+
+.. Cliquez sur *Filtering*, sélectionnez *Node* dans le menu déroulant de gauche, saisissez le nom du noeud dans le champ de texte, puis cliquez sur *appliquer le filtre*.
++
+La page performances/agrégats s'affiche de nouveau avec la liste des agrégats disponibles sur ce nœud.
+
+.. Cliquez sur la colonne *utilisation* pour trier les agrégats par le moins utilisés.
++
+Vous pouvez également identifier les agrégats ayant la capacité *libre* la plus élevée. Ainsi, vous disposez d'une liste d'agrégats potentiels vers lesquels vous pouvez déplacer des charges de travail.
+
+.. Écrire le nom de l'agrégat dans lequel vous souhaitez déplacer les charges de travail.
+
+
+. Identifiez les charges de travail haute performance issues des nœuds qui ont reçu l'événement :
++
+.. Revenez à la page *Event* details de l'événement.
+.. Dans le champ *volumes affectés*, cliquez sur le lien correspondant au nombre de volumes du premier nœud.
++
+La page Performance/volumes s'affiche avec une liste filtrée des volumes de ce nœud.
+
+.. Cliquez sur la colonne *capacité totale* pour trier les volumes selon le plus grand espace alloué.
++
+Cela fournit une liste de volumes potentiels que vous pouvez déplacer.
+
+.. Notez les noms des volumes que vous souhaitez déplacer, ainsi que le nom des agrégats actuels où ils résident.
+.. Exécutez les étapes 4c et 4d pour le second nœud qui faisait partie de cet événement pour identifier les volumes que vous souhaitez également déplacer à partir de ce nœud.
+
+
+. Déplacez les volumes vers les agrégats que vous avez identifiés comme ayant une faible utilisation sur le nouveau nœud.
++
+Vous pouvez effectuer l'opération de déplacement en utilisant OnCommand System Manager, OnCommand Workflow Automation et les commandes ONTAP ou une combinaison de ces outils.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Après quelques jours, vérifiez si vous recevez le même type d'événements de ce nœud ou de cet agrégat.

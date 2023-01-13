@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-resynchronizing-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dans la page protection/relations de volume, vous pouvez resynchroniser une relation pour effectuer une restauration à partir d"un événement qui a désactivé votre volume source ou si vous souhaitez modifier la source actuelle vers un autre volume.' 
+---
+= Resynchronisation des relations de protection à partir de la page des relations protection/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans la page protection/relations de volume, vous pouvez resynchroniser une relation pour effectuer une restauration à partir d'un événement qui a désactivé votre volume source ou si vous souhaitez modifier la source actuelle vers un autre volume.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Étapes
+
+. Dans la page *protection/relations de volume*, sélectionnez un ou plusieurs volumes avec des relations suspendues et, dans la barre d'outils, cliquez sur *Resynchroniser*.
++
+La boîte de dialogue Resynchroniser s'affiche.
+
+. Dans l'onglet *Resynchronisation Options*, sélectionnez une priorité de transfert et le taux de transfert maximal.
+. Cliquez sur *copies snapshot source*, puis, dans la colonne *copie snapshot*, cliquez sur *par défaut*.
++
+La boîte de dialogue Sélectionner une copie Snapshot source s'affiche.
+
+. Pour spécifier une copie Snapshot existante plutôt que de transférer la copie Snapshot par défaut, cliquez sur *copie Snapshot existante* et sélectionnez une copie Snapshot dans la liste.
+. Cliquez sur *soumettre*.
++
+Vous revenez à la boîte de dialogue Resynchroniser.
+
+. Si vous avez sélectionné plusieurs sources à resynchroniser, cliquez sur *default* pour la source suivante pour laquelle vous souhaitez spécifier une copie Snapshot existante.
+. Cliquez sur *Submit* pour lancer le travail de resynchronisation.
++
+Le travail de resynchronisation est démarré, vous êtes renvoyé à la page protection/relations de volume et un lien de travaux s'affiche en haut de la page.
+
+. Cliquez sur *Afficher les travaux* sur la page *protection/relations de volume* pour suivre l'état de chaque travail de resynchronisation.
++
+Une liste filtrée des travaux s'affiche.
+
+. Cliquez sur la flèche *Retour* de votre navigateur pour revenir à la page *protection/relations de volume*.
++
+L'opération de resynchronisation est terminée lorsque toutes les tâches du travail ont été terminées avec succès.
+
+

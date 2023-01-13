@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-dashboards-cluster-view-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page tableaux de bord/Cluster View affiche des informations générales sur les clusters que vous gérez. 
+---
+= Page tableaux de bord/vue du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page tableaux de bord/Cluster View affiche des informations générales sur les clusters que vous gérez.
+
+Cliquez sur *gérer les clusters* pour accéder à la page sources de données de configuration/cluster.
+
+Lorsque vous cliquez sur un cluster, les informations de présentation sur l'état du contrôle, l'état de la capacité et l'état des performances du cluster s'affichent.
+
+Le tableau de bord Cluster View se compose de deux sections principales : Managed clusters (à gauche) et Cluster Details (à droite).
+
+
+
+== La section clusters gérés
+
+Répertorie tous les clusters dont Unified Manager surveille. Les détails suivants sont fournis pour chaque cluster de la liste :
+
+* Icône d'état du cluster : le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+* Adresse IP ou nom d'hôte : fournit le nom d'hôte du cluster, ainsi que l'adresse IP ou le FQDN.
+* Santé du cluster : fournit des informations sur l'état de santé du cluster tel que contrôlé par Unified Manager.
++
+L'état de santé peut avoir l'une des valeurs suivantes : OK, OK avec suppression, dégradé et composants inaccessibles.
+
+
+
+
+
+== Détails du cluster
+
+Fournit des informations sur l'état, la capacité et les performances du cluster sélectionné.
+
+* Contrôle Status : affiche l'état de la surveillance continue de l'état et des performances.
++
+L'état de surveillance peut avoir les valeurs suivantes : découverte, interrogation terminée, échec du sondage ou non disponible. L'état de la surveillance affiche un message d'erreur lorsque la tâche de surveillance correspondante (intégrité ou performances) échoue.
+
+* Capacité : affiche la capacité de stockage totale, utilisée et libre du cluster sélectionné.
+* Performance : affiche la vitesse de fonctionnement moyenne du cluster en nombre d'IOPS (opérations d'entrée/sortie par seconde), et le débit moyen du cluster sélectionné en Mbit/s (mégaoctets par seconde).
+
+
+La section Détails offre également des liens de navigation vers les pages de détails de cluster individuelles des applications OnCommand Unified Manager :
+
+* Le lien Santé permet d'accéder à la page des détails Health/Cluster du cluster sélectionné.
+* Le lien Performance permet d'accéder à la page des détails performances/Cluster du cluster sélectionné.
+* Le lien System Manager permet d'accéder à la page de connexion de OnCommand System Manager afin de gérer les paramètres du cluster.
+

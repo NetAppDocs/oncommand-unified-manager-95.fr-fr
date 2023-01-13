@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-what-happens-when-a-performance-threshold-policy-is-changed-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si vous ajustez la valeur de compteur ou la durée d"une règle de seuil de performances existante, la modification de règle s"applique à tous les objets de stockage qui utilisent la règle. Le nouveau paramètre a lieu immédiatement et Unified Manager commence à comparer les valeurs des compteurs de performances avec les nouveaux paramètres seuils pour toutes les données de performance nouvellement collectées.' 
+---
+= Que se passe-t-il lorsqu'une règle de seuil de performances est modifiée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous ajustez la valeur de compteur ou la durée d'une règle de seuil de performances existante, la modification de règle s'applique à tous les objets de stockage qui utilisent la règle. Le nouveau paramètre a lieu immédiatement et Unified Manager commence à comparer les valeurs des compteurs de performances avec les nouveaux paramètres seuils pour toutes les données de performance nouvellement collectées.
+
+Si des événements actifs existent pour des objets qui utilisent la règle de seuil modifiée, les événements sont marqués comme obsolètes et la règle de seuil commence à surveiller le compteur comme une nouvelle règle de seuil définie.
+
+Lorsque vous affichez le compteur sur lequel le seuil a été appliqué dans la vue détaillée des compteurs, les lignes de seuil critique et d'avertissement reflètent les paramètres de seuil actuels. Les paramètres de seuil d'origine n'apparaissent pas sur cette page même si vous affichez les données historiques lorsque l'ancien paramètre de seuil était en vigueur.
+
+[NOTE]
+====
+Comme les anciens paramètres de seuil n'apparaissent pas dans la vue détaillée des compteurs, il est possible que les événements historiques apparaissent sous les lignes de seuil actuelles.
+
+====

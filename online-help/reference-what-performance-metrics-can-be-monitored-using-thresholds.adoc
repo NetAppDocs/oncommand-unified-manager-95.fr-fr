@@ -1,0 +1,225 @@
+---
+permalink: online-help/reference-what-performance-metrics-can-be-monitored-using-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Certains compteurs de performances courants, tels que les IOPS et les Mbit/s, peuvent disposer de seuils pour tous les objets de stockage. D"autres compteurs peuvent avoir des seuils définis pour certains objets de stockage uniquement.' 
+---
+= Quels compteurs de performances peuvent être suivis à l'aide de seuils
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Certains compteurs de performances courants, tels que les IOPS et les Mbit/s, peuvent disposer de seuils pour tous les objets de stockage. D'autres compteurs peuvent avoir des seuils définis pour certains objets de stockage uniquement.
+
+
+
+== Compteurs de performances disponibles
+
+|===
+| Objet de stockage | Compteur de performances | Description 
+
+
+ a| 
+Cluster
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie que le cluster traite par seconde.
+
+
+
+ a| 
+Mo/sec
+ a| 
+Nombre moyen de mégaoctets de données transférées à et depuis ce cluster par seconde.
+ a| 
+Nœud
+
+
+
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie que le nœud traite par seconde.
+ a| 
+Mo/sec
+
+
+
+ a| 
+Nombre moyen de mégaoctets de données transférées vers et depuis ce nœud par seconde.
+ a| 
+Latence
+ a| 
+Nombre moyen de millisecondes nécessaires pour répondre aux demandes des applications par le nœud.
+
+
+
+ a| 
+Du stockage
+ a| 
+Pourcentage moyen du processeur et de la mémoire vive du nœud utilisé.
+ a| 
+Performance capacité utilisée
+
+
+
+ a| 
+Pourcentage moyen de capacité de performance consommée par le nœud
+ a| 
+Performance capacité utilisée - basculement
+ a| 
+Pourcentage moyen de capacité de performance consommée par le nœud, plus la capacité de performance de son nœud partenaire.
+
+
+
+ a| 
+Agrégat
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie les processus agrégés par seconde.
+
+
+
+ a| 
+Mo/sec
+ a| 
+Nombre moyen de mégaoctets de données transférées à et depuis cet agrégat par seconde.
+ a| 
+Latence
+
+
+
+ a| 
+Nombre moyen de millisecondes nécessaires à l'agrégat pour répondre aux demandes des applications.
+ a| 
+Du stockage
+ a| 
+Pourcentage moyen des disques de l'agrégat utilisés
+
+
+
+ a| 
+Performance capacité utilisée
+ a| 
+Pourcentage moyen de capacité de performance consommée par l'agrégat
+ a| 
+Storage Virtual machine (SVM)
+
+
+
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie par seconde des processus SVM.
+ a| 
+Mo/sec
+
+
+
+ a| 
+Nombre moyen de mégaoctets de données transférées à et depuis ce SVM par seconde.
+ a| 
+Latence
+ a| 
+Nombre moyen de millisecondes nécessaires au SVM pour répondre aux demandes des applications.
+
+
+
+ a| 
+Volumétrie
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie les processus de volume par seconde.
+
+
+
+ a| 
+Mo/sec
+ a| 
+Nombre moyen de mégaoctets de données transférées vers et depuis ce volume par seconde.
+ a| 
+Latence
+
+
+
+ a| 
+Nombre moyen de millisecondes nécessaires pour répondre aux demandes de l'application par le volume
+ a| 
+Taux de manque du cache
+ a| 
+Pourcentage moyen de demandes de lecture des applications client renvoyées à partir du volume plutôt que d'être renvoyées à partir du cache.
+
+
+
+ a| 
+LUN
+ a| 
+D'IOPS
+ a| 
+Nombre moyen d'opérations d'entrée/sortie que la LUN traite par seconde.
+
+
+
+ a| 
+Mo/sec
+ a| 
+Nombre moyen de mégaoctets de données transférées vers et depuis cette LUN par seconde.
+ a| 
+Latence
+
+
+
+ a| 
+Nombre moyen de millisecondes nécessaires pour répondre aux demandes des applications par la LUN.
+ a| 
+Espace de noms
+ a| 
+D'IOPS
+
+
+
+ a| 
+Nombre moyen d'opérations d'entrée/sortie les processus d'espace de noms par seconde.
+ a| 
+Mo/sec
+ a| 
+Nombre moyen de mégaoctets de données transférées à et depuis ce namespace par seconde.
+
+
+
+ a| 
+Latence
+ a| 
+Nombre moyen de millisecondes nécessaires pour répondre aux demandes de l'application par l'espace de noms
+ a| 
+Port
+
+
+
+ a| 
+Utilisation de la bande passante
+ a| 
+Pourcentage moyen de la bande passante disponible du port utilisée.
+ a| 
+Mo/sec
+
+
+
+ a| 
+Nombre moyen de mégaoctets de données transférées vers et depuis ce port par seconde.
+ a| 
+Interface logique (LIF)
+ a| 
+Mo/sec
+
+|===
+[NOTE]
+====
+Les données de performance et de capacité sont disponibles uniquement lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====

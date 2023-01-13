@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-svm-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Annoter SVM permet d"annoter manuellement les objets de stockage. Il est possible de sélectionner un seul SVM ou plusieurs SVM et d"annoter ces deux valeurs spécifiques à partir de la liste existante d"annotations.' 
+---
+= Boîte de dialogue annoter SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Annoter SVM permet d'annoter manuellement les objets de stockage. Il est possible de sélectionner un seul SVM ou plusieurs SVM et d'annoter ces deux valeurs spécifiques à partir de la liste existante d'annotations.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Annotation=paires de valeurs*
++
+Permet de sélectionner l'annotation requise pour la SVM sélectionnée.
+
+* *Appliquer*
++
+Applique l'annotation sélectionnée à la SVM.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Annotate SVM sans enregistrer les modifications.
+
+

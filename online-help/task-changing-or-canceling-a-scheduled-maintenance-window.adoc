@@ -1,0 +1,70 @@
+---
+permalink: online-help/task-changing-or-canceling-a-scheduled-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si vous avez configuré une fenêtre de maintenance Unified Manager pour qu"elle s"effectue à l"avenir, vous pouvez modifier les heures de début et de fin ou annuler la fenêtre de maintenance.' 
+---
+= Modification ou annulation d'une fenêtre de maintenance planifiée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez configuré une fenêtre de maintenance Unified Manager pour qu'elle s'effectue à l'avenir, vous pouvez modifier les heures de début et de fin ou annuler la fenêtre de maintenance.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+L'annulation d'une fenêtre de maintenance en cours d'exécution est utile si la maintenance du cluster est terminée avant l'heure de fin de la fenêtre de maintenance planifiée et que vous souhaitez recevoir à nouveau des événements et des alertes à partir du cluster.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *sources de données de cluster*.
+. Dans la colonne *Maintenance mode* du cluster :
++
+|===
+| Les fonctions que vous recherchez... | Effectuer cette étape... 
+
+
+ a| 
+Modifier le délai d'une fenêtre de maintenance planifiée
+ a| 
+.. Cliquez sur le texte "planifié" en regard du bouton du curseur.
+.. Modifiez la date et l'heure de début et/ou de fin et cliquez sur *appliquer*.
+
+
+
+
+ a| 
+Allonger la longueur d'une fenêtre de maintenance active
+ a| 
+.. Cliquez sur le texte « actif » à côté du bouton du curseur.
+.. Modifiez la date et l'heure de fin et cliquez sur *appliquer*.
+
+
+
+
+ a| 
+Annuler une fenêtre de maintenance planifiée
+ a| 
+Sélectionnez le bouton du curseur et déplacez-le vers la gauche.
+
+
+
+ a| 
+Annuler une fenêtre de maintenance active
+ a| 
+Sélectionnez le bouton du curseur et déplacez-le vers la gauche.
+
+|===
+

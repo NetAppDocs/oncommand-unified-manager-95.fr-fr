@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez restaurer une LIF de son port actuel vers son port home Port après qu"elle ait été over ou migrée vers un autre port manuellement ou automatiquement. Pour cela, vous pouvez utiliser OnCommand System Manager.' 
+---
+= Restauration d'une LIF vers son port d'accueil à l'aide de OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez restaurer une LIF de son port actuel vers son port home Port après qu'elle ait été over ou migrée vers un autre port manuellement ou automatiquement. Pour cela, vous pouvez utiliser OnCommand System Manager.
+
+
+
+== Description de la tâche
+
+Lors de la création d'une LIF, l'administrateur spécifie un port de rattachement et un nœud de rattachement à utiliser comme emplacement privilégié de la LIF. Si le nœud de rattachement est indisponible ou si le port de rattachement connaît une panne de liaison physique, la LIF est automatiquement migrée vers un nouvel emplacement. Le nouvel emplacement est signalé dans OnCommand System Manager, par exemple, en tant que port actuel du LIF. Sauf si l'option de restauration automatique est activée, la LIF reste à ce nouvel emplacement jusqu'à ce qu'elle soit rétablie.
+
+
+
+== Étapes
+
+. Ouvrez OnCommand System Manager.
+. Dans l'onglet *Home*, double-cliquez sur le système de stockage.
+. Dans le volet de navigation, développez la hiérarchie *Storage Virtual machines*.
+. Dans le volet de navigation, sélectionner le SVM et cliquer sur *Configuration* > *interfaces réseau*.
+. Recherchez les LIF de données qui affichent une icône de maison avec une croix rouge, dans la colonne *Port courant*, comme dans l'image suivante.
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[Vue interfaces réseau]
+
+. Sélectionnez le LIF et cliquez sur *Envoyer à domicile*.
++
+Cette option est activée uniquement lorsque l'interface sélectionnée est hébergée sur un port non-home et lorsque le port Home est disponible.
+
+

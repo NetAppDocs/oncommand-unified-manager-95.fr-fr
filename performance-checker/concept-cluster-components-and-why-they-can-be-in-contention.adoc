@@ -1,0 +1,58 @@
+---
+permalink: performance-checker/concept-cluster-components-and-why-they-can-be-in-contention.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez identifier les problèmes de performance du cluster lorsqu"un composant du cluster entre en conflit. Les performances des charges de travail des volumes qui utilisent le composant ralentissent et leur temps de réponse \(latence\) pour les requêtes clients augmentent, ce qui déclenche un événement dans Unified Manager.' 
+---
+= Les composants du cluster et les conflits
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez identifier les problèmes de performance du cluster lorsqu'un composant du cluster entre en conflit. Les performances des charges de travail de volumes qui utilisent le composant ralentissent et leur temps de réponse (latence) augmente pour les requêtes client, ce qui déclenche un événement dans Unified Manager.
+
+Un composant en conflit ne peut pas se faire à un niveau optimal. Ses performances ont diminué, et la performance des autres composants et charges de travail du cluster, appelés _victimes_, peut avoir augmenté la latence. Pour mettre un composant à l'extérieur des conflits, vous devez réduire sa charge de travail ou augmenter sa capacité à gérer davantage de travail, de sorte que les performances puissent revenir à des niveaux normaux. Unified Manager collecte et analyse les performances des charges de travail toutes les cinq minutes. En effet, il ne détecte que lorsqu'un composant du cluster est constamment sur-utilisé. Les pics transitoires de surutilisation qui durent pendant une courte durée dans l'intervalle de cinq minutes ne sont pas détectés.
+
+Par exemple, un agrégat de stockage peut être soumis à des conflits car une ou plusieurs charges de travail y sont en concurrence pour que leurs demandes d'E/S soient traitées. Des charges de travail peuvent être affectées sur l'agrégat, ce qui entraîne une baisse des performances. Pour réduire la quantité d'activité sur l'agrégat, plusieurs étapes sont possibles : déplacer une ou plusieurs charges de travail vers un agrégat moins occupé, par exemple, réduire la demande de charge de travail globale sur l'agrégat actuel. Pour un groupe de règles de qualité de service, vous pouvez ajuster la limite de débit ou déplacer les workloads vers un autre groupe de règles, de sorte que les charges de travail ne soient plus restreintes.
+
+Unified Manager contrôle les composants de cluster suivants pour vous alerter en cas de conflit :
+
+* *Réseau*
++
+Représente le temps d'attente des demandes d'E/S par les protocoles iSCSI ou Fibre Channel (FC) sur le cluster. Le temps d'attente correspond au temps passé à attendre la fin des transactions iSCSI Ready to Transfer (R2T) ou FCP Transfer Ready (XFER_RDY) pour que le cluster puisse répondre à une demande d'E/S. Si le composant réseau est en conflit, cela signifie qu'un temps d'attente élevé au niveau de la couche de protocole de bloc a un impact sur la latence d'une ou de plusieurs charges de travail.
+
+* *Traitement réseau*
++
+Composant logiciel dans le cluster impliqué dans le traitement des E/S entre la couche de protocole et le cluster. Le traitement du réseau de traitement des nœuds a peut-être changé depuis la détection de l'événement. Si le composant de traitement de réseau est en conflit, son utilisation élevée au niveau du nœud de traitement réseau a un impact sur la latence d'une ou de plusieurs charges de travail.
+
+* *Politique de qualité de service*
++
+Représente le groupe de règles de qualité de service (QoS) de stockage dont la charge de travail est membre. Si le composant de groupe de règles conflits, cela signifie que toutes les charges de travail du groupe de règles sont restreintes par la limite de débit définie, qui a un impact sur la latence d'une ou plusieurs de ces charges de travail.
+
+* * Interconnexion de cluster*
++
+La représente les câbles et adaptateurs avec lesquels les nœuds en cluster sont physiquement connectés. Si le composant d'interconnexion de cluster est en conflit, cela signifie un temps d'attente élevé pour les demandes d'E/S au niveau de l'interconnexion de cluster se répercute sur la latence d'une ou de plusieurs charges de travail.
+
+* *Traitement de données*
++
+Composant logiciel dans le cluster impliqué dans le traitement des E/S entre le cluster et l'agrégat de stockage qui contient la charge de travail. Le traitement des données de traitement du nœud peut avoir changé depuis la détection de l'événement. Si le composant de traitement des données conflit, une utilisation élevée au niveau du nœud de traitement des données affecte la latence d'un ou de plusieurs workloads.
+
+* *Ressources MetroCluster*
++
+La représente les ressources MetroCluster, y compris la NVRAM et les liens ISL, utilisés pour mettre en miroir les données entre les clusters dans une configuration MetroCluster. Si le composant MetroCluster rencontre des conflits, il s'agit d'un débit d'écriture élevé avec les charges de travail sur le cluster local ou d'un problème d'état de santé de la liaison ayant un impact sur la latence d'une ou de plusieurs charges de travail sur le cluster local. Si le cluster ne se trouve pas dans une configuration MetroCluster, cette icône n'est pas affichée.
+
+* *Agrégat ou agrégat SSD*
++
+Agrégat de stockage sur lequel les charges de travail s'exécutent. Si le composant de l'agrégat est en conflit, une utilisation élevée de l'agrégat a un impact sur la latence d'une ou de plusieurs charges de travail. Un agrégat se compose de tous les disques durs ou d'un mélange de disques durs et de disques SSD (un agrégat Flash Pool). Un « agrégat SD » se compose de tous les SSD (un agrégat 100 % Flash), ou d'une combinaison de SSD et d'un niveau cloud (un agrégat FabricPool).
+
+* * Latence cloud*
++
+Représente le composant logiciel du cluster impliqué dans le traitement des E/S entre le cluster et le niveau cloud sur lequel les données utilisateur sont stockées. Si le composant de latence dans le cloud conflits, une grande quantité de lectures sur les volumes hébergés sur le Tier cloud ont une incidence sur la latence d'un ou de plusieurs workloads.
+
+* *SnapMirror de synchronisation*
++
+Représente le composant logiciel du cluster impliqué dans la réplication des données utilisateur depuis le volume primaire vers le volume secondaire dans une relation SnapMirror synchrone. Si le composant SnapMirror synchrone entre en conflit, l'activité des opérations SnapMirror synchrone a un impact sur la latence d'un ou de plusieurs workloads.
+
+

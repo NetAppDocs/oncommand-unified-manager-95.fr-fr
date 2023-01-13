@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-understanding-cluster-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des clusters à la base de données Unified Manager afin de surveiller la disponibilité, la capacité et d"autres informations, notamment sur l"utilisation du CPU, les statistiques d"interface, l"espace disque libre, l"utilisation des qtrees et l"environnement du châssis.' 
+---
+= Présentation du contrôle des clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des clusters à la base de données Unified Manager afin de surveiller la disponibilité, la capacité et d'autres informations, notamment sur l'utilisation du CPU, les statistiques d'interface, l'espace disque libre, l'utilisation des qtrees et l'environnement du châssis.
+
+Les événements sont générés si l'état est anormal ou lorsqu'un seuil prédéfini est atteint. S'il est configuré pour ce faire, Unified Manager envoie une notification à un destinataire spécifié lorsqu'un événement déclenche une alerte.
+
+L'organigramme suivant illustre le processus de surveillance de Unified Manager :
+
+image::../media/cluster-monitoring2.gif[moniteur de cluster 2]

@@ -1,0 +1,118 @@
+---
+permalink: install/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez effectuer la mise à niveau de Unified Manager version 7.3 ou 9.4 vers Unified Manager 9.5 en téléchargeant et en exécutant le fichier d"installation sur la plateforme Red Hat.' 
+---
+= Mise à niveau de Unified Manager sur Red Hat Enterprise Linux ou CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effectuer la mise à niveau de Unified Manager version 7.3 ou 9.4 vers Unified Manager 9.5 en téléchargeant et en exécutant le fichier d'installation sur la plateforme Red Hat.
+
+
+
+== Avant de commencer
+
+* Le système sur lequel vous mettez à niveau Unified Manager doit répondre à la configuration système et logicielle requise.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[Configuration matérielle requise]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Conditions requises pour l'installation et les logiciels Red Hat et CentOS]
+
+* Depuis Unified Manager 9.4, Red Hat Enterprise Linux 6.x n'est plus pris en charge. Si vous utilisez RHEL 6, vous devez mettre à niveau votre instance de RHEL vers la version 7.x avant de passer à Unified Manager 9.5.
+* Oracle Java n'est plus pris en charge depuis Unified Manager 9.5. La version correcte d'OpenJDK doit être installée avant la mise à niveau vers Unified Manager 9.5.
+* Vous devez être abonné au Gestionnaire d'abonnement Red Hat Enterprise Linux.
+* Pour éviter les pertes de données, vous devez avoir créé une sauvegarde de la base de données Unified Manager en cas de problème lors de la mise à niveau. Il est également recommandé de déplacer le fichier de sauvegarde du `/opt/netapp/data` répertoire vers un emplacement externe.
+* Vous devez avoir terminé toutes vos opérations en cours d'exécution, car Unified Manager n'est pas disponible pendant le processus de mise à niveau.
+
+
+
+
+== Description de la tâche
+
+[NOTE]
+====
+Ces étapes contiennent des informations sur les systèmes configurés pour la haute disponibilité à l'aide de Veritas Operation Manager. Si votre système n'est pas configuré pour la haute disponibilité, ignorez ces étapes supplémentaires.
+
+====
+
+
+== Étapes
+
+. Connectez-vous au serveur Red Hat Enterprise Linux ou CentOS cible.
+. Téléchargez le bundle Unified Manager sur le serveur.
++
+xref:task-downloading-unified-manager.adoc[Téléchargement de Unified Manager pour Red Hat ou CentOS]
+
+. Accédez au répertoire cible et développez le pack Unified Manager : `unzip OnCommandUnifiedManager-rhel7-9.5.zip`
++
+Les modules RPM requis pour Unified Manager sont décompressés dans le répertoire cible.
+
+. Confirmer la présence des modules répertoriés : `ls *.rpm`
++
+Les modules RPM suivants sont répertoriés :
+
++
+** `ocie-au-<version>.x86_64.rpm`
+** `ocie-server-<version>.x86_64.rpm`
+** `ocie-serverbase-<version>.x86_64.rpm`
+** `netapp-application-server-<version>.x86_64.rpm`
+** `netapp-platform-base-<version>.x86_64.rpm`
+** `netapp-ocum-<version>.x86_64.rpm`
+
+
+. Pour les systèmes qui ne sont pas connectés à Internet ou qui n'utilisent pas les référentiels RHEL, procédez comme suit pour déterminer si vous ne disposez pas des packages requis et télécharger ces packages :
++
+.. Afficher la liste des packages disponibles et non disponibles : `yum install *.rpm --assumeno`
++
+Les éléments de la section « installation: » Sont les paquets disponibles dans le répertoire actuel, et les éléments de la section « installation pour dépendances: » Sont les modules qui manquent sur votre système.
+
+.. Téléchargez les modules manquants sur un autre système disposant d'un accès Internet : `yum install package_name --downloadonly --downloaddir=.`
++
+[NOTE]
+====
+Comme le plug-in « yum-plugin-downloadonly » n'est pas toujours activé sur les systèmes Red Hat Enterprise Linux, vous devrez peut-être activer cette fonctionnalité pour télécharger un package sans l'installer : `yum install yum-plugin-downloadonly`
+
+====
+.. Copiez les modules manquants du système connecté à Internet sur votre système d'installation.
+
+
+. Si Unified Manager est configuré pour la haute disponibilité, puis à l'aide de Veritas Operation Manager, arrêtez tous les services Unified Manager sur le premier nœud.
+. Mettez à niveau Unified Manager à l'aide du script suivant : `upgrade.sh`
++
+Ce script exécute automatiquement les modules RPM et met à niveau les logiciels sous-jacentes nécessaires ainsi que les modules Unified Manager qui s'exécutent sur ceux-ci. En outre, le script de mise à niveau vérifie s'il existe des paramètres de configuration du système ou tout logiciel installé qui entrent en conflit avec la mise à niveau d'Unified Manager. Si le script identifie des problèmes, vous devez les résoudre avant de mettre à niveau Unified Manager.
+
++
+[NOTE]
+====
+N'essayez pas de mettre à niveau en utilisant d'autres commandes (telles que `+rpm -Uvh ...+`). Pour réussir une mise à niveau, tous les fichiers Unified Manager et les fichiers associés doivent être mis à niveau dans un ordre spécifique vers une structure de répertoire spécifique qui est exécutée et configurée automatiquement par le script.
+
+====
+. Pour les installations haute disponibilité, arrêtez tous les services Unified Manager sur le second nœud avec Veritas Operation Manager.
+. Pour les installations haute disponibilité, basculez le groupe de services sur le second nœud de la configuration haute disponibilité et mettez à niveau Unified Manager sur le second nœud.
+. Une fois la mise à niveau terminée, faites défiler les messages jusqu'à ce que le message affiche une adresse IP ou une URL pour l'interface utilisateur Web de Unified Manager, le nom d'utilisateur de maintenance (uadmin) et le mot de passe par défaut.
++
+Ce message est similaire à ce qui suit :
+
++
+[listing]
+----
+OnCommand Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the OnCommand Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== Une fois que vous avez terminé
+
+Entrez l'adresse IP ou l'URL spécifiée dans un navigateur Web pris en charge pour démarrer l'interface utilisateur Web de Unified Manager, puis connectez-vous en utilisant le même nom d'utilisateur de maintenance (umadmin) et le même mot de passe que celui défini précédemment.

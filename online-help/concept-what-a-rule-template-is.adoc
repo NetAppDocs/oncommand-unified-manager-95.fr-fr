@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un modèle de règle est un modèle prédéfini pouvant être utilisé pour créer des règles dans une stratégie de données. Un modèle de règle vous permet de créer une règle basée sur trois catégories : propriétaire, type de fichier et chemin d"accès au répertoire.' 
+---
+= Qu'est-ce qu'un modèle de règle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un modèle de règle est un modèle prédéfini pouvant être utilisé pour créer des règles dans une stratégie de données. Un modèle de règle vous permet de créer une règle basée sur trois catégories : propriétaire, type de fichier et chemin d'accès au répertoire.
+
+
+
+== Exemple de modèle de règle pour les types de fichiers
+
+Le modèle de règle « placer tous les fichiers avec les extensions spécifiées dans une classe de stockage appropriée » place tous les fichiers .mp3 qui sont écrits dans Infinite Volume dans une classe de stockage que vous spécifiez.

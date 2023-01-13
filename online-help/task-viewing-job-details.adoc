@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-viewing-job-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une fois que vous avez démarré une tâche, vous pouvez suivre sa progression à partir de la page protection/Détails de la tâche et contrôler les tâches associées pour détecter d"éventuelles erreurs.' 
+---
+= Affichage des détails du travail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez démarré une tâche, vous pouvez suivre sa progression à partir de la page protection/Détails de la tâche et contrôler les tâches associées pour détecter d'éventuelles erreurs.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *travaux*.
+. Dans la page *protection/travaux*, cliquez sur un nom de travail dans la colonne *Nom* pour afficher la liste des tâches associées au travail.
+. Cliquez sur une tâche pour afficher des informations supplémentaires dans le volet *Détails de la tâche* et dans le volet *messages de la tâche* à droite de la liste des tâches.
+

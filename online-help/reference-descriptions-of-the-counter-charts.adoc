@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les diagrammes de l"explorateur des performances vous permettent d"afficher et de comparer les données de performance de certains objets de stockage. Ces graphiques peuvent vous aider à comprendre les tendances en matière de performances, ainsi qu"à isoler et à résoudre les problèmes de performance.' 
+---
+= Descriptions des diagrammes de compteurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les diagrammes de l'explorateur des performances vous permettent d'afficher et de comparer les données de performance de certains objets de stockage. Ces graphiques peuvent vous aider à comprendre les tendances en matière de performances, ainsi qu'à isoler et à résoudre les problèmes de performance.

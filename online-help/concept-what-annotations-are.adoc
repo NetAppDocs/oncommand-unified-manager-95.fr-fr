@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-annotations-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une annotation est une chaîne de texte \(le nom\) qui est attribuée à une autre chaîne de texte \(la valeur\). Chaque paire nom-valeur d"annotation peut être associée de façon dynamique aux objets de stockage à l"aide de règles d"annotation. Lorsque vous associez des objets de stockage à des annotations prédéfinies, vous pouvez filtrer et afficher les événements qui leur sont associés. Vous pouvez appliquer des annotations aux clusters, volumes et machines virtuelles de stockage \(SVM\).' 
+---
+= Quelles sont les annotations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une annotation est une chaîne de texte (le nom) qui est attribuée à une autre chaîne de texte (la valeur). Chaque paire nom-valeur d'annotation peut être associée de façon dynamique aux objets de stockage à l'aide de règles d'annotation. Lorsque vous associez des objets de stockage à des annotations prédéfinies, vous pouvez filtrer et afficher les événements qui leur sont associés. Vous pouvez appliquer des annotations aux clusters, volumes et machines virtuelles de stockage (SVM).
+
+Chaque nom d'annotation peut avoir plusieurs valeurs ; chaque paire nom-valeur peut être associée à un objet de stockage via des règles.
+
+Par exemple, vous pouvez créer une annotation nommée "centre des données" avec les valeurs "Boston" et "Canada". Vous pouvez ensuite appliquer l'annotation "deata-centre" avec la valeur "Boston" au volume v1. Lorsqu'une alerte est générée pour tout événement sur un volume v1 annoté par « centre de données », l'e-mail généré indique l'emplacement du volume, « Boston », ce qui vous permet de hiérarchiser et de résoudre le problème.

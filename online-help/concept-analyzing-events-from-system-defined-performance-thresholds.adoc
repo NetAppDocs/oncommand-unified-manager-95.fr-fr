@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements générés à partir des seuils de performance définis par le système indiquent qu"un compteur de performances ou un ensemble de compteurs de performances pour un objet de stockage a dépassé le seuil d"une règle définie par le système. Cela indique que l"objet de stockage, par exemple un agrégat ou un nœud, rencontre un problème de performances.' 
+---
+= Analyse des événements à partir de seuils de performances définis par le système
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements générés à partir des seuils de performance définis par le système indiquent qu'un compteur de performances ou un ensemble de compteurs de performances pour un objet de stockage a dépassé le seuil d'une règle définie par le système. Cela indique que l'objet de stockage, par exemple un agrégat ou un nœud, rencontre un problème de performances.
+
+La page Détails des événements vous permet d'analyser l'événement de performance et de prendre des mesures correctives, le cas échéant, pour rétablir les performances normales.
+
+[NOTE]
+====
+Les règles de seuil définies par le système ne sont pas activées sur les systèmes Cloud Volumes ONTAP, ONTAP Edge ou ONTAP Select.
+
+====

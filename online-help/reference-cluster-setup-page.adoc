@@ -1,0 +1,130 @@
+---
+permalink: online-help/reference-cluster-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page sources de données de configuration/cluster affiche des informations sur les clusters actuellement en cours de surveillance par Unified Manager. Cette page vous permet d"ajouter des clusters, de modifier les paramètres du cluster et de supprimer des clusters.' 
+---
+= Page sources de données de configuration/cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page sources de données de configuration/cluster affiche des informations sur les clusters actuellement en cours de surveillance par Unified Manager. Cette page vous permet d'ajouter des clusters, de modifier les paramètres du cluster et de supprimer des clusters.
+
+Un message en bas de la page indique la fréquence à laquelle Unified Manager collecte les données de performances des clusters. L'intervalle de collecte par défaut est de cinq minutes, mais vous pouvez modifier cet intervalle via la console de maintenance si vous constatez que les collections des grands groupes ne sont pas réalisées à temps.
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Ouvre la boîte de dialogue Ajouter un cluster qui permet d'ajouter des clusters.
+
+* *Modifier*
++
+Ouvre la boîte de dialogue Modifier le cluster, qui permet de modifier les paramètres du cluster sélectionné.
+
+* *Supprimer*
++
+Supprime le cluster sélectionné et tous les événements et objets de stockage associés. Une fois le cluster retiré, il n'est plus surveillé.
+
++
+[NOTE]
+====
+Le cluster, ses objets de stockage et tous les événements associés sont supprimés, et le cluster n'est plus surveillé par Unified Manager. De même, l'instance de Unified Manager enregistrée avec le cluster supprimé n'est pas enregistrée du cluster.
+
+====
+* * Redécouvrez*
++
+Force une opération de redécouverte du cluster pour que vous puissiez mettre à jour la collection de données de santé et de performances.
+
+
+
+
+
+== Liste des clusters
+
+La liste clusters affiche les propriétés de tous les clusters découverts. Vous pouvez cliquer sur un en-tête de colonne pour trier les clusters selon cette colonne.
+
+* *Statut*
++
+Affiche l'état de découverte actuel de la source de données. L'état peut être échoué (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), terminé (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]), ou en cours (image:../media/in-progress.gif[""]).
+
+* *Nom*
++
+Affiche le nom du cluster.
+
++
+Notez que ce nom peut prendre au moins quinze minutes après l'ajout du cluster.
+
+* *Mode Maintenance*
++
+Vous permet de spécifier le délai, ou « fenêtre de maintenance », lorsqu'un cluster sera arrêté pour la maintenance de sorte que vous ne receviez pas un orage d'alertes du cluster pendant qu'il est en cours de maintenance.
+
++
+Lorsque le mode de maintenance est planifié pour le futur, ce champ affiche "planifié" et vous pouvez passer le curseur sur le champ pour afficher l'heure programmée. Lorsque le cluster est dans la fenêtre de maintenance, ce champ indique « actif ».
+
+* *Nom d'hôte ou adresse IP*
++
+Affiche le nom de l'hôte, le nom de domaine complet (FQDN), le nom court ou l'adresse IP de la LIF de cluster-management utilisée pour se connecter au cluster.
+
+* *Protocole*
++
+Affiche le type de protocole pouvant être configuré sur le cluster : HTTP ou HTTPS (pour une connexion sécurisée).
+
++
+Si une connexion est établie avec le cluster en utilisant les deux protocoles, HTTPS est choisi via HTTP. La valeur par défaut est HTTPS.
+
+* *Port*
++
+Affiche le numéro de port du cluster.
+
++
+Si le port n'est pas spécifié, le port par défaut du protocole sélectionné est utilisé (80 pour HTTP ou 443 pour HTTPS).
+
+* *Nom d'utilisateur*
++
+Affiche le nom d'utilisateur qui peut être utilisé pour se connecter au cluster.
+
+* *Opération*
++
+Affiche l'opération actuelle prise en charge par la source de données du cluster.
+
++
+Les opérations suivantes sont prises en charge par la source de données :
+
++
+** Détection
++
+Spécifie l'opération lors de la découverte de la source de données.
+
+** Sondage sur la santé
++
+Spécifie l'opération lorsque la source de données est découverte avec succès et a commencé l'échantillonnage des données.
+
+** Suppression
++
+Spécifie l'opération lorsque la source de données (cluster) est supprimée de la liste des objets de stockage respectifs.
+
+
+
+* *Etat d'opération*
++
+Affiche l'état de l'opération en cours. L'état peut être échoué, terminé ou en cours.
+
+* *Heure de début de l'opération*
++
+Date et heure de début de l'opération.
+
+* *Heure de fin de l'opération*
++
+Date et heure de fin de l'opération.
+
+* *Description*
++
+Tout message relatif à l'opération.
+
+

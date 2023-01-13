@@ -1,0 +1,47 @@
+---
+permalink: online-help/task-deleting-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer une règle d"une stratégie de données lorsqu"elle n"est plus requise. Par exemple, vous pouvez supprimer une règle d"un répertoire particulier qui n"est plus valide.' 
+---
+= Suppression des règles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une règle d'une stratégie de données lorsqu'elle n'est plus requise. Par exemple, vous pouvez supprimer une règle d'un répertoire particulier qui n'est plus valide.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez un SVM approprié.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Sélectionnez la règle à supprimer, puis cliquez sur *Supprimer*.
++
+[NOTE]
+====
+Vous ne pouvez pas supprimer la règle par défaut.
+
+====
+. Prévisualiser toutes les autres modifications apportées à la stratégie de données.
+. Cliquer sur *Activate* pour activer les modifications des propriétés de la règle dans la SVM.
+

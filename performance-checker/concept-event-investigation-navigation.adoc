@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-event-investigation-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages de détail des événements d"Unified Manager vous donnent une vue d"ensemble de tous les événements de performance. Cela peut être bénéfique lors de l"étude des événements de performance, du dépannage et de l"ajustement des performances du système.' 
+---
+= Navigation dans l'investigation des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages de détail des événements d'Unified Manager vous donnent une vue d'ensemble de tous les événements de performance. Cela peut être bénéfique lors de l'étude des événements de performance, du dépannage et de l'ajustement des performances du système.
+
+En fonction du type d'événement de performance, vous pouvez voir l'un des deux types de pages détaillées d'événements :
+
+* Page de détails des événements pour les événements de stratégie de seuil définis par l'utilisateur et par le système
+* Page de détails des événements pour les événements de stratégie de seuil dynamique
+
+
+C'est un exemple de navigation pour l'investigation d'événement.
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Dans la page d'inventaire des événements, cliquez sur le bouton de filtre et sélectionnez *Performance* dans la zone d'impact pour filtrer la liste des événements.
+. Cliquez sur le nom de l'événement que vous souhaitez examiner et la page Détails de l'événement s'affiche.
+. Développez tous les domaines, tels que les actions suggérées, pour afficher plus de détails sur l'événement qui pourrait vous aider à résoudre le problème.
+
+
+image::../media/event-flow.gif[flux d'événement]

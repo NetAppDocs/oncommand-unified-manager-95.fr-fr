@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page seuils de décalage pour les relations non gérées vous permet de configurer les valeurs d"avertissement de décalage global et de seuil d"erreur pour les relations de protection non gérées afin d"être averti et de prendre des mesures en cas d"erreurs de décalage ou de seuil. Les modifications apportées à ces paramètres sont appliquées lors de la prochaine mise à jour programmée.' 
+---
+= Page seuils de latence des relations non gérées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page seuils de décalage pour les relations non gérées vous permet de configurer les valeurs d'avertissement de décalage global et de seuil d'erreur pour les relations de protection non gérées afin d'être averti et de prendre des mesures en cas d'erreurs de décalage ou de seuil. Les modifications apportées à ces paramètres sont appliquées lors de la prochaine mise à jour programmée.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+Les événements sont générés lorsqu'un seuil est atteint. Vous pouvez prendre des actions correctives pour de tels événements. Les paramètres de seuil de décalage pour les relations non gérées sont activés par défaut.
+
+Le seuil de décalage indique un pourcentage que le temps de décalage ne doit pas dépasser. Par exemple, si le seuil de décalage est défini sur 150 %, vous recevrez un événement lorsque le temps de décalage est supérieur à 1.5 heures.
+
+
+
+== Seuils de latence de la zone relations non gérées
+
+La zone de décalage permet de définir des seuils de décalage de relation non gérés dans les conditions suivantes :
+
+* *Avertissement*
++
+Spécifie le pourcentage auquel la durée de décalage est égale ou supérieure au seuil d'avertissement de décalage :
+
++
+** Valeur par défaut : 150 %
+** Événements générés : avertissement de décalage de la relation SnapMirror ou avertissement de décalage de la relation SnapVault
+** Gravité de l'événement : avertissement
+
+
+* *Erreur*
++
+Spécifie le pourcentage auquel la durée de décalage est égale ou supérieure au seuil d'erreur de décalage :
+
++
+** Valeur par défaut : 250 %
+** Événements générés : erreur de décalage de la relation SnapMirror ou erreur de décalage de la relation SnapVault
+** Gravité de l'événement : erreur
+
+
+
+
+
+
+== Boutons de commande
+
+* *Rétablir les paramètres par défaut*
++
+Permet de restaurer les paramètres de configuration aux valeurs par défaut.
+
+* *Enregistrer*
++
+Enregistre les paramètres de configuration pour l'option sélectionnée.
+
+

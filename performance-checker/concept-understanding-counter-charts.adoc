@@ -1,0 +1,45 @@
+---
+permalink: performance-checker/concept-understanding-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les graphiques du volet compteurs permettent d"afficher et de comparer les données de performances de l"objet racine et des objets ajoutés à partir de la grille d"objets corrélés. Cela peut vous aider à comprendre les tendances en matière de performances, ainsi qu"à isoler et résoudre les problèmes de performances.' 
+---
+= Présentation des graphiques des compteurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les graphiques du volet compteurs permettent d'afficher et de comparer les données de performances de l'objet racine et des objets ajoutés à partir de la grille d'objets corrélés. Cela peut vous aider à comprendre les tendances en matière de performances, ainsi qu'à isoler et résoudre les problèmes de performances.
+
+Les graphiques de compteurs affichés par défaut sont les événements, latence, IOPS et Mbit/s. Vous pouvez choisir d'afficher des graphiques en option : utilisation, capacité utilisée pour les performances, IOPS disponibles, IOPS/To et taux de Miss cache. En outre, vous pouvez choisir d'afficher les valeurs totales ou la répartition par seconde pour les graphiques latence, IOPS, Mbit/s et capacité de performance utilisée.
+
+L'Explorateur des performances affiche certains graphiques de compteurs par défaut, que l'objet de stockage les prenne en charge ou non. Lorsqu'un compteur n'est pas pris en charge, le compteur est vide et le message `Not applicable for <object>` s'affiche.
+
+Les graphiques affichent les tendances de performances pour l'objet racine et pour tous les objets sélectionnés dans le volet comparaison. Les données de chaque graphique sont classées comme suit :
+
+* *Axe X*
++
+Affiche la période spécifiée. Si vous n'avez pas spécifié de plage horaire, la valeur par défaut est la période de 72 heures précédente.
+
+* *Axe y*
++
+Affiche les unités de compteur uniques à l'objet sélectionné, ou les objets.
+
+
+
+Les couleurs des lignes de tendance correspondent à la couleur du nom de l'objet telle qu'elle apparaît dans le volet de comparaison. Vous pouvez positionner le curseur sur un point sur n'importe quelle ligne de tendance pour afficher les détails de l'heure et de la valeur de ce point.
+
+Si vous souhaitez étudier une période spécifique dans un graphique, vous pouvez utiliser l'une des méthodes suivantes :
+
+* Utilisez le bouton *<* pour développer le volet compteurs afin de couvrir la largeur de la page.
+* Utilisez le curseur (lorsqu'il passe à une loupe) pour sélectionner une partie de la période dans la carte pour la mise au point et l'agrandir. Vous pouvez cliquer sur Réinitialiser le zoom du graphique pour rétablir le temps par défaut du graphique.
+* Utilisez le bouton *Zoom View* pour afficher un grand tableau de compteur unique contenant des détails étendus et des indicateurs de seuil.
+
+
+[NOTE]
+====
+Parfois, les écarts dans les lignes de tendance s'affichent. Les écarts signifient qu'Unified Manager n'a pas pu collecter les données de performances du système de stockage ou qu'Unified Manager est peut-être en panne.
+
+====

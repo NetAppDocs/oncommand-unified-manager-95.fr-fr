@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-overcommitted-threshold-breached.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport capacité/utilisation de l"agrégat pour afficher les agrégats triés en fonction du pourcentage de capacité excédentaire, ce qui permet de visualiser l"espace de stockage toujours disponible dans les agrégats.' 
+---
+= Personnalisation du rapport capacité/utilisation de l'agrégat pour afficher les agrégats dont le seuil est dépassé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport capacité/utilisation de l'agrégat pour afficher les agrégats triés en fonction du pourcentage de capacité excédentaire, ce qui permet de visualiser l'espace de stockage toujours disponible dans les agrégats.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster ou paire HA, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour afficher la différence entre le pourcentage utilisé surengagé et le seuil surengagé, ajoutez une nouvelle colonne.
++
+.. Sélectionnez une colonne et cliquez sur image:../media/click-to-see-menu.gif[""].
+.. Sélectionnez *colonne* > *Nouvelle colonne calculée*.
+.. Dans la boîte de dialogue *Nouvelle colonne calculée*, entrez un libellé de colonne.
+.. Dans la liste Sélectionner une catégorie, sélectionnez *Math*.
+.. Dans la liste *Sélectionner fonction*, sélectionnez *DIFFÉRENCE*.
+.. Dans la liste colonne 1, sélectionnez *seuil de surengagement (%)*.
+.. Dans la liste colonne 2, sélectionnez *% de capacité excédentaire*.
+.. Cliquez sur *OK*.
+
+
+. Pour filtrer les valeurs supérieures à zéro dans la nouvelle colonne, cliquez dans la colonne *Nouveau calcul* et ouvrez la boîte de dialogue *filtre* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *supérieur à*.
+. Dans le champ *valeur*, saisissez `0` Puis cliquez sur *OK*.
+. Pour trier les valeurs, cliquez à l'intérieur de *Nouvelle colonne calculée* et cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

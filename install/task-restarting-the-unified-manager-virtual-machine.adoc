@@ -1,0 +1,40 @@
+---
+permalink: install/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez redémarrer la machine virtuelle \(VM\) Unified Manager depuis la console de maintenance. Vous devez redémarrer la machine virtuelle après avoir généré un nouveau certificat de sécurité ou en cas de problème avec la machine virtuelle.' 
+---
+= Redémarrage de la machine virtuelle Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez redémarrer la machine virtuelle (VM) Unified Manager à partir de la console de maintenance. Vous devez redémarrer la machine virtuelle après avoir généré un nouveau certificat de sécurité ou en cas de problème avec la machine virtuelle.
+
+
+
+== Avant de commencer
+
+* L'appliance virtuelle doit être sous tension.
+* Vous devez être connecté à la console de maintenance Unified Manager en tant qu'utilisateur de maintenance.
+
+
+
+
+== Description de la tâche
+
+Vous pouvez également redémarrer la machine virtuelle à partir de vSphere en utilisant l'option VMware *Restart Guest*.
+
+
+
+== Étapes
+
+. Dans la console de maintenance, sélectionnez *Configuration du système* > *redémarrer la machine virtuelle*.
+. Démarrez l'interface utilisateur graphique d'Unified Manager à partir de votre navigateur et connectez-vous.
+
+
+*Informations connexes*
+
+https://www.vmware.com/support/developer/PowerCLI/PowerCLI41/html/Restart-VMGuest.html["Références des applets de commande VMware vSphere PowerCLI : restart-VMGuest"]

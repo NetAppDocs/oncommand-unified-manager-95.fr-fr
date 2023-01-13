@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Avant d"installer Unified Manager dans un environnement Veritas Cluster Server \(VCS\), vous devez vous assurer que les nœuds du cluster sont correctement configurés pour prendre en charge Unified Manager.' 
+---
+= Configuration requise pour Unified Manager dans VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'installer Unified Manager dans un environnement Veritas Cluster Server (VCS), vous devez vous assurer que les nœuds du cluster sont correctement configurés pour prendre en charge Unified Manager.
+
+Vous devez vous assurer que la configuration de VCS répond aux exigences suivantes :
+
+* Les deux nœuds de cluster doivent exécuter une version de système d'exploitation prise en charge.
+* La même version de Unified Manager doit être installée à l'aide du même chemin sur les deux nœuds du cluster.
+* L'utilisateur MySQL sur les deux nœuds doit avoir le même ID utilisateur et le même ID de groupe.
+* Les systèmes de fichiers ext3, ext4 natifs et LVM (Logical Volume Manager) doivent être utilisés.
+* Unified Manager doit être connecté au système de stockage via Fibre Channel (FC) ou iSCSI.
++
+Vous devez également vous assurer que la liaison FC est active et que les LUN créées sur les systèmes de stockage sont accessibles aux deux nœuds de cluster.
+
+* Le disque de données partagé doit avoir suffisamment d'espace (80 Go minimum) pour les dossiers de base de données Unified Manager, de rapports, de certificats et de plug-in de script.
+* Au moins deux interfaces réseau doivent être configurées sur chaque système : l'une pour la communication nœud à nœud et l'autre pour la communication nœud à client.
++
+Le nom de l'interface réseau utilisé pour la communication nœud à client doit être identique sur les deux systèmes.
+
+* Une liaison de pulsation distincte doit être établie entre les nœuds du cluster ; sinon, l'interface réseau sert à communiquer entre les nœuds du cluster.
+* En option : SnapDrive pour UNIX doit être utilisé pour créer un emplacement partagé accessible aux deux nœuds dans une configuration haute disponibilité.
++
+Pour plus d'informations sur l'installation et la création d'un emplacement partagé, reportez-vous au _SnapDrive for UNIX installation and Administration Guide_. Vous pouvez également gérer les LUN via SnapDrive ou l'interface de ligne de commande du système de stockage. Consultez la matrice de compatibilité SnapDrive pour UNIX pour plus d'informations.
+
+* Une mémoire RAM supplémentaire doit être disponible pour les applications SnapDrive et VCS.
+

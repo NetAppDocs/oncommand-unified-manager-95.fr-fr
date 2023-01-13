@@ -1,0 +1,37 @@
+---
+permalink: performance-checker/task-identifying-shark-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dans Unified Manager, vous pouvez identifier les charges de travail présentant la déviation la plus élevée d"utilisation pour un composant de stockage en conflit. L"identification de ces charges de travail vous permet de déterminer si ces charges de travail doivent être déplacées vers un cluster moins utilisé.' 
+---
+= Identification des charges de travail Shark impliquées dans un événement de performance dynamique
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans Unified Manager, vous pouvez identifier les charges de travail présentant la déviation la plus élevée d'utilisation pour un composant de stockage en conflit. L'identification de ces charges de travail vous permet de déterminer si ces charges de travail doivent être déplacées vers un cluster moins utilisé.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il existe de nouveaux événements dynamiques de performances, confirmés ou obsolètes.
+
+
+
+
+== Description de la tâche
+
+La page des détails de l'événement affiche la liste des workloads définis par l'utilisateur et par le système classés selon l'utilisation la plus élevée du composant ou la plus affectée par l'événement. Les valeurs sont basées sur les pics identifiés par Unified Manager lors de sa détection et de la dernière analyse de l'événement.
+
+
+
+== Étapes
+
+. Affichez la page *Détails de l'événement* pour afficher des informations sur l'événement.
+. Dans les graphiques latence de la charge de travail et activité de la charge de travail, sélectionnez *charges de travail Shark*.
+. Passez le curseur de la souris sur les graphiques pour afficher les principales charges de travail définies par l'utilisateur qui affectent le composant et le nom de la charge de travail Shark.
+

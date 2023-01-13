@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-adding-values-to-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des valeurs aux annotations, puis associer des objets de stockage à une paire nom-valeur d"annotation spécifique. L"ajout de valeurs aux annotations permet de gérer plus efficacement les objets de stockage.' 
+---
+= Ajout de valeurs aux annotations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des valeurs aux annotations, puis associer des objets de stockage à une paire nom-valeur d'annotation spécifique. L'ajout de valeurs aux annotations permet de gérer plus efficacement les objets de stockage.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez pas ajouter de valeurs aux annotations prédéfinies.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Annotations* dans le menu gestion de gauche.
+. Dans la page *Annotations*, sélectionnez l'annotation à laquelle vous souhaitez ajouter une valeur, puis cliquez sur *Ajouter* dans la section *valeurs*.
+. Dans la boîte de dialogue *Ajouter une valeur d'annotation*, spécifiez une valeur pour l'annotation.
++
+La valeur que vous spécifiez doit être unique pour l'annotation sélectionnée.
+
+. Cliquez sur *Ajouter*.
+

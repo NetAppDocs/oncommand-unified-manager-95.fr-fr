@@ -1,0 +1,44 @@
+---
+permalink: health-checker/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des conditions seuils de santé globaux pour la capacité, la croissance, la réserve Snapshot, les quotas et les inodes afin de surveiller de façon efficace la taille de l"agrégat, du volume et du qtree. Vous pouvez également modifier les paramètres de génération d"événements pour des seuils de décalage supérieurs.' 
+---
+= Configuration des paramètres de seuil de santé global
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des conditions seuils de santé globaux pour la capacité, la croissance, la réserve Snapshot, les quotas et les inodes afin de surveiller de façon efficace la taille de l'agrégat, du volume et du qtree. Vous pouvez également modifier les paramètres de génération d'événements pour des seuils de décalage supérieurs.
+
+
+
+== Description de la tâche
+
+Les paramètres de seuil de santé global s'appliquent à tous les objets auxquels ils sont associés, comme les agrégats, les volumes, etc. Lorsque les seuils sont croisés, un événement est généré et, si des alertes sont configurées, une notification d'alerte est envoyée. Les valeurs par défaut des seuils sont définies sur les valeurs recommandées, mais vous pouvez les modifier pour générer des événements à intervalles afin de répondre à vos besoins spécifiques. Lorsque les seuils sont modifiés, les événements sont générés ou obsolètes dans le cycle de surveillance suivant.
+
+Les paramètres des seuils de santé globale sont accessibles à partir de la page Configuration/seuils de santé. Vous pouvez également modifier les paramètres de seuil des objets individuels, à partir de la page d'inventaire ou de la page de détails de cet objet.
+
+
+
+== Choix
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[Configuration des valeurs des seuils de santé globaux des agrégats]
++
+Vous pouvez configurer les paramètres de seuil de santé pour la capacité, la croissance et les copies Snapshot de tous les agrégats afin d'assurer le suivi de tout seuil de non-respect.
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[Configuration des valeurs de seuil de contrôle global du volume]
++
+Vous pouvez modifier les paramètres du seuil de santé pour la capacité, les copies Snapshot, les quotas qtree, la croissance du volume, l'espace de réserve de remplacement, et des inodes pour tous les volumes afin de suivre les violations de seuil éventuelles.
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[Configuration des valeurs des seuils de santé des qtrees globaux]
++
+Vous pouvez modifier les paramètres du seuil de santé de la capacité de tous les qtrees pour assurer le suivi d'une éventuelle violation de seuil.
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[Modification des paramètres de seuil d'intégrité de décalage pour les relations de protection non gérées]
++
+Vous pouvez augmenter ou diminuer le pourcentage de temps de décalage d'avertissement ou d'erreur afin que les événements soient générés à des intervalles plus adaptés à vos besoins.
+
+

@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-volume-transfer-rate-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport Volume Transfer Rate \(Historical\) vous permet d"analyser la quantité de volume de données qui est transférée au quotidien. Le rapport fournit également des détails sur les transferts de volume quotidiens et sur le temps nécessaire pour effectuer l"opération de transfert.' 
+---
+= Rapport Volume Transfer Rate (Historique)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport Volume Transfer Rate (Historical) vous permet d'analyser la quantité de volume de données qui est transférée au quotidien. Le rapport fournit également des détails sur les transferts de volume quotidiens et sur le temps nécessaire pour effectuer l'opération de transfert.
+
+Le rapport Volume Transfer Rate (Historique) s'affiche sous deux formats :
+
+* Diagramme à barres du taux de transfert de volume
+* Vue tabulaire du taux de transfert de volume
+
+
+
+
+== Diagramme à barres du taux de transfert de volume
+
+Affiche les détails du taux de transfert du volume en comparant la taille totale du transfert au nombre d'heures. Vous pouvez également afficher les détails de la quantité de données transférées quotidiennement.
+
+
+
+== Vue tabulaire du taux de transfert de volume
+
+* *Taille totale du transfert (Go)*
++
+Affiche la taille totale du transfert de volume en gigaoctets.
+
+* *Jour*
++
+Affiche le jour où le transfert de volume a été lancé.
+
+* *Heure de fin*
++
+Affiche l'heure de fin du transfert de volume avec date.
+
+

@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la boîte de dialogue Importer un rapport pour importer des rapports à partir de fichiers .rptdesign. 
+---
+= Boîte de dialogue Importer le rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Rapport d'importation pour importer des rapports à partir de `.rptdesign` fichiers.
+
+
+
+== Propriétés
+
+Vous pouvez importer un rapport en spécifiant le nom du fichier de rapport, le nom du rapport et la description du rapport.
+
+* *Sélectionnez fichier de rapport*
++
+Permet de sélectionner le `.rptdesign` fichier à importer.
+
++
+[NOTE]
+====
+Dans Google Chrome, le `fakepath` du `.rptdesign` le fichier s'affiche. Dans Mozilla Firefox, seulement `.rptdesign` le nom de fichier s'affiche. Dans Internet Explorer, le chemin complet du `.rptdesign` le fichier s'affiche.
+
+====
+* *Nom*
++
+Affiche le nom du rapport. Ce champ est vide par défaut. Vous pouvez entrer un nom pour le rapport importé.
+
+* *Description*
++
+Spécifie la description du rapport importé. La description ne doit pas dépasser 150 caractères.
+
+* *Sélectionnez un utilisateur de base de données avec le rôle de schéma de rapport*
++
+Sélectionnez ou créez un utilisateur de base de données si vous importez des rapports à partir du Storage Automation Store.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Importer*
++
+Valide la sélection `.rptdesign` et importe le rapport.
+
+* *Annuler*
++
+Annule l'opération d'importation et ferme la boîte de dialogue Rapport d'importation.
+
+

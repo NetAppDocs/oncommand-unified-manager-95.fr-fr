@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des règles personnalisées et les ajouter à une règle de données afin de déterminer le placement des données écrites sur la SVM auprès d"Infinite Volume, selon les besoins de votre data Center. Vous pouvez créer des règles personnalisées à partir de la boîte de dialogue Créer une règle sans utiliser de modèle existant.' 
+---
+= Création de règles personnalisées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des règles personnalisées et les ajouter à une règle de données afin de déterminer le placement des données écrites sur la SVM auprès d'Infinite Volume, selon les besoins de votre data Center. Vous pouvez créer des règles personnalisées à partir de la boîte de dialogue Créer une règle sans utiliser de modèle existant.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Le cluster contenant le SVM avec Infinite Volume avec des classes de stockage doit être ajouté à la base de données Unified Manager.
+
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur *Data Policy*.
+. Cliquez sur *Créer*.
+. Dans la boîte de dialogue *Créer règle* , sélectionnez *règle personnalisée* dans la liste *modèle*.
+. Dans la zone *critères de correspondance*, ajoutez les conditions requises.
++
+Les conditions vous permettent de créer une règle basée sur les types de fichiers, les chemins d'accès au répertoire ou les propriétaires. Une combinaison de ces conditions sont les ensembles de conditions. Par exemple, vous pouvez avoir une règle : « placer tous les fichiers .mp3 appartenant à John dans la classe de stockage en bronze ».
+
+. Sélectionnez une classe de stockage appropriée dans la liste *placez le contenu correspondant dans la liste déroulante classe de stockage*.
+. Cliquez sur *Créer*.
++
+La règle nouvellement créée s'affiche dans l'onglet Data Policy.
+
+. Prévisualiser toutes les autres modifications apportées à la stratégie de données.
+. Cliquer sur *Activate* pour activer les modifications des propriétés de la règle dans la SVM.
+

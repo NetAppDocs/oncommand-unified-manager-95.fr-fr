@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-using-the-unified-manager-help.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"aide contient des informations sur toutes les fonctions incluses dans OnCommand Unified Manager. Vous pouvez utiliser la table des matières, l"index ou l"outil de recherche pour trouver des informations sur les fonctions et leur utilisation.' 
+---
+= Utilisation de l'aide de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'aide contient des informations sur toutes les fonctions incluses dans OnCommand Unified Manager. Vous pouvez utiliser la table des matières, l'index ou l'outil de recherche pour trouver des informations sur les fonctions et leur utilisation.
+
+
+
+== Description de la tâche
+
+L'aide est disponible sur chaque onglet et dans la barre de menus de l'interface utilisateur de Unified Manager.
+
+L'outil de recherche dans l'aide ne fonctionne pas pour les mots partiels.
+
+
+
+== Choix
+
+* Pour en savoir plus sur des champs ou des paramètres spécifiques, cliquez sur image:../media/helpicon-um60.gif["Pour une aide contextuelle"].
+* Pour afficher tout le contenu de l'aide, cliquez sur *image:../media/helpicon-um60.gif["Pour une aide contextuelle"]* > *aide/Documentation* dans la barre de menus.
++
+Pour obtenir des informations plus détaillées, développez n'importe quelle partie de la table des matières dans le volet de navigation.
+
+* Pour effectuer une recherche dans le contenu de l'aide, cliquez sur l'onglet *Rechercher* dans le volet de navigation, saisissez le mot ou la série de mots que vous souhaitez rechercher, puis cliquez sur *Go!*
+* Pour imprimer des rubriques d'aide, cliquez sur l'icône de l'imprimante.
+

@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le workflow de déploiement décrit les tâches à effectuer avant d"utiliser Unified Manager.' 
+---
+= Présentation du processus de déploiement sur VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le workflow de déploiement décrit les tâches à effectuer avant d'utiliser Unified Manager.
+
+image::../media/deployment-sequence-oc-6-0.gif[séquence de déploiement oc 6 0]

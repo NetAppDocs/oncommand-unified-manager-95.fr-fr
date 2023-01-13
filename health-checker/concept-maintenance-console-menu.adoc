@@ -1,0 +1,25 @@
+---
+permalink: health-checker/concept-maintenance-console-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: La console de maintenance se compose de différents menus qui vous permettent de maintenir et de gérer des fonctionnalités spéciales et des paramètres de configuration du serveur Unified Manager. 
+---
+= Menus de la console de maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La console de maintenance se compose de différents menus qui vous permettent de maintenir et de gérer des fonctionnalités spéciales et des paramètres de configuration du serveur Unified Manager.
+
+Selon le système d'exploitation sur lequel Unified Manager est installé, la console de maintenance se compose des menus suivants :
+
+* Mise à niveau de Unified Manager (VMware uniquement)
+* Configuration réseau (VMware uniquement)
+* Configuration du système (VMware uniquement)
+* Support/Diagnostics
+* Réinitialiser le certificat du serveur
+* Fournisseur de données externes
+* Configuration de l'intervalle d'interrogation des performances
+

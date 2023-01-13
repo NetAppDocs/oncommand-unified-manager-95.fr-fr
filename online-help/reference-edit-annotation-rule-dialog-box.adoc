@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les règles d"annotation que vous avez créées pour ajouter ou supprimer des annotations sur les objets de stockage.' 
+---
+= Boîte de dialogue Modifier une règle d'annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les règles d'annotation que vous avez créées pour ajouter ou supprimer des annotations sur les objets de stockage.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom*
++
+Affiche le nom de la règle d'annotation.
+
+* *Type d'objet cible*
++
+Affiche le type d'objet de stockage à annoter. Vous ne pouvez pas modifier le type d'objet.
+
+* *Appliquer une annotation*
++
+Affiche l'annotation et la valeur que vous pouvez utiliser pour annoter les objets de stockage lorsque toutes les conditions sont remplies.
+
+* *Conditions*
++
+Affiche la liste des conditions de la règle d'annotation. Vous pouvez modifier les conditions pour ajouter ou supprimer l'annotation sur les objets de stockage.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer*
++
+Enregistre les modifications effectuées et ferme la boîte de dialogue Modifier une règle d'annotation.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Modifier une règle d'annotation sans enregistrer vos modifications.
+
+

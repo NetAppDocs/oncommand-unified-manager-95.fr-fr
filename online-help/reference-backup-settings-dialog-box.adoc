@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la boîte de dialogue Paramètres de sauvegarde de la base de données pour spécifier un chemin de sauvegarde et un nombre de rétention et pour activer un programme de sauvegarde pour une instance de sauvegarde sélectionnée. 
+---
+= Boîte de dialogue Paramètres de sauvegarde de la base de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Paramètres de sauvegarde de la base de données pour spécifier un chemin de sauvegarde et un nombre de rétention et pour activer un programme de sauvegarde pour une instance de sauvegarde sélectionnée.
+
+Vous pouvez modifier les paramètres de sauvegarde suivants de la base de données :
+
+* *Chemin*
++
+Indique le chemin d'accès à l'emplacement où vous stockez les fichiers de sauvegarde. Le tableau suivant indique le format du chemin de sauvegarde et les emplacements par défaut pour différents systèmes d'exploitation :
+
++
+|===
+| Système d'exploitation hôte | Format du chemin de sauvegarde 
+
+
+ a| 
+Appliance virtuelle
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux ou CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *Nombre de rétention*
++
+Spécifie le nombre maximal de sauvegardes à conserver par Unified Manager. La valeur par défaut est dix.
+
+* *Activer fréquence de programmation*
++
+Cette option vous permet de spécifier quand planifier une sauvegarde ; vous pouvez choisir une sauvegarde quotidienne ou hebdomadaire.
+
+* *Tous les jours*
++
+Spécifie le planning de sauvegarde quotidien avec l'heure.
+
+* *Hebdomadaire*
++
+Spécifie le programme de sauvegarde hebdomadaire avec le jour et l'heure.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer et fermer*
++
+Enregistre le fichier de sauvegarde et ferme la boîte de dialogue. Unified Manager enregistre le fichier de sauvegarde au format suivant : `um_um_version_backup_os_timestamp.7z`.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Paramètres de sauvegarde de la base de données sans enregistrer vos modifications.
+
+

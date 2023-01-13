@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"accueil Performance Cluster affiche l"état des performances générales d"un cluster sélectionné contrôlé par une instance de Unified Manager. Cette page vous permet d"évaluer les performances globales d"un cluster spécifique et de noter, localiser ou attribuer rapidement la résolution de tout événement spécifique au cluster identifié.' 
+---
+= Contrôle des performances des clusters à partir de la page d'accueil Performance Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'accueil Performance Cluster affiche l'état des performances générales d'un cluster sélectionné contrôlé par une instance de Unified Manager. Cette page vous permet d'évaluer les performances globales d'un cluster spécifique et de noter, localiser ou attribuer rapidement la résolution de tout événement spécifique au cluster identifié.

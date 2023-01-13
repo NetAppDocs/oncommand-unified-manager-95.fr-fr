@@ -1,0 +1,59 @@
+---
+permalink: performance-checker/concept-understanding-the-um-recommendations-to-tier-data-to-the-cloud.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire Performance/volumes affiche des informations relatives à la taille des données utilisateur stockées sur le volume inactif \(froid\). Unified Manager identifie certains volumes qui seraient bénéficient d"un Tiering des données inactives vers le niveau cloud \(fournisseur cloud ou StorageGRID\) d"un agrégat compatible FabricPool.' 
+---
+= Comprendre les recommandations d'Unified Manager concernant le Tiering des données dans le cloud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire Performance/volumes affiche des informations relatives à la taille des données utilisateur stockées sur le volume inactif (à froid). Unified Manager identifie certains volumes qui seraient bénéficient du Tiering des données inactives vers le Tier cloud (fournisseur cloud ou StorageGRID) d'un agrégat compatible FabricPool.
+
+[NOTE]
+====
+FabricPool a été introduit dans ONTAP 9.2. Si vous utilisez une version du logiciel ONTAP antérieure à 9.2, les recommandations de Unified Manager pour hiérarchiser les données doivent donc mettre à niveau votre logiciel ONTAP. De plus, le `auto` La règle de hiérarchisation a été introduite dans ONTAP 9.4, donc si la recommandation est d'utiliser le `auto` Règle de Tiering, vous devez effectuer une mise à niveau vers ONTAP 9.4 ou version ultérieure.
+
+====
+Dans la page d'inventaire Performance/volumes, les trois champs suivants vous fournissent des informations sur la manière d'améliorer l'utilisation des disques du système de stockage et de réduire l'espace sur le Tier de performance en déplaçant les données inactives vers le Tier cloud.
+
+* *Politique de hiérarchisation*
++
+La règle de Tiering détermine si les données du volume restent dans le Tier de performance ou si certaines données sont déplacées depuis le Tier de performance vers le Tier cloud.
+
++
+La valeur de ce champ indique l'ensemble de règles de Tiering sur le volume, même si le volume ne réside pas actuellement sur un agrégat FabricPool. La règle de Tiering n'est appliquée que lorsque le volume se trouve sur un agrégat FabricPool.
+
+* *Données inactives*
++
+Les données inactives affichent la taille des données utilisateur stockées sur le volume inactif (à froid).
+
++
+Une valeur s'affiche ici uniquement lorsque vous utilisez ONTAP 9.4 ou version ultérieure, car l'agrégat sur lequel le volume est déployé requiert `inactive data reporting` paramètre défini sur `enabled`, et que le seuil minimum de jours de refroidissement a été atteint (pour les volumes qui utilisent le `snapshot-only` ou `auto` et de hiérarchisation). Autrement, la valeur est indiquée comme « N/A ».
+
+* *Recommandation sur le cloud*
++
+Une fois suffisamment d'informations capturées concernant l'activité de données sur le volume, Unified Manager peut déterminer qu'aucune action n'est requise, ou que vous pouvez économiser de l'espace sur le Tier de performance en transférant les données inactives vers le Tier cloud.
+
+
+
+[NOTE]
+====
+Le champ données inactives est mis à jour toutes les 15 minutes, mais le champ Cloud Recommendation est mis à jour tous les 7 jours lorsque l'analyse des données inactives est effectuée sur le volume. Par conséquent, la quantité exacte de données inactives peut différer d'un champ à l'autre. Le champ recommandations cloud affiche la date à laquelle l'analyse a été exécutée.
+
+====
+Lorsque l'option Rapport de données inactives est activée, le champ données inactives affiche la quantité exacte de données inactives. Sans la fonctionnalité de reporting des données inactives, Unified Manager utilise des statistiques de performance pour déterminer si les données sont inactives sur un volume. La quantité de données inactives ne s'affiche pas dans le champ données inactives dans ce cas, mais elle s'affiche lorsque vous passez le curseur sur le mot *Tier* pour afficher la recommandation de nuage.
+
+Nos recommandations en matière de cloud sont les suivantes :
+
+* *Apprentissage*. Des données insuffisantes ont été recueillies pour faire une recommandation.
+* *Niveau*. L'analyse a déterminé que le volume contient des données inactives et que vous devez configurer le volume pour le déplacer vers le Tier cloud. Dans certains cas, vous devrez d'abord déplacer le volume vers un agrégat compatible FabricPool. Dans les autres cas où le volume se trouve déjà dans un agrégat FabricPool, il vous suffit de modifier la règle de Tiering.
+* *Aucune action*. Soit le volume n'a que peu de données inactives, soit déjà défini sur la règle de hiérarchisation « automatique » d'un agrégat FabricPool, soit le volume est un volume de protection des données. Cette valeur s'affiche également lorsque le volume est hors ligne ou lorsqu'il est utilisé dans une configuration MetroCluster.
+
+
+Pour déplacer un volume, ou pour modifier la règle de Tiering des volumes ou les paramètres de reporting des données inactives de l'agrégat, utilisez OnCommand System Manager, les commandes de l'interface de ligne de commande de ONTAP, ou une combinaison de ces outils.
+
+Si vous êtes connecté à Unified Manager avec le rôle Administrateur OnCommand ou Administrateur stockage, le lien *configurer le volume* est disponible dans le cloud recommandé lorsque vous placez le curseur sur le mot *Tier*. Cliquez sur ce bouton pour ouvrir la page volumes dans System Manager afin d'effectuer la modification recommandée.

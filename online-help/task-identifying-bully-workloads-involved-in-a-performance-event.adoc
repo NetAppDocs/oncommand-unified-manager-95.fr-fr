@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-identifying-bully-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dans Unified Manager, vous pouvez identifier les workloads qui présentent la déviation la plus élevée de l"utilisation d"un composant de cluster en conflit. L"identification de ces workloads vous permet de comprendre pourquoi certains volumes du cluster ont des temps de réponse lents \(latence\).' 
+---
+= Identification des workloads dominants impliqués dans un événement de performance dynamique
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans Unified Manager, vous pouvez identifier les workloads qui présentent la déviation la plus élevée de l'utilisation d'un composant de cluster en conflit. L'identification de ces workloads vous permet de comprendre pourquoi certains volumes du cluster ont des temps de réponse lents (latence).
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il doit y avoir des événements de performances dynamiques nouveaux, acquittés ou obsolètes.
+
+
+
+
+== Description de la tâche
+
+La page des détails de l'événement affiche la liste des workloads définis par l'utilisateur et par le système classés selon l'utilisation la plus élevée du composant ou la plus affectée par l'événement. Les valeurs sont basées sur les pics identifiés par Unified Manager lors de sa détection et de la dernière analyse de l'événement.
+
+
+
+== Étapes
+
+. Affichez la page *Détails de l'événement* pour afficher des informations sur l'événement.
+. Dans les graphiques latence de la charge de travail et activité de la charge de travail, sélectionnez *charges de travail de type Bully* .
+. Placez le curseur de la souris sur les graphiques pour afficher les principaux workloads dominants définis par l'utilisateur qui affectent le composant.
+

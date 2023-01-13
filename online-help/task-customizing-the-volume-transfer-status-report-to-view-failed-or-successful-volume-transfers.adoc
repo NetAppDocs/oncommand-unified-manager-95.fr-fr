@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-failed-or-successful-volume-transfers.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Transfer Status \(Historical\) pour afficher les détails des transferts de volume ayant échoué ou réussis.' 
+---
+= Personnalisation du rapport Volume Transfer Status (Historical) pour afficher les transferts de volumes ayant échoué ou réussis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Transfer Status (Historique) pour afficher les détails des transferts de volume ayant échoué ou réussis.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Supprimer le regroupement par cluster :
++
+.. Sélectionnez la colonne à dégrouper.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les transferts de volume en fonction de l'échec ou de la réussite, cliquez dans la colonne *résultat opérationnel*, puis cliquez sur image:../media/click-to-see-menu.gif[""] icône.
+. Sélectionnez *filtre*.
+. Dans la boîte de dialogue *Filter*, cliquez sur *Select Values*, puis sélectionnez *Success* ou *Failure*.
+

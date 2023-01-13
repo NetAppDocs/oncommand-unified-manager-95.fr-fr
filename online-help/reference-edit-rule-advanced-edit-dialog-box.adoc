@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-rule-advanced-edit-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Modifier la règle pour modifier les propriétés d"une règle qui n"est pas créée à l"aide d"un modèle. Les propriétés de règle que vous pouvez modifier incluent les types de fichier, les chemins de répertoire, les critères de correspondance ou les propriétaires. Vous pouvez sélectionner une classe de stockage appropriée pour la règle. Par exemple, vous pouvez modifier les conditions spécifiées dans les critères de correspondance d"une règle.' 
+---
+= Boîte de dialogue Modifier la règle (édition avancée)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Modifier la règle pour modifier les propriétés d'une règle qui n'est pas créée à l'aide d'un modèle. Les propriétés de règle que vous pouvez modifier incluent les types de fichier, les chemins de répertoire, les critères de correspondance ou les propriétaires. Vous pouvez sélectionner une classe de stockage appropriée pour la règle. Par exemple, vous pouvez modifier les conditions spécifiées dans les critères de correspondance d'une règle.
+
+
+
+== Nom de la règle
+
+Affiche le nom de la règle.
+
+
+
+== Critères de correspondance
+
+Affiche une liste des conditions associées au modèle de règle sélectionné. La liste des conditions change en fonction du modèle de règle sélectionné. Vous pouvez développer les règles et modifier les propriétés de la règle, selon les besoins.
+
+
+
+== Zone de placement de contenu
+
+Affiche la liste des classes de stockage. Vous pouvez sélectionner une classe de stockage appropriée pour la règle sélectionnée.
+
+
+
+== Boutons de commande
+
+* *Mise à jour*
++
+Met à jour les modifications apportées à la règle et ferme la boîte de dialogue Modifier la règle.
+
+* *Annuler*
++
+Annule les modifications récentes apportées à la règle et ferme la boîte de dialogue Modifier la règle.
+
+

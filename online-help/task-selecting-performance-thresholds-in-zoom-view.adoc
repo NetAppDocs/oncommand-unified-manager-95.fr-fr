@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-selecting-performance-thresholds-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Application de seuils dans la vue Zoom des diagrammes de compteur fournit une vue détaillée des occurrences d"événements de seuil de performance. Cela vous permet d"appliquer ou de supprimer des seuils, et d"afficher immédiatement les résultats, ce qui peut être utile tout en déterminant si le dépannage doit être votre prochaine étape.' 
+---
+= Sélection des seuils de performance dans la vue Zoom des diagrammes de compteur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Application de seuils dans la vue Zoom des diagrammes de compteur fournit une vue détaillée des occurrences d'événements de seuil de performance. Cela vous permet d'appliquer ou de supprimer des seuils, et d'afficher immédiatement les résultats, ce qui peut être utile tout en déterminant si le dépannage doit être votre prochaine étape.
+
+
+
+== Description de la tâche
+
+La sélection de seuils dans la vue Zoom des diagrammes de compteur vous permet d'afficher des données précises sur les événements de seuil de performance. Vous pouvez appliquer n'importe quel seuil qui apparaît sous la zone *Policies* de la vue Zoom des diagrammes de compteur.
+
+Une seule règle à la fois peut être appliquée à l'objet dans la vue Zoom des diagrammes de compteur.
+
+
+
+== Étapes
+
+. Sélectionner ou désélectionner le image:../media/eye-icon.gif[""] associé à une politique.
++
+Le seuil sélectionné est appliqué à la vue Zoom des diagrammes de compteur. Les seuils critiques sont affichés sous la forme d'une ligne rouge ; les seuils d'avertissement sont affichés sous la forme d'une ligne jaune.
+
+

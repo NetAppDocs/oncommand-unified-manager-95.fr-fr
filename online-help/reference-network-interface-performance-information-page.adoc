@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez la page Performance/LIF information pour afficher la liste des attributs configurés de la LIF. Ces informations peuvent aider à répondre aux questions relatives aux performances. 
+---
+= Page d'informations sur les performances/LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/LIF information pour afficher la liste des attributs configurés de la LIF. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs des LIF
+
+* *Adresse IP*
++
+Adresse IPv4 ou IPv6 attribuée à la LIF. Il peut y avoir plusieurs adresses IP attribuées à une LIF.
+
+* *Rôle*
++
+Le rôle détermine le type de trafic pris en charge sur LIF.
+
++
+Les LIF peuvent avoir un des rôles suivants :
+
++
+** Les données
+** Cluster
+** Gestion de nœuds
+** Intercluster
+
+
+* *Groupe de basculement*
++
+Nom du groupe de basculement attribué à la LIF.
+
++
+Ce champ s'applique uniquement aux LIF réseau, et non aux LIF SAN (FC/ISCSI) et NVMe.
+
+* *Politique de basculement*
++
+Nom de la policy de failover qui est assignée à la LIF.
+
++
+Ce champ s'applique uniquement aux LIF réseau, et non aux LIF SAN (FC/ISCSI) et NVMe.
+
+* *Port domicile*
++
+Nom du nœud et du port qui a été défini comme port de rattachement de cette interface. Vous pouvez cliquer sur le nom pour afficher les détails du port dans la page de l'explorateur de performances/ports.
+
+* *Port actuel*
++
+Nom du nœud et du port sur lequel l'interface est actuellement hébergée. Vous pouvez cliquer sur le nom pour afficher les détails du port dans la page de l'explorateur de performances/ports.
+
+

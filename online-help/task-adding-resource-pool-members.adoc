@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-adding-resource-pool-members.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un pool de ressources est constitué d"un certain nombre d"agrégats membres. Vous pouvez ajouter des agrégats à des pools de ressources existants pour augmenter l"espace disponible pour le provisionnement du volume secondaire.' 
+---
+= Ajout de membres de pool de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un pool de ressources est constitué d'un certain nombre d'agrégats membres. Vous pouvez ajouter des agrégats à des pools de ressources existants pour augmenter l'espace disponible pour le provisionnement du volume secondaire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez pas ajouter plus de 200 agrégats à un pool de ressources à la fois. Les agrégats affichés dans la boîte de dialogue Aggregates n'appartiennent à aucun autre pool de ressources.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *pools de ressources*.
+. Sélectionnez un pool de ressources dans la liste *pools de ressources*.
++
+Les membres du pool de ressources sont affichés dans la zone située sous la liste du pool de ressources.
+
+. Dans la zone membre du pool de ressources, cliquez sur *Ajouter*.
++
+La boîte de dialogue Aggregates s'affiche.
+
+. Sélectionnez un ou plusieurs agrégats.
+. Cliquez sur *Ajouter*.
++
+La boîte de dialogue est fermée et les agrégats s'affichent dans la liste des membres du pool de ressources sélectionné.
+
+

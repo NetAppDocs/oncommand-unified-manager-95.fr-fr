@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La connectivité entre les clusters d"une configuration MetroCluster peut être l"un des États suivants : optimal, impacté ou arrêté. La présentation des États de connectivité vous permet de gérer efficacement vos configurations MetroCluster.' 
+---
+= Définitions de l'état de la connectivité des clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La connectivité entre les clusters d'une configuration MetroCluster peut être l'un des États suivants : optimal, impacté ou arrêté. La présentation des États de connectivité vous permet de gérer efficacement vos configurations MetroCluster.
+
+|===
+| État de la connectivité | Description | Icône affichée 
+
+
+ a| 
+Optimale
+ a| 
+La connectivité entre les clusters dans la configuration MetroCluster est normale.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+Sont concernés
+ a| 
+Une ou plusieurs erreurs compromettent l'état de la disponibilité du basculement. Toutefois, les deux clusters de la configuration MetroCluster sont toujours en service. Par exemple, lorsque la liaison ISL est en panne, lorsque la liaison IP intercluster est en panne ou lorsque le cluster partenaire est inaccessible.
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+Vers le bas
+ a| 
+La connectivité entre les clusters de la configuration MetroCluster est en panne, car l'un des clusters ou les deux sont en panne ou en mode de basculement. Par exemple, lorsque le cluster partenaire est hors service à cause d'un incident ou lorsqu'un basculement est planifié à des fins de test.
+ a| 
+Basculement par erreur :
+
+image::../media/metrocluster-connectivity-down.gif[connectivité MetroCluster indisponible]
+
+Basculement réussi :
+
+image::../media/metrocluster-connectivity-failover.gif[basculement de la connectivité MetroCluster]
+
+|===

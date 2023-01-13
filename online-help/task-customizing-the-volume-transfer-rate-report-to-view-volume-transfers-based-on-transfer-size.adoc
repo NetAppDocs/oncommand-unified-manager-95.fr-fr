@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Transfer Rate \(Historical\) pour afficher les détails du transfert de volume en fonction de la taille totale du transfert du volume.' 
+---
+= Personnalisation du rapport Volume Transfer Rate (Historique) pour afficher les transferts de volume en fonction de la taille du transfert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Transfer Rate (Historical) pour afficher les détails du transfert de volume en fonction de la taille totale du transfert du volume.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Supprimer le regroupement par cluster :
++
+.. Sélectionnez la colonne à dégrouper.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les transferts de volume en fonction de la taille de transfert de volume, cliquez sur la colonne *taille de transfert totale (Go)*.
+

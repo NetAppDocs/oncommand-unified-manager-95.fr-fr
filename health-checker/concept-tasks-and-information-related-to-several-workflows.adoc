@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-tasks-and-information-related-to-several-workflows.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Certaines tâches et textes de référence qui peuvent vous aider à comprendre et à compléter un flux de travail sont courants pour de nombreux flux de travail dans Unified Manager. Vous pouvez notamment ajouter et revoir des notes concernant un événement, attribuer un événement, accuser réception et résoudre des événements, ainsi que des détails sur les volumes, les machines virtuelles de stockage \(SVM\), les agrégats, et ainsi de suite.' 
+---
+= Tâches et informations relatives à plusieurs flux de travail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Certaines tâches et textes de référence qui peuvent vous aider à comprendre et à effectuer un flux de travail sont courants pour de nombreux flux de travail dans Unified Manager. Vous pouvez notamment ajouter et revoir des notes concernant un événement, attribuer un événement, accuser réception et résoudre des événements, ainsi que des détails sur les volumes, les SVM (Storage Virtual machine), les agrégats, et ainsi de suite.

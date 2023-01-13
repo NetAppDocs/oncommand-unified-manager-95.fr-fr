@@ -1,0 +1,114 @@
+---
+permalink: online-help/reference-nfs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport exportations NFS vous permet d"auditer des informations sur les règles d"exportation NFS et les règles associées pour les volumes de votre système de stockage.' 
+---
+= Rapport sur les exportations NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport exportations NFS vous permet d'auditer des informations sur les règles d'exportation NFS et les règles associées pour les volumes de votre système de stockage.
+
+
+
+== Vue tabulaire du rapport d'exportations NFS
+
+* *Cluster*
++
+Affiche le nom du cluster.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom du SVM avec les export policy NFS.
+
+* *Volume*
++
+Affiche le nom du volume avec les export policies NFS.
+
+* *Qtree*
++
+Affiche le nom du qtree sur un volume doté des export policies NFS.
+
+* *État du volume*
++
+Affiche l'état actuel du volume. L'état peut être hors ligne, en ligne ou limité.
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture au volume n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture au volume est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+
+
+* *Chemin de jonction*
++
+Affiche le chemin d'accès sur lequel le volume est monté.
+
+* *Chemin de jonction actif*
++
+Indique si le chemin d'accès au volume monté est actif ou inactif.
+
+* *Politique d'exportation*
++
+Affiche les règles qui définissent l'autorisation d'accès pour les volumes qui sont exportés.
+
+* *Index des règles*
++
+Affiche les règles associées à l'export policy, telles que les protocoles d'authentification et l'autorisation d'accès.
+
+* *Protocoles d'accès*
++
+Affiche les protocoles activés pour les règles d'export policy.
+
+* * Correspondance client*
++
+Affiche les clients autorisés à accéder aux données sur les volumes.
+
+* *Accès en lecture seule*
++
+Affiche le protocole d'authentification utilisé pour lire les données sur les volumes.
+
+* *Accès en écriture*
++
+Affiche le protocole d'authentification utilisé pour lire ou écrire des données sur les volumes.
+
+* *Style de sécurité*
++
+Affiche l'autorisation d'accès pour les volumes exportés. Le style de sécurité peut être UNIX, unifié, NTFS ou Mixed.
+
++
+** UNIX (clients NFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations UNIX.
+
+** Unifiée
++
+Les fichiers et les répertoires du volume possèdent une méthode de sécurité unifiée.
+
+** NTFS (clients CIFS)
++
+Les fichiers et les répertoires du volume disposent d'autorisations Windows NTFS.
+
+** Mixte
++
+Les fichiers et les répertoires du volume peuvent disposer d'autorisations UNIX ou NTFS Windows.
+
+
+
+* *Autorisation Unix*
++
+Affiche les bits d'autorisation UNIX dans un format octal de chaîne, qui est défini pour les volumes exportés. Elle est similaire aux bits d'autorisation de style UNIX.
+
+

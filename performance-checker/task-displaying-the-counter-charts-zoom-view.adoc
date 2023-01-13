@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/task-displaying-the-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue Zoom des diagrammes de compteur fournit un niveau de détail plus fin pour le compteur sélectionné et son chronogramme associé. Cela amplifie les données du compteur, ce qui vous permet d"obtenir une vue plus précise des événements de performance et de leurs causes sous-jacentes.' 
+---
+= Affichage de la vue Zoom des diagrammes de compteur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue Zoom des diagrammes de compteur fournit un niveau de détail plus fin pour le compteur sélectionné et son chronogramme associé. Cela amplifie les données du compteur, ce qui vous permet d'obtenir une vue plus précise des événements de performance et de leurs causes sous-jacentes.
+
+
+
+== Description de la tâche
+
+Vous pouvez afficher la vue Zoom des diagrammes de compteur pour n'importe quel compteur.
+
+
+
+== Étapes
+
+. Cliquez sur *Zoom View* pour ouvrir le graphique sélectionné dans une nouvelle fenêtre de navigateur.
+. Si vous affichez un graphique détaillé, puis cliquez sur *Zoom View* le graphique détaillé est affiché en vue Zoom. Vous pouvez sélectionner *Total* en vue Zoom si vous souhaitez modifier l'option d'affichage.
+

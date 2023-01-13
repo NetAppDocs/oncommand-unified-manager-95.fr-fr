@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-what-the-expected-range-of-performance-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La plage de valeurs attendue est une prévision, ou prévision, de ce que les valeurs de performance supérieure et inférieure devraient être à un moment donné. Pour la latence des workloads, les valeurs supérieures constituent le seuil de performance. Lorsque la valeur réelle franchit le seuil de performances, Unified Manager déclenche une alerte d"événement de performance.' 
+---
+= Parmi les performances attendues
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La plage de valeurs attendue est une prévision, ou prévision, de ce que les valeurs de performance supérieure et inférieure devraient être à un moment donné. Pour la latence des workloads, les valeurs supérieures constituent le seuil de performance. Lorsque la valeur réelle franchit le seuil de performances, Unified Manager déclenche une alerte d'événement de performance.
+
+Par exemple, pendant les heures de bureau habituelles, entre 9:00 à 5 h 00, la plupart des employés peuvent vérifier leur courriel entre 9 h 00 et 10:30 L'augmentation de la demande sur les serveurs de messagerie entraîne une augmentation de l'activité de la charge de travail sur le stockage interne au cours de cette période. Les employés risquent de remarquer le ralentissement des temps de réponse de la part de leurs clients de messagerie.
+
+Pendant l'heure du déjeuner, entre 12:00 et 13:00 et à la fin de la journée de travail après 5 h 00, la plupart des employés sont susceptibles de s'éloigner de leurs ordinateurs. La demande sur les serveurs de messagerie diminue généralement, tout en diminuant la demande sur le stockage interne. Il peut également y avoir des opérations planifiées pour les charges de travail, telles que les sauvegardes de stockage ou l'analyse antivirus, commençant après 5 h 00 et augmenter l'activité sur le stockage interne.
+
+Sur plusieurs jours, l'augmentation et la diminution de l'activité de la charge de travail déterminent l'étendue d'activité attendue, avec des limites supérieure et inférieure pour une charge de travail. Lorsque l'activité de workload réelle d'un objet se trouve en dehors des limites supérieure ou inférieure et reste en dehors des limites pendant un certain temps, il peut indiquer que l'objet est sur-utilisé ou sous-utilisé.
+
+
+
+== La manière dont la plage attendue est formée
+
+Unified Manager doit collecter au moins 3 jours d'activité sur la charge de travail avant de pouvoir lancer l'analyse et avant que la plage prévue pour le temps de réponse d'E/S et les opérations ne puissent être affichées dans l'interface graphique. La collecte de données minimale requise ne tient pas compte de toutes les modifications apportées à l'activité de la charge de travail. Une fois l'activité des 3 premiers jours terminée, Unified Manager ajuste la plage attendue, toutes les 24 heures à 12 h 00. Il reflète les modifications apportées à l'activité des charges de travail et établit un seuil de performances plus précis.
+
+[NOTE]
+====
+L'heure d'été change l'heure système, ce qui modifie la plage attendue de statistiques de performances pour les charges de travail surveillées. Unified Manager commence immédiatement à corriger la plage attendue, qui prend environ 15 jours. Pendant cette période, vous pouvez continuer à utiliser Unified Manager, mais, puisque Unified Manager utilise la plage attendue pour détecter des événements, il se peut que certains événements ne soient pas précis. Les événements détectés avant le changement de temps ne sont pas affectés. La modification manuelle de l'heure sur un cluster ou sur un serveur Unified Manager à une heure antérieure affecte également les résultats de l'analyse d'événements.
+
+====

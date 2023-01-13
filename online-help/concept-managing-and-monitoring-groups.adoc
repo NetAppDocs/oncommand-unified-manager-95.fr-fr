@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: La création de groupes dans Unified Manager permet de gérer les objets de stockage. 
+---
+= Gestion et suivi des groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La création de groupes dans Unified Manager permet de gérer les objets de stockage.

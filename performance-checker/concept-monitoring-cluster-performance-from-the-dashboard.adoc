@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le tableau de bord des performances de OnCommand System Manager affiche l"état général des performances de tous les clusters contrôlés par cette instance de Unified Manager. Il vous permet d"évaluer les performances globales des clusters gérés et de noter, localiser et attribuer rapidement la résolution de tout événement spécifique identifié.' 
+---
+= Contrôle des performances du cluster depuis le tableau de bord des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord des performances de OnCommand System Manager affiche l'état général des performances de tous les clusters contrôlés par cette instance de Unified Manager. Il vous permet d'évaluer les performances globales des clusters gérés et de noter, localiser et attribuer rapidement la résolution de tout événement spécifique identifié.

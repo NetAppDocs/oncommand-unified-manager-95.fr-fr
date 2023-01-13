@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier la règle ou la planification qui gère les opérations d"efficacité du stockage pour s"exécuter lorsque les charges de travail des volumes concernés sont moins occupées.' 
+---
+= Exécutez les opérations d'efficacité du stockage à un moment moins occupé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier la règle ou la planification qui gère les opérations d'efficacité du stockage pour s'exécuter lorsque les charges de travail des volumes concernés sont moins occupées.
+
+Les opérations d'efficacité du stockage peuvent utiliser un nombre élevé de ressources CPU du cluster et devenir un tyran pour les volumes sur lesquels les opérations sont exécutées. Si les volumes victimes ont une activité élevée en même temps que lorsque les opérations d'efficacité du stockage sont exécutées, leur latence peut augmenter et déclencher un événement.
+
+Sur la page Détails de l'événement, la section diagnostic système affiche les charges de travail dans le groupe de règles QoS par déviation de pic d'activité pour identifier les charges de travail dominantes. Si la mention « efficacité de stockage » s'affiche en haut du tableau, ces opérations intimident les charges de travail victimes. En modifiant la règle d'efficacité ou la planification de l'exécution lorsque ces charges de travail sont moins occupées, vous pouvez empêcher les opérations d'efficacité du stockage d'provoquer des conflits sur un cluster.
+
+OnCommand System Manager peut être utilisé pour gérer les règles d'efficacité. Vous pouvez utiliser les commandes ONTAP pour gérer les règles d'efficacité et les planifications.

@@ -1,0 +1,173 @@
+---
+permalink: online-help/reference-event-management-inventory-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire Evénements vous permet d"afficher une liste des événements en cours et leurs propriétés. Vous pouvez effectuer des tâches telles que la validation, la résolution et l"attribution d"événements. Vous pouvez également ajouter une alerte à des événements spécifiques.' 
+---
+= Page d'inventaire des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire Evénements vous permet d'afficher une liste des événements en cours et leurs propriétés. Vous pouvez effectuer des tâches telles que la validation, la résolution et l'attribution d'événements. Vous pouvez également ajouter une alerte à des événements spécifiques.
+
+Par défaut, les informations de cette page sont actualisées automatiquement toutes les 5 minutes pour s'assurer que les nouveaux événements les plus récents sont affichés.
+
+
+
+== Composants du filtre
+
+Permet de personnaliser les informations affichées dans la liste des événements. Vous pouvez affiner la liste des événements affichés à l'aide des composants suivants :
+
+* Menu Affichage pour faire votre choix dans une liste prédéfinie de sélections de filtres.
++
+Cela inclut des éléments tels que tous les événements actifs (nouveaux et acquittés), les événements de performances actifs, les événements qui m'ont été attribués (l'utilisateur connecté) et tous les événements générés pendant toutes les fenêtres de maintenance.
+
+* Volet de recherche pour affiner la liste des événements en saisissant des termes complets ou partiels.
+* Le bouton filtre qui lance le volet filtres vous permet de sélectionner tous les champs et attributs de champ disponibles pour affiner la liste des événements.
+* Sélecteur de temps pour affiner la liste des événements en fonction de l'heure à laquelle l'événement a été déclenché.
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Affecter à*
++
+Vous permet de sélectionner l'utilisateur auquel l'événement est affecté. Lorsque vous affectez un événement à un utilisateur, le nom d'utilisateur et l'heure à laquelle vous avez affecté l'événement sont ajoutés dans la liste des événements pour les événements sélectionnés.
+
++
+** Moi
++
+Attribue l'événement à l'utilisateur actuellement connecté.
+
+** Un autre utilisateur
++
+Affiche la boîte de dialogue attribuer un propriétaire qui vous permet d'affecter ou de réaffecter l'événement à d'autres utilisateurs. Vous pouvez également annuler l'affectation d'événements en laissant le champ de propriété vide.
+
+
+
+* *Acknowledge*
++
+Acquitte les événements sélectionnés.
+
++
+Lorsque vous reconnaissez un événement, votre nom d'utilisateur et l'heure à laquelle vous avez reconnu l'événement sont ajoutés dans la liste des événements pour les événements sélectionnés. Lorsque vous reconnaissez un événement, vous êtes responsable de la gestion de cet événement.
+
++
+[NOTE]
+====
+Vous ne pouvez pas accuser réception d'événements d'information.
+
+====
+* *Marquer comme résolu*
++
+Vous permet de changer l'état de l'événement en résolu.
+
++
+Lorsque vous résolvez un événement, votre nom d'utilisateur et l'heure à laquelle vous avez résolu l'événement sont ajoutés dans la liste des événements pour les événements sélectionnés. Après avoir pris les mesures correctives nécessaires à l'événement, vous devez marquer l'événement comme résolu.
+
+* *Ajouter alerte*
++
+Affiche la boîte de dialogue Ajouter une alerte qui vous permet d'ajouter des alertes pour les événements sélectionnés.
+
+* *Exportation*
++
+Permet d'exporter les détails de tous les événements vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+* *Sélecteur de colonne*
++
+Vous permet de choisir les colonnes qui s'affichent sur la page et de sélectionner l'ordre dans lequel elles sont affichées.
+
+
+
+
+
+== Liste des événements
+
+Affiche les détails de tous les événements commandés par heure déclenchée.
+
+Par défaut, les événements nouveaux et acquittés des sept derniers jours de type de gravité critique, erreur et avertissement s'affichent.
+
+* *Temps déclenché*
++
+Heure à laquelle l'événement a été généré.
+
+* *Gravité*
++
+La gravité de l'événement : critique (image:../media/sev-critical-um60.png[""]), erreur (image:../media/sev-error-um60.png[""]), Avertissement (image:../media/sev-warning-um60.png[""]), et informations (image:../media/sev-information-um60.gif[""]).
+
+* *État*
++
+État de l'événement : nouveau, validé, résolu ou Obsolète.
+
+* *Niveau d'impact*
++
+Niveau d'impact événement : incident, risque ou événement.
+
+* *Zone d'impact*
++
+Domaine de l'impact de l'événement : disponibilité, capacité, performance, protection ou configuration.
+
+* *Nom*
++
+Nom de l'événement.
+
++
+Vous pouvez sélectionner le nom de l'événement pour afficher la page Détails de l'événement.
+
+* *Source*
++
+Nom de l'objet sur lequel l'événement s'est produit.
+
++
+Lorsqu'une violation de la politique de QoS partagée se produit, seul l'objet de charge de travail qui utilise le plus d'IOPS ou de Mo/sec est affiché dans ce champ. Les charges de travail supplémentaires qui utilisent cette règle s'affichent dans la page Détails de l'événement.
+
++
+Vous pouvez sélectionner le nom de la source pour afficher la page d'informations de santé ou de performances de cet objet.
+
+* *Type de source*
++
+Type d'objet (par exemple SVM, Volume ou qtree) auquel l'événement est associé.
+
+* *Affecté à*
++
+Nom de l'utilisateur auquel l'événement est affecté.
+
+* *Notes*
++
+Nombre de notes ajoutées pour un événement.
+
+* *Jours en suspens*
++
+Nombre de jours depuis la génération initiale de l'événement.
+
+* *Temps attribué*
++
+Temps écoulé depuis l'affectation de l'événement à un utilisateur. Si le temps écoulé dépasse une semaine, l'heure à laquelle l'événement a été attribué à un utilisateur s'affiche.
+
+* *Reconnu par*
++
+Nom de l'utilisateur qui a reconnu l'événement. Le champ est vide si l'événement n'est pas validé.
+
+* *Heure reconnue*
++
+Temps écoulé depuis l'accusé de réception de l'événement. Si le temps écoulé dépasse une semaine, l'heure à laquelle l'événement a été reconnu s'affiche.
+
+* *Résolu par*
++
+Nom de l'utilisateur qui a résolu l'événement. Le champ est vide si l'événement n'est pas résolu.
+
+* *Temps résolu*
++
+Temps écoulé depuis la résolution de l'événement. Si le temps écoulé dépasse une semaine, l'heure à laquelle l'événement a été résolu s'affiche.
+
+* *Obsolète*
++
+Heure à laquelle l'état de l'événement est devenu Obsolète.
+
+

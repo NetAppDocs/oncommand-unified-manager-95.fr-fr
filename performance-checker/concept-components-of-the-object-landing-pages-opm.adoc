@@ -1,0 +1,53 @@
+---
+permalink: performance-checker/concept-components-of-the-object-landing-pages-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages d"arrivée d"objet fournissent des détails sur tous les événements critiques, d"avertissement et d"information. Elles offrent une vue détaillée des performances de tous les objets du cluster. Vous pouvez ainsi sélectionner et comparer des objets individuels sur différentes périodes.' 
+---
+= Composants des pages d'arrivée d'objet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages d'arrivée d'objet fournissent des détails sur tous les événements critiques, d'avertissement et d'information. Elles offrent une vue détaillée des performances de tous les objets du cluster. Vous pouvez ainsi sélectionner et comparer des objets individuels sur différentes périodes.
+
+Les pages de destination d'objet vous permettent d'examiner les performances globales de tous les objets et de comparer les données de performances d'objet dans un format côte à côte. Cela est bénéfique lors de l'évaluation des performances et du dépannage des événements.
+
+[NOTE]
+====
+Les données affichées dans les panneaux récapitulatifs des compteurs et dans les compteurs sont basées sur un intervalle d'échantillonnage de cinq minutes. Les données affichées dans la grille d'inventaire des objets sur le côté gauche de la page sont basées sur un intervalle d'échantillonnage d'une heure.
+
+====
+L'image suivante montre un exemple de page d'arrivée d'objet affichant les informations de l'Explorateur :
+
+image::../media/perf-manager-page-1.gif[gestionnaire des perf page 1]
+
+Selon l'objet de stockage affiché, la page d'accueil de l'objet peut disposer des onglets suivants qui fournissent des données de performances sur l'objet :
+
+* Récapitulatif
++
+Affiche trois ou quatre graphiques de compteur contenant les événements et les performances par objet pour la période de 72 heures précédente, y compris une ligne de tendance indiquant les valeurs haute et basse pendant cette période.
+
+* Explorateur
++
+Affiche une grille d'objets de stockage liés à l'objet actuel, ce qui vous permet de comparer les valeurs de performances de l'objet actuel avec celles des objets liés. Cet onglet comprend jusqu'à onze diagrammes de compteur et un sélecteur de plage de temps, qui vous permettent d'effectuer diverses comparaisons.
+
+* Informations
++
+Affiche les valeurs des attributs de configuration sans performances relatives à l'objet de stockage, y compris la version installée du logiciel ONTAP, le nom du partenaire haute disponibilité et le nombre de ports et de LIF.
+
+* Les meilleurs collaborateurs
++
+Pour les clusters : affiche les objets de stockage qui présentent les meilleures performances ou les meilleures performances, en fonction du compteur de performances sélectionné.
+
+* Planification des basculements
++
+Pour les nœuds : affiche l'estimation de l'impact sur la performance d'un nœud en cas de panne du partenaire de haute disponibilité du nœud.
+
+* Détails
++
+Pour les volumes : affiche des statistiques de performances détaillées pour toutes les activités et opérations d'E/S de la charge de travail de volume sélectionnée. Cet onglet est disponible pour les volumes FlexVol, les volumes FlexGroup et les composants de FlexGroups.
+
+

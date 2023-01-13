@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-disk-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de disque fournissent des informations sur l"état des disques afin que vous puissiez surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements des disques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de disque fournissent des informations sur l'état des disques afin que vous puissiez surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Disques Flash – blocs de rechange presque consommés (ocumEvtClusterFlashDiskFewerSpareBlockError)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Erreur
+
+
+
+ a| 
+Disques Flash - pas de blocs de rechange (ocumEvtClusterFlashDiskNoSpareBlockCritical)
+ a| 
+Gestion des
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+Certains disques non affectés(ocumEvtClusterUnassignedDisksSome)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Certains disques défaillants(ocumEvtDisksUnsUnsUnsFailed)
+ a| 
+Gestion des
+ a| 
+Cluster
+ a| 
+Primordial
+
+|===

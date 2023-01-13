@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-health-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de santé sont des notifications générées automatiquement lorsqu"une condition prédéfinie se produit ou lorsqu"un objet franchit un seuil de santé. Ces événements vous permettent de prendre des mesures pour éviter les problèmes qui peuvent entraîner des performances médiocres et une indisponibilité du système. Les événements comprennent une zone d"impact, la gravité et le niveau d"impact.' 
+---
+= Description des événements de santé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de santé sont des notifications générées automatiquement lorsqu'une condition prédéfinie se produit ou lorsqu'un objet franchit un seuil de santé. Ces événements vous permettent de prendre des mesures pour éviter les problèmes qui peuvent entraîner des performances médiocres et une indisponibilité du système. Les événements comprennent une zone d'impact, la gravité et le niveau d'impact.
+
+Les événements de santé sont classés par type de zone d'impact, comme la disponibilité, la capacité, la configuration ou la protection. Un type de gravité et un niveau d'impact sont également attribués aux événements qui vous aident à déterminer si une action immédiate est nécessaire.
+
+Vous pouvez configurer des alertes pour qu'elles envoient automatiquement des notifications lorsque des événements ou événements spécifiques se produisent.
+
+Les événements obsolètes, résolus et informatifs sont automatiquement consignés et conservés pendant 180 jours par défaut.
+
+Il est important de prendre immédiatement des mesures correctives en cas d'erreur de niveau de gravité ou critique.

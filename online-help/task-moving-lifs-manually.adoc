@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-moving-lifs-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les serveurs virtuels de stockage \(SVM\)contiennent des volumes de données et une ou plusieurs interfaces logiques \(LIF\) via lesquelles le SVM fournit des données aux clients. Vous pouvez déplacer des LIF de données d"un port physique vers un autre au sein d"une même SVM. Pour optimiser l"équilibrage de la charge ou faciliter les opérations de maintenance et l"ajustement des performances,' 
+---
+= Déplacement manuel des LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les serveurs virtuels de stockage (SVM) contiennent des volumes de données et une ou plusieurs interfaces logiques (LIF) via lesquelles le SVM fournit des données aux clients. Vous pouvez déplacer des LIF de données d'un port physique vers un autre au sein d'une même SVM. Pour optimiser l'équilibrage de la charge ou faciliter les opérations de maintenance et l'ajustement des performances,
+
+
+
+== Description de la tâche
+
+Il existe différents types de LIF :
+
+* LIF de données : associées à un SVM et servant à la communication avec les clients.
+* Cluster Management LIFs : utilisé pour gérer les nœuds, les SVM et le cluster lui-même.
+* LIFs de cluster : utilisées pour le trafic intracluster.
+* LIFs intercluster : utilisées pour la communication entre les clusters.
+* LIFs intracluster : utilisées pour la communication entre paires haute disponibilité.
+* LIF de gestion du SVM : LIFs de données associées à un SVM et utilisées pour gérer ce SVM.
+
+
+image::../media/cluster-network-types.gif[types de réseau de clusters]
+
+Ce workflow décrit la procédure de déplacement des LIF de données. Cela s'applique aux LIF NAS (NFS et CIFS), mais pas aux LIF SAN (FC et iSCSI).
+
+[NOTE]
+====
+Lors du déplacement d'une LIF connectée à des partages CIFS, les clients qui accèdent aux partages CIFS seront déconnectés. Toute demande de lecture ou d'écriture vers les partages CIFS sera interrompue.
+
+====
+[NOTE]
+====
+Pour plus d'informations sur le déplacement d'autres types de LIF, y compris des informations détaillées sur le déplacement DE LIF connectées à des partages CIFS, consultez la documentation réseau ONTAP.
+
+====
+Vous pouvez effectuer les actions de base suivantes liées aux LIFs de données :
+
+* Afficher toutes les LIFs de données.
+* Identifier les LIF les plus chargées.
+* Identifier le nœud le plus adapté à une LIF occupée.
+* Modifier le port ou le nœud de rattachement d'une LIF pour modifier son emplacement privilégié dans le cluster.
++
+Vous devez déplacer une LIF plutôt que de migrer une LIF pour une modification plus durable. Pour revenir au port de Home port d'origine, vous devez restaurer la LIF.
+
+* Migrez une LIF de données vers un autre port en raison d'une modification temporaire qui peut être utilisée si le port de rattachement ou le nœud présente un problème ou est en cours de maintenance planifiée.
+* Ne rétablit pas une LIF de données à son port de origine.
+

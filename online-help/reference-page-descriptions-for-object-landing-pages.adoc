@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages de l"explorateur de performances vous permettent d"afficher des informations détaillées sur les performances de chaque objet de stockage disponible, comme les clusters, les agrégats, les volumes, etc. Ces pages vous permettent d"évaluer la performance globale de tous les objets et de comparer les données de performances des objets dans un format côte à côte.' 
+---
+= Descriptions des pages de l'explorateur de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages de l'explorateur de performances vous permettent d'afficher des informations détaillées sur les performances de chaque objet de stockage disponible, comme les clusters, les agrégats, les volumes, etc. Ces pages vous permettent d'évaluer la performance globale de tous les objets et de comparer les données de performances des objets dans un format côte à côte.

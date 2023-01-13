@@ -1,0 +1,46 @@
+---
+permalink: config/task-configuring-event-notification-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer Unified Manager pour qu"il envoie des notifications d"alerte lorsqu"un événement est généré ou lorsqu"un événement est affecté à un utilisateur. Vous pouvez configurer le serveur SMTP utilisé pour envoyer l"alerte et définir différents mécanismes de notification, par exemple, des notifications d"alerte peuvent être envoyées en tant qu"e-mails ou interruptions SNMP.' 
+---
+= Configuration des paramètres de notification d'événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer Unified Manager pour qu'il envoie des notifications d'alerte lorsqu'un événement est généré ou lorsqu'un événement est affecté à un utilisateur. Vous pouvez configurer le serveur SMTP utilisé pour envoyer l'alerte et définir différents mécanismes de notification, par exemple, des notifications d'alerte peuvent être envoyées en tant qu'e-mails ou interruptions SNMP.
+
+
+
+== Avant de commencer
+
+Vous devez disposer des informations suivantes :
+
+* Adresse e-mail à partir de laquelle la notification d'alerte est envoyée
++
+L'adresse e-mail apparaît dans le champ « de » des notifications d'alerte envoyées. Si l'e-mail ne peut pas être livré pour une raison quelconque, cette adresse e-mail est également utilisée comme destinataire pour le courrier non livrable.
+
+* Le nom d'hôte du serveur SMTP ainsi que le nom d'utilisateur et le mot de passe pour accéder au serveur
+* Version SNMP, adresse IP de l'hôte de destination d'interruption, port d'interruption sortant et communauté pour configurer l'interruption SNMP
+
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Notifications* dans le menu Configuration de gauche.
+. Dans la page *Configuration/Notifications*, configurez les paramètres appropriés et cliquez sur *Enregistrer*.
++
+*Notes:*
+
++
+** Si l'adresse de expéditeur est pré-remplie avec l'adresse « OnCommand@localhost.com », vous devez la remplacer par une adresse e-mail réelle et opérationnelle afin de vous assurer que toutes les notifications par e-mail sont correctement envoyées.
+** Si le nom d'hôte du serveur SMTP ne peut pas être résolu, vous pouvez spécifier l'adresse IP (IPv4 ou IPv6) du serveur SMTP au lieu du nom d'hôte.
+
+
+

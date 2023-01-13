@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-restoring-data-using-the-health-volumes-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez restaurer des fichiers, des répertoires ou un volume complet à partir d"une copie Snapshot par le biais de la fonctionnalité de restauration de la page d"inventaire Health/volumes.' 
+---
+= Restauration des données à l'aide de la page d'inventaire Health/Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez restaurer des fichiers, des répertoires ou un volume complet à partir d'une copie Snapshot par le biais de la fonctionnalité de restauration de la page d'inventaire Health/volumes.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez pas restaurer les flux de fichiers NTFS.
+
+L'option de restauration n'est pas disponible lorsque :
+
+* L'ID du volume est inconnu : par exemple, lorsque vous avez une relation intercluster et que le cluster destination n'a pas encore été découvert.
+* Le volume est un volume FlexGroup.
+* Le volume est configuré pour la réplication SnapMirror synchrone.
+
+
+
+
+== Étapes
+
+. Dans la page d'inventaire *Santé/volumes*, sélectionnez un volume à partir duquel vous souhaitez restaurer les données.
+. Dans la barre d'outils, cliquez sur *Restaurer*.
++
+La boîte de dialogue Restaurer s'affiche.
+
+. Sélectionnez le volume et la copie Snapshot depuis lesquels vous souhaitez restaurer les données, si elles sont différentes de celles par défaut.
+. Sélectionnez les éléments à restaurer.
++
+Vous pouvez restaurer tout le volume ou spécifier les dossiers et les fichiers à restaurer.
+
+. Sélectionnez l'emplacement auquel vous souhaitez restaurer les éléments sélectionnés : *emplacement d'origine* ou *autre emplacement*.
+. Cliquez sur *Restaurer*.
++
+Le processus de restauration commence.
+
+

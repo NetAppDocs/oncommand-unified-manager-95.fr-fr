@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Annoter le cluster vous permet d"annoter manuellement les objets de stockage. Vous pouvez sélectionner un seul cluster ou plusieurs clusters et les annoter à l"aide d"une paire de valeurs spécifique dans la liste d"annotations existante.' 
+---
+= Boîte de dialogue Annoter le cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Annoter le cluster vous permet d'annoter manuellement les objets de stockage. Vous pouvez sélectionner un seul cluster ou plusieurs clusters et les annoter à l'aide d'une paire de valeurs spécifique dans la liste d'annotations existante.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Annotation=paires de valeurs*
++
+Vous permet de sélectionner l'annotation requise pour le cluster sélectionné.
+
+* *Appliquer*
++
+Applique l'annotation sélectionnée au cluster.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Annotate Cluster sans enregistrer vos modifications.
+
+

@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de Management Station vous fournissent des informations sur l"état du serveur sur lequel Unified Manager est installé afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de station de gestion
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de Management Station vous fournissent des informations sur l'état du serveur sur lequel Unified Manager est installé afin de pouvoir surveiller les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Espace disque presque plein sur le serveur Unified Manager (ocumEvtUnifiedManagerDiskSpaceNearlyFull)
+ a| 
+Risques
+ a| 
+Station de gestion
+ a| 
+Avertissement
+
+
+
+ a| 
+Espace disque du serveur Unified Manager plein (ocumEvtUnifiedManagerDiskSpaceplein)
+ a| 
+Gestion des
+ a| 
+Station de gestion
+ a| 
+Primordial
+
+
+
+ a| 
+Mémoire faible du serveur Unified Manager (ocumEvtUnifiedManagerMémoireLow)
+ a| 
+Risques
+ a| 
+Station de gestion
+ a| 
+Avertissement
+
+
+
+ a| 
+Unified Manager Server presque à court de mémoire (ocumEvtUnifiedManagerMemoryAlmostOut)
+ a| 
+Gestion des
+ a| 
+Station de gestion
+ a| 
+Primordial
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+L'analyse des données de performances est impactée (ocumEvtUnifiedManagerDataMissingAnalyze)
+ a| 
+Risques
+ a| 
+Station de gestion
+ a| 
+Avertissement
+
+
+
+ a| 
+La collecte des données de performances est impactée (ocumEvtUnifiedManagerDataMsingCollection)
+ a| 
+Gestion des
+ a| 
+Station de gestion
+ a| 
+Primordial
+
+|===
+[NOTE]
+====
+Ces deux derniers événements de performance n'étaient disponibles que pour Unified Manager 7.2. Si l'un de ces événements existe dans le nouvel état, et que vous effectuez une mise à niveau vers une version plus récente du logiciel Unified Manager, ces événements ne sont pas supprimés automatiquement. Vous devrez déplacer les événements à l'état résolu manuellement.
+
+====

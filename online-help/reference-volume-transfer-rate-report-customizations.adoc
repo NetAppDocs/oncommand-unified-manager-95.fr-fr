@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Transfer Rate \(Historical\) pour afficher les détails du transfert de volume en fonction de la taille totale du transfert du volume. Vous pouvez également afficher les transferts de volume pour un jour de la semaine spécifique.' 
+---
+= Personnalisation du rapport Volume Transfer Rate (Historique)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Transfer Rate (Historical) pour afficher les détails du transfert de volume en fonction de la taille totale du transfert du volume. Vous pouvez également afficher les transferts de volume pour un jour de la semaine spécifique.

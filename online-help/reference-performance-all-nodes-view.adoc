@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-performance-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire des performances/nœuds présente les événements de performance, les données et les informations de configuration de chaque nœud surveillé par une instance de Unified Manager. Vous pouvez ainsi surveiller rapidement les performances de vos nœuds et résoudre les problèmes de performances et les seuils.' 
+---
+= Page d'inventaire des nœuds/performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire des performances/nœuds présente les événements de performance, les données et les informations de configuration de chaque nœud surveillé par une instance de Unified Manager. Vous pouvez ainsi surveiller rapidement les performances de vos nœuds et résoudre les problèmes de performances et les seuils.
+
+Selon la manière dont vous accédez à cette page, le haut de la page peut afficher un titre différent pour indiquer si la liste a été filtrée. Par exemple, lors de l'affichage de tous les nœuds, le titre est « nœuds ». Lors de l'affichage d'un sous-ensemble de nœuds renvoyés depuis la page Cluster Inventory, le titre est « nœuds sur le cluster: opm-cluster2 ».
+
+Les boutons situés en haut de la page vous permettent d'effectuer des recherches pour localiser des données spécifiques, créer et appliquer des filtres pour limiter la liste des données affichées, exporter les données de la page vers un `.csv` et ajouter ou supprimer des colonnes de la page.
+
+Par défaut, les objets sur les pages d'inventaire des objets sont triés en fonction du caractère critique de l'événement de performance de l'objet. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Les valeurs des compteurs de performances sont basées sur une moyenne des 72 heures de données précédentes ou plus, comme indiqué sur la page. Vous pouvez cliquer sur le bouton Actualiser pour mettre à jour les données d'inventaire des objets.
+
+Vous pouvez affecter des stratégies de seuil de performances à ou effacer des stratégies de seuil à partir de n'importe quel objet des pages d'inventaire d'objets à l'aide des boutons *affecter la stratégie de seuil de performances* et *Effacer la stratégie de seuil de performances*.
+
+
+
+== Colonnes de la page d'inventaire des nœuds
+
+La page d'inventaire performances/nœuds contient les colonnes suivantes pour chaque nœud :
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Nœud*
++
+Nom du nœud. Vous pouvez cliquer sur le nom du nœud pour accéder à la page des informations sur les performances de ce nœud.
+
+* * Latence*
++
+Temps de réponse moyen pour toutes les requêtes d'E/S du nœud, exprimé en millisecondes par opération.
+
+* *IOPS*
++
+Les opérations moyennes d'entrée/sortie par seconde sur le nœud.
+
+* *Mbit/s*
++
+Le débit du nœud, mesuré en mégaoctets par seconde.
+
+* *Lectures Flash cache*
++
+Pourcentage des opérations de lecture sur le nœud satisfait par cache au lieu d'être renvoyées à partir du disque.
+
++
+[NOTE]
+====
+Les données de Flash cache s'affichent uniquement pour les nœuds et uniquement lorsqu'un module Flash cache est installé sur le nœud.
+
+====
+* *Capacité de performance utilisée*
++
+Pourcentage de capacité de performance consommé par le nœud.
+
++
+[NOTE]
+====
+Les données de performance et de capacité sont disponibles uniquement lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+* *Utilisation*
++
+Indique si le processeur ou la mémoire du nœud est sur-utilisée.
+
+* *Capacité libre*
++
+Capacité de stockage inutilisée du nœud, en gigaoctets.
+
+* *Capacité totale*
++
+Capacité de stockage totale du nœud, en gigaoctets.
+
+* *Cluster*
++
+Cluster auquel appartient le nœud. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

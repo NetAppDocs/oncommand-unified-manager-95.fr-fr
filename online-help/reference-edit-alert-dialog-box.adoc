@@ -1,0 +1,119 @@
+---
+permalink: online-help/reference-edit-alert-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les propriétés des alertes, telles que la ressource avec laquelle l"alerte est associée, les événements, le script et les options de notification.' 
+---
+= Boîte de dialogue Modifier l'alerte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les propriétés des alertes, telles que la ressource avec laquelle l'alerte est associée, les événements, le script et les options de notification.
+
+
+
+== Nom
+
+Cette zone vous permet de modifier le nom et la description de l'alerte.
+
+* *Nom de l'alerte*
++
+Permet de modifier le nom de l'alerte.
+
+* *Description de l'alerte*
++
+Vous permet de spécifier une description de l'alerte.
+
+* *État d'alerte*
++
+Vous permet d'activer ou de désactiver l'alerte.
+
+
+
+
+
+== Ressources
+
+Cette zone vous permet de sélectionner une ressource individuelle ou de regrouper les ressources en fonction d'une règle dynamique pour laquelle vous souhaitez déclencher l'alerte. Vous pouvez rechercher des ressources en sélectionnant un type de ressource dans la liste déroulante ou vous pouvez spécifier le nom exact de la ressource pour afficher une ressource spécifique.
+
+* *Inclure*
++
+Vous pouvez inclure les ressources pour lesquelles vous souhaitez déclencher des alertes. Vous pouvez spécifier une chaîne de texte pour regrouper les ressources correspondant à la chaîne et sélectionner ce groupe à inclure dans l'alerte. Par exemple, vous pouvez regrouper tous les volumes dont le nom contient la chaîne « vol0 ».
+
+* *Exclure*
++
+Vous permet d'exclure des ressources pour lesquelles vous ne souhaitez pas déclencher d'alertes. Par exemple, vous pouvez exclure tous les volumes dont le nom contient la chaîne « xyz ».
+
++
+[NOTE]
+====
+L'onglet exclure s'affiche uniquement lorsque vous sélectionnez toutes les ressources d'un type de ressource particulier, par exemple, <<All Volumes>> ou <<All Volumes whose name contains '_xyz_'>>.
+
+====
+
+
+
+
+== Événements
+
+Cette zone vous permet de sélectionner les événements pour lesquels vous souhaitez déclencher les alertes. Vous pouvez déclencher une alerte pour des événements basés sur une gravité spécifique ou pour un ensemble d'événements.
+
+* *Gravité de l'événement*
++
+Vous permet de sélectionner des événements en fonction du type de gravité, qui peut être critique, erreur ou Avertissement.
+
+* *Le nom de l'événement contient*
++
+Permet de sélectionner des événements dont le nom contient les caractères spécifiés.
+
+
+
+
+
+== Actions
+
+Cette zone vous permet de spécifier la méthode de notification et la fréquence de notification.
+
+* *Avertir ces utilisateurs*
++
+Vous permet de modifier l'adresse e-mail ou le nom d'utilisateur, ou de spécifier une nouvelle adresse e-mail ou un nouveau nom d'utilisateur pour recevoir des notifications.
+
+* *Fréquence de notification*
++
+Permet de modifier la fréquence à laquelle le serveur de gestion envoie des notifications jusqu'à ce que l'événement soit validé, résolu ou déplacé à l'état obsolète.
+
++
+Vous pouvez choisir les méthodes de notification suivantes :
+
++
+** Notifier une seule fois
+** Notifier à une fréquence spécifiée
+** Notifier à une fréquence spécifiée dans la plage de temps spécifiée
+
+
+* *Lancer le trap SNMP*
++
+Vous permet de spécifier si les interruptions SNMP doivent être envoyées à l'hôte SNMP configuré globalement.
+
+* *Exécuter le script*
++
+Vous permet d'associer un script à l'alerte. Ce script est exécuté lorsqu'une alerte est générée.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer*
++
+Enregistre les modifications et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Supprime les modifications et ferme la boîte de dialogue.
+
+

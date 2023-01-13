@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-testing-a-remote-user-or-group.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez vérifier qu"un utilisateur ou un groupe distant peut accéder au serveur Unified Manager à l"aide des paramètres d"authentification spécifiés pour vos serveurs d"authentification.' 
+---
+= Test d'un utilisateur ou d'un groupe distant
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier qu'un utilisateur ou un groupe distant peut accéder au serveur Unified Manager à l'aide des paramètres d'authentification spécifiés pour vos serveurs d'authentification.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir activé l'authentification à distance et configuré vos paramètres d'authentification pour que le serveur Unified Manager puisse valider l'utilisateur distant ou le groupe distant.
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *utilisateurs* dans le menu de gestion de gauche.
+. Dans la page *Management/Users*, sélectionnez un utilisateur distant ou un groupe distant à valider, puis cliquez sur *Test*.
+

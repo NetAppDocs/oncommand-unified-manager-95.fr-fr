@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport capacité et utilisation de qtree vous permet d"analyser la capacité et l"utilisation des qtrees du système pour comprendre les risques potentiels pouvant survenir en raison de la réduction de la capacité du cluster.' 
+---
+= Rapport sur la capacité et l'utilisation des qtrees
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport capacité et utilisation de qtree vous permet d'analyser la capacité et l'utilisation des qtrees du système pour comprendre les risques potentiels pouvant survenir en raison de la réduction de la capacité du cluster.
+
+
+
+== Une vue tabulaire de ce rapport
+
+* *Cluster*
++
+Affiche le nom du cluster contenant le qtree.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom de la machine virtuelle de stockage (SVM) contenant le qtree.
+
+* *Volume*
++
+Affiche le nom du volume contenant le qtree.
+
+* *Qtree*
++
+Affiche le nom du qtree.
+
+* *Type de quota*
++
+Spécifie si le quota est pour un utilisateur, un groupe d'utilisateurs ou un qtree.
+
+* *Utilisateur ou groupe*
++
+Affiche le nom de l'utilisateur ou du groupe d'utilisateurs. Il y aura plusieurs lignes pour chaque utilisateur et groupe d'utilisateurs. Lorsque le type de quota est qtree, _Not applicable_ s'affiche. Si le quota n'est pas défini, alors la colonne est vide.
+
+* *Disque utilisé %*
++
+Affiche le pourcentage de l'espace disque utilisé. Si une limite matérielle de disque est définie, cette valeur est basée sur la limite matérielle du disque. Si le quota est défini sans limite Hard disque, la valeur est basée sur l'espace de données du volume. Si le quota n'est pas défini ou si les quotas sont off sur le volume auquel appartient le qtree, alors _Not applicable_ s'affiche.
+
+* *Limite matérielle disque*
++
+Affiche l'espace disque maximal alloué au qtree. Unified Manager génère un événement critique lorsque cette limite est atteinte et qu'aucune autre écriture de disque n'est autorisée. La valeur s'affiche sous la forme _Unlimited_ si le quota est défini sans limite matérielle de disque, si le quota n'est pas défini ou si les quotas sont off sur le volume auquel appartient le qtree.
+
+* *Limite logicielle du disque*
++
+Affiche l'espace disque alloué au qtree avant de générer un événement d'avertissement. La valeur s'affiche sous la forme _Unlimited_ si le quota est défini sans limite soft disque, si le quota n'est pas défini ou si les quotas sont off sur le volume auquel appartient le qtree.
+
+* *Fichiers utilisés %*
++
+Affiche le pourcentage de fichiers utilisés dans le qtree. Si la limite matérielle du fichier est définie, cette valeur est basée sur la limite matérielle du fichier. La valeur est affichée comme _non applicable_ si le quota n'est pas défini, ou si le quota est défini sans limite matérielle de fichier, ou si les quotas sont off du volume vers lequel appartient le qtree.
+
+* *Limite matérielle de fichier*
++
+Affiche la limite matérielle du nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme _Unlimited_ si le quota est défini sans limite matérielle de fichier, si le quota n'est pas défini ou si les quotas sont off sur le volume auquel appartient le qtree.
+
+* *Limite logicielle de fichier*
++
+Affiche la limite soft pour le nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme _Unlimited_ si le quota est défini sans limite soft fichier, si le quota n'est pas défini ou si les quotas sont off sur le volume auquel appartient le qtree.
+
+

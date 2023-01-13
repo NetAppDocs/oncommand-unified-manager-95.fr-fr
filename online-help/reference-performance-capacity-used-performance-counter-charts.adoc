@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-performance-capacity-used-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les compteurs de performances explorerPerformance Capacity Used affichent le pourcentage de capacité de performance consommé par le nœud ou l"agrégat.' 
+---
+= Graphiques des compteurs de performances capacité utilisée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les compteurs de performances explorerPerformance Capacity Used affichent le pourcentage de capacité de performance consommé par le nœud ou l'agrégat.
+
+[NOTE]
+====
+Les données de performance et de capacité sont disponibles uniquement lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+Ces graphiques s'appliquent uniquement lorsque l'objet sélectionné est un nœud ou un agrégat.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Le bas de la page du graphique affiche des informations sur la capacité de performance minimale, maximale, moyenne et 95e percentile utilisée pour la plage de temps sélectionnée.
+
+Deux types de graphiques sur la capacité de performance utilisée sont disponibles :
+
+
+
+== Performance Capacity Used - graphique du compteur total
+
+Affiche le pourcentage de capacité de performance utilisé par le nœud ou l'agrégat.
+
+* Zone verte
++
+La valeur de capacité est inférieure au seuil d'avertissement défini dans Unified Manager.
+
+* Zone jaune
++
+La valeur de capacité atteint le seuil d'avertissement défini dans Unified Manager.
+
+* Zone rouge
++
+La valeur de la capacité dépasse le seuil d'avertissement et atteint le seuil maximal défini dans Unified Manager.
+
+
+
+
+
+== Capacité utilisée – Tableau de compteur de répartition
+
+Affiche le même pourcentage de capacité de performances, séparé en protocoles utilisateur, les processus en arrière-plan du système, ainsi que la quantité de capacité de performances libres.
+
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement de capacité définie dans Unified Manager.
+
++
+La ligne rouge pleine indique la valeur du seuil critique de capacité définie dans Unified Manager.
+
++
+La ligne noire continue à 100 % est la valeur de capacité de performance maximale recommandée.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] qui est associé à un compteur peut restreindre la comparaison.
+
+

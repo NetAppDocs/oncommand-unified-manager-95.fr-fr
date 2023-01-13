@@ -1,0 +1,32 @@
+---
+permalink: online-help/reference-advanced-destination-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Paramètres de destination avancés pour activer les paramètres de garantie d"espace sur un volume de destination. Vous pouvez sélectionner des paramètres avancés lorsque la garantie d"espace est désactivée sur la source, mais vous souhaitez qu"elle soit activée sur la destination. Les paramètres de déduplication, de compression et de croissance automatique dans une relation SnapMirror sont hérités du volume source et ne peuvent pas être modifiés.' 
+---
+= Boîte de dialogue Paramètres de destination avancés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Paramètres de destination avancés pour activer les paramètres de garantie d'espace sur un volume de destination. Vous pouvez sélectionner des paramètres avancés lorsque la garantie d'espace est désactivée sur la source, mais vous souhaitez qu'elle soit activée sur la destination. Les paramètres de déduplication, de compression et de croissance automatique dans une relation SnapMirror sont hérités du volume source et ne peuvent pas être modifiés.
+
+
+
+== Garantie d'espace
+
+L'espace disponible est alloué au volume de destination, ce qui garantit le succès continu des transferts de données. Le paramètre de garantie d'espace peut être l'un des suivants :
+
+* Fichier
++
+La garantie d'espace pour les fichiers n'est pas disponible dans ONTAP 8.3.
+
+* Volumétrie
+* Aucune
+
+
+Par exemple, vous pouvez disposer d'un volume de 200 Go contenant des fichiers d'un total de 50 Go. Cependant, ces fichiers ne contiennent que 10 Go de données. La garantie du volume alloue 200 Go au volume de destination, quel que soit le contenu de la source. La garantie de fichier alloue 50 Go pour s'assurer que l'espace est suffisant pour les fichiers source sur la destination ; si vous sélectionnez *aucun* dans ce scénario, seuls 10 Go sont alloués à la destination pour l'espace réel utilisé par les données de fichier sur la source.
+
+La garantie d'espace est définie par défaut sur Volume.

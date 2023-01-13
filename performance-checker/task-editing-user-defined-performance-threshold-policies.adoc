@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-editing-user-defined-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres de seuil des règles de seuils de performances existantes. Cela peut être utile si vous constatez que vous recevez trop ou trop peu d"alertes pour certaines conditions de seuil.' 
+---
+= Modification des règles de seuils de performances définies par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres de seuil des règles de seuils de performances existantes. Cela peut être utile si vous constatez que vous recevez trop ou trop peu d'alertes pour certaines conditions de seuil.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez pas modifier le nom de la règle ou le type d'objet de stockage actuellement contrôlé pour les règles de seuils existantes.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, sélectionnez *Configuration* > *seuils de performances*.
++
+La page seuils de configuration/performances s'affiche.
+
+. Sélectionnez la stratégie de seuil à modifier et cliquez sur *Modifier*.
++
+La page Modifier la stratégie de seuil s'affiche.
+
+. Apportez vos modifications à la stratégie de seuil et cliquez sur *Enregistrer*.
++
+Vous êtes renvoyé à la page seuils de configuration/de performance.
+
+
+
+
+
+== Résultats
+
+Une fois qu'elles ont été enregistrées, les modifications sont immédiatement mises à jour sur tous les objets de stockage qui utilisent la règle.
+
+
+
+== Une fois que vous avez terminé
+
+En fonction du type de modifications apportées à la règle, vous pouvez consulter les paramètres d'alerte configurés pour les objets qui utilisent la règle dans la page Configuration/alerte.

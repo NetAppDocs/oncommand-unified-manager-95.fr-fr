@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-metrocluster-switch-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements du commutateur MetroCluster fournissent des informations sur l"état des commutateurs MetroCluster, ce qui vous permet de surveiller l"éventualité de problèmes. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements des commutateurs MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements du commutateur MetroCluster fournissent des informations sur l'état des commutateurs MetroCluster, ce qui vous permet de surveiller l'éventualité de problèmes. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Température du commutateur anormale(ocumEvtTemperSwitchatureAbnormal)
+ a| 
+Gestion des
+ a| 
+Commutateur MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Commutateur inaccessible(oocumEvtSwitchUnreaccessible)
+ a| 
+Gestion des
+ a| 
+Commutateur MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Echec des ventilateurs du commutateur(ocumEvtSwitchFansOneOrMoreFailed)
+ a| 
+Gestion des
+ a| 
+Commutateur MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Échec des blocs d'alimentation du commutateur (panne de l'option ocumEvtSwitchPowerSupplésOneOrMoreFailed)
+ a| 
+Gestion des
+ a| 
+Commutateur MetroCluster
+ a| 
+Primordial
+
+
+
+ a| 
+Défaillance des capteurs de température du commutateur (ocumEvtTemperSwitchatureSensorFailed)
+
+[NOTE]
+====
+Cet événement s'applique uniquement aux commutateurs Cisco.
+
+==== a| 
+Gestion des
+ a| 
+Commutateur MetroCluster
+ a| 
+Primordial
+
+|===

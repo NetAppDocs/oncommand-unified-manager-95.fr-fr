@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-defining-the-list-of-correlated-objects-for-comparison-graphing.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez définir une liste d"objets corrélés pour les données et les comparaisons de performances dans le volet Counter Chart. Par exemple, si votre machine virtuelle de stockage \(SVM\) rencontre un problème de performances, vous pouvez comparer tous les volumes du SVM afin d"identifier le volume à l"origine du problème.' 
+---
+= Définition de la liste des objets corrélés pour le graphique de comparaison
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez définir une liste d'objets corrélés pour les données et les comparaisons de performances dans le volet Counter Chart. Par exemple, si votre ordinateur virtuel de stockage (SVM) rencontre un problème de performances, vous pouvez comparer tous les volumes du SVM afin d'identifier le volume à l'origine du problème.
+
+
+
+== Description de la tâche
+
+Vous pouvez ajouter n'importe quel objet de la grille des objets corrélés aux volets Comparer et compteur graphique. Cela vous permet d'afficher et de comparer les données de plusieurs objets et avec l'objet racine. Vous pouvez ajouter et supprimer des objets dans et à partir de la grille d'objets corrélés ; cependant, l'objet racine dans le volet comparaison n'est pas amovible.
+
+[NOTE]
+====
+L'ajout de nombreux objets au volet de comparaison peut avoir un impact négatif sur les performances. Pour maintenir les performances, vous devez sélectionner un nombre limité de graphiques pour la comparaison des données.
+
+====
+
+
+== Étapes
+
+. Dans la grille des objets, localisez l'objet que vous souhaitez ajouter, puis cliquez sur le bouton *Ajouter*.
++
+Le bouton *Ajouter* devient gris et l'objet est ajouté à la liste des objets supplémentaires dans le volet comparaison. Les données de l'objet sont ajoutées aux graphiques des volets Counter Charts. La couleur de l'icône de l'œil de l'objet (image:../media/eye-icon.gif[""]) correspond à la couleur de la ligne de tendance des données de l'objet dans les graphiques.
+
+. Masquer ou afficher les données des objets sélectionnés :
++
+|===
+| Pour cela... | Prendre cette action... 
+
+
+ a| 
+Cacher un objet sélectionné
+ a| 
+Cliquez sur l'icône œil de l'objet sélectionné (image:../media/eye-icon.gif[""]) Dans le volet comparaison. Les données de l'objet sont masquées et l'icône de l'œil correspondant à cet objet devient grise.
+
+
+
+ a| 
+Affiche un objet masqué
+ a| 
+Cliquez sur l'icône en forme d'œil gris de l'objet sélectionné dans le volet comparaison. L'icône oeil revient à sa couleur d'origine et les données de l'objet sont réajoutées aux graphiques du volet compteurs.
+
+|===
+. Supprimer les objets sélectionnés du volet *comparing* :
++
+|===
+
+
+| Pour cela... | Prendre cette action... 
+
+
+ a| 
+Supprimer un objet sélectionné
+ a| 
+Placez le pointeur de la souris sur le nom de l'objet sélectionné dans le volet de comparaison pour afficher le bouton Supprimer l'objet (*X*), puis cliquez sur le bouton. L'objet est supprimé du volet comparaison et ses données sont effacées des compteurs.
+
+
+
+ a| 
+Supprime tous les objets sélectionnés
+ a| 
+Cliquez sur le bouton Supprimer tout l'objet (*X*) en haut du volet de comparaison. Tous les objets sélectionnés et leurs données sont supprimés, ne laissant que l'objet racine.
+
+|===
+

@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-creating-a-new-report-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer un nouveau rapport à l"aide du plug-in Eclipse pour Business Intelligence et Reporting Tools \(BIRT\). Vous pouvez créer de nouveaux rapports si les rapports existants dans Unified Manager ne répondent pas aux besoins de votre environnement.' 
+---
+= Création d'un rapport à l'aide de BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer un nouveau rapport à l'aide du plug-in Eclipse pour Business Intelligence and Reporting Tools (BIRT). Vous pouvez créer de nouveaux rapports si les rapports existants dans Unified Manager ne répondent pas aux besoins de votre environnement.
+
+
+
+== Avant de commencer
+
+Vous devez avoir téléchargé et extrait BIRT.
+
+Vous devez avoir créé un projet à l'aide de BIRT.
+
+
+
+== Étapes
+
+. Dans l'interface BIRT, sélectionnez *fichier* > *Nouveau* > *Rapport*.
+. Dans la boîte de dialogue *Nouveau rapport* et sélectionnez le dossier de projet, qui doit être le même que le dossier de projet créé précédemment.
++
+Si vous sélectionnez un autre dossier de projet, vous ne pouvez pas utiliser les opérations de génération de rapports dans Unified Manager.
+
+. Saisissez le nom du fichier de rapport, puis cliquez sur *Suivant*.
+. Sélectionnez le type de rapport et cliquez sur *Terminer*.
+

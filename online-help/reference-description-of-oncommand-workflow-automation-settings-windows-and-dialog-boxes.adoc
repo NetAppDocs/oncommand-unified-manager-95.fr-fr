@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer OnCommand Workflow Automation dans Unified Manager à l"aide de la page Configuration/Workflow Automation.' 
+---
+= Description des fenêtres de configuration et des boîtes de dialogue de OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer OnCommand Workflow Automation dans Unified Manager à l'aide de la page Configuration/Workflow Automation.

@@ -1,0 +1,157 @@
+---
+permalink: online-help/reference-volume-data-protection-configuration-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport Configuration de la protection des données du volume vous permet d"afficher les volumes non protégés et les machines virtuelles de stockage \(SVM\) utilisées dans un nœud ou un cluster. Ces informations vous permettent de comprendre les risques liés à la protection des données pour votre système et d"afficher les détails des volumes protégés et des volumes non protégés de votre système.' 
+---
+= Rapport Volume Data protection Configuration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport Configuration de la protection des données de volume vous permet d'afficher les volumes non protégés et les SVM utilisés dans un nœud ou un cluster. Ces informations vous permettent de comprendre les risques liés à la protection des données pour votre système et d'afficher les détails des volumes protégés et des volumes non protégés de votre système.
+
+Le rapport Volume Data protection Configuration (Configuration de la protection des données du volume) s'affiche sous deux formats :
+
+* Graphique à secteurs des volumes protégés et non protégés
+* Vue tabulaire des données de volume non protégées
+
+
+
+
+== Graphique à secteurs des volumes protégés et non protégés
+
+Affiche le pourcentage relatif des volumes protégés et des volumes non protégés de votre système.
+
+
+
+== Vue tabulaire des données de volume non protégées
+
+* *Cluster*
++
+Affiche le nom du cluster.
+
+* *Machine virtuelle de stockage*
++
+Affiche le nom de la machine virtuelle de stockage (SVM) qui contient le volume.
+
+* *Volume*
++
+Affiche le nom du volume.
+
+* *Capacité de données totale (Go)*
++
+Affiche la capacité totale des données (utilisée plus disponible) en Go.
+
+* *Capacité de données utilisée (Go)*
++
+Affiche la capacité de données utilisée (en Go).
+
+* *Données utilisées %*
++
+Affiche la capacité de données utilisée sous forme de pourcentage.
+
+* *Capacité de données disponible (Go)*
++
+Affiche la capacité de données disponible (en Go).
+
+* *Données disponibles %*
++
+Affiche la capacité de données disponible sous forme de pourcentage.
+
+* *Capacité utilisée de réserve Snapshot (Go)*
++
+Affiche la quantité d'espace utilisée par les copies Snapshot à partir de la réserve Snapshot (en Go).
+
+* *La réserve Snapshot utilisée %*
++
+Affiche la quantité d'espace utilisée par les copies Snapshot de la réserve Snapshot sous forme de pourcentage.
+
+* *Capacité disponible de réserve Snapshot (Go)*
++
+Affiche l'espace disponible pour les copies Snapshot (en Go).
+
+* *Réserve Snapshot disponible %*
++
+Affiche la quantité d'espace disponible pour les copies Snapshot sous forme de pourcentage.
+
+* *Capacité totale de la réserve Snapshot (Go)*
++
+Affiche la capacité totale de réserve snapshot de l'agrégat (en Go).
+
+* *Jours à plein*
++
+Affiche le nombre estimé de jours restants avant que l'agrégat n'atteigne sa capacité maximale.
+
+* *Espace plein seuil %*
++
+Affiche le pourcentage de saturation d'un agrégat.
+
+* *Espace presque plein seuil %*
++
+Affiche le pourcentage auquel un agrégat est presque plein.
+
+* *Taux de croissance quotidien %*
++
+Affiche le taux de croissance qui se produit toutes les 24 heures dans le volume.
+
+* *Nombre total d'inodes*
++
+Affiche le nombre total d'inodes du volume.
+
+* *Inode utilisation*
++
+Spécifie l'espace inode utilisé dans le volume.
+
+* *Quota engagé capacité*
++
+Affiche l'espace réservé dans les volumes.
+
+* *Quota de capacité excédentaire (Go)*
++
+Affiche la quantité d'espace pouvant être utilisé (en Go) avant que le système ne génère l'événement Volume quota overvalidé.
+
+* *Instantané de suppression automatique*
++
+Indique si la suppression automatique des copies Snapshot est activée ou désactivée.
+
+* *Déduplication*
++
+Indique si la déduplication est activée ou non pour le volume.
+
+* *Économies d'espace liées à la déduplication (Go)*
++
+Affiche l'espace économisé dans un volume grâce à la déduplication (en Go).
+
+* *Compression*
++
+Indique si la compression est activée ou désactivée pour le volume.
+
+* *Gain d'espace de compression (Go)*
++
+Affiche l'espace économisé dans un volume grâce à la compression (en Go).
+
+* *Provisionnement fin*
++
+Indique si la garantie d'espace est définie pour le volume sélectionné. Les valeurs valides sont Oui et non
+
+* *Croissance automatique*
++
+Indique si la taille du volume FlexVol augmente automatiquement lorsqu'il est en manque d'espace.
+
+* *Garantie d'espace*
++
+Affiche le contrôle de réglage du volume FlexVol lorsqu'un volume supprime des blocs libres d'un agrégat.
+
+* *État*
++
+Affiche l'état du volume en cours d'exportation.
+
+* *Type SnapLock*
++
+Indique si le volume est un volume SnapLock ou non SnapLock.
+
+* *Date d'expiration*
+

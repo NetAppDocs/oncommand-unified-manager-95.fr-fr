@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-setup-authentication-page-um-7-3.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page installation/authentification pour configurer Unified Manager de manière à authentifier les utilisateurs distants qui tentent de se connecter à l"interface utilisateur Web d"Unified Manager.' 
+---
+= Page Configuration/authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page installation/authentification pour configurer Unified Manager de manière à authentifier les utilisateurs distants qui tentent de se connecter à l'interface utilisateur Web d'Unified Manager.
+
+La page authentification à distance vous permet de configurer Unified Manager pour qu'il communique avec votre serveur d'authentification afin d'authentifier les utilisateurs distants.
+
+À l'aide de la page authentification SAML, vous pouvez configurer Unified Manager pour communiquer avec un fournisseur d'identité sécurisée (IDP) afin d'authentifier les utilisateurs distants.

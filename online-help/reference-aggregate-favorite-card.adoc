@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La carte favorite d"agrégat vous permet d"afficher les informations sur la capacité et les performances des agrégats que vous avez marqués comme favoris.' 
+---
+= Agréger la carte favorite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La carte favorite d'agrégat vous permet d'afficher les informations sur la capacité et les performances des agrégats que vous avez marqués comme favoris.
+
+
+
+== Attributs d'agrégation
+
+La carte favorite agrégée affiche les attributs d'agrégat suivants :
+
+* * État de santé agrégé*
++
+Une icône indique l'état de santé de l'agrégat. Les valeurs possibles sont Normal, Avertissement, erreur et critique.
+
+* *Nom d'agrégat*
++
+Nom de l'agrégat.
+
++
+Positionnez le curseur de votre souris sur le nom de l'agrégat pour afficher le nom du cluster auquel appartient l'agrégat.
+
+* *Capacité*
++
+Pourcentage d'espace disponible sur l'agrégat et nombre estimé de jours jusqu'à ce que l'agrégat devienne complet.
+
++
+Pour les agrégats FabricPool, ces informations reflètent uniquement la capacité disponible sur le niveau de performance local. Cliquez sur la vignette capacité pour afficher des informations détaillées sur la page des détails intégrité/agrégat.
+
+* *Performance*
++
+Performances détaillées de l'agrégat.
+
++
+** *IOPS*
++
+Nombre moyen d'opérations d'E/S par seconde au cours des dernières 72 heures.
+
+** *Débit*
++
+Débit moyen au cours des 72 dernières heures, en Mbit/s .
+
+** * Latence*
++
+Temps de réponse moyen requis pour une opération, en millisecondes.
+
+
+
+

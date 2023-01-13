@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La section actions suggérées de la page Détails de l"événement fournit les raisons possibles de l"événement et propose quelques actions afin que vous puissiez tenter de résoudre l"événement par vous-même. Les actions suggérées sont personnalisées en fonction du type d"événement ou du type de seuil non atteint.' 
+---
+= Ce que la section actions suggérées affiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La section actions suggérées de la page Détails de l'événement fournit les raisons possibles de l'événement et propose quelques actions afin que vous puissiez tenter de résoudre l'événement par vous-même. Les actions suggérées sont personnalisées en fonction du type d'événement ou du type de seuil non atteint.
+
+Cette zone s'affiche uniquement pour certains types d'événements.
+
+Dans certains cas, il existe des liens *aide* sur la page qui font référence à des informations supplémentaires pour de nombreuses actions suggérées, y compris des instructions pour effectuer une action spécifique. Certaines actions peuvent impliquer l'utilisation d'Unified Manager, de OnCommand System Manager, d'OnCommand Workflow Automation, des commandes de l'interface de ligne de commande d'ONTAP ou une combinaison de ces outils.
+
+Cette rubrique d'aide contient également des liens.
+
+Vous devez considérer les actions proposées ici comme une référence pour résoudre cet événement. L'action que vous prenez pour résoudre cet événement doit être basée sur le contexte de votre environnement.

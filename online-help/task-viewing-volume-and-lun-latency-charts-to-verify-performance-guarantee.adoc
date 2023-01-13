@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher les volumes et les LUN que vous avez souscrits au programme « garantie de performances » pour vérifier que la latence n"a pas dépassé le niveau garanti.' 
+---
+= Affichage des graphiques de latence des volumes et des LUN pour vérifier la performance garantie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les volumes et les LUN que vous avez souscrits au programme « garantie de performances » pour vérifier que la latence n'a pas dépassé le niveau garanti.
+
+
+
+== Description de la tâche
+
+La garantie de latence est une valeur inférieure à la milliseconde par opération, qui ne doit pas être dépassée. Elle est basée sur une moyenne horaire et non sur la période de collecte de performances de cinq minutes par défaut.
+
+
+
+== Étapes
+
+. Dans la page d'inventaire *volumes de performance* ou *LUN de performance*, sélectionnez le volume ou le LUN qui vous intéresse.
+. Dans la page *Performance Explorer* de votre volume ou LUN sélectionné, choisissez *moyenne horaire* dans le sélecteur *Afficher les statistiques dans*.
++
+La ligne horizontale du graphique latence affiche une ligne plus lisse lorsque les collections de cinq minutes sont remplacées par la moyenne horaire.
+
+. Si d'autres volumes sont présents sur le même agrégat et sont garantis par performances, vous pouvez ajouter ces volumes pour afficher leur valeur de latence sur le même graphique.
+

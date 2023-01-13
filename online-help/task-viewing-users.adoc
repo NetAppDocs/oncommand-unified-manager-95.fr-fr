@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-users.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page gestion/utilisateurs pour afficher la liste des utilisateurs qui gèrent des objets et des données de stockage à l"aide d"Unified Manager. Vous pouvez afficher des détails sur les utilisateurs, tels que le nom d"utilisateur, le type d"utilisateur, l"adresse e-mail et le rôle attribué aux utilisateurs.' 
+---
+= Affichage des utilisateurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page gestion/utilisateurs pour afficher la liste des utilisateurs qui gèrent des objets et des données de stockage à l'aide d'Unified Manager. Vous pouvez afficher des détails sur les utilisateurs, tels que le nom d'utilisateur, le type d'utilisateur, l'adresse e-mail et le rôle attribué aux utilisateurs.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *utilisateurs* dans le menu de gestion de gauche.
++
+La liste des utilisateurs s'affiche dans la page gestion/utilisateurs.
+
+

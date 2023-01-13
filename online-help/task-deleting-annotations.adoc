@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-deleting-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer des annotations personnalisées et leurs valeurs lorsqu"elles ne sont plus nécessaires.' 
+---
+= Suppression d'annotations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer des annotations personnalisées et leurs valeurs lorsqu'elles ne sont plus nécessaires.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Les valeurs d'annotation ne doivent pas être utilisées dans d'autres annotations ou règles de groupe.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Annotations* dans le menu gestion de gauche.
+. Dans l'onglet *Annotations*, sélectionnez l'annotation à supprimer.
++
+Les détails de l'annotation sélectionnée s'affichent.
+
+. Cliquez sur *actions* > *Supprimer* pour supprimer l'annotation sélectionnée et sa valeur.
+. Dans la boîte de dialogue d'avertissement, cliquez sur *Oui* pour confirmer la suppression.
+
+
+
+
+== Résultats
+
+L'annotation sélectionnée et sa valeur sont supprimées.

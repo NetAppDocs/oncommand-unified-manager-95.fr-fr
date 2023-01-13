@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-what-a-data-continuity-collection-cycle-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un cycle de collecte de la continuité des données récupère les données de performances en dehors du cycle de collecte en temps réel des performances du cluster qui s"exécute, par défaut, toutes les cinq minutes. Les collections de continuité des données permettent à Unified Manager de combler les lacunes des données statistiques qui se produisent lorsqu"il n"est pas en mesure de collecter des données en temps réel.' 
+---
+= Qu'est-ce qu'un cycle de collecte de continuité des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un cycle de collecte de la continuité des données récupère les données de performances en dehors du cycle de collecte en temps réel des performances du cluster qui s'exécute, par défaut, toutes les cinq minutes. Les collections de continuité des données permettent à Unified Manager de combler les lacunes des données statistiques qui se produisent lorsqu'il n'est pas en mesure de collecter des données en temps réel.
+
+La collecte de la continuité des données est uniquement prise en charge sur les clusters installés avec le logiciel ONTAP version 8.3.1 ou ultérieure.
+
+Unified Manager effectue des sondages de collecte de continuité des données sur les données de performances historiques lorsque les événements suivants se produisent :
+
+* Un cluster est initialement ajouté à Unified Manager.
++
+Unified Manager collecte les données d'historique des performances pendant les 15 jours précédents. Vous pouvez ainsi afficher deux semaines d'informations historiques sur les performances d'un cluster quelques heures après son ajout.
+
++
+En outre, les événements de seuil définis par le système sont signalés pour la période précédente, le cas échéant.
+
++
+[NOTE]
+====
+15 jours de statistiques de volume historique ne sont pas actuellement collectés.
+
+====
+* Le cycle actuel de collecte des données de performance ne se termine pas à l'heure.
++
+Si le sondage de performance en temps réel dépasse la période de collecte de cinq minutes, un cycle de collecte de continuité des données est lancé pour recueillir ces informations manquantes. Sans la collecte de continuité des données, la période de collecte suivante est ignorée.
+
+* Unified Manager n'a pas été accessible depuis un certain temps, puis il est de nouveau en ligne, comme dans les cas suivants :
++
+** Il a été redémarré.
+** Elle a été arrêtée lors d'une mise à niveau du logiciel ou lors de la création d'un fichier de sauvegarde.
+** Une panne réseau est réparée.
+
+
+* Un cluster a été inaccessible pendant une période et retourne en ligne, comme dans les situations suivantes :
++
+** Une panne réseau est réparée.
+** Une connexion réseau étendue lente a retardé la collecte normale des données de performances.
+
+
+
+
+Un cycle de collecte de la continuité des données peut collecter un maximum de 24 heures de données historiques. Si Unified Manager est indisponible pendant plus de 24 heures, un écart s'affiche dans les données de performance dans les pages interface utilisateur.
+
+Un cycle de collecte de continuité des données et un cycle de collecte des données en temps réel ne peuvent pas être exécutés en même temps. Le cycle de collecte de la continuité des données doit se terminer avant le début de la collecte des données de performance en temps réel. Lorsque la collecte de la continuité des données est nécessaire pour collecter plus d'une heure de données historiques, un message s'affiche en haut du tableau de bord des performances pour ce cluster.

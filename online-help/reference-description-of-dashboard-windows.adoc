@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser les pages du tableau de bord pour obtenir un aperçu rapide des objets surveillés. 
+---
+= Description des fenêtres du tableau de bord
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser les pages du tableau de bord pour obtenir un aperçu rapide des objets surveillés.

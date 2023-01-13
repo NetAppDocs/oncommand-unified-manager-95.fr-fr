@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Annoter le volume vous permet d"annoter manuellement les objets de stockage. Vous pouvez sélectionner un ou plusieurs volumes et les annoter à l"aide d"une paire de valeurs spécifique dans la liste d"annotations existante.' 
+---
+= Annoter un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Annoter le volume vous permet d'annoter manuellement les objets de stockage. Vous pouvez sélectionner un ou plusieurs volumes et les annoter à l'aide d'une paire de valeurs spécifique dans la liste d'annotations existante.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Annotation=paires de valeurs*
++
+Vous permet de sélectionner l'annotation requise pour le volume sélectionné.
+
+* *Appliquer*
++
+Applique l'annotation sélectionnée au volume.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Annoter le volume sans enregistrer vos modifications.
+
+

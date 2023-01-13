@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-additional-menu-options.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les options de menu suivantes vous permettent d"effectuer diverses tâches administratives sur le serveur Unified Manager.' 
+---
+= Options de menu supplémentaires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les options de menu suivantes vous permettent d'effectuer diverses tâches administratives sur le serveur Unified Manager.
+
+Les options de menu suivantes sont disponibles :
+
+* *Réinitialiser le certificat du serveur*
++
+Régénère le certificat du serveur HTTPS.
+
++
+Vous pouvez régénérer le certificat de serveur dans l'interface utilisateur graphique Unified Manager en cliquant sur *image:../media/clusterpage-settings-icon.gif[""]* > *certificat HTTPS* > *régénérer le certificat HTTPS*.
+
+* *Désactiver l'authentification SAML*
++
+Désactive l'authentification SAML de sorte que le fournisseur d'identités ne fournit plus d'authentification d'identification pour les utilisateurs qui accèdent à l'interface graphique Unified Manager. Cette option console est généralement utilisée lorsqu'un problème de serveur IDP ou de configuration SAML empêche les utilisateurs d'accéder à l'interface graphique Unified Manager.
+
+* *Fournisseur de données externes*
++
+Fournit des options pour connecter Unified Manager à un fournisseur de données externe. Une fois la connexion établie, les données relatives aux performances sont envoyées à un serveur externe afin que les experts en performance du stockage puissent créer un diagramme des indicateurs de performances à l'aide d'un logiciel tiers. Les options suivantes sont affichées :
+
++
+** *Configuration du serveur d'affichage*--affiche les paramètres de connexion et de configuration actuels pour un fournisseur de données externe.
+** *Ajouter/Modifier la connexion au serveur*--permet de saisir de nouveaux paramètres de connexion pour un fournisseur de données externe ou de modifier les paramètres existants.
+** *Modifier la configuration du serveur*--permet de saisir de nouveaux paramètres de configuration pour un fournisseur de données externe ou de modifier les paramètres existants.
+** *Supprimer la connexion au serveur*--supprime la connexion à un fournisseur de données externe.
++
+Une fois la connexion supprimée, Unified Manager perd sa connexion au serveur externe.
+
+
+
+* *Configuration de l'intervalle d'interrogation des performances*
++
+Fournit une option permettant de configurer la fréquence à laquelle Unified Manager collecte des données statistiques de performances à partir de clusters. L'intervalle de collecte par défaut est de cinq minutes.
+
++
+Vous pouvez modifier cet intervalle à dix ou quinze minutes si vous constatez que les collections des grands groupes ne sont pas réalisées à temps.
+
+* *Quitter*
++
+Quitte le menu de la console de maintenance.
+
+

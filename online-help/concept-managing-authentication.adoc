@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-managing-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez activer l"authentification à l"aide de LDAP ou d"Active Directory sur le serveur Unified Manager et le configurer pour qu"il fonctionne avec vos serveurs afin d"authentifier les utilisateurs distants.' 
+---
+= Gestion de l'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer l'authentification à l'aide de LDAP ou d'Active Directory sur le serveur Unified Manager et le configurer pour qu'il fonctionne avec vos serveurs afin d'authentifier les utilisateurs distants.
+
+Vous pouvez également activer l'authentification SAML pour que les utilisateurs distants soient authentifiés par un fournisseur d'identités sécurisé avant de se connecter à l'interface utilisateur Web Unified Manager.

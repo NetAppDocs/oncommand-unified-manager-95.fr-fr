@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-incident-events-assigned-to-the-admin.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport événements pour afficher les événements d"incident attribués à l"administrateur, filtrés par le niveau d"impact et le nom d"administrateur.' 
+---
+= Personnalisation du rapport événements pour afficher les événements d'incident attribués à l'administrateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport événements pour afficher les événements d'incident attribués à l'administrateur, filtrés par le niveau d'impact et le nom d'administrateur.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour filtrer les événements d'incident, cliquez dans la colonne *niveau d'impact* et ouvrez la boîte de dialogue *filtre* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *incident*.
+. Cliquez sur *OK*.
+. Pour affecter ces incidents à l'administrateur, cliquez dans la colonne *affecté à* et ouvrez la boîte de dialogue *filtre* en cliquant sur le bouton image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *Nom d'administrateur*.
+. Cliquez sur *OK*.
+

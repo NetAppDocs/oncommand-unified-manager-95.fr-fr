@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des scripts dans Unified Manager et les associer aux alertes. Ces scripts sont exécutés automatiquement lorsqu"une alerte est générée. Ils vous permettent d"obtenir des informations sur les objets de stockage pour lesquels l"événement est généré.' 
+---
+= Ajout de scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des scripts dans Unified Manager et les associer aux alertes. Ces scripts sont exécutés automatiquement lorsqu'une alerte est générée. Ils vous permettent d'obtenir des informations sur les objets de stockage pour lesquels l'événement est généré.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir créé et enregistré les scripts que vous souhaitez ajouter au serveur Unified Manager.
+* Les formats de fichiers pris en charge pour les scripts sont Perl, Shell, PowerShell et `.bat` fichiers.
++
+** Pour les scripts Perl, Perl doit être installé sur le serveur Unified Manager. Si Perl a été installé après Unified Manager, vous devez redémarrer le serveur Unified Manager.
+** Pour les scripts PowerShell, la stratégie d'exécution PowerShell appropriée doit être définie sur le serveur de manière à ce que les scripts puissent être exécutés.
+
+
++
+[NOTE]
+====
+Si votre script crée des fichiers journaux pour suivre la progression du script d'alerte, vous devez vous assurer que les fichiers journaux ne sont pas créés à un endroit quelconque du dossier d'installation d'Unified Manager.
+
+====
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+
+== Description de la tâche
+
+Vous pouvez télécharger des scripts personnalisés et collecter des informations détaillées sur l'alerte.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *scripts* dans le menu gestion de gauche.
+. Dans la page *Management/scripts* , cliquez sur *Add*.
+. Dans la boîte de dialogue *Ajouter un script*, cliquez sur *Parcourir* pour sélectionner votre fichier de script.
+. Saisissez une description pour le script que vous sélectionnez.
+. Cliquez sur *Ajouter*.
+

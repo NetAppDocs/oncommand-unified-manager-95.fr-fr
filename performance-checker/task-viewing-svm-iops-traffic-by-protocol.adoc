@@ -1,0 +1,42 @@
+---
+permalink: performance-checker/task-viewing-svm-iops-traffic-by-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher des informations détaillées d"IOPS pour un SVM à partir de la page de l"explorateur des performances/SVM. Le graphique Op E/S par sec - total indique l"utilisation totale en IOPS sur la SVM, et le graphique compteurs d"IOPS - détail est utile pour déterminer l"impact des opérations de lecture, d"écriture et autres IOPS sur la SVM.' 
+---
+= Affichage du trafic des IOPS du SVM par protocole
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des informations détaillées d'IOPS pour un SVM à partir de la page de l'explorateur des performances/SVM. Le graphique Op E/S par sec - total indique l'utilisation totale en IOPS sur la SVM, et le graphique compteurs d'IOPS - détail est utile pour déterminer l'impact des opérations de lecture, d'écriture et autres IOPS sur la SVM.
+
+
+
+== Description de la tâche
+
+En outre, le tableau IOPS - protocoles affiche une comparaison détaillée du trafic d'IOPS pour chaque protocole utilisé sur la SVM. Les protocoles suivants sont disponibles :
+
+* CIFS
+* NFS
+* FCP
+* ISCSI
+* NVMe
+
+
+
+
+== Étapes
+
+. Dans la page *Performance/SVM Explorer* de votre SVM sélectionné, dans le tableau IOPS, sélectionnez *protocoles* dans le menu déroulant.
++
+Le tableau IOPS - protocoles s'affiche.
+
+. Pour afficher une version plus grande de la carte, sélectionnez *vue Zoom*.
++
+Le graphique comparatif du protocole avancé IOPS est affiché. Vous pouvez restreindre la comparaison en désélectionnant ou en sélectionnant le image:../media/eye-icon.gif[""] qui est associé à un protocole.
+
+. Pour afficher les valeurs spécifiques, déplacez le curseur dans la zone graphique de l'un des graphiques pour afficher la fenêtre contextuelle.
+

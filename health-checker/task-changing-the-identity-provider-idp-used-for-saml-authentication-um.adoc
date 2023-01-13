@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier le fournisseur d"identité \(IDP\) utilisé par Unified Manager pour authentifier les utilisateurs distants.' 
+---
+= Modification du fournisseur d'identités utilisé pour l'authentification SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le fournisseur d'identités utilisé par Unified Manager pour authentifier les utilisateurs distants.
+
+
+
+== Avant de commencer
+
+* Vous devez disposer de l'URL IDP et des métadonnées.
+* Vous devez avoir accès au PDI.
+
+
+
+
+== Description de la tâche
+
+Le nouveau IDP peut être configuré avant ou après avoir configuré Unified Manager.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, sélectionnez l'onglet *authentification SAML*.
+. Entrez le nouveau URI du IDP et les métadonnées IDP requises pour connecter le serveur Unified Manager au IDP.
++
+Si l'IDP est accessible directement à partir du serveur Unified Manager, vous pouvez cliquer sur le bouton *extraire les métadonnées IDP* après avoir saisi l'URL IDP pour remplir automatiquement le champ métadonnées IDP.
+
+. Copiez l'URI des métadonnées de Unified Manager ou enregistrez les métadonnées dans un fichier texte XML.
+. Cliquez sur *Enregistrer la configuration*.
++
+Un message s'affiche pour confirmer que vous souhaitez modifier la configuration.
+
+. Cliquez sur *OK*.
+
+
+
+
+== Une fois que vous avez terminé
+
+Accédez au nouveau IDP et entrez l'URI du serveur Unified Manager et les métadonnées pour terminer la configuration.
+
+Lors de la prochaine tentative d'accès à l'interface graphique Unified Manager, les utilisateurs distants autorisés saisissent leurs identifiants sur la nouvelle page de connexion IDP au lieu de l'ancienne page de connexion IDP.

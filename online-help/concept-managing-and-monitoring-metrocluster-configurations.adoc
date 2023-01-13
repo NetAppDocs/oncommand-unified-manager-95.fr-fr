@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La prise en charge de la surveillance des configurations MetroCluster dans l"interface utilisateur Web Unified Manager vous permet de vérifier la présence de problèmes de connectivité dans votre configuration MetroCluster. La détection précoce d"un problème de connectivité vous permet de gérer efficacement vos configurations MetroCluster.' 
+---
+= Gestion et contrôle des configurations MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La prise en charge de la surveillance des configurations MetroCluster dans l'interface utilisateur Web Unified Manager vous permet de vérifier la présence de problèmes de connectivité dans votre configuration MetroCluster. La détection précoce d'un problème de connectivité vous permet de gérer efficacement vos configurations MetroCluster.

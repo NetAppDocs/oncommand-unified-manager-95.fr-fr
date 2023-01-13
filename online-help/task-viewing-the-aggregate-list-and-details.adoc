@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-aggregate-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'À partir de la page d"inventaire Health/Aggregates, vous pouvez surveiller votre inventaire des agrégats. La page Health/Aggregates Capacity et utilisation vous permet d"afficher des informations sur la capacité et l"utilisation des agrégats dans tous les clusters.' 
+---
+= Affichage de la liste des agrégats et des détails
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page d'inventaire Health/Aggregates, vous pouvez surveiller votre inventaire des agrégats. La page Health/Aggregates Capacity et utilisation vous permet d'afficher des informations sur la capacité et l'utilisation des agrégats dans tous les clusters.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez consulter des informations détaillées, telles que la capacité et la configuration des agrégats, et les informations sur les disques, depuis la page de détails intégrité/agrégat. Vous pouvez utiliser ces détails avant de configurer les paramètres de seuil si nécessaire.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *agrégats*.
+. Choisir l'une des méthodes suivantes pour afficher les détails des agrégats :
++
+** Pour afficher des informations sur la capacité et l'utilisation de tous les agrégats de tous les clusters, sélectionnez *capacité agrégat et utilisation* dans le menu Affichage.
+** Pour afficher des détails minimes, positionnez le curseur sur le nom de l'agrégat.
+** Pour afficher les détails complets, cliquez sur le nom de l'agrégat.
++
+Vous pouvez également afficher les détails complets en cliquant sur *Afficher les détails* dans la boîte de dialogue Détails minimaux.
+
+
+
+. Affichez les objets liés à l'agrégat en cliquant sur *Afficher lié* dans la boîte de dialogue Détails minimaux.
+

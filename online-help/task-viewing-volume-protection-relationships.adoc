@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-viewing-volume-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 'À partir de la page protection/relations de volume, vous pouvez afficher l"état des relations SnapMirror volume et SnapVault existantes. Vous pouvez également examiner des détails sur les relations de protection, notamment le statut de transfert et de décalage, les informations sur la source et la destination, les informations de planification et de stratégie, etc.' 
+---
+= Affichage des relations de protection des volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page protection/relations de volume, vous pouvez afficher l'état des relations SnapMirror volume et SnapVault existantes. Vous pouvez également examiner des détails sur les relations de protection, notamment le statut de transfert et de décalage, les informations sur la source et la destination, les informations de planification et de stratégie, etc.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez également lancer des commandes de relation à partir de cette page.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *relations de volume*.
++
+La page relations protection/volume s'affiche.
+
+. Choisissez l'une des méthodes suivantes pour afficher les informations de protection des volumes :
++
+** Pour afficher les informations actuelles sur toutes les relations de volume, rester sur la page par défaut *toutes les relations de volume*.
+** Pour afficher des informations détaillées sur les tendances de transfert de volume sur une période de temps, dans le menu Affichage, sélectionnez *Etat de transfert de volume (Historique)*.
+** Pour afficher des informations détaillées sur l'activité de transfert de volume jour en jour, dans le menu Affichage, sélectionnez *Volume Transfer Rate (Historical)* (taux de transfert de volume (Historique)*.
+
+
++
+[NOTE]
+====
+Les vues de transfert de volume affichent des informations sur les volumes dans les relations asynchrones uniquement - les volumes dans les relations synchrones ne sont pas affichés.
+
+====
+

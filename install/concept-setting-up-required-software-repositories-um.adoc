@@ -1,0 +1,14 @@
+---
+permalink: install/concept-setting-up-required-software-repositories-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le système doit avoir accès à certains référentiels afin que le programme d"installation puisse accéder à toutes les dépendances logicielles requises et les installer.' 
+---
+= Configuration des référentiels logiciels requis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le système doit avoir accès à certains référentiels afin que le programme d'installation puisse accéder à toutes les dépendances logicielles requises et les installer.

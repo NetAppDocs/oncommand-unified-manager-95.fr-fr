@@ -1,0 +1,227 @@
+---
+permalink: online-help/reference-unified-manager-roles-and-capabilities.html 
+sidebar: sidebar 
+keywords:  
+summary: 'En fonction du rôle d"utilisateur que vous avez attribué, vous pouvez déterminer les opérations que vous pouvez effectuer dans Unified Manager.' 
+---
+= Fonctionnalités et rôles utilisateur de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En fonction du rôle d'utilisateur que vous avez attribué, vous pouvez déterminer les opérations que vous pouvez effectuer dans Unified Manager.
+
+Le tableau suivant affiche les fonctions que chaque rôle d'utilisateur peut effectuer :
+
+|===
+| Fonction | Opérateur | Administrateur du stockage | Administrateur OnCommand | Schéma d'intégration | Schéma du rapport 
+
+
+ a| 
+Afficher des informations sur le système de stockage
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Affichez d'autres données, telles que les historiques et les tendances en matière de capacité
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Afficher, attribuer et résoudre les événements
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Affichez les objets des services de stockage, tels que les associations de SVM et les pools de ressources
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Afficher les stratégies de seuil
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérez les objets de service de stockage, tels que les associations de SVM et les pools de ressources
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Définir des alertes
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérer les options de gestion du stockage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérez les règles de gestion du stockage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérer les utilisateurs
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérer les options administratives
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Définir des règles de seuil
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérer l'accès à la base de données
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gérez l'intégration avec WFA et fournissez l'accès aux vues de base de données
+ a| 
+ a| 
+ a| 
+ a| 
+•
+ a| 
+
+
+
+ a| 
+Fournir un accès en lecture seule aux rapports et autres vues de base de données
+ a| 
+ a| 
+ a| 
+ a| 
+ a| 
+•
+
+
+
+ a| 
+Planifiez et enregistrez des rapports
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Importer et supprimer des rapports importés
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+|===

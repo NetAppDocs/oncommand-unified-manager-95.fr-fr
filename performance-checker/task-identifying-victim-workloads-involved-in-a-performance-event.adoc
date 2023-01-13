@@ -1,0 +1,37 @@
+---
+permalink: performance-checker/task-identifying-victim-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous permet d"identifier les charges de travail de volume qui présentent l"écart le plus important en termes de temps de réponse \(latence\) causé par un composant de stockage en conflit. L"identification de ces charges de travail vous permet de comprendre pourquoi les applications client qui y accèdent ont été plus lentes que d"habitude.' 
+---
+= Identification des charges de travail victimes impliquées dans la mise en œuvre d'un processus dynamique de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous permet d'identifier les charges de travail de volume qui présentent l'écart le plus important en termes de temps de réponse (latence) causé par un composant de stockage en conflit. L'identification de ces charges de travail vous permet de comprendre pourquoi les applications client qui y accèdent ont été plus lentes que d'habitude.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il doit y avoir des événements de performances dynamiques nouveaux, acquittés ou obsolètes.
+
+
+
+
+== Description de la tâche
+
+La page Détails de l'événement affiche une liste des charges de travail définies par l'utilisateur et par le système, classées par la déviation la plus élevée de l'activité ou de l'utilisation sur le composant ou le plus touché par l'événement. Les valeurs sont basées sur les pics identifiés par Unified Manager lors de sa détection et de la dernière analyse de l'événement.
+
+
+
+== Étapes
+
+. Affichez la page *Détails de l'événement* pour afficher des informations sur l'événement.
+. Dans les graphiques latence de la charge de travail et activité de la charge de travail, sélectionnez *charges de travail victimes*.
+. Passez le curseur de la souris sur les graphiques pour afficher les principales charges de travail définies par l'utilisateur qui affectent le composant et le nom de la charge de travail victime.
+

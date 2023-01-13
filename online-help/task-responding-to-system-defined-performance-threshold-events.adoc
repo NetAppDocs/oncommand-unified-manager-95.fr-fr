@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-responding-to-system-defined-performance-threshold-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour analyser les événements de performance provoqués par un compteur de performances qui franchissement d"un seuil d"avertissement défini par le système. Vous pouvez également utiliser Unified Manager pour vérifier l"état de santé du composant de cluster afin de déterminer si les événements récents détectés sur le composant ont contribué à l"événement de performance.' 
+---
+= Réponse aux événements seuil de performance définis par le système
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour analyser les événements de performance provoqués par un compteur de performances qui franchissement d'un seuil d'avertissement défini par le système. Vous pouvez également utiliser Unified Manager pour vérifier l'état de santé du composant de cluster afin de déterminer si les événements récents détectés sur le composant ont contribué à l'événement de performance.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* En effet, il doit y avoir de nouveaux événements ou des événements de performances obsolètes.
+
+
+
+
+== Étapes
+
+. Affichez la page *Event* details pour afficher des informations sur l'événement.
+. Consultez la *Description*, qui décrit la violation de seuil qui a causé l'événement.
++
+Par exemple, le message « la valeur d'utilisation du nœud de 90 % a déclenché un événement D'AVERTISSEMENT basé sur un seuil de 85 % » indique qu'un événement d'avertissement d'utilisation du nœud s'est produit pour l'objet cluster.
+
+. Notez le *Event Trigger Time* afin de pouvoir déterminer si d'autres événements pourraient avoir eu lieu en même temps et qui auraient pu contribuer à cet événement.
+. Sous *diagnostic du système*, consultez la brève description du type d'analyse que la règle définie par le système exécute sur l'objet cluster.
++
+Pour certains événements, une icône verte ou rouge s'affiche à côté du diagnostic pour indiquer si un problème a été détecté dans ce diagnostic particulier. Pour d'autres types de graphiques d'événements définis par le système, les performances de l'objet s'affichent.
+
+. Sous *actions suggérées*, cliquez sur le lien *Aidez-moi à faire ceci* pour afficher les actions suggérées que vous pouvez effectuer afin d'essayer et de résoudre l'événement de performance par vous-même.
+

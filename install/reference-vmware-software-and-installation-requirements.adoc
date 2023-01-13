@@ -1,0 +1,44 @@
+---
+permalink: install/reference-vmware-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le système VMware vSphere sur lequel vous installez Unified Manager nécessite des versions spécifiques du système d"exploitation et des logiciels de prise en charge.' 
+---
+= Conditions requises pour le logiciel VMware et son installation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le système VMware vSphere sur lequel vous installez Unified Manager nécessite des versions spécifiques du système d'exploitation et des logiciels de prise en charge.
+
+
+
+== Logiciel de système d'exploitation
+
+Les versions suivantes de VMware ESXi sont prises en charge :
+
+* ESXi 5.5, 6.0 et 6.5
+
+
+Les versions suivantes de vSphere sont prises en charge :
+
+* VMware vCenter Server 5.5, 6.0 et 6.5
+
+
+Consultez la matrice d'interopérabilité pour obtenir la liste complète et la plus récente des versions ESXi prises en charge.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+L'heure du serveur VMware ESXi doit être identique à celle du serveur NTP pour que l'appliance virtuelle fonctionne correctement. La synchronisation de l'heure du serveur VMware ESXi avec celle du serveur NTP empêche une défaillance de temps.
+
+
+
+== Conditions requises pour l'installation
+
+VMware High Availability pour l'appliance virtuelle Unified Manager est pris en charge.
+
+Si vous déployez un datastore NFS sur un système de stockage exécutant le logiciel ONTAP, vous devez utiliser le plug-in NetApp NFS pour que VMware VAAI puisse utiliser le provisionnement lourd.
+
+Si le déploiement échoue à l'utilisation de votre environnement haute disponibilité en raison de ressources insuffisantes, vous devrez peut-être modifier les fonctionnalités du cluster Options de la machine virtuelle en désactivant la priorité de redémarrage de la machine virtuelle et en laissant la réponse d'isolation de l'hôte activée.

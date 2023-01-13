@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le déploiement de Unified Manager inclut le téléchargement de logiciels, le déploiement de l"appliance virtuelle, la création d"un nom d"utilisateur et d"un mot de passe pour la maintenance, ainsi que la configuration initiale dans l"interface utilisateur Web.' 
+---
+= Déployer Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le déploiement de Unified Manager inclut le téléchargement de logiciels, le déploiement de l'appliance virtuelle, la création d'un nom d'utilisateur et d'un mot de passe pour la maintenance, ainsi que la configuration initiale dans l'interface utilisateur Web.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir rempli la configuration système requise pour le déploiement.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Configuration minimale requise]
+
+* Vous devez disposer des informations suivantes :
++
+** Identifiants de connexion pour le site du support NetApp
+** Informations d'identification pour l'accès à VMware vCenter Server et au client Web vSphere (pour vSphere version 6.5) ou au client vSphere (pour vSphere version 5.5 ou 6.0)
+** Adresse IP du serveur ESXi sur lequel vous déployez l'appliance virtuelle Unified Manager
+** Détails sur le centre de données, tels que l'espace de stockage dans le datastore et les besoins en mémoire
+** IPv6 doit être activé sur l'hôte si vous prévoyez d'utiliser l'adressage IPv6.
+** CD-ROM ou image ISO des outils VMware
+
+
+
+
+
+
+== Description de la tâche
+
+Vous pouvez déployer Unified Manager en tant qu'appliance virtuelle sur un serveur VMware ESXi.
+
+Vous devez accéder à la console de maintenance en utilisant la console VMware et non en utilisant SSH.
+
+Les outils VMware ne sont pas inclus dans Unified Manager``.ova`` le fichier et doit être installé séparément.
+
+
+
+== Une fois que vous avez terminé
+
+Une fois le déploiement et la configuration initiale terminée, vous pouvez ajouter des clusters ou configurer des paramètres réseau supplémentaires dans la console de maintenance, puis accéder à l'interface utilisateur Web.

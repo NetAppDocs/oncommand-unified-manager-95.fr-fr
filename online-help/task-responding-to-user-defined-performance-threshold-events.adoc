@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-responding-to-user-defined-performance-threshold-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour analyser les événements de performance provoqués par un compteur de performances qui franchissement d"un seuil critique ou d"avertissement défini par l"utilisateur. Vous pouvez également utiliser Unified Manager pour vérifier l"état de santé du composant de cluster afin de déterminer si les événements d"état récemment détectés sur le composant ont contribué à l"événement de performances.' 
+---
+= Réponse aux événements seuil de performance définis par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour analyser les événements de performance provoqués par un compteur de performances qui franchissement d'un seuil critique ou d'avertissement défini par l'utilisateur. Vous pouvez également utiliser Unified Manager pour vérifier l'état de santé du composant de cluster afin de déterminer si les événements d'état récemment détectés sur le composant ont contribué à l'événement de performances.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* En effet, il doit y avoir de nouveaux événements ou des événements de performances obsolètes.
+
+
+
+
+== Étapes
+
+. Affichez la page *Event* details pour afficher des informations sur l'événement.
+. Consultez la *Description*, qui décrit la violation de seuil qui a causé l'événement.
++
+Par exemple, le message « la valeur de latence de 456 ms/op a déclenché un événement D'AVERTISSEMENT basé sur le réglage de seuil de 400 ms/op » indique qu'un événement d'avertissement de latence s'est produit pour l'objet.
+
+. Passez le curseur de la souris sur le nom de la stratégie pour afficher des détails sur la stratégie de seuil à l'origine de l'événement.
++
+Cela inclut le nom de la règle, le compteur de performances évalué, la valeur de compteur qui doit être dépassée pour être considérée comme un événement critique ou d'avertissement, et la durée à laquelle le compteur doit dépasser la valeur.
+
+. Notez le *Event Trigger Time* afin de pouvoir déterminer si d'autres événements pourraient avoir eu lieu en même temps et qui auraient pu contribuer à cet événement.
+. Suivez l'une des options ci-dessous pour approfondir l'analyse de l'événement, afin de déterminer si vous devez effectuer des actions pour résoudre le problème de performances :
++
+|===
+| Option | Actions d'investigation possibles 
+
+
+ a| 
+Cliquez sur le nom de l'objet source pour afficher la page Explorateur de cet objet.
+ a| 
+Cette page vous permet d'afficher les détails de l'objet et de les comparer à d'autres objets de stockage similaires pour déterminer si d'autres objets de stockage présentent un problème de performance similaire en même temps. Par exemple, pour vérifier si les autres volumes du même agrégat présentent également un problème de performances.
+
+
+
+ a| 
+Cliquez sur le nom du cluster pour afficher la page Cluster Summary.
+ a| 
+Cette page vous permet d'afficher les détails du cluster sur lequel réside cet objet afin de vérifier si d'autres problèmes de performance se sont produits en même temps.
+
+|===
+

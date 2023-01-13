@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-monitoring-performance-using-the-object-performance-inventory-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages de performances de l"inventaire des objets affichent des informations de performances, des événements de performance et l"état de santé de tous les objets d"une catégorie de type objet. Vous bénéficiez ainsi d"un aperçu complet de l"état de performance de chaque objet d"un cluster, par exemple pour tous les nœuds ou tous les volumes.' 
+---
+= Surveillance des performances à l'aide des pages d'inventaire des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages de performances de l'inventaire des objets affichent des informations de performances, des événements de performance et l'état de santé de tous les objets d'une catégorie de type objet. Vous bénéficiez ainsi d'un aperçu complet de l'état de performance de chaque objet d'un cluster, par exemple pour tous les nœuds ou tous les volumes.
+
+Les pages de performances de l'inventaire des objets fournissent un aperçu général de l'état des objets, ce qui vous permet d'évaluer les performances globales de tous les objets et de comparer les données de performances de l'objet. Vous pouvez affiner le contenu des pages d'inventaire d'objets en effectuant des recherches, en triant et en filtrant. Cette fonction est avantageuse pour le contrôle et la gestion des performances des objets. Elle vous permet de localiser rapidement les objets présentant des problèmes de performance et de lancer le processus de dépannage.
+
+image::../media/perf-node-inventory.gif[inventaire des nœuds perf]
+
+Par défaut, les objets sur les pages d'inventaire des performances sont triés en fonction de la criticité des performances de l'objet. Les objets avec de nouveaux événements de performances critiques sont répertoriés en premier lieu et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Toutes les données de performance reposent sur une moyenne de 72 heures.
+
+Vous pouvez facilement naviguer de la page performances de l'inventaire d'objets vers une page de détails d'objet en cliquant sur le nom de l'objet dans la colonne Nom de l'objet. Par exemple, sur la page d'inventaire performances/nœuds, vous devez cliquer sur un objet noeud dans la colonne *Nodes*. La page de détails de l'objet fournit des informations détaillées et des détails sur l'objet sélectionné, y compris la comparaison côte à côte des événements actifs.

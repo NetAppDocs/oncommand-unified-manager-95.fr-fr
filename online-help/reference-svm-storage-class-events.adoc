@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements des classes de stockage SVM fournissent des informations sur l"état de vos classes de stockage, ce qui vous permet de surveiller les problèmes potentiels. Les classes de stockage SVM n"existent que dans des SVM avec Infinite Volume. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de classe de stockage SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements des classes de stockage SVM fournissent des informations sur l'état de vos classes de stockage, ce qui vous permet de surveiller les problèmes potentiels. Les classes de stockage SVM n'existent que dans des SVM avec Infinite Volume. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+Les événements de classe de stockage SVM suivants s'appliquent uniquement aux SVM dotés d'Infinite Volume.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+SVM Storage Class Not Available (ocumEvtVserverStorageClassNotAvailable)
+ a| 
+Gestion des
+ a| 
+Classe de stockage
+ a| 
+Primordial
+
+
+
+ a| 
+Classe de stockage SVM partiellement disponible(ocumEvtVserverStoragePartitionAvallyAvailable)
+ a| 
+Risques
+ a| 
+Classe de stockage
+ a| 
+Erreur
+
+|===
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Espace de classe de stockage SVM presque complet (ocumEvtVserverStorageClassNearlyFull)
+ a| 
+Risques
+ a| 
+Classe de stockage
+ a| 
+Avertissement
+
+
+
+ a| 
+Espace de classe de stockage SVM complet (ocumEvtVserverStorageClassTotal)
+ a| 
+Risques
+ a| 
+Classe de stockage
+ a| 
+Erreur
+
+
+
+ a| 
+Limite d'utilisation des copies Snapshot de classe de stockage SVM dépassée (ocumEvtVserverStorageSnapshotClasUsExceeExéceédé)
+ a| 
+Risques
+ a| 
+Classe de stockage
+ a| 
+Avertissement
+
+|===

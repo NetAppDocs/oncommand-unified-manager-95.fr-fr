@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-analyzing-a-performance-incident-on-a-remote-cluster-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour analyser les événements de performances dynamiques sur un cluster distant dans une configuration MetroCluster. L"analyse vous permet de déterminer si un événement sur le cluster distant a provoqué un événement sur son cluster partenaire.' 
+---
+= Analyse d'un événement de performances dynamiques pour un cluster distant sur une configuration MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour analyser les événements de performances dynamiques sur un cluster distant dans une configuration MetroCluster. L'analyse vous permet de déterminer si un événement sur le cluster distant a provoqué un événement sur son cluster partenaire.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez avoir analysé un événement de performance sur un cluster local dans une configuration MetroCluster et obtenu le temps de détection de l'événement.
+* Vous devez avoir vérifié l'état de santé du cluster local et de son groupe de partenaires impliqué dans l'événement de performance et avoir obtenu le nom du groupe de partenaires.
+
+
+
+
+== Étapes
+
+. Connectez-vous à l'instance Unified Manager qui contrôle le cluster partenaire.
+. Dans le volet de navigation de gauche, cliquez sur *Evénements* pour afficher la liste des événements.
+. Dans le sélecteur *Time Range*, sélectionnez *Last Hour*, puis cliquez sur *Apply Range*.
+. Dans le sélecteur *Filtering*, sélectionnez *Cluster* dans le menu déroulant de gauche, saisissez le nom du groupe de partenaires dans le champ de texte, puis cliquez sur *appliquer le filtre*.
++
+Si aucun événement n'est enregistré pour le cluster sélectionné au cours de la dernière heure, cela signifie que le cluster n'a rencontré aucun problème de performance au cours du moment où l'événement a été détecté sur son partenaire.
+
+. Si des événements sont détectés sur le cluster sélectionné au cours de la dernière heure, comparez le temps de détection de l'événement à celui de l'événement sur le cluster local.
++
+Si ces événements impliquent des charges de travail dominantes entraînant des conflits au niveau du composant de traitement des données, un ou plusieurs de ces composants peuvent avoir généré l'événement sur le cluster local. Vous pouvez cliquer sur l'événement pour l'analyser et passer en revue les actions suggérées pour le résoudre sur la page Détails de l'événement.
+
++
+Si ces événements n'impliquent pas de charges de travail dominantes, ils n'ont pas provoqué l'événement de performance sur le cluster local.
+
+

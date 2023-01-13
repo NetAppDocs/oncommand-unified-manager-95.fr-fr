@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les diagrammes de compteur Mbit/s de Performance Explorer affichent le nombre de mégaoctets de données transférées vers et depuis l"objet sélectionné par seconde.' 
+---
+= Graphiques des compteurs de performances Mbit/s.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les diagrammes de compteur Mbit/s de Performance Explorer affichent le nombre de mégaoctets de données transférées vers et depuis l'objet sélectionné par seconde.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Lorsqu'elles sont affichées dans la vue Zoom, les graphiques volume et LUN affichent également les paramètres de seuil de débit maximal en Mbit/s de qualité de service (QoS), si configurés dans ONTAP.
+
+Lors de l'affichage d'un volume ou d'une LUN qui partage les Mbit/s d'une stratégie de QoS partagée, une ligne pour « Total Workload Mbps » s'affiche pour afficher les Mbit/s utilisés par toutes les autres charges de travail partageant cette politique.
+
+Le bas de la page graphique affiche les informations relatives aux Mbit/s minimum, maximum, moyen et 95e percentile pour la plage de temps sélectionnée.
+
+Deux types de diagrammes Mbps sont disponibles :
+
+
+
+== Mbit/s - graphique du compteur total
+
+Affiche le nombre de mégaoctets de données transférées vers et depuis l'objet sélectionné par seconde.
+
+
+
+== Mbit/s - diagramme du compteur de panne
+
+Affiche les mêmes données de Mbit/s, séparées en lecture de disque, en lecture, en écriture et autres opérations.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume ou une LUN.
+
+[NOTE]
+====
+Les données de Flash cache s'affichent uniquement pour les nœuds et uniquement lorsqu'un module Flash cache est installé sur le nœud.
+
+====
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'erreur, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement d'utilisation définie dans Unified Manager.
+
++
+La ligne rouge fixe indique la valeur du seuil critique d'utilisation définie dans Unified Manager.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] Associé à un compteur masque et affiche ces informations de compteur du graphique et peuvent aider à comparer les Mbit/s de l'objet.
+
+

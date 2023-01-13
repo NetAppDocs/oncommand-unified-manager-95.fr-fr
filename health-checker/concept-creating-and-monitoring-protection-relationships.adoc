@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous permet de créer des relations de protection, de surveiller et de résoudre les problèmes de protection en miroir et de sauvegarde des données stockées sur les clusters gérés, et de restaurer les données lorsqu"elles sont remplacées ou perdues.' 
+---
+= Création, surveillance et résolution des problèmes de relations de protection
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous permet de créer des relations de protection, de surveiller et de résoudre les problèmes de protection en miroir et de sauvegarde des données stockées sur les clusters gérés, et de restaurer les données lorsqu'elles sont remplacées ou perdues.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-user-access.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des rôles et attribuer des fonctions pour contrôler l"accès des utilisateurs aux objets de cluster sélectionnés. Vous pouvez identifier les utilisateurs disposant des fonctionnalités requises pour accéder aux objets sélectionnés dans un cluster. Seuls ces utilisateurs ont accès pour gérer les objets du cluster.' 
+---
+= Gestion de l'accès des utilisateurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des rôles et attribuer des fonctions pour contrôler l'accès des utilisateurs aux objets de cluster sélectionnés. Vous pouvez identifier les utilisateurs disposant des fonctionnalités requises pour accéder aux objets sélectionnés dans un cluster. Seuls ces utilisateurs ont accès pour gérer les objets du cluster.

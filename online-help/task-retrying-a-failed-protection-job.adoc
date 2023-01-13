@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-retrying-a-failed-protection-job.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une fois que vous avez pris des mesures pour corriger un échec de la tâche de protection, vous pouvez utiliser Réessayer pour exécuter à nouveau le travail. La nouvelle tentative d"un travail crée un nouveau travail à l"aide de l"ID de travail d"origine.' 
+---
+= Nouvelle tentative d'échec d'une tâche de protection
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez pris des mesures pour corriger un échec de la tâche de protection, vous pouvez utiliser *Réessayer* pour exécuter à nouveau le travail. La nouvelle tentative d'un travail crée un nouveau travail à l'aide de l'ID de travail d'origine.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Vous ne pouvez réessayer qu'un seul travail ayant échoué à la fois. La sélection de plusieurs travaux désactive le bouton *Réessayer*. Seules les tâches du type protection Configuration and protection relations Operation peuvent être relancées.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *travaux*.
+. Dans la liste des travaux, sélectionnez un seul travail de type d'opération de configuration de protection ou de protection contre les échecs.
++
+Le bouton *Réessayer* est activé.
+
+. Cliquez sur *Réessayer*.
++
+Le travail est redémarré.
+
+

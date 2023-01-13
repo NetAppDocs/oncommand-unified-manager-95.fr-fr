@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page attribuer une stratégie de seuil pour affecter une stratégie de seuil de performances à un ou plusieurs objets de stockage. 
+---
+= Attribuer une stratégie de seuil de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page attribuer une stratégie de seuil pour affecter une stratégie de seuil de performances à un ou plusieurs objets de stockage.
+
+La liste des règles est renseignée avec uniquement les règles valides pour le type d'objet de stockage.
+
+Sélectionnez la stratégie que vous souhaitez appliquer à l'objet ou aux objets, puis cliquez sur *appliquer la stratégie*.
+
+Dans certains cas, un message d'erreur peut être renvoyé lorsque vous essayez d'appliquer une police :
+
+* Lors de l'application d'une règle qui utilise le compteur de performance utilisé sur un nœud ou un agrégat non installé avec ONTAP 9.0, ou une version ultérieure, le logiciel.
++
+Les versions du logiciel ONTAP antérieures à la version 9.0 ne prennent pas en charge les compteurs de capacité de performances.
+
+* Lors de l'application d'une règle de combinaison à un volume FlexGroup, le second compteur inclut un nœud ou un objet d'agrégat.
++
+Comme les volumes FlexGroup peuvent être répartis sur plusieurs nœuds et agrégats, cette opération n'est pas autorisée.
+
+

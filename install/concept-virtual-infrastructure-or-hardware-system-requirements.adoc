@@ -1,0 +1,111 @@
+---
+permalink: install/concept-virtual-infrastructure-or-hardware-system-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Selon que vous installez Unified Manager sur une infrastructure virtuelle ou sur un système physique, il doit répondre aux exigences minimales en matière de mémoire, de processeur et d"espace disque.' 
+---
+= Configuration minimale requise pour l'infrastructure virtuelle et le système matériel
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Selon que vous installez Unified Manager sur une infrastructure virtuelle ou sur un système physique, il doit répondre aux exigences minimales en matière de mémoire, de processeur et d'espace disque.
+
+Le tableau suivant affiche les valeurs recommandées pour les ressources mémoire, processeur et espace disque. Ces valeurs ont été qualifiées pour permettre à Unified Manager de satisfaire à des niveaux de performances acceptables.
+
+|===
+| Configuration matérielle | Paramètres recommandés 
+
+
+ a| 
+RAM
+ a| 
+12 Go (minimum requis : 8 Go)
+
+
+
+ a| 
+Processeurs
+ a| 
+4 processeurs
+
+
+
+ a| 
+Capacité du cycle du processeur
+ a| 
+9572 MHz au total (exigence minimale : 9572 MHz)
+
+
+
+ a| 
+Espace disque disponible
+ a| 
+VMware :
+
+* 5 Go (provisionnement fin)
+* 152 Go (provisionnement lourd)
+
+
+
+
+ a| 
+Red Hat ou CentOS : 150 Go, où la capacité est allouée de la manière suivante :
+
+* 50 Go alloués à la partition racine
+* 100 Go d'espace disque disponible alloué à l' `/opt/netapp/data` Répertoire, monté sur un lecteur LVM ou sur un disque local distinct connecté au système cible
+
+
+[NOTE]
+====
+Le `/tmp` Le répertoire doit avoir au moins 10 Go d'espace libre et le `/var/log` Le répertoire doit disposer d'au moins 16 Go d'espace libre.
+
+==== a| 
+Windows : 150 Go, dont la capacité est allouée comme suit :
+
+* 100 Go d'espace disque pour le répertoire d'installation
+* 50 Go d'espace disque pour le répertoire de données MySQL
+
+
+|===
+Unified Manager peut être installé sur des systèmes disposant d'une petite quantité de mémoire, mais les 12 Go recommandés de RAM garantissent qu'un volume suffisant de mémoire est disponible pour des performances optimales de façon à ce que le système puisse prendre en charge des clusters et des objets de stockage supplémentaires à mesure que votre configuration évolue. Vous ne devez pas définir de limites de mémoire sur la machine virtuelle où Unified Manager est déployé, et vous ne devez pas activer de fonctions (par exemple, l'option d'extension) qui empêchent le logiciel d'utiliser la mémoire allouée dans le système.
+
+En outre, le nombre de nœuds qu'une seule instance de Unified Manager peut contrôler avant d'installer une deuxième instance de Unified Manager est limité. Consultez le _Guide des meilleures pratiques_ pour plus de détails.
+
+http://www.netapp.com/us/media/tr-4621.pdf["Rapport technique 4621 : Guide des meilleures pratiques de Unified Manager"]
+
+Les échanges de pages mémoire ont un impact négatif sur les performances du système et de l'application de gestion. La concurrence pour les ressources de processeur indisponibles en raison de l'utilisation globale de l'hôte peut dégrader les performances.
+
+
+
+== Exigence d'utilisation dédiée
+
+Le système physique ou virtuel sur lequel vous installez Unified Manager doit être utilisé exclusivement pour Unified Manager et ne doit pas être partagé avec d'autres applications. D'autres applications peuvent consommer des ressources système et réduire considérablement les performances de Unified Manager.
+
+
+
+== Besoins en espace pour les sauvegardes
+
+Si vous prévoyez d'utiliser la fonctionnalité de sauvegarde et de restauration de Unified Manager, vous devez allouer de la capacité supplémentaire de sorte que le répertoire ou le disque « `data » dispose de 150 Go d'espace. Une sauvegarde peut être écrite sur une destination locale ou sur une destination distante. La meilleure pratique consiste à identifier un emplacement distant externe au système hôte Unified Manager qui dispose d'un espace minimum de 150 Go.
+
+
+
+== Des besoins en connectivité hôte
+
+Le système physique ou virtuel sur lequel vous installez Unified Manager doit être configuré de telle manière `ping` nom d'hôte de l'hôte lui-même. Dans le cas d'une configuration IPv6, vérifiez-la `ping6` Le nom d'hôte a réussi pour s'assurer que l'installation d'Unified Manager a réussi.
+
+Vous pouvez utiliser le nom d'hôte (ou l'adresse IP de l'hôte) pour accéder à l'interface utilisateur Web du produit. Si vous avez configuré une adresse IP statique pour votre réseau pendant le déploiement, vous avez désigné un nom pour l'hôte réseau. Si vous avez configuré le réseau à l'aide de DHCP, vous devez obtenir le nom d'hôte du DNS.
+
+Si vous prévoyez d'autoriser les utilisateurs à accéder à Unified Manager à l'aide du nom court au lieu d'utiliser le nom de domaine complet (FQDN) ou l'adresse IP, votre configuration réseau doit résoudre ce nom court sur un FQDN valide.
+
+
+
+== Monté `/opt/netapp` ou `/opt/netapp/data` de formation
+
+Vous pouvez monter `/opt/netapp` ou `/opt/netapp/data` Sur un périphérique NAS ou SAN. Notez que l'utilisation de points de montage distants peut entraîner des problèmes de mise à l'échelle. Si vous utilisez un point de montage distant, assurez-vous que votre réseau SAN ou NAS dispose d'une capacité suffisante pour répondre aux besoins en E/S de Unified Manager. Cette capacité varie et peut augmenter en fonction du nombre de clusters et d'objets de stockage que vous surveillez.
+
+Si vous avez monté `/opt/netapp` ou `/opt/netapp/data` À partir de n'importe quel autre emplacement que le système de fichiers racine et que SELinux est activé dans votre environnement, vous devez définir le contexte correct pour les répertoires montés.
+
+Reportez-vous à la rubrique xref:task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.adoc[Conditions SELinux requises pour le montage /opt/netapp ou /opt/netapp/Data sur un partage NFS ou CIFS] Pour plus d'informations sur la définition du contexte SELinux correct.

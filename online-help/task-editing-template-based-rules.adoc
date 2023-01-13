@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-editing-template-based-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier une règle créée à l"aide des modèles de règles dans la boîte de dialogue Modifier la règle. Vous pouvez ajouter, modifier ou supprimer des propriétés de règles telles que les chemins de répertoires, les types de fichiers et les propriétaires. Vous pouvez également modifier le nom de la règle et la classe de stockage associée à la règle.' 
+---
+= Modification de règles basées sur des modèles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier une règle créée à l'aide des modèles de règles dans la boîte de dialogue Modifier la règle. Vous pouvez ajouter, modifier ou supprimer des propriétés de règles telles que les chemins de répertoires, les types de fichiers et les propriétaires. Vous pouvez également modifier le nom de la règle et la classe de stockage associée à la règle.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez un SVM approprié.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Sélectionnez la règle pour laquelle vous souhaitez inclure de nouvelles conditions ou de nouveaux ensembles de conditions.
+. Cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Modifier règle*, modifiez la règle comme requis :
++
+|===
+| Les fonctions que vous recherchez... | Procédez comme ça... 
+
+
+ a| 
+Ajouter une nouvelle propriété de règle
+ a| 
+Cliquez sur *Ajouter*.
+
+
+
+ a| 
+Supprimer une propriété de règle
+ a| 
+Cliquez sur *Supprimer* en sélectionnant la propriété de règle appropriée.
+
+
+
+ a| 
+Modifier une propriété de règle
+ a| 
+Double-cliquez sur la propriété de règle appropriée, puis modifiez-la si nécessaire.
+
+|===
+. Cliquez sur *mettre à jour*.
+. Vérifiez que vos modifications sont appliquées à la règle en développant la règle dans l'onglet *Data Policy*.
+. Prévisualiser toutes les autres modifications apportées à la stratégie de données.
+. Cliquer sur *Activate* pour activer les modifications des propriétés de règle dans la SVM.
+

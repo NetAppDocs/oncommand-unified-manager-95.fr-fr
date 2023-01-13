@@ -1,0 +1,37 @@
+---
+permalink: online-help/concept-understanding-the-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le tableau de bord Unified ManagerCluster View fournit des informations détaillées sur l"état des clusters que vous gérez. Le tableau de bord Cluster View se compose de deux sections principales : Managed clusters \(sur la gauche\) et Cluster Details \(sur la droite\).' 
+---
+= Présentation du tableau de bord Cluster View
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord Unified ManagerCluster View fournit des informations détaillées sur l'état des clusters que vous gérez. Le tableau de bord Cluster View se compose de deux sections principales : Managed clusters (à gauche) et Cluster Details (à droite).
+
+L'image suivante montre un exemple de tableau de bord Unified ManagerCluster View qui surveille huit clusters :
+
+image::../media/dashboard-clusterview-um.gif[tableau de bord clusterview um]
+
+L'icône d'état située en regard de chaque nom de cluster peut être aux États suivants :
+
+* Critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]) : Un ou plusieurs événements critiques actifs ont été signalés pour le cluster.
+* Erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]) : Un ou plusieurs événements d'erreur actifs ont été signalés pour le cluster.
+* Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) : Un ou plusieurs événements d'avertissement actifs ont été signalés pour le cluster.
+* Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]) : Aucun événement actif n'a été signalé pour le cluster.
+
+
+[NOTE]
+====
+La couleur indique si des événements actifs (nouveaux ou acquittés) existent pour l'objet. Les événements qui ne sont plus actifs, appelés événements obsolètes, n'affectent pas la couleur de l'icône.
+
+====
+Pour afficher des informations supplémentaires sur un cluster, vous pouvez effectuer l'une des actions suivantes :
+
+* Vous pouvez cliquer sur le nom d'un cluster pour afficher les informations d'affichage de l'état du contrôle, de l'état de la capacité et de l'état des performances du cluster.
+* Vous pouvez cliquer sur *gérer les clusters* pour afficher la page sources de données de configuration/cluster, dans laquelle vous pouvez afficher des informations détaillées sur l'état de tous les clusters gérés par cette instance de Unified Manager.
+

@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une fois que vous avez suspendu une relation pour arrêter les transferts programmés, vous pouvez utiliser Resume pour réactiver les transferts programmés afin que les données du volume source ou primaire soient protégées. Les transferts reprennent à partir d"un point de contrôle, le cas échéant, à l"intervalle de transfert planifié suivant.' 
+---
+= Reprise des transferts programmés sur une relation mise en veille à partir de la page de relations protection/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez suspendu une relation pour arrêter les transferts programmés, vous pouvez utiliser *Resume* pour réactiver les transferts programmés afin que les données sur le volume source ou primaire soient protégées. Les transferts reprennent à partir d'un point de contrôle, le cas échéant, à l'intervalle de transfert planifié suivant.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Description de la tâche
+
+Vous ne pouvez sélectionner pas plus de 10 relations suspendues pour reprendre les transferts.
+
+
+
+== Étapes
+
+. Dans la page *protection/relations de volume*, sélectionnez un ou plusieurs volumes avec des relations suspendues et, dans la barre d'outils, cliquez sur *reprendre*.
+. Dans la boîte de dialogue *reprendre*, cliquez sur *Continuer*.
++
+Vous revenez à la page protection/relations de volume.
+
+. Pour afficher les tâches associées et suivre leur progression, cliquez sur le lien du travail affiché en haut de la page *protection/relations de volume*.
+. Effectuez l'une des opérations suivantes :
++
+** Si un seul travail est affiché, dans la page protection/informations sur le travail, cliquez sur *Actualiser* pour mettre à jour la liste des tâches et les détails des tâches associés à la tâche de configuration de protection et déterminer quand la tâche est terminée.
+** Si plusieurs travaux sont affichés,
++
+... Dans la page protection/travaux, cliquez sur le travail pour lequel vous souhaitez afficher les détails.
+... Dans la page protection/Détails du travail, cliquez sur *Actualiser* pour mettre à jour la liste des tâches et les détails de la tâche associée à la tâche de configuration de la protection et déterminer quand la tâche est terminée. Une fois les tâches terminées, les transferts de données sont repris à l'intervalle de transfert planifié suivant.
+
+
+
+
+

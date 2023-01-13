@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher des informations sur tous les ports d"un cluster. Vous pouvez afficher des informations telles que le rôle de port réseau \(cluster, données ou node-management\), l"état de la liaison, l"unité de transmission maximale \(MTU\), la vitesse et l"état opérationnel, ainsi que le groupe d"interface du port, le cas échéant.' 
+---
+= Identifier le nœud le plus adapté à une LIF occupée à l'aide de l'interface de ligne de commande
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des informations sur tous les ports d'un cluster. Vous pouvez afficher des informations telles que le rôle de port réseau (cluster, données ou gestion des nœuds), l'état de la liaison, l'unité de transmission maximale (MTU), la définition de la vitesse et l'état opérationnel, ainsi que le groupe d'interfaces des ports, le cas échéant.
+
+
+
+== Étapes
+
+. Pour afficher les informations relatives aux ports, entrez la commande suivante : `network port show`
++
+L'exemple suivant affiche des informations sur les ports réseau qui ont un rôle de données et qui sont situés sur le cluster :
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. Vérifiez que les ports de destination se trouvent sur le même réseau que le port de départ source et le nœud de départ.
++
+Par exemple, le port de destination et le nœud de départ doivent se trouver sur le même VLAN, le cas échéant.
+
+. Pour identifier le port le moins occupé, choisissez un port de données comportant le moins de connexions.
+

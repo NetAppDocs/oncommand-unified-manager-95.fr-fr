@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez contrôler l"agrégat racine du nœud à l"aide de Unified Manager. Il est recommandé de provisionner de façon épaisse le volume racine dans l"agrégat racine afin d"empêcher l"arrêt du nœud.' 
+---
+= Présentation des événements et des seuils pour les agrégats racine du nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez contrôler l'agrégat racine du nœud à l'aide de Unified Manager. Il est recommandé de provisionner de façon épaisse le volume racine dans l'agrégat racine afin d'empêcher l'arrêt du nœud.
+
+Par défaut, les événements de capacité et de performance ne sont pas générés pour les agrégats racine. En outre, les valeurs de seuil utilisées par Unified Manager ne s'appliquent pas aux agrégats racine du nœud. Seul un représentant du support technique peut modifier les paramètres de ces événements. Lorsque les paramètres sont modifiés par le représentant du support technique, les valeurs de seuil de capacité sont appliquées à l'agrégat racine du nœud.
+
+Vous pouvez prendre des mesures appropriées pour empêcher l'arrêt du nœud en utilisant OnCommand System Manager ou l'interface de ligne de commande de ONTAP.

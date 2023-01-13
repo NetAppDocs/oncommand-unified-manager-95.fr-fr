@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-viewing-event-details-in-the-performance-explorer-events-timeline.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher tous les événements et leurs détails dans le volet Calendrier des événements de l"Explorateur de performances. Cette méthode permet de visualiser rapidement et efficacement tous les événements d"état et de performances de l"objet racine dans une plage de temps spécifiée, ce qui peut être utile pour résoudre les problèmes de performances.' 
+---
+= Affichage des détails d'un événement dans la chronologie des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher tous les événements et leurs détails dans le volet Calendrier des événements de l'Explorateur de performances. Cette méthode permet de visualiser rapidement et efficacement tous les événements d'état et de performances de l'objet racine dans une plage de temps spécifiée, ce qui peut être utile pour résoudre les problèmes de performances.
+
+
+
+== Description de la tâche
+
+Le volet Event Timeline affiche les événements critiques, d'erreur, d'avertissement et d'information qui se sont produits sur l'objet racine pendant la plage horaire sélectionnée. Chaque gravité d'événement a son propre calendrier. Les événements uniques et multiples sont représentés par un point d'événement sur le calendrier. Vous pouvez positionner votre curseur sur un point d'événement pour afficher les détails de l'événement. Pour augmenter la granularité visuelle de plusieurs événements, vous pouvez réduire la plage de temps. Cela permet de propager plusieurs événements en un seul événement, ce qui vous permet d'afficher et d'étudier chaque événement séparément.
+
+Chaque point d'événement de performance sur la chronologie des événements s'aligne verticalement avec un pic correspondant dans les lignes de tendance des diagrammes qui sont affichées sous la chronologie des événements. Cela permet une corrélation visuelle directe entre les événements et les performances globales. Les événements de santé sont également affichés dans le calendrier, mais ces types d'événements ne correspondent pas nécessairement à un pic dans un des graphiques de performances.
+
+
+
+== Étapes
+
+. Dans le volet *Event Timeline*, placez le curseur sur un point d'événement sur une chronologie pour afficher un résumé de l'événement ou des événements à ce point.
++
+Une boîte de dialogue contextuelle affiche des informations sur les types d'événements, la date et l'heure auxquelles les événements se sont produits, l'état et la durée de l'événement.
+
+. Afficher les détails complets d'un ou plusieurs événements :
++
+|===
+| Pour cela... | Cliquez sur ce bouton... 
+
+
+ a| 
+Afficher les détails d'un seul événement
+ a| 
+*Afficher les détails de l'événement* dans la boîte de dialogue contextuelle.
+
+
+
+ a| 
+Afficher les détails de plusieurs événements
+ a| 
+*Afficher les détails de l'événement* dans la boîte de dialogue contextuelle.
+
+[NOTE]
+====
+Cliquez sur un seul événement dans la boîte de dialogue événements multiples pour afficher la page Détails de l'événement appropriée.
+
+====
+|===
+

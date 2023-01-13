@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-remove-inactive-volumes-and-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une fois l"espace libre de l"agrégat identifié comme un problème, vous pouvez rechercher les volumes et les LUN inutilisés et les supprimer de l"agrégat. Cela peut aider à réduire le problème de peu d"espace disque.' 
+---
+= Supprimez les volumes et les LUN inactifs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois l'espace libre de l'agrégat identifié comme un problème, vous pouvez rechercher les volumes et les LUN inutilisés et les supprimer de l'agrégat. Cela peut aider à réduire le problème de peu d'espace disque.
+
+Si un événement de performance d'un agrégat est provoqué par un manque d'espace disque, quelques méthodes vous permettent de déterminer quels volumes et LUN ne sont plus utilisés.
+
+Pour identifier les volumes inutilisés :
+
+* Sur la page Détails de l'événement, le champ *nombre d'objets affectés* fournit un lien qui affiche la liste des volumes affectés.
++
+Cliquez sur le lien pour afficher les volumes sur la page Performance/volumes. De là, vous pouvez trier les volumes affectés par *IOPS* pour voir quels volumes n'ont pas été actifs.
+
+
+
+Pour identifier les LUN non utilisées :
+
+. Dans la page Détails de l'événement, notez le nom de l'agrégat sur lequel l'événement s'est produit.
+. Dans le volet de navigation de gauche, cliquez sur *Performance* > *LUN*.
+. Cliquez sur *Filtering*, sélectionnez *Aggregate* dans le menu déroulant de gauche, saisissez le nom de l'agrégat dans le champ de texte, puis cliquez sur *appliquer le filtre*.
+. Triez la liste des LUN affectées par *IOPS* pour afficher les LUN qui ne sont pas actives.
+
+
+Une fois les volumes et LUN inutilisés, vous pouvez utiliser OnCommand System Manager ou les commandes ONTAP pour supprimer ces objets.

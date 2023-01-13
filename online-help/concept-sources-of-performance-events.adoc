@@ -1,0 +1,39 @@
+---
+permalink: online-help/concept-sources-of-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de performance sont des problèmes liés aux performances des charges de travail sur un cluster. Ils vous aident à identifier les objets de stockage avec des temps de réponse lents, également appelés « latence élevée ». Avec d"autres événements de santé qui se sont produits en même temps, vous pouvez déterminer les problèmes qui pourraient avoir causé, ou contribué à, les délais de réponse lents.' 
+---
+= Sources des événements de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de performance sont des problèmes liés aux performances des charges de travail sur un cluster. Ils vous aident à identifier les objets de stockage avec des temps de réponse lents, également appelés « latence élevée ». Avec d'autres événements de santé qui se sont produits en même temps, vous pouvez déterminer les problèmes qui pourraient avoir causé, ou contribué à, les délais de réponse lents.
+
+Unified Manager reçoit des événements de performance des sources suivantes :
+
+* *Événements de politique de seuil de performances définis par l'utilisateur*
++
+Problèmes de performances basés sur des valeurs de seuil personnalisées que vous avez définies. Vous configurez des règles de seuil de performances pour les objets de stockage, par exemple des agrégats et des volumes, de sorte que les événements soient générés lorsqu'une valeur de seuil pour un compteur de performances a été atteinte.
+
++
+Vous devez définir une règle de seuil de performances et l'affecter à un objet de stockage pour recevoir ces événements.
+
+* *Événements de politique de seuil de performances définis par le système*
++
+Problèmes de performances basés sur des valeurs seuils définies par le système. Ces règles de seuil sont incluses dans l'installation de Unified Manager afin de couvrir les problèmes de performance les plus courants.
+
++
+Ces règles de seuil sont activées par défaut et vous pouvez afficher des événements peu après l'ajout d'un cluster.
+
+* *Événements seuil de performances dynamiques*
++
+Problèmes de performance dus à des défaillances ou à des erreurs dans une infrastructure IT, ou à la sur-utilisation des ressources du cluster par les charges de travail. La cause de ces événements peut être un simple problème qui se corrige au cours d'un certain temps ou qui peut être résolu par une réparation ou un changement de configuration. Un événement à seuil dynamique indique que les workloads de volumes d'un système ONTAP sont lents en raison d'autres workloads dont l'utilisation est élevée des composants du cluster partagé.
+
++
+Ces seuils sont activés par défaut et vous pouvez afficher des événements après trois jours de collecte des données d'un nouveau cluster.
+
+

@@ -1,0 +1,81 @@
+---
+permalink: config/task-adding-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des serveurs d"authentification et activer l"authentification à distance sur le serveur de gestion afin que les utilisateurs distants au sein du serveur d"authentification puissent accéder à Unified Manager.' 
+---
+= Ajout de serveurs d'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des serveurs d'authentification et activer l'authentification à distance sur le serveur de gestion afin que les utilisateurs distants au sein du serveur d'authentification puissent accéder à Unified Manager.
+
+
+
+== Avant de commencer
+
+* Les informations suivantes doivent être disponibles :
++
+** Nom d'hôte ou adresse IP du serveur d'authentification
+** Numéro de port du serveur d'authentification
+
+
+* Vous devez avoir activé l'authentification à distance et configuré votre service d'authentification pour que le serveur de gestion puisse authentifier les utilisateurs ou groupes distants sur le serveur d'authentification.
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Description de la tâche
+
+Si le serveur d'authentification que vous ajoutez fait partie d'une paire haute disponibilité (HA) (utilisant la même base de données), vous pouvez également ajouter le serveur d'authentification partenaire. Cela permet au serveur de gestion de communiquer avec le partenaire lorsque l'un des serveurs d'authentification est inaccessible.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, cliquez sur *Management Server* > *authentification*.
+. Activez ou désactivez l'option *utiliser l'authentification de connexion sécurisée* :
++
+|===
+| Les fonctions que vous recherchez... | Alors, procédez comme ça... 
+
+
+ a| 
+Activez-la
+ a| 
+.. Dans la case Activer l'authentification à distance, sélectionnez l'option *utiliser la connexion sécurisée*.
+.. Dans la zone serveurs d'authentification, cliquez sur *Ajouter*.
+.. Dans la boîte de dialogue Ajouter un serveur d'authentification, entrez le nom d'authentification ou l'adresse IP (IPv4 ou IPv6) du serveur.
+.. Dans la boîte de dialogue Autoriser l'hôte, cliquez sur Afficher le certificat.
+.. Dans la boîte de dialogue Afficher le certificat, vérifiez les informations sur le certificat, puis cliquez sur *Fermer*.
+.. Dans la boîte de dialogue Autoriser l'hôte, cliquez sur *Oui*.
++
+[NOTE]
+====
+Lorsque vous activez l'option *utiliser l'authentification Secure Connection*, Unified Manager communique avec le serveur d'authentification et affiche le certificat. Unified Manager utilise 636 comme port par défaut pour les communications sécurisées et le port numéro 389 pour les communications non sécurisées.
+
+====
+
+
+
+
+ a| 
+Désactivez-le
+ a| 
+.. Dans la case Activer l'authentification à distance, désactivez l'option *utiliser la connexion sécurisée*.
+.. Dans la zone serveurs d'authentification, cliquez sur *Ajouter*.
+.. Dans la boîte de dialogue Add Authentication Server (Ajouter un serveur d'authentification), spécifiez le nom d'hôte ou l'adresse IP (IPv4 ou IPv6) du serveur, ainsi que les détails du port.
+.. Cliquez sur *Ajouter*.
+
+
+|===
++
+Le serveur d'authentification que vous avez ajouté s'affiche dans la zone serveurs.
+
+. Effectuez un test d'authentification pour confirmer que vous pouvez authentifier les utilisateurs sur le serveur d'authentification que vous avez ajouté.
+

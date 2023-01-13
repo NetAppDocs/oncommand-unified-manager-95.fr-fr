@@ -1,0 +1,36 @@
+---
+permalink: health-checker/reference-description-of-event-impact-areas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements sont classés dans cinq domaines d"impact \(disponibilité, capacité, configuration, performances et protection\) pour vous permettre de vous concentrer sur les types d"événements dont vous êtes responsable.' 
+---
+= Description des zones d'impact de l'événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements sont classés en cinq domaines d'impact (disponibilité, capacité, configuration, performances et protection) pour vous permettre de vous concentrer sur les types d'événements dont vous êtes responsable.
+
+* *Disponibilité*
++
+Les événements de disponibilité vous avertissent lorsqu'un objet de stockage est hors ligne, si un service de protocole est défaillant, en cas de basculement du stockage ou si un problème survient au niveau du matériel.
+
+* *Capacité*
++
+Les événements de capacité vous avertissent lorsque vos agrégats, volumes, LUN ou espaces de noms sont proches ou ont atteint un seuil de taille, ou si le taux de croissance est inhabituel pour votre environnement.
+
+* *Configuration*
++
+Les événements de configuration vous informent de la détection, de la suppression, de l'ajout, de la suppression ou du changement de nom de vos objets de stockage. Les événements de configuration ont un niveau d'événement et un type d'information de gravité.
+
+* *Performance*
++
+Les événements de performances vous avertissent des conditions de ressources, de configuration ou d'activité sur votre cluster qui peuvent nuire à la vitesse des entrées et des récupérations du stockage de données pour vos objets de stockage surveillés.
+
+* *Protection*
++
+Les événements de protection vous signalent les incidents et les risques impliquant des relations SnapMirror, des problèmes de capacité de destination, des problèmes avec les relations SnapVault ou des problèmes de protection. Tout objet ONTAP (notamment les agrégats, les volumes et les SVM) hébergeant des volumes secondaires et des relations de protection est classé dans la zone d'impact sur la protection.
+
+

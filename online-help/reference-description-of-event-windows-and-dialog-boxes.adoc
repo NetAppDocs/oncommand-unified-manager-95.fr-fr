@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Cet événement vous signale tout problème rencontré au sein de votre environnement. Vous pouvez utiliser la page d"inventaire des événements et la page Détails des événements pour surveiller tous les événements. Vous pouvez utiliser la boîte de dialogue Options de configuration des notifications pour configurer les notifications. Vous pouvez utiliser la page Configuration/gestion des événements pour désactiver ou activer les événements.' 
+---
+= Description des fenêtres d'événement et des boîtes de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cet événement vous signale tout problème rencontré au sein de votre environnement. Vous pouvez utiliser la page d'inventaire des événements et la page Détails des événements pour surveiller tous les événements. Vous pouvez utiliser la boîte de dialogue Options de configuration des notifications pour configurer les notifications. Vous pouvez utiliser la page Configuration/gestion des événements pour désactiver ou activer les événements.

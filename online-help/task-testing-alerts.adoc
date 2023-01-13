@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-testing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez tester une alerte pour vérifier que vous l"avez correctement configurée. Lorsqu"un événement est déclenché, une alerte est générée et un e-mail d"alerte est envoyé aux destinataires configurés. Vous pouvez vérifier si la notification est envoyée et si votre script est exécuté à l"aide de l"alerte test.' 
+---
+= Test des alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez tester une alerte pour vérifier que vous l'avez correctement configurée. Lorsqu'un événement est déclenché, une alerte est générée et un e-mail d'alerte est envoyé aux destinataires configurés. Vous pouvez vérifier si la notification est envoyée et si votre script est exécuté à l'aide de l'alerte test.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir configuré des paramètres de notification tels que l'adresse électronique des destinataires, le serveur SMTP et le trap SNMP.
++
+Le serveur Unified Manager peut utiliser ces paramètres pour envoyer des notifications aux utilisateurs lorsqu'un événement est généré.
+
+* Vous devez avoir affecté un script et configuré le script pour qu'il s'exécute lorsque l'alerte est générée.
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *Alerting*.
+. Dans la page *Configuration/Alerting*, sélectionnez l'alerte à tester, puis cliquez sur *Test*.
++
+Un e-mail d'alerte de test est envoyé aux adresses e-mail que vous avez spécifiées lors de la création de l'alerte.
+
+

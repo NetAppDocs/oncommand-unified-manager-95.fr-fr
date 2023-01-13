@@ -1,0 +1,28 @@
+---
+permalink: health-checker/concept-how-group-actions-work-on-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une action de groupe est une opération effectuée sur tous les objets de stockage d"un groupe. Par exemple, vous pouvez configurer l"action de groupe de seuils de volume pour modifier simultanément les valeurs de seuil de volume de tous les volumes d"un groupe.' 
+---
+= Fonctionnement des actions de groupe sur les objets de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une action de groupe est une opération effectuée sur tous les objets de stockage d'un groupe. Par exemple, vous pouvez configurer l'action de groupe de seuils de volume pour modifier simultanément les valeurs de seuil de volume de tous les volumes d'un groupe.
+
+Les groupes prennent en charge des types d'action de groupe uniques. Vous pouvez avoir un groupe avec un seul type d'action de groupe de seuils d'intégrité de volume. Toutefois, vous pouvez configurer un autre type d'action de groupe, si disponible, pour le même groupe. Le classement d'une action de groupe détermine l'ordre dans lequel l'action est appliquée aux objets de stockage. La page de détails d'un objet de stockage fournit des informations sur l'action de groupe appliquée à l'objet de stockage.
+
+
+
+== Exemple d'actions de groupe uniques
+
+Considérez un volume A qui appartient aux groupes G1 et G2, et les actions de groupe de seuils de contrôle de volume suivantes sont configurées pour ces groupes :
+
+* `Change_capacity_threshold` action de groupe avec rang 1, pour configurer la capacité du volume
+* `Change_snapshot_copies` Action de groupe avec rang 2, pour la configuration des copies Snapshot du volume
+
+
+Le `Change_capacity_threshold` l'action de groupe est toujours prioritaire sur le `Change_snapshot_copies` L'action de groupe et est appliquée au volume A. Une fois Unified Manager terminé un cycle de surveillance, les événements liés au seuil de santé du volume A sont réévalués dans le système `Change_capacity_threshold` action de groupe. Vous ne pouvez pas configurer un autre type d'action de groupe de seuil de volume pour le groupe G1 ou G2.

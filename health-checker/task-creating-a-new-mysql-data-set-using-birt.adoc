@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task-creating-a-new-mysql-data-set-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: Après avoir créé la source de données, vous devez créer un ensemble de données MySQL pour créer les résultats de sortie pour votre rapport. Vous pouvez également modifier les types de sortie après avoir créé le jeu de données. 
+---
+= Création d'un nouveau jeu de données MySQL à l'aide de BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir créé la source de données, vous devez créer un ensemble de données MySQL pour créer les résultats de sortie pour votre rapport. Vous pouvez également modifier les types de sortie après avoir créé le jeu de données.
+
+
+
+== Avant de commencer
+
+Vous devez avoir créé une source de données JDBC à l'aide de BIRT.
+
+Vous devez avoir téléchargé et installé MySQL Connector/J.
+
+Vous devez avoir créé un utilisateur de base de données avec le rôle Report Schema dans Unified Manager.
+
+
+
+== Étapes
+
+. Dans *Eclipse*, sélectionnez un espace de travail.
+. Sélectionnez *Data Explorer* > *Data Set* > *New Data Set*.
+. Dans la boîte de dialogue *Nouveau jeu de données*, sélectionnez la source de données précédemment créée, le type de jeu de données et le nom du jeu de données, puis cliquez sur *Suivant*.
+. Définissez un texte de requête SQL à l'aide des éléments disponibles ou entrez manuellement la requête, puis cliquez sur *Terminer*.
+. Cliquez sur *Aperçu des résultats* pour confirmer la requête SQL, puis cliquez sur *OK*.
+. Dans la boîte de dialogue *Modifier le jeu de données*, définissez les colonnes de sortie comme nécessaire et cliquez sur *OK*.
+. Faites glisser des éléments dans le rapport nouvellement créé.
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous devez maintenant importer le nouveau rapport créé dans Unified Manager.

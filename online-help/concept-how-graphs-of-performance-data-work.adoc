@@ -1,0 +1,46 @@
+---
+permalink: online-help/concept-how-graphs-of-performance-data-work.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager utilise des graphiques ou des graphiques pour afficher les statistiques de performance des volumes et les événements sur une période donnée. 
+---
+= Fonctionnement des graphiques de données de performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager utilise des graphiques ou des graphiques pour afficher les statistiques de performance des volumes et les événements sur une période donnée.
+
+Les graphiques vous permettent de personnaliser la plage de temps pour laquelle vous souhaitez afficher les données. Les données s'affichent avec le cadre de temps sur l'axe horizontal du graphique et les compteurs sur l'axe vertical, avec des intervalles de points le long des lignes du graphique. L'axe vertical est dynamique ; les valeurs s'ajustent en fonction des pics des valeurs attendues ou réelles.
+
+
+
+== Sélection d'intervalles de temps
+
+Sur la page Détails performances/Volume, le diagramme de données historiques vous permet de sélectionner une période pour tous les graphiques de la page. Les boutons 1D, 5d, 10d et 30d indiquent 1 jour à 30 jours (1 mois) et le bouton *personnalisé* vous permet de spécifier une plage horaire personnalisée dans les 30 jours. Chaque point d'un graphique représente un intervalle de collecte de 5 minutes et un maximum de 30 jours de données historiques de performances sont conservés. Notez que les intervalles prennent également en compte les retards du réseau et d'autres anomalies.
+
+image::../media/opm-timeframe-selectors-jpg.gif[Sélecteurs de plage horaire dans Performance Manager]
+
+Dans cet exemple, le diagramme de données historiques comporte une période définie au début et à la fin du mois de mars. Dans la période sélectionnée, toutes les données historiques avant mars sont grisées.
+
+
+
+== Affichage des informations sur les points de données
+
+Pour afficher des informations sur les points de données sur un graphique, vous pouvez positionner le curseur sur un point spécifique dans le graphique. Une fenêtre contextuelle s'affiche avec la valeur et la date et l'heure.
+
+image::../media/opm-chart-popup-png.gif[Message graphique dans OnCommand Performance Manager]
+
+Dans cet exemple, lorsque vous positionnez le curseur sur le graphique IOPS de la page Performance/Volume Details (Détails des performances/volumes), les valeurs de temps de réponse et d'opérations sont comprises entre 3 h 50 et 3:55 Le 20 octobre.
+
+
+
+== Affichage des informations sur les événements de performances
+
+Pour afficher les informations relatives aux événements sur un graphique, vous pouvez positionner le curseur sur une icône d'événement pour afficher les informations récapitulatives dans une fenêtre contextuelle ou cliquer sur l'icône de l'événement pour obtenir des informations plus détaillées.
+
+image::../media/opm-bully-volume-png.gif[Fenêtre contextuelle d'incident dans Performance Manager]
+
+Dans cet exemple, sur la page Performance/Volume Details, lorsque vous cliquez sur une icône d'événement du graphique latence, des informations détaillées sur l'événement s'affichent dans une fenêtre contextuelle. L'événement est également mis en évidence dans la liste des événements.

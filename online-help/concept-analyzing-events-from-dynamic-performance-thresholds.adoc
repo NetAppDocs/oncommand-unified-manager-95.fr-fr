@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements générés à partir de seuils dynamiques indiquent que le temps de réponse réel \(latence\) d"une charge de travail est trop élevé ou trop faible par rapport à la plage de temps de réponse prévue. La page Détails des événements vous permet d"analyser l"événement de performance et de prendre des mesures correctives, le cas échéant, pour rétablir les performances normales.' 
+---
+= Analyse des événements à partir de seuils de performances dynamiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements générés à partir de seuils dynamiques indiquent que le temps de réponse réel d'une charge de travail est trop élevé ou trop faible par rapport à la plage de temps de réponse prévue. La page Détails des événements vous permet d'analyser l'événement de performance et de prendre des mesures correctives, le cas échéant, pour rétablir les performances normales.
+
+[NOTE]
+====
+Les seuils de performance dynamiques ne sont pas activés sur les systèmes Cloud Volumes ONTAP, ONTAP Edge ou ONTAP Select.
+
+====

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-monitoring-performance-using-the-performance-explorer-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les pages de l"explorateur d"performances affichent des informations détaillées sur les performances de chaque objet d"un cluster. Cette page offre une vue détaillée des performances de tous les objets du cluster, ce qui vous permet de sélectionner et de comparer les données de performances d"objets spécifiques sur différentes périodes.' 
+---
+= Contrôle des performances à l'aide des pages de l'explorateur de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pages de l'explorateur d'performances affichent des informations détaillées sur les performances de chaque objet d'un cluster. Cette page offre une vue détaillée des performances de tous les objets du cluster, ce qui vous permet de sélectionner et de comparer les données de performances d'objets spécifiques sur différentes périodes.
+
+Vous pouvez également évaluer la performance globale de tous les objets et comparer les données de performances de l'objet dans un format côte à côte.
+
+Si un objet n'est plus géré par Unified Manager, l'état *removed* s'affiche à droite du nom de l'objet en haut de la page de l'explorateur de performances.

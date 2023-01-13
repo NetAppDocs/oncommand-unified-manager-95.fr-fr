@@ -1,0 +1,63 @@
+---
+permalink: performance-checker/task-responding-to-a-system-defined-qos-policy-group-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager génère des événements d"avertissement de stratégie de qualité de service lorsque le débit de la charge de travail \(IOPS, IOPS/To ou Mbit/s\) a dépassé le paramètre de règle de qualité de service ONTAP défini et l"impact de la latence du workload est en cours. Ces événements définis par le système permettent de corriger les problèmes de performance potentiels avant que de nombreuses charges de travail ne soient affectées par la latence.' 
+---
+= Réponse aux événements de performance du groupe de règles de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager génère des événements d'avertissement de stratégie de qualité de service lorsque le débit de la charge de travail (IOPS, IOPS/To ou Mbit/s) a dépassé le paramètre de règle de qualité de service ONTAP défini et que la latence des workloads est en train de devenir affectée. Ces événements définis par le système permettent de corriger les problèmes de performance potentiels avant que de nombreuses charges de travail ne soient affectées par la latence.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Il doit y avoir des événements de performances nouveaux, acquittés ou obsolètes.
+
+
+
+
+== Description de la tâche
+
+Unified Manager génère des événements d'avertissement pour les violations de règles de qualité de service lorsque le débit de la charge de travail a dépassé le paramètre de règle de QoS défini pour chaque période de collecte des performances pendant l'heure précédente. Le débit de la charge de travail peut dépasser le seuil de qualité de service pendant une courte période seulement au cours de chaque période de collecte, mais Unified Manager affiche uniquement le débit « moyen » pendant la période de collecte sur le graphique. Vous pouvez donc recevoir des événements de qualité de service alors que le débit d'une charge de travail n'a pas dépassé le seuil des règles affiché dans le tableau.
+
+Vous pouvez utiliser System Manager ou les commandes ONTAP pour gérer les « policy Groups », notamment les tâches suivantes :
+
+* Création d'un nouveau groupe de règles pour la charge de travail
+* Ajout ou suppression de charges de travail dans un « policy group »
+* Déplacement d'une charge de travail entre des groupes de règles
+* Modification de la limite de débit d'un groupe de règles
+* Déplacement d'une charge de travail vers un autre agrégat ou nœud
+
+
+
+
+== Étapes
+
+. Affichez la page *Event* details pour afficher des informations sur l'événement.
+. Consultez la *Description*, qui décrit la violation de seuil qui a causé l'événement.
++
+Par exemple, le message « valeur IOPS de 1,352 IOPS sur vol1_NFS1 a déclenché un événement D'AVERTISSEMENT pour identifier des problèmes de performances potentiels pour la charge de travail » indique qu'un événement QoS Max IOPS s'est produit sur le volume vol1_NFS1.
+
+. Consultez la section *informations sur l'événement* pour en savoir plus sur le moment où l'événement s'est produit et la durée pendant laquelle l'événement a été actif.
++
+En outre, pour les volumes ou les LUN qui partagent le débit d'une règle de QoS, vous pouvez voir les noms des trois principales charges de travail qui consomment le plus d'IOPS ou de Mo/sec.
+
+. Dans la section *diagnostic du système*, examinez les deux graphiques : un pour le nombre total d'IOPS ou de Mo/s moyens (selon l'événement) et un pour la latence. Cette approche vous permet de déterminer les composants du cluster qui affectent le plus la latence lorsque la charge de travail approche la limite maximale de QoS.
++
+Pour un événement de politique de QoS partagée, les trois principaux workloads sont présentés dans le tableau de débit. Si plus de trois charges de travail partagent la politique de QoS, des charges de travail supplémentaires sont ajoutées dans la catégorie « autres charges de travail ». En outre, le graphique latence affiche la latence moyenne sur tous les workloads faisant partie de la politique de QoS.
+
++
+Notez que pour les événements de la politique adaptative de QoS, les graphiques IOPS et Mbit/s affichent des valeurs d'IOPS ou de Mo/s converties par ONTAP à partir de la règle de seuil IOPS/To attribuée, en fonction de la taille du volume.
+
+. Dans la section *actions suggérées*, examinez les suggestions et déterminez les actions que vous devez effectuer afin d'éviter une augmentation de la latence de la charge de travail.
++
+Si nécessaire, cliquez sur le bouton *aide* pour afficher plus de détails sur les actions suggérées que vous pouvez effectuer pour tenter de résoudre l'événement de performance.
+
+

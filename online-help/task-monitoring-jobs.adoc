@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-monitoring-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page protection/travaux pour surveiller l"état des travaux et afficher les propriétés des travaux telles que le type de service de stockage, l"état, l"heure de soumission et l"heure de fin pour déterminer si une tâche a été correctement terminée ou non.' 
+---
+= Surveillance des tâches
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page protection/travaux pour surveiller l'état des travaux et afficher les propriétés des travaux telles que le type de service de stockage, l'état, l'heure de soumission et l'heure de fin pour déterminer si une tâche a été correctement terminée ou non.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *travaux*.
++
+La page protection/travaux s'affiche.
+
+. Affichez la colonne *State* pour déterminer l'état de ces travaux en cours d'exécution.
+. Cliquez sur le nom d'un travail pour afficher les détails de ce travail.
++
+La page protection/informations sur le travail s'affiche.
+
+

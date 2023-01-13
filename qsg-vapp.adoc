@@ -1,0 +1,57 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: Guide de démarrage rapide pour Unified Manager sur une plateforme VMware vSphere. 
+---
+= Instructions de démarrage rapide pour les installations VMware
+:allow-uri-read: 
+
+
+
+
+== Configuration minimale requise
+
+* Système d'exploitation : VMware ESXi 5.5, 6.0 et 6.5
+* RAM : 12 GO
+* CPU : 9572 MHz au total
+* Espace disque libre : 5 Go (provisionnement fin), 152 Go (provisionnement fin)
+
+
+Pour plus de détails sur la configuration requise, reportez-vous à la section link:install/reference-vmware-software-and-installation-requirements.html["Conditions requises pour le logiciel VMware et son installation"] et link:http://mysupport.netapp.com/matrix["Matrice d'interopérabilité"].
+
+
+
+== Installation de OnCommand Unified Manager
+
+
+
+=== Téléchargez le programme d'installation
+
+. Téléchargez le `OnCommandUnifiedManager-9.5RC1.ovas` package d'installation.
+. Enregistrez le fichier dans un répertoire local ou réseau accessible à votre client vSphere.
+
+
+
+
+=== Installez Unified Manager
+
+VMware Tools n'est pas inclus dans le package d'installation de Unified Manager. Vous devez monter un CD-ROM ou une image ISO pour l'installer dans le cadre du processus d'installation de Unified Manager.
+
+. Dans vSphere client, cliquez sur *fichier > déployer le modèle OVF*.
+. Localisez le fichier OVA et utilisez l'assistant pour déployer l'appliance virtuelle sur le serveur ESXi.
+. Sur la page Configuration réseau de l'onglet Propriétés, remplissez les champs requis pour le type d'installation que vous effectuez :
++
+** Pour une configuration statique ; saisissez les informations requises dans tous les champs (DNS secondaire non requis).
+** Pour DHCP avec IPv4, laissez tous les champs vides.
+** Pour DHCP utilisant IPv6, cochez la case “Activer l’adressage IPv6 automatique” et laissez tous les autres champs vides.
+
+
+. Mise sous tension de la machine virtuelle
+. Cliquez sur l'onglet Console pour afficher le processus de démarrage initial.
+. Suivez l'invite pour installer VMware Tools sur la machine virtuelle.
+. Configurer le fuseau horaire.
+. Entrez un nom d'utilisateur et un mot de passe pour la maintenance Unified Manager.
+
+
+À la fin de l'installation, les informations de connexion à l'interface utilisateur Web de Unified Manager sont affichées.

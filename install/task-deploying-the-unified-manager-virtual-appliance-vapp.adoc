@@ -1,0 +1,129 @@
+---
+permalink: install/task-deploying-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez déployer l"appliance virtuelle Unified Manager après avoir téléchargé le fichier .ova du site de support NetApp. Vous devez utiliser le client Web vSphere \(pour vSphere version 6.5\) ou le client vSphere \(pour vSphere version 5.5 ou 6.0\) pour déployer l"appliance virtuelle sur un serveur ESXi. Lorsque vous déployez l"appliance virtuelle, une machine virtuelle est créée.' 
+---
+= Déploiement de l'appliance virtuelle Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez déployer l'appliance virtuelle Unified Manager après avoir téléchargé le `.ova` Fichier depuis le site de support NetApp. Vous devez utiliser vSphere Web client (pour vSphere version 6.5) ou vSphere client (pour vSphere version 5.5 ou 6.0) pour déployer l'appliance virtuelle sur un serveur ESXi. Lorsque vous déployez l'appliance virtuelle, une machine virtuelle est créée.
+
+
+
+== Avant de commencer
+
+Vous devez avoir passé en revue la configuration système requise. Si des modifications sont requises pour répondre à la configuration système requise, vous devez implémenter les modifications avant de déployer l'appliance virtuelle Unified Manager.
+
+xref:concept-requirements-for-installing-unified-manager.adoc[Besoins de l'infrastructure virtuelle]
+
+xref:reference-vmware-software-and-installation-requirements.adoc[Conditions requises pour le logiciel VMware et son installation]
+
+Si vous utilisez DHCP, vous devez vous assurer que le serveur DHCP est disponible et que les configurations des adaptateurs réseau DHCP et de la machine virtuelle (VM) sont correctes. DHCP est configuré par défaut.
+
+Si vous utilisez une configuration réseau statique, vous devez vous assurer que l'adresse IP n'est pas dupliquée dans le même sous-réseau et que les entrées de serveur DNS appropriées ont été configurées.
+
+Vous devez disposer des informations suivantes avant de déployer l'appliance virtuelle :
+
+* Informations d'identification pour l'accès à VMware vCenter Server et au client Web vSphere (pour vSphere version 6.5) ou au client vSphere (pour vSphere version 5.5 ou 6.0)
+* Adresse IP du serveur ESXi sur lequel vous déployez l'appliance virtuelle Unified Manager
+* Détails sur le data Center, tels que la disponibilité de l'espace de stockage
+* Si vous n'utilisez pas DHCP, vous devez disposer des adresses IPv4 ou IPv6 pour les périphériques réseau auxquels vous prévoyez de vous connecter :
++
+** Nom de domaine complet (FQDN) de l'hôte
+** Adresse IP de l'hôte
+** Masque de réseau
+** Adresse IP de la passerelle par défaut
+** Adresses DNS principale et secondaire
+** Domaines de recherche
+
+
+* CD-ROM ou image ISO des outils VMware
+
+
+
+
+== Description de la tâche
+
+VMware Tools ne figure pas dans le `.ova` fichier. Vous devez installer VMware Tools séparément.
+
+Lors du déploiement de l'appliance virtuelle, un certificat unique auto-signé pour l'accès HTTPS est généré. Lors de l'accès à l'interface utilisateur Web Unified Manager, un avertissement s'affiche dans le navigateur concernant les certificats non fiables.
+
+VMware High Availability pour l'appliance virtuelle Unified Manager est pris en charge.
+
+
+
+== Étapes
+
+. Dans vSphere client, cliquez sur *fichier* > *déployer le modèle OVF*.
+. Suivez l'assistant *déployer modèle OVF* pour déployer l'appliance virtuelle Unified Manager.
++
+Sur la page Configuration réseau :
+
++
+** Laissez tous les champs vides lors de l'utilisation de l'adressage DHCP et IPv4.
+** Cochez la case « Activer l'adressage IPv6 automatique » et laissez tous les autres champs vides lors de l'utilisation de l'adressage DHCP et IPv6.
+** Si vous souhaitez utiliser une configuration de réseau statique, vous pouvez remplir les champs de cette page et ces paramètres sont appliqués pendant le déploiement. Vous devez vous assurer que l'adresse IP est unique à l'hôte sur lequel elle est déployée, qu'elle n'est pas déjà utilisée et qu'elle possède une entrée DNS valide.
+
+
+. Une fois l'appliance virtuelle Unified Manager déployée sur le serveur ESXi, mettez la machine virtuelle sous tension en cliquant avec le bouton droit de la souris sur la machine virtuelle, puis en sélectionnant *Power On*.
++
+Si l'opération de mise sous tension échoue en raison de ressources insuffisantes, vous devez ajouter des ressources, puis recommencer l'installation.
+
+. Cliquez sur l'onglet *Console*.
++
+Le processus de démarrage initial prend quelques minutes.
+
+. Suivez l'invite pour installer VMware Tools sur la machine virtuelle.
++
+Lors de l'utilisation du client Web vSphere avec vSphere 6.5, vous devez monter manuellement l'image ISO VMware Tools. Sur la machine virtuelle, sélectionnez *Modifier les paramètres* > *matériel virtuel* > *lecteur de CD/DVD x* > *fichier ISO de datastore*, puis cliquez sur *Parcourir* pour sélectionner le fichier `linux.iso` comme image de montage.
+
+. Pour configurer votre fuseau horaire, entrez votre zone géographique et votre ville ou région comme indiqué dans la fenêtre VM *Console*.
++
+Toutes les informations de date affichées utilisent le fuseau horaire configuré pour Unified Manager, quel que soit le paramètre de fuseau horaire de vos périphériques gérés. Vous devez être conscient de cela lors de la comparaison des horodatages. Si vos systèmes de stockage et le serveur de gestion sont configurés avec le même serveur NTP, ils font référence au même instant dans le temps, même s'ils apparaissent différemment. Par exemple, si vous créez une copie Snapshot à l'aide d'un périphérique configuré avec un fuseau horaire différent de celui du serveur de gestion, l'heure indiquée dans l'horodatage correspond à l'heure du serveur de gestion.
+
+. Si aucun service DHCP n'est disponible ou s'il y a une erreur dans les détails de la configuration du réseau statique, sélectionnez l'une des options suivantes :
++
+|===
+| Si vous utilisez... | Alors, procédez comme ça... 
+
+
+ a| 
+DHCP
+ a| 
+Sélectionnez *Réessayer DHCP*. Si vous envisagez d'utiliser DHCP, assurez-vous qu'il est correctement configuré.
+
+Si vous utilisez un réseau compatible DHCP, les entrées de FQDN et de serveur DNS sont automatiquement données au serveur virtuel. Si DHCP n'est pas correctement configuré avec DNS, le nom d'hôte « OnCommand » est automatiquement attribué et associé au certificat de sécurité. Si vous n'avez pas configuré de réseau compatible DHCP, vous devez saisir manuellement les informations de configuration réseau.
+
+
+
+ a| 
+Une configuration de réseau statique
+ a| 
+.. Sélectionnez *Entrez les détails de la configuration du réseau statique*.
++
+La configuration prend quelques minutes.
+
+.. Confirmez les valeurs que vous avez saisies et sélectionnez *y*.
+
+
+|===
+. À l'invite, entrez un nom d'utilisateur de maintenance, puis cliquez sur *entrée*.
++
+Le nom d'utilisateur de maintenance doit commencer par une lettre de a à z, suivie de toute combinaison de -, a à z ou 0 à 9.
+
+. À l'invite, entrez un mot de passe et cliquez sur *entrée*.
++
+La console de VM affiche l'URL de l'interface utilisateur Web Unified Manager.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous pouvez accéder à l'interface utilisateur Web pour effectuer la configuration initiale d'Unified Manager, comme décrit dans le _OnCommand Unified Manager System Configuration Guide_.

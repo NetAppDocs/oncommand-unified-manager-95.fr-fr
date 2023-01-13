@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-downloading-an-https-certificate-signing-request-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez télécharger une demande de certification pour le certificat de sécurité HTTPS actuel afin de pouvoir fournir le fichier à une autorité de certification à signer. Un certificat signé par une autorité de certification contribue à prévenir les attaques de l"homme du milieu et offre une meilleure protection contre la sécurité qu"un certificat auto-signé.' 
+---
+= Téléchargement d'une demande de signature de certificat HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez télécharger une demande de certification pour le certificat de sécurité HTTPS actuel afin de pouvoir fournir le fichier à une autorité de certification à signer. Un certificat signé par une autorité de certification contribue à prévenir les attaques de l'homme du milieu et offre une meilleure protection contre la sécurité qu'un certificat auto-signé.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *certificat HTTPS* dans le menu *Setup*.
+. Cliquez sur *Télécharger demande de signature de certificat HTTPS*.
+. Enregistrez le `<hostname>.csr` fichier.
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous pouvez fournir le fichier à une autorité de certification pour signer, puis installer le certificat signé.

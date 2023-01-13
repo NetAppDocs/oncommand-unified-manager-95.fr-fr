@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-dynamic-performance-event-chart-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Pour les événements de performance dynamiques, la section System Diagnosis (diagnostic du système) de la page Event Details (Détails des événements) répertorie les principaux workloads présentant la latence ou l"utilisation la plus élevée du composant de cluster en conflit. Les statistiques de performance sont basées sur l"heure à laquelle l"événement de performance a été détecté jusqu"à la dernière fois que l"événement a été analysé. Les graphiques affichent également les statistiques de performances historiques pour le composant de cluster en conflit.' 
+---
+= Détails du graphique d'événements de performances dynamiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les événements de performance dynamiques, la section System Diagnosis (diagnostic du système) de la page Event Details (Détails des événements) répertorie les principaux workloads présentant la latence ou l'utilisation la plus élevée du composant de cluster en conflit. Les statistiques de performance sont basées sur l'heure à laquelle l'événement de performance a été détecté jusqu'à la dernière fois que l'événement a été analysé. Les graphiques affichent également les statistiques de performances historiques pour le composant de cluster en conflit.
+
+Par exemple, vous pouvez identifier les charges de travail avec une utilisation élevée d'un composant afin de déterminer la charge de travail à déplacer vers un composant moins utilisé. Le déplacement de la charge de travail réduirait le travail sur le composant actuel, ce qui aurait probablement pour effet de démettre le composant en conflit. À la de cette section correspond à la plage d'heure et de date lorsqu'un événement a été détecté et analysé pour la dernière fois. Pour les événements actifs (nouveaux ou acquittés), la dernière analyse continue à être mise à jour.
+
+Les graphiques latence et activité affichent les noms des principales charges de travail lorsque vous positionnez le curseur de votre souris sur le graphique. En cliquant sur le menu Type de charge de travail à droite du graphique, vous pouvez trier les charges de travail en fonction de leur rôle dans l'événement, notamment _requins_, _bullies_ ou _victimes_. Il affiche également des détails sur leur latence et leur utilisation sur le composant de cluster en conflit. Vous pouvez comparer la valeur réelle à la valeur attendue pour savoir quand la charge de travail se trouvait en dehors de la plage prévue de latence ou d'utilisation. Voir xref:concept-types-of-workloads-monitored-by-unified-manager.adoc[Les charges de travail sont surveillées par Unified Manager].
+
+[NOTE]
+====
+Lorsque vous triez par écart de latence en fonction des pics, les workloads définis par système ne s'affichent pas dans le tableau, car la latence s'applique uniquement aux workloads définis par l'utilisateur. Les charges de travail avec des valeurs de latence très faibles ne sont pas affichées dans le tableau.
+
+====
+Pour plus d'informations sur les seuils de performances dynamiques, reportez-vous à la section xref:reference-performance-event-analysis-and-notification.adoc[Que sont les événements]. Pour plus d'informations sur le classement des charges de travail par Unified Manager et sur l'ordre de tri, reportez-vous à la section xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[Comment Unified Manager détermine l'impact sur les performances d'un événement].
+
+Les données des graphiques montrent 24 heures de statistiques de performance avant la dernière analyse de l'événement. Les valeurs réelles et les valeurs attendues pour chaque charge de travail sont basées sur le temps pendant lequel la charge de travail a été impliquée dans l'événement. Par exemple, une charge de travail peut impliquer un événement après la détection de l'événement. Ses statistiques de performances peuvent donc ne pas correspondre aux valeurs lors de la détection d'événement. Par défaut, les workloads sont triés par écart de latence maximal (le plus élevé).
+
+[NOTE]
+====
+Dans la mesure où Unified Manager conserve un maximum de 30 jours de données historiques de performances et d'événements de 5 minutes, si l'événement est âgé de plus de 30 jours, aucune donnée de performance n'est affichée.
+
+====
+* *Colonne Tri de la charge de travail*
++
+** *Tableau de latence*
++
+Affiche l'impact de l'événement sur la latence de la charge de travail au cours de la dernière analyse.
+
+** *Colonne utilisation des composants*
++
+Affiche des détails sur l'utilisation de la charge de travail du composant de cluster dans les conflits. Dans les graphiques, l'utilisation réelle est une ligne bleue. Une barre rouge met en évidence la durée de l'événement, de l'heure de détection à la dernière heure analysée. Pour plus d'informations, voir xref:reference-workload-performance-measurement-values.adoc[Les mesures des performances des workloads].
+
++
+[NOTE]
+====
+Pour le composant réseau, car les statistiques de performances du réseau proviennent de l'activité hors du cluster, cette colonne n'est pas affichée.
+
+====
+** *Utilisation des composants*
++
+Affiche l'historique d'utilisation, en pourcentage, des composants du traitement réseau, du traitement des données et de l'agrégat, ou l'historique d'activité, en pourcentage, du composant du groupe de règles de QoS. Le graphique ne s'affiche pas pour les composants réseau ou d'interconnexion. Vous pouvez pointer vers les statistiques pour afficher les statistiques d'utilisation à un point dans le temps spécifique.
+
+** *Historique total des Mo/sec*
++
+Pour le composant Ressources MetroCluster uniquement, la indique le débit d'écriture total, en mégaoctets par seconde (Mbit/s), pour toutes les charges de travail de volume qui sont mises en miroir sur le cluster partenaire dans une configuration MetroCluster.
+
+** *Historique des événements*
++
+Affiche des lignes grisées en rouge pour indiquer les événements historiques du composant en conflit. Pour les événements obsolètes, le graphique affiche les événements survenus avant la détection de l'événement sélectionné et après sa résolution.
+
+
+
+

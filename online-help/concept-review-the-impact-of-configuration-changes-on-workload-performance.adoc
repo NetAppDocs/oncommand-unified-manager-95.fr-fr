@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les modifications de configuration sur le cluster, telles qu"une défaillance de disque, un basculement haute disponibilité ou un volume déplacé, peuvent avoir un impact négatif sur la performance du volume et entraîner une augmentation de la latence.' 
+---
+= Examinez l'impact des modifications de configuration sur les performances des charges de travail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les modifications de configuration sur le cluster, telles qu'une défaillance de disque, un basculement haute disponibilité ou un volume déplacé, peuvent avoir un impact négatif sur la performance du volume et entraîner une augmentation de la latence.
+
+Dans Unified Manager, vous pouvez consulter la page Détails des performances/volumes pour voir quand une modification de configuration récente s'est produite et la comparer aux opérations et à la latence (temps de réponse) afin de voir s'il y a un changement d'activité pour la charge de travail du volume sélectionnée.
+
+Les pages de performances de Unified Manager ne peuvent détecter qu'un nombre limité d'événements de modification. Les pages d'intégrité fournissent des alertes pour d'autres événements provoqués par des modifications de configuration. Vous pouvez rechercher le volume dans Unified Manager pour afficher l'historique des événements.

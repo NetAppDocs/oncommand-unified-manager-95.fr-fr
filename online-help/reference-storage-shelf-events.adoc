@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-storage-shelf-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements du tiroir de stockage vous indiquent si votre tiroir de stockage est anormal pour contrôler les problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements du tiroir de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements du tiroir de stockage vous indiquent si votre tiroir de stockage est anormal pour contrôler les problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Plage de tension anormale (ocumEvtShelfVoltageAbnormal)
+ a| 
+Risques
+ a| 
+Tiroir de stockage
+ a| 
+Avertissement
+
+
+
+ a| 
+Plage de courant anormale (ocumEvtShelfCurrentAbnormal)
+ a| 
+Risques
+ a| 
+Tiroir de stockage
+ a| 
+Avertissement
+
+
+
+ a| 
+Température anormale(ocumEvtShelfTemperatureAbnormal)
+ a| 
+Risques
+ a| 
+Tiroir de stockage
+ a| 
+Avertissement
+
+|===

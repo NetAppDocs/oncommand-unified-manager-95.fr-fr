@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Après avoir consulté la description dans le champ cause de la page Détails de l"événement hors ligne de la carte Flash, vous pouvez rechercher des informations supplémentaires utiles pour résoudre le problème.' 
+---
+= Exécution d'une action corrective pour une carte flash hors ligne
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir consulté la description dans le champ cause de la page Détails de l'événement hors ligne de la carte Flash, vous pouvez rechercher des informations supplémentaires utiles pour résoudre le problème.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Dans cet exemple de scénario, le résumé des événements fourni sur la page Détails de l'événement contient les informations suivantes concernant l'état de la carte flash hors ligne :
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+Les informations d'événement indiquent que la carte Flash installée dans le logement 3 du nœud de cluster nommé « alpha-node » est hors ligne.
+
+Ces informations permettent de localiser la carte Flash hors ligne dans un slot spécifique sur un nœud de cluster spécifique, mais ne suggèrent pas de raison pour laquelle la carte Flash est hors ligne.
+
+
+
+== Étapes
+
+. Pour obtenir plus de détails susceptibles de vous aider à diagnostiquer la condition hors ligne de la carte flash, vous pouvez cliquer sur le nom de la source de l'événement.
++
+Dans cet exemple, la source de l'événement est le nœud de cluster « alpha-node ». Si vous cliquez sur ce nom, les détails de haute disponibilité s'affichent dans l'onglet nœuds de la page des détails de l'état et du cluster du cluster affecté. Les informations de haute disponibilité affichées affichent des informations sur la paire HA à laquelle ce nœud appartient.
+
++
+Dans cet exemple, les informations pertinentes se trouvent dans le tableau récapitulatif des événements sur la HA Details (Détails de la haute disponibilité). Le tableau spécifie l'événement hors ligne de la carte Flash, l'heure à laquelle l'événement a été généré, et, encore une fois, le nœud de cluster à partir duquel cet événement a été créé.
+
+. Utilisez l'interface de ligne de commandes de ONTAP ou OnCommand System Manager pour accéder aux journaux Event Manager System (EMS) du cluster affecté.
++
+Dans cet exemple, vous utilisez le nom de l'événement, l'heure de l'événement et la source de l'événement pour trouver le rapport EMS sur cet événement. Le rapport EMS sur l'événement contient une description détaillée de l'événement et donne souvent des conseils pour remédier à la condition indiquée par l'événement.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Après avoir effectué le diagnostic du problème, contactez l'administrateur ou l'opérateur approprié pour effectuer les étapes manuelles nécessaires à la remise en ligne de la carte flash.

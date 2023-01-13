@@ -1,0 +1,151 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"inventaire Santé/nœuds permet d"afficher des informations détaillées sur les nœuds d"un cluster sélectionné.' 
+---
+= Page d'inventaire Santé/nœuds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'inventaire Santé/nœuds permet d'afficher des informations détaillées sur les nœuds d'un cluster sélectionné.
+
+
+
+== Bouton de commande
+
+* *Exportation*
++
+Permet d'exporter les détails de tous les nœuds surveillés vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+
+
+
+
+== Liste des nœuds
+
+La liste nœuds affiche les propriétés de tous les nœuds découverts dans un cluster. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Statut*
++
+Icône qui identifie l'état actuel du nœud. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
++
+Vous pouvez positionner le curseur de la souris sur l'icône pour afficher plus d'informations sur les événements ou événements générés pour le nœud.
+
+* *Nœud*
++
+Nom du nœud.
+
+* *État*
++
+État du nœud. L'état peut être Haut ou Bas.
+
+* *État HA*
++
+État de la paire HA. L'état peut être erreur, Avertissement, Normal ou non applicable.
+
+* *Temps d'arrêt*
++
+Temps écoulé ou horodatage depuis la mise hors ligne du nœud. Si le temps écoulé dépasse une semaine, l'horodatage dans lequel le nœud est mis hors ligne s'affiche.
+
+* *Cluster*
++
+Nom du cluster auquel appartient le nœud.
+
+* *Modèle*
++
+Modèle du nœud.
+
+* *Version OS*
++
+Version logicielle de ONTAP exécutée par le nœud.
+
+* *Système 100 % Flash optimisé*
++
+Indique si le nœud est optimisé pour prendre en charge uniquement les disques SSD.
+
+* *Numéro de série*
++
+Numéro de série du nœud.
+
+* *Version du micrologiciel*
++
+Numéro de version du firmware du nœud.
+
+* *Propriétaire*
++
+Nom du propriétaire du nœud.
+
+* *Emplacement*
++
+L'emplacement du nœud.
+
+* *Capacité utilisée agrégée*
++
+Quantité d'espace utilisé pour les données dans les agrégats du nœud.
+
+* *Capacité totale totale cumulée*
++
+Espace total disponible pour les données dans les agrégats du nœud.
+
+* *Capacité de réserve utilisable*
++
+Quantité d'espace disponible dans le nœud qui peut être utilisé pour améliorer la capacité de l'agrégat.
+
+* *Capacité brute utilisable*
++
+Quantité d'espace utilisable dans le nœud.
+
+* *Capacité brute totale*
++
+Capacité de chaque disque non formaté dans le nœud avant le dimensionnement adapté et la configuration RAID.
+
+* *Nombre SVM*
++
+Le nombre de SVM contenu par le cluster.
+
+* *Nombre de ports FC*
++
+Nombre de ports FC contenus par le nœud.
+
+* *Nombre de ports FCoE*
++
+Le nombre de ports FCoE contenu par le nœud.
+
+* *Nombre de ports Ethernet*
++
+Le nombre de ports ethernet contenu par le nœud.
+
+* *Taille de la carte Flash*
++
+Taille des cartes Flash installées sur le nœud.
+
+* *Nombre de cartes Flash*
++
+Nombre de cartes Flash installées sur le nœud.
+
+* *Nombre de tiroirs disques*
++
+Nombre de tiroirs disques contenus par le nœud.
+
+* *Nombre de disques*
++
+Nombre de disques dans le nœud.
+
+
+
+
+
+== Volet filtres
+
+Le volet filtres vous permet de définir des filtres pour personnaliser l'affichage des informations dans la liste des nœuds. Vous pouvez sélectionner des filtres liés aux colonnes Etat, Etat et Etat HA.
+
+[NOTE]
+====
+Les filtres spécifiés dans le volet filtres remplacent les filtres spécifiés pour les colonnes de la liste nœuds.
+
+====

@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les règles de groupe que vous avez créées pour inclure le nombre maximal d"objets de stockage dans un groupe.' 
+---
+= Boîte de dialogue Modifier la règle de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les règles de groupe que vous avez créées pour inclure le nombre maximal d'objets de stockage dans un groupe.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom de la règle*
++
+Affiche le nom de la règle.
+
+* *Type d'objet cible*
++
+Affiche l'objet de stockage à ajouter à un groupe sélectionné. Vous ne pouvez pas modifier le type d'objet.
+
+* *Groupe associé*
++
+Affiche le groupe associé. Vous pouvez sélectionner un autre groupe pour la règle de groupe.
+
+* *Condition*
++
+Affiche la liste des conditions pour un groupe sélectionné. Vous pouvez modifier les conditions. Les objets de stockage sont supprimés ou ajoutés à un groupe sélectionné en fonction des modifications apportées.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer*
++
+Enregistre les modifications effectuées et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Modifier la règle de groupe sans enregistrer vos modifications.
+
+

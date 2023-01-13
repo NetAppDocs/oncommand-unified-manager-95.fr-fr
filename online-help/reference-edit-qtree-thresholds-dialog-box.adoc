@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-edit-qtree-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer des alertes pour envoyer des notifications lorsqu"un événement lié à la capacité d"un qtree est généré, et vous pouvez effectuer des actions correctives pour l"événement. Par exemple, pour le seuil qtree pleine, vous pouvez configurer une alerte pour envoyer une notification lorsque la condition persiste sur une période spécifiée.' 
+---
+= Boîte de dialogue Modifier les seuils de qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer des alertes pour envoyer des notifications lorsqu'un événement lié à la capacité d'un qtree est généré, et vous pouvez effectuer des actions correctives pour l'événement. Par exemple, pour le seuil qtree pleine, vous pouvez configurer une alerte pour envoyer une notification lorsque la condition persiste sur une période spécifiée.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+La boîte de dialogue Modifier les seuils de qtree vous permet de configurer les seuils de niveau qtree appliqués aux qtrees sélectionnés. Lorsque les seuils sont configurés au niveau des qtree, ils sont prioritaires sur les seuils de niveau groupe ou sur les valeurs de seuil de niveau global.
+
+Vous pouvez configurer les paramètres de seuil de capacité au niveau qtree. Lorsqu'une action de groupe de type de seuil qtree est configurée, les valeurs de seuil d'action de groupe sont utilisées pour les paramètres qui ne sont pas configurés au niveau qtree. Lorsque aucune action de groupe du type de seuil qtree n'est configurée, les zones de la boîte de dialogue Modifier les seuils de qtree qui ne sont pas configurées, utilisez les valeurs de seuil globales.
+
+
+
+== Surface de capacité
+
+La zone de capacité vous permet de définir les conditions de seuil de capacité qtree suivantes :
+
+* *Espace presque plein*
++
+Spécifie le pourcentage auquel un qtree est considéré comme presque plein. Il affiche également la taille du qtree correspondant à la valeur de seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+* *Espace plein*
++
+Spécifie le pourcentage auquel un qtree est considéré comme plein. Il affiche également la taille du qtree correspondant à la valeur de seuil spécifiée.
+
++
+Vous pouvez également utiliser le curseur pour définir la valeur du seuil.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande vous permettent d'effectuer les tâches suivantes pour un qtree sélectionné :
+
+* *Rétablir les valeurs par défaut*
++
+Permet de restaurer les valeurs de seuil à l'une des valeurs suivantes :
+
++
+** Valeurs du groupe, si le qtree appartient à un groupe et que ce groupe a un type d'action de seuil qtree.
+** Valeurs globales, si le qtree n'appartient à aucun groupe ou s'il appartient à un groupe qui ne dispose pas d'un type d'action de seuil qtree.
+
+
+* *Enregistrer*
++
+Enregistre tous les paramètres de seuil.
+
+* *Enregistrer et fermer*
++
+Enregistre tous les paramètres de seuil, puis ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ignore les modifications (le cas échéant) des paramètres de seuil et ferme la boîte de dialogue.
+
+

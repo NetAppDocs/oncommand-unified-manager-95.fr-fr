@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-capacity-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Health/Aggregates Capacity et utilisation vous permet d"afficher des informations sur la capacité et l"utilisation des agrégats dans tous les clusters. Ces informations vous permettent de comprendre les risques potentiels en matière de capacité ainsi que d"afficher la capacité configurée, utilisée et inutilisée des agrégats.' 
+---
+= Santé/agrégats capacité et utilisation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Health/Aggregates Capacity et utilisation vous permet d'afficher des informations sur la capacité et l'utilisation des agrégats dans tous les clusters. Ces informations vous permettent de comprendre les risques potentiels en matière de capacité ainsi que d'afficher la capacité configurée, utilisée et inutilisée des agrégats.
+
+Utilisez le bouton *Exporter* pour exporter les détails de tous les agrégats surveillés vers des valeurs séparées par des virgules (`.csv`) fichier.
+
+* *Cluster*
++
+Nom du cluster.
+
+* *Paire HA*
++
+Valeur de la paire HA obtenue en formant deux nœuds.
+
+* *Agrégat*
++
+Nom de l'agrégat.
+
+* *Capacité de données totale*
++
+Capacité totale des données (utilisée plus disponible).
+
+* *Capacité de données utilisée*
++
+Capacité de données utilisée.
+
+* *Données utilisées %*
++
+Capacité de données utilisée en pourcentage.
+
+* *Capacité de données disponible*
++
+Capacité de données disponible.
+
+* *Données disponibles %*
++
+Capacité de données disponible en pourcentage.
+
+* *Taux de croissance quotidien %*
++
+Taux de croissance qui a lieu toutes les 24 heures dans l'agrégat.
+
+* *Jours à plein*
++
+Nombre estimé de jours restants avant d'atteindre la capacité totale de l'agrégat.
+
+* *Espace plein seuil %*
++
+Pourcentage auquel un agrégat est considéré comme complet.
+
+* *Espace presque plein seuil %*
++
+Le pourcentage auquel un agrégat est considéré comme presque plein.
+
+* *Seuil de taux de croissance*
++
+Le taux de croissance de l'agrégat considéré comme normal avant que le système ne génère un événement Abnormal de taux de croissance global.
+
+* *Seuil de sensibilité du taux de croissance*
++
+Facteur appliqué à l'écart-type du taux de croissance d'un agrégat. Si le taux de croissance dépasse l'écart-type pris en compte, un événement anormal de taux de croissance global est généré.
+
+* *Jours jusqu'au plein seuil*
++
+Nombre de jours restants avant que l'agrégat n'atteigne sa capacité maximale.
+
+* *Capacité totale de la réserve Snapshot*
++
+Capacité totale de réserve snapshot de l'agrégat.
+
+* *Capacité utilisée de réserve Snapshot*
++
+Quantité d'espace utilisée par les copies Snapshot à partir de la réserve Snapshot.
+
+* *La réserve Snapshot utilisée %*
++
+Quantité d'espace utilisée par les copies Snapshot à partir de la réserve Snapshot sous forme de pourcentage.
+
+* *Capacité disponible de réserve Snapshot*
++
+Quantité d'espace disponible pour les copies Snapshot.
+
+* *Réserve Snapshot disponible %*
++
+Quantité d'espace disponible pour les copies Snapshot sous forme de pourcentage.
+
+* *Copies snapshot réserver seuil total %*
++
+Pourcentage d'utilisation par un agrégat de l'espace réservé pour les copies Snapshot
+
+* *Capacité excédentaire %*
++
+Le surengagement global en pourcentage.
+
+* *Seuil de surengagement %*
++
+Pourcentage auquel un agrégat est considéré comme surengagé.
+
+* *Seuil presque dépassé %*
++
+Le pourcentage auquel un agrégat est considéré comme presque surengagé.
+
+* *Type d'agrégat*
++
+Le type d'agrégat :
+
++
+** DISQUES DURS
+** Hybride
++
+Combinaison de disques durs et de disques SSD, mais Flash Pool n'a pas été activé.
+
+** Hybride (Flash Pool)
++
+Combinaison de disques durs et de disques SSD et Flash Pool est activé.
+
+** SSD
+** SSD (FabricPool)
++
+Combinaison de SSD et d'un Tier cloud
+
+** VMDisk (SDS)
++
+Disques virtuels au sein d'une machine virtuelle
+
+** Disque VMware (FabricPool)
++
+Combinaison de disques virtuels et d'un niveau cloud
+
+** LUN (FlexArray) pour les disques standard et SSD, cette colonne est vide lorsque le système de stockage surveillé exécute une version de ONTAP antérieure à 8.3.
+
+
+* *Type RAID*
++
+Type de configuration RAID.
+
+* *Etat agrégé*
++
+État actuel de l'agrégat.
+
+* *Type SnapLock*
++
+Indique si l'agrégat est un agrégat SnapLock ou non SnapLock.
+
+* *Espace de Tier de cloud utilisé*
++
+Capacité de données actuellement utilisée dans le Tier cloud.
+
+* *Tier cloud*
++
+Nom du magasin d'objets du Tier cloud lors de sa création par ONTAP.
+
+

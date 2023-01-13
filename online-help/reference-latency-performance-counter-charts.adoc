@@ -1,0 +1,65 @@
+---
+permalink: online-help/reference-latency-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les graphiques des compteurs de latence de l"explorateur de performances affichent le nombre de millisecondes nécessaires pour l"objet de stockage sélectionné pour répondre aux requêtes de l"application.' 
+---
+= Graphiques des compteurs de performances pour la latence
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les graphiques des compteurs de latence de l'explorateur de performances affichent le nombre de millisecondes nécessaires pour l'objet de stockage sélectionné pour répondre aux requêtes de l'application.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+Le bas de la page du graphique affiche des informations sur la latence minimale, maximale, moyenne et 95e percentile pour la plage de temps sélectionnée.
+
+Il existe trois types de graphiques de latence :
+
+
+
+== Latence - Tableau compteur total
+
+Affiche le nombre de millisecondes nécessaires pour répondre aux demandes des applications. Les valeurs moyennes de latence sont pondérées en E/S.
+
+
+
+== Latence : tableau des compteurs de détail
+
+Affiche les mêmes données de latence séparées en lecture, écriture et autre latence.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume ou une LUN.
+
+
+
+== Latence - compteur de composants du cluster
+
+Affiche les données de latence par composant du cluster. Cela vous permet d'identifier le composant de cluster responsable de la latence. En passant le curseur sur le graphique, vous pouvez afficher la contribution exacte de latence de chaque composant.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume ou une LUN.
+
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement d'utilisation définie dans Unified Manager.
+
++
+La ligne rouge fixe indique la valeur du seuil critique d'utilisation définie dans Unified Manager.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] cette option est associée à un compteur. elle masque et affiche les informations relatives aux compteurs du tableau, ce qui peut vous aider lors de la comparaison de la latence d'objet.
+
+

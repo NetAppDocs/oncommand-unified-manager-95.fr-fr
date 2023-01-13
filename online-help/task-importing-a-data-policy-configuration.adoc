@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-importing-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez importer une configuration de stratégie de données depuis un fichier, modifier la règle de données, puis activer les modifications de la SVM avec Infinite Volume. Par exemple, en cas de sinistre, vous pouvez importer une stratégie de données déjà définie vers le secondaire et la modifier comme requis. 
+---
+= Importation d'une configuration de stratégie de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez importer une configuration de stratégie de données depuis un fichier, modifier la règle de données, puis activer les modifications de la SVM avec Infinite Volume. Par exemple, en cas de sinistre, vous pouvez importer une stratégie de données déjà définie vers le secondaire et la modifier comme requis.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Lorsque vous importez une configuration de stratégie de données, vos règles existantes sont remplacées.
+
+L'onglet Data Policy est affiché uniquement pour les SVM avec Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Cliquez sur *Importer*.
+. Dans la boîte de dialogue *Import Data Policy*, spécifiez la stratégie de données à importer en fournissant le chemin d'accès absolu du fichier de stratégie de données.
+. Cliquez sur *Importer*.
+. Cliquer sur *Activate* pour activer les règles importées dans la SVM.
+

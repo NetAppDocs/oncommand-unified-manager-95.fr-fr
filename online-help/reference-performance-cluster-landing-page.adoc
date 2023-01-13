@@ -1,0 +1,29 @@
+---
+permalink: online-help/reference-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page d"accueil Performance Cluster affiche l"état des performances de haut niveau d"un cluster sélectionné. Cette page vous permet d"accéder aux détails complets de chaque compteur de performances des objets de stockage du cluster sélectionné.' 
+---
+= Page d'accueil Performance Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'accueil Performance Cluster affiche l'état des performances de haut niveau d'un cluster sélectionné. Cette page vous permet d'accéder aux détails complets de chaque compteur de performances des objets de stockage du cluster sélectionné.
+
+Vous pouvez cliquer sur le bouton *Favoris* (image:../media/favorites-inactive.png[""]) pour ajouter cet objet à votre liste d'objets de stockage favoris. Un bouton bleu (image:../media/favorites-active.png[""]) indique que cet objet est déjà un favori.
+
+La page d'accueil Performance Cluster contient quatre onglets qui séparent les détails du cluster dans quatre zones d'information :
+
+* Page récapitulative
++
+** Volet événements de cluster
+** Volet objets gérés
+
+
+* Haut de la page artistes interprètes ou exécutants
+* Explorateur
+* Page d'informations
+

@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-editing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les propriétés d"alerte, telles que la ressource à laquelle l"alerte est associée, les événements, les destinataires, les options de notification, la fréquence de notification, et les scripts associés.' 
+---
+= Modification des alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les propriétés d'alerte, telles que la ressource à laquelle l'alerte est associée, les événements, les destinataires, les options de notification, la fréquence de notification, et les scripts associés.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *Alerting*.
+. Dans la page *Configuration/Alerting*, sélectionnez l'alerte que vous souhaitez modifier, puis cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Modifier alerte*, modifiez le nom, les ressources, les événements et les actions, selon les besoins.
++
+Vous pouvez modifier ou supprimer le script associé à l'alerte.
+
+. Cliquez sur *Enregistrer*.
+

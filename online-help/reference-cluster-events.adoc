@@ -1,0 +1,422 @@
+---
+permalink: online-help/reference-cluster-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de cluster fournissent des informations sur l"état des clusters, ce qui vous permet de contrôler les clusters pour identifier des problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement, le nom de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de cluster fournissent des informations sur l'état des clusters, ce qui vous permet de contrôler les clusters pour identifier des problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement, le nom de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+Un astérisque (*) identifie les événements EMS qui ont été convertis en événements Unified Manager.
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Le cluster ne dispose pas de disques de rechange (ocumEvtDisksNoSpares)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Cluster inaccessible(ocumEvtClusterUnreaccessible)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Erreur
+
+
+
+ a| 
+Echec de la surveillance du cluster(oocumEvtClusterMonitoringFailé)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Limites de capacité de la licence Cluster FabricPool enfreintes précédemment (ocumEvtExternalcapacityTierSpaceplein)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Début de la période de grâce NVMe-of *(nvmfGracePeriodStart)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Période de grâce active NVMe-of *(nvmfGracePeriodActive)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Délai de grâce NVMe-of expiré *(nvmfGracePeriodExpired)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Fenêtre de maintenance de l'objet démarrée(objectMaintenanceStarted)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+Fin de la fenêtre de maintenance de l'objet(objectMaintenanceFenêtre fenêtré)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Informations
+
+
+
+ a| 
+Disques de rechange MetroCluster laissés derrière (ocumEvtSpareDiskgauches Behind)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Erreur
+
+
+
+ a| 
+Basculement automatique non planifié désactivé dans MetroCluster (fonction ocumEvtccAutomaticUnplanndSwitchOverDisabled)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Planification des niveaux de cluster Cloud (clusterCloudTierPlaningAvertissement)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Espace FabricPool presque plein *
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Erreur
+
+|===
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Nœud ajouté (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Informations
+
+
+
+ a| 
+Nœud supprimé (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Informations
+
+
+
+ a| 
+Suppression du cluster (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Informations
+
+
+
+ a| 
+Échec de l'ajout du cluster (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Erreur
+
+
+
+ a| 
+Nom de cluster modifié (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Informations
+
+
+
+ a| 
+EMS d'urgence reçu (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+EMS critique reçu (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+Alerte EMS reçue (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Erreur
+
+
+
+ a| 
+Erreur EMS reçue (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Avertissement reçu EMS (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+EMS de débogage reçu (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Avis EMS reçu (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Informations fournies par le SGE (non applicable)
+ a| 
+Événement
+ a| 
+Cluster
+ a| 
+Avertissement
+
+|===
+Les événements EMS ONTAP sont classés en trois niveaux de sévérité des événements dans Unified Manager.
+
+|===
+| Niveau de sévérité des événements Unified Manager | Niveau de sévérité des événements EMS ONTAP 
+
+
+ a| 
+Primordial
+ a| 
+Urgence
+
+Primordial
+
+
+
+ a| 
+Erreur
+ a| 
+Alerte
+
+
+
+ a| 
+Avertissement
+ a| 
+Erreur
+
+Avertissement
+
+Débogage
+
+Avertissement
+
+Informatif
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique d'IOPS du cluster dépassé (ocumClusterIopsincident)
+ a| 
+Gestion des
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'IOPS du cluster dépassé (ocumClusterIopsWarning)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mbit/s du cluster dépassé (ocumClusterMbpsincident)
+ a| 
+Gestion des
+ a| 
+Cluster
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement du Mbit/s du cluster dépassé (ocumClusterMbpsWarning)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil dynamique de cluster dépassé (ocumClusterDynamicEventWarning)
+ a| 
+Risques
+ a| 
+Cluster
+ a| 
+Avertissement
+
+|===

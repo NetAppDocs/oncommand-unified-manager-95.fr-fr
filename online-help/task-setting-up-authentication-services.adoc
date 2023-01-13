@@ -1,0 +1,80 @@
+---
+permalink: online-help/task-setting-up-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les services d"authentification permettent l"authentification d"utilisateurs distants ou de groupes distants sur un serveur d"authentification avant de leur donner accès à Unified Manager. Vous pouvez authentifier les utilisateurs en utilisant les services d"authentification prédéfinis \(tels qu"Active Directory ou OpenLDAP\), ou en configurant votre propre mécanisme d"authentification.' 
+---
+= Configuration des services d'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les services d'authentification permettent l'authentification d'utilisateurs distants ou de groupes distants sur un serveur d'authentification avant de leur donner accès à Unified Manager. Vous pouvez authentifier les utilisateurs en utilisant des services d'authentification prédéfinis (tels qu'Active Directory ou OpenLDAP) ou en configurant votre propre mécanisme d'authentification.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir activé l'authentification à distance.
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page Options *Setup*, cliquez sur *Management Server* > *Authentication*.
+. Sélectionnez l'un des services d'authentification suivants :
++
+|===
+| Si vous sélectionnez... | Alors, procédez comme ça... 
+
+
+ a| 
+Active Directory
+ a| 
+.. Entrez le nom et le mot de passe de l'administrateur.
+.. Spécifiez le nom distinctif de base du serveur d'authentification.
++
+Par exemple, si le nom de domaine du serveur d'authentification est ou@domain.com, le nom distinctif de base est `cn=ou,dc=domain,dc=com`.
+
+
+
+
+
+ a| 
+OpenLDAP
+ a| 
+.. Entrez le nom distinctif de liaison et le mot de passe de liaison.
+.. Spécifiez le nom distinctif de base du serveur d'authentification.
++
+Par exemple, si le nom de domaine du serveur d'authentification est ou@domain.com, le nom distinctif de base est `cn=ou,dc=domain,dc=com`.
+
+
+
+
+
+ a| 
+Autres
+ a| 
+.. Entrez le nom distinctif de liaison et le mot de passe de liaison.
+.. Spécifiez le nom distinctif de base du serveur d'authentification.
++
+Par exemple, si le nom de domaine du serveur d'authentification est ou@domain.com, le nom distinctif de base est `cn=ou,dc=domain,dc=com`.
+
+.. Spécifiez la version du protocole LDAP prise en charge par le serveur d'authentification.
+.. Entrez le nom d'utilisateur, l'appartenance au groupe, le groupe d'utilisateurs et les attributs de membre.
+
+
+|===
++
+[NOTE]
+====
+Si vous souhaitez modifier le service d'authentification, vous devez supprimer tout serveur d'authentification existant, puis ajouter de nouveaux serveurs d'authentification.
+
+====
+. Cliquez sur *Enregistrer et fermer*.
+

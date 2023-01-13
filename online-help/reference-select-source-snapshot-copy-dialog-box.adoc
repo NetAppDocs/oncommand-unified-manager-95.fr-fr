@@ -1,0 +1,180 @@
+---
+permalink: online-help/reference-select-source-snapshot-copy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Select source Snapshot Copy permet de sélectionner une copie Snapshot afin de transférer des données entre les relations de protection, ou de sélectionner le comportement par défaut. Cette opération varie selon que vous êtes en cours d"initialisation, de mise à jour ou de resynchronisation d"une relation, et que la relation est une SnapMirror ou SnapVault.' 
+---
+= Sélectionnez la boîte de dialogue copie Snapshot source
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Select source Snapshot Copy permet de sélectionner une copie Snapshot afin de transférer des données entre les relations de protection, ou de sélectionner le comportement par défaut. Cette opération varie selon que vous êtes en cours d'initialisation, de mise à jour ou de resynchronisation d'une relation, et que la relation est une SnapMirror ou SnapVault.
+
+
+
+== Valeur par défaut
+
+Vous permet de sélectionner le comportement par défaut pour déterminer la copie Snapshot utilisée pour initialiser, mettre à jour et resynchroniser les transferts pour les relations SnapVault et SnapMirror.
+
+Si vous effectuez un transfert SnapVault, le comportement par défaut de chaque opération est le suivant :
+
+|===
+| Fonctionnement | Comportement SnapVault par défaut lorsque la source est en lecture/écriture | Comportement SnapVault par défaut lorsque la source est Data protection (DP) 
+
+
+ a| 
+Initialiser
+ a| 
+Crée une nouvelle copie Snapshot et la transfère.
+ a| 
+Transfère la dernière copie Snapshot exportée.
+
+
+
+ a| 
+Mise à jour
+ a| 
+Transfert des copies Snapshot étiquetées uniquement, tel que spécifié dans la règle.
+ a| 
+Transfère la dernière copie Snapshot exportée.
+
+
+
+ a| 
+Resynchroniser
+ a| 
+Transfère toutes les copies Snapshot étiquetées créées à l'issue de la dernière copie Snapshot commune.
+ a| 
+Transfère la dernière marque nommée copie Snapshot.
+
+|===
+Si vous effectuez un transfert SnapMirror, le comportement par défaut de chaque opération est le suivant :
+
+|===
+| Fonctionnement | Comportement SnapMirror par défaut | Comportement SnapMirror par défaut lorsqu'une relation est un second saut dans une cascade SnapMirror vers SnapMirror 
+
+
+ a| 
+Initialiser
+ a| 
+Crée une nouvelle copie Snapshot et la transfère ainsi que toutes les copies Snapshot créées avant la nouvelle copie Snapshot.
+ a| 
+Transfère toutes les copies Snapshot à partir de la source.
+
+
+
+ a| 
+Mise à jour
+ a| 
+Crée une nouvelle copie Snapshot et la transfère ainsi que toutes les copies Snapshot créées avant la nouvelle copie Snapshot.
+ a| 
+Transfère toutes les copies Snapshot.
+
+
+
+ a| 
+Resynchroniser
+ a| 
+Crée une nouvelle copie Snapshot, puis transfère toutes les copies Snapshot à partir de la source.
+ a| 
+Transfère toutes les copies Snapshot du volume secondaire vers le volume tertiaire et supprime toutes les données ajoutées après la création de la nouvelle copie Snapshot commune.
+
+|===
+
+
+== Copie Snapshot existante
+
+Vous permet de sélectionner une copie Snapshot existante dans la liste si la sélection de copie Snapshot est autorisée pour cette opération.
+
+* *Copie snapshot*
++
+Affiche les copies Snapshot existantes depuis lesquelles vous pouvez sélectionner pour un transfert.
+
+* *Date de création*
++
+Affiche la date et l'heure de création de la copie Snapshot. Les copies Snapshot sont répertoriées des versions les plus récentes au moins récentes, avec les plus récentes en haut de la liste.
+
+
+
+Si vous effectuez un transfert SnapVault et que vous souhaitez sélectionner une copie Snapshot existante à transférer d'une source vers une destination, chaque opération se déroule comme suit :
+
+|===
+| Fonctionnement | Comportement de SnapVault lors de la définition d'une copie Snapshot | Comportement de SnapVault lors de la spécification d'une copie Snapshot dans une cascade 
+
+
+ a| 
+Initialiser
+ a| 
+Transfère la copie Snapshot spécifiée.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+
+
+ a| 
+Mise à jour
+ a| 
+Transfère la copie Snapshot spécifiée.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+
+
+ a| 
+Resynchroniser
+ a| 
+Transfère la copie Snapshot sélectionnée.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+|===
+Si vous effectuez un transfert SnapMirror et que vous souhaitez sélectionner une copie Snapshot existante à transférer d'une source vers une destination, chaque opération se déroule comme suit :
+
+|===
+| Fonctionnement | Comportement de SnapMirror lors de la définition d'une copie Snapshot | Comportement de SnapMirror lors de la spécification d'une copie Snapshot dans une cascade 
+
+
+ a| 
+Initialiser
+ a| 
+Transfère toutes les copies Snapshot de la source, jusqu'à la copie Snapshot spécifiée.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+
+
+ a| 
+Mise à jour
+ a| 
+Transfère toutes les copies Snapshot de la source, jusqu'à la copie Snapshot spécifiée.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+
+
+ a| 
+Resynchroniser
+ a| 
+Transfère toutes les copies Snapshot de la source, jusqu'à la copie Snapshot sélectionnée, puis supprime toutes les données ajoutées après la création de la nouvelle copie Snapshot commune.
+ a| 
+La sélection de copie Snapshot source n'est pas prise en charge pour les volumes de protection des données.
+
+|===
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Soumettre*
++
+Soumet vos sélections et ferme la boîte de dialogue Sélectionner une copie Snapshot source.
+
+* *Annuler*
++
+Supprime vos sélections et ferme la boîte de dialogue Sélectionner une copie Snapshot source.
+
+

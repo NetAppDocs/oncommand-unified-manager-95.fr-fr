@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier l"emplacement privilégié d"une LIF en modifiant son home port et son home node. Il s"agit d"une configuration plus durable que la migration d"une LIF, généralement utilisée pour déplacer temporairement une LIF vers un autre nœud lors d"une maintenance planifiée.' 
+---
+= Modification du port d'origine et des nœuds d'une LIF à l'aide de OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier l'emplacement privilégié d'une LIF en modifiant son home port et son home node. Il s'agit d'une configuration plus durable que la migration d'une LIF, généralement utilisée pour déplacer temporairement une LIF vers un autre nœud lors d'une maintenance planifiée.
+
+
+
+== Description de la tâche
+
+L'image suivante montre le port et le nœud de rattachement de la LIF d'origine ainsi que le port de rattachement et le nœud après la modification. Le port de départ LIF1 est passé de e1a à e3a et LIF2 a été changé de e4a à e2a.
+
+image::../media/diagram-cluster-lifs-move-jpg.gif[Changement de nœud et de port LIF home port]
+
+
+
+== Étapes
+
+. Ouvrez OnCommand System Manager.
+. Dans l'onglet *Home*, double-cliquez sur le système de stockage.
+. Dans le volet de navigation, développez la hiérarchie *SVM*.
+. Dans le volet de navigation, sélectionnez les SVM et cliquez sur *Configuration* > *interfaces réseau*.
+. Sélectionnez le LIF et cliquez sur *Edit*.
+. Dans la boîte de dialogue** Modifier l'interface**, entrez le port d'accueil et l'adresse réseau du port cible.
++
+image::../media/systemmgr-lif-edit-jpg.gif[Boîte de dialogue Modifier l'interface]
+
++
+[NOTE]
+====
+Dans ONTAP 8.2.1, le champ Port de départ est désactivé.
+
+====
+. Cliquez sur *Enregistrer et fermer*.
+

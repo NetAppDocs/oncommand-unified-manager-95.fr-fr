@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les quotas permettent de limiter ou de suivre l"espace disque et le nombre de fichiers utilisés par un utilisateur, un groupe ou un qtree. Vous spécifiez des quotas à l"aide du fichier /etc/quotas. Les quotas group sont appliqués à un volume ou qtree spécifique.' 
+---
+= À propos des quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les quotas permettent de limiter ou de suivre l'espace disque et le nombre de fichiers utilisés par un utilisateur, un groupe ou un qtree. Vous spécifiez des quotas à l'aide de `/etc/quotas` fichier. Les quotas group sont appliqués à un volume ou qtree spécifique.

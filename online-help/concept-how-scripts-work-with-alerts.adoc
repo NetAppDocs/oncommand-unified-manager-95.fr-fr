@@ -1,0 +1,47 @@
+---
+permalink: online-help/concept-how-scripts-work-with-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez associer une alerte à votre script afin que le script soit exécuté lorsqu"une alerte est générée pour un événement dans Unified Manager. Vous pouvez utiliser ces scripts pour résoudre les problèmes liés aux objets de stockage ou identifier les objets de stockage qui génèrent les événements.' 
+---
+= Fonctionnement des scripts avec les alertes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez associer une alerte à votre script afin que le script soit exécuté lorsqu'une alerte est générée pour un événement dans Unified Manager. Vous pouvez utiliser ces scripts pour résoudre les problèmes liés aux objets de stockage ou identifier les objets de stockage qui génèrent les événements.
+
+Lorsqu'une alerte est générée pour un événement dans Unified Manager, un e-mail d'alerte est envoyé aux destinataires spécifiés. Si vous avez associé une alerte à un script, le script est exécuté. Vous pouvez obtenir les détails des arguments transmis au script à partir de l'e-mail d'alerte.
+
+Le script utilise les arguments suivants pour l'exécution :
+
+* -`eventID`
+* -`eventName`
+* -`eventSeverity`
+* -`eventSourceID`
+* -`eventSourceName`
+* -`eventSourceType`
+* -`eventState`
+* -`eventArgs`
+
+
+Vous pouvez utiliser les arguments de vos scripts et recueillir des informations d'événement associées ou modifier des objets de stockage.
+
+
+
+== Exemple pour obtenir des arguments à partir de scripts
+
+[listing]
+----
+print "$ARGV[0] : $ARGV[1]\n"
+print "$ARGV[7] : $ARGV[8]\n"
+----
+Lorsqu'une alerte est générée, ce script est exécuté et les valeurs de sortie suivantes s'affichent :
+
+[listing]
+----
+-eventID : 290
+-eventSourceID : 4138
+----

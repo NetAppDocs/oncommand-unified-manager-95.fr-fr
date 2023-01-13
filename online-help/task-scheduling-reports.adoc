@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-scheduling-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez planifier vos rapports à partir de la page Détails du rapport et envoyer les rapports programmés par courrier électronique à un ou plusieurs destinataires dans un format spécifique à une fréquence donnée. Par exemple, vous pouvez planifier l"envoi d"un rapport sous forme d"e-mail, au format PDF, tous les lundis.' 
+---
+= Planification des rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez planifier vos rapports à partir de la page Détails du rapport et envoyer les rapports programmés par courrier électronique à un ou plusieurs destinataires dans un format spécifique à une fréquence donnée. Par exemple, vous pouvez planifier l'envoi d'un rapport sous forme d'e-mail, au format PDF, tous les lundis.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *Exécuter le rapport* pour le rapport souhaité.
++
+La page Détails du rapport s'affiche.
+
+. Cliquez sur *actions* > *Rapport d'horaires*.
+. Dans la boîte de dialogue *Rapport d'horaires*, sélectionnez l'un des calendriers préférés pour votre rapport :
++
+|===
+| Les fonctions que vous recherchez... | Alors... 
+
+
+ a| 
+Sélectionnez un programme dans la liste existante
+ a| 
+Cliquez sur *utiliser l'horaire existant* et sélectionnez l'horaire.
+
+
+
+ a| 
+Créer un planning
+ a| 
+Cliquez sur *Créer une nouvelle planification*, puis entrez le nom de l'horaire, indiquez l'adresse électronique, sélectionnez le format et la fréquence du rapport et entrez l'heure ou le jour que vous souhaitez exécuter le rapport. Vous pouvez spécifier une ou plusieurs adresses e-mail, séparées par des virgules. L'option _PDF_ est sélectionnée comme format de rapport par défaut. L'option _horaire_ est sélectionnée comme fréquence par défaut.
+
+|===
+. Cliquez sur *Programme*.
+

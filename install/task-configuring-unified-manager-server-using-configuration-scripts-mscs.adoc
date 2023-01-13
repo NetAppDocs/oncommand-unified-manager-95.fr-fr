@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Après avoir installé Unified Manager sur les deux nœuds du cluster, vous pouvez configurer Unified Manager avec Failover Cluster Manager à l"aide de scripts de configuration.' 
+---
+= Configuration du serveur Unified Manager avec MSCS à l'aide de scripts de configuration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir installé Unified Manager sur les deux nœuds du cluster, vous pouvez configurer Unified Manager avec Failover Cluster Manager à l'aide de scripts de configuration.
+
+
+
+== Avant de commencer
+
+Vous devez avoir créé une LUN partagée d'une taille suffisante pour prendre en charge les données Unified Manager source.
+
+
+
+== Étapes
+
+. Connectez-vous au premier nœud du cluster.
+. Créer un rôle dans Windows 2012 ou Windows 2016 à l'aide de Failover Cluster Manager :
++
+.. Lancer le gestionnaire de cluster de basculement.
+.. Créez le rôle vide en cliquant sur *rôles* > *Créer un rôle vide*.
+.. Ajoutez l'adresse IP globale au rôle en cliquant avec le bouton droit de la souris sur *rôle* > *Ajouter ressources* > *plus de ressources* > *adresse IP*.
++
+[NOTE]
+====
+Les deux nœuds doivent pouvoir envoyer une commande ping à cette adresse IP, car Unified Manager est lancé à l'aide de cette adresse IP une fois la haute disponibilité configurée.
+
+====
+.. Ajoutez le disque de données au rôle en cliquant avec le bouton droit de la souris sur *role* > *Add Storage*.
+
+
+. Exécutez le `ha_setup.pl` script sur le premier nœud : `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+Le script est disponible à l'adresse `Install_Dir\NetApp\ocum\bin`.
+
++
+** Vous pouvez obtenir la valeur du `-g`, `-k`, et `-i` options à l'aide du `cluster res` commande.
+** Le `-n` L'option doit être le FQDN de l'adresse IP globale qui peut être ping à partir des deux nœuds.
+
+
+. Vérifiez que les services du serveur Unified Manager, le disque de données et l'adresse IP du cluster sont ajoutés au groupe de clusters à l'aide de la console Web Failover Cluster Manager.
+. Arrêtez tous les services de serveur Unified Manager (MySQL, ocie, et ocieau) en utilisant le `services.msc` commande.
+. Basculer le groupe de services sur le second nœud dans le Gestionnaire de cluster de basculement.
+. Lancer la commande `perl ha_setup.pl --join -t mscs -f``shared_location_path` Sur le second nœud du cluster, indiquez les données du serveur Unified Manager vers le LUN.
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. Mettre en ligne tous les services Unified Manager à l'aide de Failover Cluster Manager.
+. Basculez manuellement sur l'autre nœud du serveur de cluster Microsoft.
+. Vérifiez que les services du serveur Unified Manager démarrent correctement sur l'autre nœud du cluster.
+. Régénérer le certificat Unified Manager après avoir exécuté des scripts de configuration pour obtenir l'adresse IP globale.
++
+.. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *certificat HTTPS* dans le menu *Setup*.
+.. Cliquez sur *régénérer le certificat HTTPS*.
+
+
++
+Le certificat régénéré fournit l'adresse IP du cluster, et non le nom de domaine complet (FQDN). Vous devez utiliser l'adresse IP globale pour configurer Unified Manager pour la haute disponibilité.
+
+. Pour accéder à l'interface utilisateur de Unified Manager, utilisez : `https://<FQDN of Global IP>`
+
+
+
+
+== Une fois que vous avez terminé
+
+Vous devez créer un emplacement de sauvegarde partagé une fois la haute disponibilité configurée. L'emplacement partagé est requis pour contenir les sauvegardes avant et après le basculement. Les deux nœuds qui sont configurés dans une configuration haute disponibilité doivent être capables d'accéder à l'emplacement partagé.

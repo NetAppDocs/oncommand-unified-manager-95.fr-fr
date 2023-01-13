@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-configuring-event-retention-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez indiquer le nombre de jours pendant lesquels un événement est conservé dans le serveur Unified Manager avant d"être supprimé automatiquement. Seuls les événements résolus, obsolètes ou de type informations sont supprimés. Vous pouvez également spécifier la fréquence à laquelle ces événements sont supprimés ou vous pouvez également supprimer manuellement les événements.' 
+---
+= Configuration des paramètres de conservation des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez indiquer le nombre de jours pendant lesquels un événement est conservé dans le serveur Unified Manager avant d'être supprimé automatiquement. Seuls les événements résolus, obsolètes ou de type informations sont supprimés. Vous pouvez également spécifier la fréquence à laquelle ces événements sont supprimés ou vous pouvez également supprimer manuellement les événements.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle Administrateur OnCommand pour modifier les paramètres d'événement.
+
+
+
+== Description de la tâche
+
+La conservation des événements pendant plus de 180 jours affecte les performances du serveur et n'est pas recommandée. La limite inférieure pour la période de conservation des événements est de 7 jours ; il n'y a pas de limite supérieure.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *gérer les événements*.
+. Dans la page *Configuration/gestion des événements*, cliquez sur le bouton *Paramètres de conservation des événements*.
+. Configurez les paramètres appropriés dans la boîte de dialogue *Paramètres de conservation des événements*.
+. Cliquez sur *Enregistrer et fermer*.
+

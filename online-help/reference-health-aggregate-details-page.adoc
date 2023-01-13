@@ -1,0 +1,548 @@
+---
+permalink: online-help/reference-health-aggregate-details-page.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Vous pouvez utiliser la page de détails Health/Aggregate pour afficher des informations détaillées sur l"agrégat sélectionné, telles que la capacité, des informations sur le disque, les détails de la configuration et les événements générés. Vous pouvez également afficher des informations sur les objets associés et les alertes associées pour cet agrégat.' 
+---
+= Page de détails sur l'état de santé/agrégats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page de détails Health/Aggregate pour afficher des informations détaillées sur l'agrégat sélectionné, telles que la capacité, des informations sur le disque, les détails de la configuration et les événements générés. Vous pouvez également afficher des informations sur les objets associés et les alertes associées pour cet agrégat.
+
+
+
+== Boutons de commande
+
+[NOTE]
+====
+Lors de la surveillance d'un agrégat compatible FabricPool, les valeurs validées et survalidées affichées sur cette page concernent uniquement la capacité locale, ou de Tier de performance. La quantité d'espace disponible dans le Tier cloud n'est pas reflétée dans les valeurs survalidées. De la même façon, les valeurs seuils agrégées ne sont pertinentes que pour le Tier de performance local.
+
+====
+Les boutons de commande permettent d'effectuer les tâches suivantes pour l'agrégat sélectionné :
+
+* *Basculer vers l'affichage des performances*
++
+Accès à la page des détails sur les performances/agrégats.
+
+* *image:../media/favorite-icon.gif[""]*
++
+Vous permet d'ajouter l'agrégat sélectionné au tableau de bord des favoris.
+
+* *Actions*
++
+** Ajouter une alerte
++
+Permet d'ajouter une alerte à l'agrégat sélectionné.
+
+** Modifier les seuils
++
+Permet de modifier les paramètres de seuil de l'agrégat sélectionné.
+
+
+
+* *Afficher les agrégats*
++
+Permet de naviguer vers la page d'inventaire Health/Aggregates.
+
+
+
+
+
+== Onglet capacité
+
+L'onglet capacité affiche des informations détaillées sur l'agrégat sélectionné, telles que sa capacité, ses seuils et son taux de croissance quotidien.
+
+Par défaut, les événements de capacité ne sont pas générés pour les agrégats racine. En outre, les valeurs de seuil utilisées par Unified Manager ne s'appliquent pas aux agrégats racine de nœud. Seul un représentant du support technique peut modifier les paramètres de ces événements. Lorsque les paramètres sont modifiés par un représentant du support technique, les valeurs de seuil sont appliquées à l'agrégat racine du nœud.
+
+* *Capacité*
++
+Affiche le graphique de capacité des données et le graphique copies Snapshot, qui affiche les détails de capacité sur l'agrégat :
+
++
+** Utilisé
++
+Affiche l'espace utilisé par les données dans l'agrégat.
+
+** Surengagement
++
+Indique que l'espace de l'agrégat est surallouée.
+
+** Avertissement
++
+Indique que l'espace de l'agrégat est presque plein. Si ce seuil est atteint, l'événement espace presque plein est généré.
+
+** Erreur
++
+Indique que l'espace de l'agrégat est plein. Si ce seuil est atteint, l'événement espace plein est généré.
+
+** Graphique de données
++
+Affiche la capacité totale des données et la capacité de données utilisée de l'agrégat. Si l'agrégat est surengagé, une alarme s'affiche avec la capacité surengagée.
+
+** Graphique sur les copies Snapshot
++
+Ce graphique s'affiche uniquement lorsque la capacité Snapshot utilisée ou la réserve Snapshot n'est pas égale à zéro.
+
+
+
++
+Les deux graphiques affichent la capacité par laquelle la capacité Snapshot dépasse la réserve Snapshot si la capacité Snapshot utilisée dépasse la réserve Snapshot.
+
+* *Tier cloud*
++
+Affiche des informations détaillées sur la capacité du Tier cloud pour les agrégats compatibles FabricPool. Un FabricPool peut être sous licence ou sans licence.
+
++
+** Utilisé
++
+Affiche l'espace utilisé par les données du niveau cloud.
+
+** Indisponible
++
+Affiche l'espace du Tier cloud pour un objet Amazon S3, Microsoft Azure Cloud FabricPool ou IBM Cloud Object Storage qui ne peut pas être utilisé. Cet espace peut être partagé avec un autre agrégat compatible FabricPool.
+
+** Graphique de données
++
+Pour un environnement Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage ou Alibaba Cloud Object Storage, le tableau affiche la capacité totale des données sous licence de ce cluster, le volume utilisé par cet agrégat et le volume inutilisable de tous les autres agrégats qui utilisent le Tier cloud.
+
++
+Pour une StorageGRID, le tableau affiche uniquement la capacité totale utilisée par cet agrégat.
+
+
+
+* *Détails*
++
+Affiche des informations détaillées sur la capacité.
+
++
+** Capacité totale
++
+Affiche la capacité totale de l'agrégat.
+
+** Capacité des données
++
+Affiche la quantité d'espace utilisée par l'agrégat (capacité utilisée) et la quantité d'espace disponible dans l'agrégat (capacité libre).
+
+** Réserve Snapshot
++
+Affiche la capacité Snapshot utilisée et disponible de l'agrégat.
+
+** Capacité excessive
++
+Affiche le surengagement de l'agrégat. La surallocation d'agrégat vous permet de fournir une quantité de stockage qui est réellement disponible à partir d'un agrégat donné, tant que cette partie n'est pas utilisée. Lorsque le provisionnement fin est utilisé, la taille totale des volumes de l'agrégat peut dépasser la capacité totale de l'agrégat.
+
++
+[NOTE]
+====
+Si vous avez surallouné votre agrégat, vous devez surveiller soigneusement son espace disponible et ajouter du stockage à la demande pour éviter les erreurs en écriture dues à la quantité d'espace insuffisante.
+
+====
+** Tier dans le cloud
++
+Pour un environnement Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage ou Alibaba Cloud Object Storage, affiche la capacité totale de licence, la quantité utilisée par cet agrégat, la quantité utilisée par les autres agrégats et la capacité disponible pour le Tier cloud. Pour une StorageGRID, affiche uniquement la capacité totale utilisée par cet agrégat.
+
+** Espace total du cache
++
+Affiche l'espace total des disques SSD ou unités d'allocation ajouté à un agrégat Flash Pool. Si vous avez activé Flash Pool pour un agrégat, mais que vous n'avez ajouté aucun disque SSD, l'espace du cache s'affiche sous la forme 0 Ko.
+
++
+[NOTE]
+====
+Ce champ est masqué si Flash Pool est désactivé pour un agrégat.
+
+====
+** Seuils des agrégats
++
+Affiche les seuils de capacité d'agrégat suivants :
+
++
+*** Presque plein seuil
++
+Spécifie le pourcentage où un agrégat est presque plein.
+
+*** Seuil maximal
++
+Spécifie le pourcentage lorsqu'un agrégat est plein.
+
+*** Seuil presque dépassé
++
+Spécifie le pourcentage auquel un agrégat est presque surengagé.
+
+*** Seuil de surengagement
++
+Spécifie le pourcentage de surallocation d'un agrégat.
+
+
+
+** Autres détails: Taux de croissance quotidien
++
+Affiche l'espace disque utilisé dans l'agrégat si le taux de changement entre les deux derniers échantillons se poursuit pendant 24 heures.
+
++
+Par exemple, si un agrégat utilise 10 Go d'espace disque à 14 h et 12 Go à 6 h, le taux de croissance quotidien (Go) de cet agrégat est de 2 Go.
+
+** Déplacement de volumes
++
+Affiche le nombre d'opérations de déplacement de volumes en cours :
+
++
+*** Volumes hors service
++
+Affiche le nombre et la capacité des volumes qui sont déplacés hors de l'agrégat.
+
++
+Vous pouvez cliquer sur le lien pour afficher plus d'informations, notamment le nom du volume, l'agrégat vers lequel le volume est déplacé, l'état de l'opération de déplacement de volume et l'heure de fin estimée.
+
+*** Volumes dans
++
+Affiche le nombre et la capacité restante des volumes qui sont déplacés vers l'agrégat.
+
++
+Vous pouvez cliquer sur le lien pour afficher plus d'informations, notamment le nom du volume, l'agrégat depuis lequel le volume est déplacé, l'état de l'opération de déplacement de volume et l'heure de fin estimée.
+
+*** Capacité utilisée estimée après le déplacement de volume
++
+Affiche la quantité estimée d'espace utilisé (en pourcentage, en Ko, Mo, Go, etc.) dans l'agrégat une fois les opérations de déplacement de volume terminées.
+
+
+
+
+
+* *Présentation de la capacité - volumes*
++
+Affiche des graphiques fournissant des informations sur la capacité des volumes de l'agrégat. La quantité d'espace utilisée par le volume (capacité utilisée) et la quantité d'espace disponible (capacité libre) dans le volume sont affichées. Lorsque l'événement Volume Space at Risk est généré pour les volumes à provisionnement fin, la quantité d'espace utilisée par le volume (capacité utilisée) et la quantité d'espace disponible dans le volume mais ne peut pas être utilisée (capacité inutilisable) en raison de problèmes de capacité de l'agrégat sont affichés.
+
++
+Vous pouvez sélectionner le graphique à afficher dans les listes déroulantes. Vous pouvez trier les données affichées sur le graphique pour afficher des informations telles que la taille utilisée, la taille provisionnée, la capacité disponible, le taux de croissance quotidien le plus rapide et le taux de croissance le plus lent. Vous pouvez filtrer les données en fonction des SVM qui contiennent les volumes de l'agrégat. Vous pouvez également afficher des détails sur les volumes à provisionnement fin. Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur la zone d'intérêt. Par défaut, le graphique affiche les 30 principaux volumes filtrés dans l'agrégat.
+
+
+
+
+
+== Onglet informations sur le disque
+
+Affiche des informations détaillées sur les disques de l'agrégat sélectionné, y compris le type et la taille RAID, et le type de disques utilisés dans l'agrégat. L'onglet affiche également sous forme graphique les groupes RAID et les types de disques utilisés (SAS, ATA, FCAL, SSD ou VMDISK, par exemple). Pour plus d'informations, telles que la baie, le tiroir et la vitesse de rotation des disques, vous pouvez positionner votre curseur sur les disques de parité et de données.
+
+* *Données*
++
+Affiche graphiquement des informations sur les disques de données dédiés, les disques de données partagés, ou les deux. Lorsque les disques de données contiennent des disques partagés, les détails graphiques des disques partagés sont affichés. Lorsque les disques de données contiennent des disques dédiés et des disques partagés, les détails graphiques des disques de données dédiés et des disques de données partagés sont affichés.
+
++
+** *Détails RAID*
++
+Les détails RAID s'affichent uniquement pour les disques dédiés.
+
++
+*** Type
++
+Affiche le type RAID (RAID0, RAID4, RAID-DP ou RAID-TEC).
+
+*** Taille du groupe
++
+Affiche le nombre maximum de disques autorisés dans le groupe RAID.
+
+*** Groupes
++
+Affiche le nombre de groupes RAID de l'agrégat.
+
+
+
+** *Disques utilisés*
++
+*** Type effectif
++
+Affiche les types de disques de données (par exemple, ATA, SATA, FCAL, SSD, Ou VMDISK) dans l'agrégat.
+
+*** Disques de données
++
+Affiche le nombre et la capacité des disques de données affectés à un agrégat. Les informations détaillées du disque de données ne sont pas affichées lorsque l'agrégat contient uniquement des disques partagés.
+
+*** Disques de parité
++
+Affiche le nombre et la capacité des disques de parité affectés à un agrégat. Les informations détaillées du disque de parité ne sont pas affichées lorsque l'agrégat contient uniquement des disques partagés.
+
+*** Disques partagés
++
+Affiche le nombre et la capacité des disques de données partagés affectés à un agrégat. Les détails des disques partagés ne sont affichés que lorsque l'agrégat contient des disques partagés.
+
+
+
+** *Disques de rechange*
++
+Affiche le type, le nombre et la capacité effectifs des disques de données disponibles pour le nœud de l'agrégat sélectionné.
+
++
+[NOTE]
+====
+Lorsqu'un agrégat est basculée vers le nœud partenaire, Unified Manager n'affiche pas tous les disques de spare compatibles avec l'agrégat.
+
+====
+
+
+* *Cache SSD*
++
+La section fournit des informations détaillées sur les disques SSD cache dédiés et les disques SSD cache partagés.
+
++
+Les détails suivants pour les disques SSD en cache dédiés sont affichés :
+
++
+** *Détails RAID*
++
+*** Type
++
+Affiche le type RAID (RAID0, RAID4, RAID-DP ou RAID-TEC).
+
+*** Taille du groupe
++
+Affiche le nombre maximum de disques autorisés dans le groupe RAID.
+
+*** Groupes
++
+Affiche le nombre de groupes RAID de l'agrégat.
+
+
+
+** *Disques utilisés*
++
+*** Type effectif
++
+Indique que les disques utilisés pour le cache dans l'agrégat sont de type SSD.
+
+*** Disques de données
++
+Affiche le nombre et la capacité des disques de données affectés à un agrégat pour le cache.
+
+*** Disques de parité
++
+Affiche le nombre et la capacité des disques de parité affectés à un agrégat pour le cache.
+
+
+
+** *Disques de rechange*
++
+Affiche le type, le nombre et la capacité effectifs des disques de réserve disponibles pour le nœud de l'agrégat sélectionné pour la mise en cache.
+
++
+[NOTE]
+====
+Lorsqu'un agrégat est basculée vers le nœud partenaire, Unified Manager n'affiche pas tous les disques de spare compatibles avec l'agrégat.
+
+====
+
+
++
+Fournit les détails suivants pour le cache partagé :
+
++
+** *Pool de stockage*
++
+Affiche le nom du pool de stockage. Vous pouvez déplacer le pointeur sur le nom du pool de stockage pour afficher les détails suivants :
+
++
+*** État
++
+Affiche l'état du pool de stockage, qui peut être sain ou malsain.
+
+*** Nombre total d'allocations
++
+Affiche le nombre total d'unités d'allocation et la taille dans le pool de stockage.
+
+*** Taille de l'unité d'allocation
++
+Affiche la quantité minimale d'espace du pool de stockage pouvant être alloué à un agrégat.
+
+*** Disques
++
+Affiche le nombre de disques utilisés pour créer le pool de stockage. Si le nombre de disques dans la colonne du pool de stockage et le nombre de disques affichés dans l'onglet informations sur le disque correspondant à ce pool de stockage ne correspondent pas, cela indique qu'un ou plusieurs disques sont rompus et que le pool de stockage est défectueux.
+
+*** Allocation utilisée
++
+Affiche le nombre et la taille des unités d'allocation utilisées par les agrégats. Vous pouvez cliquer sur le nom de l'agrégat pour afficher les détails de cet agrégat.
+
+*** Allocation disponible
++
+Affiche le nombre et la taille des unités d'allocation disponibles pour les nœuds. Vous pouvez cliquer sur le nom du nœud pour afficher les détails de l'agrégat.
+
+
+
+** *Cache alloué*
++
+Affiche la taille des unités d'allocation utilisées par l'agrégat.
+
+** *Unités d'allocation*
++
+Affiche le nombre d'unités d'allocation utilisées par l'agrégat.
+
+** *Disques*
++
+Affiche le nombre de disques contenus dans le pool de stockage.
+
+** *Détails*
++
+*** Pool de stockage
++
+Affiche le nombre de pools de stockage.
+
+*** Taille totale
++
+Affiche la taille totale des pools de stockage.
+
+
+
+
+
+* *Tier cloud*
++
+Affiche le nom du Tier cloud, si vous avez configuré un agrégat compatible FabricPool, et indique la capacité totale sous licence pour Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage ou Alibaba Cloud Object Storage.
+
+
+
+
+
+== Onglet Configuration
+
+L'onglet Configuration affiche des détails sur l'agrégat sélectionné, tels que son nœud de cluster, son type de bloc, son type RAID, sa taille RAID et le nombre de groupes RAID :
+
+* *Aperçu*
++
+** Nœud
++
+Affiche le nom du nœud qui contient l'agrégat sélectionné.
+
+** Type de bloc
++
+Affiche le format de bloc de l'agrégat : 32 bits ou 64 bits.
+
+** Type de RAID
++
+Affiche le type RAID (RAID0, RAID4, RAID-DP, RAID-TEC ou RAID mixte).
+
+** Taille de RAID
++
+Affiche la taille du groupe RAID.
+
+** Groupes RAID
++
+Affiche le nombre de groupes RAID de l'agrégat.
+
+** Type de SnapLock
++
+Affiche le type SnapLock de l'agrégat.
+
+
+
+* *Tier cloud*
++
+S'il s'agit d'un agrégat compatible FabricPool, les détails du magasin d'objets sont affichés. Certains champs sont différents en fonction du fournisseur de stockage :
+
++
+** Nom
++
+Affiche le nom du magasin d'objets lors de sa création par ONTAP.
+
+** Fournisseur de stockage objet
++
+Affiche le nom du fournisseur de stockage, par exemple StorageGRID, Amazon S3, IBM Cloud Object Storage, Microsoft Azure Cloud ou Alibaba Cloud Object Storage.
+
+** Nom du magasin d'objets (FQDN) ou nom du serveur
++
+Affiche le FQDN du magasin d'objets.
+
+** Clé d'accès ou compte
++
+Affiche la clé d'accès ou le compte du magasin d'objets.
+
+** Nom de compartiment ou nom du conteneur
++
+Affiche le nom du compartiment ou du conteneur du magasin d'objets.
+
+** SSL
++
+Indique si le chiffrement SSL est activé pour le magasin d'objets.
+
+
+
+
+
+
+
+== Zone historique
+
+La zone Historique affiche des graphiques fournissant des informations sur la capacité de l'agrégat sélectionné. En outre, vous pouvez cliquer sur le bouton *Exporter* pour créer un rapport au format CSV pour le graphique que vous consultez.
+
+Vous pouvez sélectionner un type de graphique dans la liste déroulante située en haut du volet Historique. Vous pouvez également afficher les détails d'une période donnée en sélectionnant 1 semaine, 1 mois ou 1 an. Les graphiques historiques peuvent vous aider à identifier les tendances : par exemple, si l'utilisation de l'agrégat dépasse constamment le seuil presque plein, vous pouvez prendre l'action appropriée.
+
+Les graphiques de l'historique affichent les informations suivantes :
+
+* *Capacité agrégée utilisée (%)*
++
+Affiche la capacité utilisée dans l'agrégat et la tendance dans la façon dont la capacité d'agrégat est utilisée en fonction de l'historique d'utilisation sous forme de graphiques en pourcentage sur l'axe vertical (y). La période s'affiche sur l'axe horizontal (x). Vous pouvez sélectionner une période d'une semaine, d'un mois ou d'une année. Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur une zone particulière. Vous pouvez masquer ou afficher un graphique en ligne en cliquant sur la légende appropriée. Par exemple, lorsque vous cliquez sur la légende capacité utilisée, la ligne du graphique capacité utilisée est masquée.
+
+* *Capacité agrégée utilisée par rapport à capacité totale*
++
+Affiche la tendance d'utilisation de la capacité d'agrégat en fonction de l'historique d'utilisation, ainsi que de la capacité utilisée et de la capacité totale, sous forme de graphiques linéaires, en octets, en kilo-octets, en mégaoctets, et ainsi de suite, sur l'axe vertical (y). La période s'affiche sur l'axe horizontal (x). Vous pouvez sélectionner une période d'une semaine, d'un mois ou d'une année. Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur une zone particulière. Vous pouvez masquer ou afficher un graphique en ligne en cliquant sur la légende appropriée. Par exemple, lorsque vous cliquez sur la légende Trend Capacity Used, la ligne de graphique Trend Capacity Used est masquée.
+
+* *Capacité agrégée utilisée (%) par rapport à engagé (%)*
++
+Affiche la tendance dans la façon dont la capacité d'agrégat est utilisée en fonction de l'historique d'utilisation, ainsi que de l'espace alloué sous forme de graphiques linéaires, sous forme de pourcentage, sur l'axe vertical (y). La période s'affiche sur l'axe horizontal (x). Vous pouvez sélectionner une période d'une semaine, d'un mois ou d'une année. Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur une zone particulière. Vous pouvez masquer ou afficher un graphique en ligne en cliquant sur la légende appropriée. Par exemple, lorsque vous cliquez sur la légende espace engagé, la ligne du graphique espace engagé est masquée.
+
+
+
+
+
+== Liste des événements
+
+La liste Evénements affiche des détails sur les événements nouveaux et acquittés :
+
+* *Gravité*
++
+Affiche la gravité de l'événement.
+
+* *Événement*
++
+Affiche le nom de l'événement.
+
+* *Temps déclenché*
++
+Affiche le temps écoulé depuis la génération de l'événement. Si le temps écoulé dépasse une semaine, l'horodatage de la génération de l'événement s'affiche.
+
+
+
+
+
+== Panneau périphériques associés
+
+Le volet périphériques associés permet d'afficher le nœud de cluster, les volumes et les disques associés à l'agrégat :
+
+* *Nœud*
++
+Affiche l'état de capacité et d'intégrité du nœud qui contient l'agrégat. Capacité indique la capacité totale utilisable par rapport à la capacité disponible.
+
+* *Agrégats dans le noeud*
++
+Affiche le nombre et la capacité de tous les agrégats du nœud de cluster contenant l'agrégat sélectionné. L'état de santé des agrégats s'affiche également, sur la base du niveau de gravité le plus élevé. Par exemple, si un nœud du cluster contient dix agrégats, dont cinq affichent le statut d'avertissement et les cinq restants qui affichent l'état critique, l'état affiché est critique.
+
+* *Volumes*
++
+Affiche le nombre et la capacité des volumes FlexVol et FlexGroup de l'agrégat, mais pas les composants FlexGroup. L'état de santé des volumes est également affiché, sur la base du niveau de gravité le plus élevé.
+
+* *Pool de ressources*
++
+Affiche les pools de ressources associés à l'agrégat.
+
+* *Disques*
++
+Affiche le nombre de disques de l'agrégat sélectionné.
+
+
+
+
+
+== Volet alertes associées
+
+Le volet alertes associées vous permet d'afficher la liste des alertes créées pour l'agrégat sélectionné. Vous pouvez également ajouter une alerte en cliquant sur le lien Ajouter une alerte ou en modifiant une alerte existante en cliquant sur le nom de l'alerte.

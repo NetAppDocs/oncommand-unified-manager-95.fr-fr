@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-flash-card-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de carte Flash fournissent des informations sur l"état des cartes Flash installées sur les nœuds de votre data Center, afin de pouvoir surveiller l"éventuelle présence de problèmes. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de carte Flash
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de carte Flash fournissent des informations sur l'état des cartes Flash installées sur les nœuds de votre data Center, afin de pouvoir surveiller l'éventuelle présence de problèmes. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Cartes Flash hors ligne (ocumEvtFlashCardOffline)
+ a| 
+Gestion des
+ a| 
+Nœud
+ a| 
+Primordial
+
+|===

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Les événements vous aident à identifier les problèmes qui se produisent dans les clusters surveillés. 
+---
+= Gestion des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements vous aident à identifier les problèmes qui se produisent dans les clusters surveillés.

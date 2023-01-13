@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-types-of-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Des graphiques de performances standard affichent les valeurs des compteurs de l"objet de stockage sélectionné. Chacun des tableaux de compteurs de décomposition affiche les valeurs totales séparées en lecture, écriture et autres catégories. De plus, certains graphiques de compteur de décomposition affichent des détails supplémentaires lorsque le graphique est affiché en vue Zoom.' 
+---
+= Types de graphiques de compteur de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Des graphiques de performances standard affichent les valeurs des compteurs de l'objet de stockage sélectionné. Chacun des tableaux de compteurs de décomposition affiche les valeurs totales séparées en lecture, écriture et autres catégories. De plus, certains graphiques de compteur de décomposition affichent des détails supplémentaires lorsque le graphique est affiché en vue Zoom.
+
+Le tableau suivant affiche les graphiques de compteurs de performances disponibles.
+
+|===
+| Tableaux disponibles | Description du tableau 
+
+
+ a| 
+Événements
+ a| 
+Affiche les événements critiques, d'erreur, d'avertissement et d'information en corrélation avec les graphiques statistiques de l'objet racine. Les événements de santé s'affichent en plus des événements de performance pour fournir une vue d'ensemble des raisons pour lesquelles les performances peuvent être affectées.
+
+
+
+ a| 
+Latence - Total
+ a| 
+Nombre de millisecondes nécessaires pour répondre aux demandes des applications.Notez que les valeurs de latence moyenne sont pondérées en E/S.
+
+
+
+ a| 
+Latence : détail
+ a| 
+Les mêmes informations affichées dans latence Total, mais avec les données de performances séparées en lecture, écriture et autre latence.cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume, une LUN, ou un espace de noms.
+
+
+
+ a| 
+Latence - composants du cluster
+ a| 
+Les mêmes informations s'affichent dans latence totale, mais avec les données de performances séparées par un composant de cluster.cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un volume.
+
+
+
+ a| 
+IOPS - total
+ a| 
+Nombre d'opérations d'entrée/sortie traitées par seconde.
+
+
+
+ a| 
+IOPS : détail
+ a| 
+Les mêmes informations sont affichées dans Total IOPS, mais avec les données de performances séparées en lecture, en écriture et autres IOPS. Lorsqu'il est affiché dans la vue Zoom, le graphique volumes affiche les valeurs de débit minimum et maximum de QoS, si configuré dans ONTAP.
+
+Cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume, une LUN, ou un espace de noms.
+
+
+
+ a| 
+IOPS - protocoles
+ a| 
+Les mêmes informations s'affichent dans Total IOPS, mais les données de performance sont séparées dans des graphiques individuels pour le trafic des protocoles CIFS, NFS, FCP, NVMe et iSCSI. Cette option de tableau s'applique uniquement lorsque l'objet sélectionné est un SVM.
+
+
+
+ a| 
+IOPS/To : total
+ a| 
+Nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace total consommé par la charge de travail, en téraoctets. Ce compteur mesure également la densité des E/S par rapport à une quantité donnée de capacité de stockage.lorsqu'il est affiché dans Zoom, le graphique volumes affiche les valeurs de débit QoS attendue et pic, si configuré dans ONTAP.
+
+Cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un volume.
+
+
+
+ a| 
+Mbit/s - Total
+ a| 
+Nombre de mégaoctets de données transférées vers et depuis l'objet par seconde.
+
+
+
+ a| 
+Mbit/s : panne
+ a| 
+Les mêmes informations sont affichées dans le graphique Mbit/s, mais avec les données Mbit/s séparées en lectures de disque, en lectures, en écritures et autres.lorsqu'elles sont affichées dans la vue Zoom, le graphique volumes affiche les valeurs de débit maximal de QoS, si elles sont configurées dans ONTAP.
+
+Cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume, une LUN, ou un espace de noms.
+
+[NOTE]
+====
+Les données de Flash cache s'affichent uniquement pour les nœuds et uniquement lorsqu'un module Flash cache est installé sur le nœud.
+
+====
+
+
+ a| 
+Performance Capacity utilisée - Total
+ a| 
+Pourcentage de capacité de performance consommé par le nœud ou l'agrégat.
+
+[NOTE]
+====
+Les données de performance et de capacité sont disponibles uniquement lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+
+
+ a| 
+Capacité utilisée – détail
+ a| 
+Capacité de performance utilisait des données séparées en protocoles utilisateur et en arrière-plan du système. De plus, la capacité des performances libres est indiquée.
+
+
+
+ a| 
+IOPS disponibles - Total
+ a| 
+Nombre d'opérations d'entrée/sortie par seconde actuellement disponibles (libres) sur cet objet. Ce nombre est dû à l'soustraction des IOPS actuellement utilisées par rapport aux IOPS totales que Unified Manager calcule que l'objet peut exécuter. L'option de graphique s'applique uniquement lorsque l'objet sélectionné est un nœud ou un agrégat.
+
+[NOTE]
+====
+Les données IOPS disponibles sont uniquement disponibles lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+
+
+ a| 
+Utilisation : total
+ a| 
+Pourcentage de ressources disponible de l'objet utilisé. L'utilisation indique l'utilisation des nœuds, l'utilisation des disques pour les agrégats et l'utilisation de la bande passante pour les ports.cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un nœud, un agrégat ou un port.
+
+
+
+ a| 
+Taux de Miss cache - Total
+ a| 
+Pourcentage de demandes de lecture des applications client renvoyées à partir du disque au lieu d'être renvoyées à partir du cache. Cette option de graphique s'applique uniquement lorsque l'objet sélectionné est un volume.
+
+|===

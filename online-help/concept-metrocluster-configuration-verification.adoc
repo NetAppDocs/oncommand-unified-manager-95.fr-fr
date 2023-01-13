@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez éviter les problèmes de performances des charges de travail en miroir dans une configuration MetroCluster en vous assurant que la configuration MetroCluster est correctement configurée. Vous pouvez également améliorer les performances des charges de travail en modifiant la configuration ou en mettant à niveau des composants logiciels ou matériels. 
+---
+= Vérification de la configuration MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez éviter les problèmes de performances des charges de travail en miroir dans une configuration MetroCluster en vous assurant que la configuration MetroCluster est correctement configurée. Vous pouvez également améliorer les performances des charges de travail en modifiant la configuration ou en mettant à niveau des composants logiciels ou matériels.
+
+Le _MetroCluster installation and Configuration Guide_ fournit des instructions sur la configuration des clusters dans la configuration MetroCluster, notamment les commutateurs Fibre Channel (FC), les câbles et les liaisons intercommutateurs (ISL). Il permet également de configurer le logiciel MetroCluster de sorte que les clusters locaux et distants puissent communiquer avec les données de volume en miroir.
+
+Vous pouvez comparer votre configuration MetroCluster aux exigences du _MetroCluster installation and Configuration Guide_ afin de déterminer si le changement ou la mise à niveau des composants de votre configuration MetroCluster peut améliorer les performances des charges de travail. Cet comparatif peut vous aider à répondre aux questions suivantes :
+
+* Les contrôleurs sont-ils adaptés à vos charges de travail ?
+* Devez-vous mettre à niveau vos bundles ISL vers une bande passante plus importante pour gérer davantage de débit ?
+* Pouvez-vous régler les crédits tampon à tampon (BBC) de vos commutateurs pour augmenter la bande passante ?
+* Si vos charges de travail disposent d'un débit d'écriture élevé vers le stockage SSD, devez-vous mettre à niveau vos ponts FC-SAS pour prendre en charge le débit ?
+
+
+Pour plus d'informations sur le remplacement ou la mise à niveau des composants MetroCluster, reportez-vous au _MetroCluster Service Guide_.

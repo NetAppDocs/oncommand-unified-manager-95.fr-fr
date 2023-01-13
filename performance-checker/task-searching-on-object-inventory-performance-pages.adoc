@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-searching-on-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez rechercher des chaînes dans les pages performances de l"inventaire des objets. Utilisez le champ de recherche situé en haut à droite de la page pour localiser rapidement des données en fonction du nom d"objet ou du nom de stratégie. Vous pouvez ainsi localiser rapidement des objets spécifiques et leurs données associées, ou consulter rapidement les règles et les données d"objets de stratégie associés.' 
+---
+= Recherche sur les pages performances de l'inventaire des objets
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez rechercher des chaînes dans les pages performances de l'inventaire des objets. Utilisez le champ *Search* situé en haut à droite de la page pour localiser rapidement des données en fonction du nom de l'objet ou du nom de la stratégie. Vous pouvez ainsi localiser rapidement des objets spécifiques et leurs données associées, ou consulter rapidement les règles et les données d'objets de stratégie associés.
+
+
+
+== Étapes
+
+. Effectuez l'une des options suivantes en fonction de vos besoins de recherche :
++
+|===
+| Pour localiser ceci... | Tapez ceci... 
+
+
+ a| 
+Un objet spécifique
+ a| 
+Le nom de l'objet dans le champ *Search*, puis cliquez sur *Search*. L'objet pour lequel vous avez recherché et ses données associées s'affiche.
+
+
+
+ a| 
+Règle de seuil de performance définie par l'utilisateur
+ a| 
+Tout ou partie du nom de la police dans le champ *Search*, puis cliquez sur *Search*. Les objets affectés à la stratégie pour laquelle vous avez recherché s'affichent.
+
+|===
+

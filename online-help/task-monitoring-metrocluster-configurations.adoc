@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez surveiller les problèmes de connectivité dans votre configuration MetroCluster. Ces détails incluent l"état des composants, la connectivité dans un cluster et l"état de connectivité entre les clusters dans la configuration MetroCluster.' 
+---
+= Contrôle des configurations MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller les problèmes de connectivité dans votre configuration MetroCluster. Ces détails incluent l'état des composants, la connectivité dans un cluster et l'état de connectivité entre les clusters dans la configuration MetroCluster.
+
+
+
+== Avant de commencer
+
+* Les clusters locaux et distants de la configuration MetroCluster doivent être ajoutés à OnCommand Unified Manager.
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+
+== Description de la tâche
+
+Vous pouvez utiliser les informations affichées sur la page Détails de l'intégrité/du cluster pour corriger tout problème de connectivité. Par exemple, si la connectivité entre le nœud et le commutateur d'un cluster est inactive, l'icône suivante est affichée :
+
+image::../media/node-switch-connectivity.gif[connectivité du commutateur de nœuds]
+
+Si vous déplacez le pointeur sur l'icône, vous pouvez afficher des informations détaillées sur l'événement généré.
+
+Unified Manager utilise des alertes d'état du système pour surveiller l'état des composants et la connectivité dans la configuration MetroCluster.
+
+L'onglet MetroCluster Connectivity n'est affiché que pour les clusters dans une configuration MetroCluster.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *clusters*.
++
+La liste de tous les clusters surveillés s'affiche.
+
+. Dans la page d'inventaire *Santé/clusters*, cliquez sur le nom du cluster pour lequel vous souhaitez afficher les détails de la configuration MetroCluster.
+. Dans la page de détails *Santé/Cluster*, cliquez sur l'onglet *connectivité MetroCluster*.
++
+La topologie de la configuration MetroCluster s'affiche dans la zone d'objet cluster correspondante.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Si vous détectez les problèmes de connectivité dans votre configuration MetroCluster, vous devez vous connecter à System Manager ou accéder à l'interface de ligne de commandes de ONTAP pour résoudre les problèmes.

@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-cluster-capacity-based-on-the-ontap-version.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser le rapport Storage Summary pour regrouper les clusters par version ONTAP et afficher les agrégats relatifs à votre capacité brute totale. 
+---
+= Personnalisation du rapport Storage Summary pour analyser la capacité du cluster en fonction de la version ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Storage Summary pour regrouper les clusters par version ONTAP et afficher les agrégats relatifs à votre capacité brute totale.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur image:../media/click-to-see-menu.gif[""] (icône de menu).
+.. Sélectionnez *Groupe* > *Supprimer l'option Groupe interne*.
+
+
+. Pour grouper le rapport par version de ONTAP, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne *OS version* et sélectionnez image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Ajouter groupe*.
+
+
+. Pour ajouter des agrégats à la capacité brute totale, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne *capacité brute totale* et cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *agrégation*.
+.. Dans la boîte de dialogue *agrégation*, décochez la case *niveau de table* et cochez la case *niveau de groupe*.
+.. Entrez un nom d'étiquette dans le champ *entrer étiquette*, si nécessaire.
+
+
+. Cliquez sur *OK*.
+

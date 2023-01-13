@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez afficher des informations sur tous les ports d"un cluster. Vous pouvez afficher des informations telles que le rôle de port réseau \(cluster, données ou node-management\), l"état de la liaison, l"unité de transmission maximale \(MTU\), la vitesse et l"état opérationnel, ainsi que le groupe d"interface du port, le cas échéant.' 
+---
+= Identifier le nœud le plus adapté à une LIF occupée à l'aide de OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des informations sur tous les ports d'un cluster. Vous pouvez afficher des informations telles que le rôle de port réseau (cluster, données ou gestion des nœuds), l'état de la liaison, l'unité de transmission maximale (MTU), la définition de la vitesse et l'état opérationnel, ainsi que le groupe d'interfaces des ports, le cas échéant.
+
+
+
+== Étapes
+
+. Ouvrez OnCommand System Manager.
+. Dans l'onglet *Home*, double-cliquez sur le système de stockage.
+. Dans le volet de navigation, développez la hiérarchie *Nodes*.
+. Pour rechercher les connexions actives sur un nœud, dans le volet de navigation, sélectionnez l'icône correspondant à un nœud.
+. Cliquez sur le lien du nom d'un nœud, puis sur *Configuration* > *ports/adaptateurs*.
+. Notez le nombre de clients le plus élevé par nœud.
+

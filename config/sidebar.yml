@@ -1,0 +1,60 @@
+---
+section: config
+title: Réaliser les tâches de configuration et d'administration
+entries:
+- title: Configuration d'Unified Manager
+  url: "/config/concept-configuring-unified-manager.html"
+  entries:
+  - title: Présentation de la séquence de configuration
+    url: "/config/concept-overview-of-the-configuration-sequence.html"
+  - title: Accès à l'interface utilisateur Web de Unified Manager
+    url: "/config/task-accessing-oncommand-unified-manager-web-ui.html"
+  - title: Configuration initiale de l'interface utilisateur Web de Unified Manager
+    url: "/config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html"
+  - title: Ajout de clusters
+    url: "/config/task-adding-clusters.html"
+  - title: Configuration de Unified Manager pour envoyer des notifications d'alerte
+    url: "/config/task-configuring-unified-manager-to-send-alert-notifications.html"
+    entries:
+    - title: Configuration des paramètres de notification d'événement
+      url: "/config/task-configuring-event-notification-settings.html"
+    - title: Activation de l'authentification à distance
+      url: "/config/task-enabling-remote-authentication.html"
+    - title: Désactivation des groupes imbriqués à partir de l'authentification à
+        distance
+      url: "/config/task-disabling-nested-groups-from-remote-authentication.html"
+    - title: Ajout de serveurs d'authentification
+      url: "/config/task-adding-authentication-servers.html"
+    - title: Test de la configuration des serveurs d'authentification
+      url: "/config/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+    - title: Ajout d'utilisateurs
+      url: "/config/task-adding-users.html"
+    - title: Ajout d'alertes
+      url: "/config/task-adding-alerts.html"
+  - title: Événements EMS ajoutés automatiquement à Unified Manager
+    url: "/config/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: Abonnement aux événements ONTAP EMS
+    url: "/config/task-subscribing-to-ontap-ems-events.html"
+  - title: Gestion des paramètres d'authentification SAML
+    url: "/config/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: Exigences du fournisseur d'identités
+      url: "/config/reference-identity-provider-requirements-um.html"
+    - title: Activation de l'authentification SAML
+      url: "/config/task-enabling-saml-authentication-um.html"
+  - title: Configuration des paramètres de sauvegarde de la base de données
+    url: "/config/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+  - title: Modification du mot de passe de l'utilisateur local
+    url: "/config/task-changing-the-local-user-password.html"
+  - title: Modification du nom d'hôte Unified Manager
+    url: "/config/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: Modification du nom d'hôte de l'appliance virtuelle Unified Manager
+      url: "/config/task-changing-the-unified-manager-host-name-on-vmware.html"
+      entries:
+      - title: Génération d'un certificat de sécurité HTTPS
+        url: "/config/task-generating-an-https-security-certificate-ocf.html"
+      - title: Redémarrage de la machine virtuelle Unified Manager
+        url: "/config/task-restarting-the-unified-manager-virtual-machine.html"
+    - title: Modification du nom d'hôte Unified Manager sur les systèmes Linux
+      url: "/config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"

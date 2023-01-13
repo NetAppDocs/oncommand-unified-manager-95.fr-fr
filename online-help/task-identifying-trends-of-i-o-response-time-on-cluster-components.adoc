@@ -1,0 +1,68 @@
+---
+permalink: online-help/task-identifying-trends-of-i-o-response-time-on-cluster-components.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager vous permet d"afficher les tendances de performances de tous les composants de cluster surveillés pour une charge de travail de volume. Vous pouvez visualiser, au fil du temps, les composants les plus utilisés, les demandes de lecture ou d"écriture les plus utilisées et la façon dont l"utilisation a affecté le temps de réponse des workloads.' 
+---
+= Identifier les tendances du temps de réponse d'E/S sur les composants du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager vous permet d'afficher les tendances de performances de tous les composants de cluster surveillés pour une charge de travail de volume. Vous pouvez visualiser, au fil du temps, les composants les plus utilisés, les demandes de lecture ou d'écriture les plus utilisées et la façon dont l'utilisation a affecté le temps de réponse des workloads.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez avoir identifié le nom du volume ou de la LUN associée à analyser.
+* Pour afficher les statistiques de performances sur 30 jours, Unified Manager doit avoir collecté et analysé un minimum de 30 jours de statistiques de performance du cluster.
+
+
+
+
+== Description de la tâche
+
+L'identification des tendances en matière de performances des composants du cluster permet à l'administrateur de décider si le cluster est sur-utilisé ou sous-utilisé.
+
+Si vous consultez la page Détails de l'événement, vous pouvez cliquer sur le nom d'un volume pour accéder directement à la page Détails des performances/volumes.
+
+
+
+== Étapes
+
+. Dans la barre *Search*, saisissez le nom du volume.
++
+Le nom du volume s'affiche dans les résultats de la recherche.
+
+. Cliquez sur le nom du volume.
++
+Le volume s'affiche sur la page Performance/Volume Details.
+
+. Dans le diagramme de données historiques, cliquez sur *30d* pour afficher les 30 derniers jours de données historiques.
+. Cliquez sur *données d'interruption par*.
+. Sous *latence*, sélectionnez ***Cluster Components*** et ***lit/écrit latence***.
+. Cliquez sur *soumettre*.
++
+Les deux graphiques sont affichés en dessous du tableau latence.
+
+. Consultez le tableau *composants du cluster*.
++
+Le tableau indique le temps de réponse total par composant du cluster. Le temps de réponse au niveau de l'agrégat est le plus élevé.
+
+. Comparez le tableau *composants du cluster* avec le graphique *latence*.
++
+Le graphique latence affiche les pics du temps de réponse total qui sont alignés sur les pics de temps de réponse de l'agrégat. Il y en a quelques-uns à la fin de la période de 30 jours, où le seuil de performance a été franchi.
+
+. Consultez le graphique *lecture/écriture latence*.
++
+Le graphique indique un temps de réponse plus élevé pour les demandes d'écriture que pour les demandes de lecture, ce qui indique que les demandes d'écriture des clients attendent plus longtemps que d'habitude.
+
+. Comparez le graphique *reads/Writes latence* avec le graphique *latence*.
++
+Les pics de temps de réponse total alignés sur l'agrégat du tableau des composants du cluster sont également alignés sur les écritures du graphique de latence de lecture/écriture. L'administrateur doit décider si les applications client utilisant la charge de travail doivent être traitées ou si l'agrégat est sur-utilisé.
+
+

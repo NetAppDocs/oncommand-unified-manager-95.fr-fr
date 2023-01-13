@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres de seuil d"avertissement de décalage global par défaut et d"intégrité des erreurs pour les relations de protection non gérées afin que les événements soient générés à des intervalles adaptés à vos besoins.' 
+---
+= Modification des paramètres de seuil d'intégrité de décalage pour les relations de protection non gérées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres de seuil d'avertissement de décalage global par défaut et d'intégrité des erreurs pour les relations de protection non gérées afin que les événements soient générés à des intervalles adaptés à vos besoins.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Le temps de décalage ne doit pas dépasser l'intervalle de planification de transfert défini. Par exemple, si la planification de transfert est horaire, la durée de décalage ne doit pas dépasser une heure. Le seuil de décalage indique un pourcentage que le temps de décalage ne doit pas dépasser. Dans l'exemple d'une heure, si le seuil de décalage est défini sur 150 %, vous recevrez un événement lorsque le temps de décalage est supérieur à 1.5 heures.
+
+Les paramètres décrits dans cette tâche sont appliqués globalement à toutes les relations de protection non gérées. Les paramètres ne peuvent pas être spécifiés et appliqués exclusivement à une relation de protection non gérée.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *seuils de santé*.
+. Dans la page *seuils de configuration/santé*, cliquez sur *relations*.
+. Augmentez ou réduisez le pourcentage de temps d'avertissement ou de retard d'erreur global par défaut, selon les besoins.
+. Cliquez sur *Enregistrer*.
+

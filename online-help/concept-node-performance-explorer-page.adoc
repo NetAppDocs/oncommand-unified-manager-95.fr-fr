@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-node-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Explorateur de nœuds/performances fournit une présentation détaillée des performances de tous les nœuds d"un cluster.' 
+---
+= Page de l'explorateur de nœuds/performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Explorateur de nœuds/performances fournit une présentation détaillée des performances de tous les nœuds d'un cluster.
+
+La page de l'explorateur de nœuds/performances vous permet de suivre et de comparer les performances des nœuds sur une période donnée. Vous pouvez ainsi résoudre les problèmes et ajuster les performances de vos nœuds.
+
+La fonctionnalité View and compare permet de comparer les performances de ce nœud avec :
+
+* autres nœuds sur le même cluster
+* les agrégats sur le nœud
+* les ports sur le nœud
+
+
+Avec la page de l'explorateur de nœuds/performances, vous pouvez :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Surveillez et comparez les données de performances des nœuds
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+

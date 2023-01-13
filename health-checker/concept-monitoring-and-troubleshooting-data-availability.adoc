@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-monitoring-and-troubleshooting-data-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager contrôle la fiabilité avec laquelle les utilisateurs autorisés peuvent accéder aux données stockées, vous informe des conditions qui les bloquent ou les empêchent d"accéder, et vous aide à diagnostiquer ces conditions ainsi qu"à attribuer et suivre leur résolution.' 
+---
+= Surveillance et résolution des problèmes de disponibilité des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager contrôle la fiabilité avec laquelle les utilisateurs autorisés peuvent accéder aux données stockées, vous informe des conditions qui les bloquent ou les empêchent d'accéder, et vous aide à diagnostiquer ces conditions ainsi qu'à attribuer et suivre leur résolution.
+
+Les rubriques relatives au workflow de disponibilité de cette section décrivent des exemples de la façon dont un administrateur du stockage peut utiliser l'interface utilisateur Web Unified Manager pour détecter, diagnostiquer et attribuer des conditions matérielles et logicielles de résolution qui affectent négativement la disponibilité des données.

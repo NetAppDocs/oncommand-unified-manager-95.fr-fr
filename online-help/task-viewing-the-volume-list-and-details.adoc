@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-volume-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'À partir de la page d"inventaire Health/Volume, vous pouvez surveiller votre inventaire de volumes. La page Health/volumes Capacity et Utilization vous permet d"afficher des informations sur la capacité et l"utilisation des volumes d"un cluster.' 
+---
+= Affichage de la liste des volumes et des détails
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page d'inventaire Health/Volume, vous pouvez surveiller votre inventaire de volumes. La page Health/volumes Capacity et Utilization vous permet d'afficher des informations sur la capacité et l'utilisation des volumes d'un cluster.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez également utiliser la page de détails de l'état de santé/volume pour afficher des informations détaillées sur les volumes surveillés, notamment la capacité, l'efficacité, la configuration et la protection des volumes. Vous pouvez également afficher des informations sur les périphériques associés et les alertes associées d'un volume spécifique.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *volumes*.
+. Choisissez l'une des méthodes suivantes pour afficher les détails du volume :
++
+** Pour afficher des informations détaillées sur la capacité et l'utilisation des volumes d'un cluster, sélectionnez *Volume Capacity and Utilization* dans le menu Affichage.
+** Pour afficher des détails minimes, placez le curseur sur le nom du volume.
+** Pour afficher les informations complètes, cliquez sur le nom du volume.
++
+Vous pouvez également afficher les détails complets en cliquant sur *Afficher les détails* dans la boîte de dialogue Détails minimaux.
+
+
+
+. Affichez les objets liés au volume en cliquant sur *Afficher les objets associés* dans la boîte de dialogue Détails minimaux.
+

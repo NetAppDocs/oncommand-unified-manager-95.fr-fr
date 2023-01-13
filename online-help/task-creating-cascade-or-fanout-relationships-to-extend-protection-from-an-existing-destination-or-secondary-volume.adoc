@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez étendre la protection à partir d"une relation existante en créant soit un fanout à partir du volume source, soit une cascade à partir du volume de destination d"une relation existante. Pour cela, il vous suffit de copier des données d"un site vers de nombreux sites ou de renforcer la protection en créant davantage de sauvegardes.' 
+---
+= Création de relations en cascade ou en sortie pour étendre la protection à partir d'une relation de protection existante
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez étendre la protection à partir d'une relation existante en créant soit un fanout à partir du volume source, soit une cascade à partir du volume de destination d'une relation existante. Pour cela, il vous suffit de copier des données d'un site vers de nombreux sites ou de renforcer la protection en créant davantage de sauvegardes.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Cliquez sur *protection* > *relations de volume*.
+. Dans la page *protection/relations de volume*, sélectionnez la relation SnapMirror à partir de laquelle vous souhaitez étendre la protection.
+. Dans la barre d'actions, cliquez sur *prolonger la protection*.
+. Dans le menu, sélectionnez *à partir de Source* ou *à partir de destination*, selon que vous créez une relation de sortie à partir de la source ou d'une relation de cascade à partir de la destination.
+. Sélectionnez *avec SnapMirror* ou *avec SnapVault*, selon le type de relation de protection que vous créez.
++
+La boîte de dialogue configurer la protection s'affiche.
+
+. Renseignez les informations indiquées dans la boîte de dialogue *configurer la protection*.
+

@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-resynchronize-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Resynchroniser vous permet de resynchroniser les données d"une relation SnapMirror ou SnapVault précédemment interrompue, puis la destination a été créée un volume de lecture/écriture. Vous pouvez également resynchroniser lorsqu"une copie Snapshot commune requise sur le volume source est supprimée, entraînant l"échec des mises à jour de SnapMirror ou de SnapVault.' 
+---
+= Boîte de dialogue resynchroniser
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Resynchroniser vous permet de resynchroniser les données d'une relation SnapMirror ou SnapVault précédemment interrompue, puis la destination a été créée un volume de lecture/écriture. Vous pouvez également resynchroniser lorsqu'une copie Snapshot commune requise sur le volume source est supprimée, entraînant l'échec des mises à jour de SnapMirror ou de SnapVault.
+
+
+
+== Onglet Options de resynchronisation
+
+L'onglet Resynchronisation Options vous permet de définir la priorité de transfert et la vitesse de transfert maximale pour la relation de protection que vous êtes en cours de resynchronisation.
+
+* *Priorité de transfert*
++
+Priorité à laquelle le transfert est exécuté. Vous pouvez sélectionner Normal ou Bas. Relations avec des stratégies qui spécifient une priorité de transfert normale exécutée avant celles qui disposent de stratégies définissant une priorité de transfert faible.
+
+* *Taux de transfert max*
++
+Spécifie la vitesse maximale à laquelle les données sont transférées entre les clusters sur le réseau. Lorsque cette option est sélectionnée, la bande passante réseau est limitée à la valeur que vous spécifiez. Vous pouvez entrer une valeur numérique, puis sélectionner kilo-octets par seconde (Kbit/s), mégaoctets par seconde (Mbit/s), gigaoctets par seconde (Gbit/s) ou Tbit/s. Si vous choisissez de ne pas utiliser un taux de transfert maximal, le transfert de base entre les relations est illimité. Toutefois, si vous exécutez ONTAP 8.2 et que le cluster principal et le cluster secondaire sont identiques, ce paramètre est désactivé.
+
+
+
+
+
+== Onglet copies Snapshot source
+
+L'onglet copies Snapshot source affiche les informations suivantes sur la copie Snapshot source utilisée pour le transfert de base :
+
+* *Volume source*
++
+Affiche les noms des volumes source correspondants.
+
+* *Volume de destination*
++
+Affiche les noms des volumes de destination sélectionnés.
+
+* *Type de source*
++
+Affiche le type de volume : lecture/écriture ou protection des données.
+
+* *Copie snapshot*
++
+Affiche la copie Snapshot utilisée pour le transfert de données. Si vous cliquez sur la valeur de la copie Snapshot, la boîte de dialogue Sélectionner une copie Snapshot source s'affiche. Elle permet de sélectionner une copie Snapshot spécifique pour votre transfert, en fonction du type de relation de protection dont vous disposez et de l'opération que vous effectuez.
+
+
+
+
+
+== Boutons de commande
+
+* *Soumettre*
++
+Lance le processus de resynchronisation et ferme la boîte de dialogue Resynchroniser.
+
+* *Annuler*
++
+Annule vos sélections et ferme la boîte de dialogue Resynchroniser.
+
+

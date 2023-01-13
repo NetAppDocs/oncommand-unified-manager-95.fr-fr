@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-add-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Ajouter une annotation permet de créer des annotations personnalisées que vous pouvez associer aux clusters, volumes et machines virtuelles de stockage \(SVM\) via des règles d"annotation.' 
+---
+= Boîte de dialogue Ajouter une annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Ajouter une annotation permet de créer des annotations personnalisées pouvant être associées aux clusters, volumes et machines virtuelles de stockage (SVM) via des règles d'annotation.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom d'annotation*
++
+Indique le nom de l'annotation. Vous devez entrer un nom unique pour l'annotation.
+
+* *Description*
++
+Indique une description significative de l'annotation.
+
+
+
+
+
+== Valeurs d'annotation
+
+* *Ajouter*
++
+Ajoute une nouvelle valeur à l'annotation sélectionnée.
+
+* *Supprimer*
++
+Supprime la valeur sélectionnée pour une annotation.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer et fermer*
++
+Enregistre la nouvelle annotation et ferme la boîte de dialogue Ajouter une annotation.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Ajouter une annotation sans enregistrer vos modifications.
+
+

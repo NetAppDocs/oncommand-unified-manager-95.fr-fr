@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-volume-transfer-status-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport Volume Transfer Status \(Historical\) vous permet d"analyser les tendances de transfert de volume sur une période donnée. Vous pouvez configurer le rapport pour afficher l"état du transfert de volume pour un intervalle de temps spécifique. Le rapport indique également si le transfert de volume a réussi ou échoué.' 
+---
+= Rapport Volume Transfer Status (Historique)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport Volume Transfer Status (Historique) vous permet d'analyser les tendances de transfert de volume sur une période donnée. Vous pouvez configurer le rapport pour afficher l'état du transfert de volume pour un intervalle de temps spécifique. Le rapport indique également si le transfert de volume a réussi ou échoué.
+
+Le rapport Volume Transfer Status (Historique) s'affiche sous deux formats :
+
+* Graphique de ligne d'état de transfert de volume
+* Vue tabulaire du rapport Volume Transfer Status (Historical)
+
+
+
+
+== Graphique de ligne d'état de transfert de volume
+
+Le graphique linéaire affiche les détails du transfert de volume en traçant le nombre de transferts par rapport à la date. Vous pouvez également voir si un transfert de volume donné a réussi ou échoué.
+
+
+
+== Vue tabulaire de l'état du transfert de volume
+
+* *Nom du cluster source*
++
+Affiche le nom du cluster source.
+
+* *SVM source*
++
+Affiche le nom de la machine virtuelle de stockage (SVM).
+
+* *Nom du volume source*
++
+Affiche le nom du volume source.
+
+* *Nom du cluster de destination*
++
+Affiche le nom du cluster de destination.
+
+* *SVM de destination*
++
+Affiche le nom du SVM de destination.
+
+* *Nom du volume de destination*
++
+Affiche le nom du volume de destination.
+
+* *Résultat d'opération*
++
+Indique si le transfert de volume a réussi.
+
+* *Heure de début*
++
+Affiche l'heure de début du transfert de volume.
+
+* *Heure de fin*
++
+Affiche l'heure de fin du transfert de volume.
+
+* *Durée du transfert (hh:mm:ss)*
++
+Affiche le temps nécessaire (en heures) pour terminer le transfert de volume.
+
+* *Taille du transfert (MB)*
++
+Affiche la taille (en Mo) du volume transféré.
+
+* *Type d'opération*
++
+Affiche le type de transfert de volume.
+
+

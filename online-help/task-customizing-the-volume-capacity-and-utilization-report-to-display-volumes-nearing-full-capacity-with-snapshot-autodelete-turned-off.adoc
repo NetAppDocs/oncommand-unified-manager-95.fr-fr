@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Capacity and Utilization pour afficher les volumes triés en augmentant l"ordre d"utilisation de leur capacité de volume. Cela vous permet d"afficher les volumes qui atteignent leur pleine capacité.' 
+---
+= Personnalisation du rapport Volume Capacity and Utilization pour afficher les volumes dont la capacité est proche de la pleine capacité avec la fonction Snapshot Autodelete désactivée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Capacity and Utilization pour afficher les volumes triés en augmentant l'ordre d'utilisation de leur capacité de volume. Cela vous permet d'afficher les volumes qui atteignent leur pleine capacité.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par SVM, cluster ou volume, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les volumes dont la capacité est presque totale, cliquez dans la colonne *jours à plein*, puis cliquez sur image:../media/sort-asc.gif[""] icône.
+. Pour filtrer les volumes dont la fonction de suppression automatique de l'instantané est désactivée, cliquez dans la colonne *Snapshot Autodelete* et ouvrez la boîte de dialogue *Filter* en cliquant sur image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *Egal à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *Désactivé*.
+. Cliquez sur *OK*.
+

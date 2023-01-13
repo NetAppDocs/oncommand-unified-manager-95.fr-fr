@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ce flux de travail fournit un exemple de résolution d"une condition de carte Flash hors ligne. Dans ce scénario, vous êtes administrateur ou opérateur surveillant le tableau de bord pour vérifier si des problèmes de disponibilité sont présents. Une carte flash est hors ligne et vous souhaitez déterminer la cause possible du problème et la résolution du problème.' 
+---
+= Résolution d'une condition de carte flash hors ligne
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce flux de travail fournit un exemple de résolution d'une condition de carte Flash hors ligne. Dans ce scénario, vous êtes administrateur ou opérateur surveillant le tableau de bord pour vérifier si des problèmes de disponibilité sont présents. Une carte flash est hors ligne et vous souhaitez déterminer la cause possible du problème et la résolution du problème.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Les informations sur les événements et les liens affichés dans la zone disponibilité de la page Unified ManagerDashboards/Présentation surveillent la disponibilité globale des ressources de stockage de données sur les clusters surveillés vous permettent de diagnostiquer des événements spécifiques susceptibles d'affecter cette disponibilité.
+
+Dans ce scénario, la page tableaux de bord/vue d'ensemble affiche l'événement cartes Flash hors ligne dans sa section incidents de disponibilité. Si une carte Flash est hors ligne, la disponibilité des données stockées est entravée par une altération des performances du nœud de cluster sur lequel il est installé. Vous pouvez effectuer les étapes suivantes pour localiser et identifier le problème potentiel :
+
+
+
+== Étapes
+
+. Dans le panneau *disponibilité* de la section *incidents et risques non résolus*, cliquez sur le lien hypertexte affiché pour cartes Flash hors ligne.
++
+La page Détails de l'événement pour l'incident de disponibilité s'affiche.
+
+. Sur la page *Event* details, vous pouvez consulter les informations affichées dans le champ cause et effectuer une ou plusieurs des tâches suivantes :
++
+** Attribuez l'événement à un administrateur. xref:task-assigning-events-to-specific-users.adoc[Attribution d'événements]
+** Cliquez sur la source de l'événement, dans ce cas le nœud de cluster sur lequel la carte Flash hors ligne est située, pour obtenir plus d'informations sur ce nœud. xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[Exécution d'une action corrective pour une carte flash hors ligne]
+** Accuser réception de l'événement. xref:task-acknowledging-and-resolving-events.adoc[Confirmation et résolution des événements]
+
+
+

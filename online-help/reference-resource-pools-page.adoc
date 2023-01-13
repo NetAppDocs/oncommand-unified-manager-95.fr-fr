@@ -1,0 +1,216 @@
+---
+permalink: online-help/reference-resource-pools-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page protection/pools de ressources affiche les pools de ressources existants et leurs membres, et vous permet de créer, contrôler et gérer des pools de ressources à des fins de provisionnement. 
+---
+= Protection/pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page protection/pools de ressources affiche les pools de ressources existants et leurs membres, et vous permet de créer, contrôler et gérer des pools de ressources à des fins de provisionnement.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Créer*
++
+Lance la boîte de dialogue Créer un pool de ressources, que vous pouvez utiliser pour créer des pools de ressources.
+
+* *Modifier*
++
+Permet de modifier le nom et la description des pools de ressources que vous créez.
+
+* *Supprimer*
++
+Permet de supprimer un ou plusieurs pools de ressources.
+
+
+
+
+
+== Liste Resource pools
+
+La liste pools de ressources affiche (au format tabulaire) les propriétés des pools de ressources existants.
+
+* *Pool de ressources*
++
+Affiche le nom du pool de ressources.
+
+* *Description*
++
+Décrit le pool de ressources.
+
+* *Type SnapLock*
++
+Affiche le type SnapLock utilisé par les agrégats du pool de ressources. Les valeurs valides pour le type SnapLock sont Compliance, Enterprise et non SnapLock. Un pool de ressources ne peut contenir que des agrégats d'un seul type de SnapLock.
+
+* *Capacité totale*
++
+Affiche la capacité totale (en Mo, Go, etc.) du pool de ressources.
+
+* *Capacité utilisée*
++
+Affiche la quantité d'espace (en Mo, Go, etc.) utilisée dans le pool de ressources.
+
+* *Capacité disponible*
++
+Affiche l'espace disponible (en Mo, Go, etc.) dans le pool de ressources.
+
+* *Utilisé %*
++
+Affiche le pourcentage d'espace utilisé dans le pool de ressources.
+
+
+
+
+
+== Boutons de commande de la liste des membres
+
+Les boutons de commande liste membres vous permettent d'effectuer les tâches suivantes :
+
+* *Ajouter*
++
+Vous permet d'ajouter des membres au pool de ressources.
+
+* *Supprimer*
++
+Vous permet de supprimer un ou plusieurs membres du pool de ressources.
+
+
+
+
+
+== Liste de membres
+
+La liste membres affiche (au format tabulaire) les membres du pool de ressources et leurs propriétés lorsqu'un pool de ressources est sélectionné.
+
+* *Statut*
++
+Affiche le statut actuel de l'agrégat membre. Le statut peut être critique (image:../media/sev-critical-um60.png[""]), erreur (image:../media/sev-error-um60.png[""]), Avertissement (image:../media/sev-warning-um60.png[""]) Ou Normal (image:../media/sev-normal-um60.png[""]).
+
+* *Nom d'agrégat*
++
+Affiche le nom de l'agrégat membre.
+
+* *État*
++
+Affiche l'état actuel de l'agrégat, qui peut être l'un des suivants :
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture aux volumes hébergés sur cet agrégat est autorisé.
+
+** Limitée
++
+Les opérations limitées (par exemple, la reconstruction avec parité) sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Création
++
+L'agrégat est en cours de création.
+
+** Destruction
++
+L'agrégat est en cours de destruction.
+
+** Échec
++
+L'agrégat ne peut pas être mis en ligne.
+
+** Congelé
++
+L'agrégat ne transmet pas (temporairement) de demandes.
+
+** Incohérent
++
+L'agrégat a été marqué comme corrompu ; vous devez contacter le support technique.
+
+** Fer limité
++
+Les outils de diagnostic ne peuvent pas être exécutés sur l'agrégat.
+
+** Montage
++
+L'agrégat est en cours de montage.
+
+** Partiel
++
+Au moins un disque a été trouvé pour l'agrégat, mais deux ou plusieurs disques sont manquants.
+
+** Mise au repos
++
+L'agrégat est en cours de suspension.
+
+** Suspendu
++
+L'agrégat est suspendu.
+
+** Rétablie
++
+La restauration d'un agrégat est terminée.
+
+** Démonté
++
+L'agrégat a été démonté.
+
+** Démontage
++
+L'agrégat est mis hors ligne.
+
+** Inconnu
++
+L'agrégat est détecté, mais les informations d'agrégat ne sont pas encore récupérées par le serveur Unified Manager.
+
+
+
++
+Par défaut, cette colonne est masquée.
+
+* *Cluster*
++
+Affiche le nom du cluster auquel appartient l'agrégat.
+
+* *Nœud*
++
+Affiche le nom du nœud sur lequel réside l'agrégat.
+
+* *Capacité totale*
++
+Affiche la capacité totale (en Mo, Go, etc.) de l'agrégat.
+
+* *Capacité utilisée*
++
+Affiche la quantité d'espace utilisé dans l'agrégat (en Mo, Go, etc.).
+
+* *Capacité disponible*
++
+Affiche la quantité d'espace disponible (en Mo, Go, etc.) dans l'agrégat.
+
+* *Utilisé %*
++
+Affiche le pourcentage d'espace utilisé dans l'agrégat.
+
+* *Type de disque*
++
+Affiche le type de configuration RAID, qui peut être l'un des suivants :
+
++
+** RAID0 : tous les RAID groupe sont de type RAID0.
+** RAID4 : tous les groupes RAID sont de type RAID4.
+** RAID-DP : tous les groupes RAID sont de type RAID-DP.
+** RAID-TEC : tous les RAID groupes sont de type RAID-TEC.
+** RAID mixte : l'agrégat contient des groupes RAID de différents types (RAID0, RAID4, RAID-DP et RAID-TEC). Par défaut, cette colonne est masquée.
+
+
+

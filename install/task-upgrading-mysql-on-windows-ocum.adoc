@@ -1,0 +1,45 @@
+---
+permalink: install/task-upgrading-mysql-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OnCommand Unified Manager 
+summary: 'Vous pouvez effectuer une mise à niveau vers une version plus récente de MySQL sur le serveur Windows sur lequel Unified Manager est installé afin d"obtenir des correctifs pour les vulnérabilités de sécurité.' 
+---
+= Mise à niveau de MySQL sous Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effectuer une mise à niveau vers une version plus récente de MySQL sur le serveur Windows sur lequel Unified Manager est installé afin d'obtenir des correctifs pour les vulnérabilités de sécurité.
+
+
+
+== Avant de commencer
+
+* Vous devez disposer des privilèges d'administrateur Windows pour le système sur lequel Unified Manager est installé.
+* Vous devez avoir le mot de passe pour l'utilisateur root MySQL.
+
+
+
+
+== Étapes
+
+. Connectez-vous en tant qu'utilisateur administrateur sur la machine hôte Unified Manager.
+. Télécharger la version appropriée de MySQL sur le système cible.
+. Utilisez la console des services Windows pour arrêter les services Unified Manager suivants :
++
+** Unité d'acquisition NetApp OCIE (Ocie-au)
+** Serveur d'applications NetApp OnCommand (Oncommandsvc)
+** MYSQL
+
+
+. Cliquez sur le bouton `.msi` Paquet pour appeler la mise à niveau de MySQL et suivre les instructions à l'écran pour terminer la mise à niveau.
+. Démarrez les services Unified Manager à l'aide de la console des services Windows :
++
+** MYSQL
+** Serveur d'applications NetApp OnCommand (Oncommandsvc)
+** Unité d'acquisition NetApp OCIE (Ocie-au)
+
+
+

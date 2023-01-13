@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lun-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez la page Performance/LUN information pour afficher la liste des attributs physiques et logiques de la LUN. Ces informations peuvent aider à répondre aux questions relatives aux performances. 
+---
+= Page d'informations sur les performances/LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/LUN information pour afficher la liste des attributs physiques et logiques de la LUN. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs des LUN
+
+* *WWN*
++
+Le WWN (World Wide Name) de la LUN.
+
+* *Chemin*
++
+Le chemin complet de la LUN, par exemple, `/vol/vol1/lun1`.
+
+* * Alignement*
++
+Indique l'état d'alignement de la LUN. Valeurs possibles :
+
++
+** Non mappé
+** Aligné
+** Mauvais alignement
+** Un mauvais alignement peut-être
+** Indéterminé
+
+
+* *Capacité (libre/total)*
++
+Espace de stockage total disponible sur la LUN, en gigaoctets et quantité de stockage actuellement disponible.
+
+* *Volume*
++
+Nom du volume auquel appartient la LUN. Vous pouvez cliquer sur le nom pour afficher les détails du volume dans la page Explorateur de performances/volumes.
+
+* *Machine virtuelle de stockage*
++
+Nom du SVM auquel appartient la LUN. Vous pouvez cliquer sur le nom pour afficher les détails des SVM dans la page de l'explorateur de performances/SVM.
+
+* *Nœud*
++
+Nom du nœud sur lequel réside la LUN. Vous pouvez cliquer sur le nom pour afficher les détails du nœud dans la page de l'explorateur performances/nœuds.
+
+* *Cluster*
++
+Nom du cluster auquel appartient la LUN. Vous pouvez cliquer sur le nom pour afficher les détails du cluster dans la page Performance/Cluster Explorer.
+
+* *État*
++
+État de la LUN. Les États valides peuvent être en ligne, hors ligne, nvfail, space-error et Foreign-lun-error.
+
+* *Mappé*
++
+Indique si la LUN est mappée sur un groupe initiateur (vrai) ou non (faux).
+
+

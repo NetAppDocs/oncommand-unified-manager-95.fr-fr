@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-cluster-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilisez la page Performance/Cluster information pour afficher la liste des attributs physiques et logiques du cluster. Ces informations peuvent aider à répondre aux questions relatives aux performances. 
+---
+= Page d'informations sur les performances/le cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la page Performance/Cluster information pour afficher la liste des attributs physiques et logiques du cluster. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs du cluster
+
+* *LIF de gestion*
++
+Le nom de la LIF de cluster management, et si la LIF est actuellement disponible (Up) ou non (Down).
+
+* *Adresse IP*
++
+Adresse IPv4 ou IPv6 de la LIF de gestion du cluster.
+
+* *FQDN*
++
+Nom de domaine complet (FQDN) du LIF de gestion du cluster.
+
+* *Version OS*
++
+Version du logiciel ONTAP installée sur le cluster.
+
++
+[NOTE]
+====
+Si différentes versions du logiciel ONTAP sont installées sur les nœuds du cluster, la version indiquée est le numéro de version le plus faible. Consultez la page Performance/Node information pour afficher la version du logiciel ONTAP installé sur chaque nœud.
+
+====
+* *Numéro de série*
++
+Le numéro d'identification unique du cluster.
+
+* *Modèle / famille*
++
+Le numéro de modèle de la plateforme et la famille de modèles de tous les nœuds du cluster.
+
+* *Capacité (libre/total)*
++
+Espace de stockage total disponible pour le cluster, en gigaoctets, ainsi que la quantité de stockage actuellement disponible.
+
+* *Protocoles autorisés*
++
+Liste de tous les protocoles pouvant être gérés par ce cluster. Les protocoles disponibles sont les suivants : FC/FCoE, iSCSI, HTTP, NVMe, NDMP, NFS et CIFS.
+
+* *Nœuds*
++
+Nombre de nœuds dans ce cluster. Vous pouvez cliquer sur le nombre pour afficher les nœuds sur la page Performance/Node Inventory.
+
+* *Machines virtuelles de stockage*
++
+Le nombre de SVM dans ce cluster. Vous pouvez cliquer sur le nombre pour afficher les SVM sur la page Performance/SVM Inventory.
+
+* *Lifs*
++
+Le nombre de LIFs dans ce cluster. Vous pouvez cliquer sur le nombre pour afficher les LIF dans la page Performance/LIF Inventory.
+
+* *Contact / emplacement*
++
+Si disponible, le nom de l'administrateur du stockage à contacter concernant ce cluster et l'emplacement du cluster.
+
+

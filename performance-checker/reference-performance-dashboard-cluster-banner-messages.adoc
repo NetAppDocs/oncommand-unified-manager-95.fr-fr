@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/reference-performance-dashboard-cluster-banner-messages.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager peut afficher des messages de bannière de cluster sur le tableau de bord des performances pour vous alerter des problèmes liés à un cluster donné. 
+---
+= Messages et descriptions des clusters du tableau de bord des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager peut afficher des messages de bannière de cluster sur le tableau de bord des performances pour vous alerter des problèmes liés à un cluster donné.
+
+|===
+| Bannière message | Description | Solution 
+
+
+ a| 
+`No performance data is being collected from cluster cluster_name. Restart Unified Manager to correct this issue.`
+ a| 
+Le service de collecte Unified Manager s'est arrêté et aucune donnée de performance n'est collectée depuis les clusters.
+ a| 
+Redémarrez Unified Manager pour corriger ce problème. Si le problème persiste, contactez le support technique.
+
+
+
+ a| 
+`More than x hour(s) of historical data is being collected from cluster cluster_name. Current data collections will start after all historical data is collected.`
+ a| 
+Un cycle de collecte de la continuité des données est en cours d'exécution pour récupérer les données de performances en dehors du cycle de collecte en temps réel des performances du cluster.
+ a| 
+Aucune action n'est requise. Les données actuelles sur le rendement seront recueillies une fois le cycle de collecte de la continuité des données terminé.
+
+Un cycle de collecte de continuité des données s'exécute lors de l'ajout d'un nouveau cluster ou lorsqu'Unified Manager n'a pas pu collecter de données de performance actuelles pour une raison ou une autre.
+
+|===

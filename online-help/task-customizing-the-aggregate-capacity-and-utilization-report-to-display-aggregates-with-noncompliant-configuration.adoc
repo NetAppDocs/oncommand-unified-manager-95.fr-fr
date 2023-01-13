@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport capacité/utilisation de l"agrégat pour afficher les agrégats filtrés par le seuil complet. Vous pouvez ainsi afficher les agrégats qui ne sont pas conformes aux règles de l"entreprise.' 
+---
+= Personnalisation du rapport capacité/utilisation de l'agrégat pour afficher les agrégats avec configuration non conforme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport capacité/utilisation de l'agrégat pour afficher les agrégats filtrés par le seuil complet. Vous pouvez ainsi afficher les agrégats qui ne sont pas conformes aux règles de l'entreprise.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster ou paire HA, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour filtrer le seuil d'agrégats ne dépassant pas 85 %, cliquez dans la colonne *espace plein seuil* et ouvrez la boîte de dialogue *filtre* en cliquant sur le bouton image:../media/click-to-filter.gif[""] icône.
+. Dans la liste *condition*, sélectionnez *supérieur à*.
+. Cliquez sur *Sélectionner les valeurs* et sélectionnez *85*.
+. Cliquez sur *OK*.
+

@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez personnaliser le rapport Volume Transfer Status \(Historical\) pour afficher la liste des volumes regroupés par heure d"occurrence entre deux dates.' 
+---
+= Personnalisation du rapport Volume Transfer Status (Historical) pour afficher les volumes regroupés en fonction de l'heure d'occurrence
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Volume Transfer Status (Historique) pour afficher la liste des volumes regroupés par heure d'occurrence entre deux dates.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Supprimer le regroupement par cluster :
++
+.. Dans la colonne qui doit être dégroupée, cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Dans la colonne *Start Time*, ouvrez la boîte de dialogue *Filter* en cliquant sur le bouton image:../media/click-to-filter.gif[""] icône.
+. Dans la liste déroulante *condition*, sélectionnez *entre*.
+. Cliquez sur *Sélectionner les valeurs* et choisissez les valeurs *Date de* et *Date à*.
+. Cliquez sur *OK*.
+

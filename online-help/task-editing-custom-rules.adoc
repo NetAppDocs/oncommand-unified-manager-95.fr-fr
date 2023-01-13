@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-editing-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez modifier une règle pour inclure de nouvelles conditions ou de nouveaux ensembles de conditions dans la règle. Par exemple, si vous souhaitez inclure de nouveaux chemins de répertoire avec les noms de propriétaires, vous pouvez le faire à partir de la boîte de dialogue Modifier la règle. 
+---
+= Modification de règles personnalisées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier une règle pour inclure de nouvelles conditions ou de nouveaux ensembles de conditions dans la règle. Par exemple, si vous souhaitez inclure de nouveaux chemins de répertoire avec les noms de propriétaires, vous pouvez le faire à partir de la boîte de dialogue Modifier la règle.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy est visible uniquement pour les SVM disposant d'Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez un SVM approprié.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Sélectionnez la règle pour laquelle vous souhaitez inclure de nouvelles conditions ou de nouveaux ensembles de conditions.
+. Cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Modifier règle*, ajoutez de nouvelles conditions ou de nouveaux ensembles de conditions :
++
+|===
+| Si vous voulez ajouter... | Cliquez sur... 
+
+
+ a| 
+Une nouvelle condition
+ a| 
+Le image:../media/customrulecreate.gif[""] icône.
+
+
+
+ a| 
+Un nouveau groupe de conditions
+ a| 
+*Ajouter un ensemble de conditions*.
+
+|===
+. Cliquez sur *mettre à jour*.
+. Vérifiez que vos modifications sont appliquées à la règle en développant la règle dans l'onglet *Data Policy*.
+. Prévisualiser toutes les autres modifications apportées à la stratégie de données.
+. Cliquer sur *Activate* pour activer les modifications des propriétés de la règle dans la SVM.
+

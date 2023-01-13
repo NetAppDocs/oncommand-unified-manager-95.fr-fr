@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console-using-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si l"interface utilisateur Unified Manager n"est pas en cours de fonctionnement ou si vous devez effectuer des fonctions qui ne sont pas disponibles dans l"interface utilisateur, vous pouvez accéder à la console de maintenance pour reconfigurer l"appliance virtuelle.' 
+---
+= Accès à la console de maintenance à l'aide de la console de machine virtuelle vSphere
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si l'interface utilisateur Unified Manager n'est pas en cours de fonctionnement ou si vous devez effectuer des fonctions qui ne sont pas disponibles dans l'interface utilisateur, vous pouvez accéder à la console de maintenance pour reconfigurer l'appliance virtuelle.
+
+
+
+== Avant de commencer
+
+Vous devez être l'utilisateur de maintenance. L'appliance virtuelle doit être mise sous tension pour accéder à la console de maintenance.
+
+
+
+== Description de la tâche
+
+
+
+== Étapes
+
+. Dans vSphere client, recherchez l'appliance virtuelle Unified Manager.
+. Cliquez sur l'onglet *Console*.
+. Cliquez dans la fenêtre de la console pour vous connecter.
+. Connectez-vous à la console de maintenance à l'aide de votre nom d'utilisateur et de votre mot de passe.
++
+Après 15 minutes d'inactivité, la console de maintenance vous déconnecte.
+
+

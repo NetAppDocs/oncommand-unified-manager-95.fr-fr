@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-deleting-users-or-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez supprimer un ou plusieurs utilisateurs de la base de données du serveur de gestion pour empêcher certains utilisateurs d"accéder à Unified Manager. Vous pouvez également supprimer des groupes de sorte que tous les utilisateurs du groupe ne puissent plus accéder au serveur de gestion.' 
+---
+= Suppression d'utilisateurs ou de groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer un ou plusieurs utilisateurs de la base de données du serveur de gestion pour empêcher certains utilisateurs d'accéder à Unified Manager. Vous pouvez également supprimer des groupes de sorte que tous les utilisateurs du groupe ne puissent plus accéder au serveur de gestion.
+
+
+
+== Avant de commencer
+
+* Lorsque vous supprimez des groupes distants, vous devez avoir réaffecté les événements qui sont affectés aux utilisateurs des groupes distants.
++
+Si vous supprimez des utilisateurs locaux ou distants, les événements qui sont affectés à ces utilisateurs sont automatiquement affectés.
+
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *utilisateurs* dans le menu de gestion de gauche.
+. Dans la page *Management/Users*, sélectionnez les utilisateurs ou les groupes à supprimer, puis cliquez sur *Delete*.
+. Cliquez sur *Oui* pour confirmer la suppression.
+

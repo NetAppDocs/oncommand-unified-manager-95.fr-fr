@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-using-a-threshold-policy-with-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer une règle de seuil de nœud afin d"être averti dans la page Performance/Node Failover Planning lorsqu"un basculement potentiel dégrade les performances du nœud de basculement.' 
+---
+= Utilisation d'une stratégie de seuil avec la page planification du basculement de nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer une règle de seuil de nœud afin d'être averti dans la page Performance/Node Failover Planning lorsqu'un basculement potentiel dégrade les performances du nœud de basculement.
+
+La règle de seuil de performances définie par le système intitulée « paire HA de nœud sur-utilisée » génère un événement d'avertissement si le seuil est dépassé pendant six périodes de collecte consécutives (30 minutes). Le seuil est considéré comme dépassé si la capacité performance combinée des nœuds d'une paire haute disponibilité dépasse 200 %.
+
+En cas de règle du seuil défini par le système, un basculement risque d'entraîner une augmentation de la latence du nœud de basculement à un niveau inacceptable. Lorsque vous voyez un événement généré par cette règle pour un nœud particulier, vous pouvez accéder à la page Performance/Node Failover Planning de ce nœud pour afficher la valeur de latence prévue due à un basculement.
+
+Outre l'utilisation de cette politique de seuils définie par le système, vous pouvez créer des règles de seuil en utilisant le compteur « capacité de performance utilisée - basculement », puis appliquer la règle aux nœuds sélectionnés. Si vous spécifiez un seuil inférieur à 200 %, vous pouvez recevoir un événement avant que le seuil de la règle définie par le système ne soit atteint. Vous pouvez également spécifier la période minimale pendant laquelle le seuil est dépassé à moins de 30 minutes si vous souhaitez être notifié avant la génération de l'événement de règle défini par le système.
+
+Par exemple, vous pouvez définir une règle de seuil pour générer un événement d'avertissement si la capacité de performance combinée des nœuds d'une paire haute disponibilité dépasse 175 % pendant plus de 10 minutes. Vous pouvez appliquer cette politique au Node1 et Node2, qui forment une paire HA. Après avoir reçu une notification d'événement d'avertissement pour le nœud 1 ou le nœud 2, vous pouvez afficher la page Performance/Node Failover Planning de ce nœud afin d'évaluer l'impact estimé des performances sur le nœud de basculement. Vous pouvez prendre des actions correctives afin d'éviter de surcharger le nœud de basculement en cas de basculement. Si vous prenez des mesures lorsque la capacité de performance combinée des nœuds est inférieure à 200 %, la latence du nœud de basculement n'atteint pas un niveau inacceptable, même en cas de basculement pendant ce temps.

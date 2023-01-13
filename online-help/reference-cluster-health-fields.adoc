@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport Cluster Inventory fournit des informations sur les ressources disponibles pour les composants du cluster afin de comprendre les risques potentiels dus à l"insuffisance des ressources.' 
+---
+= Rapport sur l'inventaire du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport Cluster Inventory fournit des informations sur les ressources disponibles pour les composants du cluster afin de comprendre les risques potentiels dus à l'insuffisance des ressources.
+
+
+
+== Vue tabulaire du rapport d'inventaire du cluster
+
+* *Cluster*
++
+Affiche le nom du cluster.
+
+* *Paire HA*
++
+Affiche la valeur de la paire HA obtenue en formant deux nœuds.
+
+* *Nœud*
++
+Affiche le nom des nœuds.
+
+* *Modèle*
++
+Affiche le nom du modèle.
+
+* *Version OS*
++
+Affiche la version de ONTAP utilisée.
+
+* *Système 100 % Flash optimisé*
++
+Indique si le nœud est configuré pour prendre en charge uniquement les disques SSD.
+
+* *Numéro de série*
++
+Affiche le numéro de série du nœud.
+
+* *Version du micrologiciel*
++
+Affiche la version du firmware du nœud.
+
+* *Nombre SVM*
++
+Affiche le nombre de SVM contenu par le cluster.
+
+* *Nombre de ports FC*
++
+Affiche le nombre de ports FC contenus par le nœud.
+
+* *Nombre de ports FCoE*
++
+Affiche le nombre de ports FCoE contenus par le nœud.
+
+* *Nombre de ports Ethernet*
++
+Affiche le nombre de ports ethernet contenus par le nœud.
+
+* *Nombre de cartes Flash*
++
+Affiche le nombre de cartes Flash installées sur les nœuds de votre data Center afin de pouvoir surveiller les problèmes potentiels.
+
+* *Taille de la carte Flash (Go)*
++
+Affiche la taille des cartes flash installées sur les nœuds.
+
+* *Nombre de tiroirs disques*
++
+Affiche le nombre de tiroirs disques contenus par le nœud.
+
+* *Nombre de disques*
++
+Affiche le nombre de disques d'un nœud.
+
+

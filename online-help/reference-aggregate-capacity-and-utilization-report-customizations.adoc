@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser les rapports pour afficher diverses informations sur les agrégats. 
+---
+= Personnalisation du rapport capacité/utilisation agrégé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser les rapports pour afficher diverses informations sur les agrégats.

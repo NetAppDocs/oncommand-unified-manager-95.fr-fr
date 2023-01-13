@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"horodatage qui apparaît dans les données d"état et de performance collectées, ou qui apparaît comme temps de détection d"un événement, est basé sur l"heure du cluster ONTAP, ajustée au fuseau horaire défini sur le navigateur Web.' 
+---
+= Signification de l'horodatage dans les données et les événements collectées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'horodatage qui apparaît dans les données d'état et de performance collectées, ou qui apparaît comme temps de détection d'un événement, est basé sur l'heure du cluster ONTAP, ajustée au fuseau horaire défini sur le navigateur Web.
+
+Nous vous recommandons vivement d'utiliser un serveur NTP (Network Time Protocol) pour synchroniser l'heure sur vos serveurs Unified Manager, vos clusters ONTAP et vos navigateurs Web.
+
+[NOTE]
+====
+Si vous voyez des horodatages qui semblent incorrects pour un cluster spécifique, vous pouvez vérifier que l'heure du cluster a été correctement définie.
+
+====

@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-selecting-performance-charts-to-display.html 
+sidebar: sidebar 
+keywords:  
+summary: La liste déroulante choisir les graphiques vous permet de sélectionner les types de diagrammes de performance à afficher dans le volet compteurs. Vous pouvez ainsi afficher des données et des compteurs spécifiques en fonction de vos besoins de performances. 
+---
+= Sélectionnez les graphiques de performances à afficher
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La liste déroulante choisir les graphiques vous permet de sélectionner les types de diagrammes de performance à afficher dans le volet compteurs. Vous pouvez ainsi afficher des données et des compteurs spécifiques en fonction de vos besoins de performances.
+
+
+
+== Étapes
+
+. Dans le volet *Counter Charts*, cliquez sur la liste déroulante *Choose charts*.
+. Ajouter ou supprimer des graphiques :
++
+|===
+| Pour... | Procédez comme ça... 
+
+
+ a| 
+Ajouter ou supprimer des graphiques individuels
+ a| 
+Cliquez sur les cases à cocher en regard des graphiques que vous souhaitez afficher ou masquer
+
+
+
+ a| 
+Ajouter tous les graphiques
+ a| 
+Cliquez sur *Sélectionner tout*
+
+
+
+ a| 
+Retirez tous les graphiques
+ a| 
+Cliquez sur *désélectionner tout*
+
+|===
++
+Vos sélections de graphiques s'affichent dans le volet compteurs. Notez que lorsque vous ajoutez des graphiques, les nouveaux graphiques sont insérés dans le volet compteurs afin de correspondre à l'ordre des graphiques répertoriés dans la liste déroulante choisir les graphiques. La sélection de graphiques supplémentaires peut nécessiter un défilement supplémentaire.
+
+

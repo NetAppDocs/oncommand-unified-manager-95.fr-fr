@@ -1,0 +1,26 @@
+---
+permalink: health-checker/concept-what-functionality-the-maintenance-console-provides.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La console de maintenance Unified Manager vous permet de conserver les paramètres de votre système Unified Manager et d"effectuer les modifications nécessaires afin d"éviter tout problème.' 
+---
+= Fonctionnalités offertes par la console de maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La console de maintenance Unified Manager vous permet de conserver les paramètres de votre système Unified Manager et d'effectuer les modifications nécessaires afin d'éviter tout problème.
+
+Selon le système d'exploitation sur lequel Unified Manager est installé, la console de maintenance offre les fonctions suivantes :
+
+* Résolvez les problèmes liés à votre appliance virtuelle, notamment si l'interface Web Unified Manager n'est pas disponible
+* Mise à niveau vers les dernières versions de Unified Manager
+* Générez des modules de support pour envoyer au support technique
+* Configurez les paramètres réseau
+* Modifier le mot de passe utilisateur de maintenance
+* Connectez-vous à un fournisseur de données externe pour envoyer des statistiques de performances
+* Modifiez la collecte des données de performances interne
+* Restaurez les paramètres de base de données et de configuration de Unified Manager à partir d'une version de sauvegarde précédente.
+

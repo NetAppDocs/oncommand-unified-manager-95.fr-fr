@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les associations \(SVM\) de la machine virtuelle de stockage sont des mappages entre un SVM source et un SVM de destination utilisés par les applications partenaires pour la sélection des ressources et le provisionnement du volume secondaire.' 
+---
+= Présentation des associations de SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les associations SVM (Storage Virtual machine) sont des mappages entre un SVM source et un SVM de destination, utilisés par les applications partenaires pour la sélection des ressources et le provisionnement du volume secondaire.
+
+Les associations sont toujours créées entre un SVM source et un SVM de destination, que le SVM de destination soit une destination secondaire ou tertiaire. En tant que source, vous ne pouvez pas utiliser un SVM de destination secondaire pour créer une association avec un SVM de destination tertiaire.
+
+Vous pouvez associer des SVM de trois manières :
+
+* Associer n'importe quel SVM
++
+Vous pouvez créer une association entre un SVM source principal et un ou plusieurs SVM de destination. Cela signifie que tous les SVM existants qui nécessitent actuellement une protection, ainsi que tous les SVM créés à l'avenir, sont associés aux SVM de destination spécifiés. Par exemple, vous pouvez sauvegarder des applications de plusieurs sources situées à différents emplacements sur un ou plusieurs SVM de destination au sein d'un emplacement unique.
+
+* Associer un SVM en particulier
++
+Vous pouvez créer une association entre un SVM source spécifique et un ou plusieurs SVM de destination spécifiques. Par exemple, si vous fournissons des services de stockage à de nombreux clients dont les données doivent être séparées les unes des autres, vous pouvez choisir cette option pour associer un SVM source spécifique à une SVM de destination spécifique qui n'est attribuée qu'à ce client.
+
+* Associé à un SVM externe
++
+Vous pouvez créer une association entre un SVM source et un volume flexible externe d'un SVM de destination.
+
+

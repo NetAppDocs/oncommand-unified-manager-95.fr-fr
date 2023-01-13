@@ -1,0 +1,47 @@
+---
+permalink: online-help/task-editing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez modifier les relations de protection existantes pour modifier le taux de transfert maximal actuel, la stratégie de protection ou la planification de protection. Vous pouvez modifier une relation pour diminuer la bande passante utilisée pour les transferts ou pour augmenter la fréquence des transferts programmés car les données changent souvent. 
+---
+= Modification des relations de protection à partir de la page des détails Santé/Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les relations de protection existantes pour modifier le taux de transfert maximal actuel, la stratégie de protection ou la planification de protection. Vous pouvez modifier une relation pour diminuer la bande passante utilisée pour les transferts ou pour augmenter la fréquence des transferts programmés car les données changent souvent.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir installé et configuré Workflow Automation.
+
+
+
+
+== Description de la tâche
+
+Les volumes sélectionnés doivent être des destinations de relation de protection. Vous ne pouvez pas modifier les relations lorsque les volumes source, les volumes de partage de charge ou les volumes qui ne sont pas de destination d'une relation SnapMirror ou SnapVault sont sélectionnés.
+
+
+
+== Étapes
+
+. Dans l'onglet *protection* de la page de détails *Santé/Volume*, localisez dans la topologie la relation de protection que vous souhaitez modifier et cliquez dessus avec le bouton droit de la souris.
+. Sélectionnez *Modifier* dans le menu.
++
+Dans le menu *actions*, vous pouvez également sélectionner *relation* > *Modifier* pour modifier la relation pour laquelle vous consultez actuellement les détails.
+
++
+La boîte de dialogue Modifier la relation s'affiche.
+
+. Dans la boîte de dialogue *Modifier la relation*, modifiez le taux de transfert maximal, la stratégie de protection ou le calendrier de protection, selon les besoins.
+. Cliquez sur *appliquer*.
++
+Les modifications sont appliquées aux relations sélectionnées.
+
+

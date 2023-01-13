@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser l"interface utilisateur Web Unified Manager pour confirmer ou éliminer tout risque qu"un volume soit hors ligne, car sa machine virtuelle de stockage hôte \(SVM\) est arrêtée en raison du nœud hébergeant le volume racine de ce SVM en cours de panne.' 
+---
+= Détermination d'un volume hors ligne et de son SVM arrêté, car un nœud est arrêté
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'interface utilisateur Web Unified Manager pour confirmer ou éliminer tout risque qu'un volume soit hors ligne, car sa machine virtuelle de stockage hôte (SVM) est arrêtée du fait du nœud hébergeant le volume racine de ce SVM.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Pour déterminer si le volume hors ligne est provoqué l'arrêt de son SVM hôte car le nœud hébergeant le volume root de ce SVM est arrêté, effectuer les actions suivantes :
+
+
+
+== Étapes
+
+. Localisez et cliquez sur le lien hypertexte affiché sous SVM dans le volet *Related Devices* de la page de détails *Health/Volume* du volume hors ligne.
+. Localisez et cliquez sur le lien hypertexte affiché sous le SVM dans le volet *Related Devices* de la page de détails *Health/Volume* du volume hors ligne.
++
+La page de détails Health/Storage Virtual machine affiche l'état « en cours » ou « en surface » du SVM d'hébergement. Si le statut de la SVM est exécuté, alors la condition de volume offline n'est pas provoquée par le nœud hébergeant le volume root de cette SVM en panne.
+
+. Si l'état du SVM est arrêté, cliquer sur *View SVM* pour mieux identifier la cause de l'arrêt du SVM d'hébergement.
+. Dans l'en-tête de colonne *Health/Storage Virtual machines* Inventory pageSVM, cliquez sur le symbole du filtre image:../media/filtericon-um60.png["Icône du filtre de colonne"] Puis taper le nom du SVM arrêté.
++
+Les informations pour ce SVM sont présentées dans un tableau.
+
+. Sur la page d'inventaire de la santé et du stockage des machines virtuelles**, cliquez sur image:../media/gridviewicon.gif["Icône pour la vue grille"] Puis sélectionnez l'option *Volume racine*.
++
+La colonne Volume Root est ajoutée à l'inventaire du SVM et affiche le nom du volume root du SVM stopped.
+
+. Dans la colonne Volume racine, cliquez sur le nom du volume racine pour afficher la page de détails *Health/Storage Virtual machine* pour ce volume.
++
+Si l'état du volume root du SVM est (en ligne), la condition hors ligne du volume d'origine n'est pas générée, car le nœud hébergeant le volume root de ce SVM est arrêté.
+
+. Si le statut du volume root du SVM est (Offline), localiser et cliquer sur le lien hypertexte affiché sous agrégat dans le volet *Related Devices* de la page de détails *Health/Volume* du SVM root volume.
+. Localisez et cliquez sur le lien hypertexte affiché sous noeud dans le volet périphériques connexes* de la page de détails *Santé/agrégat* de l'agrégat.
++
+L'onglet nœuds de la page d'informations détaillées Santé/Cluster affiche l'état de la paire HA de nœuds vers lesquels le nœud d'hébergement du volume root du SVM appartient. L'état du nœud est indiqué à l'écran.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Après avoir confirmé que la condition de mise hors ligne du volume est provoquée par une condition de SVM hôte hors ligne de ce volume, qui lui-même est causée par le nœud qui héberge le volume racine de ce SVM en panne, contactez l'administrateur ou l'opérateur approprié pour redémarrer manuellement le nœud arrêté.

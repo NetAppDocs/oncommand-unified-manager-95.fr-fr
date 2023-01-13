@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page de l"explorateur des performances/LIF fournit une présentation détaillée des performances pour toutes les LIF d"un cluster.' 
+---
+= Page de l'explorateur des performances/LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page de l'explorateur des performances/LIF fournit une présentation détaillée des performances pour toutes les LIF d'un cluster.
+
+La page de l'explorateur d'Performance/LIF vous permet de suivre et de comparer les performances de vos LIF sur une période donnée, ce qui vous aide à résoudre les problèmes et à ajuster les performances de votre LIF.
+
+La fonctionnalité View and compare vous permet de comparer les performances de cette LIF avec :
+
+* Autres LIFs qui sont sur le même port
+* Autres LIF qui se trouvent sur le même SVM
+* Le port sur lequel réside la LIF
+* SVM sur lequel réside la LIF
+
+
+Avec la page de l'explorateur d'Performance/LIF, vous pouvez :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivre et comparer les données de performances LIF
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+

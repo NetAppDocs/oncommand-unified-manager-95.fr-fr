@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-what-a-storage-class-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une classe de stockage définit les caractéristiques d"un agrégat et les paramètres de volume. Vous pouvez définir différentes classes de stockage et associer une ou plusieurs classes de stockage à un Infinite Volume. Vous devez utiliser OnCommand Workflow Automation pour définir des flux de production adaptés à vos besoins en termes de classe de stockage et pour attribuer des classes de stockage à Infinite volumes.' 
+---
+= Qu'est-ce qu'une classe de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une classe de stockage définit les caractéristiques d'un agrégat et les paramètres de volume. Vous pouvez définir différentes classes de stockage et associer une ou plusieurs classes de stockage à un Infinite Volume. Vous devez utiliser OnCommand Workflow Automation pour définir des flux de production adaptés à vos besoins en termes de classe de stockage et pour attribuer des classes de stockage à Infinite volumes.
+
+Vous pouvez définir les caractéristiques suivantes pour une classe de stockage :
+
+* Caractéristiques des agrégats, comme le type de disques à utiliser
+* Des paramètres de volume, comme la compression, la déduplication et la garantie des volumes
+
+
+Par exemple, vous pouvez définir une classe de stockage qui utilise uniquement des agrégats équipés de disques SAS et les paramètres de volume suivants : provisionnement fin avec compression et déduplication activées.
+
+Le schéma suivant illustre un Infinite Volume qui s'étend sur plusieurs nœuds et utilise les classes de stockage suivantes : Gold, Silver et Bronze. Chaque catégorie de stockage peut couvrir deux nœuds ou plus dans un Infinite Volume. Ce schéma illustre également le placement des composants de données dans chaque classe de stockage.
+
+image::../media/infinite-volume-with-storage-classes.gif[Ce graphique est décrit par le texte environnant]

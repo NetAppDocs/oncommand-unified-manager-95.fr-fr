@@ -1,0 +1,56 @@
+---
+permalink: online-help/concept-volume-behavior-during-switchover-and-switchback.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements qui déclenchent un basculement ou un rétablissement entraînent le déplacement des volumes actifs d"un cluster vers l"autre cluster du groupe de reprise sur incident. Les volumes du cluster qui étaient actifs et devaient transmettre des données aux clients sont arrêtés, et les volumes de l"autre cluster sont activés et commencent à transmettre les données. Unified Manager surveille uniquement les volumes actifs et en cours d"exécution.' 
+---
+= Comportement des volumes lors du basculement et du rétablissement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements qui déclenchent un basculement ou un rétablissement entraînent le déplacement des volumes actifs d'un cluster vers l'autre cluster du groupe de reprise sur incident. Les volumes du cluster qui étaient actifs et devaient transmettre des données aux clients sont arrêtés, et les volumes de l'autre cluster sont activés et commencent à transmettre les données. Unified Manager surveille uniquement les volumes actifs et en cours d'exécution.
+
+Comme les volumes sont déplacés d'un cluster à l'autre, il est recommandé de contrôler les deux clusters. Une seule instance de Unified Manager peut contrôler les deux clusters dans une configuration MetroCluster, mais parfois la distance entre les deux sites nécessite l'utilisation de deux instances Unified Manager pour surveiller les deux clusters. La figure suivante présente une seule instance de Unified Manager :
+
+image::../media/opm-mcc-switchover.gif[basculement opm mcc]
+
+Les volumes portant la référence p indiquent les volumes primaires, et les volumes dont l'noms est b sont des volumes de sauvegarde en miroir créés par SnapMirror.
+
+En fonctionnement normal :
+
+* Le cluster A a deux volumes actifs : Vol1p et Vol2p.
+* Le cluster B a deux volumes actifs : Vol3p et Vol4p.
+* Cluster A comporte deux volumes inactifs : Vol3b et Vol4b.
+* Le cluster B a deux volumes inactifs : Vol1b et Vol2b.
+
+
+Les informations relatives à chacun des volumes actifs (statistiques, événements, etc.) sont collectées par Unified Manager. Les statistiques Vol1p et Vol2p sont collectées par le Cluster A et les statistiques Vol3p et Vol4p sont recueillies par le Cluster B.
+
+Après une défaillance majeure, entraîne le basculement des volumes actifs du Cluster B vers le Cluster A :
+
+* Cluster A contient quatre volumes actifs : Vol1p, Vol2p, Vol3b et Vol4b.
+* Le cluster B a quatre volumes inactifs : Vol3p, Vol4p, Vol1b et Vol2b.
+
+
+Comme pendant le fonctionnement normal, les informations relatives à chacun des volumes actifs sont collectées par Unified Manager. Mais dans ce cas, les statistiques Vol1p et Vol2p sont recueillies par le Cluster A, et les statistiques Vol3b et Vol4b sont également recueillies par le Cluster A.
+
+Notez que Vol3p et Vol3b ne sont pas les mêmes volumes, car ils se trouvent sur des clusters différents. Les informations contenues dans Unified Manager pour Vol3p ne sont pas les mêmes que Vol3b :
+
+* Lors du basculement vers le Cluster A, les statistiques et les événements Vol3p ne sont pas visibles.
+* Lors du premier basculement, Vol3b ressemble à un nouveau volume sans informations historiques.
+
+
+Lorsque le Cluster B est réparé et qu'un rétablissement est effectué, Vol3p est de nouveau actif sur le Cluster B, avec les statistiques historiques et un intervalle de statistiques correspondant à la période de basculement. Vol3b n'est pas visible depuis le Cluster A tant qu'un autre basculement se produit :
+
+image::../media/opm-mcc-volumes.gif[volumes opm mcc]
+
+[NOTE]
+====
+* Ainsi, les volumes MetroCluster inactifs, Vol3b sur le Cluster A après rétablissement, sont identifiés par le message « ce volume a été supprimé ». Le volume n'est pas supprimé, mais n'est actuellement pas surveillé par Unified Manager, car il ne s'agit pas du volume actif.
+* Lorsqu'un seul Unified Manager contrôle les deux clusters dans une configuration MetroCluster, la recherche de volume renvoie les informations correspondant au volume actif à ce moment-là. Par exemple, une recherche de « Vol3 » renterait des statistiques et des événements pour Vol3b sur le Cluster A si un basculement s'est produit et Vol3 est devenu actif sur le Cluster A.
+
+
+====

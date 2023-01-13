@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-installation-process-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le workflow d"installation décrit les tâches que vous devez effectuer avant d"utiliser Unified Manager.' 
+---
+= Présentation du processus d'installation sous Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le workflow d'installation décrit les tâches que vous devez effectuer avant d'utiliser Unified Manager.
+
+image::../media/install-flow-on-windows.gif[installer le débit sur les vitres]

@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des disques à un agrégat pour augmenter la capacité de stockage et les performances de cet agrégat. Après l"ajout de disques, vous constatez uniquement une amélioration des performances après la reconstruction de l"agrégat.' 
+---
+= Ajout de disques et reconstruction des agrégats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des disques à un agrégat pour augmenter la capacité de stockage et les performances de cet agrégat. Après l'ajout de disques, vous constatez uniquement une amélioration des performances après la reconstruction de l'agrégat.
+
+Lorsque vous recevez un événement de seuil défini par le système sur la page Détails de l'événement, le texte de description de l'événement répertorie le nom de l'agrégat qui rencontre le problème. Vous pouvez ajouter des disques et reconstruire des données sur cet agrégat.
+
+Les disques que vous ajoutez à l'agrégat doivent déjà exister dans le cluster. Si le cluster ne dispose pas de disques supplémentaires, vous devrez peut-être contacter votre administrateur ou acheter plus de disques. Vous pouvez utiliser OnCommand System Manager ou les commandes ONTAP pour ajouter des disques à un agrégat.
+
+http://www.netapp.com/us/media/tr-3838.pdf["Rapport technique 3838 : Guide de configuration du sous-système de stockage"]

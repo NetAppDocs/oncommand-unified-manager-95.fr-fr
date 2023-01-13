@@ -1,0 +1,81 @@
+---
+permalink: health-checker/reference-system-configuration-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le menu Configuration du système vous permet de gérer votre appliance virtuelle en fournissant diverses options, telles que l"affichage de l"état du serveur, le redémarrage et l"arrêt de la machine virtuelle.' 
+---
+= Menu Configuration du système
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le menu Configuration du système vous permet de gérer votre appliance virtuelle en fournissant diverses options, telles que l'affichage de l'état du serveur, le redémarrage et l'arrêt de la machine virtuelle.
+
+[NOTE]
+====
+Le menu System Configuration n'est pas disponible si Unified Manager est installé sur Red Hat Enterprise Linux, CentOS ou Microsoft Windows.
+
+====
+Les options de menu suivantes sont disponibles :
+
+* *Affichage de l'état du serveur*
++
+Affiche l'état actuel du serveur. Les options d'état incluent en cours d'exécution ou non en cours d'exécution.
+
++
+Si le serveur n'est pas en cours d'exécution, vous devrez peut-être contacter le support technique.
+
+* *Redémarrer la machine virtuelle*
++
+Redémarre la machine virtuelle et arrête tous les services. Après le redémarrage, la machine virtuelle et les services redémarrent.
+
+* *Arrêter la machine virtuelle*
++
+Arrête la machine virtuelle et arrête tous les services.
+
++
+Vous ne pouvez sélectionner cette option qu'à partir de la console de la machine virtuelle.
+
+* *Modifier <utilisateur connecté> Mot de passe utilisateur*
++
+Modifie le mot de passe de l'utilisateur actuellement connecté, qui ne peut être que l'utilisateur de maintenance.
+
+* *Augmenter la taille du disque de données*
++
+Augmente la taille du disque de données (disque 3) de la machine virtuelle.
+
+* *Augmenter la taille du disque d'échange*
++
+Augmente la taille du disque d'échange (disque 2) de la machine virtuelle.
+
+* *Changer fuseau horaire*
++
+Change le fuseau horaire en fonction de votre emplacement.
+
+* *Changer serveur NTP*
++
+Modifie les paramètres du serveur NTP, tels que l'adresse IP ou le nom de domaine complet (FQDN).
+
+* *Restaurer à partir d'une sauvegarde OCUM*
++
+Restaure les paramètres de base de données et de configuration Unified Manager à partir d'une version précédemment sauvegardée.
+
+* *Réinitialiser le certificat du serveur*
++
+Réinitialise le certificat de sécurité du serveur.
+
+* *Changer le nom d'hôte*
++
+Modifie le nom de l'hôte sur lequel l'appliance virtuelle est installée.
+
+* *Retour*
++
+Quitte le menu Configuration du système et revient au menu principal.
+
+* *Quitter*
++
+Quitte le menu de la console de maintenance.
+
+

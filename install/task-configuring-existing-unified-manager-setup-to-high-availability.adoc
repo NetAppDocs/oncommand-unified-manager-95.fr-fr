@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez mettre à jour votre installation Unified Manager et configurer votre environnement de configuration pour assurer une haute disponibilité. 
+---
+= Mise à jour d'une configuration Unified Manager existante pour assurer une haute disponibilité
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez mettre à jour votre installation Unified Manager et configurer votre environnement de configuration pour assurer une haute disponibilité.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir créé un bundle de sauvegarde et de support pour vos données existantes.
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir ajouté un second nœud à votre cluster et installé Veritas Cluster Server (VCS) sur le second nœud.
++
+Consultez le _Veritas Cluster Server 6.2.1 installation Guide_.
+
+* Le nœud que vous venez d'ajouter doit être configuré pour accéder au même emplacement partagé que celui du nœud existant dans la configuration haute disponibilité.
+
+
+
+
+== Étapes
+
+. Connectez-vous au nouveau nœud du cluster.
+. Installez Unified Manager sur le nœud.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installation de Unified Manager sur Red Hat Enterprise Linux ou CentOS]
+
+. Configurez le serveur Unified Manager à l'aide de scripts de configuration sur le nœud existant avec des données.
+. Initiez le basculement manuel vers le second nœud.
+. Exécutez le `perl ha_setup.pl --join -t vcs -f``mount_path` Commande située sur le second nœud du cluster afin que les données du serveur Unified Manager pointe vers la LUN partagée.
+. Si OnCommand Workflow Automation (WFA) est configuré pour Unified Manager, désactivez, puis reconfigurez la connexion WFA.
+. Si SnapProtect est configuré avec Unified Manager, reconfigurez SnapProtect avec une nouvelle adresse IP de cluster et les règles de stockage existantes.
+. Régénérez les rapports personnalisés et ajoutez-les à Unified Manager avec la nouvelle adresse IP du cluster.
+

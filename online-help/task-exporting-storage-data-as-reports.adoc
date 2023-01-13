@@ -1,0 +1,83 @@
+---
+permalink: online-help/task-exporting-storage-data-as-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez exporter des données dans un fichier de valeurs séparées par des virgules \(.csv\) et utiliser les données exportées pour créer des rapports. Par exemple, si 10 événements critiques n"ont pas été résolus, vous pouvez exporter les données depuis la page d"inventaire des événements pour créer un rapport, puis prendre les mesures appropriées.' 
+---
+= Exportation de données vers des fichiers CSV pour la création de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez exporter des données vers des valeurs séparées par des virgules (`.csv`) et utilisez les données exportées pour créer des rapports. Par exemple, si 10 événements critiques n'ont pas été résolus, vous pouvez exporter les données depuis la page d'inventaire des événements pour créer un rapport, puis prendre les mesures appropriées.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Description de la tâche
+
+Vous pouvez exporter des données vers un `.csv` fichier à partir des pages d'inventaire d'intégrité et de performances et de la page d'inventaire des événements.
+
+La fonctionnalité d'exportation n'est pas prise en charge pour les composants d'un Infinite Volume --vous ne pouvez pas exporter les détails des composants vers un `.csv` fichier.
+
+
+
+== Étapes
+
+. Effectuez l'une des opérations suivantes :
++
+|===
+| Pour exporter... | Procédez comme ça... 
+
+
+ a| 
+Détails de l'événement
+ a| 
+Cliquez sur *Evénements*.
+
+
+
+ a| 
+Détails de l'inventaire des objets de stockage
+ a| 
+Cliquez sur *Santé* ou *Performance* dans le menu de navigation gauche, puis sélectionnez un objet de stockage.
+
+
+
+ a| 
+Détails de l'historique de la capacité de stockage et de la protection
+ a| 
+Cliquez sur *Santé* > *agrégats* ou *Santé* > *volumes*, puis sélectionnez un seul agrégat ou volume.
+
+
+
+ a| 
+Les informations qtree ou NFS exporte pour un SVM
+ a| 
+Cliquez sur *Santé* > *SVM*, sélectionnez un seul SVM, puis sélectionnez l'onglet *qtrees* ou *NFS exports*.
+
+
+
+ a| 
+Les performances des 10 principaux objets de stockage sont détaillées
+ a| 
+Cliquez sur *Performance* > *clusters*, puis sélectionnez un cluster et choisissez l'onglet *meilleurs collaborateurs*. Sélectionnez ensuite un objet de stockage et le compteur de performances.
+
+|===
+. Cliquez sur le bouton *Exporter*.
+. Cliquez sur *Exporter au format CSV* pour confirmer la demande d'exportation.
++
+Dans l'onglet Top Performers (exécutants les plus performants), et dans la page de détails du SVM, vous pouvez choisir de télécharger un rapport des statistiques du cluster unique que vous visualisez ou pour tous les clusters du centre de données.
+
++
+Le fichier est téléchargé.
+
+. Ouvrez le `.csv` classer dans l'application appropriée.
+

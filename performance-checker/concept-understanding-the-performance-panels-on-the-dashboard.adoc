@@ -1,0 +1,67 @@
+---
+permalink: performance-checker/concept-understanding-the-performance-panels-on-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le tableau de bord sur les performances de Unified Manager offre une vue d"ensemble générale de l"état des performances de tous les clusters contrôlés dans votre environnement. Les clusters avec des problèmes de performance sont classés en haut de la page par gravité. Les informations du tableau de bord sont automatiquement mises à jour à chaque période de collecte des performances de cinq minutes.' 
+---
+= Présentation du tableau de bord de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord sur les performances de Unified Manager offre une vue d'ensemble générale de l'état des performances de tous les clusters contrôlés dans votre environnement. Les clusters avec des problèmes de performance sont classés en haut de la page par gravité. Les informations du tableau de bord sont automatiquement mises à jour à chaque période de collecte des performances de cinq minutes.
+
+L'image suivante montre un exemple de tableau de bord Unified Manager Performance qui surveille deux clusters :
+
+image::../media/opm-2-dashboard-overview.gif[présentation du tableau de bord opm 2]
+
+Les icônes d'état qui représentent les objets de stockage peuvent être dans les États suivants, triées de la gravité la plus élevée à la gravité la plus faible :
+
+* Critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]) : Un ou plusieurs nouveaux événements de performances critiques ont été signalés pour l'objet.
+* Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) : Un ou plusieurs nouveaux événements de performances d'avertissement ont été signalés pour l'objet.
+* Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]) : Aucun événement de performance n'a été signalé pour l'objet.
+
+
+[NOTE]
+====
+La couleur indique si de nouveaux événements existent pour l'objet. Les événements qui ne sont plus actifs, appelés événements obsolètes, n'affectent pas la couleur de l'icône.
+
+====
+
+
+== Compteurs de performances du cluster
+
+Les catégories de performances suivantes sont affichées pour chaque cluster :
+
+* Latence
++
+Montre la rapidité de réponse du cluster aux demandes des applications client, en millisecondes par opération.
+
+* D'IOPS
++
+Indique la vitesse de fonctionnement du cluster, en nombre d'opérations d'entrée/sortie par seconde.
+
+* Mo/sec
++
+Indique la quantité de données transférées vers et depuis le cluster, en mégaoctets par seconde.
+
+* Performance capacité utilisée
++
+Indique si les nœuds ou les agrégats utilisent trop leur capacité de performance disponible.
+
+* Du stockage
++
+Indique si les ressources de nœuds ou d'agrégats sont sur-utilisées.
+
+
+
+Pour analyser les performances du cluster et des objets de stockage, vous pouvez effectuer l'une des actions suivantes :
+
+* Vous pouvez cliquer sur *Afficher les détails du cluster* pour afficher la page d'accueil du cluster, où vous pouvez afficher des informations détaillées sur les performances et les événements pour le cluster et les objets de stockage sélectionnés.
+* Vous pouvez cliquer sur l'une des icônes d'état rouge ou jaune d'un objet pour afficher la page Inventaire de cet objet, dans laquelle vous pouvez afficher des détails sur l'objet de stockage.
++
+Par exemple, si vous cliquez sur une icône de volume, la page d'inventaire des performances/volumes affiche la liste de tous les volumes du cluster sélectionné, classés parmi les meilleures performances et les meilleures performances.
+
+

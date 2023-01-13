@@ -1,0 +1,164 @@
+---
+permalink: health-checker/reference-what-the-event-information-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La section informations sur les événements de la page Détails de l"événement vous permet d"afficher les détails d"un événement sélectionné, tels que la gravité de l"événement, le niveau d"impact, la zone d"impact et la source de l"événement.' 
+---
+= La section informations sur les événements s'affiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La section informations sur les événements de la page Détails de l'événement vous permet d'afficher les détails d'un événement sélectionné, tels que la gravité de l'événement, le niveau d'impact, la zone d'impact et la source de l'événement.
+
+Les champs qui ne sont pas applicables au type d'événement sont masqués. Vous pouvez afficher les détails de l'événement suivant :
+
+* *Heure de déclenchement d'événement*
++
+Heure à laquelle l'événement a été généré.
+
+* *État*
++
+État de l'événement : nouveau, validé, résolu ou Obsolète.
+
+* *Cause obsolète*
++
+Les actions qui ont causé l'obsolescence de l'événement, par exemple, le problème a été corrigé.
+
+* *Durée de l'événement*
++
+Pour les événements actifs (nouveaux et acquittés), il s'agit du temps entre la détection et l'heure où l'événement a été analysé pour la dernière fois. Pour les événements obsolètes, il s'agit du temps entre la détection et la résolution de l'événement.
+
++
+Ce champ est affiché pour tous les événements de performance et pour les autres types d'événements uniquement après leur résolution ou leur obsolescence.
+
+* *Dernière vue*
++
+Date et heure auxquelles l'événement a été vu pour la dernière fois comme actif.
+
++
+Pour les événements de performances, cette valeur peut être plus récente que l'heure de déclenchement de l'événement, car ce champ est mis à jour après chaque nouvelle collecte de données de performances tant que l'événement est actif. Pour d'autres types d'événements, lorsque l'état Nouveau ou validé est défini sur non, ce contenu n'est pas mis à jour et le champ est donc masqué.
+
+* *Gravité*
++
+La gravité de l'événement : critique (image:../media/sev-critical-um60.png[""]), erreur (image:../media/sev-error-um60.png[""]), Avertissement (image:../media/sev-warning-um60.png[""]), et informations (image:../media/sev-information-um60.gif[""]).
+
+* *Niveau d'impact*
++
+Niveau d'impact événement : incident, risque ou événement.
+
+* *Zone d'impact*
++
+Domaine de l'impact de l'événement : disponibilité, capacité, performance, protection ou configuration.
+
+* *Source*
++
+Nom de l'objet sur lequel l'événement s'est produit.
+
++
+Lorsque vous affichez les détails d'un événement de stratégie QoS partagé, ce champ contient jusqu'à trois des objets de charge de travail qui consomment le plus d'IOPS ou de Mo/sec.
+
++
+Vous pouvez cliquer sur le lien du nom de la source pour afficher la page d'informations de santé ou de performances de cet objet.
+
+* *Annotations source*
++
+Affiche le nom et la valeur de l'annotation pour l'objet auquel l'événement est associé.
+
++
+Ce champ s'affiche uniquement pour les événements d'état sur les clusters, les SVM et les volumes.
+
+* *Groupes de sources*
++
+Affiche les noms de tous les groupes dont l'objet impacté est membre.
+
++
+Ce champ s'affiche uniquement pour les événements d'état sur les clusters, les SVM et les volumes.
+
+* *Type de source*
++
+Type d'objet (par exemple SVM, Volume ou qtree) auquel l'événement est associé.
+
+* *Sur Cluster*
++
+Nom du cluster sur lequel l'événement s'est produit.
+
++
+Vous pouvez cliquer sur le lien du nom du cluster pour afficher la page d'informations de santé ou de performances de ce cluster.
+
+* *Nombre d'objets affectés*
++
+Nombre d'objets affectés par l'événement.
+
++
+Vous pouvez cliquer sur le lien objet pour afficher la page d'inventaire remplie avec les objets actuellement affectés par cet événement.
+
++
+Ce champ s'affiche uniquement pour les événements de performance.
+
+* *Volumes affectés*
++
+Nombre de volumes affectés par cet événement.
+
++
+Ce champ s'affiche uniquement pour les événements de performance sur des nœuds ou des agrégats.
+
+* *Politique déclenchée*
++
+Nom de la police de seuil qui a émis l'événement.
+
++
+Vous pouvez placer le curseur sur le nom de la stratégie pour afficher les détails de la stratégie de seuil. Pour les règles de QoS adaptative, la règle définie, la taille de bloc et le type d'allocation (espace alloué ou espace utilisé) sont également affichés.
+
++
+Ce champ s'affiche uniquement pour les événements de performance.
+
+* *Reconnu par*
++
+Le nom de la personne qui a reconnu l'événement et l'heure à laquelle l'événement a été reconnu.
+
+* *Résolu par*
++
+Le nom de la personne qui a résolu l'événement et l'heure à laquelle l'événement a été résolu.
+
+* *Affecté à*
++
+Nom de la personne affectée au travail sur l'événement.
+
+* *Paramètres d'alerte*
++
+Les informations suivantes concernant les alertes s'affichent :
+
++
+** Si aucune alerte n'est associée à l'événement sélectionné, un lien *Ajouter alerte* s'affiche.
++
+Vous pouvez ouvrir la boîte de dialogue Ajouter une alerte en cliquant sur le lien.
+
+** Si une alerte est associée à l'événement sélectionné, le nom de l'alerte s'affiche.
++
+Vous pouvez ouvrir la boîte de dialogue Modifier l'alerte en cliquant sur le lien.
+
+** Si plusieurs alertes sont associées à l'événement sélectionné, le nombre d'alertes s'affiche.
++
+Vous pouvez ouvrir la page Configuration/alerte en cliquant sur le lien pour afficher plus de détails sur ces alertes.
+
+
+
++
+Les alertes désactivées ne sont pas affichées.
+
+* *Dernière notification envoyée*
++
+Date et heure auxquelles la dernière notification d'alerte a été envoyée.
+
+* *Envoyé via*
++
+Mécanisme utilisé pour envoyer la notification d'alerte : e-mail ou interruption SNMP.
+
+* *Exécution de script précédente*
++
+Nom du script exécuté lors de la génération de l'alerte.
+
+

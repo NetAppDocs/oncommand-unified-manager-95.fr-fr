@@ -1,0 +1,186 @@
+---
+permalink: online-help/reference-management-groups-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Management/Groups vous permet de créer des groupes dans Unified Manager afin de gérer facilement les objets de stockage. Un groupe est une collection dynamique d"objets de stockage \(clusters, volumes et SVM\), qui est définie par les règles de groupe que vous créez pour le groupe.' 
+---
+= Page gestion/groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Management/Groups vous permet de créer des groupes dans Unified Manager afin de gérer facilement les objets de stockage. Un groupe est une collection dynamique d'objets de stockage (clusters, volumes et SVM), qui est définie par les règles de groupe que vous créez pour le groupe.
+
+La page gestion/groupes comprend des onglets permettant d'ajouter, de supprimer ou de modifier un groupe, des règles de groupe et des actions de groupe. Lorsque vous vous connectez en tant qu'opérateur, vous n'aurez accès qu'en lecture à la page. Vous pouvez accéder aux boutons d'ajout, de modification ou de suppression de chaque onglet lorsque vous vous connectez en tant qu'administrateur de stockage ou administrateur Unified Manager.
+
+
+
+== Onglet groupes
+
+L'onglet groupes affiche le nom et la description des groupes que vous avez créés. Vous pouvez effectuer des tâches telles que l'ajout, la modification ou la suppression d'un groupe. L'onglet affiche également le nombre d'actions de groupe et de règles de groupe associées à un groupe, le nombre de clusters, de SVM et de volumes du groupe.
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Affiche la boîte de dialogue Ajouter un groupe, qui vous permet d'ajouter un groupe et de fournir un nom et une description pour le groupe.
+
++
+Vous pouvez également appliquer des règles de groupe ultérieurement au groupe pour inclure des objets de stockage.
+
+* *Modifier*
++
+Affiche la boîte de dialogue Modifier le groupe, qui permet de modifier le nom et la description du groupe sélectionné.
+
+* *Supprimer*
++
+Supprime le groupe sélectionné.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, au format tabulaire, les groupes que vous avez créés dans Unified Manager. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées. Par défaut, la liste est triée par nom de groupe.
+
+* *Nom*
++
+Affiche le nom du groupe.
+
+* *Description*
++
+Affiche la description du groupe.
+
+* *Règles associées*
++
+Affiche le nombre de règles ajoutées au groupe.
+
+* *Actions associées*
++
+Affiche le nombre d'actions de groupe ajoutées au groupe.
+
+* *Clusters applicables*
++
+Affiche le nombre de clusters inclus dans le groupe.
+
+* *SVM applicables*
++
+Affiche le nombre de SVM inclus dans le groupe.
+
+* *Volumes applicables*
++
+Affiche le nombre de volumes inclus dans le groupe.
+
+
+
+
+
+== Règles de groupe
+
+L'onglet règles de groupe affiche les règles de groupe que vous avez créées pour que les groupes contiennent des objets de stockage. Vous pouvez effectuer des tâches telles que l'ajout, la modification ou la suppression d'une règle de groupe. L'onglet affiche également le nom du groupe pour lequel la règle de groupe est créée et l'objet de stockage pour lequel la règle est appliquée. Vous pouvez également afficher le nombre d'objets de stockage correspondant à la règle de groupe.
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Affiche la boîte de dialogue Ajouter une règle de groupe, qui permet de créer des règles de groupe pour les objets de stockage.
+
+* *Modifier*
++
+Affiche la boîte de dialogue Modifier la règle de groupe, qui permet de reconfigurer les règles de groupe configurées précédemment.
+
+* *Supprimer*
++
+Supprime la règle de groupe sélectionnée.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, au format tabulaire, les règles de groupe que vous avez créées pour un objet de stockage spécifique (clusters, volumes ou SVM) et le nombre d'objets de stockage qui satisfont à la règle de groupe définie.
+
+* *Nom*
++
+Affiche le nom de la règle.
+
+* *Groupe associé*
++
+Affiche le nom du groupe pour lequel la règle de groupe est définie.
+
+* *Type d'objet cible*
++
+Affiche le type d'objet de stockage auquel la règle de groupe est appliquée.
+
+* *Objets applicables*
++
+Affiche le nombre d'objets de stockage inclus dans le groupe en fonction de la règle de groupe.
+
+
+
+
+
+== Onglet actions de groupe
+
+L'onglet actions de groupe affiche le nom et le type des actions de groupe que vous définissez pour les groupes. Vous pouvez effectuer des tâches telles que l'ajout, la modification, la suppression ou la réorganisation des actions de groupe. L'onglet affiche également le nom du groupe sur lequel l'action de groupe est appliquée.
+
+
+
+== Boutons de commande
+
+* *Ajouter*
++
+Affiche la boîte de dialogue Ajouter une action, qui permet de créer des actions de groupe pour un groupe d'objets de stockage. Par exemple, vous pouvez définir les niveaux de seuil des objets de stockage d'un groupe.
+
+* *Modifier*
++
+Affiche la boîte de dialogue Modifier l'action, qui permet de reconfigurer les actions de groupe configurées précédemment.
+
+* *Supprimer*
++
+Supprime l'action de groupe sélectionnée.
+
+* *Réordonner*
++
+Affiche la boîte de dialogue Réordonner les actions de groupe pour réorganiser l'ordre des actions de groupe.
+
+
+
+
+
+== Vue liste
+
+La vue liste affiche, au format tabulaire, les actions de groupe que vous avez créées pour les groupes du serveur Unified Manager. Vous pouvez utiliser les filtres de colonne pour personnaliser les données affichées.
+
+* *Rang*
++
+Affiche l'ordre des actions de groupe à appliquer sur les objets de stockage d'un groupe.
+
+* *Nom*
++
+Affiche le nom de l'action de groupe.
+
+* *Groupe associé*
++
+Affiche le nom du groupe pour lequel l'action de groupe est définie.
+
+* *Type d'action*
++
+Affiche le type d'action de groupe que vous pouvez effectuer sur les objets de stockage d'un groupe.
+
++
+Vous ne pouvez pas créer plusieurs actions de groupe du même type d'action pour un groupe. Par exemple, vous pouvez créer une action de groupe pour définir des seuils de volume pour un groupe. Cependant, vous ne pouvez pas créer une autre action de groupe pour le même groupe afin de modifier les seuils de volume.
+
+* *Description*
++
+Affiche la description de l'action de groupe.
+
+

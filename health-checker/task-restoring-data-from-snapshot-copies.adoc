@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'En cas de perte de données suite à un incident ou suite à la suppression accidentelle de répertoires ou de fichiers, Unified Manager permet de localiser et de restaurer les données à partir d"une copie Snapshot.' 
+---
+= Restauration des données à partir de copies Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En cas de perte de données suite à un incident ou suite à la suppression accidentelle de répertoires ou de fichiers, Unified Manager permet de localiser et de restaurer les données à partir d'une copie Snapshot.
+
+
+
+== Description de la tâche
+
+Vous pouvez restaurer des données depuis deux emplacements dans l'interface utilisateur Web Unified Manager.
+
+
+
+== Étapes
+
+. Restaurez les données à l'aide de l'une des tâches suivantes :
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[Restaurez les données à partir de la page Détails de l'intégrité/volume].
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[Restaurez les données à partir de la page Santé/volumes].
+
+
+

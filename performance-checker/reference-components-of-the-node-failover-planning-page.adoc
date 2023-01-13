@@ -1,0 +1,78 @@
+---
+permalink: performance-checker/reference-components-of-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les composants de la page Performance/Node Failover Planning s"affichent dans une grille et dans le volet de comparaison. Vous pouvez ainsi évaluer l"impact d"un basculement de nœud sur les performances du nœud qui Takeover.' 
+---
+= Composants de la page planification de basculement de nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les composants de la page Performance/Node Failover Planning s'affichent dans une grille et dans le volet de comparaison. Vous pouvez ainsi évaluer l'impact d'un basculement de nœud sur les performances du nœud qui Takeover.
+
+
+
+== Grille des statistiques de performances
+
+La page Performance/Node Failover Planning affiche une grille contenant des statistiques de latence, d'IOPS, d'utilisation et de capacité de performances utilisées.
+
+[NOTE]
+====
+Il se peut que les valeurs d'IOPS affichées sur cette page et sur la page de l'explorateur de performances/nœuds ne soient pas identiques.
+
+====
+Dans la grille, chaque nœud est associé à l'un des rôles suivants :
+
+* Primaire
++
+Nœud qui prend le relais du partenaire de haute disponibilité lorsque le partenaire tombe en panne. L'objet racine est toujours le nœud principal.
+
+* En tant que partenaire
++
+Le nœud qui échoue dans le scénario de basculement.
+
+* Basculement estimé
++
+Identique au nœud principal. Les statistiques de performances affichées pour ce nœud affichent les performances du nœud de basculement après le basculement du partenaire en panne.
+
+
+
+[NOTE]
+====
+Bien que le workload du nœud de basculement soit équivalent aux workloads combinés des deux nœuds après un basculement, les statistiques du nœud de basculement estimé ne correspondent pas à la somme des statistiques du nœud principal et du nœud partenaire. Par exemple, si la latence du nœud principal est de 2 ms/op et que la latence du nœud partenaire est de 3 ms/op, le nœud de basculement estimé peut avoir une latence de 4 ms/op. Cette valeur est un calcul effectué par Unified Manager.
+
+====
+Vous pouvez cliquer sur le nom du nœud partenaire si vous souhaitez qu'il devienne l'objet racine. Une fois que la page Explorateur de performances/nœuds est affichée, vous pouvez cliquer sur l'onglet *planification de basculement* pour voir comment les performances changent dans ce scénario de défaillance de nœud. Par exemple, si le nœud 1 est le nœud principal et que le nœud 2 est le nœud partenaire, vous pouvez cliquer sur Node2 pour en faire le nœud principal. De cette manière, vous pouvez voir comment les modifications estimées s'matière à la performance en fonction de la panne de chaque nœud.
+
+
+
+== Panneau de comparaison
+
+La liste ci-dessous décrit les composants affichés dans le volet comparaison par défaut :
+
+* *Graphiques d'événements*
++
+Elles s'affichent au même format que celles de la page Performance Explorer des nœuds/performances. Ils sont applicables uniquement au nœud principal.
+
+* *Diagrammes de compteur*
++
+Ils affichent les statistiques historiques du compteur de performances affiché dans la grille. Sur chaque graphique, le graphique du nœud de basculement estimé affiche les performances estimées en cas de basculement.
+
++
+Supposons par exemple que le tableau utilisation indique 73 % pour le nœud de basculement estimé à 11 h 00 Le 8 février. En cas de basculement, l'utilisation du nœud de basculement se serait alors révélée à 73 %.
+
++
+Les statistiques historiques vous aident à trouver le temps optimal pour initier un basculement, réduisant ainsi le risque de surcharge du nœud de reprise. Vous pouvez planifier un basculement uniquement à des moments où les performances prévues du nœud de basculement sont acceptables.
+
+
+
+Par défaut, les statistiques de l'objet racine et du nœud partenaire sont affichées dans le volet comparaison. Contrairement à la page Explorateur de performances/nœuds, cette page n'affiche pas le bouton *Ajouter* pour vous permettre d'ajouter des objets pour la comparaison des statistiques.
+
+Vous pouvez personnaliser le volet de comparaison de la même manière que dans la page Explorateur de performances/nœuds. La liste suivante fournit des exemples de personnalisation des graphiques :
+
+* Cliquez sur le nom d'un nœud pour afficher ou masquer les statistiques du nœud dans les compteurs.
+* Cliquez sur *Zoom View* pour afficher un graphique détaillé pour un compteur particulier dans une nouvelle fenêtre.
+

@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si vous avez besoin de résoudre des problèmes dans l"espace de stockage de votre Infinite Volume, vous pouvez modifier les paramètres de seuil de la capacité d"Infinite Volume en fonction des besoins de votre entreprise. Lorsqu"un seuil est franchi, des événements sont générés et vous recevez des notifications si vous avez configuré des alertes pour de tels événements.' 
+---
+= Modification des paramètres de seuil d'Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez besoin de résoudre un problème d'espace de stockage d'Infinite Volume, vous pouvez modifier les paramètres de seuil de la capacité d'Infinite Volume en fonction des besoins de votre entreprise. Lorsqu'un seuil est franchi, des événements sont générés et vous recevez des notifications si vous avez configuré des alertes pour de tels événements.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez un SVM avec Infinite Volume.
+. Dans la page de détails *Health/Storage Virtual machine*, cliquez sur *actions* > *Edit seuils*.
+. Dans la boîte de dialogue *Edit SVM with Infinite Volume seuils*, modifiez les seuils comme requis.
+. Cliquez sur *Enregistrer et fermer*.
+

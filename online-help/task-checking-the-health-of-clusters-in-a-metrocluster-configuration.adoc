@@ -1,0 +1,58 @@
+---
+permalink: online-help/task-checking-the-health-of-clusters-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser Unified Manager pour vérifier l"état de santé opérationnel des clusters et de leurs composants dans une configuration MetroCluster. Si les clusters étaient impliqués dans un événement de performances détecté par Unified Manager, l"état de santé peut vous aider à déterminer si un problème matériel ou logiciel a contribué à l"événement.' 
+---
+= Vérification de l'état de santé des clusters dans une configuration MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser Unified Manager pour vérifier l'état de santé opérationnel des clusters et de leurs composants dans une configuration MetroCluster. Si les clusters étaient impliqués dans un événement de performances détecté par Unified Manager, l'état de santé peut vous aider à déterminer si un problème matériel ou logiciel a contribué à l'événement.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+* Vous devez avoir analysé un événement de performance pour une configuration MetroCluster et obtenu le nom du cluster concerné.
+* Les deux clusters de la configuration MetroCluster doivent être surveillés par la même instance de Unified Manager.
+
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements* pour afficher la liste des événements.
+. Dans le panneau filtre, sélectionnez tous les filtres MetroCluster dans la catégorie *Type de source*.
+. Cliquez sur le nom du cluster en regard d'un événement MetroCluster.
++
+La page d'inventaire Health/clusters s'affiche avec des informations détaillées sur l'événement.
+
++
+[NOTE]
+====
+Si aucun événement MetroCluster n'est affiché, vous pouvez utiliser la barre de recherche pour rechercher le nom du cluster impliqué dans l'événement de performances.
+
+====
+. Sélectionnez l'onglet *connectivité MetroCluster* pour afficher l'intégrité de la connexion entre le cluster sélectionné et son cluster partenaire.
++
+image::../media/opm-um-mcc-connectivity-tab-png.gif[Onglet Unified Manager MetroCluster Connectivity]
+
++
+Dans cet exemple, les noms et les composants du cluster local et de son cluster partenaire sont affichés. Une icône jaune ou rouge indique un événement de santé pour le composant mis en surbrillance. L'icône connectivité représente le lien entre les clusters. Vous pouvez pointer le curseur de la souris sur une icône pour afficher les informations sur les événements ou cliquer sur l'icône pour afficher les événements. Un problème de santé peut avoir contribué à l'événement de performance sur l'un ou l'autre des clusters.
+
++
+Unified Manager surveille le composant NVRAM de la liaison entre les clusters. Si l'icône des commutateurs FC sur le cluster local ou partenaire ou l'icône de connectivité est rouge, un problème de santé de la liaison peut avoir causé l'événement de performances.
+
+. Sélectionnez l'onglet *réplication MetroCluster*.
++
+image::../media/opm-um-mcc-replication-tab-png.gif[Onglet MetroCluster Replication de Unified Manager]
+
++
+Dans cet exemple, si l'icône NVRAM du cluster local ou partenaire est jaune ou rouge, un problème de santé lié à la mémoire NVRAM peut avoir provoqué l'événement de performances. Si aucune icône rouge ou jaune n'est affichée sur la page, un problème de performances peut avoir été causé par l'événement de performances du cluster partenaire.
+
+

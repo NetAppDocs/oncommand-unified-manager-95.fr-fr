@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-port-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Les événements de port fournissent le statut des ports du cluster, de sorte que vous puissiez surveiller les modifications ou les problèmes sur le port, comme si le port est en panne. 
+---
+= Événements de port
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de port fournissent le statut des ports du cluster, de sorte que vous puissiez surveiller les modifications ou les problèmes sur le port, comme si le port est en panne.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Etat du port Down (ocumEvtPortStatusDown)
+ a| 
+Gestion des
+ a| 
+Nœud
+ a| 
+Primordial
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique de Mbit/s du port réseau dépassé (ocumNetworkPortMbpsincident)
+ a| 
+Gestion des
+ a| 
+Port
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement Mbit/s du port réseau dépassé (ocumNetworkPortMbpsWarning)
+ a| 
+Risques
+ a| 
+Port
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mbit/s du port FCP dépassé (ocumFcpPortMbpsincident)
+ a| 
+Gestion des
+ a| 
+Port
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de Mbit/s du port FCP dépassé (ocumFcpPortMbpsWarning)
+ a| 
+Risques
+ a| 
+Port
+ a| 
+Avertissement
+
+
+
+ a| 
+Violation du seuil critique d'utilisation des ports réseau (incident liés à l'ocusNetworkUtilazationincident)
+ a| 
+Gestion des
+ a| 
+Port
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'utilisation des ports réseau dépassé (avertissement concernant l'oocusNetworkUtilazationWarning)
+ a| 
+Risques
+ a| 
+Port
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique d'utilisation du port FCP dépassé (ocumFcpPortUtilizincident)
+ a| 
+Gestion des
+ a| 
+Port
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'utilisation du port FCP dépassé (avertissement concernant l'ocumFcpPortUtilizationWarning)
+ a| 
+Risques
+ a| 
+Port
+ a| 
+Avertissement
+
+|===

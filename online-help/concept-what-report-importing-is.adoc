@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez importer un rapport à l"aide de l"option Importer un rapport depuis Unified Manager et enregistrer le rapport importé avec un nom et une brève description. En important des rapports, vous pouvez ajouter des rapports personnalisés à votre environnement en plus des rapports standard fournis dans Unified Manager.' 
+---
+= Qu'est-ce que l'importation de rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez importer un rapport à l'aide de l'option *Import Report* de Unified Manager et enregistrer le rapport importé avec un nom et une brève description. En important des rapports, vous pouvez ajouter des rapports personnalisés à votre environnement en plus des rapports standard fournis dans Unified Manager.
+
+Vous pouvez importer un `.rptdesign` fichier déjà créé. Vous pouvez exécuter, partager, planifier et supprimer un rapport importé.
+
+Unified Manager stocke les fichiers journaux des rapports d'importation dans les fichiers jboss.log, ocum-report.log et ocumserver-debug.log.
+
+[NOTE]
+====
+L'assistance clientèle ne vous aidera pas à concevoir des rapports, mais elle vous aidera à résoudre les problèmes rencontrés lors d'une opération d'importation de rapports.
+
+====
+La fonction d'importation de rapport inclut le support suivant :
+
+* Rapports avec plusieurs en-têtes, dans lesquels la plage de colonnes est définie sur 1 (`colspan=1`)
+* Rapports avec graphiques uniquement
+* Rapports avec listes et grilles uniquement
+* Les mots de passe utilisés dans les rapports doivent être codés au format ""base64". Les rapports utilisant un autre encodage, par exemple le format « jce », causeront une erreur lors du processus d'importation.
+* Les rapports contenant l'agrégation de données doivent inclure l'élément de colonne agrégé dans les données de table du rapport.
+
+
+Les rapports au format texte, CSV et Excel sont pris en charge dans les scénarios suivants :
+
+* Elément de table uniquement dans `.rptdesign` fichier
+* Une table avec une seule ligne d'en-tête
+
+
+[NOTE]
+====
+Vous ne pouvez pas importer des rapports dont la plage de colonnes est supérieure à 1. Si un rapport au format texte, CSV ou Excel comporte plusieurs lignes d'en-tête, seule la première ligne d'en-tête est prise en compte et le reste est ignoré.
+
+====

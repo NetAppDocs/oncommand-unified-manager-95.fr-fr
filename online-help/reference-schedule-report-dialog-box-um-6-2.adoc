@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-schedule-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez planifier la génération des rapports à une fréquence donnée à partir de la boîte de dialogue Rapport de planification. Le rapport est envoyé par e-mail à un ou plusieurs utilisateurs spécifiés dans la boîte de dialogue Rapport de planification. 
+---
+= Boîte de dialogue Rapport de planification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez planifier la génération des rapports à une fréquence donnée à partir de la boîte de dialogue Rapport de planification. Le rapport est envoyé par e-mail à un ou plusieurs utilisateurs spécifiés dans la boîte de dialogue Rapport de planification.
+
+
+
+== Propriétés
+
+Vous pouvez planifier un rapport en spécifiant des propriétés telles que l'adresse électronique de l'utilisateur, le format du rapport et la fréquence à laquelle le rapport est généré.
+
+* *Utilisation du programme existant*
++
+** *Nom de l'annexe*
++
+Affiche tous les noms d'horaires existants. Vous pouvez sélectionner un horaire existant pour vos rapports à partir d'ici.
+
+
+
+* *Créer une nouvelle annexe*
++
+** *Nom de l'annexe*
++
+Permet d'entrer le nom du programme lors de la création d'un nouveau programme.
+
+** *Adresse e-mail du destinataire*
++
+Indique l'adresse électronique de l'utilisateur auquel vous souhaitez envoyer le rapport. Vous pouvez spécifier une ou plusieurs entrées séparées par des virgules. Ce champ est obligatoire.
+
+** *Format de rapport*
++
+Spécifie le format dans lequel vous souhaitez planifier le rapport. L'option _PDF_ est sélectionnée par défaut.
+
+** *Fréquence*
++
+Spécifie la fréquence à laquelle vous souhaitez planifier le rapport. L'option _horaire_ est sélectionnée par défaut.
+
+
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Annexe*
++
+Planifie le rapport avec le modèle enregistré ou mis à jour et ferme la boîte de dialogue Rapport d'horaires.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Rapport d'horaires tout en affichant un message pour enregistrer le modèle de rapport d'horaire.
+
+

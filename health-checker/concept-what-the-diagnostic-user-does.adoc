@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-the-diagnostic-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"accès au diagnostic a pour but de permettre au support technique de vous aider à résoudre les problèmes et de l"utiliser uniquement sur demande du support technique.' 
+---
+= Diagnostique des capacités utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'accès au diagnostic a pour but de permettre au support technique de vous aider à résoudre les problèmes et de l'utiliser uniquement sur demande du support technique.
+
+L'utilisateur de diagnostic peut exécuter des commandes au niveau du système d'exploitation sur demande du support technique, à des fins de dépannage.

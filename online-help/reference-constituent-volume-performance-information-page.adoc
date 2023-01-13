@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-constituent-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page informations sur les volumes de composants/performances vous permet d"afficher la liste des attributs physiques et logiques du volume composant FlexGroup. Ces informations peuvent aider à répondre aux questions relatives aux performances.' 
+---
+= Page informations sur le volume performant/composant
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page informations sur les volumes de composants/performances vous permet d'afficher la liste des attributs physiques et logiques du volume composant FlexGroup. Ces informations peuvent aider à répondre aux questions relatives aux performances.
+
+
+
+== Attributs des volumes constitutifs
+
+* *Type*
++
+Type du composant : lecture-écriture (RW) ou protection des données (DP).
+
+* *Style*
++
+Style de volume ; il s'agit d'un volume composant d'un volume FlexGroup.
+
+* *Cluster*
++
+Nom du cluster auquel appartient ce volume composant FlexGroup. Vous pouvez cliquer sur le nom pour afficher les détails du cluster dans la page Performance/Cluster Explorer.
+
+* *Agrégat*
++
+Nom de l'agrégat sur lequel se trouve ce volume composant FlexGroup. Vous pouvez cliquer sur le nom pour afficher les détails d'un agrégat dans la page de l'explorateur de performances/d'agrégats.
+
+* *FlexGroup*
++
+Nom du volume FlexGroup auquel appartient ce composant. Vous pouvez cliquer sur le nom pour afficher les informations détaillées sur le volume FlexGroup dans la page de l'explorateur Performance/FlexGroup.
+
+* *Machine virtuelle de stockage*
++
+Nom du SVM auquel appartient ce volume composant FlexGroup. Vous pouvez cliquer sur le nom pour afficher les détails des SVM dans la page de l'explorateur de performances/SVM.
+
+* *Politique de hiérarchisation*
++
+La règle de Tiering définie sur le volume. La politique n'affecte que lorsque le volume est déployé sur un agrégat FabricPool. Les politiques disponibles sont les suivantes :
+
++
+** Aucune. Les données de ce volume restent ainsi toujours sur le Tier de performance.
+** Snapshot uniquement. Seules les données Snapshot sont déplacées automatiquement vers le niveau cloud. Toutes les autres données restent sur le Tier de performance.
+** Sauvegarde. Sur les volumes de protection des données, toutes les données utilisateur transférées commencent dans le Tier cloud, mais les lectures ultérieures des clients peuvent déplacer les données fortement sollicitées vers le Tier de performance.
+** Automatique. Les données de ce volume sont automatiquement déplacées entre le Tier de performance et le Tier cloud lorsque ONTAP détermine que les données sont « actives » ou « inactives ».
+
+
+* *Type RAID*
++
+Type de redondance utilisé sur l'agrégat dans lequel réside ce composant. Types possibles :
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
+* *Capacité (libre/total)*
++
+Stockage total disponible dans le composant, en gigaoctets et quantité de stockage actuellement disponible.
+
+

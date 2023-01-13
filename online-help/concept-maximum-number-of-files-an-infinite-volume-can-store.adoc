@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un Infinite Volume peut généralement contenir jusqu"à 2 milliards de fichiers. Si un Infinite Volume est relativement petit, son nombre maximal de fichiers peut être inférieur à 2 milliards.' 
+---
+= Nombre maximal de fichiers qu'un Infinite Volume peut stocker
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un Infinite Volume peut généralement contenir jusqu'à 2 milliards de fichiers. Si un Infinite Volume est relativement petit, son nombre maximal de fichiers peut être inférieur à 2 milliards.
+
+Le nombre maximal de fichiers qu'un Infinite Volume peut contenir est déterminé par la taille de son composant d'espace de noms. Si le composant d'espace de noms est de 10 To, Infinite Volume peut contenir 2 milliards de fichiers. Si le composant de l'espace de noms est inférieur à 10 To, Infinite Volume peut stocker proportionnellement moins de fichiers.
+
+La taille du composant d'espace de noms est approximativement proportionnelle à la taille de l'Infinite Volume, selon plusieurs facteurs, tels que la taille maximale de 10 To dans le composant d'espace de noms, l'espace disponible dans l'agrégat qui contient le composant d'espace de noms et le paramètre SnapDiff.
+
+Dans le cas d'un Infinite Volume à deux nœuds ou d'un Infinite Volume multinœud sans SnapDiff activé, le fait de configurer un Infinite Volume à une taille de 80 To ou plus crée généralement un composant d'espace de noms de 10 To.
+
+Le nombre de fichiers inclut non seulement des fichiers standard, mais également d'autres structures de système de fichiers, telles que des répertoires et des liens symboliques.

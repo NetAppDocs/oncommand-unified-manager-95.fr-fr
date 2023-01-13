@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-sharing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez envoyer des rapports par e-mail et les partager avec un ou plusieurs utilisateurs. 
+---
+= Partage de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez envoyer des rapports par e-mail et les partager avec un ou plusieurs utilisateurs.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Rapports*, puis sur *Exécuter le rapport* pour le rapport souhaité.
++
+La page Détails du rapport s'affiche.
+
+. Cliquez sur *actions* > *partage*.
+. Dans la boîte de dialogue *Share Report*, indiquez l'adresse électronique du destinataire avec lequel vous souhaitez partager le rapport.
++
+Vous pouvez spécifier une ou plusieurs adresses e-mail, séparées par des virgules.
+
+. Indiquez l'objet de l'e-mail.
++
+Par défaut, le nom du rapport apparaît comme objet de l'e-mail.
+
+. Sélectionnez le format du rapport.
++
+L'option _PDF_ est sélectionnée comme format de rapport par défaut. Si le format XHTML est sélectionné, le destinataire doit ouvrir le rapport envoyé par e-mail à l'aide d'un navigateur Web pris en charge.
+
+. Cliquez sur *partager*.
+

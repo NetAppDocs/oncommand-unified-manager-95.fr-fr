@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-exporting-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez exporter une configuration de règle de données depuis Unified Manager vers un fichier. Par exemple, après avoir effectué la sauvegarde requise et, en cas d"incident, vous pouvez exporter la configuration de la stratégie de données depuis le primaire.' 
+---
+= Exportation d'une configuration de stratégie de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez exporter une configuration de règle de données depuis Unified Manager vers un fichier. Par exemple, après avoir effectué la sauvegarde requise et, en cas d'incident, vous pouvez exporter la configuration de la stratégie de données depuis le primaire.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+L'onglet Data Policy, utilisé lors de cette tâche, est affiché uniquement pour les SVM avec Infinite Volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez la SVM appropriée.
+. Cliquez sur *Data Policy*.
++
+La liste des règles de la politique de données pour la SVM sélectionnée avec Infinite Volume est affichée.
+
+. Cliquez sur *Exporter*.
+. Dans la boîte de dialogue spécifique au navigateur, spécifiez l'emplacement vers lequel la configuration de la stratégie de données doit être exportée.
+
+
+
+
+== Résultats
+
+La configuration de la règle de données est exportée en tant que fichier JSON à l'emplacement spécifié.

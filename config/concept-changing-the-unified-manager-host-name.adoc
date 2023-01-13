@@ -1,0 +1,16 @@
+---
+permalink: config/concept-changing-the-unified-manager-host-name.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il peut être nécessaire de modifier le nom d"hôte du système sur lequel vous avez installé Unified Manager. Par exemple, vous pouvez renommer l"hôte pour identifier plus facilement vos serveurs Unified Manager par type, groupe de travail ou groupe de clusters surveillé.' 
+---
+= Modification du nom d'hôte Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il peut être nécessaire de modifier le nom d'hôte du système sur lequel vous avez installé Unified Manager. Par exemple, vous pouvez renommer l'hôte pour identifier plus facilement vos serveurs Unified Manager par type, groupe de travail ou groupe de clusters surveillé.
+
+Les étapes requises pour modifier le nom d'hôte sont différentes selon que Unified Manager s'exécute ou non sur un serveur VMware ESXi, sur un serveur Red Hat ou CentOS Linux, ou sur un serveur Microsoft Windows.

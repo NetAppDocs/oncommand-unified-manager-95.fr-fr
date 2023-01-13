@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter des objets de stockage à une liste de favoris pour surveiller les objets pour vérifier leur état, leur capacité et leurs performances. Vous pouvez utiliser l"état de l"objet dans la liste des favoris pour identifier les problèmes et les corriger avant qu"ils ne deviennent critiques. La liste des favoris fournit également l"état de surveillance le plus récent d"un objet de stockage. Vous pouvez supprimer des objets de stockage de la liste des favoris lorsque vous n"avez plus besoin que ceux-ci soient marqués comme favoris.' 
+---
+= Ajout et suppression d'objets de stockage de la liste Favoris
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter des objets de stockage à une liste de favoris pour surveiller les objets pour vérifier leur état, leur capacité et leurs performances. Vous pouvez utiliser l'état de l'objet dans la liste des favoris pour identifier les problèmes et les corriger avant qu'ils ne deviennent critiques. La liste des favoris fournit également l'état de surveillance le plus récent d'un objet de stockage. Vous pouvez supprimer des objets de stockage de la liste des favoris lorsque vous n'avez plus besoin que ceux-ci soient marqués comme favoris.
+
+
+
+== Description de la tâche
+
+Vous pouvez ajouter jusqu'à 20 clusters, nœuds, agrégats ou volumes à la liste des favoris. Lorsque vous ajoutez un nœud à la liste Favoris, il s'affiche comme un cluster.
+
+
+
+== Étapes
+
+. Accédez à la page *Détails* de l'objet de stockage que vous souhaitez marquer comme favori.
+. Cliquez sur l'icône en forme d'étoile (image:../media/favorite-icon.gif[""]) Pour ajouter l'objet de stockage à la liste Favoris.
+
+
+
+
+== Ajout d'un agrégat à la liste Favoris
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *agrégats*.
+. Dans la page d'inventaire Health/Aggregates, cliquez sur l'agrégat à ajouter à la liste Favoris.
+. Dans la page Détails de l'intégrité/agrégat, cliquez sur l'icône en forme d'étoile (image:../media/favorite-icon.gif[""]).
+
+
+
+
+== Une fois que vous avez terminé
+
+Pour supprimer un objet de stockage de la liste des favoris, accédez à la page de la liste des favoris, puis cliquez sur l'icône en forme d'étoile (image:../media/favorite-icon.gif[""]) Sur la carte d'objet que vous souhaitez supprimer, puis sélectionnez l'option *Supprimer des favoris*.

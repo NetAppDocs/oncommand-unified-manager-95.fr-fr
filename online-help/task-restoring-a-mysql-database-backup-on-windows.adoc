@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 'En cas de perte ou de corruption des données, la fonctionnalité de restauration permet de restaurer l"état stable précédent de Unified Manager avec une perte minimale. Vous pouvez restaurer la base de données Unified Manager sur un système Windows local ou distant à l"aide de la commande restore.' 
+---
+= Restauration d'une sauvegarde de base de données sous Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En cas de perte ou de corruption des données, la fonctionnalité de restauration permet de restaurer l'état stable précédent de Unified Manager avec une perte minimale. Vous pouvez restaurer la base de données Unified Manager sur un système Windows local ou distant à l'aide de la commande restore.
+
+
+
+== Avant de commencer
+
+* Unified Manager doit être installé sur un serveur.
+* Vous devez disposer des privilèges d'administrateur Windows.
+* Vous devez avoir copié le fichier de sauvegarde Unified Manager et le contenu du répertoire du référentiel de base de données sur le système sur lequel vous allez effectuer l'opération de restauration.
++
+Il est recommandé de copier le fichier de sauvegarde dans le répertoire par défaut `\ProgramData\NetApp\OnCommandAppData\ocum\backup`. Les fichiers du référentiel de base de données doivent être copiés sur le système `\database_dumps_repo` sous le sous-répertoire `\backup` répertoire.
+
+* Les fichiers de sauvegarde doivent être de `.7z` type.
+
+
+
+
+== Description de la tâche
+
+La fonction de restauration est spécifique à la plate-forme et à la version. Vous pouvez restaurer une sauvegarde Unified Manager uniquement sur la même version de Unified Manager, et une sauvegarde Windows ne peut être restaurée que sur une plateforme Windows.
+
+[TIP]
+====
+Si les noms de dossier contiennent un espace, vous devez inclure le chemin absolu ou relatif du fichier de sauvegarde dans des guillemets doubles.
+
+====
+
+
+== Étapes
+
+. Si vous effectuez une restauration sur un nouveau serveur, une fois l'installation de Unified Manager terminée, ne lancez pas l'interface utilisateur et ne configurez pas les clusters, les utilisateurs ou les paramètres d'authentification. Le fichier de sauvegarde remplit ces informations lors du processus de restauration.
+. Connectez-vous à la console Unified Manager en tant qu'administrateur : `um cli login -u maint_username`
+. À l'invite de commande, restaurez la sauvegarde : `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.4.N151118.2300_backup_windows_02-20-2018-02-51.7z`
+
+
+
+
+
+== Une fois que vous avez terminé
+
+Une fois l'opération de restauration terminée, vous pouvez vous connecter à Unified Manager.

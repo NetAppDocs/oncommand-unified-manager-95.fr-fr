@@ -1,0 +1,30 @@
+---
+permalink: health-checker/task-adding-and-reviewing-notes-about-an-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lors de la résolution d"événements, vous pouvez ajouter des informations sur la manière dont le problème est résolu en utilisant la zone Notes et mises à jour de la page Détails de l"événement. Ces informations peuvent permettre à un autre utilisateur affecté à l"événement. Vous pouvez également afficher les informations ajoutées par l"utilisateur qui a traité un événement pour la dernière fois, en fonction de l"horodatage récent.' 
+---
+= Ajout et révision de notes sur un événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de la résolution d'événements, vous pouvez ajouter des informations sur la manière dont le problème est résolu en utilisant la zone Notes et mises à jour de la page Détails de l'événement. Ces informations peuvent permettre à un autre utilisateur affecté à l'événement. Vous pouvez également afficher les informations ajoutées par l'utilisateur qui a traité un événement pour la dernière fois, en fonction de l'horodatage récent.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle opérateur, administrateur OnCommand ou administrateur stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Evénements*.
+. Dans la page d'inventaire *Events*, cliquez sur l'événement pour lequel vous souhaitez ajouter les informations relatives à l'événement.
+. Dans la page *Event* details, ajoutez les informations requises dans la zone *Notes et mises à jour*.
+. Cliquez sur *Post*.
+

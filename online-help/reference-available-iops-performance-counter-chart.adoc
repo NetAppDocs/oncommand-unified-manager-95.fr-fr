@@ -1,0 +1,47 @@
+---
+permalink: online-help/reference-available-iops-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le tableau des compteurs IOPS disponibles de Performance Explorer affiche le nombre d"opérations d"entrée/sortie par seconde actuellement disponibles \(libres\) sur l"objet de stockage sélectionné.' 
+---
+= Tableau de compteur de performances d'IOPS disponible
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau des compteurs d'IOPS disponibles de Performance Explorer affiche le nombre d'opérations d'entrée/sortie par seconde actuellement disponibles (libres) sur l'objet de stockage sélectionné.
+
+La fenêtre contextuelle qui s'affiche lorsque le curseur se trouve dans la zone du graphique affiche les valeurs de compteur spécifiques à des moments spécifiques.
+
+L'option de graphique s'applique uniquement lorsque l'objet sélectionné est un nœud ou un agrégat.
+
+Le bas de la page du graphique affiche des informations sur la capacité de performance minimale, maximale, moyenne et 95e percentile utilisée pour la plage de temps sélectionnée.
+
+
+
+== IOPS disponibles : tableau compteur total
+
+Affiche le nombre d'opérations d'entrée/sortie par seconde qui sont actuellement disponibles (libres) sur l'objet de stockage sélectionné. Ce nombre est dû à l'soustraction des IOPS actuellement utilisées par rapport aux IOPS totales que Unified Manager calcule que l'objet peut exécuter.
+
+[NOTE]
+====
+Les données IOPS disponibles sont uniquement disponibles lorsque les nœuds d'un cluster sont installés avec le logiciel ONTAP 9.0 ou une version ultérieure.
+
+====
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] qui est associé à un compteur masque et affiche ces informations de compteur du graphique et peut aider à la comparaison d'objets.
+
+

@@ -1,0 +1,85 @@
+---
+permalink: config/task-enabling-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez activer l"authentification à distance afin que le serveur Unified Manager puisse communiquer avec vos serveurs d"authentification. Les utilisateurs du serveur d"authentification peuvent accéder à l"interface graphique Unified Manager pour gérer les objets de stockage et les données.' 
+---
+= Activation de l'authentification à distance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer l'authentification à distance afin que le serveur Unified Manager puisse communiquer avec vos serveurs d'authentification. Les utilisateurs du serveur d'authentification peuvent accéder à l'interface graphique Unified Manager pour gérer les objets de stockage et les données.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand.
+
+[NOTE]
+====
+Le serveur Unified Manager doit être connecté directement au serveur d'authentification. Vous devez désactiver tous les clients LDAP locaux tels que SSSD (System Security Services Daemon) ou NSLCD (Name Service LDAP Caching Daemon).
+
+====
+
+
+== Description de la tâche
+
+Vous pouvez activer l'authentification à distance à l'aide de Open LDAP ou d'Active Directory. Si l'authentification à distance est désactivée, les utilisateurs distants ne peuvent pas accéder à Unified Manager.
+
+L'authentification à distance est prise en charge via LDAP et LDAPS (Secure LDAP). Unified Manager utilise 389 comme port par défaut pour les communications non sécurisées et 636 comme port par défaut pour les communications sécurisées.
+
+[NOTE]
+====
+Le certificat utilisé pour authentifier les utilisateurs doit être conforme au format X.509.
+
+====
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, sélectionnez *Activer l'authentification à distance*.
+. Dans le champ *Service d'authentification*, sélectionnez le type de service et configurez le service d'authentification.
++
+|===
+| Pour le type d'authentification... | Entrez les informations suivantes... 
+
+
+ a| 
+Active Directory
+ a| 
+** Nom d'administrateur du serveur d'authentification dans l'un des formats suivants :
++
+*** `domainname`*\*`username`
+*** `username`@`domainname`
+*** `Bind Distinguished Name` (Avec la notation LDAP appropriée)
+
+
+** Mot de passe administrateur
+** Nom distinctif de base (à l'aide de la notation LDAP appropriée)
+
+
+
+
+ a| 
+Ouvrez LDAP
+ a| 
+** Nom distinctif de la liaison (dans la notation LDAP appropriée)
+** Lier le mot de passe
+** Nom distinctif de base
+
+
+|===
++
+Si l'authentification d'un utilisateur Active Directory prend un certain temps ou plusieurs fois, le serveur d'authentification prend probablement beaucoup de temps pour répondre. La désactivation de la prise en charge des groupes imbriqués dans Unified Manager peut réduire le temps d'authentification.
+
++
+Si vous sélectionnez l'option utiliser la connexion sécurisée pour le serveur d'authentification, Unified Manager communique avec le serveur d'authentification à l'aide du protocole SSL (Secure Sockets Layer).
+
+. Ajoutez des serveurs d'authentification et testez l'authentification.
+. Cliquez sur *Enregistrer et fermer*.
+

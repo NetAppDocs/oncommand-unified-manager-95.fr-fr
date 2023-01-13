@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-executing-protection-workflows-using-wfa.html 
+sidebar: sidebar 
+keywords:  
+summary: En intégrant OnCommand Workflow Automation à Unified Manager, vous pouvez exécuter des flux de production pour vos classes de stockage, et surveiller les SVM avec Infinite Volume sans classes de stockage. 
+---
+= Exécution de workflows de protection à l'aide de OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En intégrant OnCommand Workflow Automation à Unified Manager, vous pouvez exécuter des flux de production pour vos classes de stockage, et surveiller les SVM avec Infinite Volume sans classes de stockage.

@@ -1,0 +1,52 @@
+---
+permalink: config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Pour utiliser Unified Manager, vous devez d"abord configurer les options de configuration initiale, notamment le serveur NTP, l"adresse e-mail de l"utilisateur de maintenance et le nom d"hôte et les options du serveur SMTP.' 
+---
+= Configuration initiale de l'interface utilisateur Web de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour utiliser Unified Manager, vous devez d'abord configurer les options de configuration initiale, notamment le serveur NTP, l'adresse e-mail de l'utilisateur de maintenance et le nom d'hôte et les options du serveur SMTP.
+
+
+
+== Avant de commencer
+
+Vous devez avoir effectué les opérations suivantes :
+
+* L'interface utilisateur Web de Unified Manager a été lancée à l'aide de l'URL fournie après l'installation
+* Connecté à l'aide du nom d'utilisateur et du mot de passe de maintenance (utilisateur umadmin pour les installations Linux) créés pendant l'installation
+
+
+
+
+== Description de la tâche
+
+La page Configuration initiale de OnCommand Unified Manager n'apparaît que lorsque vous accédez pour la première fois à l'interface utilisateur Web. La page ci-dessous provient d'une installation sur VMware.
+
+image::../media/first-experience-wizard.gif[assistant première expérience]
+
+Si vous souhaitez modifier l'une de ces options ultérieurement, vous pouvez utiliser les options Administration, qui sont accessibles en cliquant sur *image:../media/clusterpage-settings-icon.gif[""]* Dans la barre d'outils Unified Manager.
+
+
+
+== Étapes
+
+. Dans la fenêtre *OnCommand Unified Manager initial Setup*, entrez l'adresse e-mail de l'utilisateur de maintenance, le nom d'hôte du serveur SMTP et toutes les options SMTP supplémentaires, ainsi que le serveur NTP (installations VMware uniquement). Cliquez ensuite sur *Suivant*.
+. Dans la page *AutoSupport*, cliquez sur *accepter et Continuer* pour activer AutoSupport.
++
+Si vous devez désigner un proxy pour fournir un accès Internet afin d'envoyer du contenu AutoSupport à l'assistance, ou si vous souhaitez désactiver AutoSupport, utilisez les options d'administration.
+
+. Sur les systèmes Red Hat et CentOS, vous pouvez choisir de modifier le mot de passe utilisateur umadmin de la chaîne par défaut « admin » à une chaîne personnalisée.
+
+
+
+
+== Résultats
+
+La fenêtre Configuration initiale se ferme et l'interface utilisateur Web de Unified Manager s'affiche. La page sources de données de configuration/cluster s'affiche pour vous permettre d'ajouter des clusters à votre système.

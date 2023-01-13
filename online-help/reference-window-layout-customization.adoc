@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-window-layout-customization.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Unified Manager vous permet de personnaliser la disposition des informations sur les pages d"objets de stockage. En personnalisant les fenêtres, vous pouvez contrôler les données qui sont affichées et la façon dont elles sont affichées.' 
+---
+= Personnalisation de la disposition des fenêtres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager vous permet de personnaliser la disposition des informations sur les pages d'objets de stockage. En personnalisant les fenêtres, vous pouvez contrôler les données qui sont affichées et la façon dont elles sont affichées.
+
+* *Tri*
++
+Vous pouvez cliquer sur l'en-tête de colonne pour modifier l'ordre de tri des entrées de colonne. Lorsque vous cliquez sur l'en-tête de colonne, les flèches de tri (image:../media/sort-asc-um60.gif["Icône pour le tri des colonnes – ordre croissant"] et image:../media/sort-desc-um60.gif["Icône pour le tri des colonnes – décroissant"]) s'affiche pour cette colonne.
+
+* *Filtrage*
++
+Vous pouvez appliquer des filtres pour personnaliser l'affichage des informations sur les pages d'objet de stockage de sorte que seules les entrées correspondant aux conditions fournies s'affichent. Vous pouvez appliquer des filtres à partir du volet filtres ou dans les colonnes.
+
++
+Le volet filtres vous permet de filtrer certaines colonnes en fonction des options sélectionnées. Par exemple, sur la page d'inventaire de Santé/volumes, vous pouvez utiliser le volet filtres pour filtrer uniquement les colonnes État et État. Pour afficher tous les volumes hors ligne, vous pouvez sélectionner l'option de filtre appropriée sous État.
+
++
+Vous pouvez également définir des filtres sur des colonnes à l'aide de l'icône de filtre (image:../media/filtericon-um60.png["Icône du filtre de colonne"]). Vous pouvez alors utiliser le filtre à caractères génériques (?) ou un filtre de chaîne générique (*) pour affiner votre recherche. Par exemple, sur la page d'inventaire Santé/volumes, vous pouvez rechercher un volume vol234 en utilisant le filtre de chaîne dans la colonne Volume. Vous pouvez saisir `*vol`, et tous les volumes dont le nom contient « vol » sont énumérés. Vous pouvez saisir `vol?` pour afficher la liste de tous les volumes dont le nom contient « vol » suivi d'un caractère supplémentaire, par exemple vol1 ou vol2. Vous pouvez saisir `vol` pour afficher la liste de tous les volumes dont le nom commence par « vol ».
+
++
+Dans toute liste, les colonnes relatives à la capacité affichent toujours les données de capacité dans les unités appropriées arrondies à deux décimales. Cela s'applique également lors du filtrage des colonnes de capacité. Par exemple, si vous utilisez le filtre de la colonne capacité totale des données de la page de l'inventaire Santé/agrégats pour filtrer des données supérieures à 20.45 Go, la capacité réelle de 20.454 Go s'affiche sous la forme de 20.45 Go. De même, si vous filtrez des données inférieures à 20.45 Go, la capacité réelle de 20.449 Go s'affiche sous la forme 20.45 Go.
+
++
+Si vous utilisez le filtre dans la colonne % de données disponibles de la page d'inventaire Santé/agrégats pour filtrer des données supérieures à 20.45 %, la capacité réelle de 20.454 % s'affiche sous la forme 20.45 %. De même, si vous filtrez des données inférieures à 20.45 %, la capacité réelle de 20.449 % s'affiche à 20.45 %. Pour les colonnes qui affichent les données de capacité en pourcentage, vous pouvez afficher des valeurs jusqu'à quatre décimales en déplaçant le pointeur de la souris sur la valeur affichée dans la colonne.
+
+* *Masquage ou réaffichage des colonnes*
++
+Vous pouvez cliquer sur l'icône d'affichage de colonne (image:../media/advanced-options.gif[""]) pour sélectionner les colonnes à afficher.
+
+* *Exportation de données*
++
+Vous pouvez cliquer sur l'icône d'exportation (image:../media/export-icon.gif["Icône d'exportation de données séparées par des virgules à utiliser dans les rapports."]) pour exporter des données vers des valeurs séparées par des virgules (`.csv`) et utilisez les données exportées pour créer des rapports.
+
+

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Chaque Infinite Volume dispose d"un composant d"espace de noms unique qui mappe les informations de répertoires et les noms de fichiers à l"emplacement physique des données du fichier au sein d"Infinite Volume.' 
+---
+= Qu'est-ce qu'un composant d'espace de noms
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Chaque Infinite Volume dispose d'un composant d'espace de noms unique qui mappe les informations de répertoires et les noms de fichiers à l'emplacement physique des données du fichier au sein d'Infinite Volume.
+
+Les clients ne connaissent pas le composant de l'espace de noms et n'interagissent pas directement avec celui-ci. Le composant d'espace de noms est un composant interne d'Infinite Volume.

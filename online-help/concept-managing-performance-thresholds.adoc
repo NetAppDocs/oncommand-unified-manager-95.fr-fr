@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les règles de seuil de performances vous permettent de déterminer le point à partir duquel Unified Manager génère un événement afin d"informer les administrateurs système des problèmes qui pourraient affecter la performance des charges de travail. Ces règles de seuil sont appelées seuils de performance définis par l"utilisateur.' 
+---
+= Gestion des seuils de performance définis par l'utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les règles de seuil de performances vous permettent de déterminer le point à partir duquel Unified Manager génère un événement afin d'informer les administrateurs système des problèmes qui pourraient affecter la performance des charges de travail. Ces stratégies de seuil sont appelées seuils de performance définis par l'utilisateur.
+
+Cette version prend en charge les seuils de performance dynamiques, définis par l'utilisateur et définis par le système. Avec des seuils de performance dynamiques et définis par le système, Unified Manager analyse l'activité des charges de travail pour déterminer la valeur seuil appropriée. Grâce aux seuils définis par l'utilisateur, vous pouvez définir les limites de performances supérieures pour de nombreux compteurs de performances et pour de nombreux objets de stockage.
+
+[NOTE]
+====
+Les seuils de performance définis par le système et les seuils de performance dynamiques sont définis par Unified Manager et ne peuvent pas être configurés. Si vous recevez des événements inutiles provenant de stratégies de seuil de performances définies par le système, vous pouvez désactiver des stratégies individuelles à partir de la page Configuration/gestion des événements.
+
+====

@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-snapshot-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements Snapshot fournissent des informations sur l"état des snapshots, qui vous permettent de surveiller ces snapshots en cas de problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement, le nom de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements Snapshot fournissent des informations sur l'état des snapshots, qui vous permettent de surveiller ces snapshots en cas de problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement, le nom de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Suppression automatique de l'instantané désactivée (non applicable)
+ a| 
+Événement
+ a| 
+Volumétrie
+ a| 
+Informations
+
+
+
+ a| 
+Suppression automatique de l'instantané activée (non applicable)
+ a| 
+Événement
+ a| 
+Volumétrie
+ a| 
+Informations
+
+
+
+ a| 
+Configuration de suppression automatique de snapshot modifiée (non applicable)
+ a| 
+Événement
+ a| 
+Volumétrie
+ a| 
+Informations
+
+|===

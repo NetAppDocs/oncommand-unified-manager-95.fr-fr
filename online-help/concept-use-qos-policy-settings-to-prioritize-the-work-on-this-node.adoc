@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-use-qos-policy-settings-to-prioritize-the-work-on-this-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez définir une limite sur un groupe de règles QoS pour contrôler la limite d"E/S par seconde \(IOPS\) ou de débit en Mbit/s pour les workloads qu"il contient. Si des charges de travail se trouvent dans un groupe de règles sans limite définie, telles que le groupe de règles par défaut ou la limite définie ne répond pas à vos besoins, vous pouvez augmenter la limite définie ou déplacer les charges de travail vers un nouveau groupe de règles ou un groupe existant présentant la limite souhaitée.' 
+---
+= Utilisez les paramètres de règles de QoS pour hiérarchiser le travail sur ce nœud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez définir une limite au groupe de règles de QoS pour contrôler la limite d'E/S par seconde (IOPS) ou de débit en Mbit/s pour les workloads qu'il contient. Si des charges de travail se trouvent dans un groupe de règles sans limite définie, telles que le groupe de règles par défaut ou la limite définie ne répond pas à vos besoins, vous pouvez augmenter la limite définie ou déplacer les charges de travail vers un nouveau groupe de règles ou un groupe existant présentant la limite souhaitée.
+
+Si un événement de performance d'un nœud est causé par des charges de travail qui utilisent trop les ressources du nœud, la description de l'événement sur la page Détails de l'événement affiche un lien vers la liste des volumes concernés. Sur la page Performance/volumes, vous pouvez trier les volumes affectés par IOPS et Mo/sec pour voir quelles charges de travail ont le plus d'utilisation qui pourrait avoir contribué à cet événement.
+
+En attribuant les volumes sur lesquels les ressources de nœud sont surutilisées à un paramètre de groupe de règles plus restrictif, le groupe de règles accélère les workloads afin de limiter leur activité, ce qui permet de réduire l'utilisation des ressources de ce nœud.
+
+Vous pouvez utiliser OnCommand System Manager ou les commandes ONTAP pour gérer les « policy Groups », notamment les tâches suivantes :
+
+* Création d'une « policy group »
+* Ajout ou suppression de charges de travail dans un « policy group »
+* Déplacement d'une charge de travail entre des groupes de règles
+* Modification de la limite de débit d'un groupe de règles
+

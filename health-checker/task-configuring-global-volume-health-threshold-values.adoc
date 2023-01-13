@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-configuring-global-volume-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer les valeurs de seuil de santé global pour tous les volumes afin de suivre toute violation de seuil. Les événements appropriés sont générés pour les atteintes aux seuils de santé et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de la meilleure pratique pour les seuils qui s"appliquent à tous les volumes surveillés.' 
+---
+= Configuration des valeurs de seuil de contrôle global du volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les valeurs de seuil de santé global pour tous les volumes afin de suivre toute violation de seuil. Les événements appropriés sont générés pour les atteintes aux seuils de santé et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de la meilleure pratique pour les seuils qui s'appliquent à tous les volumes surveillés.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+La plupart des options de seuil ont des valeurs par défaut pour une meilleure surveillance. Cependant, vous pouvez modifier les valeurs en fonction des besoins de votre environnement.
+
+Notez que lorsque la croissance automatique est activée sur un volume que les seuils de capacité sont considérés comme enfreintes en fonction de la taille maximale du volume définie par Autogrow, et non pas en fonction de la taille du volume initial.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *seuils de santé*.
+. Dans la page *seuils de configuration/santé*, cliquez sur *volumes*.
+. Configurez les valeurs de seuil appropriées pour la capacité, les copies Snapshot, les quotas qtree, la croissance du volume et les inodes.
+. Cliquez sur *Enregistrer*.
+

@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-editing-storage-class-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lorsque vous devez résoudre des problèmes liés à l"espace de stockage dans vos classes de stockage, vous pouvez modifier les paramètres de seuil de la capacité de classe de stockage en fonction des besoins de votre entreprise. Lorsque le seuil est franchi, des événements sont générés et vous recevez des notifications si vous avez configuré des alertes pour de tels événements.' 
+---
+= Modification des paramètres de seuil des classes de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous devez résoudre des problèmes liés à l'espace de stockage de vos classes de stockage, vous pouvez modifier les paramètres de seuil de la capacité de classe de stockage en fonction des besoins de votre entreprise. Lorsque le seuil est franchi, des événements sont générés et vous recevez des notifications si vous avez configuré des alertes pour de tels événements.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *SVM*.
+. Dans la page d'inventaire *Health/Storage Virtual machines*, sélectionnez un SVM avec Infinite Volume.
+. Dans la page de détails *Health/Storage Virtual machine*, cliquez sur *actions* > *Edit seuils*.
+. Dans la boîte de dialogue *Modifier les seuils de classe de stockage*, modifiez les seuils comme requis.
+. Cliquez sur *Enregistrer et fermer*.
+

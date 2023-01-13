@@ -1,0 +1,53 @@
+---
+permalink: performance-checker/task-using-the-perf-capacity-used-breakdown-chart-for-failover-planning.html 
+sidebar: sidebar 
+keywords:  
+summary: Le graphique détaillé capacité en performances utilisée - détail indique la capacité en performances utilisée pour le nœud principal et le nœud partenaire. Il affiche également la capacité de performances disponibles sur le nœud de basculement estimé. Ces informations vous permettent de déterminer si vous rencontrez un problème de performances en cas de panne du nœud partenaire. 
+---
+= Utilisation du tableau d'analyse de la capacité sur les performances utilisée pour la planification du basculement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique détaillé capacité en performances utilisée - détail indique la capacité en performances utilisée pour le nœud principal et le nœud partenaire. Il affiche également la capacité de performances disponibles sur le nœud de basculement estimé. Ces informations vous permettent de déterminer si vous rencontrez un problème de performances en cas de panne du nœud partenaire.
+
+
+
+== Description de la tâche
+
+Outre l'affichage de la capacité de performance totale utilisée pour les nœuds, le graphique décomposition décompose les valeurs de chaque nœud en protocoles utilisateur et en processus d'arrière-plan.
+
+* Les protocoles utilisateur correspondent aux opérations d'E/S depuis et vers les applications utilisateur du cluster.
+* Les processus d'arrière-plan sont les processus système internes impliqués dans l'efficacité du stockage, la réplication des données et l'intégrité du système.
+
+
+Ce niveau de détail supplémentaire vous permet de déterminer si un problème de performance est causé par l'activité de l'application utilisateur ou par les processus du système en arrière-plan, tels que la déduplication, la reconstruction RAID, le nettoyage des disques et les copies SnapMirror.
+
+
+
+== Étapes
+
+. Accédez à la page *Performance/Node Failover Planning* du nœud qui servira de nœud de basculement estimé.
+. Dans le sélecteur *Time Range*, choisissez la période pour laquelle les statistiques historiques sont affichées dans la grille des compteurs et dans les diagrammes.
++
+Les graphiques des compteurs correspondant aux statistiques du nœud principal, du nœud partenaire et du nœud de basculement estimé sont affichés.
+
+. Dans la liste *choisir les graphiques*, sélectionnez *Perf. Capacité utilisée*.
+. Dans le *Perf. Graphique capacité utilisée*, sélectionnez *détail* et cliquez sur *vue Zoom*.
++
+Le tableau détaillé de Perf. La capacité utilisée s'affiche.
+
++
+image::../media/headroom-advanced-zoom-chart.gif[graphique de zoom avancé de marge]
+
+. Déplacez le curseur sur le tableau détaillé pour afficher les informations relatives à la capacité de performance utilisée dans la fenêtre contextuelle.
++
+La Perf. Le pourcentage libre de capacité correspond à la capacité de performances disponible sur le nœud de basculement estimé. Elle indique le niveau de performances restant sur le nœud de basculement après un basculement. Si elle est de 0 %, un basculement entraîne une augmentation de la latence à un niveau inacceptable sur le nœud de basculement.
+
+. Envisagez de mettre en œuvre des actions correctives pour éviter une faible part de la capacité disponible.
++
+Si vous prévoyez de lancer un basculement pour la maintenance du nœud, sélectionnez un moment pour faire échouer le nœud partenaire lorsque le pourcentage de capacité libre de performance n'est pas égal à 0.
+
+

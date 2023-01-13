@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-add-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La boîte de dialogue Ajouter une règle de groupe vous permet de créer des règles de groupe dans Unified Manager pour regrouper dynamiquement des objets de stockage. Vous pouvez ensuite configurer et appliquer des actions de groupe pour le groupe. 
+---
+= Boîte de dialogue Ajouter une règle de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Ajouter une règle de groupe vous permet de créer des règles de groupe dans Unified Manager pour regrouper dynamiquement des objets de stockage. Vous pouvez ensuite configurer et appliquer des actions de groupe pour le groupe.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom*
++
+Spécifie le nom de la règle de groupe.
+
+* *Type d'objet cible*
++
+Spécifie le type d'objets de stockage à inclure dans le groupe.
+
+* *Groupe*
++
+Spécifie le nom du groupe pour lequel la règle de groupe est créée.
+
+* *Conditions*
++
+Spécifie les conditions qui déterminent quels objets de stockage peuvent être inclus dans un groupe.
+
+* *Groupe de conditions*
++
+Spécifie les groupes de condition qui ont une ou plusieurs conditions définies pour l'inclusion d'objets de stockage dans un groupe.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer et ajouter*
++
+Ajoute la règle de groupe et vous permet d'ajouter une autre règle de groupe sans fermer la boîte de dialogue.
+
+* *Ajouter*
++
+Ajoute la règle de groupe et ferme la boîte de dialogue Ajouter une règle de groupe.
+
+* *Annuler*
++
+Annule les modifications et ferme la boîte de dialogue Ajouter une règle de groupe.
+
+* *Ajouter une condition*
++
+Ajoute une condition pour définir la règle de groupe.
+
+* *Ajouter un groupe de conditions*
++
+Ajoute un groupe de conditions pour définir les conditions de la règle de groupe.
+
+

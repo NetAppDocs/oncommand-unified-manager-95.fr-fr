@@ -1,0 +1,155 @@
+---
+permalink: online-help/reference-protection-jobs-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page protection/travaux vous permet d"afficher l"état actuel et d"autres informations sur toutes les tâches de protection des applications partenaires en cours d"exécution, ainsi que les tâches terminées. Vous pouvez utiliser ces informations pour voir quels travaux sont toujours en cours d"exécution et si un travail a réussi ou échoué.' 
+---
+= Protection/travaux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page protection/travaux vous permet d'afficher l'état actuel et d'autres informations sur toutes les tâches de protection des applications partenaires en cours d'exécution, ainsi que les tâches terminées. Vous pouvez utiliser ces informations pour voir quels travaux sont toujours en cours d'exécution et si un travail a réussi ou échoué.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Abort*
++
+Interrompt le travail sélectionné. Cette option n'est disponible que si le travail sélectionné est en cours d'exécution.
+
+* *Réessayer*
++
+Redémarre une tâche ayant échoué de type protection Configuration ou protection relation Operation. Vous ne pouvez réessayer qu'un seul travail ayant échoué à la fois. Si plusieurs travaux en échec sont sélectionnés, le bouton *Réessayer* est désactivé. Vous ne pouvez pas réessayer les travaux de service de stockage ayant échoué.
+
+* * Actualiser*
++
+Actualise la liste des travaux et les informations qui leur sont associées.
+
+
+
+
+
+== Liste des travaux
+
+La liste travaux affiche, au format tabulaire, la liste des travaux en cours. Par défaut, la liste affiche uniquement les travaux générés au cours de la semaine passée. Vous pouvez utiliser le tri et le filtrage des colonnes pour personnaliser les travaux affichés.
+
+* *Statut*
++
+Affiche l'état actuel d'un travail. L'état peut être erreur (image:../media/sev-error.gif[""]) Ou Normal (image:../media/sev-normal.gif[""]).
+
+* *ID travail*
++
+Affiche le numéro d'identification du travail. Par défaut, cette colonne est masquée.
+
++
+Le numéro d'identification du travail est unique et est attribué par le serveur lorsqu'il démarre le travail. Vous pouvez rechercher un travail particulier en saisissant le numéro d'identification du travail dans la zone de texte fournie par le filtre de colonne.
+
+* *Nom*
++
+Affiche le nom du travail.
+
+* *Type*
++
+Affiche le type de travail. Les types de travail sont les suivants :
+
++
+** * Acquisition de groupe*
++
+Une tâche Workflow Automation redécouvre un cluster.
+
+** *Configuration de la protection*
++
+Une tâche de protection consiste à lancer les flux de travail Workflow Automation, par exemple les planifications cron, la création de règles SnapMirror, etc.
+
+** * Opération de relation de protection*
++
+Une tâche de protection exécute des opérations SnapMirror.
+
+** *Chaîne de flux de travail de protection*
++
+Une tâche Workflow Automation exécute plusieurs flux de travail.
+
+** *Restaurer*
++
+Une tâche de restauration est en cours d'exécution.
+
+** *Nettoyage*
++
+Le travail nettoie les artefacts des membres du service de stockage qui ne sont plus nécessaires à des fins de restauration.
+
+** *Conforme*
++
+La tâche consiste à vérifier la configuration des membres du service de stockage pour s'assurer qu'ils sont conformes.
+
+** *Détruire*
++
+Le travail détruit un service de stockage.
+
+** *Importer*
++
+Le travail importe des objets de stockage non gérés dans un service de stockage existant.
+
+** *Modifier*
++
+Le travail modifie les attributs d'un service de stockage existant.
+
+** *Abonnez-vous*
++
+Le travail s'abonner à un service de stockage.
+
+** * Se désinscrire*
++
+Le travail annule l'abonnement des membres d'un service de stockage.
+
+** *Mise à jour*
++
+Une tâche de mise à jour de protection est en cours d'exécution.
+
+** *Configuration WFA*
++
+Une tâche Workflow Automation pousse les informations d'identification du cluster et synchronise les caches des bases de données.
+
+
+
+* *État*
++
+Affiche l'état d'exécution du travail. Les options d'état sont les suivantes :
+
++
+** *Abandonné*
++
+Le travail a été abandonné.
+
+** *Aborting*
++
+Le travail est en cours d'abandon.
+
+** * Terminé*
++
+Le travail est terminé.
+
+** *En cours d'exécution*
++
+La tâche est en cours d'exécution.
+
+
+
+* *Heure de soumission*
++
+Affiche l'heure à laquelle le travail a été soumis.
+
+* *Durée*
++
+Affiche la durée de réalisation du travail. Cette colonne est affichée par défaut.
+
+* *Temps de réalisation*
++
+Affiche l'heure de fin du travail. Par défaut, cette colonne est masquée.
+
+

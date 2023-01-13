@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-custom-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Enregistrer le rapport personnalisé pour enregistrer un rapport personnalisé après avoir apporté d"autres modifications au rapport personnalisé.' 
+---
+= Boîte de dialogue Enregistrer le rapport personnalisé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Enregistrer le rapport personnalisé pour enregistrer un rapport personnalisé après avoir apporté d'autres modifications au rapport personnalisé.
+
+
+
+== Propriétés
+
+Vous pouvez enregistrer un rapport personnalisé en spécifiant des propriétés telles que la description.
+
+* *Nom du rapport*
++
+Affiche le nom du rapport personnalisé. Ce champ ne peut pas être modifié.
+
+* *Description*
++
+Indique la description de la personnalisation effectuée sur le rapport personnalisé. La description ne peut pas dépasser 150 caractères .
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Enregistrer*
++
+Enregistre le rapport personnalisé .
+
+* *Annuler*
++
+Annule les modifications récentes et ferme la boîte de dialogue Enregistrer le rapport personnalisé.
+
+

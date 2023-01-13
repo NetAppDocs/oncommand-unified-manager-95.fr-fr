@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-applying-filtering-to-correlated-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le filtrage vous permet d"afficher un sous-ensemble plus petit et plus bien défini d"objets dans la grille. Par exemple, si vous avez 25 volumes dans la grille, le filtrage vous permet d"afficher uniquement les volumes dont le débit est inférieur à 90 Mbit/s, ou une latence supérieure à 1 ms/op.' 
+---
+= Appliquer le filtrage pour réduire la liste des objets corrélés dans la grille
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le filtrage vous permet d'afficher un sous-ensemble plus petit et plus bien défini d'objets dans la grille. Par exemple, si vous avez 25 volumes dans la grille, le filtrage vous permet d'afficher uniquement les volumes dont le débit est inférieur à 90 Mbit/s, ou une latence supérieure à 1 ms/op.

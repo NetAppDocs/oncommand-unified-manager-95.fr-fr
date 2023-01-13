@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-quota-limits-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les limites de quota utilisateur sont des valeurs que le serveur Unified Manager utilise pour évaluer si la consommation d"espace par un utilisateur atteint la limite ou a atteint la limite définie par le quota de l"utilisateur. Si la limite soft est traversée ou si la limite hard est atteinte, le serveur Unified Manager génère des événements de quotas d"utilisateurs.' 
+---
+= Quelles sont les limites des quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les limites des quotas utilisateur sont des valeurs que le serveur Unified Manager utilise pour évaluer si la consommation de l'espace par un utilisateur approche de la limite ou a atteint la limite définie par le quota de l'utilisateur. Si la limite soft est traversée ou si la limite hard est atteinte, le serveur Unified Manager génère des événements de quotas d'utilisateurs.
+
+Par défaut, le serveur Unified Manager envoie un e-mail de notification aux utilisateurs qui ont franchi la limite soft quota ou qui ont atteint la limite Hard quota et pour lesquels les événements de quota utilisateur sont configurés. L'administrateur OnCommand peut configurer des alertes qui informent les destinataires spécifiés des événements de quota d'utilisateur ou de groupe d'utilisateurs.
+
+Vous pouvez spécifier des limites de quota à l'aide de OnCommand System Manager ou de l'interface de ligne de commande de ONTAP.

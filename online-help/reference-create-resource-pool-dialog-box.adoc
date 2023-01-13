@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-create-resource-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la boîte de dialogue Créer un pool de ressources pour nommer et décrire un nouveau pool de ressources, ainsi que pour ajouter des agrégats à et supprimer des agrégats de ce pool de ressources. 
+---
+= Boîte de dialogue Créer un pool de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Créer un pool de ressources pour nommer et décrire un nouveau pool de ressources, ainsi que pour ajouter des agrégats à et supprimer des agrégats de ce pool de ressources.
+
+
+
+== Nom du pool de ressources
+
+Les zones de texte permettent d'ajouter les informations suivantes pour créer un pool de ressources :
+
+Permet de spécifier un nom de pool de ressources.
+
+
+
+== Description
+
+Vous permet de décrire un pool de ressources.
+
+
+
+== Membres
+
+Affiche les membres du pool de ressources. Vous pouvez également ajouter et supprimer des membres.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Ajouter*
++
+Ouvre la boîte de dialogue agrégats pour vous permettre d'ajouter des agrégats d'un cluster spécifique au pool de ressources. Vous pouvez ajouter des agrégats depuis différents clusters, mais les mêmes agrégats ne peuvent pas être ajoutés à plusieurs pools de ressources.
+
+* *Supprimer*
++
+Permet de supprimer des agrégats sélectionnés du pool de ressources.
+
+* *Créer*
++
+Crée le pool de ressources. Ce bouton n'est activé que si les informations ont été saisies dans les champs Nom du pool de ressources ou Description.
+
+* *Annuler*
++
+Supprime les modifications et ferme la boîte de dialogue Créer un pool de ressources.
+
+

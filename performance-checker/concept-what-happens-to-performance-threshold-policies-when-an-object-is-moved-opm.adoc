@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/concept-what-happens-to-performance-threshold-policies-when-an-object-is-moved-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Étant donné que des règles de seuils de performances sont attribuées aux objets de stockage, si vous déplacez un objet, toutes les règles de seuil attribuées restent liées à l"objet une fois le déplacement terminé. Par exemple, si vous déplacez un volume ou une LUN vers un autre agrégat, les règles de seuil sont toujours actives pour le volume ou la LUN du nouvel agrégat.' 
+---
+= Que se passe-t-il aux règles de seuils de performances lorsqu'un objet est déplacé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Étant donné que des règles de seuils de performances sont attribuées aux objets de stockage, si vous déplacez un objet, toutes les règles de seuil attribuées restent liées à l'objet une fois le déplacement terminé. Par exemple, si vous déplacez un volume ou une LUN vers un autre agrégat, les règles de seuil sont toujours actives pour le volume ou la LUN du nouvel agrégat.
+
+Il existe une condition de compteur secondaire pour la politique de seuils (une règle de combinaison)--par exemple, si une condition supplémentaire est attribuée à un agrégat ou à un nœud--la condition de compteur secondaire est appliquée au nouvel agrégat ou au nœud sur lequel le volume ou la LUN a été déplacé.
+
+S'il existe de nouveaux événements actifs pour les objets qui utilisent la règle de seuil modifiée, les événements sont marqués comme obsolètes et la règle de seuil commence à surveiller le compteur comme une nouvelle règle de seuil définie.
+
+Lors d'une opération de déplacement de volume, ONTAP envoie un événement de modification d'information. Une icône d'événement de changement apparaît dans la chronologie des événements sur la page de l'explorateur de performances et la page Détails des performances/volumes pour indiquer l'heure à laquelle l'opération de déplacement a été terminée.
+
+[NOTE]
+====
+Si vous déplacez un objet vers un autre cluster, la règle de seuil définie par l'utilisateur est supprimée de l'objet. Si nécessaire, vous devez affecter une stratégie de seuil à l'objet une fois l'opération de déplacement terminée. Des règles de seuils dynamiques et définies par le système sont cependant appliquées automatiquement à un objet après son déplacement vers un nouveau cluster.
+
+====
+
+
+== Fonctionnalité de seuil de règle lors du basculement et du rétablissement haute disponibilité
+
+Lorsqu'une opération de basculement ou de rétablissement se produit dans une configuration haute disponibilité, les objets déplacés d'un nœud vers un autre nœud conservent leur règle de seuil de la même manière que dans les opérations de déplacement manuel. Unified Manager vérifie que la configuration du cluster change toutes les 15 minutes. L'impact du basculement vers le nouveau nœud n'est donc pas identifié avant l'interrogation suivante de la configuration du cluster.
+
+[NOTE]
+====
+Si une opération de basculement et de rétablissement se produit au cours de la période de collecte des modifications de configuration de 15 minutes, le déplacement des statistiques de performance d'un nœud vers un autre nœud risque de ne pas être visible.
+
+====
+
+
+== Fonctionnalité de règle de seuil pendant le transfert d'agrégats
+
+Si vous déplacez un agrégat d'un nœud vers un autre à l'aide du `aggregate relocation start` de la commande, des règles de seuil unique et de combinaison sont conservées sur tous les objets, et la partie nœud de la règle de seuil est appliquée au nouveau nœud.
+
+
+
+== Fonctionnalité de règle de seuil lors du basculement de MetroCluster
+
+Les objets qui se déplacent d'un cluster vers un autre cluster d'une configuration MetroCluster ne conservent pas leurs paramètres de règle de seuil définis par l'utilisateur. Si nécessaire, vous pouvez appliquer des politiques de seuil aux volumes et aux LUN qui ont été déplacés vers le cluster partenaire. Une fois qu'un objet est replacé dans son cluster d'origine, la règle de seuil définie par l'utilisateur est réappliquée automatiquement.
+
+xref:concept-volume-behavior-during-switchover-and-switchback.adoc[Comportement des volumes lors du basculement et du rétablissement]

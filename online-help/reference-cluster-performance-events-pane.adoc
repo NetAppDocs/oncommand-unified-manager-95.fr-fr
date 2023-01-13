@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-cluster-performance-events-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: Le volet événements de performance du cluster affiche les statistiques de performances et tous les événements actifs du cluster. Ceci est particulièrement utile pour le contrôle des clusters ainsi que de tous les événements et performances liés au cluster. 
+---
+= Volet des événements de performance du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le volet événements de performance du cluster affiche les statistiques de performances et tous les événements actifs du cluster. Ceci est particulièrement utile pour le contrôle des clusters ainsi que de tous les événements et performances liés au cluster.
+
+
+
+== Tous les événements de ce volet Cluster
+
+Le volet tous les événements de ce cluster affiche tous les événements de performance du cluster actifs pendant les 72 heures précédentes. Le total des événements actifs s'affiche à l'extrême gauche ; ce nombre représente le total de tous les événements nouveaux et acquittés pour tous les objets de stockage de ce cluster. Vous pouvez cliquer sur le lien Total des événements actifs pour accéder à la page Inventaire des événements, qui est filtrée pour afficher ces événements.
+
+Le graphique à barres Total Active Events du cluster affiche le nombre total d'événements critiques et d'avertissement actifs :
+
+* Latence (totale pour les nœuds, les agrégats, les SVM, les volumes, les LUN, et espaces de noms)
+* IOPS (total pour les clusters, les nœuds, les agrégats, les SVM, les volumes, LUN et espaces de noms)
+* Mbit/s (total pour les clusters, les nœuds, les agrégats, les SVM, les volumes, LUNs, namespaces, ports et LIFs)
+* Capacité de performance utilisée (totale pour les nœuds et les agrégats)
+* Utilisation (total pour les nœuds, les agrégats et les ports)
+* Autre (taux d'échec du cache pour les volumes)
+
+
+Cette liste contient les événements de performances actifs déclenchés par les politiques de seuils définies par l'utilisateur, les règles de seuils définies par le système et les seuils dynamiques.
+
+Les données du graphique (barres de compteur verticales) sont affichées en rouge (image:../media/treemapred-png.gif["Icône de TreeMap – couleur rouge"]) pour les événements critiques, et jaune (image:../media/treemapstatus-warning-png.gif["Icône de TreeMap – État d'avertissement"]) pour les événements d'avertissement. Positionnez le curseur sur chaque barre de compteur verticale pour afficher le type et le nombre réel d'événements. Vous pouvez cliquer sur *Actualiser* pour mettre à jour les données du panneau de compteur.
+
+Vous pouvez afficher ou masquer les événements critiques et d'avertissement dans le graphique de performance Total Active Events en cliquant sur les icônes *critique* et *Avertissement* de la légende. Si vous masquez certains types d'événements, les icônes de légende s'affichent en gris.
+
+
+
+== Panneaux de comptoir
+
+Les panneaux de compteur affichent les événements d'activité et de performances du cluster pour les 72 heures précédentes et comprennent les compteurs suivants :
+
+* *Panneau de compteur d'IOPS*
++
+Les IOPS indiquent la vitesse de fonctionnement du cluster en nombre d'opérations d'entrée/sortie par seconde. Ce panneau de compteurs offre une vue d'ensemble générale de l'état des IOPS du cluster pour la période précédente de 72 heures. Vous pouvez positionner le curseur de la souris sur la ligne de tendance du graphique pour afficher la valeur IOPS d'une heure précise.
+
+* *Panneau de compteur Mbps*
++
+Mbit/s indique la quantité de données transférées vers et depuis le cluster en mégaoctets par seconde. Ce panneau de compteurs offre une vue d'ensemble de haut niveau de l'état des Mbit/s du cluster pour la période précédente de 72 heures. Vous pouvez positionner votre curseur sur la ligne de tendance du graphique pour afficher la valeur du Mbit/s pour une heure spécifique.
+
+
+
+Le nombre en haut à droite du graphique dans la barre grise correspond à la valeur moyenne des 72 dernières heures. Les chiffres indiqués en bas et en haut du graphique de tendance sont les valeurs minimale et maximale pour la dernière période de 72 heures. La barre grise sous le tableau contient le nombre d'événements actifs (nouveaux et acquittés) et d'événements obsolètes de la dernière période de 72 heures.
+
+Les panneaux du compteur contiennent deux types d'événements :
+
+* *Actif*
++
+Indique que l'événement de performance est actuellement actif (nouveau ou reconnu). Le problème à l'origine de l'incident n'a pas été corrigé lui-même ou n'a pas été résolu. Le compteur de performances de l'objet de stockage reste au-dessus du seuil de performance.
+
+* *Obsolète*
++
+Indique que l'incident n'est plus actif. Le problème à l'origine de l'incident s'est corrigé ou a été résolu. Le compteur de performance de l'objet de stockage n'est plus au-dessus du seuil de performance.
+
+
+
+Pour *événements actifs*, s'il y a un événement, vous pouvez positionner votre curseur sur l'icône de l'événement et cliquer sur le numéro de l'événement pour accéder à la page Détails de l'événement appropriée. S'il y a plus d'un événement, vous pouvez cliquer sur *Afficher tous les événements* pour afficher la page Inventaire des événements, qui est filtrée pour afficher tous les événements pour le type de compteur d'objet sélectionné.

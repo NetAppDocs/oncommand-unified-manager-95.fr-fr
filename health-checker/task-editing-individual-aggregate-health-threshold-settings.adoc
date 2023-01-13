@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-editing-individual-aggregate-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres du seuil de santé pour la capacité globale, la croissance et les copies Snapshot d"un ou plusieurs agrégats. Lorsqu"un seuil est franchi, des alertes sont générées et vous recevez des notifications. Ces notifications vous aident à prendre des mesures préventives en fonction de l"événement généré.' 
+---
+= Modification des paramètres de seuil d'intégrité des agrégats individuels
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres du seuil de santé pour la capacité globale, la croissance et les copies Snapshot d'un ou plusieurs agrégats. Lorsqu'un seuil est franchi, des alertes sont générées et vous recevez des notifications. Ces notifications vous aident à prendre des mesures préventives en fonction de l'événement généré.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+En fonction des modifications apportées aux valeurs de seuil, les événements sont générés ou obsolètes dans le cycle de surveillance suivant.
+
+Lorsque la croissance automatique est activée sur les volumes qui résident sur l'agrégat, les seuils de capacité de l'agrégat sont considérés comme enfreintes en fonction de la taille maximale du volume définie par la croissance automatique, non pas en fonction de la taille du volume initial.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Santé* > *agrégats*.
+. Dans la page d'inventaire *Santé/agrégats*, sélectionnez un ou plusieurs agrégats, puis cliquez sur *Modifier les seuils*.
+. Dans la boîte de dialogue *Modifier les seuils d'agrégats*, modifiez les paramètres de seuil de l'une des options suivantes : capacité, croissance ou copies Snapshot en cochant la case appropriée, puis en modifiant les paramètres.
+. Cliquez sur *Enregistrer*.
+

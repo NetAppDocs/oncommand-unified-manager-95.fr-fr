@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-inodes-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements d"inode fournissent des informations lorsque l"inode est plein ou presque plein afin que vous puissiez surveiller tout problème potentiel. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Inode événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements d'inode fournissent des informations lorsque l'inode est plein ou presque plein afin que vous puissiez surveiller tout problème potentiel. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Inodes presque plein (ocumEvtInodesAlmostFull)
+ a| 
+Risques
+ a| 
+Volumétrie
+ a| 
+Avertissement
+
+
+
+ a| 
+Inodes complet (ocumEvtInodesFull)
+ a| 
+Risques
+ a| 
+Volumétrie
+ a| 
+Erreur
+
+|===

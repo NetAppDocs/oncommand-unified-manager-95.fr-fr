@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-edit-relationship-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez modifier une relation de protection existante pour modifier le taux de transfert maximal, la stratégie de protection ou le planning de protection. 
+---
+= Boîte de dialogue Modifier la relation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier une relation de protection existante pour modifier le taux de transfert maximal, la stratégie de protection ou le planning de protection.
+
+
+
+== Informations de destination
+
+* *Cluster de destination*
++
+Nom du cluster de destination sélectionné.
+
+* *SVM de destination*
++
+Nom du SVM sélectionné
+
+* *Paramètres de relation*
++
+Permet de spécifier le taux de transfert maximal, la règle SnapMirror et de planifier les utilisations de la relation de protection :
+
++
+** Taux de transfert max
++
+Spécifie la vitesse maximale à laquelle les données de base sont transférées entre les clusters sur le réseau. Lorsque cette option est sélectionnée, la bande passante réseau est limitée à la valeur que vous spécifiez. Vous pouvez entrer une valeur numérique, puis sélectionner kilo-octets par seconde (Kbit/s), mégaoctets par seconde (Mbit/s), gigaoctets par seconde (Gbit/s) ou téraoctets par seconde (Tbit/s). La vitesse de transfert maximale que vous spécifiez doit être supérieure à 1 kbps et inférieure à 4 Tbit/s. Si vous choisissez de ne pas utiliser un taux de transfert maximal, le transfert de base entre les relations est illimité. Si le cluster principal et le cluster secondaire sont identiques, ce paramètre est désactivé.
+
+** Règle SnapMirror
++
+Spécifie la règle ONTAP SnapMirror pour la relation. La valeur par défaut est DPDefault.
+
+** Créer la règle
++
+Lance la boîte de dialogue Créer une règle SnapMirror qui vous permet de créer et d'utiliser une nouvelle règle SnapMirror.
+
+** Planification SnapMirror
++
+Spécifie la règle ONTAP SnapMirror pour la relation. Horaires disponibles : aucun, 5 min, 8 heures, tous les jours, toutes les heures, et hebdomadaires. La valeur par défaut est aucun, ce qui indique qu'aucun programme n'est associé à la relation. Les relations sans planifications n'ont aucune valeur d'état de décalage à moins qu'elles n'appartiennent à un service de stockage.
+
+** Créer un planning
++
+Lance la boîte de dialogue Créer un calendrier, qui vous permet de créer une nouvelle planification SnapMirror.
+
+
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Annuler*
++
+Supprime les sélections et ferme la boîte de dialogue configurer la protection.
+
+* *Soumettre*
++
+Applique vos sélections et ferme la boîte de dialogue Modifier la relation.
+
+

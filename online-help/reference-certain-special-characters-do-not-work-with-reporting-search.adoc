@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Certains caractères spéciaux ne fonctionnent pas avec la recherche de rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Numéro*
++
+L'utilisation des caractères spéciaux % et _ lors d'une recherche dans un rapport entraîne l'échec de l'opération.
+
+* * Action corrective*
++
+Si vous recherchez une chaîne contenant % ou _, vous devez utiliser une double barre oblique inverse avant le caractère spécifié.
+
++
+Par exemple, pour rechercher une chaîne contenant S_10, vous devez entrer S\\_10.
+
+

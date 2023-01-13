@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Comprendre les concepts relatifs aux quotas vous aide à gérer efficacement vos quotas d"utilisateurs et vos quotas de groupes d"utilisateurs.' 
+---
+= En savoir plus sur les quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Comprendre les concepts relatifs aux quotas vous aide à gérer efficacement vos quotas d'utilisateurs et vos quotas de groupes d'utilisateurs.

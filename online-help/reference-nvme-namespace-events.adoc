@@ -1,0 +1,185 @@
+---
+permalink: online-help/reference-nvme-namespace-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements d"espace de noms NVMe fournissent des informations sur l"état de vos espaces de noms, afin que vous puissiez surveiller certains problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de l'espace de noms NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements d'espace de noms NVMe fournissent des informations sur l'état de vos espaces de noms, afin que vous puissiez surveiller certains problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+Un astérisque (*) identifie les événements EMS qui ont été convertis en événements Unified Manager.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+NVMeNS hors ligne *(nvmeNamespaceStatushors ligne)
+ a| 
+Événement
+ a| 
+Espace de noms
+ a| 
+Informations
+
+
+
+ a| 
+NVMeNS en ligne *(nvmeNamespaceStatusOnline)
+ a| 
+Événement
+ a| 
+Espace de noms
+ a| 
+Informations
+
+
+
+ a| 
+NVMeNS hors de l'espace *(nvmeNamespaceOutOfSpace)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+
+
+ a| 
+NVMeNS Destroy *(nvmeNamespaceDesroy)
+ a| 
+Événement
+ a| 
+Espace de noms
+ a| 
+Informations
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique d'IOPS dans l'espace de noms NVMe(ocumNvmeNamespaceIopsincident)
+ a| 
+Gestion des
+ a| 
+Espace de noms
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'IOPS pour l'espace de noms NVMe dépassé(ocumNmeNamespaceIopsWarning)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mo/s de l'espace de noms NVMe(ocumNvmeNamespaceMbpsincident)
+ a| 
+Gestion des
+ a| 
+Espace de noms
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement du Mo/s du namespace NVMe dépassé(ocumNvmeNamespaceMbpsWarning)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence de l'espace de noms NVMe ms/op critique seuil dépassé(ocumNmeNamespaceLatenceincident)
+ a| 
+Gestion des
+ a| 
+Espace de noms
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil de latence ms/op de l'espace de noms NVMe dépassé(ocumNmeNamespaceAvertissement)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence de l'espace de noms NVMe et seuil critique d'IOPS brèche (ocumNvmeNamespaceLatenceIopsincident)
+ a| 
+Gestion des
+ a| 
+Espace de noms
+ a| 
+Primordial
+
+
+
+ a| 
+Latence de l'espace de noms NVMe et seuil d'avertissement d'IOPS dépassé(ocumNvmeNamespaceLatenceIopsAvertissement)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence de l'espace de noms NVMe et seuil critique en Mbit/s brèche (ocumNvmeNamespaceLatenceMbpsincident)
+ a| 
+Gestion des
+ a| 
+Espace de noms
+ a| 
+Primordial
+
+
+
+ a| 
+Latence de l'espace de noms NVMe et seuil d'avertissement du Mo/sec dépassé(ocumNvmeNamespaceLatenceMbpsWarning)
+ a| 
+Risques
+ a| 
+Espace de noms
+ a| 
+Avertissement
+
+|===

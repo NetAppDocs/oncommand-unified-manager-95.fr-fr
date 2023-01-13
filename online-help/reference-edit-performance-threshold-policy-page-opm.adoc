@@ -1,0 +1,53 @@
+---
+permalink: online-help/reference-edit-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page Modifier la stratégie de seuil pour modifier une stratégie de seuil de performances existante. 
+---
+= Modifier la page règle de seuil de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page Modifier la stratégie de seuil pour modifier une stratégie de seuil de performances existante.
+
+Vous pouvez modifier les champs de cette page et cliquer sur *Enregistrer* pour modifier une stratégie de seuil de performances. Tous les objets de cluster qui utilisent actuellement la règle de seuil sont automatiquement mis à jour pour utiliser la nouvelle définition de règle.
+
+* *Pour le type d'objet*
++
+Le type d'objet ne peut pas être modifié.
+
+* *Nom de la politique*
++
+Modifiez le nom de la règle de seuil.
+
+* *Description*
++
+Modifier la description détaillée de la stratégie de seuil.
+
+* *Valeurs de seuil*
++
+Modifiez la condition du compteur de seuil principal et, en option, la condition du compteur de seuil secondaire.
+
++
+** *Sélectionnez un compteur*
++
+Modifiez le compteur sur lequel vous souhaitez définir un seuil de performances.
+
+** *Avertissement*
++
+Entrez la valeur limite du compteur considéré comme un avertissement.
+
+** *Critique*
++
+Entrez la valeur limite du compteur considéré comme critique.
+
+
+
+* *Durée*
++
+Modifiez le nombre de minutes pendant lesquelles la valeur du compteur doit être supérieure à la valeur limite critique ou d'avertissement.
+
+

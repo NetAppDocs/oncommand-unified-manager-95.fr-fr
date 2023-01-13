@@ -1,0 +1,91 @@
+---
+permalink: online-help/reference-advanced-secondary-setting-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Paramètres secondaires avancés pour activer la réplication flexible de la version, la sauvegarde de plusieurs copies et les paramètres d"espace sur un volume secondaire. Vous pouvez utiliser la boîte de dialogue Paramètres secondaires avancés pour modifier ou désactiver les paramètres actuels.' 
+---
+= Boîte de dialogue Paramètres secondaires avancés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Paramètres secondaires avancés pour activer la réplication flexible de la version, la sauvegarde de plusieurs copies et les paramètres d'espace sur un volume secondaire. Vous pouvez utiliser la boîte de dialogue Paramètres secondaires avancés pour modifier ou désactiver les paramètres actuels.
+
+Les paramètres liés à l'espace optimisent la quantité des données stockées, notamment : déduplication, compression des données, croissance automatique et garantie de l'espace.
+
+La boîte de dialogue comprend les champs suivants :
+
+* *Activer la réplication de version flexible*
++
+SnapMirror avec réplication flexible de la version. La réplication flexible de la version permet de protéger SnapMirror un volume source, même si le volume de destination est exécuté sous une version antérieure d'ONTAP par rapport au volume source, tant que la source et la destination exécutent ONTAP 8.3 ou une version ultérieure.
+
++
+** Activez la sauvegarde
++
+Si la réplication flexible de la version est activée, plusieurs copies Snapshot des données source SnapMirror peuvent également être transférées et conservées au niveau de la destination SnapMirror.
+
+
+
+* *Activer la déduplication*
++
+Active la déduplication sur le volume secondaire dans une relation SnapVault afin de supprimer les blocs de données dupliqués pour économiser de l'espace. Vous pouvez utiliser la déduplication lorsque les économies d'espace sont d'au moins 10 % et lorsque le taux de remplacement des données n'est pas rapide. La déduplication est souvent utilisée pour les environnements virtualisés, les partages de fichiers et les données de sauvegarde. Ce paramètre est désactivé par défaut. Lorsqu'elle est activée, cette opération est lancée après chaque transfert.
+
++
+** Activer la compression
++
+Permet la compression transparente des données. Vous pouvez utiliser la compression lorsque les économies d'espace sont d'au moins 10 %, lorsque la surcharge potentielle est acceptable et lorsqu'il existe suffisamment de ressources système pour la compression pendant les heures creuses. Dans une relation SnapVault, ce paramètre est désactivé par défaut. La compression n'est disponible que lorsque la déduplication est sélectionnée.
+
+** Compresser à la volée
++
+Permet un gain d'espace immédiat grâce à la compression des données avant leur écriture sur le disque. Vous pouvez utiliser la compression à la volée lorsque votre système n'a pas une utilisation supérieure à 50 % pendant les heures de pointe, et lorsque le système peut prendre en charge de nouvelles écritures et des ressources de processeur supplémentaires pendant les heures de pointe. Ce paramètre n'est disponible que lorsque l'option « Activer la compression » est sélectionnée.
+
+
+
+* *Activer croissance automatique*
++
+Vous permet d'étendre automatiquement le volume de destination lorsque le pourcentage d'espace libre est inférieur au seuil spécifié, tant qu'un espace est disponible sur l'agrégat associé.
+
+* *Taille maximale*
++
+Définit le pourcentage maximal sur lequel un volume peut croître. La valeur par défaut est 20 % supérieure à la taille du volume source. Un volume n'augmente pas automatiquement si la taille actuelle est supérieure ou égale au pourcentage de croissance automatique maximal. Ce champ est activé uniquement lorsque le réglage de croissance automatique est activé.
+
+* *Taille d'incrément*
++
+Spécifie l'incrément de pourcentage d'augmentation automatique du volume avant d'atteindre le pourcentage maximal du volume source.
+
+* *Garantie d'espace*
++
+Capacité allouée sur le volume secondaire suffisante pour que les transferts de données puissent toujours réussir. Le paramètre de garantie d'espace peut être l'un des suivants :
+
++
+** Fichier
+** Volumétrie
+** Aucun par exemple, vous pouvez disposer d'un volume de 200 Go contenant des fichiers d'un total de 50 Go. Cependant, ces fichiers ne contiennent que 10 Go de données. La garantie du volume alloue 200 Go au volume de destination, quel que soit le contenu de la source. La garantie de fichier alloue 50 Go pour garantir que l'espace est suffisant pour les fichiers sur la source. Si vous sélectionnez aucun dans ce scénario, seuls 10 Go sont alloués à la destination pour l'espace réel utilisé par les données de fichier sur la source.
+
+
++
+La garantie d'espace est définie par défaut sur Volume.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Appliquer*
++
+Enregistre les paramètres d'efficacité sélectionnés et les applique lorsque vous cliquez sur *appliquer* dans la boîte de dialogue configurer la protection.
+
+* *Annuler*
++
+Supprime vos sélections et ferme la boîte de dialogue Paramètres de destination avancés.
+
+
+
+*Informations connexes*
+
+http://www.netapp.com/us/media/tr-3966.pdf["Rapport technique de NetApp 3966 : Guide de déploiement et d'implémentation de la compression des données et de la déduplication NetApp (clustered Data ONTAP)"]

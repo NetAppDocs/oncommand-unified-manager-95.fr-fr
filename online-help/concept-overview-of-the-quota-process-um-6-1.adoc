@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-overview-of-the-quota-process-um-6-1.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les quotas peuvent être conditionnels ou inconditionnels. Lors du dépassement de limites définies, les quotas conditionnels entraînent l"envoi d"une notification par ONTAP, tandis que les quotas inconditionnels empêcheront toute opération d"écriture.' 
+---
+= Présentation du processus de quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les quotas peuvent être conditionnels ou inconditionnels. Lors du dépassement de limites définies, les quotas conditionnels entraînent l'envoi d'une notification par ONTAP, tandis que les quotas inconditionnels empêcheront toute opération d'écriture.
+
+Lorsqu'ONTAP reçoit une demande d'un utilisateur ou d'un groupe d'utilisateurs d'écrire sur un volume FlexVol, il vérifie si les quotas sont activés sur ce volume pour l'utilisateur ou le groupe d'utilisateurs et détermine les éléments suivants :
+
+* Indique si la limite stricte sera atteinte
++
+Si oui, l'opération d'écriture échoue lorsque la limite stricte est atteinte et que la notification de quota stricte est envoyée.
+
+* Indique si la limite soft sera enfreinte
++
+Si oui, l'opération d'écriture réussit lorsque la limite soft est dépassée et que la notification soft quota est envoyée.
+
+* Indique si une opération d'écriture ne dépassera pas la limite soft
++
+Si oui, l'opération d'écriture réussit et aucune notification n'est envoyée.
+
+

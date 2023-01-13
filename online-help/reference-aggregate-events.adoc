@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements d"agrégat fournissent des informations sur l"état des agrégats, qui vous permettent de surveiller en cas de problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Agréger les événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements d'agrégat fournissent des informations sur l'état des agrégats, qui vous permettent de surveiller en cas de problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+Un astérisque (*) identifie les événements EMS qui ont été convertis en événements Unified Manager.
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Agrégat hors ligne(ocumEvtAggregateStateOffline)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+L'agrégat a échoué(ocumEvtagrégeStateFaitStateFaitStateFailed)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Agrégat Restricted (ocumEvtAggregateStateRestricted)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Reconstruction d'agrégats(ocumEvtAggregateRaidStateReconstructing)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Agrégat dégradé(ocumEvtAggregateRaidStateDegraded)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Cloud Tier partiellement accessible(ocumEventCloudTierPartiallyRelixiaccessible)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Cloud Tier inaccessible(ocumEventCloudTierUnreaccessible)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Agrégat MetroCluster laissé derrière(ocumEvtMetroClusterAggregatede gauche)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Mise en miroir des agrégats MetroCluster dégradé (ocumEvtMetroClusterAggréateMirrorDegret)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Accès au magasin d'objets refusé pour le transfert d'agrégats *
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Accès au magasin d'objets refusé pour le transfert d'agrégats durant le basculement du stockage *
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+|===
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Espace total quasiment plein (ocumEvtagrégeNearyFull)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Espace total de l'agrégat (ocumEvtAggregateFull)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Agréger les jours jusqu'au total (ocumEvtAggregateDaysUntilFullSoon)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Surallocation des agrégats (ocumEvtAggregateOverdéterminé)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Erreur
+
+
+
+ a| 
+Agrégat presque surengagé(ocumEvtAggregateAlmostOverdéterminé)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Réserve Snapshot totale de l'agrégat (ocumEvtAggregateSnapReserveFull)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Taux de croissance global anormal (ocumEvtagrégeRegeTrowthRateAbnormal)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : configuration
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Agrégat découvert (non applicable)
+ a| 
+Événement
+ a| 
+Agrégat
+ a| 
+Informations
+
+
+
+ a| 
+Agrégat renommé (non applicable)
+ a| 
+Événement
+ a| 
+Agrégat
+ a| 
+Informations
+
+
+
+ a| 
+Agrégat supprimé (non applicable)
+ a| 
+Événement
+ a| 
+Nœud
+ a| 
+Informations
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique d'IOPS global dépassé (ocumagrégeIopsincident)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'IOPS global dépassé(ocumagrégeIopsAvertissement)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mbit/s agrégé dépassé (ocumAggregateMbpsincident)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de Mbit/s agrégé dépassé ( ocumAggregateMbpsWarning)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de latence globale dépassé(ocumagrégeRegeLatenceincident)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de latence globale dépassé ( ocumAggregateLatAvertissement)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Perf. Agrégées Seuil critique utilisé en termes de capacité violé(octaagrégePerfÉvolutivité avec le système Usedincident)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Perf. Agrégées Seuil d'avertissement de capacité utilisée dépassé(ocumAggregorgePerfÉvolutivité)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique d'utilisation des agrégats (ocumagrégeUtilationincident)
+ a| 
+Gestion des
+ a| 
+Agrégat
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'utilisation des agrégats dépassé (avertissement concernant l'agrégation de l'agrégationUtilationWarning)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Dépassement du seuil lors de la surutilisation des disques agrégés (ocumAgregateDiskOverUtilizedWarning)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil dynamique d'agrégat dépassé (ocumAggregateDynamicEventWarning)
+ a| 
+Risques
+ a| 
+Agrégat
+ a| 
+Avertissement
+
+|===

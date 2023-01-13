@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La règle par défaut est la règle présente dans la règle de données d"une machine virtuelle de stockage \(SVM\) avec Infinite Volume. Elle permet de déterminer le placement des données écrites sur Infinite Volume lorsqu"aucune condition des règles existantes ne correspond aux données écrites.' 
+---
+= Définition de la règle par défaut
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La règle par défaut est la règle présente dans la règle de données d'une machine virtuelle de stockage (SVM) avec Infinite Volume. Elle permet de déterminer le placement des données écrites sur Infinite Volume lorsqu'aucune condition des règles existantes ne correspond aux données écrites.
+
+La règle par défaut est toujours la dernière règle d'une stratégie de données et ne peut pas être réordonnée. Prenons l'exemple d'une règle de données comportant trois règles. La règle 1 place tous les fichiers .PDF dans la classe __High_performance__Storage. La règle 2 place tous les fichiers appartenant à l'administrateur et les noms de fichiers qui se terminent par *.xls dans la classe de stockage _archiviste_constituante_. La troisième règle est la règle par défaut avec la classe de stockage _low_performance_.
+
+Lorsqu'un ensemble de fichiers *.jpg qui n'appartiennent pas à l'administrateur est écrit sur Infinite Volume, la règle par défaut est utilisée pour placer ces fichiers .jpg dans la classe de stockage _LOW_performance_. Les règles 1 et 2 ne sont pas utilisées car les données écrites ne correspondent pas à ces règles.

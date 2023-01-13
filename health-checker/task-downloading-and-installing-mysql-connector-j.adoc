@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-downloading-and-installing-mysql-connector-j.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous devez télécharger et installer les pilotes MySQL Connector/J à un emplacement spécifique. Vous pouvez utiliser ces pilotes pour créer une source de données qui connecte le rapport à Unified Manager. 
+---
+= Téléchargement et installation de MySQL Connector/J
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez télécharger et installer les pilotes MySQL Connector/J à un emplacement spécifique. Vous pouvez utiliser ces pilotes pour créer une source de données qui connecte le rapport à Unified Manager.
+
+
+
+== Description de la tâche
+
+Vous devez utiliser MySQL Connector/J version 5.1 ou ultérieure.
+
+
+
+== Étapes
+
+. Téléchargez les pilotes MySQL Connector/J à l'adresse `dev.mysql.com`.
+. Installer le `.jar` classez et notez son emplacement pour référence ultérieure.
++
+Par exemple, installez le `.jar` dossier à `C:\Program Files\MySQL\MySQL Connector J\mysql-connector-java-5.1.32-bin.jar`.
+
+

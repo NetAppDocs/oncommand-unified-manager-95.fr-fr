@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer un format de notification pour les e-mails envoyés à un utilisateur ou à un groupe d"utilisateurs en cas de problème lié aux quotas \(limite souple dépassée ou limite stricte atteinte\).' 
+---
+= Création d'un format de notification par e-mail pour les quotas d'utilisateurs et de groupes d'utilisateurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer un format de notification pour les e-mails envoyés à un utilisateur ou à un groupe d'utilisateurs en cas de problème lié à un quota (limite souple dépassée ou limite stricte atteinte).
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *quota Email* dans le menu de configuration de gauche.
+. Dans la page d'options *Configuration*, cliquez sur *format de notification*, puis entrez ou modifiez les détails dans les champs *de*, *sujet* et *Détails de messagerie*.
+. Cliquez sur *Aperçu* pour afficher un aperçu de la notification par e-mail.
+. Cliquez sur *Fermer* pour fermer la fenêtre d'aperçu.
+. Modifiez le contenu de la notification par e-mail, si nécessaire.
+. Cliquez sur *Enregistrer et fermer*.
+

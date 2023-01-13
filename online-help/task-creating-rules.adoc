@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez ajouter de nouvelles règles à votre règle de données afin de déterminer le placement des données écrites sur le volume Infinite Volume. Vous pouvez créer des règles en utilisant des modèles de règles définis dans Unified Manager ou en créant des règles personnalisées. 
+---
+= Création de règles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter de nouvelles règles à votre règle de données afin de déterminer le placement des données écrites sur le volume Infinite Volume. Vous pouvez créer des règles en utilisant des modèles de règles définis dans Unified Manager ou en créant des règles personnalisées.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Le cluster contenant le SVM avec Infinite Volume avec des classes de stockage doit être ajouté à la base de données Unified Manager.
+

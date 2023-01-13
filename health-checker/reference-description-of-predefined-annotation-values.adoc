@@ -1,0 +1,28 @@
+---
+permalink: health-checker/reference-description-of-predefined-annotation-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La priorité des données est une annotation prédéfinie qui a les valeurs Mission Critical, High et Low. Ces valeurs vous permettent d"annoter les objets de stockage en fonction de la priorité des données qu"ils contiennent. Vous ne pouvez ni modifier ni supprimer les valeurs d"annotation prédéfinies.' 
+---
+= Description des valeurs d'annotation prédéfinies
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+*Priorité des données* est une annotation prédéfinie qui a les valeurs Mission critique, haute et basse. Ces valeurs vous permettent d'annoter les objets de stockage en fonction de la priorité des données qu'ils contiennent. Vous ne pouvez ni modifier ni supprimer les valeurs d'annotation prédéfinies.
+
+* *Priorité des données:critique*
++
+Cette annotation est appliquée aux objets de stockage qui contiennent des données stratégiques. Par exemple, les objets qui contiennent des applications de production peuvent être considérés comme critiques.
+
+* *Priorité de données:élevée*
++
+Cette annotation est appliquée aux objets de stockage qui contiennent des données à priorité élevée. Par exemple, les objets qui hébergent des applications métier peuvent être considérés comme prioritaires.
+
+* *Priorité de données : faible*
++
+Cette annotation est appliquée aux objets de stockage qui contiennent des données à faible priorité. Par exemple, les objets qui se trouvent sur un système de stockage secondaire, comme les destinations de sauvegarde et de miroir, peuvent être en priorité faible.
+
+

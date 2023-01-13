@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser l"option appropriée dans l"onglet quotas d"utilisateur et de groupe de la page d"inventaire Health/Storage Virtual machines pour configurer le format de la notification par e-mail envoyée lorsqu"un problème lié à un quota se produit et pour configurer des règles pour spécifier des adresses e-mail en fonction du quota d"utilisateur.' 
+---
+= Description des boîtes de dialogue quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'option appropriée dans l'onglet quotas d'utilisateur et de groupe de la page d'inventaire Health/Storage Virtual machines pour configurer le format de la notification par e-mail envoyée lorsqu'un problème lié à un quota se produit et pour configurer des règles pour spécifier des adresses e-mail en fonction du quota d'utilisateur.

@@ -1,0 +1,97 @@
+---
+permalink: install/reference-red-hat-and-centos-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le système Linux sur lequel vous installez Unified Manager nécessite des versions spécifiques du système d"exploitation et des logiciels de prise en charge.' 
+---
+= Conditions d'installation et de logiciels Red Hat Enterprise Linux et CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le système Linux sur lequel vous installez Unified Manager nécessite des versions spécifiques du système d'exploitation et des logiciels de prise en charge.
+
+
+
+== Logiciel de système d'exploitation
+
+Le système Linux doit disposer des versions suivantes du système d'exploitation et des logiciels de support installés :
+
+* Red Hat Enterprise Linux ou CentOS 64 bits version 7.x
++
+Red Hat Enterprise Linux 6.x n'est pas pris en charge à partir de Unified Manager 9.4.
+
+
+
+Consultez la matrice d'interopérabilité pour obtenir la liste complète et la plus récente des versions de Red Hat Enterprise Linux et CentOS prises en charge.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Les packages tiers suivants sont requis :
+
+* MySQL Community Edition version 5.7.23 ou ultérieure dans la famille 5.7 (à partir du référentiel MySQL)
+* OpenJDK version 11 (à partir du référentiel Red Hat Extra Enterprise Linux Server)
++
+[NOTE]
+====
+Oracle Java n'est pas pris en charge à partir de Unified Manager 9.5.
+
+====
+* P7zip version 16.02 ou ultérieure (à partir du référentiel Red Hat Extra Packages for Enterprise Linux)
+
+
+[NOTE]
+====
+Si vous prévoyez de mettre à niveau un logiciel tiers après l'exécution de Unified Manager, vous devez d'abord arrêter Unified Manager. Une fois l'installation du logiciel tiers terminée, vous pouvez redémarrer Unified Manager.
+
+====
+
+
+== Exigences d'autorisation utilisateur
+
+L'installation de Unified Manager sur un système Red Hat Enterprise Linux ou CentOS peut être effectuée par l'utilisateur root ou par des utilisateurs non-root à l'aide du `sudo` commande.
+
+
+
+== Conditions requises pour l'installation
+
+Les meilleures pratiques d'installation de Red Hat Enterprise Linux ou CentOS et des référentiels associés sur votre système sont les suivantes :
+
+* Vous devez installer Red Hat Enterprise Linux ou CentOS conformément aux meilleures pratiques de Red Hat, et vous devez sélectionner les options par défaut suivantes, qui nécessitent de sélectionner "`serveur avec interface utilisateur graphique".
+* Lors de l'installation de Unified Manager sur Red Hat Enterprise Linux ou CentOS, le système doit avoir accès au référentiel approprié afin que le programme d'installation puisse accéder à toutes les dépendances logicielles requises et les installer.
+* Pour le `yum` Programme d'installation pour rechercher des logiciels dépendants dans les référentiels Red Hat Enterprise Linux, vous devez avoir enregistré le système lors de l'installation de Red Hat Enterprise Linux ou par la suite en utilisant un abonnement Red Hat valide.
++
+Pour plus d'informations sur le Gestionnaire d'abonnement Red Hat, reportez-vous à la documentation Red Hat.
+
+* Vous devez activer le référentiel des progiciels supplémentaires pour Enterprise Linux (EPEL) pour installer correctement les utilitaires tiers requis sur votre système.
++
+Si le référentiel EPEL n'est pas configuré sur votre système, vous devez télécharger et configurer manuellement le référentiel.
+
++
+xref:task-manually-configuring-the-epel-repository.adoc[Configuration manuelle du référentiel EPEL]
+
+* Si la version correcte de MySQL n'est pas installée, vous devez activer le référentiel MySQL pour installer correctement le logiciel MySQL sur votre système.
++
+Si le référentiel MySQL n'est pas configuré sur votre système, vous devez télécharger et configurer manuellement le référentiel.
+
++
+xref:task-manually-configuring-the-mysql-repository.adoc[Configuration manuelle du référentiel MySQL]
+
+
+
+Si votre système n'a pas accès à Internet et que les référentiels ne sont pas mis en miroir à partir d'un système connecté à Internet vers un système non connecté, vous devez suivre les instructions d'installation pour déterminer les dépendances logicielles externes de votre système. Vous pouvez ensuite télécharger le logiciel requis sur le système connecté à Internet et copier le `.rpm` Fichiers vers le système sur lequel vous prévoyez d'installer Unified Manager. Pour télécharger les artefacts et les packages, vous devez utiliser le `yum install` commande. Vous devez vous assurer que les deux systèmes exécutent la même version de système d'exploitation et que la licence d'abonnement est pour la version appropriée de Red Hat Enterprise Linux ou CentOS.
+
+[NOTE]
+====
+Vous ne devez pas installer les logiciels tiers requis à partir d'autres référentiels que ceux répertoriés ici. Les logiciels installés à partir des référentiels Red Hat sont conçus explicitement pour Red Hat Enterprise Linux et respectent les meilleures pratiques Red Hat (mises en page des répertoires, autorisations, etc.). Il est possible que les logiciels provenant d'autres emplacements ne respectent pas ces directives, ce qui peut entraîner l'échec de l'installation de Unified Manager ou risque de provoquer des problèmes lors des mises à niveau futures.
+
+====
+
+
+== Orifice 443 requis
+
+Les images génériques de Red Hat et CentOS bloquent l'accès externe au port 443. Si votre navigateur ne parvient pas à se connecter à votre produit OnCommand, il se peut que ce soit le problème. La commande suivante permet l'accès au port 443 pour tous les utilisateurs et applications externes : `# firewall-cmd –zone=public –add-port=443/tcp –permanent; firewall-cmd –reload`
+
+Consultez votre service INFORMATIQUE avant d'exécuter cette commande pour savoir si vos stratégies de sécurité nécessitent une procédure différente.

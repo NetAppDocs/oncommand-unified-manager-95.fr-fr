@@ -1,0 +1,89 @@
+---
+permalink: config/reference-identity-provider-requirements-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lors de la configuration d"Unified Manager pour utiliser un fournisseur d"identités \(IDP\) pour effectuer l"authentification SAML pour tous les utilisateurs distants, vous devez connaître certains paramètres de configuration requis afin que la connexion à Unified Manager soit établie avec succès.' 
+---
+= Exigences du fournisseur d'identités
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de la configuration d'Unified Manager pour utiliser un fournisseur d'identités (IDP) pour effectuer l'authentification SAML de tous les utilisateurs distants, vous devez connaître certains paramètres de configuration requis afin que la connexion à Unified Manager soit établie.
+
+Vous devez entrer l'URI Unified Manager et les métadonnées dans le serveur IDP. Vous pouvez copier ces informations à partir de la page Unified ManagerSAML Authentication. Unified Manager est considéré comme le fournisseur de services dans la norme SAML.
+
+
+
+== Normes de chiffrement prises en charge
+
+* Advanced Encryption Standard (AES) : AES-128 et AES-256
+* Algorithme de hachage sécurisé (SHA) : SHA-1 et SHA-256
+
+
+
+
+== Des fournisseurs d'identité validés
+
+* Hurlent
+* ADFS (Active Directory Federation Services)
+
+
+
+
+== Configuration requise pour ADFS
+
+* Vous devez définir trois règles de sinistre dans l'ordre suivant qui sont nécessaires à Unified Manager pour analyser les réponses SAML ADFS pour cette entrée de confiance de tiers de confiance.
++
+|===
+| Règle de réclamation | Valeur 
+
+
+ a| 
+SAM-account-name
+ a| 
+ID nom
+
+
+
+ a| 
+SAM-account-name
+ a| 
+urn:oid:0.9.2342.19200300.100.1.1
+
+
+
+ a| 
+Groupes de jetons -- Nom non qualifié
+ a| 
+urn:oid:1.3.6.1.4.1.5923.1.5.1.1
+
+|===
+* Vous devez définir la méthode d'authentification sur « authentification des formulaires » pour que les utilisateurs puissent recevoir une erreur lors de la déconnexion d'Unified Manager lors de l'utilisation d'Internet Explorer. Voici la procédure à suivre :
++
+.. Ouvrez la console de gestion ADFS.
+.. Cliquez sur le dossier Authentication Policies dans l'arborescence de gauche.
+.. Sous actions à droite, cliquez sur Modifier la stratégie d'authentification principale globale.
+.. Définissez la méthode d'authentification Intranet sur « authentification des formulaires » au lieu de « authentification Windows » par défaut.
+
+
+* Dans certains cas, la connexion via le PDI est rejetée lorsque le certificat de sécurité Unified Manager est signé avec une autorité de certification. Il existe deux solutions pour résoudre ce problème :
++
+** Suivez les instructions indiquées dans le lien pour désactiver la vérification de révocation sur le serveur ADFS pour les certificats CA chaînés associés à la partie de confiance :
++
+http://www.torivar.com/2016/03/22/adfs-3-0-disable-revocation-check-windows-2012-r2/[]
+
+** Demandez au serveur CA de se trouver dans le serveur ADFS pour signer la demande d'autorisation de serveur Unified Manager.
+
+
+
+
+
+
+== Autres exigences de configuration
+
+* L'inclinaison de l'horloge de Unified Manager est définie sur 5 minutes, la différence de temps entre le serveur IDP et le serveur Unified Manager ne peut pas dépasser 5 minutes, sinon l'authentification échouera.
+* Lorsque les utilisateurs tentent d'accéder à Unified Manager à l'aide d'Internet Explorer, ils peuvent voir le message *le site Web ne peut pas afficher la page*. Si cela se produit, assurez-vous que ces utilisateurs décochez l'option "Enregistrer les messages d'erreur HTTP conviviaux" dans *Outils* > *Options Internet* > *Avancé*.
+

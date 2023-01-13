@@ -1,0 +1,73 @@
+---
+permalink: online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page de détails Health/Volume pour créer une relation SnapMirror de sorte que la réplication des données soit activée à des fins de protection. La réplication SnapMirror vous permet de restaurer les données à partir du volume de destination en cas de perte de données sur la source. 
+---
+= Création d'une relation de protection SnapMirror à partir de la page de détails Health/Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page de détails Health/Volume pour créer une relation SnapMirror de sorte que la réplication des données soit activée à des fins de protection. La réplication SnapMirror vous permet de restaurer les données à partir du volume de destination en cas de perte de données sur la source.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+
+
+
+
+== Description de la tâche
+
+Le menu *Protect* ne s'affiche pas dans les cas suivants :
+
+* Si les paramètres RBAC n'autorisent pas cette action : par exemple, si vous disposez uniquement des privilèges d'opérateur
+* Si le volume est un volume FlexGroup
+* Lorsque l'ID du volume est inconnu : par exemple, lorsque vous avez une relation intercluster et que le cluster destination n'a pas encore été découvert
+
+
+Vous pouvez effectuer jusqu'à 10 tâches de protection en même temps, sans affecter les performances. Vous pouvez avoir un impact certain sur les performances lorsque vous exécutez simultanément entre 11 et 30 tâches. Il n'est pas recommandé d'exécuter plus de 30 tâches simultanément.
+
+
+
+== Étapes
+
+. Dans l'onglet *protection* de la page de détails *Santé/Volume*, cliquez avec le bouton droit de la souris dans la vue topologique sur le nom d'un volume que vous souhaitez protéger.
+. Sélectionnez *Protect* > *SnapMirror* dans le menu.
++
+La boîte de dialogue configurer la protection s'affiche.
+
+. Cliquez sur *SnapMirror* pour afficher l'onglet *SnapMirror* et configurer les informations de destination.
+. Cliquez sur *Avancé* pour définir la garantie d'espace, selon les besoins, puis cliquez sur *appliquer*.
+. Renseignez la zone *destination information* et la zone *Relationship Settings* de la boîte de dialogue *Configure protection*.
+. Cliquez sur *appliquer*.
++
+Vous revenez à la page Détails de l'état/volume.
+
+. Cliquez sur le lien de la tâche de configuration de la protection en haut de la page *Santé/Volume*.
++
+Les tâches et les détails de la tâche s'affichent dans la page protection/Détails de la tâche.
+
+. Dans la page *protection/travail* details, cliquez sur *Actualiser* pour mettre à jour la liste des tâches et les détails de la tâche associée à la tâche de configuration de la protection et déterminer quand la tâche est terminée.
+. Une fois les tâches terminées, cliquez sur *Retour* dans votre navigateur pour revenir à la page de détails *Santé/Volume*.
++
+La nouvelle relation s'affiche dans la vue topologique de la page détaillée de l'état de santé/volume.
+
+
+
+
+
+== Résultats
+
+En fonction du SVM de destination que vous avez spécifié lors de la configuration ou des options que vous avez activées dans vos paramètres avancés, la relation SnapMirror résultante peut être l'une des variantes suivantes :
+
+* Si vous avez spécifié un SVM de destination qui s'exécute sous la même version ou plus récente de ONTAP que celui du volume source, une relation SnapMirror basée sur la réplication de bloc est le résultat par défaut.
+* Si vous avez spécifié un SVM de destination qui s'exécute sous la même version ou plus récente de ONTAP (version 8.3 ou supérieure) par rapport au volume source, mais que vous avez activé la réplication flexible de la version dans les paramètres avancés, une relation SnapMirror avec la réplication flexible de la version est résultat.
+* Si vous avez spécifié un SVM de destination qui s'exécute sous une version antérieure de ONTAP 8.3 ou une version supérieure à celle du volume source et que la version précédente prend en charge la réplication flexible de la version, il s'agit du résultat automatique d'une relation SnapMirror avec la réplication flexible de la version.
+

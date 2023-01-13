@@ -1,0 +1,104 @@
+---
+permalink: performance-checker/reference-workload-performance-measurement-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager mesure les performances des workloads sur un cluster en fonction des valeurs statistiques historiques et attendues, qui constituent la plage de valeurs attendue pour les workloads. Il compare les valeurs statistiques réelles de la charge de travail à la plage prévue pour déterminer si les performances des charges de travail sont trop élevées ou trop faibles. Un workload qui n"exécute pas comme prévu entraîne l"envoi d"un rapport d"événements de performance à vous notifier.' 
+---
+= Valeurs de mesure des performances des charges de travail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager mesure les performances des workloads sur un cluster en fonction des valeurs statistiques historiques et attendues, qui constituent la plage de valeurs attendue pour les workloads. Il compare les valeurs statistiques réelles de la charge de travail à la plage prévue pour déterminer si les performances des charges de travail sont trop élevées ou trop faibles. Un workload qui n'exécute pas comme prévu entraîne l'envoi d'un rapport d'événements de performance à vous notifier.
+
+Dans l'illustration suivante, la valeur réelle, en rouge, représente les statistiques de performance réelles dans la période. La valeur réelle a dépassé le seuil de performances, qui est les limites supérieures de la plage attendue. Le pic est la valeur réelle la plus élevée dans la période. L'écart mesure le changement entre les valeurs attendues et les valeurs réelles, tandis que l'écart de crête indique le changement le plus important entre les valeurs attendues et les valeurs réelles.
+
+image::../media/opm-wrkld-perf-measurement-png.gif[Mesures des performances des workloads de Performance Manager]
+
+Le tableau suivant répertorie les valeurs de mesure des performances des workloads.
+
+|===
+| Mesure | Description 
+
+
+ a| 
+Activité
+ a| 
+Pourcentage de la limite de qualité de service utilisée par les workloads dans le groupe de règles.
+
+[NOTE]
+====
+Si Unified Manager détecte une modification au groupe de règles, par exemple l'ajout ou la suppression d'un volume ou la modification de la limite de QoS, les valeurs réelles et attendues peuvent dépasser 100 % de la limite définie. Si une valeur dépasse 100 % de la limite définie, elle s'affiche sous la forme de > 100 %. Si une valeur est inférieure à 1 % de la limite définie, elle s'affiche sous la forme <1 %.
+
+====
+
+
+ a| 
+Réel
+ a| 
+La valeur des performances mesurée à un moment spécifique pour une charge de travail donnée.
+
+
+
+ a| 
+Déviation
+ a| 
+Changement entre les valeurs attendues et les valeurs réelles. Il s'agit du rapport entre la valeur réelle moins la valeur attendue et la valeur supérieure de la plage attendue moins la valeur attendue.
+
+[NOTE]
+====
+Une valeur de déviation négative indique que la performance de la charge de travail est inférieure à la valeur attendue, tandis qu'une valeur de déviation positive indique que la performance de la charge de travail est supérieure à la valeur attendue. Si les valeurs attendues et la valeur réelle sont très faibles, dans les centièmes ou les millièmes de pourcentage par exemple, la déviation affiche N/A.
+
+====
+
+
+ a| 
+Attendu
+ a| 
+Les valeurs attendues sont basées sur l'analyse des données historiques de performances pour une charge de travail donnée. Unified Manager analyse ces valeurs statistiques afin de déterminer la plage de valeurs attendue.
+
+
+
+ a| 
+Plage prévue
+ a| 
+La plage de valeurs attendue est une prévision, ou prévision, de ce que les valeurs de performance supérieure et inférieure devraient être à un moment donné. Pour la latence des workloads, les valeurs supérieures constituent le seuil de performance. Lorsque la valeur réelle franchit le seuil de performances, Unified Manager déclenche une alerte d'événement de performance.
+
+
+
+ a| 
+Pic
+ a| 
+Valeur maximale mesurée sur une période de temps.
+
+
+
+ a| 
+Déviation de crête
+ a| 
+Valeur de déviation maximale mesurée sur une période de temps.
+
+
+
+ a| 
+Profondeur de la file d'attente
+ a| 
+Nombre de demandes d'E/S en attente du composant d'interconnexion.
+
+
+
+ a| 
+Du stockage
+ a| 
+Pour les composants de traitement de réseau, de traitement de données et d'agrégat, le pourcentage de temps d'activité requis pour mener à bien les opérations de la charge de travail sur une période donnée. Par exemple, le pourcentage de temps alloué aux composants de traitement réseau ou de traitement de données pour traiter une demande d'E/S ou à un agrégat pour répondre à une demande de lecture ou d'écriture.
+
+
+
+ a| 
+Débit d'écriture
+ a| 
+Débit en écriture, en mégaoctets par seconde (Mbit/s), des charges de travail sur un cluster local vers le cluster partenaire dans une configuration MetroCluster.
+
+|===

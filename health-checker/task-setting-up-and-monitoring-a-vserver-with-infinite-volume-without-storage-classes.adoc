@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-setting-up-and-monitoring-a-vserver-with-infinite-volume-without-storage-classes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilisez OnCommand Workflow Automation \(WFA\) et Unified Manager pour configurer et surveiller des serveurs virtuels de stockage \(SVM\) avec Infinite Volume. Vous devez créer le SVM avec Infinite Volume avec WFA, puis surveiller Infinite Volume avec Unified Manager. Vous pouvez également configurer la protection des données de votre Infinite Volume.' 
+---
+= Configuration et contrôle d'un SVM avec Infinite Volume sans classes de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Workflow Automation (WFA) et Unified Manager doivent être utilisés pour configurer et surveiller les serveurs virtuels de stockage avec Infinite Volume. Vous devez créer le SVM avec Infinite Volume avec WFA, puis surveiller Infinite Volume avec Unified Manager. Vous pouvez également configurer la protection des données de votre Infinite Volume.
+
+
+
+== Avant de commencer
+
+Les exigences suivantes doivent être satisfaites :
+
+* WFA doit être installé et les sources de données doivent être configurées.
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir créé le nombre d'agrégats requis en personnalisant le flux de travail prédéfini approprié dans WFA.
+* Vous devez avoir configuré le serveur Unified Manager en tant que source de données dans WFA, puis vous devez avoir vérifié que les données sont correctement mises en cache.
+
+
+
+
+== Description de la tâche
+
+* Seuls les SVM de données peuvent être contrôlent à l'aide de Unified Manager.
+* Lors de cette tâche, vous devez basculer entre deux applications : OnCommand Workflow Automation (WFA) et OnCommand Unified Manager.
+* La tâche fournit des étapes générales.
++
+Pour plus de détails sur l'exécution des tâches WFA, consultez la documentation _OnCommand Workflow Automation_.
+
+
+
+
+
+== Étapes
+
+. image:../media/wfa-icon.gif["Icône de procédure WFA"] Créez un SVM avec Infinite Volume, puis créez-le à l'aide du workflow approprié.
++
+Vous pouvez activer des technologies d'efficacité du stockage, comme la déduplication et la compression, tout en créant Infinite Volume.
+
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] Ajoutez le cluster contenant la SVM avec Infinite Volume à la base de données Unified Manager.
++
+Vous pouvez ajouter le cluster en fournissant l'adresse IP ou le FQDN du cluster.
+
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] En fonction des exigences de votre entreprise, modifiez les seuils d'Infinite Volume sur le SVM.
++
+[TIP]
+====
+Vous devez utiliser les paramètres de seuil Infinite Volume par défaut.
+
+====
+. image:../media/um-icon.gif["Icône de la procédure Unified Manager"] Configurez les alertes de notification et les interruptions pour résoudre tout problème de disponibilité et de capacité lié à Infinite Volume.
+. image:../media/wfa-icon.gif["Icône de procédure WFA"] Créez un SVM de reprise après incident avec Infinite Volume, puis configurez la protection des données (DP) en effectuant les étapes suivantes :
++
+.. Créez un Infinite Volume de protection des données (DP) à l'aide du flux de production approprié.
+.. Configurez une relation de miroir DP entre la source et la destination à l'aide du workflow approprié.
+
+
+

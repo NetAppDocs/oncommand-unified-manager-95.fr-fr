@@ -1,0 +1,18 @@
+---
+permalink: install/concept-setting-up-unified-manager-within-mscs-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer la haute disponibilité de Unified Manager à l"aide de la mise en cluster de basculement. Configuration haute disponibilité pour la fonctionnalité de basculement.' 
+---
+= Configuration d'Unified Manager dans un environnement de mise en cluster de basculement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer la haute disponibilité de Unified Manager à l'aide de la mise en cluster de basculement. Configuration haute disponibilité pour la fonctionnalité de basculement.
+
+Dans cette configuration, un seul nœud possède l'ensemble des ressources du cluster. Lorsqu'un nœud est défaillant ou que l'un des services configurés ne peut pas se mettre en ligne, le service de cluster de basculement reconnaît cet événement et transfère immédiatement le contrôle vers l'autre nœud. Le second nœud de l'installation devient actif et commence à fournir des services. Le processus de basculement est automatique et vous n'avez pas besoin d'effectuer d'actions.
+
+Un cluster de basculement configuré avec le serveur Unified Manager se compose de deux nœuds, chaque nœud exécutant la même version du serveur Unified Manager. Toutes les données du serveur Unified Manager doivent être configurées pour accéder à partir d'un disque de données partagé.

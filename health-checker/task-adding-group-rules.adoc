@@ -1,0 +1,86 @@
+---
+permalink: health-checker/task-adding-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des règles de groupe pour un groupe afin d"ajouter de manière dynamique des objets de stockage tels que des volumes, des clusters ou des SVM de stockage virtuels \(SVM\) au groupe. Vous devez configurer au moins un groupe de conditions avec au moins une condition pour créer une règle de groupe.' 
+---
+= Ajout de règles de groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des règles de groupe pour ajouter de manière dynamique des objets de stockage tels que les volumes, les clusters ou les SVM (Storage Virtual machine) au groupe. Vous devez configurer au moins un groupe de conditions avec au moins une condition pour créer une règle de groupe.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Les objets de stockage actuellement surveillés sont ajoutés dès la création de la règle de groupe. Les nouveaux objets sont ajoutés uniquement une fois le cycle de surveillance terminé.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *Management* > *Groups*.
+. Dans l'onglet *règles de groupe*, cliquez sur *Ajouter*.
+. Dans la boîte de dialogue *Ajouter une règle de groupe*, spécifiez un nom pour la règle de groupe.
+. Dans le champ *Type d'objet cible*, sélectionnez le type d'objet de stockage que vous souhaitez regrouper.
+. Dans le champ *Groupe*, sélectionnez le groupe requis pour lequel vous souhaitez créer des règles de groupe.
+. Dans la section *Conditions*, procédez comme suit pour créer une condition, un groupe de conditions ou les deux :
++
+|===
+| Pour créer | Procédez comme ça... 
+
+
+ a| 
+Une condition
+ a| 
+.. Sélectionnez un opérande dans la liste des opérandes.
+.. Sélectionnez *contient* ou *est* comme opérateur.
+.. Entrez une valeur ou sélectionnez une valeur dans la liste disponible.
+
+
+
+
+ a| 
+Un groupe de conditions
+ a| 
+.. Cliquez sur *Ajouter un groupe de conditions*
+.. Sélectionnez un opérande dans la liste des opérandes.
+.. Sélectionnez *contient* ou *est* comme opérateur.
+.. Entrez une valeur ou sélectionnez une valeur dans la liste disponible.
+.. Cliquez sur *Ajouter une condition* pour créer d'autres conditions si nécessaire, puis répétez les étapes a à d pour chaque condition.
+
+
+|===
+. Cliquez sur *Ajouter*.
+
+
+
+
+== Exemple de création d'une règle de groupe
+
+Procédez comme suit dans la boîte de dialogue Ajouter une règle de groupe pour créer une règle de groupe, y compris la configuration d'une condition et l'ajout d'un groupe de conditions :
+
+. Spécifiez un nom pour la règle de groupe.
+. Sélectionnez le type d'objet en tant que machine virtuelle de stockage (SVM).
+. Sélectionnez un groupe dans la liste des groupes.
+. Dans la section Conditions, sélectionnez *Nom de l'objet* comme opérande.
+. Sélectionnez *contient* comme opérateur.
+. Saisissez la valeur sous `svm_data`.
+. Cliquez sur *Ajouter un groupe de conditions*.
+. Sélectionnez *Nom de l'objet* comme opérande.
+. Sélectionnez *contient* comme opérateur.
+. Saisissez la valeur sous `vol`.
+. Cliquez sur *Ajouter une condition*.
+. Répétez les étapes 8 à 10 en sélectionnant *priorité données* comme opérande à l'étape 8, *is* comme opérateur à l'étape 9 et *critique* comme valeur à l'étape 10.
+. Cliquez sur *Ajouter* pour créer la condition de la règle de groupe.
+

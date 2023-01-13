@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-what-storage-efficiency-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"efficacité du stockage vous permet de stocker le maximum de données pour un coût minimum et de gérer la croissance rapide des données tout en consommant moins d"espace. La stratégie NetApp d"efficacité du stockage repose sur la base intégrée de la virtualisation du stockage et du stockage unifié fournies par son système d"exploitation ONTAP principal et son système de fichiers Write Anywhere File Layout \(WAFL\).' 
+---
+= Définition de l'efficacité du stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'efficacité du stockage vous permet de stocker le maximum de données pour un coût minimum et de gérer la croissance rapide des données tout en consommant moins d'espace. La stratégie NetApp d'efficacité du stockage repose sur la base intégrée de la virtualisation du stockage et du stockage unifié fournies par son système d'exploitation ONTAP principal et son système de fichiers WAFL (Write Anywhere File Layout).
+
+L'efficacité du stockage inclut l'utilisation de technologies telles que le provisionnement fin, la copie Snapshot, la déduplication, la compression des données, FlexClone, Réplication fine avec SnapVault et SnapMirror volume, RAID-DP, Flash cache, l'agrégat Flash Pool et les agrégats compatibles FabricPool, qui permettent d'augmenter l'utilisation du stockage et de réduire les coûts de stockage.
+
+L'architecture de stockage unifié vous permet de consolider efficacement un réseau de stockage (SAN), un stockage NAS et un stockage secondaire sur une seule plateforme.
+
+Les disques haute densité, comme les disques SATA (Serial Advanced Technology Attachment) configurés dans des agrégats Flash Pool ou avec la technologie Flash cache et RAID-DP, améliorent l'efficacité sans nuire aux performances et à la résilience.
+
+Un agrégat compatible FabricPool comprend un agrégat 100 % SSD servant de Tier de performance et un magasin d'objets que vous spécifiez comme Tier cloud. La configuration d'FabricPool vous aide à gérer le Tier de stockage (Tier de performance local ou Tier cloud) à stocker vos données selon que celles-ci sont fréquemment utilisées.
+
+Les technologies telles que le provisionnement fin, la copie Snapshot, la déduplication, la compression des données, la réplication fine avec SnapVault et SnapMirror volume, et FlexClone, permettent de réaliser des économies plus importantes. Ces technologies peuvent être utilisées séparément ou ensemble pour optimiser l'efficacité du stockage.

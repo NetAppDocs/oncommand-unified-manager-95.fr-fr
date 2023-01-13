@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez personnaliser le rapport Storage Summary pour afficher les paires haute disponibilité disposant de la capacité, afin de pouvoir provisionner de nouveaux volumes et LUN. Le rapport affiche les paires haute disponibilité triées par ordre de réduction de la capacité inutilisée des agrégats. 
+---
+= Personnalisation du rapport Storage Summary pour analyser les paires HA afin d'assurer la capacité disponible en vue de provisionner de nouveaux volumes et LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez personnaliser le rapport Storage Summary pour afficher les paires haute disponibilité disposant de la capacité, afin de pouvoir provisionner de nouveaux volumes et LUN. Le rapport affiche les paires haute disponibilité triées par ordre de réduction de la capacité inutilisée des agrégats.
+
+
+
+== Description de la tâche
+
+Vous pouvez également effectuer cette tâche en allant sur la page Rapports et en cliquant sur *Exécuter le rapport* pour le rapport approprié.
+
+
+
+== Étapes
+
+. Pour supprimer le regroupement par cluster, effectuez les opérations suivantes :
++
+.. Cliquez dans la colonne qui doit être dégroupée.
+.. Cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+.. Sélectionnez *Groupe* > *Supprimer le groupe interne*.
+
+
+. Pour trier les paires HA ayant la capacité disponible, cliquez dans la colonne *Aggregate Used Capacity (To)* (capacité inutilisée de l'agrégat (To)*), puis cliquez sur le bouton image:../media/click-to-see-menu.gif[""] icône.
+. Sélectionnez *filtre* > *N haut/bas*.
+. Dans la boîte de dialogue *Haut/Bas N*, sélectionnez *Haut N* dans le champ *filtre* et entrez une valeur dans le champ de texte.
+. Cliquez sur *OK*.
+

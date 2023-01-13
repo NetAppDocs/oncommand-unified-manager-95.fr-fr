@@ -1,0 +1,41 @@
+---
+permalink: config/task-testing-the-configuration-of-authentication-servers-um-6-0.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez valider la configuration de vos serveurs d"authentification pour vous assurer que le serveur de gestion peut communiquer avec eux. Vous pouvez valider la configuration en recherchant un utilisateur ou un groupe distant à partir de vos serveurs d"authentification et en les authentifiant à l"aide des paramètres configurés.' 
+---
+= Test de la configuration des serveurs d'authentification
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez valider la configuration de vos serveurs d'authentification pour vous assurer que le serveur de gestion peut communiquer avec eux. Vous pouvez valider la configuration en recherchant un utilisateur ou un groupe distant à partir de vos serveurs d'authentification et en les authentifiant à l'aide des paramètres configurés.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir activé l'authentification à distance et configuré votre service d'authentification pour que le serveur Unified Manager puisse authentifier l'utilisateur distant ou le groupe distant.
+* Vous devez avoir ajouté vos serveurs d'authentification pour que le serveur de gestion puisse rechercher l'utilisateur ou le groupe distant à partir de ces serveurs et les authentifier.
+* Vous devez avoir le rôle d'administrateur OnCommand.
+
+
+
+
+== Description de la tâche
+
+Si le service d'authentification est défini sur Active Directory et que vous valiez l'authentification d'utilisateurs distants appartenant au groupe principal du serveur d'authentification, les informations relatives au groupe principal ne s'affichent pas dans les résultats de l'authentification.
+
+
+
+== Étapes
+
+. Dans la barre d'outils, cliquez sur *image:../media/clusterpage-settings-icon.gif[""]*, puis cliquez sur *authentification* dans le menu Configuration de gauche.
+. Dans la page *Configuration/authentification*, cliquez sur *Test authentification*.
+. Dans la boîte de dialogue *Test User* , indiquez le nom d'utilisateur et le mot de passe de l'utilisateur distant ou le nom d'utilisateur du groupe distant, puis cliquez sur *Test*.
++
+Si vous authentifiez un groupe distant, vous ne devez pas entrer le mot de passe.
+
+

@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-how-the-discovery-process-works.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Une fois que vous avez ajouté un cluster à Unified Manager, le serveur détecte les objets du cluster et les ajoute à sa base de données. La compréhension du fonctionnement du processus de découverte vous aide à gérer les clusters de votre organisation et leurs objets. 
+---
+= Fonctionnement du processus de détection du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez ajouté un cluster à Unified Manager, le serveur détecte les objets du cluster et les ajoute à sa base de données. Le fonctionnement du processus de découverte vous permet de gérer les clusters de votre entreprise et leurs objets.
+
+L'intervalle de contrôle permettant de collecter les informations de configuration du cluster est de 15 minutes. Par exemple, une fois que vous avez ajouté un cluster, il faut 15 minutes pour afficher les objets de cluster dans l'interface utilisateur Unified Manager. Cette période est également vraie lorsque vous apportez des modifications à un cluster. Par exemple, si vous ajoutez deux nouveaux volumes à un SVM dans un cluster, ces nouveaux objets s'affichent dans l'interface utilisateur après l'intervalle d'interrogation suivant, qui peut prendre jusqu'à 15 minutes.
+
+L'image suivante illustre le processus de détection :
+
+image::../media/oncommand-discovery-process.png[Processus de détection des clusters pour une application OnCommand]
+
+Une fois que tous les objets d'un nouveau cluster sont découverts, Unified Manager commence à collecter les données d'historique de performances des 15 jours précédents. Ces statistiques sont collectées à l'aide de la fonctionnalité de collecte de continuité des données. Cette fonctionnalité fournit des informations de performance sur plus de deux semaines pour un cluster immédiatement après son ajout. Une fois le cycle de collecte de continuité des données terminé, les données en temps réel des performances du cluster sont collectées, par défaut, toutes les cinq minutes.
+
+[NOTE]
+====
+Étant donné que la collecte de données de performances sur 15 jours consomme beaucoup de ressources CPU, il est conseillé d'échelonner l'ajout de nouveaux clusters pour que les sondages de collecte de la continuité des données ne s'exécutent pas simultanément sur un trop grand nombre de clusters.
+
+====

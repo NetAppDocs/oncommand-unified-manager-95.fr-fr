@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'La restauration d"une base de données consiste à restaurer un fichier de sauvegarde Unified Manager existant vers le même serveur ou un serveur Unified Manager différent. Vous effectuez l"opération de restauration à partir de la console Unified Manager.' 
+---
+= Qu'est-ce qu'une restauration de base de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La restauration d'une base de données consiste à restaurer un fichier de sauvegarde Unified Manager existant vers le même serveur ou un serveur Unified Manager différent. Vous effectuez l'opération de restauration à partir de la console Unified Manager.
+
+Si vous effectuez une opération de restauration sur le même système (local) et que les fichiers de sauvegarde sont tous stockés localement, vous pouvez exécuter la commande de restauration à l'aide de l'emplacement par défaut. Si vous effectuez une opération de restauration sur un autre système Unified Manager (un système distant), vous devez copier le ou les fichiers de sauvegarde du stockage secondaire sur le disque local avant d'exécuter la commande de restauration.
+
+Durant le processus de restauration, vous êtes déconnecté de Unified Manager. Vous pouvez vous connecter au système une fois le processus de restauration terminé.
+
+La fonctionnalité de restauration est spécifique à la version et à la plate-forme. La restauration d'une sauvegarde Unified Manager ne peut être effectuée que sur la même version de Unified Manager. Unified Manager prend en charge les opérations de sauvegarde et de restauration dans les scénarios de plateforme suivants :
+
+* D'appliance virtuelle vers appliance virtuelle
+* Appliance virtuelle vers Red Hat Enterprise Linux ou CentOS
+* Red Hat Enterprise Linux vers Red Hat Enterprise Linux ou CentOS
+* De Windows à Windows
+
+
+Si vous restaurez l'image de sauvegarde sur un nouveau serveur, une fois l'opération de restauration terminée, vous devez générer un nouveau certificat de sécurité HTTPS et redémarrer le serveur Unified Manager. Vous devrez également reconfigurer les paramètres d'authentification SAML, s'ils sont nécessaires, lors de la restauration de l'image de sauvegarde sur un nouveau serveur.
+
+[NOTE]
+====
+Les anciens fichiers de sauvegarde ne peuvent pas être utilisés pour restaurer une image après la mise à niveau d'Unified Manager vers une version plus récente du logiciel. Pour économiser de l'espace, tous les anciens fichiers de sauvegarde, à l'exception du fichier le plus récent, sont supprimés automatiquement lorsque vous mettez à niveau Unified Manager.
+
+====

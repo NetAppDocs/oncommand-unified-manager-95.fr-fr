@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-configuring-global-qtree-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer les valeurs du seuil de santé global pour tous les qtrees afin de suivre toute violation de seuil. Les événements appropriés sont générés pour les atteintes aux seuils de santé et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de bonnes pratiques pour les seuils qui s"appliquent à tous les qtrees surveillés.' 
+---
+= Configuration des valeurs des seuils de santé des qtrees globaux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les valeurs du seuil de santé global pour tous les qtrees afin de suivre toute violation de seuil. Les événements appropriés sont générés pour les atteintes aux seuils de santé et vous pouvez prendre des mesures préventives basées sur ces événements. Vous pouvez configurer les valeurs globales en fonction des paramètres de bonnes pratiques pour les seuils qui s'appliquent à tous les qtrees surveillés.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+Les options de seuil ont des valeurs par défaut pour une meilleure surveillance. Cependant, vous pouvez modifier les valeurs en fonction des exigences de votre environnement.
+
+Les événements sont générés pour un qtree uniquement lorsqu'un quota qtree ou un quota par défaut a été défini sur le qtree. Les événements ne sont pas générés si l'espace défini dans un quota utilisateur ou un quota de groupe a dépassé le seuil.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *seuils de santé*.
+. Dans la page *seuils de configuration/santé*, cliquez sur *qtrees*.
+. Configurez les valeurs de seuil de capacité appropriées.
+. Cliquez sur *Enregistrer*.
+

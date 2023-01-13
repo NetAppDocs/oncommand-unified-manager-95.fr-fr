@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Si le système sur lequel vous installez Unified Manager n"a pas accès au référentiel MySQL Community Edition, vous devez télécharger et configurer manuellement le référentiel pour une installation réussie.' 
+---
+= Configuration manuelle du référentiel MySQL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si le système sur lequel vous installez Unified Manager n'a pas accès au référentiel MySQL Community Edition, vous devez télécharger et configurer manuellement le référentiel pour une installation réussie.
+
+
+
+== Description de la tâche
+
+Le référentiel MySQL permet d'accéder au logiciel MySQL requis qui doit être installé sur votre système.
+
+[NOTE]
+====
+Cette tâche échouera si le système ne dispose pas d'une connexion Internet. Reportez-vous à la documentation MySQL si le système sur lequel vous installez Unified Manager ne dispose pas d'un accès Internet.
+
+====
+
+
+== Étapes
+
+. Téléchargez le référentiel MySQL approprié pour votre installation : `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. Configurez le référentiel MySQL : `yum install mysql57-community-release-el7-7.noarch.rpm`
+

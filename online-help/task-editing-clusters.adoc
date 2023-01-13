@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-editing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez modifier les paramètres d"un cluster existant, comme le nom d"hôte ou l"adresse IP, le nom d"utilisateur, le mot de passe, le protocole et le port, À l"aide de la boîte de dialogue Modifier le cluster.' 
+---
+= Modification des clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'un cluster existant, comme le nom d'hôte ou l'adresse IP, le nom d'utilisateur, le mot de passe, le protocole et le port, À l'aide de la boîte de dialogue Modifier le cluster.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou celui d'administrateur du stockage.
+
+
+
+== Description de la tâche
+
+[NOTE]
+====
+Si vous remplacez l'adresse IP d'un cluster par une adresse IP d'un cluster existant surveillé, toutes les données du cluster existant sont perdues lorsque l'ancien cluster est détecté. Un message d'erreur ne s'affiche pas pour vous avertir.
+
+====
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Configuration* > *sources de données de cluster*.
+. Sur la page *sources de données de configuration/cluster*, sélectionnez le cluster que vous souhaitez modifier, puis cliquez sur *Modifier*.
+. Dans la boîte de dialogue *Edit Cluster*, modifiez les valeurs comme requis.
+. Cliquez sur *soumettre*.
+

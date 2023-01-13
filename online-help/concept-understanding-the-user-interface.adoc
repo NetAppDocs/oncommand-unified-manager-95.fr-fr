@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-the-user-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"interface utilisateur de Unified Manager se compose principalement d"un tableau de bord offrant une vue d"ensemble des objets surveillés. L"interface utilisateur permet également d"accéder à l"affichage de tous les objets du cluster.' 
+---
+= Présentation de l'interface utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'interface utilisateur de Unified Manager se compose principalement d'un tableau de bord offrant une vue d'ensemble des objets surveillés. L'interface utilisateur permet également d'accéder à l'affichage de tous les objets du cluster.
+
+Vous pouvez sélectionner une vue préférée et utiliser les boutons d'action si nécessaire. Votre configuration d'écran est enregistrée dans un espace de travail de sorte que toutes les fonctionnalités nécessaires soient disponibles lorsque vous démarrez Unified Manager. Cependant, lorsque vous naviguez d'une vue à l'autre, puis naviguez vers l'arrière, la vue peut ne pas être la même.

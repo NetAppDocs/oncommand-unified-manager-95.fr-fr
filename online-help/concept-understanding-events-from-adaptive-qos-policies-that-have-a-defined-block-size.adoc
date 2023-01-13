@@ -1,0 +1,72 @@
+---
+permalink: online-help/concept-understanding-events-from-adaptive-qos-policies-that-have-a-defined-block-size.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les groupes de règles de QoS adaptative ajustent automatiquement un plafond ou un sol de débit en fonction de la taille du volume. Ainsi, ils maintiennent le rapport IOPS/To en fonction de la taille du volume. Depuis la version ONTAP 9.5, vous pouvez spécifier la taille de bloc dans la règle de QoS afin d"appliquer efficacement un seuil de Mbit/s en même temps.' 
+---
+= Présentation des événements des règles de QoS adaptative qui ont une taille de bloc définie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les groupes de règles de QoS adaptative ajustent automatiquement un plafond ou un sol de débit en fonction de la taille du volume. Ainsi, ils maintiennent le rapport IOPS/To en fonction de la taille du volume. Depuis la version ONTAP 9.5, vous pouvez spécifier la taille de bloc dans la règle de QoS afin d'appliquer efficacement un seuil de Mbit/s en même temps.
+
+L'assignation d'un seuil IOPS dans une règle de QoS adaptative impose une limite uniquement au nombre d'opérations qui se produisent dans chaque workload. En fonction de la taille de bloc définie sur le client qui génère les workloads, certains IOPS incluent beaucoup plus de données et, par conséquent, alourdit considérablement la charge de travail sur les nœuds qui traitent les opérations.
+
+La valeur du Mbit/s pour une charge de travail est générée à l'aide de la formule suivante :
+
+[listing]
+----
+MBps = (IOPS * Block Size) / 1000
+----
+Si une charge de travail moyenne est de 3,000 000 IOPS et que la taille de bloc sur le client est définie sur 32 Ko, les Mbit/s effectifs sont alors de 96. Si cette même charge de travail moyenne est de 3,000 000 IOPS et que la taille de bloc du client est définie sur 48 Ko, les Mbit/s effectifs sont alors de 144. Vous pouvez constater que le nœud traite 50 % de données en plus lorsque la taille de bloc est supérieure.
+
+Examinons la règle de QoS adaptative suivante avec une taille de bloc définie et le mode de déclenchement des événements en fonction de la taille de bloc définie sur le client.
+
+Créez une règle et définissez le débit maximal sur 2,500 IOPS/To avec une taille de bloc de 32 Ko. Le seuil du Mbit/s est ainsi défini sur 80 Mbit/s (2500 IOPS * 32 Ko)/1000) pour un volume dont la capacité utilisée est de 1 To. Notez que Unified Manager génère un événement Avertissement lorsque la valeur de débit est inférieure de 10 % au seuil défini. Les événements sont générés dans les situations suivantes :
+
+|===
+| Capacité utilisée | L'événement est généré lorsque le débit dépasse ce nombre de ... 
+
+
+| D'IOPS | Mo/sec 
+
+
+ a| 
+1 To
+ a| 
+2,250 000 IOPS
+
+
+
+ a| 
+72 Mbit/s.
+ a| 
+2 To
+
+
+
+ a| 
+4,500 000 IOPS
+ a| 
+144 Mbit/s.
+
+
+
+ a| 
+5 TO
+ a| 
+11,250 000 IOPS
+
+|===
+Si le volume utilise 2 To d'espace disponible et que les IOPS sont de 4,000 et que la taille de bloc de QoS est définie sur 32 Ko pour le client, le débit en Mbit/s est de 128 Mbit/s ((4,000 IOPS * 32 Ko) / 1000). Aucun événement n'est généré dans ce scénario car 4,000 IOPS et 128 Mbit/s sont tous les deux inférieurs au seuil d'un volume utilisant 2 To d'espace.
+
+Si le volume utilise 2 To d'espace disponible et que le nombre d'IOPS est de 4,000 et que la taille de bloc de QoS est définie sur 64 Ko pour le client, le débit de 256 Mbit/s est alors de 1000 Mbit/s ((4,000 IOPS * 64 Ko) /). Dans ce cas, les 4,000 IOPS ne génèrent pas d'événement, mais la valeur de 256 Mbit/s est supérieure au seuil de 144 Mbit/s et un événement est généré.
+
+C'est pourquoi, lorsqu'un événement est déclenché en fonction d'une violation de Mbit/s pour une stratégie de QoS adaptative qui inclut la taille du bloc, un graphique en Mbit/s s'affiche dans la section diagnostic système de la page Détails de l'événement. Si l'événement est déclenché en fonction d'une violation des IOPS de la règle de QoS adaptative, un graphique Op E/S par sec s'affiche dans la section diagnostic système. Si une violation se produit pour les IOPS et les Mbit/s, vous recevrez deux événements.
+
+Pour plus d'informations sur le réglage des paramètres QoS, reportez-vous au _ONTAP 9 Performance Monitoring Power Guide_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guide d'alimentation du contrôle des performances ONTAP 9"]

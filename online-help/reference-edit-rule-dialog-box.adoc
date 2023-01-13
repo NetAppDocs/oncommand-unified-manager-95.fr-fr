@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-edit-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Modifier la règle pour modifier les propriétés d"une règle, telles que les types de fichiers, les chemins d"accès aux répertoires ou les propriétaires. Vous pouvez également sélectionner une classe de stockage appropriée pour la règle. Par exemple, lorsqu"un chemin de fichier donné n"est plus valide, vous pouvez supprimer le chemin de fichier de la règle correspondante.' 
+---
+= Boîte de dialogue Modifier la règle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Modifier la règle pour modifier les propriétés d'une règle, telles que les types de fichiers, les chemins d'accès aux répertoires ou les propriétaires. Vous pouvez également sélectionner une classe de stockage appropriée pour la règle. Par exemple, lorsqu'un chemin de fichier donné n'est plus valide, vous pouvez supprimer le chemin de fichier de la règle correspondante.
+
+
+
+== Nom de la règle
+
+Affiche le nom de la règle.
+
+
+
+== Critères de correspondance
+
+Affiche une liste des conditions associées au modèle de règle sélectionné. La liste des conditions change en fonction du modèle de règle sélectionné.
+
+* *Ajouter*
++
+Vous permet d'ajouter une nouvelle propriété de règle, un nouveau type de fichier, un chemin de fichier ou un nouveau propriétaire. Par exemple, si vous avez spécifié le modèle de règle « placer tous les fichiers avec les noms de propriétaires spécifiés dans une classe de stockage appropriée », le bouton Ajouter vous permet d'ajouter le nom du propriétaire.
+
+* *Supprimer*
++
+Permet de supprimer une propriété de règle sélectionnée.
+
+
+
+
+
+== Zone de placement de contenu
+
+Affiche la liste des classes de stockage. Vous pouvez sélectionner une classe de stockage appropriée pour la règle sélectionnée.
+
+
+
+== Boutons de commande
+
+* *Mise à jour*
++
+Met à jour les modifications apportées à la règle et ferme la boîte de dialogue Modifier la règle.
+
+* *Annuler*
++
+Annule les modifications récentes apportées à la règle et ferme la boîte de dialogue Modifier la règle.
+
+

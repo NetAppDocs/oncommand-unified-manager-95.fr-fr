@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous devez configurer les alertes pour recevoir des notifications sur les événements à l"aide de la boîte de dialogue Ajouter une alerte. Vous pouvez également afficher la liste des alertes à partir de la page Configuration/alerte.' 
+---
+= Description des fenêtres d'alerte et des boîtes de dialogue
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez configurer les alertes pour recevoir des notifications sur les événements à l'aide de la boîte de dialogue Ajouter une alerte. Vous pouvez également afficher la liste des alertes à partir de la page Configuration/alerte.

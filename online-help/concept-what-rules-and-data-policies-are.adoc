@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Une règle détermine le placement des fichiers \(données\) dans une machine virtuelle de stockage \(SVM\) avec Infinite Volume. La collecte de ces règles est appelée « politique de données ».' 
+---
+= Les règles et les règles relatives aux données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une _règle_ détermine le placement des fichiers (données) dans un SVM (Storage Virtual machine) avec Infinite Volume. Une collection de telles règles est appelée stratégie de _données_.
+
+* *Règle*
++
+Les règles consistent principalement en un ensemble de conditions et d'informations prédéfinies qui déterminent l'emplacement des fichiers dans Infinite Volume. Lorsqu'un fichier est placé dans Infinite Volume, les attributs de ce fichier sont associés à la liste des règles. Si les attributs correspondent aux règles, les informations de positionnement de cette règle déterminent la classe de stockage dans laquelle le fichier est placé. Une règle par défaut de la stratégie de données est utilisée pour déterminer le placement des fichiers si les attributs ne correspondent à aucune des règles de la liste de règles.
+
++
+Par exemple, si vous avez une règle « placez tous les fichiers de type .mp3 dans la classe de stockage Bronze ». Tous les fichiers .mp3 qui sont écrits sur Infinite Volume sont placés dans la classe de stockage bronze.
+
+* *Politique de données*
++
+Une règle de données est une liste de règles. Chaque SVM avec Infinite Volume dispose de ses propres règles de données. Chaque fichier ajouté à Infinite Volume est comparé aux règles de sa règle de données afin de déterminer où placer ce fichier. La stratégie de données vous permet de filtrer les fichiers entrants en fonction des attributs de fichier et de les placer dans les classes de stockage appropriées.
+
+

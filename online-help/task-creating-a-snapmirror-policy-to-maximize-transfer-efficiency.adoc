@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer une règle SnapMirror pour spécifier la priorité de transfert SnapMirror pour les relations de protection. Les règles SnapMirror vous permettent d"optimiser l"efficacité du transfert entre la source et la destination en définissant des priorités. De cette manière, les transferts avec priorité inférieure doivent être programmés pour s"exécuter après les transferts prioritaires.' 
+---
+= Création d'une règle SnapMirror pour optimiser l'efficacité du transfert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer une règle SnapMirror pour spécifier la priorité de transfert SnapMirror pour les relations de protection. Les règles SnapMirror vous permettent d'optimiser l'efficacité du transfert entre la source et la destination en définissant des priorités. De cette manière, les transferts avec priorité inférieure doivent être programmés pour s'exécuter après les transferts prioritaires.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+* Vous devez avoir configuré Workflow Automation.
+* Cette tâche suppose que vous avez déjà terminé la zone informations de destination dans la boîte de dialogue configurer la protection.
+
+
+
+
+== Étapes
+
+. Dans l'onglet *SnapMirror* de la boîte de dialogue *Configure protection*, cliquez sur le lien *Create Policy* dans la zone *Relationship Settings*.
++
+La boîte de dialogue Créer une règle SnapMirror s'affiche.
+
+. Dans le champ *Policy Name*, saisissez le nom que vous souhaitez attribuer à la stratégie.
+. Dans le champ *priorité de transfert*, sélectionnez la priorité de transfert que vous souhaitez attribuer à la stratégie.
+. Dans le champ *Commentaire*, entrez un commentaire facultatif pour la stratégie.
+. Cliquez sur *Créer*.
++
+La nouvelle règle s'affiche dans la liste déroulante SnapMirror Policy.
+
+

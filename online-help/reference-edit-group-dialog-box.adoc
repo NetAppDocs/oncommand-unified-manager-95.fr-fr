@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-edit-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Modifier le groupe vous permet de modifier le nom et la description d"un groupe.' 
+---
+= Boîte de dialogue Modifier le groupe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Modifier le groupe vous permet de modifier le nom et la description d'un groupe.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom du groupe*
++
+Affiche le nom du groupe. Lorsque vous modifiez le nom du groupe, vous ne devez pas utiliser un nom de groupe existant.
+
+* *Description*
++
+Fournit une description significative du groupe. Vous pouvez modifier ce champ lorsque vous souhaitez modifier la description actuelle du groupe.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande vous permettent d'enregistrer ou d'annuler les modifications apportées au groupe.
+
+* *Enregistrer*
++
+Enregistre les modifications effectuées et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Ferme la boîte de dialogue Modifier le groupe sans enregistrer vos modifications.
+
+

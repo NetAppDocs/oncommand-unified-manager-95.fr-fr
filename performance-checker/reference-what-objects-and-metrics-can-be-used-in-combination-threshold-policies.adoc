@@ -1,0 +1,79 @@
+---
+permalink: performance-checker/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Seuls certains compteurs de performances peuvent être utilisés ensemble dans le cadre de stratégies mixtes. Lorsque des compteurs de performances primaires et secondaires sont spécifiés, les deux compteurs de performances doivent dépasser leurs limites maximales avant la génération d"un événement.' 
+---
+= Quels objets et compteurs peuvent être utilisés dans les stratégies de seuils de combinaison
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Seuls certains compteurs de performances peuvent être utilisés ensemble dans le cadre de stratégies mixtes. Lorsque des compteurs de performances primaires et secondaires sont spécifiés, les deux compteurs de performances doivent dépasser leurs limites maximales avant la génération d'un événement.
+
+|===
+| Objet et compteur de stockage primaire | Compteur et objet de stockage secondaire 
+
+
+ a| 
+Latence du volume
+ a| 
+IOPS du volume
+
+
+
+ a| 
+Mo/sec. Du volume
+ a| 
+Utilisation des agrégats
+
+
+
+ a| 
+Capacité de performance des agrégats utilisée
+ a| 
+Utilisation des nœuds
+
+
+
+ a| 
+Capacité de performance du nœud utilisée
+ a| 
+Capacité du nœud utilisée – basculement
+
+
+
+ a| 
+Latence de la LUN
+ a| 
+IOPS DE LA LUN
+
+
+
+ a| 
+Mo/sec. LUN
+ a| 
+Utilisation des agrégats
+
+
+
+ a| 
+Capacité de performance des agrégats utilisée
+ a| 
+Utilisation des nœuds
+
+
+
+ a| 
+Capacité de performance du nœud utilisée
+ a| 
+Capacité du nœud utilisée – basculement
+
+|===
+[NOTE]
+====
+Lorsqu'une règle de combinaison de volumes est appliquée à un volume FlexGroup au lieu d'être sur un volume FlexVol, seuls les attributs « IOPS de volume » et « Mo/s de volume » peuvent être sélectionnés comme compteur secondaire. Si la règle de seuil contient l'un des attributs de nœud ou d'agrégat, elle ne sera pas appliquée au volume FlexGroup et un message d'erreur décrivant ce cas s'affiche. En effet, les volumes FlexGroup peuvent exister sur plusieurs nœuds ou agrégats.
+
+====

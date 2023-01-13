@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-resource-pool-inventory.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page protection/pools de ressources pour afficher l"inventaire des pools de ressources et surveiller la capacité restante de chaque pool de ressources.' 
+---
+= Affichage de l'inventaire des pools de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page protection/pools de ressources pour afficher l'inventaire des pools de ressources et surveiller la capacité restante de chaque pool de ressources.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *pools de ressources*.
++
+L'inventaire du pool de ressources s'affiche.
+
+

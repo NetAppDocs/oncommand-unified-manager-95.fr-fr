@@ -1,0 +1,357 @@
+---
+permalink: online-help/reference-lun-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements de LUN fournissent des informations sur l"état de vos LUN, ce qui vous permet de contrôler s"il y a des problèmes potentiels. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements de la LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements de LUN fournissent des informations sur l'état de vos LUN, ce qui vous permet de contrôler s'il y a des problèmes potentiels. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+Un astérisque (*) identifie les événements EMS qui ont été convertis en événements Unified Manager.
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+LUN hors ligne(ocumEvtLunOffline)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+LUN détruite *
+ a| 
+Événement
+ a| 
+LUN
+ a| 
+Informations
+
+
+
+ a| 
+Chemin actif unique pour accéder à la LUN (ocumEvtLunSingleActivePath)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Aucun chemin actif pour accéder à la LUN (ocumEvtLunNotRelixiviable)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Pas de chemins optimisés pour accéder aux LUN (ocumEvtLunOptimizedPathInactif)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Aucun chemin d'accès aux LUN depuis un partenaire de haute disponibilité (ocumEvtLunHaPathInactif)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : capacité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Espace insuffisant pour la copie Snapshot de LUN (ocumEvtLunSnapshotNotPossible)
+ a| 
+Risques
+ a| 
+Volumétrie
+ a| 
+Avertissement
+
+|===
+
+
+== Zone d'impact : performances
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Seuil critique d'IOPS LUN dépassé (ocumLunIopsincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement d'IOPS de la LUN dépassé (ocumlunIopsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de Mbit/s de la LUN dépassé (ocumLunMbpsincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de Mo/s de LUN dépassé (ocumLunMbpsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil critique de latence ms/op du LUN dépassé (ocumLunLatenincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement ms/op de latence de LUN dépassé (avertissement relatif à l'ocumLunlateAvertissement)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence des LUN et seuil critique d'IOPS dépassé(ocumLunLatencyIopsincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil de latence LUN et d'avertissement d'IOPS dépassé(ocumLunLatencyIopsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence de la LUN et seuil critique de Mo/sec dépassé (ocumLunLatencyMbpsincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de latence et de Mo/sec de la LUN dépassé(ocumLunLatencyMbpsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence des LUN et perf. Agrégées. Seuil critique utilisé en termes de capacité dépassé(ocumLuntyagrégeRegeRequityRÉvolutivité)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Latence des LUN et perf. Agrégées. Seuil d'avertissement de capacité utilisée dépassé(ocumLuntyAgtyreContretRepeContreteContretedel'efficacité)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence du LUN et utilisation des agrégats seuil critique dépassé(ocumLunlateagrégationUtilitéincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de latence du LUN et d'utilisation des agrégats dépassé(ocumLunlateagrégationUtilitéAvertissement)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence des LUN et perf. Des nœuds. Seuil critique de capacité utilisé dépassé(ocumLunLatenceNodePerfcapacityUsedincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Latence des LUN et perf. Des nœuds. Seuil d'avertissement de capacité utilisée dépassé(ocumLunLatenceNodePerfcapacityUseAvertissement)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence des LUN et perf. Des nœuds. Capacité utilisée : seuil critique de basculement violé(ocumLunlageagrégeContretReverenceÉvolutivité avec la retéÉvolutivité
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Latence des LUN et perf. Des nœuds. Capacité utilisée : seuil d'avertissement de basculement dépassé(ocumLunLatenceAggreContretRevereContreteContreteverousContretedu)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Latence du LUN et utilisation du nœud seuil critique dépassé(ocumLunLatencyNodeUtizationincident)
+ a| 
+Gestion des
+ a| 
+LUN
+ a| 
+Primordial
+
+
+
+ a| 
+Seuil d'avertissement de latence des LUN et d'utilisation des nœuds dépassé(ocumLunLatcyNodeUtilAvertissement)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil d'avertissement IOPS max. De la LUN QoS dépassé (ocumQosLunMaxIopsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+
+
+ a| 
+Seuil d'avertissement max. Mbit/s de la LUN QoS dépassé (ocumQosLunMaxMbpsWarning)
+ a| 
+Risques
+ a| 
+LUN
+ a| 
+Avertissement
+
+|===

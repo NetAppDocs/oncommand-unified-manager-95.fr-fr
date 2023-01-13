@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-resource-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Modifier le pool de ressources pour modifier le nom et la description d"un pool de ressources existant. Par exemple, si le nom et la description d"origine sont inexacts ou incorrects, vous pouvez les modifier afin qu"ils soient plus précis.' 
+---
+= Boîte de dialogue Modifier le pool de ressources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Modifier le pool de ressources pour modifier le nom et la description d'un pool de ressources existant. Par exemple, si le nom et la description d'origine sont inexacts ou incorrects, vous pouvez les modifier afin qu'ils soient plus précis.
+
+
+
+== Zones de texte
+
+Les zones de texte permettent de modifier les informations suivantes pour le pool de ressources sélectionné :
+
+* *Nom du pool de ressources*
++
+Permet d'entrer un nouveau nom.
+
+* *Description*
++
+Permet de saisir une nouvelle description.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Enregistrer*
++
+Enregistre les modifications apportées au nom et à la description du pool de ressources.
+
+* *Annuler*
++
+Supprime les modifications et ferme la boîte de dialogue Modifier le pool de ressources.
+
+

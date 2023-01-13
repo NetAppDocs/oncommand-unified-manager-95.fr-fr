@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-storage-capacity-health-thresholds-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un seuil d"état de santé de la capacité de stockage est le point à partir duquel le serveur Unified Manager génère des événements pour signaler un problème de capacité au niveau des objets de stockage. Vous pouvez configurer des alertes pour envoyer des notifications chaque fois que de tels événements se produisent.' 
+---
+= Quels sont les seuils d'état de santé de la capacité de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un seuil d'état de santé de la capacité de stockage est le point à partir duquel le serveur Unified Manager génère des événements pour signaler un problème de capacité au niveau des objets de stockage. Vous pouvez configurer des alertes pour envoyer des notifications chaque fois que de tels événements se produisent.
+
+Les seuils d'état de la capacité de stockage de tous les agrégats, volumes et qtrees sont définis sur les valeurs par défaut. Vous pouvez modifier les paramètres requis pour un objet ou un groupe d'objets.

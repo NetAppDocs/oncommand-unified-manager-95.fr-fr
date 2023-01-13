@@ -1,0 +1,18 @@
+---
+permalink: install/concept-upgrading-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez mettre à niveau Unified Manager lorsqu"une nouvelle version du logiciel est disponible.' 
+---
+= Mise à niveau de Unified Manager sur Red Hat Enterprise Linux ou CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez mettre à niveau Unified Manager lorsqu'une nouvelle version du logiciel est disponible.
+
+Les versions de correctifs du logiciel Unified Manager, lorsqu'elles sont fournies par NetApp, sont installées selon la même procédure que les nouvelles versions.
+
+Si Unified Manager est associé à une instance de OnCommand Workflow Automation et que de nouvelles versions du logiciel sont disponibles pour les deux produits, vous devez déconnecter les deux produits et configurer une nouvelle connexion Workflow Automation après avoir effectué les mises à niveau. Si vous effectuez une mise à niveau vers un seul des produits, vous devez vous connecter à Workflow Automation après la mise à niveau, puis vérifier que les données sont toujours acquises depuis Unified Manager.

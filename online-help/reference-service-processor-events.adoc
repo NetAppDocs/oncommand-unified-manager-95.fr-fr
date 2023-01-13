@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-service-processor-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les événements du processeur de service fournissent des informations sur l"état de votre processeur de service, ce qui vous permet de contrôler l"éventualité d"un problème. Les événements sont regroupés par zone d"impact et incluent le nom de l"événement et de l"interruption, le niveau d"impact, le type de source et la gravité.' 
+---
+= Événements du processeur de service
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements du processeur de service fournissent des informations sur l'état de votre processeur de service, ce qui vous permet de contrôler l'éventualité d'un problème. Les événements sont regroupés par zone d'impact et incluent le nom de l'événement et de l'interruption, le niveau d'impact, le type de source et la gravité.
+
+
+
+== Domaine d'impact : disponibilité
+
+|===
+| Nom de l'événement(Nom du piège) | Niveau d'impact | Type de source | Gravité 
+
+
+ a| 
+Processeur de service non configuré(ocumEvtServiceProcessorNotConfigred)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Avertissement
+
+
+
+ a| 
+Processeur de service hors ligne(ocumEvtServiceProcessorOffline)
+ a| 
+Risques
+ a| 
+Nœud
+ a| 
+Erreur
+
+|===

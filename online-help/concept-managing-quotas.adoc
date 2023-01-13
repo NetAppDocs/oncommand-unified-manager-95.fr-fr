@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser des quotas d"utilisateur et de groupe pour limiter la quantité d"espace disque ou le nombre de fichiers qu"un utilisateur ou un groupe d"utilisateurs peut utiliser. Vous pouvez afficher des informations sur les quotas des utilisateurs et des groupes d"utilisateurs, telles que l"utilisation du disque et des fichiers et les différentes limites définies sur les disques.' 
+---
+= Gestion des quotas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser des quotas d'utilisateur et de groupe pour limiter la quantité d'espace disque ou le nombre de fichiers qu'un utilisateur ou un groupe d'utilisateurs peut utiliser. Vous pouvez afficher des informations sur les quotas des utilisateurs et des groupes d'utilisateurs, telles que l'utilisation du disque et des fichiers et les différentes limites définies sur les disques.

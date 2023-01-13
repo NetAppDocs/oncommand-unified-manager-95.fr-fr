@@ -1,0 +1,36 @@
+---
+permalink: performance-checker/concept-cluster-configuration-changes-detected-by-unified-manager.html 
+sidebar: sidebar 
+keywords: Performance Manager 
+summary: 'Unified Manager surveille vos clusters pour modifier la configuration, ce qui vous permet de déterminer si une modification a pu être causée ou contribué à un événement de performances. Les pages de l"explorateur de performances affichent une icône d"événement de changement \(\) pour indiquer la date et l"heure de détection de la modification.' 
+---
+= Modifications de configuration détectées par Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager surveille vos clusters pour modifier la configuration, ce qui vous permet de déterminer si une modification a pu être causée ou contribué à un événement de performances. Les pages de l'Explorateur de performances affichent une icône d'événement de changement (image:../media/opm-change-icon.gif["Icône changer événement"]) pour indiquer la date et l'heure de détection de la modification.
+
+Vous pouvez consulter les graphiques de performances dans les pages de l'explorateur de performances et dans la page Détails des performances/volumes pour voir si l'événement de modification a affecté les performances de l'objet cluster sélectionné. Si la modification a été détectée en même temps qu'un événement de performance ou à peu près, la modification peut avoir contribué au problème, qui a déclenché l'alerte d'événement.
+
+Unified Manager peut détecter les événements de modification suivants, classés dans la catégorie « événements d'information » :
+
+* Un volume est déplacé entre agrégats.
++
+Unified Manager peut détecter lorsque le déplacement est en cours, terminé ou échoué. Lorsqu'Unified Manager est inactif pendant le déplacement d'un volume, lors de sa sauvegarde, il détecte le déplacement de volume et affiche un événement de modification pour celui-ci.
+
+* Le débit (Mbit/s ou IOPS) limite d'un groupe de règles de QoS contenant une ou plusieurs modifications de charge de travail surveillées.
++
+La modification de la limite d'un groupe de règles peut entraîner des pics intermittents de latence (temps de réponse), qui peuvent également déclencher des événements pour le groupe de règles. La latence revient progressivement à la normale et tous les événements provoqués par les pics deviennent obsolètes.
+
+* Un nœud d'une paire haute disponibilité prend le relais ou renvoie le stockage de son nœud partenaire.
++
+Unified Manager peut détecter la fin de l'opération de basculement, de basculement partiel ou de rétablissement. Si le basculement est causé par un nœud paniqué, Unified Manager ne détecte pas l'événement.
+
+* Une opération de mise à niveau ou de restauration de ONTAP a été effectuée correctement.
++
+La version précédente et la nouvelle version sont affichées.
+
+

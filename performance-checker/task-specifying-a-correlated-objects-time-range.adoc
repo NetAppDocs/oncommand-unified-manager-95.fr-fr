@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/task-specifying-a-correlated-objects-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le sélecteur de plage horaire de la page Explorateur de performances vous permet de spécifier la plage horaire de la comparaison des données d"objet. La spécification d"une plage horaire permet de raffine le contenu des pages de l"Explorateur de performances pour n"afficher que les données d"objet dans la plage horaire spécifiée.' 
+---
+= Spécification d'une plage de temps pour les objets corrélés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le sélecteur de plage horaire de la page Explorateur de performances vous permet de spécifier la plage horaire de la comparaison des données d'objet. La spécification d'une plage horaire permet de raffine le contenu des pages de l'Explorateur de performances pour n'afficher que les données d'objet dans la plage horaire spécifiée.
+
+
+
+== Description de la tâche
+
+Le raffinage de la plage horaire permet de n'afficher que les données de performance qui vous intéressent. Vous pouvez sélectionner une plage horaire prédéfinie ou spécifier une plage horaire personnalisée. La plage horaire par défaut correspond aux 72 heures précédentes.

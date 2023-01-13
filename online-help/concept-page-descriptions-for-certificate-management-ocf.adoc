@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-certificate-management-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page certificat HTTPS pour afficher les certificats de sécurité actuels et générer de nouveaux certificats HTTPS. 
+---
+= Descriptions des pages pour la gestion des certificats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page certificat HTTPS pour afficher les certificats de sécurité actuels et générer de nouveaux certificats HTTPS.

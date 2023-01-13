@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/reference-cluster-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Performance Cluster Summary fournit un récapitulatif des événements actifs, des performances d"IOPS et des performances en Mbit/s d"un cluster. Cette page inclut également le nombre total d"objets de stockage dans le cluster.' 
+---
+= Page Résumé du cluster de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Performance Cluster Summary fournit un récapitulatif des événements actifs, des performances d'IOPS et des performances en Mbit/s d'un cluster. Cette page inclut également le nombre total d'objets de stockage dans le cluster.

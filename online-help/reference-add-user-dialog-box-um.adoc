@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-add-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez créer des utilisateurs locaux ou des utilisateurs de base de données, ou ajouter des utilisateurs ou groupes distants, et attribuer des rôles afin que ces utilisateurs puissent gérer les objets de stockage et les données à l"aide d"Unified Manager.' 
+---
+= Boîte de dialogue Ajouter un utilisateur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des utilisateurs locaux ou des utilisateurs de base de données, ou ajouter des utilisateurs ou groupes distants, et attribuer des rôles afin que ces utilisateurs puissent gérer les objets de stockage et les données à l'aide d'Unified Manager.
+
+Vous pouvez ajouter un utilisateur en remplissant les champs suivants :
+
+* *Type*
++
+Vous permet de spécifier le type d'utilisateur que vous souhaitez créer.
+
+* *Nom*
++
+Vous permet de spécifier un nom d'utilisateur qu'un utilisateur peut utiliser pour se connecter à Unified Manager.
+
+* *Mot de passe*
++
+Vous permet de spécifier un mot de passe pour le nom d'utilisateur spécifié. Ce champ s'affiche uniquement lorsque vous ajoutez un utilisateur local ou de base de données.
+
+* *Confirmer le mot de passe*
++
+Vous permet de saisir à nouveau votre mot de passe pour garantir l'exactitude de ce que vous avez saisi dans le champ Mot de passe. Ce champ s'affiche uniquement lorsque vous ajoutez un utilisateur local ou de base de données.
+
+* *Courriel*
++
+Vous permet de spécifier une adresse électronique pour l'utilisateur ; l'adresse électronique spécifiée doit être unique au nom de l'utilisateur. Ce champ s'affiche uniquement lorsque vous ajoutez un utilisateur distant ou un utilisateur local.
+
+* *Rôle*
++
+Vous permet d'affecter un rôle à l'utilisateur et de définir la portée des activités que l'utilisateur peut réaliser. Le rôle peut être Administrateur OnCommand, Administrateur du stockage, opérateur, Schéma d'intégration ou Schéma de rapport.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Ajouter*
++
+Ajoute l'utilisateur et ferme la boîte de dialogue Ajouter un utilisateur.
+
+* *Annuler*
++
+Annule les modifications et ferme la boîte de dialogue Ajouter un utilisateur.
+
+

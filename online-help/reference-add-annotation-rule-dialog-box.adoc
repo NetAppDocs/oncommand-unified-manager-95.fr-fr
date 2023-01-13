@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-add-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La boîte de dialogue Ajouter une règle d"annotation permet de créer des règles d"annotation dans Unified Manager pour annoter dynamiquement les objets de stockage.' 
+---
+= Boîte de dialogue Ajouter une règle d'annotation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Ajouter une règle d'annotation permet de créer des règles d'annotation dans Unified Manager pour annoter dynamiquement les objets de stockage.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+* *Nom*
++
+Indique le nom de la règle d'annotation.
+
+* *Type d'objet cible*
++
+Spécifie le type d'objets de stockage que vous souhaitez annoter (SVM), volumes ou clusters.
+
+* *Appliquer une annotation*
++
+Indique l'annotation et la valeur que vous pouvez utiliser pour annoter les objets de stockage lorsque toutes les conditions sont remplies.
+
+* *Conditions*
++
+Spécifie les conditions qui déterminent les objets de stockage que vous pouvez annoter.
+
+
+
+
+
+== Boutons de commande
+
+* *Enregistrer et ajouter*
++
+Ajoute la règle d'annotation que vous avez créée et vous permet d'ajouter une autre règle d'annotation sans fermer la boîte de dialogue.
+
+* *Ajouter*
++
+Ajoute la règle d'annotation et ferme la boîte de dialogue Ajouter une règle d'annotation.
+
+* *Annuler*
++
+Annule les modifications et ferme la boîte de dialogue Ajouter une règle d'annotation.
+
+* *Ajouter une condition*
++
+Ajoute une condition pour définir la règle d'annotation.
+
+* *Ajouter un groupe de conditions*
++
+Ajoute un groupe de conditions pour définir les conditions de la règle d'annotation.
+
+

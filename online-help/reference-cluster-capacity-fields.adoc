@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-cluster-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le rapport Storage Summary vous permet d"afficher des informations résumées sur la capacité de stockage dans les paires haute disponibilité. Ces informations vous aident à comprendre les risques potentiels en matière de capacité et à prendre les mesures appropriées pour rééquilibrer la charge de travail. Les informations relatives au cluster à un seul nœud ne sont pas visibles dans le rapport.' 
+---
+= Rapport de synthèse du stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le rapport Storage Summary vous permet d'afficher des informations résumées sur la capacité de stockage dans les paires haute disponibilité. Ces informations vous aident à comprendre les risques potentiels en matière de capacité et à prendre les mesures appropriées pour rééquilibrer la charge de travail. Les informations relatives au cluster à un seul nœud ne sont pas visibles dans le rapport.
+
+
+
+== Vue du graphique des rapports de synthèse du stockage
+
+Le rapport Storage Summary s'affiche sous deux formats :
+
+* Vue du graphique des rapports de synthèse du stockage
+* Vue tabulaire du rapport de synthèse du stockage
+
+
+Le graphique indique la tendance en matière de capacité des capacités de données utilisées et inutilisées des agrégats sur une période donnée. La capacité totale des données s'affiche sur l'axe vertical (y) et le nom du cluster sur l'axe horizontal (x). Par conséquent, chaque barre du graphique représente un cluster. Vous pouvez afficher les détails de points spécifiques sur le graphique en positionnant le curseur sur un point particulier.
+
+* *Nom du cluster*
++
+Affiche le nom du cluster.
+
+* *Paire HA*
++
+Affiche la valeur de la paire HA obtenue en formant deux nœuds.
+
+* *Modèle*
++
+Affiche le nom du modèle.
+
+* *Version OS*
++
+Affiche la version de ONTAP utilisée.
+
+* *Capacité brute totale*
++
+Affiche la capacité physique totale de tous les disques de la matrice.
+
+* *Capacité brute non configurée*
++
+Affiche la capacité non configurée des disques dont le type de conteneur est autre que l'agrégat, cassé, disponible ou partagé. Cette capacité est toujours supérieure à la capacité physique du disque en ONTAP. Prenons l'exemple d'un disque de 2 To. La capacité physique du disque est de 1.6 To dans le ONTAP, tandis que la capacité brute non configurée dans Unified Manager est de 1.8 To.
+
+* *Capacité totale totale cumulée*
++
+Affiche la taille totale des agrégats disponibles pour l'utilisateur. Cela inclut la réserve Snapshot.
+
+* *Capacité utilisée agrégée*
++
+Affiche la capacité déjà utilisée sur les agrégats. Cela inclut la capacité consommée par les volumes, les LUN et d'autres surcharges technologiques d'efficacité du stockage.
+
+* *Capacité inutilisée de l'agrégat*
++
+Affiche la capacité disponible pour le stockage de données supplémentaires sur l'agrégat. Cela inclut la réserve Snapshot.
+
+* *Capacité LUN allouée*
++
+Affiche la capacité des LUN mappées.
+
+* *Capacité de LUN non allouée*
++
+Affiche la capacité de toutes les LUN non mappées à l'hôte.
+
+* *Volume capacité totale*
++
+Affiche la capacité totale des volumes (utilisés plus inutilisés).
+
+* *Volume utilisé capacité*
++
+Affiche la capacité utilisée des volumes.
+
+* *Volume capacité inutilisée*
++
+Affiche la capacité inutilisée des volumes.
+
+* *Capacité de protection du volume*
++
+Affiche la capacité des volumes sur lesquels SnapMirror et SnapVault sont activés.
+
+* *Total des licences de cluster de Cloud Tier*
++
+Affiche la capacité totale qui a été concédée sous licence dans le Tier cloud. Ce champ s'affiche pour les fournisseurs de stockage qui requièrent une licence FabricPool, par exemple Amazon S3, IBM Cloud Object Storage, Microsoft Azure Cloud ou Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier utilisé*
++
+Affiche l'espace utilisé par les données du Tier cloud pour les fournisseurs de stockage qui requièrent une licence FabricPool.
+
+* *Capacité StorageGRID du cluster utilisée*
++
+Affiche l'espace utilisé par les données dans le Tier cloud pour les fournisseurs de stockage qui ne nécessitent pas de licence FabricPool, par exemple StorageGRID.
+
+

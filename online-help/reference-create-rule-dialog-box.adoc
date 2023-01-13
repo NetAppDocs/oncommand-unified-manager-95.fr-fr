@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-create-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Créer une règle pour créer de nouvelles règles pour votre stratégie de données. Par exemple, si vous souhaitez spécifier le placement du contenu d"un certain type de fichier, vous pouvez utiliser la boîte de dialogue Créer une règle pour créer la règle de votre stratégie de données.' 
+---
+= Créer une règle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Créer une règle pour créer de nouvelles règles pour votre stratégie de données. Par exemple, si vous souhaitez spécifier le placement du contenu d'un certain type de fichier, vous pouvez utiliser la boîte de dialogue Créer une règle pour créer la règle de votre stratégie de données.
+
+
+
+== Nom de la règle
+
+Spécifie le nom de la nouvelle règle.
+
+
+
+== Zone modèles
+
+Affiche la liste des modèles de règles. Vous pouvez sélectionner un modèle de règle approprié dans la liste pour créer une règle pour la stratégie de données.
+
+
+
+== Critères de correspondance
+
+Affiche une liste des conditions associées au modèle de règle sélectionné. La liste des conditions change en fonction du modèle de règle sélectionné. Par exemple, si vous sélectionnez « placer tous les fichiers avec les noms de propriétaires spécifiés dans une classe de stockage appropriée », *liste de propriétaires qui...* s'affiche dans critères de correspondance.
+
+* *Ajouter*
++
+Vous permet d'ajouter une nouvelle propriété de règle basée sur le modèle de règle sélectionné. Par exemple, si vous avez sélectionné le modèle de règle « placer tous les fichiers avec les noms de propriétaires spécifiés dans une classe de stockage appropriée », le bouton *Ajouter* vous permet d'ajouter le nom du propriétaire.
+
+* *Supprimer*
++
+Permet de supprimer une propriété de règle sélectionnée.
+
+
+
+
+
+== Placement de contenu
+
+Vous permet de sélectionner une classe de stockage appropriée pour votre règle dans la liste.
+
+
+
+== Boutons de commande
+
+* *Créer*
++
+Crée une nouvelle règle pour la stratégie de données et ferme la boîte de dialogue Créer une règle.
+
+* *Annuler*
++
+Annule les modifications récentes apportées à la règle et ferme la boîte de dialogue Créer une règle.
+
+

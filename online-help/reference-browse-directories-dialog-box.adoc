@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-browse-directories-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la boîte de dialogue Browse Directories si vous souhaitez restaurer des données dans un répertoire sur un cluster et un SVM différent de la source d"origine. Le cluster et le volume source d"origine sont sélectionnés par défaut.' 
+---
+= Boîte de dialogue Parcourir les répertoires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la boîte de dialogue Browse Directories si vous souhaitez restaurer des données dans un répertoire sur un cluster et un SVM différent de la source d'origine. Le cluster et le volume source d'origine sont sélectionnés par défaut.
+
+La boîte de dialogue Browse Directories vous permet de sélectionner le cluster, le SVM, le volume et le chemin d'accès au répertoire auquel vous souhaitez restaurer les données.
+
+* *Cluster*
++
+Le répertorie les destinations de cluster disponibles pour lesquelles vous pouvez restaurer. Par défaut, le cluster du volume source d'origine est sélectionné.
+
+* *Liste déroulante SVM*
++
+Le répertorie le SVM disponible pour le cluster sélectionné. Par défault le SVM du volume source d'origine est sélectionné.
+
+* *Volume*
++
+Répertorie tous les volumes en lecture/écriture d'un SVM sélectionné. Vous pouvez filtrer les volumes par nom et par espace disponible. Le volume ayant le plus d'espace est répertorié en premier, et ainsi de suite, par ordre décroissant. Par défaut, le volume source d'origine est sélectionné.
+
+* *Zone de texte chemin de fichier*
++
+Vous permet de saisir le chemin du fichier vers lequel vous souhaitez restaurer les données. Le chemin que vous entrez doit déjà exister.
+
+* *Nom*
++
+Affiche les noms des dossiers disponibles pour le volume sélectionné. Si vous cliquez sur un dossier dans la liste Nom, les sous-dossiers s'affichent, le cas échéant. Les fichiers contenus dans les dossiers ne sont pas affichés. Cliquez sur image:../media/icon-upfolder.gif[""] une fois que vous avez sélectionné un dossier, vous vous déplacez d'un niveau vers le haut dans la structure du répertoire.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Sélectionnez répertoire*
++
+Applique vos sélections et ferme la boîte de dialogue Parcourir les répertoires. Si aucun répertoire n'est sélectionné, ce bouton est désactivé.
+
+* *Annuler*
++
+Supprime vos sélections et ferme la boîte de dialogue Parcourir les répertoires.
+
+

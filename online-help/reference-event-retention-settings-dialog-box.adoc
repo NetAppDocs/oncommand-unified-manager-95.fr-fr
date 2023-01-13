@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-event-retention-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer les paramètres d"événement pour supprimer automatiquement les événements \(information, résolu ou obsolète\) après une heure spécifiée et à une fréquence spécifiée. Vous pouvez également supprimer ces événements manuellement.' 
+---
+= Paramètres de conservation des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les paramètres d'événement pour supprimer automatiquement les événements (informations, résolus ou obsolètes) après une heure spécifiée et à une fréquence spécifiée. Vous pouvez également supprimer ces événements manuellement.
+
+Vous devez avoir le rôle d'administrateur OnCommand ou d'administrateur du stockage.
+
+
+
+== Paramètres des événements
+
+Vous pouvez configurer les options suivantes :
+
+* *Supprimer les informations, les événements résolus et les événements obsolètes antérieurs à*
++
+Vous permet de spécifier la période de conservation après laquelle les événements marqués comme informations, résolus ou Obsolète sont supprimés du serveur de gestion.
+
++
+La valeur par défaut est 180 jours. La conservation des événements pendant plus de 180 jours affecte les performances et n'est pas recommandée. La limite inférieure pour la période de conservation des événements est de 7 jours, bien qu'il n'y ait pas de limite supérieure.
+
+* *Supprimer le calendrier*
++
+Vous permet de spécifier la fréquence à laquelle tous les événements marqués comme informations, résolus ou Obsolète et qui ont dépassé leur limite d'âge sont automatiquement supprimés du serveur de gestion. Les valeurs possibles sont quotidien, hebdomadaire ou mensuel.
+
++
+La valeur par défaut est quotidien.
+
+* *Supprimer maintenant*
++
+Vous permet de supprimer manuellement toutes les informations, les événements résolus et obsolètes qui ont dépassé la période de conservation spécifiée.
+
+
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'enregistrer ou d'annuler les options de configuration :
+
+* *Enregistrer et fermer*
++
+Enregistre les paramètres de configuration de l'option sélectionnée et ferme la boîte de dialogue.
+
+* *Annuler*
++
+Annule les modifications récentes et ferme la boîte de dialogue.
+
+

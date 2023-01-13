@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-analyzing-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez analyser les événements de performances afin d"identifier quand ils ont été détectés, qu"ils soient actifs \(nouveau ou reconnus\) ou obsolètes, les charges de travail et les composants du cluster impliqués, ainsi que les options de résolution automatique des événements.' 
+---
+= Analyse des événements de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez analyser les événements de performances afin d'identifier quand ils ont été détectés, qu'ils soient actifs (nouveaux ou confirmés) ou obsolètes, les charges de travail et les composants du cluster impliqués, ainsi que les options de résolution des événements par vos propres moyens.

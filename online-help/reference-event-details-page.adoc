@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-event-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dans la page Détails des événements, vous pouvez afficher les détails d"un événement sélectionné, tels que la gravité d"événement, le niveau d"impact, la zone d"impact et la source d"événement. Vous pouvez également afficher des informations supplémentaires sur les résolutions possibles pour résoudre le problème.' 
+---
+= Page de détails de l'événement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans la page Détails des événements, vous pouvez afficher les détails d'un événement sélectionné, tels que la gravité d'événement, le niveau d'impact, la zone d'impact et la source d'événement. Vous pouvez également afficher des informations supplémentaires sur les résolutions possibles pour résoudre le problème.
+
+* *Nom de l'événement*
++
+Nom de l'événement et heure de la dernière vue de l'événement.
+
++
+Pour les événements sans performances, alors que l'événement est à l'état Nouveau ou validé, les dernières informations affichées ne sont pas connues et sont donc masquées.
+
+* *Description de l'événement*
++
+Brève description de l'événement.
+
++
+Dans certains cas, une raison pour l'événement déclenché est fournie dans la description de l'événement.
+
+* *Composant en conflit*
++
+Pour les événements de performances dynamiques, cette section affiche les icônes qui représentent les composants logiques et physiques du cluster. Si un composant est en conflit, son icône est entourée et mise en surbrillance rouge.
+
++
+Les composants suivants peuvent être affichés :
+
++
+** *Réseau*
++
+Représente le temps d'attente des demandes d'E/S par les protocoles iSCSI ou Fibre Channel (FC) sur le cluster. Le temps d'attente correspond au temps passé à attendre la fin des transactions iSCSI Ready to Transfer (R2T) ou FCP Transfer Ready (XFER_RDY) pour que le cluster puisse répondre à une demande d'E/S. Si le composant réseau est en conflit, cela signifie qu'un temps d'attente élevé au niveau de la couche de protocole de bloc a un impact sur la latence d'une ou de plusieurs charges de travail.
+
+** *Traitement réseau*
++
+Composant logiciel dans le cluster impliqué dans le traitement des E/S entre la couche de protocole et le cluster. Le traitement du réseau de traitement des nœuds a peut-être changé depuis la détection de l'événement. Si le composant de traitement de réseau est en conflit, son utilisation élevée au niveau du nœud de traitement réseau a un impact sur la latence d'une ou de plusieurs charges de travail.
+
+** *Politique de qualité de service*
++
+Représente le groupe de règles de qualité de service (QoS) de stockage dont la charge de travail est membre. Si le composant de groupe de règles conflits, cela signifie que toutes les charges de travail du groupe de règles sont restreintes par la limite de débit définie, qui a un impact sur la latence d'une ou plusieurs de ces charges de travail.
+
+** * Interconnexion de cluster*
++
+La représente les câbles et adaptateurs avec lesquels les nœuds en cluster sont physiquement connectés. Si le composant d'interconnexion de cluster est en conflit, cela signifie un temps d'attente élevé pour les demandes d'E/S au niveau de l'interconnexion de cluster se répercute sur la latence d'une ou de plusieurs charges de travail.
+
+** *Traitement de données*
++
+Composant logiciel dans le cluster impliqué dans le traitement des E/S entre le cluster et l'agrégat de stockage qui contient la charge de travail. Le traitement des données de traitement du nœud peut avoir changé depuis la détection de l'événement. Si le composant de traitement des données conflit, une utilisation élevée au niveau du nœud de traitement des données affecte la latence d'un ou de plusieurs workloads.
+
+** *Ressources MetroCluster*
++
+La représente les ressources MetroCluster, y compris la NVRAM et les liens ISL, utilisés pour mettre en miroir les données entre les clusters dans une configuration MetroCluster. Si le composant MetroCluster rencontre des conflits, il s'agit d'un débit d'écriture élevé avec les charges de travail sur le cluster local ou d'un problème d'état de santé de la liaison ayant un impact sur la latence d'une ou de plusieurs charges de travail sur le cluster local. Si le cluster ne se trouve pas dans une configuration MetroCluster, cette icône n'est pas affichée.
+
+** *Agrégat ou agrégat SSD*
++
+Agrégat de stockage sur lequel les charges de travail s'exécutent. Si le composant de l'agrégat est en conflit, une utilisation élevée de l'agrégat a un impact sur la latence d'une ou de plusieurs charges de travail. Un agrégat se compose de tous les disques durs ou d'un mélange de disques durs et de disques SSD (un agrégat Flash Pool). Un « agrégat SD » se compose de tous les SSD (un agrégat 100 % Flash), ou d'une combinaison de SSD et d'un niveau cloud (un agrégat FabricPool).
+
+** * Latence cloud*
++
+Représente le composant logiciel du cluster impliqué dans le traitement des E/S entre le cluster et le niveau cloud sur lequel les données utilisateur sont stockées. Si le composant de latence dans le cloud conflits, une grande quantité de lectures sur les volumes hébergés sur le Tier cloud ont une incidence sur la latence d'un ou de plusieurs workloads.
+
+** *SnapMirror de synchronisation*
++
+Représente le composant logiciel du cluster impliqué dans la réplication des données utilisateur depuis le volume primaire vers le volume secondaire dans une relation SnapMirror synchrone. Si le composant SnapMirror synchrone entre en conflit, l'activité des opérations SnapMirror synchrone a un impact sur la latence d'un ou de plusieurs workloads.
+
+
+
+
+
+Les sections informations sur les événements, diagnostic du système et actions suggérées sont décrites dans d'autres rubriques.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Icône Notes*
++
+Permet d'ajouter ou de mettre à jour une note concernant l'événement et de consulter toutes les notes laissées par les autres utilisateurs.
+
+
+
+*Menu actions*
+
+* *Attribuer à moi*
++
+Vous affecte l'événement.
+
+* *Affecter à d'autres*
++
+Ouvre la boîte de dialogue attribuer un propriétaire qui permet d'affecter ou de réaffecter l'événement à d'autres utilisateurs.
+
++
+Lorsque vous attribuez un événement à un utilisateur, le nom de l'utilisateur et l'heure à laquelle l'événement a été affecté sont ajoutés dans la liste des événements pour les événements sélectionnés.
+
++
+Vous pouvez également annuler l'affectation d'événements en laissant le champ de propriété vide.
+
+* *Acknowledge*
++
+Acquitte les événements sélectionnés pour ne pas continuer à recevoir de notifications d'alerte répétées.
+
++
+Lorsque vous reconnaissez un événement, votre nom d'utilisateur et l'heure à laquelle vous avez reconnu l'événement sont ajoutés dans la liste des événements (acquittés par) pour les événements sélectionnés. Lorsque vous reconnaissez un événement, vous êtes responsable de la gestion de cet événement.
+
+* *Marquer comme résolu*
++
+Vous permet de changer l'état de l'événement en résolu.
+
++
+Lorsque vous résolvez un événement, votre nom d'utilisateur et l'heure à laquelle vous avez résolu l'événement sont ajoutés dans la liste des événements (résolus par) pour les événements sélectionnés. Après avoir pris les mesures correctives nécessaires à l'événement, vous devez marquer l'événement comme résolu.
+
+* *Ajouter alerte*
++
+Affiche la boîte de dialogue Ajouter une alerte qui vous permet d'ajouter une alerte pour l'événement sélectionné.
+
+
