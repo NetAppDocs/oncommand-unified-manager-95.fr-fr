@@ -6992,8 +6992,6 @@
   <block id="b05ec43ca7407c06122c42ea4b25632e" category="paragraph">Supprime la configuration de Workflow Automation de Unified Manager.</block>
   <block id="6999aa5ef7f71f7f00e64118e8275e74" category="paragraph">Enregistre les paramètres de configuration pour l'option sélectionnée.</block>
   <block id="93f88d6c3be8dc08239feb316ead84f9" category="paragraph">Pour afficher les noms des événements EMS auxquels vous pouvez vous abonner, depuis le shell du cluster ONTAP, vous pouvez utiliser<block ref="600519f6c6d0b7df8b905133fe79eb47" prefix=" " category="inline-code"></block> (Avant ONTAP 9) ou le<block ref="83c19f62b32dae15ee31be017a321335" prefix=" " category="inline-code"></block> (ONTAP 9 ou version ultérieure). Consultez la réponse de la base de connaissances 1072320 pour obtenir des instructions détaillées sur l'identification des événements EMS individuels.</block>
-  <block id="b7ea02fe1dbdcd1a4d97e075ed656e5d" category="inline-link">KB 1072320 - Comment configurer les abonnements aux événements EMS ONTAP dans Unified Manager</block>
-  <block id="31217e322cc07a0593ddf09e0d4549b2" category="paragraph"><block ref="31217e322cc07a0593ddf09e0d4549b2" category="inline-link-rx"></block></block>
   <block id="d6b2a5eaec6d581c428382bf1fa65994" category="summary">Vous pouvez personnaliser le rapport Cluster Inventory pour afficher la liste des nœuds qui atteignent la limite maximale de disque et trié par ordre croissant.</block>
   <block id="e9cf43d6c7ec24f85386c110100fce90" category="doc">Personnalisation du rapport Cluster Inventory pour afficher les nœuds ayant atteint la limite maximale de disque</block>
   <block id="cbed002dcbc960710aebe81be97aab0d" category="list-text">Pour supprimer le regroupement par cluster, ou nœud, effectuez les opérations suivantes :</block>
@@ -12161,7 +12159,6 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Vidéos sur Unified Manager</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Blogs Unified Manager</block>
   <block id="7c59cc884d6b9ef97e305e34cc436310" category="sidebar">Documentation relative à la dernière version d'Unified Manager</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">Réaliser les tâches de configuration et d'administration</block>
   <block id="280e472487f2e1876889ef516ea66c22" category="sidebar">Conditions SELinux requises pour le montage <code>/opt/netapp</code> ou <code>/opt/netapp/Data</code> sur un partage NFS ou CIFS</block>
   <block id="89376735b2b1322b2aeff45eff7abf01" category="sidebar">Exécution d'une installation sans assistance de Unified Manager sous Windows</block>
@@ -12216,4 +12213,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Comment configurer et recevoir des alertes de l'abonnement aux événements EMS ONTAP dans Active IQ Unified Manager</block>
+  <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
 </blocks>
