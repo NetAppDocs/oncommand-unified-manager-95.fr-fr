@@ -71,4 +71,4 @@ Informations sur les problèmes de performances et d'état de l'application Unif
 |===
 Un utilisateur de création de rapports -- un utilisateur de base de données avec le rôle de schéma de rapport -- peut accéder aux données de ces tables. Cet utilisateur dispose d'un accès en lecture seule au reporting et à d'autres vues de base de données directement depuis la base de données Unified Manager. Notez que cet utilisateur n'est pas autorisé à accéder aux tables contenant des données utilisateur ou des informations d'identification du cluster.
 
-Voir la http://www.netapp.com/us/media/tr-4565.pdf["Rapport technique sur Unified Manager Reporting"] (TR-4565) pour plus d'informations.
+Consultez le https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Rapport technique sur Unified Manager Reporting"^] (TR-4565) pour plus de détails.

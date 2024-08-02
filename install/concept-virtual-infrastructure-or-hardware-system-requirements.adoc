@@ -74,7 +74,7 @@ Unified Manager peut être installé sur des systèmes disposant d'une petite qu
 
 En outre, le nombre de nœuds qu'une seule instance de Unified Manager peut contrôler avant d'installer une deuxième instance de Unified Manager est limité. Consultez le _Guide des meilleures pratiques_ pour plus de détails.
 
-http://www.netapp.com/us/media/tr-4621.pdf["Rapport technique 4621 : Guide des meilleures pratiques de Unified Manager"]
+https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["Rapport technique 4621 : Guide des meilleures pratiques de Unified Manager"^]
 
 Les échanges de pages mémoire ont un impact négatif sur les performances du système et de l'application de gestion. La concurrence pour les ressources de processeur indisponibles en raison de l'utilisation globale de l'hôte peut dégrader les performances.
 

@@ -88,4 +88,4 @@ Supprime vos sélections et ferme la boîte de dialogue Paramètres de destinati
 
 *Informations connexes*
 
-http://www.netapp.com/us/media/tr-3966.pdf["Rapport technique de NetApp 3966 : Guide de déploiement et d'implémentation de la compression des données et de la déduplication NetApp (clustered Data ONTAP)"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["Rapport technique de NetApp 3966 : Guide de déploiement et d'implémentation de la compression des données et de la déduplication NetApp (clustered Data ONTAP)"^]
